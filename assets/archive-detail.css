@@ -26,17 +26,24 @@
 .resource{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding:20px 4px}
 .resource span{color:#aeb5af}.resource a{color:var(--red);font-size:.66rem;text-transform:uppercase;letter-spacing:.12em}
 .empty-note{border:1px solid var(--line);padding:28px;color:#929b94}
-.schedule-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:1px;background:transparent;border:1px solid var(--line);margin-top:48px}
-.schedule-card{grid-column:span 2;min-width:0;background:#0d110f;display:flex;flex-direction:column;border:1px solid var(--line)}
+.schedule-seasons{margin-top:66px}
+.schedule-season{margin-top:70px}.schedule-season:first-child{margin-top:0}
+.schedule-season-head{display:flex;justify-content:space-between;align-items:end;padding-bottom:15px;border-bottom:1px solid var(--line)}
+.schedule-season-head h2{font:400 2.25rem/1 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:0}
+.schedule-season-head span{color:#747e77;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase}
+.schedule-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:30px 22px;margin-top:26px}
+.schedule-card{grid-column:span 2;min-width:0;display:block;position:relative;transition:transform .2s ease}
+.schedule-card:hover{transform:translateY(-3px)}
 .schedule-grid>.schedule-card:last-child:nth-child(4n+1){grid-column:4/span 2}
 .schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1){grid-column:3/span 2}
 .schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1){grid-column:2/span 2}
-.schedule-image{display:block;aspect-ratio:3/4;overflow:hidden;background:#080a09}
+.schedule-image{display:block;aspect-ratio:4/5;overflow:hidden;background:#080a09;border:1px solid var(--line)}
 .schedule-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .25s ease}
 .schedule-card:hover .schedule-image img{transform:scale(1.02)}
-.schedule-body{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:20px}
-.schedule-body h2{font:400 1.25rem/1.18 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:0 0 24px}
-.schedule-open{margin-top:auto;color:var(--red);font-size:.58rem;text-transform:uppercase;letter-spacing:.12em}
+.schedule-body{display:block;position:relative;padding:15px 30px 0 2px}
+.schedule-code{display:block;color:#737d76;font-size:.56rem;line-height:1.5;letter-spacing:.1em;text-transform:uppercase}
+.schedule-body h2{font:400 1.45rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:8px 0 0}
+.schedule-arrow{position:absolute;right:2px;top:14px;color:var(--red);font-size:1rem}
 .season-rail{position:fixed;inset:0;z-index:8;pointer-events:none}
 .season-rail .season-link{position:absolute;top:50%;transform:translateY(-50%);width:74px;min-height:106px;padding:15px 8px;border:1px solid #59625c;background:#0b0e0df2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#c7ccc8;pointer-events:auto;transition:background .2s,border-color .2s,color .2s}
 .season-rail .season-link:hover{background:#171d1a;border-color:var(--paper);color:#fff}

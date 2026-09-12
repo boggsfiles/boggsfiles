@@ -35,6 +35,9 @@ nav { min-height: 82px; display: flex; align-items: center; justify-content: spa
 .intro h2 { font: 400 2.8rem/1 var(--display); text-transform: uppercase; margin: 12px 0; }
 .intro p { margin: 0; color: #9aa49d; }
 .collection { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 70px 0 90px; }
+.dailies-grid { grid-template-columns: repeat(6, 1fr); background: transparent; }
+.dailies-grid .file { grid-column: span 2; border: 1px solid var(--line); }
+.dailies-grid > .file:nth-last-child(2):nth-child(3n+1) { grid-column: 2 / span 2; }
 .file { background: var(--ink); min-height: 245px; padding: 28px; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: .22s; }
 .file:hover { background: #161c19; transform: translateY(-2px); }
 .file::after { content: attr(data-mark); position: absolute; right: -5px; bottom: -35px; font: 400 8.2rem var(--display); color: #ffffff08; }
@@ -64,6 +67,8 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
   .links { display: none; }
   .intro-grid { grid-template-columns: 1fr; gap: 15px; }
   .collection { grid-template-columns: 1fr 1fr; }
+  .dailies-grid { grid-template-columns: repeat(4, 1fr); }
+  .dailies-grid .file, .dailies-grid > .file:nth-last-child(2):nth-child(3n+1) { grid-column: span 2; }
   .wide { grid-column: auto; }
   .production-grid .collection-photo { grid-column: 1 / -1; grid-row: auto; min-height: 0; aspect-ratio: 16 / 9; }
   .notice { grid-template-columns: 1fr; }
@@ -76,6 +81,8 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
   .hero { padding: 72px 0 55px; }
   .hero h1 { font-size: 4.1rem; }
   .collection { grid-template-columns: 1fr; }
+  .dailies-grid { grid-template-columns: 1fr; }
+  .dailies-grid .file, .dailies-grid > .file:nth-last-child(2):nth-child(3n+1) { grid-column: auto; }
   .production-grid .collection-photo { aspect-ratio: 1 / 1; }
   .file { min-height: 215px; }
   .footer-row { display: block; }
