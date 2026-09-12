@@ -4,8 +4,10 @@
 .archive-hero h1{font:400 clamp(4rem,9vw,8rem)/.84 var(--display);text-transform:uppercase;letter-spacing:-.03em;margin:26px 0 20px}
 .archive-hero p{max-width:760px;color:#aeb5af;margin:0}
 .archive-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;color:#7f8982;text-transform:uppercase;font-size:.63rem;letter-spacing:.15em}
-.archive-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:58px 0 90px}
-.episode{min-height:410px;background:#0d110f;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.archive-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--ink);border:1px solid var(--line);margin:58px 0 90px}
+.episode{grid-column:span 2;min-height:410px;background:#0d110f;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid var(--line)}
+.archive-grid>.episode:last-child:nth-child(3n+1){grid-column:3/span 2}
+.archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:2/span 2}
 .episode-image{height:auto;aspect-ratio:4/3;background:#171d1a center 18%/cover no-repeat;position:relative}
 .episode-image:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#0d110f 0,rgba(13,17,15,.58) 12%,transparent 34%)}
 .episode-body{padding:27px 30px 31px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
@@ -33,5 +35,5 @@
 .schedule-body h2{font:400 1.25rem/1.18 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:0 0 24px}
 .schedule-open{margin-top:auto;color:var(--red);font-size:.58rem;text-transform:uppercase;letter-spacing:.12em}
 @media(max-width:1050px){.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:1100px){.archive-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode{min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}}
+@media(max-width:1100px){.archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:span 2}.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:2/span 2}}
+@media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:auto;min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}}

@@ -168,6 +168,41 @@ def script_cards(document) -> list[dict]:
     return cards
 
 
+def draft_sort_key(item):
+    label = clean(item[0]).lower()
+    if "final" in label:
+        return (1000, label)
+    if "draft zero" in label:
+        return (0, label)
+    if "writer's first" in label or "writers first" in label:
+        return (5, label)
+    if "writer's draft" in label or "writers draft" in label:
+        return (10, label)
+    if "1st draft" in label or "first draft" in label:
+        return (15, label)
+    if "2nd draft" in label or "second draft" in label:
+        return (20, label)
+    if "pre-production" in label:
+        return (25, label)
+    if "production draft" in label or label == "draft":
+        return (30, label)
+    colors = {
+        "white": 40, "blue": 50, "pink": 60, "yellow": 70,
+        "green": 80, "goldenrod": 90, "gold": 90, "buff": 100,
+        "salmon": 110, "cherry": 120, "tan": 130,
+        "gray": 140, "grey": 140, "ivory": 150,
+    }
+    pass_offset = 0
+    if re.search(r"\b2nd\b|\bsecond\b", label):
+        pass_offset = 150
+    elif re.search(r"\b3rd\b|\bthird\b", label):
+        pass_offset = 300
+    for color, rank in colors.items():
+        if re.search(rf"\b{color}\b", label):
+            return (rank + pass_offset, label)
+    return (500, label)
+
+
 def build_script_page(label: str, slug: str):
     document, opener, page_url = fetch(f"/x-files-scripts-by-season/{slug}")
     cards = script_cards(document)
@@ -177,7 +212,7 @@ def build_script_page(label: str, slug: str):
         image_style = f' style="background-image:url(\'{html.escape(local_image, quote=True)}\')"' if local_image else ""
         buttons = "".join(
             f'<a class="draft" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(name)} ↗</a>'
-            for name, url in card["links"]
+            for name, url in sorted(card["links"], key=draft_sort_key)
         )
         cards_html.append(f'<article class="episode"><div class="episode-image"{image_style}></div><div class="episode-body"><span class="episode-no">File {index:02d}</span><h2>{html.escape(card["title"])}</h2><div class="drafts">{buttons}</div></div></article>')
     body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Original drafts and production revisions, preserved together for close reading and comparison.</p><div class="archive-meta"><span>{len(cards)} episode files</span><span>Original scans</span><span>Opens in Google Drive</span></div></div></section><div class="shell"><div class="archive-grid">{"".join(cards_html)}</div></div>'''
