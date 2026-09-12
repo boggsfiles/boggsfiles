@@ -26,16 +26,16 @@ SCRIPT_PAGES = [
 ]
 
 DAILIES = [
-    ("Aubrey", "aubrey"), ("Ascension", "ascension"),
-    ("Paper Hearts", "paper-hearts"),
-    ("The Field Where I Died", "the-field-where-i-died"),
-    ("Tunguska", "tunguska"), ("Sanguinarium", "sanguinarium"),
-    ("Irresistible", "irresistible"), ("Quagmire", "quagmire"),
-    ("Musings of a Cigarette Smoking Man", "musings-of-a-cigarette-smoking-man"),
-    ("Deep Throat", "deep-throat"), ("Kitsunegari", "kitsunegari"),
-    ("Apocrypha", "apocrypha"),
+    ("Deep Throat", "deep-throat"), ("Born Again", "born-again"),
+    ("Ascension", "ascension"), ("Aubrey", "aubrey"),
+    ("Irresistible", "irresistible"),
     ("Die Hand Die Verletzt", "die-hand-die-verletzt"),
-    ("Born Again", "born-again"),
+    ("Apocrypha", "apocrypha"), ("Quagmire", "quagmire"),
+    ("The Field Where I Died", "the-field-where-i-died"),
+    ("Sanguinarium", "sanguinarium"),
+    ("Musings of a Cigarette Smoking Man", "musings-of-a-cigarette-smoking-man"),
+    ("Tunguska", "tunguska"), ("Paper Hearts", "paper-hearts"),
+    ("Kitsunegari", "kitsunegari"),
 ]
 
 MEMORABILIA = [
@@ -263,6 +263,21 @@ def media_items(document):
     return frames, images
 
 
+def schedule_details(name: str):
+    name = re.sub(r"(?<=[A-Za-z])Shooting", " Shooting", name)
+    match = re.match(
+        r"^(\d+)(AB)?x(\d+)\s+(.+?)\s+Shooting Schedule\s*(?:\(([^)]+)\))?$",
+        name,
+        re.IGNORECASE,
+    )
+    if not match:
+        return 99, 99, "ARCHIVE", name.removesuffix(" Shooting Schedule"), ""
+    season = int(match.group(1))
+    episode = int(match.group(3))
+    code = f"{match.group(1)}{'AB' if match.group(2) else ''}X{match.group(3)}"
+    return season, episode, code, match.group(4), match.group(5) or ""
+
+
 def resource_links(document, page_label: str):
     resources = []
     for embed in document.xpath('//*[@data-embed-open-url]'):
@@ -327,12 +342,33 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         cards = []
         for index, (src, resource) in enumerate(zip(images, resources), 1):
             name, url = resource
-            name = re.sub(r"(?<=[a-z])Shooting", " Shooting", name)
+            season, episode, code, episode_title, revision = schedule_details(name)
             local_src = save_image(opener, page_url, src, f"misc-memorabilia-x-files-shooting-schedules-{index:02d}")
-            cards.append(
-                f'<article class="schedule-card"><a class="schedule-image" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener"><img src="{html.escape(local_src, quote=True)}" loading="lazy" alt="{html.escape(name)}"></a><div class="schedule-body"><h2>{html.escape(name)}</h2><a class="schedule-open" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Open schedule ↗</a></div></article>'
+            revision_label = f" · {revision} revision" if revision else ""
+            cards.append({
+                "season": season, "episode": episode, "code": code,
+                "title": episode_title, "revision": revision_label,
+                "url": url, "image": local_src,
+            })
+        season_sections = []
+        for season in sorted({card["season"] for card in cards}):
+            season_cards = sorted(
+                (card for card in cards if card["season"] == season),
+                key=lambda card: (card["episode"], card["revision"]),
             )
-        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>{html.escape(kind)}</p><div class="archive-meta"><span>{len(cards)} episode schedules</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-grid">{"".join(cards)}</div></div>'''
+            card_html = []
+            for card in season_cards:
+                meta = f'{card["code"]} · Shooting schedule{card["revision"]}'
+                card_html.append(
+                    f'<a class="schedule-card" href="{html.escape(card["url"], quote=True)}" target="_blank" rel="noopener" aria-label="Open {html.escape(card["title"], quote=True)} shooting schedule">'
+                    f'<span class="schedule-image"><img src="{html.escape(card["image"], quote=True)}" loading="lazy" alt="{html.escape(card["title"], quote=True)} shooting schedule cover"></span>'
+                    f'<span class="schedule-body"><span class="schedule-code">{html.escape(meta)}</span><h2>{html.escape(card["title"])}</h2><span class="schedule-arrow" aria-hidden="true">↗</span></span></a>'
+                )
+            count_label = "schedule" if len(season_cards) == 1 else "schedules"
+            season_sections.append(
+                f'<section class="schedule-season"><div class="schedule-season-head"><h2>Season {season}</h2><span>{len(season_cards)} {count_label}</span></div><div class="schedule-grid">{"".join(card_html)}</div></section>'
+            )
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>{html.escape(kind)}</p><div class="archive-meta"><span>{len(cards)} episode schedules</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-seasons">{"".join(season_sections)}</div></div>'''
         write_route(route, page(label, body, active))
         return
     media = []
