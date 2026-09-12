@@ -26,14 +26,25 @@
 .resource{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding:20px 4px}
 .resource span{color:#aeb5af}.resource a{color:var(--red);font-size:.66rem;text-transform:uppercase;letter-spacing:.12em}
 .empty-note{border:1px solid var(--line);padding:28px;color:#929b94}
-.schedule-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
-.schedule-card{min-width:0;background:#0d110f;display:flex;flex-direction:column}
+.schedule-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:1px;background:transparent;border:1px solid var(--line);margin-top:48px}
+.schedule-card{grid-column:span 2;min-width:0;background:#0d110f;display:flex;flex-direction:column;border:1px solid var(--line)}
+.schedule-grid>.schedule-card:last-child:nth-child(4n+1){grid-column:4/span 2}
+.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1){grid-column:3/span 2}
+.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1){grid-column:2/span 2}
 .schedule-image{display:block;aspect-ratio:3/4;overflow:hidden;background:#080a09}
 .schedule-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .25s ease}
 .schedule-card:hover .schedule-image img{transform:scale(1.02)}
 .schedule-body{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:20px}
 .schedule-body h2{font:400 1.25rem/1.18 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:0 0 24px}
 .schedule-open{margin-top:auto;color:var(--red);font-size:.58rem;text-transform:uppercase;letter-spacing:.12em}
-@media(max-width:1050px){.schedule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.season-rail{position:fixed;inset:0;z-index:8;pointer-events:none}
+.season-rail .season-link{position:absolute;top:50%;transform:translateY(-50%);width:74px;min-height:106px;padding:15px 8px;border:1px solid #59625c;background:#0b0e0df2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#c7ccc8;pointer-events:auto;transition:background .2s,border-color .2s,color .2s}
+.season-rail .season-link:hover{background:#171d1a;border-color:var(--paper);color:#fff}
+.season-rail .season-prev{left:10px}.season-rail .season-next{right:10px}
+.season-link span{font:300 1.45rem/1 var(--display);color:var(--red)}
+.season-link b{font:500 .58rem/1.25 var(--mono);letter-spacing:.11em;text-transform:uppercase;text-align:center}
+.season-nav-bottom{display:none}
+@media(max-width:1380px){.season-rail{display:none}.season-nav-bottom{display:flex;justify-content:center;gap:12px;margin:-34px auto 76px;padding:0 24px}.season-nav-bottom .season-link{min-width:150px;padding:13px 18px;border:1px solid #59625c;display:flex;align-items:center;justify-content:center;gap:12px;background:#0d110f}.season-nav-bottom .season-prev{margin-right:auto}.season-nav-bottom .season-next{margin-left:auto}}
+@media(max-width:1050px){.schedule-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1){grid-column:span 2}.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:2/span 2}}
 @media(max-width:1100px){.archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:span 2}.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:2/span 2}}
-@media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:auto;min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}}
+@media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1),.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1),.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:auto}.episode{min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}.season-nav-bottom{margin:-38px auto 58px;padding:0 14px}.season-nav-bottom .season-link{min-width:0;flex:1;padding:12px 10px}.season-link b{font-size:.55rem}}
