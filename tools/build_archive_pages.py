@@ -1,12 +1,16 @@
 from __future__ import annotations
 
 import html
+import http.cookiejar
+import io
 import re
+import time
 import urllib.request
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import urllib.error
 from pathlib import Path
 
 from lxml import html as lhtml
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
@@ -49,9 +53,57 @@ BOILERPLATE = (
 
 
 def fetch(path: str):
-    request = urllib.request.Request(LEGACY + path, headers=UA)
-    with urllib.request.urlopen(request, timeout=45) as response:
-        return lhtml.fromstring(response.read())
+    page_url = LEGACY + path
+    cookie_jar = http.cookiejar.CookieJar()
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookie_jar))
+    request = urllib.request.Request(page_url, headers=UA)
+    with opener.open(request, timeout=45) as response:
+        return lhtml.fromstring(response.read()), opener, page_url
+
+
+def save_image(opener, page_url: str, source_url: str, key: str) -> str:
+    photo_dir = DIST / "assets" / "archive-photos"
+    photo_dir.mkdir(parents=True, exist_ok=True)
+    destination = photo_dir / f"{key}.webp"
+    if not destination.exists():
+        for attempt in range(10):
+            if attempt:
+                cookie_jar = http.cookiejar.CookieJar()
+                opener = urllib.request.build_opener(
+                    urllib.request.HTTPCookieProcessor(cookie_jar)
+                )
+                with opener.open(
+                    urllib.request.Request(page_url, headers=UA), timeout=45
+                ) as response:
+                    refreshed = lhtml.fromstring(response.read())
+                image_index = int(key.rsplit("-", 1)[-1]) - 1
+                if key.startswith("scripts-"):
+                    refreshed_cards = script_cards(refreshed)
+                    if image_index < len(refreshed_cards):
+                        source_url = refreshed_cards[image_index]["image"]
+                else:
+                    refreshed_images = media_items(refreshed)[1]
+                    if image_index < len(refreshed_images):
+                        source_url = refreshed_images[image_index]
+            request = urllib.request.Request(source_url, headers={
+                "User-Agent": "Mozilla/5.0",
+                "Referer": page_url,
+                "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+                "Sec-Fetch-Dest": "image",
+                "Sec-Fetch-Mode": "no-cors",
+                "Sec-Fetch-Site": "cross-site",
+            })
+            try:
+                with opener.open(request, timeout=45) as response:
+                    image = Image.open(io.BytesIO(response.read())).convert("RGB")
+                image.thumbnail((1400, 900), Image.Resampling.LANCZOS)
+                image.save(destination, "WEBP", quality=84, method=6)
+                break
+            except urllib.error.HTTPError:
+                if attempt == 9:
+                    raise
+                time.sleep(min(2 * (attempt + 1), 10))
+    return f"/assets/archive-photos/{destination.name}"
 
 
 def clean(value: str) -> str:
@@ -117,11 +169,12 @@ def script_cards(document) -> list[dict]:
 
 
 def build_script_page(label: str, slug: str):
-    document = fetch(f"/x-files-scripts-by-season/{slug}")
+    document, opener, page_url = fetch(f"/x-files-scripts-by-season/{slug}")
     cards = script_cards(document)
     cards_html = []
     for index, card in enumerate(cards, 1):
-        image_style = f' style="background-image:url(\'{html.escape(card["image"], quote=True)}\')"' if card["image"] else ""
+        local_image = save_image(opener, page_url, card["image"], f"scripts-{slug}-{index:02d}") if card["image"] else ""
+        image_style = f' style="background-image:url(\'{html.escape(local_image, quote=True)}\')"' if local_image else ""
         buttons = "".join(
             f'<a class="draft" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(name)} ↗</a>'
             for name, url in card["links"]
@@ -178,7 +231,7 @@ def resource_links(document, page_label: str):
 
 
 def build_detail(label: str, route: str, legacy_path: str, active: str, kind: str):
-    document = fetch(legacy_path)
+    document, opener, page_url = fetch(legacy_path)
     frames, images = media_items(document)
     paragraphs = descriptive_text(document)
     resources = resource_links(document, label)
@@ -187,8 +240,10 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
     for src in frames:
         media.append(f'<div class="media"><iframe src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
     if not frames:
-        for src in images[:18]:
-            media.append(f'<div class="media"><img src="{html.escape(src, quote=True)}" loading="lazy" alt="{html.escape(label)} archive image"></div>')
+        image_key = re.sub(r"[^a-z0-9]+", "-", route.lower()).strip("-")
+        for index, src in enumerate(images[:18], 1):
+            local_src = save_image(opener, page_url, src, f"{image_key}-{index:02d}")
+            media.append(f'<div class="media"><img src="{html.escape(local_src, quote=True)}" loading="lazy" alt="{html.escape(label)} archive image"></div>')
     resource_html = ""
     if resources:
         rows = "".join(f'<div class="resource"><span>{html.escape(name)}</span><a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Open source ↗</a></div>' for name, url in resources)
@@ -199,18 +254,15 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
 
 
 def main():
-    jobs = []
-    with ThreadPoolExecutor(max_workers=8) as pool:
-        for label, slug in SCRIPT_PAGES:
-            jobs.append((f"scripts: {label}", pool.submit(build_script_page, label, slug)))
-        for label, slug in DAILIES:
-            jobs.append((f"dailies: {label}", pool.submit(build_detail, label, f"x-files-dailies/{slug}", f"/x-files-dailies/{slug}", "Dailies", "Rare production dailies and alternate footage from The X-Files.")))
-        for label, slug in MEMORABILIA:
-            jobs.append((f"memorabilia: {label}", pool.submit(build_detail, label, f"misc-memorabilia/{slug}", f"/misc-memorabilia/{slug}", "Memorabilia", "Original documents, interviews, and artifacts from the Boggsfiles collection.")))
-        futures = {future: label for label, future in jobs}
-        for future in as_completed(futures):
-            future.result()
-            print(f"Built {futures[future]}")
+    for label, slug in SCRIPT_PAGES:
+        build_script_page(label, slug)
+        print(f"Built scripts: {label}", flush=True)
+    for label, slug in DAILIES:
+        build_detail(label, f"x-files-dailies/{slug}", f"/x-files-dailies/{slug}", "Dailies", "Rare production dailies and alternate footage from The X-Files.")
+        print(f"Built dailies: {label}", flush=True)
+    for label, slug in MEMORABILIA:
+        build_detail(label, f"misc-memorabilia/{slug}", f"/misc-memorabilia/{slug}", "Memorabilia", "Original documents, interviews, and artifacts from the Boggsfiles collection.")
+        print(f"Built memorabilia: {label}", flush=True)
 
 
 if __name__ == "__main__":
