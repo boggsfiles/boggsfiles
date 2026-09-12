@@ -42,7 +42,7 @@ MEMORABILIA = [
     ("X-Files Shooting Schedules", "x-files-shooting-schedules"),
     ("X-Files Call Sheets", "x-files-call-sheets"),
     ("William B. Davis Interview", "william-b-davis-interview"),
-    ("Comics", "comics"), ("Oneliners", "oneliners"),
+    ("Comics", "comics"), ("One-Liners", "oneliners"),
 ]
 
 BOILERPLATE = (
@@ -278,6 +278,68 @@ def schedule_details(name: str):
     return season, episode, code, match.group(4), match.group(5) or ""
 
 
+ONELINER_EPISODES = {
+    "blood": (2, 3, "2X03", "Blood"),
+    "aubrey": (2, 12, "2X12", "Aubrey"),
+    "fresh bones": (2, 15, "2X15", "Fresh Bones"),
+    "hell money": (3, 19, "3X19", "Hell Money"),
+    "detour": (5, 4, "5X04", "Detour"),
+    "christmas carol": (5, 6, "5X06", "Christmas Carol"),
+    "emily": (5, 7, "5X07", "Emily"),
+    "chinga": (5, 10, "5X10", "Chinga"),
+    "kill switch": (5, 11, "5X11", "Kill Switch"),
+    "folie a deux": (5, 19, "5X19", "Folie a Deux"),
+    "badlaa": (8, 12, "8ABX12", "Badlaa"),
+    "empedocles": (8, 17, "8ABX17", "Empedocles"),
+}
+
+
+def oneliner_items(document):
+    items = []
+    color_rank = {
+        "blue": 1, "pink": 2, "yellow": 3, "green": 4, "goldenrod": 5,
+    }
+    for source_index, frame in enumerate(document.xpath("//iframe"), 1):
+        preview_url = frame.get("data-src") or frame.get("src") or ""
+        file_match = re.search(r"/file/d/([A-Za-z0-9_-]+)/preview", preview_url)
+        if not file_match:
+            continue
+        filename = clean(frame.get("aria-label") or "Oneline")
+        filename = filename.removeprefix("Drive, ").removesuffix(".pdf")
+        filename = filename.replace("Online Schedule", "Oneline Schedule")
+        matched = None
+        for key, episode_data in ONELINER_EPISODES.items():
+            if filename.lower().startswith(key):
+                matched = (key, episode_data)
+                break
+        if not matched:
+            continue
+        key, (season, episode, code, title) = matched
+        remainder = filename[len(key):].strip(" ,")
+        lower = remainder.lower()
+        revision = next((color.title() for color in color_rank if color in lower), "")
+        if "dood" in lower and "shooting schedule" in lower:
+            document_type = "Oneline + shooting schedule + DOOD"
+        elif "dood" in lower:
+            document_type = "Oneline + DOOD"
+        elif revision:
+            document_type = f"{revision} revision"
+        elif re.search(r"schedule\s+2$", lower):
+            document_type = "Oneline schedule · Copy 2"
+        else:
+            document_type = "Oneline schedule"
+        rank = next((value for color, value in color_rank.items() if color in lower), 20)
+        if "dood" in lower:
+            rank = 30
+        items.append({
+            "season": season, "episode": episode, "code": code, "title": title,
+            "document_type": document_type, "rank": rank,
+            "source_index": source_index, "preview": preview_url,
+            "url": f"https://drive.google.com/open?id={file_match.group(1)}",
+        })
+    return items
+
+
 def resource_links(document, page_label: str):
     resources = []
     for embed in document.xpath('//*[@data-embed-open-url]'):
@@ -337,6 +399,13 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             if not text.startswith("Here you can study scripts")
             and not any(name.startswith(text + " Call Sheet") for name in file_labels)
         ]
+    if label == "One-Liners":
+        paragraphs = [
+            "A one-line schedule condenses every scene into a quick production overview—"
+            "typically noting the scene number, setting, time of day, principal action, "
+            "cast, and key requirements. These documents helped the production team plan "
+            "and track an episode before and during filming."
+        ]
     copy = "".join(f'<p class="detail-copy">{html.escape(text)}</p>' for text in paragraphs)
     if label == "X-Files Shooting Schedules":
         cards = []
@@ -369,6 +438,29 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
                 f'<section class="schedule-season"><div class="schedule-season-head"><h2>Season {season}</h2><span>{len(season_cards)} {count_label}</span></div><div class="schedule-grid">{"".join(card_html)}</div></section>'
             )
         body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>{html.escape(kind)}</p><div class="archive-meta"><span>{len(cards)} episode schedules</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-seasons">{"".join(season_sections)}</div></div>'''
+        write_route(route, page(label, body, active))
+        return
+    if label == "One-Liners":
+        items = oneliner_items(document)
+        season_sections = []
+        for season in sorted({item["season"] for item in items}):
+            season_items = sorted(
+                (item for item in items if item["season"] == season),
+                key=lambda item: (item["episode"], item["rank"], item["source_index"]),
+            )
+            cards = []
+            for item in season_items:
+                meta = f'{item["code"]} · {item["document_type"]}'
+                cards.append(
+                    f'<a class="schedule-card oneliner-card" href="{html.escape(item["url"], quote=True)}" target="_blank" rel="noopener" aria-label="Open {html.escape(item["title"], quote=True)} {html.escape(item["document_type"], quote=True)}">'
+                    f'<span class="schedule-image oneliner-preview"><iframe src="{html.escape(item["preview"], quote=True)}" loading="lazy" tabindex="-1" aria-hidden="true" title=""></iframe></span>'
+                    f'<span class="schedule-body"><span class="schedule-code">{html.escape(meta)}</span><h2>{html.escape(item["title"])}</h2><span class="schedule-arrow" aria-hidden="true">↗</span></span></a>'
+                )
+            count_label = "document" if len(season_items) == 1 else "documents"
+            season_sections.append(
+                f'<section class="schedule-season"><div class="schedule-season-head"><h2>Season {season}</h2><span>{len(season_items)} {count_label}</span></div><div class="schedule-grid">{"".join(cards)}</div></section>'
+            )
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Production breakdowns that reduce each scene to its essential details.</p><div class="archive-meta"><span>{len(items)} production documents</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-seasons">{"".join(season_sections)}</div></div>'''
         write_route(route, page(label, body, active))
         return
     media = []

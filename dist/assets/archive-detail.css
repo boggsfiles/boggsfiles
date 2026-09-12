@@ -44,6 +44,8 @@
 .schedule-code{display:block;color:#737d76;font-size:.56rem;line-height:1.5;letter-spacing:.1em;text-transform:uppercase}
 .schedule-body h2{font:400 1.45rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:8px 0 0}
 .schedule-arrow{position:absolute;right:2px;top:14px;color:var(--red);font-size:1rem}
+.oneliner-preview{position:relative;background:#111614}
+.oneliner-preview iframe{display:block;width:100%;height:100%;border:0;pointer-events:none;background:#111614}
 .season-rail{position:fixed;inset:0;z-index:8;pointer-events:none}
 .season-rail .season-link{position:absolute;top:50%;transform:translateY(-50%);width:74px;min-height:106px;padding:15px 8px;border:1px solid #59625c;background:#0b0e0df2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#c7ccc8;pointer-events:auto;transition:background .2s,border-color .2s,color .2s}
 .season-rail .season-link:hover{background:#171d1a;border-color:var(--paper);color:#fff}
