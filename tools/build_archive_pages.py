@@ -340,6 +340,41 @@ def oneliner_items(document):
     return items
 
 
+def comic_items(document):
+    items = []
+    for source_index, embed in enumerate(document.xpath('//*[@data-embed-open-url]'), 1):
+        url = embed.get("data-embed-open-url") or ""
+        filename = clean(embed.getparent().text_content()) or f"Comic {source_index:03d}.pdf"
+        filename = re.sub(r"\.pdf$", "", filename, flags=re.I)
+        simple_number = re.fullmatch(r"\d+", filename)
+        named_number = re.fullmatch(r"Comics?\s+(\d+)", filename, flags=re.I)
+        volume = re.fullmatch(r"Vol\s+(\d+)", filename, flags=re.I)
+        if simple_number:
+            label = f"#{int(filename):03d}"
+            special = False
+        elif named_number:
+            label = f"#{int(named_number.group(1)):03d}"
+            special = False
+        elif volume:
+            label = f"Volume {volume.group(1)}"
+            special = True
+        else:
+            label = filename.replace("-", " ")
+            label = re.sub(r"\s*\([^)]*(?:digital|empire|knight|quinch|2018)[^)]*\)", "", label, flags=re.I)
+            label = re.sub(r"\s+", " ", label).strip()
+            label = label.replace("The X Files ", "").replace("X Files ", "")
+            label = label.replace("topps Vol1 ", "Topps Vol. 1 · ")
+            special = True
+        items.append({
+            "source_index": source_index,
+            "filename": filename,
+            "label": label,
+            "special": special,
+            "url": url,
+        })
+    return items
+
+
 def resource_links(document, page_label: str):
     resources = []
     for embed in document.xpath('//*[@data-embed-open-url]'):
@@ -475,24 +510,26 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         write_route(route, page(label, body, active))
         return
     if label == "Comics":
+        items = comic_items(document)
         shelves = []
-        for start in range(0, len(resources), 25):
-            group = resources[start:start + 25]
+        for start in range(0, len(items), 25):
+            group = items[start:start + 25]
             issue_links = []
-            for offset, (_, url) in enumerate(group, start + 1):
+            for item in group:
+                special_class = " special" if item["special"] else ""
                 issue_links.append(
-                    f'<a class="comic-issue" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener" '
-                    f'aria-label="Open comic {offset:03d}"><span>Comic</span><b>#{offset:03d}</b><i aria-hidden="true">↗</i></a>'
+                    f'<a class="comic-issue{special_class}" href="{html.escape(item["url"], quote=True)}" target="_blank" rel="noopener" '
+                    f'aria-label="Open {html.escape(item["filename"], quote=True)}"><span>Comic file {item["source_index"]:03d}</span>'
+                    f'<b>{html.escape(item["label"])}</b><i aria-hidden="true">↗</i></a>'
                 )
-            first = start + 1
-            last = start + len(group)
             count_label = "comic" if len(group) == 1 else "comics"
+            shelf_number = start // 25 + 1
             shelves.append(
-                f'<details class="comic-shelf"><summary><span><b>Files {first:03d}—{last:03d}</b>'
+                f'<details class="comic-shelf"><summary><span><b>Archive shelf {shelf_number:02d}</b>'
                 f'<small>{len(group)} {count_label}</small></span><i aria-hidden="true">+</i></summary>'
                 f'<div class="comic-grid">{"".join(issue_links)}</div></details>'
             )
-        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Cases and stories preserved from The X-Files print archive.</p><div class="archive-meta"><span>{len(resources)} comic files</span><span>Original scans</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<section class="comic-browser" aria-label="Comic archive"><div class="comic-browser-head"><div><span>Browse the collection</span><h2>Choose an archive range</h2></div><p>Open a range to select an individual comic.</p></div>{"".join(shelves)}</section></div>'''
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Cases and stories preserved from The X-Files print archive.</p><div class="archive-meta"><span>{len(items)} comic files</span><span>Original scans</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<section class="comic-browser" aria-label="Comic archive"><div class="comic-browser-head"><div><span>Browse the collection</span><h2>Choose an archive shelf</h2></div><p>Each card now uses the source file’s actual issue number or title.</p></div>{"".join(shelves)}</section></div>'''
         write_route(route, page(label, body, active))
         return
     media = []
