@@ -209,6 +209,16 @@ def media_items(document):
 
 def resource_links(document, page_label: str):
     resources = []
+    for embed in document.xpath('//*[@data-embed-open-url]'):
+        url = embed.get("data-embed-open-url") or ""
+        labels = embed.xpath('.//span[contains(@class,"pB4Yfc")]/text() | .//*[@aria-label]/@aria-label')
+        label = clean(labels[0]) if labels else ""
+        if label.startswith("Drive, "):
+            label = label[7:]
+        if page_label == "X-Files Call Sheets":
+            label = label.removesuffix(".pdf").replace("CAll Sheet", "Call Sheet")
+        if label and url.startswith("http"):
+            resources.append((label, url))
     for anchor in document.xpath('//a[@href]'):
         url = anchor.get("href") or ""
         label = clean(anchor.text_content())
@@ -233,8 +243,15 @@ def resource_links(document, page_label: str):
 def build_detail(label: str, route: str, legacy_path: str, active: str, kind: str):
     document, opener, page_url = fetch(legacy_path)
     frames, images = media_items(document)
-    paragraphs = descriptive_text(document)
     resources = resource_links(document, label)
+    paragraphs = descriptive_text(document)
+    if label == "X-Files Call Sheets":
+        file_labels = [name.removesuffix(".pdf") for name, _ in resources]
+        paragraphs = [
+            text for text in paragraphs
+            if not text.startswith("Here you can study scripts")
+            and not any(name.startswith(text + " Call Sheet") for name in file_labels)
+        ]
     copy = "".join(f'<p class="detail-copy">{html.escape(text)}</p>' for text in paragraphs)
     media = []
     for src in frames:
