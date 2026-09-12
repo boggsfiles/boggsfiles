@@ -165,7 +165,39 @@ def script_cards(document) -> list[dict]:
         title = paragraphs[0] if paragraphs else "Archived Script"
         cards.append({"title": title, "image": last_image, "links": draft_links})
         last_image = ""
-    return cards
+    # The legacy archive sometimes exposes the same Drive file twice: once as
+    # an unlabeled embed and again as a descriptive text link. Collapse those
+    # into one destination while retaining the most useful label.
+    def destination_key(url: str) -> str:
+        drive_id = re.search(r"(?:/d/|[?&]id=)([A-Za-z0-9_-]+)", url)
+        return drive_id.group(1) if drive_id else url
+
+    def label_score(label: str):
+        normalized = clean(label).lower()
+        generic = normalized in {"open file", "view", "download", "archive file"}
+        return (not generic, len(normalized))
+
+    preferred_labels = {}
+    for card in cards:
+        for label, url in card["links"]:
+            key = destination_key(url)
+            current = preferred_labels.get(key)
+            if current is None or label_score(label) > label_score(current):
+                preferred_labels[key] = label
+
+    seen = set()
+    deduplicated = []
+    for card in cards:
+        links = []
+        for _, url in card["links"]:
+            key = destination_key(url)
+            if key in seen:
+                continue
+            seen.add(key)
+            links.append((preferred_labels[key], url))
+        if links:
+            deduplicated.append({**card, "links": links})
+    return deduplicated
 
 
 def draft_sort_key(item):
@@ -225,6 +257,8 @@ def season_navigation(season: int) -> str:
 def build_script_page(label: str, slug: str):
     document, opener, page_url = fetch(f"/x-files-scripts-by-season/{slug}")
     cards = script_cards(document)
+    if len(cards) == 1 and cards[0]["title"] == "Archived Script":
+        cards[0]["title"] = label
     cards_html = []
     for index, card in enumerate(cards, 1):
         local_image = save_image(opener, page_url, card["image"], f"scripts-{slug}-{index:02d}") if card["image"] else ""
