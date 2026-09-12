@@ -46,6 +46,27 @@
 .schedule-arrow{position:absolute;right:2px;top:14px;color:var(--red);font-size:1rem}
 .oneliner-preview{position:relative;background:#111614}
 .oneliner-preview iframe{display:block;width:100%;height:100%;border:0;pointer-events:none;background:#111614}
+.comic-browser{margin-top:46px;border:1px solid var(--line);background:#0c100e}
+.comic-browser-head{display:flex;align-items:end;justify-content:space-between;gap:28px;padding:30px 32px;border-bottom:1px solid var(--line)}
+.comic-browser-head span{color:var(--red);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
+.comic-browser-head h2{font:400 2.25rem/1 var(--display);letter-spacing:.03em;text-transform:uppercase;margin:9px 0 0}
+.comic-browser-head p{max-width:340px;margin:0;color:#89928b;font-size:.72rem;line-height:1.6}
+.comic-shelf{border-bottom:1px solid var(--line)}
+.comic-shelf:last-child{border-bottom:0}
+.comic-shelf summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 32px;transition:background .2s,color .2s}
+.comic-shelf summary::-webkit-details-marker{display:none}
+.comic-shelf summary:hover,.comic-shelf summary:focus-visible{background:#151b18;color:#fff}
+.comic-shelf summary span{display:flex;align-items:baseline;gap:22px}
+.comic-shelf summary b{font:400 1.45rem var(--display);letter-spacing:.07em;text-transform:uppercase}
+.comic-shelf summary small{color:#7e8881;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
+.comic-shelf summary>i{color:var(--red);font-style:normal;font-size:1.35rem;transition:transform .2s}
+.comic-shelf[open] summary>i{transform:rotate(45deg)}
+.comic-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;padding:1px 0 0;background:var(--line);border-top:1px solid var(--line)}
+.comic-issue{position:relative;min-height:116px;padding:21px;background:#101512;display:flex;flex-direction:column;justify-content:space-between;transition:background .2s,color .2s}
+.comic-issue:hover,.comic-issue:focus-visible{background:#e6e3d9;color:#121512}
+.comic-issue span{color:#7d8780;font-size:.57rem;letter-spacing:.16em;text-transform:uppercase}
+.comic-issue b{font:400 1.65rem var(--display);letter-spacing:.06em}
+.comic-issue i{position:absolute;right:18px;top:17px;color:var(--red);font-style:normal}
 .season-rail{position:fixed;inset:0;z-index:8;pointer-events:none}
 .season-rail .season-link{position:absolute;top:50%;transform:translateY(-50%);width:74px;min-height:106px;padding:15px 8px;border:1px solid #59625c;background:#0b0e0df2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;color:#c7ccc8;pointer-events:auto;transition:background .2s,border-color .2s,color .2s}
 .season-rail .season-link:hover{background:#171d1a;border-color:var(--paper);color:#fff}
@@ -56,5 +77,7 @@
 @media(max-width:1380px){.season-rail{display:none}.season-nav-bottom{display:flex;justify-content:center;gap:12px;margin:-34px auto 76px;padding:0 24px}.season-nav-bottom .season-link{min-width:150px;padding:13px 18px;border:1px solid #59625c;display:flex;align-items:center;justify-content:center;gap:12px;background:#0d110f}.season-nav-bottom .season-prev{margin-right:auto}.season-nav-bottom .season-next{margin-left:auto}}
 @media(min-width:1101px) and (hover:hover) and (pointer:fine){.season-rail{display:block}.season-nav-bottom{display:none}.season-rail .season-link{width:62px;min-height:100px;padding:13px 6px}.season-rail .season-prev{left:6px}.season-rail .season-next{right:6px}}
 @media(max-width:1050px){.schedule-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1){grid-column:span 2}.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:2/span 2}}
+@media(max-width:900px){.comic-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:1100px){.archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:span 2}.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:2/span 2}}
 @media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1),.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1),.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:auto}.episode{min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}.season-nav-bottom{margin:-38px auto 58px;padding:0 14px}.season-nav-bottom .season-link{min-width:0;flex:1;padding:12px 10px}.season-link b{font-size:.55rem}}
+@media(max-width:620px){.comic-browser{margin-top:34px}.comic-browser-head{display:block;padding:25px 22px}.comic-browser-head p{margin-top:14px}.comic-shelf summary{padding:21px 22px}.comic-shelf summary span{display:block}.comic-shelf summary small{display:block;margin-top:5px}.comic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.comic-issue{min-height:104px;padding:18px}}

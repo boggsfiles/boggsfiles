@@ -134,7 +134,7 @@ def nav(active: str = "") -> str:
 
 
 def page(title: str, body: str, active: str) -> str:
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — BoggsFiles</title><meta name="description" content="Browse {html.escape(title)} in the BoggsFiles X-Files archive."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css"></head><body>{nav(active)}<main>{body}</main><footer><div class="shell footer-row">BOGGSFILES · THE X-FILES ARCHIVE <span><a href="/">Home</a> · <a href="/{active.lower().replace(' ', '-')}/">Back to {html.escape(active)}</a></span></div></footer></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Boggsfiles</title><meta name="description" content="Browse {html.escape(title)} in the Boggsfiles X-Files archive."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css"></head><body>{nav(active)}<main>{body}</main><footer><div class="shell footer-row">BOGGSFILES · THE X-FILES ARCHIVE <span><a href="/">Home</a> · <a href="/{active.lower().replace(' ', '-')}/">Back to {html.escape(active)}</a></span></div></footer></body></html>'''
 
 
 def write_route(route: str, content: str):
@@ -406,6 +406,17 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             "cast, and key requirements. These documents helped the production team plan "
             "and track an episode before and during filming."
         ]
+    if label == "William B. Davis Interview":
+        paragraphs = [
+            "In 2023, Boggsfiles was so honored to be asked to interview the one and only "
+            "William B. Davis with Streamily! Take a listen to what Boggsfiles learned about "
+            "William B. Davis below!"
+        ]
+    if label == "Comics":
+        paragraphs = [
+            "This comic book collection was gifted to Boggsfiles by an anonymous fan, "
+            "and Boggsfiles is truly grateful."
+        ]
     copy = "".join(f'<p class="detail-copy">{html.escape(text)}</p>' for text in paragraphs)
     if label == "X-Files Shooting Schedules":
         cards = []
@@ -461,6 +472,27 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
                 f'<section class="schedule-season"><div class="schedule-season-head"><h2>Season {season}</h2><span>{len(season_items)} {count_label}</span></div><div class="schedule-grid">{"".join(cards)}</div></section>'
             )
         body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Production breakdowns that reduce each scene to its essential details.</p><div class="archive-meta"><span>{len(items)} production documents</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-seasons">{"".join(season_sections)}</div></div>'''
+        write_route(route, page(label, body, active))
+        return
+    if label == "Comics":
+        shelves = []
+        for start in range(0, len(resources), 25):
+            group = resources[start:start + 25]
+            issue_links = []
+            for offset, (_, url) in enumerate(group, start + 1):
+                issue_links.append(
+                    f'<a class="comic-issue" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener" '
+                    f'aria-label="Open comic {offset:03d}"><span>Comic</span><b>#{offset:03d}</b><i aria-hidden="true">↗</i></a>'
+                )
+            first = start + 1
+            last = start + len(group)
+            count_label = "comic" if len(group) == 1 else "comics"
+            shelves.append(
+                f'<details class="comic-shelf"><summary><span><b>Files {first:03d}—{last:03d}</b>'
+                f'<small>{len(group)} {count_label}</small></span><i aria-hidden="true">+</i></summary>'
+                f'<div class="comic-grid">{"".join(issue_links)}</div></details>'
+            )
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Cases and stories preserved from The X-Files print archive.</p><div class="archive-meta"><span>{len(resources)} comic files</span><span>Original scans</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<section class="comic-browser" aria-label="Comic archive"><div class="comic-browser-head"><div><span>Browse the collection</span><h2>Choose an archive range</h2></div><p>Open a range to select an individual comic.</p></div>{"".join(shelves)}</section></div>'''
         write_route(route, page(label, body, active))
         return
     media = []
