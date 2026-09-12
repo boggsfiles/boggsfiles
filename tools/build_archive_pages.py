@@ -301,6 +301,14 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
     frames, images = media_items(document)
     resources = resource_links(document, label)
     paragraphs = descriptive_text(document)
+    if active == "Dailies":
+        paragraphs = [
+            "Dailies are the raw, unedited footage recorded during a day of filming. "
+            "They often include slates, repeated takes, alternate performances, and material "
+            "that never appears in the finished episode. The production team reviewed them "
+            "to evaluate performances, coverage, focus, sound, and continuity before the "
+            "episode was edited."
+        ]
     if label == "X-Files Shooting Schedules":
         paragraphs = [
             text.replace("Shooting Schedule?A shooting", "Shooting Schedule? A shooting")
@@ -336,7 +344,7 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             local_src = save_image(opener, page_url, src, f"{image_key}-{index:02d}")
             media.append(f'<div class="media"><img src="{html.escape(local_src, quote=True)}" loading="lazy" alt="{html.escape(label)} archive image"></div>')
     resource_html = ""
-    if resources:
+    if resources and not (active == "Dailies" and frames):
         rows = "".join(f'<div class="resource"><span>{html.escape(name)}</span><a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Open source ↗</a></div>' for name, url in resources)
         resource_html = f'<div class="resource-list">{rows}</div>'
     media_html = f'<div class="media-grid">{"".join(media)}</div>' if media else ("" if resources else '<div class="empty-note">This archive entry is preserved in the collection. Additional media will be added as it is prepared for the new site.</div>')
