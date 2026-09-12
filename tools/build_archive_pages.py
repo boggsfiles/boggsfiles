@@ -203,6 +203,25 @@ def draft_sort_key(item):
     return (500, label)
 
 
+def season_navigation(season: int) -> str:
+    links = []
+    if season > 1:
+        links.append(
+            f'<a class="season-link season-prev" href="/x-files-scripts-by-season/season-{season - 1}/" '
+            f'aria-label="Go to Season {season - 1}"><span aria-hidden="true">←</span><b>Season {season - 1}</b></a>'
+        )
+    if season < 9:
+        links.append(
+            f'<a class="season-link season-next" href="/x-files-scripts-by-season/season-{season + 1}/" '
+            f'aria-label="Go to Season {season + 1}"><b>Season {season + 1}</b><span aria-hidden="true">→</span></a>'
+        )
+    items = "".join(links)
+    return (
+        f'<nav class="season-rail" aria-label="Season navigation">{items}</nav>'
+        f'<nav class="season-nav-bottom" aria-label="Season navigation">{items}</nav>'
+    )
+
+
 def build_script_page(label: str, slug: str):
     document, opener, page_url = fetch(f"/x-files-scripts-by-season/{slug}")
     cards = script_cards(document)
@@ -215,7 +234,9 @@ def build_script_page(label: str, slug: str):
             for name, url in sorted(card["links"], key=draft_sort_key)
         )
         cards_html.append(f'<article class="episode"><div class="episode-image"{image_style}></div><div class="episode-body"><span class="episode-no">File {index:02d}</span><h2>{html.escape(card["title"])}</h2><div class="drafts">{buttons}</div></div></article>')
-    body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Original drafts and production revisions, preserved together for close reading and comparison.</p><div class="archive-meta"><span>{len(cards)} episode files</span><span>Original scans</span><span>Opens in Google Drive</span></div></div></section><div class="shell"><div class="archive-grid">{"".join(cards_html)}</div></div>'''
+    season_match = re.fullmatch(r"season-(\d+)", slug)
+    season_nav = season_navigation(int(season_match.group(1))) if season_match else ""
+    body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Original drafts and production revisions, preserved together for close reading and comparison.</p><div class="archive-meta"><span>{len(cards)} episode files</span><span>Original scans</span><span>Opens in Google Drive</span></div></div></section><div class="shell"><div class="archive-grid">{"".join(cards_html)}</div></div>{season_nav}'''
     write_route(f"x-files-scripts-by-season/{slug}", page(label, body, "Scripts"))
 
 
