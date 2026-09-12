@@ -245,6 +245,12 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
     frames, images = media_items(document)
     resources = resource_links(document, label)
     paragraphs = descriptive_text(document)
+    if label == "X-Files Shooting Schedules":
+        paragraphs = [
+            text.replace("Shooting Schedule?A shooting", "Shooting Schedule? A shooting")
+            for text in paragraphs
+            if not text.startswith("Here you can study scripts")
+        ]
     if label == "X-Files Call Sheets":
         file_labels = [name.removesuffix(".pdf") for name, _ in resources]
         paragraphs = [
@@ -253,6 +259,18 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             and not any(name.startswith(text + " Call Sheet") for name in file_labels)
         ]
     copy = "".join(f'<p class="detail-copy">{html.escape(text)}</p>' for text in paragraphs)
+    if label == "X-Files Shooting Schedules":
+        cards = []
+        for index, (src, resource) in enumerate(zip(images, resources), 1):
+            name, url = resource
+            name = re.sub(r"(?<=[a-z])Shooting", " Shooting", name)
+            local_src = save_image(opener, page_url, src, f"misc-memorabilia-x-files-shooting-schedules-{index:02d}")
+            cards.append(
+                f'<article class="schedule-card"><a class="schedule-image" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener"><img src="{html.escape(local_src, quote=True)}" loading="lazy" alt="{html.escape(name)}"></a><div class="schedule-body"><h2>{html.escape(name)}</h2><a class="schedule-open" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">Open schedule ↗</a></div></article>'
+            )
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>{html.escape(kind)}</p><div class="archive-meta"><span>{len(cards)} episode schedules</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-grid">{"".join(cards)}</div></div>'''
+        write_route(route, page(label, body, active))
+        return
     media = []
     for src in frames:
         media.append(f'<div class="media"><iframe src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
