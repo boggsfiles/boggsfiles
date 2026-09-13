@@ -65,6 +65,9 @@ def fetch(path: str):
 def save_image(opener, page_url: str, source_url: str, key: str) -> str:
     photo_dir = DIST / "assets" / "archive-photos"
     photo_dir.mkdir(parents=True, exist_ok=True)
+    # Keep the higher-resolution replacement instead of the legacy thumbnail.
+    if key == "scripts-season-7-22" and (photo_dir / "requiem-hd.jpg").exists():
+        return "/assets/archive-photos/requiem-hd.jpg"
     destination = photo_dir / f"{key}.webp"
     if not destination.exists():
         for attempt in range(10):
@@ -111,6 +114,17 @@ def clean(value: str) -> str:
     return " ".join(value.split())
 
 
+def clean_script_label(value: str) -> str:
+    """Separate revision words accidentally joined by legacy text spans."""
+    value = clean(value)
+    value = re.sub(
+        r"\b(white|blue|pink|yellow|green|goldenrod|gold|salmon)(?=production|draft|pages?\b)",
+        r"\1 ", value, flags=re.I,
+    )
+    value = re.sub(r"\b(production)(?=draft\b)", r"\1 ", value, flags=re.I)
+    return re.sub(r"\b([1-9])x(\d{2})\b", r"\1X\2", value)
+
+
 def unique(values):
     seen = set()
     for value in values:
@@ -147,7 +161,7 @@ def script_cards(document) -> list[dict]:
             last_image = images[0]
         draft_links = []
         for anchor in block.xpath('.//a[contains(@href,"drive.google.com")]'):
-            label = clean(anchor.text_content()) or "Open file"
+            label = clean_script_label(anchor.text_content()) or "Open file"
             draft_links.append((label, anchor.get("href")))
         if not draft_links:
             continue
@@ -191,7 +205,7 @@ def script_cards(document) -> list[dict]:
 
 
 def script_card_title(card: dict) -> str:
-    title = clean(card["title"])
+    title = clean_script_label(card["title"])
     if title == "Archived Script" and card["links"]:
         title = clean(card["links"][0][0])
     # Revision details belong on the file button; the card heading should
