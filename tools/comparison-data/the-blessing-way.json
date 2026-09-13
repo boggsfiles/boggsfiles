@@ -1,0 +1,190 @@
+{
+  "title": "The Blessing Way",
+  "slug": "the-blessing-way",
+  "code": "3X01",
+  "season": 3,
+  "episode": 1,
+  "summary": "Two passes, nine days apart. Both on file. The Blue carries 52 revision marks across 60 pages — a light pass, and almost all of it cosmetic. The single largest change to this episode was not made on either of them.",
+  "credits": "Written by Chris Carter · Directed by R. W. Goodwin",
+  "airdate": "September 22, 1995",
+  "description": "Two archived drafts reveal the missing conversation between Scully, her mother, and Melissa—and the joke rewritten before air.",
+  "category_descriptions": {
+    "cut": "Four pages survived both drafts intact and never reached the screen.",
+    "changed": "Rewritten dialogue and performance changes between the drafts and the aired episode.",
+    "shippy": "They are never in the same room, and the one scene that said so was cut."
+  },
+  "drafts": [
+    {
+      "date": "July 3, 1995",
+      "revision": "White",
+      "format": "Full · 58 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1KCsmz-Sl4u5L2cF_9TYFguQEL6m6GTiV/view?usp=sharing"
+    },
+    {
+      "date": "July 12, 1995",
+      "revision": "Blue",
+      "format": "Full · 60 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1DBkfYkzU51ZAulf86AEUYp4DYKRNAdyf/view?usp=share_link"
+    }
+  ],
+  "findings": [
+    {
+      "id": "scene-16",
+      "category": "cut",
+      "title": "Scene 16 — the whole of it",
+      "meta": "White pp.11–14 · Blue, unchanged · never aired",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "Scully arrives at her mother’s house in the middle of the night, having walked there, and breaks down. On the disc that scene ends where you would expect a scene to end:"
+        },
+        {
+          "kind": "panel",
+          "text": "“What is it, Dana?” / “I’ve made a terrible mistake. Dad would be so ashamed of me.” — sobbing — then Albert Hosteen’s narration, New Mexico, morning.",
+          "label": "AIRED — 08:06–08:22",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "In both drafts it does not end there. Scene 15 gives way to Scene 16, a long sequence in the living room afterwards: Scully with her legs up on the couch, her mother talking her down, and then Melissa coming through the front door. It runs from script page 11 to page 14 and it is the only extended conversation Scully has with her family in the episode."
+        },
+        {
+          "kind": "panel",
+          "text": "MRS. SCULLY: How can you fault yourself, Dana? You had to make a choice. I think you did what you felt was right. SCULLY: No. I did what I felt was right for my partner. MRS. SCULLY: But wouldn’t Mulder have done the same for you? SCULLY: Yes. But that’s just it. I behaved exactly how Mulder would have behaved. I lied and countermanded my superiors because the pursuit of the truth seemed more important.",
+          "label": "WHITE (07/03) & BLUE (07/12), SC.16 — NOT ON THE DISC",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "Her mother’s answer to it is the thing the broadcast most conspicuously loses — a direct reply to “Dad would be so ashamed of me,” which on air is left standing:"
+        },
+        {
+          "kind": "panel",
+          "text": "MRS. SCULLY: Dana. If you’re really worried about what Dad would have thought of you — I think he would have seen there was no right choice. Or no wrong one. (Dana does not appear heartened by this.) I think he would have been proud and supportive of his daughter either way.",
+          "label": "WHITE & BLUE, SC.16 — NOT ON THE DISC",
+          "tone": "script",
+          "paired": false
+        }
+      ]
+    },
+    {
+      "id": "melissa-and-dana",
+      "category": "cut",
+      "title": "Melissa, alive, arguing with her sister about Mulder",
+      "meta": "same scene · both drafts · never aired",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The back half of Scene 16 is a two-hander between Dana and Melissa, and it is the episode’s only real Mulder-and-Scully material — conducted, since he is nine hundred miles away in a hogan, entirely in the third person."
+        },
+        {
+          "kind": "panel",
+          "text": "MELISSA: Something’s happened to the man you work with, hasn’t it? … I’ve been feeling it for the past two days. SCULLY: Melissa… Mulder is very likely dead. MELISSA: You don’t believe that. SCULLY: No, I do believe it, Melissa. MELISSA: Well, I’m getting strong feelings otherwise. SCULLY: I wish it weren’t true. MELISSA: No, it’s deeper than that. You’re radiating, Dana. You have a connection with him that is still strong and powerful.",
+          "label": "WHITE & BLUE, SC.16 — NOT ON THE DISC",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "It escalates into a real fight. Scully gets off the sofa “angered by her sister’s loopy insensitivity”; Melissa tells her to get a second opinion; Scully tells her this is not a medical condition but a statement of fact, and that based on the empirical evidence — “which I happen to have gathered” — it looks like a pretty damn sure bet that “you’re whistling in the graveyard.” Melissa answers that if she could see through her guilt and anger she might look past her Western empiricism. And Scully ends it:"
+        },
+        {
+          "kind": "panel",
+          "text": "SCULLY: Thank you. I’ll make sure to consult my tarot cards when I’m out looking for a new job. (beat) I’ve lost someone, Melissa. I’d like to deal with it in my own way.",
+          "label": "WHITE & BLUE, SC.16, LAST LINES — NOT ON THE DISC",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "Both drafts hold it word for word; the Blue does not mark a single line of it. Whatever removed it happened after 12 July, on a stage or in an edit suite, and it took with it the only occasion in the episode on which anyone says out loud what Mulder is to her. Melissa is shot in Scully’s apartment at the end of “The Blessing Way”; her death follows in “Paper Clip.”"
+        }
+      ]
+    },
+    {
+      "id": "bionic-woman",
+      "category": "changed",
+      "title": "Scully’s bionic woman joke, and the laugh that outlived it",
+      "meta": "White p.33 · replaced in the Blue (marked X)",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The implant is out of her neck and under a microscope. In the White, the doctor has the punchline:"
+        },
+        {
+          "kind": "panel",
+          "text": "SCULLY: It looks like a computer chip. MD: Stop me before I make a bionic woman joke…",
+          "label": "WHITE (07/03)",
+          "tone": "script",
+          "paired": true
+        },
+        {
+          "kind": "panel",
+          "text": "SCULLY: It looks like a computer chip. MD: (baffled) That’s what it looks like.",
+          "label": "BLUE (07/12) (MARKED X) & AIRED — 24:44",
+          "tone": "script",
+          "paired": true
+        },
+        {
+          "kind": "body",
+          "text": "The Blue replaces the joke with bafflement and the replacement aired verbatim. What makes it worth recording is the line underneath, which the Blue did not touch. Both drafts, before and after, close the scene with the same stage direction:"
+        },
+        {
+          "kind": "panel",
+          "text": "Scully can’t quite find a laugh in this. And off her nervousness, we:",
+          "label": "WHITE & BLUE, IDENTICAL",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "In the White she can’t find a laugh because there is a joke and she doesn’t want it. In the Blue the joke is gone and the direction stays where it was, describing a reaction to something no longer on the page."
+        }
+      ]
+    },
+    {
+      "id": "deep-throat",
+      "category": "changed",
+      "title": "Deep Throat’s speech, delivered slightly off the page",
+      "meta": "both drafts · aired 15:38–16:02",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The monologue in Mulder’s vision is otherwise word-perfect across White, Blue and broadcast — the absence of time, the perpetual night, the dull clarity of the dead. Three small things move on the day. “There is truth here, old friend” becomes “There is truth, you know, old friend.” “Fight the monsters without and within ” is reversed to “ within and without.” And the last sentence in both drafts — “You have but precious time” — is not spoken; the scene goes straight from the monsters into the hissing and the clamour of the boxcar. These are performance-level differences rather than script changes, and are recorded as such."
+        }
+      ]
+    },
+    {
+      "id": "separate-stories",
+      "category": "shippy",
+      "title": "Mulder and Scully share no scene in this episode",
+      "meta": "whole episode · both drafts & aired",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "This is true of the drafts and true of the broadcast. Mulder spends the hour in the quarry, the boxcar and the hogan; Scully spends it in Washington. He has one line audible to anyone but himself — the dream voice at 31:49, “I have been on the bridge that spans two worlds” — and it is spoken to no one. There is no frame in the episode with both of them in it."
+        },
+        {
+          "kind": "body",
+          "text": "Which is why the loss of Scene 16 lands where it does. It was the compensating scene: the place where the script let someone else say the thing out loud, so that the separation would register as a separation. Without it the episode simply runs two stories in parallel, and the closest it comes to the subject is Scully telling a room full of her superiors that she did what she did for her partner — a line that is also in Scene 16, and also cut."
+        }
+      ]
+    },
+    {
+      "id": "on-the-record",
+      "category": "shippy",
+      "title": "What she does say, on the record",
+      "meta": "both drafts · aired 06:14",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The OPR hearing survives intact from White to broadcast. Told that the men who went after Mulder aren’t meant to be found, Scully answers her own Assistant Director in front of a table of senior agents: “With all due respect, sir… I think you overestimate your position in the chain of command.” She is at that moment suspended without pay. It is the same sentence in both drafts, unmarked."
+        }
+      ]
+    }
+  ]
+}
