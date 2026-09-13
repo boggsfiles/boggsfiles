@@ -8,6 +8,7 @@ import time
 import urllib.request
 import urllib.error
 from pathlib import Path
+from transcript_header import ASSETS, site_header
 
 from lxml import html as lhtml
 from PIL import Image
@@ -119,22 +120,11 @@ def unique(values):
 
 
 def nav(active: str = "") -> str:
-    links = [
-        ("Archive", "/archive/"), ("Scripts", "/scripts/"),
-        ("Transcripts", "/transcripts/"),
-        ("Script vs. Screen", "/#script-vs-screen"),
-        ("Dailies", "/dailies/"), ("Memorabilia", "/memorabilia/"),
-        ("Resources", "/resources/"),
-    ]
-    items = "".join(
-        f'<a{(" class=\"active\"" if label == active else "")} href="{url}">{label}</a>'
-        for label, url in links
-    )
-    return f'<header><nav class="shell"><a class="brand" href="/">BOGGS<span class="x">X</span>FILES</a><div class="links">{items}</div></nav></header>'
+    return site_header(active)
 
 
 def page(title: str, body: str, active: str) -> str:
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Boggsfiles</title><meta name="description" content="Browse {html.escape(title)} in the Boggsfiles X-Files archive."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css"></head><body>{nav(active)}<main>{body}</main><footer><div class="shell footer-row">BOGGSFILES · THE X-FILES ARCHIVE <span><a href="/">Home</a> · <a href="/{active.lower().replace(' ', '-')}/">Back to {html.escape(active)}</a></span></div></footer></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Boggsfiles</title><meta name="description" content="Browse {html.escape(title)} in the Boggsfiles X-Files archive."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css">{ASSETS}</head><body>{nav(active)}<main>{body}</main><footer><div class="shell footer-row">BOGGSFILES · THE X-FILES ARCHIVE <span><a href="/">Home</a> · <a href="/{active.lower().replace(' ', '-')}/">Back to {html.escape(active)}</a></span></div></footer></body></html>'''
 
 
 def write_route(route: str, content: str):
