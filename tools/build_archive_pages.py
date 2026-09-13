@@ -289,7 +289,8 @@ def build_script_page(label: str, slug: str):
             f'<a class="draft" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(name)} ↗</a>'
             for name, url in sorted(card["links"], key=draft_sort_key)
         )
-        cards_html.append(f'<article class="episode"><div class="episode-image"{image_style}></div><div class="episode-body"><span class="episode-no">File {index:02d}</span><h2>{html.escape(card["title"])}</h2><div class="drafts">{buttons}</div></div></article>')
+        anchor = ' id="bad-blood" style="scroll-margin-top:112px"' if slug == "season-5" and card["title"] == "Bad Blood 5X12" else ""
+        cards_html.append(f'<article class="episode"{anchor}><div class="episode-image"{image_style}></div><div class="episode-body"><span class="episode-no">File {index:02d}</span><h2>{html.escape(card["title"])}</h2><div class="drafts">{buttons}</div></div></article>')
     season_match = re.fullmatch(r"season-(\d+)", slug)
     season_nav = season_navigation(int(season_match.group(1))) if season_match else ""
     body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Original drafts and production revisions, preserved together for close reading and comparison.</p><div class="archive-meta"><span>{len(cards)} episode files</span><span>Original scans</span><span>Opens in Google Drive</span></div></div></section><div class="shell"><div class="archive-grid">{"".join(cards_html)}</div></div>{season_nav}'''
