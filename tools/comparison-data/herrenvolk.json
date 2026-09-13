@@ -223,5 +223,34 @@
     }
   ],
   "takeaway": "Three drafts, and the writing between them is all in one direction: toward precision. The Pink of 18 July replaces “protein code” with “protein amino acid sequence code,” “a single, unique protein” with “a single, non-random protein pattern,” and moves the late-night briefing into “the middle of a workday” — and every one of those revisions is what aired. The Green of 21 July adds the green ooze that bubbles from the Bounty Hunter’s wound and then sucks itself back in, the first time the script commits to what he is. The cutting then goes the other way, toward silence. Mulder loses his joke about a match, his joke about wandering, his last plea in the parking lot; the Bounty Hunter loses his description of Jeremiah as a trickster; Skinner loses his sarcasm. What is left is an episode in which the people who know things say less, and the man who wants to know says less still.",
-  "methodology": "Aired-side wording is sourced from the closed captions on the Region 1 DVD (Season 4, Disc 1), quoted with timecodes and checked line by line against the episode. Three of the four passes named on the title page are on file: the Blue-Full of 8 July, eleven Pink pages of 18 July covering scenes 43–49, and the Green-Full of 21 July. The White of 5 July is not held. Page headers were read individually; the Green’s title page was OCR’d twice to confirm its date. Every absence above was confirmed by reading the scene in the Green and the surrounding seconds of the caption track, not by a count. The search ignores punctuation, line breaks and revision marks and treats spaces as optional between characters. Two findings are limited by what captions can carry: the honeycomb sequence is reported as silent on the evidence of an 86-second gap between captions, and Pendrell’s chair gesture is reported as cut on the evidence that its line is absent — the gesture itself cannot be checked from a caption track."
+  "methodology": "Aired-side wording is sourced from the closed captions on the Region 1 DVD (Season 4, Disc 1), quoted with timecodes and checked line by line against the episode. Three of the four passes named on the title page are on file: the Blue-Full of 8 July, eleven Pink pages of 18 July covering scenes 43–49, and the Green-Full of 21 July. The White of 5 July is not held. Page headers were read individually; the Green’s title page was OCR’d twice to confirm its date. Every absence above was confirmed by reading the scene in the Green and the surrounding seconds of the caption track, not by a count. The search ignores punctuation, line breaks and revision marks and treats spaces as optional between characters. Two findings are limited by what captions can carry: the honeycomb sequence is reported as silent on the evidence of an 86-second gap between captions, and Pendrell’s chair gesture is reported as cut on the evidence that its line is absent — the gesture itself cannot be checked from a caption track.",
+  "drafts": [
+    {
+      "date": "July 5, 1996",
+      "revision": "White",
+      "format": "Production draft",
+      "status": "Not held"
+    },
+    {
+      "date": "July 8, 1996",
+      "revision": "Blue",
+      "format": "Full · 57 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1728lCUgXE8mVpvSJY1l0yDl4cr7T9Zbt/view?usp=sharing"
+    },
+    {
+      "date": "July 18, 1996",
+      "revision": "Pink",
+      "format": "11 revision pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1MNu43uuD4Ja45bITpwFVRFh6eVUG7vg3/view?usp=share_link"
+    },
+    {
+      "date": "July 21, 1996",
+      "revision": "Green",
+      "format": "Full · 57 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/17tscOl5lLnvELPTEowCux_CS5_7fQcgl/view?usp=share_link"
+    }
+  ]
 }
