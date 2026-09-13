@@ -200,6 +200,22 @@ def script_cards(document) -> list[dict]:
     return deduplicated
 
 
+def script_card_title(card: dict) -> str:
+    title = clean(card["title"])
+    if title == "Archived Script" and card["links"]:
+        title = clean(card["links"][0][0])
+    # Revision details belong on the file button; the card heading should
+    # consistently identify the episode itself.
+    title = re.sub(
+        r"\s*\([^)]*(?:white|blue|pink|yellow|green|gold(?:enrod)?|salmon|revision|pages?|draft)[^)]*\)\s*$",
+        "",
+        title,
+        flags=re.I,
+    )
+    title = re.sub(r"\s+Script$", "", title, flags=re.I)
+    return title or "Script"
+
+
 def draft_sort_key(item):
     label = clean(item[0]).lower()
     if "final" in label:
@@ -257,7 +273,9 @@ def season_navigation(season: int) -> str:
 def build_script_page(label: str, slug: str):
     document, opener, page_url = fetch(f"/x-files-scripts-by-season/{slug}")
     cards = script_cards(document)
-    if len(cards) == 1 and cards[0]["title"] == "Archived Script":
+    for card in cards:
+        card["title"] = script_card_title(card)
+    if len(cards) == 1 and cards[0]["title"] in {"Open file", "Script"}:
         cards[0]["title"] = label
     cards_html = []
     for index, card in enumerate(cards, 1):
@@ -310,6 +328,63 @@ def schedule_details(name: str):
     episode = int(match.group(3))
     code = f"{match.group(1)}{'AB' if match.group(2) else ''}X{match.group(3)}"
     return season, episode, code, match.group(4), match.group(5) or ""
+
+
+CALL_SHEET_EPISODES = {
+    "syzygy": (3, 13, "3X13", "Syzygy"),
+    "the field where i died": (4, 5, "4X05", "The Field Where I Died"),
+    "tunguska": (4, 8, "4X08", "Tunguska"),
+    "terma": (4, 9, "4X09", "Terma"),
+    "leonard betts": (4, 12, "4X12", "Leonard Betts"),
+    "memento mori": (4, 14, "4X14", "Memento Mori"),
+    "kaddish": (4, 15, "4X15", "Kaddish"),
+    "redux i": (5, 2, "5X02", "Redux I"),
+    "redux ii": (5, 3, "5X03", "Redux II"),
+    "detour": (5, 4, "5X04", "Detour"),
+    "christmas carol": (5, 6, "5X06", "Christmas Carol"),
+    "emily": (5, 7, "5X07", "Emily"),
+    "chinga": (5, 10, "5X10", "Chinga"),
+    "bad blood": (5, 12, "5X12", "Bad Blood"),
+    "patient x": (5, 13, "5X13", "Patient X"),
+    "mind's eye": (5, 16, "5X16", "Mind's Eye"),
+    "all souls": (5, 17, "5X17", "All Souls"),
+    "the pine bluff variant": (5, 18, "5X18", "The Pine Bluff Variant"),
+    "folie a deux": (5, 19, "5X19", "Folie a Deux"),
+    "dreamland": (6, 4, "6ABX04", "Dreamland"),
+    "ghosts who stole christmas": (6, 6, "6ABX06", "How the Ghosts Stole Christmas"),
+    "salvage": (8, 9, "8ABX09", "Salvage"),
+}
+
+
+def call_sheet_items(resources):
+    items = []
+    for source_index, (name, url) in enumerate(resources, 1):
+        base = name.removesuffix(".pdf").strip()
+        matched = None
+        for key, episode_data in sorted(CALL_SHEET_EPISODES.items(), key=lambda item: -len(item[0])):
+            if base.lower().startswith(key + " call sheet"):
+                matched = episode_data
+                remainder = base[len(key):].strip()
+                break
+        if not matched:
+            continue
+        season, episode, code, title = matched
+        day_match = re.search(r"Day\s+(\d+)\s+of\s+(\d+)", remainder, re.I)
+        numbered_match = re.search(r"Call Sheet\s+(\d+)$", remainder, re.I)
+        if day_match:
+            day = int(day_match.group(1))
+            display = f"Day {day} of {int(day_match.group(2))}"
+        elif numbered_match:
+            day = int(numbered_match.group(1))
+            display = f"Call Sheet {day}"
+        else:
+            day = 99
+            display = "Call Sheet"
+        items.append({
+            "season": season, "episode": episode, "code": code, "title": title,
+            "day": day, "display": display, "source_index": source_index, "url": url,
+        })
+    return items
 
 
 ONELINER_EPISODES = {
@@ -462,11 +537,10 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             if not text.startswith("Here you can study scripts")
         ]
     if label == "X-Files Call Sheets":
-        file_labels = [name.removesuffix(".pdf") for name, _ in resources]
         paragraphs = [
-            text for text in paragraphs
-            if not text.startswith("Here you can study scripts")
-            and not any(name.startswith(text + " Call Sheet") for name in file_labels)
+            "Call sheets were distributed for each filming day, giving cast and crew the "
+            "day's scenes, locations, reporting times, and production instructions. Some "
+            "of these surviving scans also include maps of the locations used for the episode."
         ]
     if label == "One-Liners":
         paragraphs = [
@@ -518,6 +592,37 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
                 f'<section class="schedule-season"><div class="schedule-season-head"><h2>Season {season}</h2><span>{len(season_cards)} {count_label}</span></div><div class="schedule-grid">{"".join(card_html)}</div></section>'
             )
         body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>{html.escape(kind)}</p><div class="archive-meta"><span>{len(cards)} episode schedules</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<div class="schedule-seasons">{"".join(season_sections)}</div></div>'''
+        write_route(route, page(label, body, active))
+        return
+    if label == "X-Files Call Sheets":
+        items = call_sheet_items(resources)
+        season_sections = []
+        for season in sorted({item["season"] for item in items}):
+            season_items = [item for item in items if item["season"] == season]
+            episode_groups = []
+            for episode in sorted({item["episode"] for item in season_items}):
+                episode_items = sorted(
+                    (item for item in season_items if item["episode"] == episode),
+                    key=lambda item: (item["day"], item["source_index"]),
+                )
+                first = episode_items[0]
+                links = "".join(
+                    f'<a href="{html.escape(item["url"], quote=True)}" target="_blank" rel="noopener">'
+                    f'<span>{html.escape(item["display"])}</span><i aria-hidden="true">↗</i></a>'
+                    for item in episode_items
+                )
+                count_label = "call sheet" if len(episode_items) == 1 else "call sheets"
+                episode_groups.append(
+                    f'<article class="call-episode"><div class="call-episode-head">'
+                    f'<span>{html.escape(first["code"])}</span><small>{len(episode_items)} {count_label}</small></div>'
+                    f'<h2>{html.escape(first["title"])}</h2><div class="call-days">{links}</div></article>'
+                )
+            season_sections.append(
+                f'<section class="call-season"><div class="schedule-season-head"><h2>Season {season}</h2>'
+                f'<span>{len(season_items)} call sheets</span></div><div class="call-grid">{"".join(episode_groups)}</div></section>'
+            )
+        episode_count = len({(item["season"], item["episode"]) for item in items})
+        body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Daily production records from the making of The X-Files.</p><div class="archive-meta"><span>{len(items)} call sheets</span><span>{episode_count} episodes</span><span>Seasons {min(item["season"] for item in items)}–{max(item["season"] for item in items)}</span></div></div></section><div class="shell detail-wrap">{copy}<div class="call-seasons">{"".join(season_sections)}</div></div>'''
         write_route(route, page(label, body, active))
         return
     if label == "One-Liners":
