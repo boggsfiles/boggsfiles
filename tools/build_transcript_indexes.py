@@ -125,9 +125,17 @@ def season_landing() -> str:
 
 def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:
     cards=[]
-    for number,(slug,title,code,description) in enumerate(episodes,1):
+    display_episodes=list(episodes)
+    if season == 4 and not any(ep[0] == 'leonard-betts' for ep in episodes):
+        display_episodes.append(('leonard-betts', 'Leonard Betts', '4X14', 'Transcript coming soon.'))
+        display_episodes.sort(key=lambda ep: SEASON_4_EPISODE_NUMBERS[ep[0]])
+    for number,(slug,title,code,description) in enumerate(display_episodes,1):
         if season == 4: number = SEASON_4_EPISODE_NUMBERS[slug]
-        cards.append(f'''<a class="episode-card" href="/transcripts/season-{season}/{slug}/"><img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {number:02d} · {code}</span><h2>{title}</h2><p>{description}</p><b>Read transcript →</b></div></a>''')
+        pending = (slug == 'leonard-betts' and not any(ep[0] == slug for ep in episodes))
+        opening = '<article class="episode-card pending-transcript">' if pending else f'<a class="episode-card" href="/transcripts/season-{season}/{slug}/">'
+        closing = '</article>' if pending else '</a>'
+        cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {number:02d} · {code}</span><h2>{title}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
+
     years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1995–1996"
     intro = "The beginning of the X-Files—and the beginning of Mulder and Scully." if season == 1 else "The X-Files is closed, but the search continues as Mulder and Scully are pulled back toward the cases that defined them."
     if season in (3,4,5):
