@@ -1,0 +1,30 @@
+{
+  "speakers": {
+    "175": "Leonard Betts (radio)",
+    "176.0": "Leonard Betts (radio)",
+    "282": "Security Guard",
+    "354-355": "Sports Announcer (television)"
+  },
+  "splits": {
+    "177.0": [
+      {
+        "speaker": "Michelle Wilkes",
+        "text": "LEONARD ?"
+      },
+      {
+        "speaker": "Leonard Betts (radio)",
+        "text": "CONFIRM AND TREAT WITH POINT THREE MILLIGRAMS..."
+      }
+    ],
+    "286.0": [
+      {
+        "speaker": "Ronnie",
+        "text": "GO AHEAD."
+      },
+      {
+        "speaker": "Security Guard",
+        "text": "WE'VE GOT A SITUATION IN THE PARKING LOT."
+      }
+    ]
+  }
+}
