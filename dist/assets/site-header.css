@@ -1,0 +1,15 @@
+/* Homepage branding and navigation, isolated from transcript page styles. */
+header.bf-header{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(232,230,220,.2);background:#0b0e0df2;color:#e8e6dc;font:16px/1.6 'DM Mono',monospace}
+.bf-header .bf-inner{width:min(1240px,calc(100% - 48px));margin:auto;height:92px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.bf-header .bf-brand{font:500 1.45rem 'Oswald',sans-serif;letter-spacing:.16em;color:#e8e6dc;white-space:nowrap;text-decoration:none}
+.bf-header .bf-brand-x{display:inline-block;position:relative;color:#e8e6dc;letter-spacing:0;line-height:1;text-align:center;margin:0 .34em}
+.bf-header .bf-brand-x::after{content:'';position:absolute;width:1.08em;height:1.08em;border:2px solid #b73831;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-12deg)}
+.bf-header nav.bf-navlinks{display:flex;height:auto;min-height:0;gap:28px;align-items:center;justify-content:initial;text-transform:uppercase;font-size:.72rem;letter-spacing:.13em;line-height:1.6}
+.bf-header .bf-navlinks a{color:#e8e6dc;opacity:.72;transition:.2s;text-decoration:none;white-space:nowrap}
+.bf-header .bf-navlinks a:hover,.bf-header .bf-navlinks a:focus,.bf-header .bf-navlinks a[aria-current]{opacity:1;color:white}
+.bf-header .bf-nav-note{font-size:.68rem;letter-spacing:.2em;color:#d6d7cf;white-space:nowrap}
+.bf-header .bf-menu{display:none;border:0;background:none;color:white;font:1.5rem 'DM Mono',monospace;cursor:pointer;padding:8px}
+.search-rail{top:92px}
+@media(max-width:1100px){.bf-header .bf-nav-note{display:none}}
+@media(max-width:900px){.bf-header nav.bf-navlinks{display:none}.bf-header .bf-menu{display:block}.bf-header nav.bf-navlinks.is-open{display:flex;position:absolute;top:100%;left:14px;right:14px;padding:22px;background:#0b0e0d;flex-direction:column;align-items:flex-start;border:1px solid rgba(232,230,220,.2);max-height:calc(100vh - 100px);overflow:auto}}
+@media(max-width:560px){.bf-header .bf-inner{width:calc(100% - 28px);height:72px}.search-rail{top:72px}}

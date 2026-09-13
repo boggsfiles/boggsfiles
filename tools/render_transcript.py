@@ -8,6 +8,7 @@ import html
 import json
 from collections import defaultdict
 from pathlib import Path
+from transcript_header import HEADER, ASSETS
 
 
 def esc(value: object) -> str:
@@ -49,7 +50,7 @@ def render(data: dict) -> str:
                 )
         scene_html.append(
             f'<section class="scene" id="scene-{scene_number}">'
-            f'<header class="scene-head"><span>Scene {scene_number:02d}</span><h2>{esc(location)}</h2></header>'
+            f'{HEADER}'
             f'<div class="scene-dialogue">{"".join(rows)}</div></section>'
         )
 
@@ -65,9 +66,9 @@ def render(data: dict) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/transcript.css">
-</head>
+{ASSETS}</head>
 <body>
-  <header class="site-header"><nav class="shell"><a class="brand" href="/">BOGGS<span class="x">X</span>FILES</a><div class="links"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a class="active" href="/transcripts/">Transcripts</a><a href="/#script-vs-screen">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/memorabilia/">Memorabilia</a><a href="/resources/">Resources</a></div></nav></header>
+  {HEADER}
   <main>
     <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> <a href="/transcripts/season-{season}/">Season {season}</a> <span>/</span> {esc(episode)}</div><div class="hero-grid"><div><div class="eyebrow">Season {season} · Episode {episode_number}</div><h1>{esc(episode)}</h1><p>Character-labelled dialogue prepared from the official DVD subtitle track.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>Original airdate · {esc(airdate)}</small></div></div></div></section>
     <div class="search-rail"><div class="shell search-inner"><label for="transcript-search">Search this transcript</label><div class="search-box"><input id="transcript-search" type="search" placeholder="Search dialogue or character…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div id="search-count" aria-live="polite">{entry_count} dialogue entries</div></div></div>
