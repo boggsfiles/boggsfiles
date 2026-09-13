@@ -7,3 +7,5 @@ User preferences: reports live as text on the site; no revision-report PDF files
 ## Episode photos
 
 For every Script vs. Screen report, choose a different real episode still from the images already used for that episode on the Scripts and Transcripts pages. Prefer Mulder and Scully together in the same shot. If unavailable, choose one of them, then a key important moment from the episode. Compare candidate imagery against both existing cards before selecting. Do not reuse those photos or generate substitute episode imagery.
+
+Exclude Editorial Takeaway sections and their navigation links from all website reports, including when the supplied PDF contains one. Preserve the original source PDF unchanged.
