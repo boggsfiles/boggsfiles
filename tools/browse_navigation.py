@@ -1,6 +1,6 @@
 """Shared previous/next navigation matching the script season arrows."""
 from html import escape
-ASSET = '<link rel="stylesheet" href="/assets/browse-navigation.css?v=2">'
+ASSET = '<link rel="stylesheet" href="/assets/browse-navigation.css?v=3">'
 def navigation(previous=None, following=None, label="Episode navigation"):
     links=[]
     for direction,item in (("prev",previous),("next",following)):
