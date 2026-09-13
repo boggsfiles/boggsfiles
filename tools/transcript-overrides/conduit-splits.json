@@ -1,0 +1,74 @@
+{
+  "66": [
+    {"speaker": "Dana Scully", "text": "OKO-WHAT?"},
+    {"speaker": "Fox Mulder", "text": "BOGEE."}
+  ],
+  "130": [
+    {"speaker": "Fox Mulder", "text": "YOU WANT TO TELL ME ABOUT THEM?"},
+    {"speaker": "Kevin Morris", "text": "NO."}
+  ],
+  "196": [
+    {"speaker": "Fox Mulder", "text": "DO YOU KNOW WHERE WE COULD FIND GREG RANDALL?"},
+    {"speaker": "Pennsylvania Pub Bartender", "text": "WHO'S ASKING?"}
+  ],
+  "221": [
+    {"speaker": "Holtzman", "text": "TELL ME WHERE YOU GOT IT."},
+    {"speaker": "Fox Mulder", "text": "TELL ME WHAT IT IS."}
+  ],
+  "271": [
+    {"speaker": "Dana Scully", "text": "THAT'S FROM THE BRANDENBERG CONCERTOS."},
+    {"speaker": "Leza Atsumi", "text": "BUT THEY'RE JUST FRAGMENTS."}
+  ],
+  "275": [
+    {"speaker": "Fox Mulder", "text": "MRS. MORRIS..."},
+    {"speaker": "Darlene Morris", "text": "I HAVE NOTHING TO SAY TO YOU."}
+  ],
+  "298": [
+    {"speaker": "Dana Scully", "text": "NO."},
+    {"speaker": "Fox Mulder", "text": "OKAY, I ADMIT IT'S NOT MUCH OF AN EXPLANATION..."}
+  ],
+  "378": [
+    {"speaker": "Tessa", "text": "I WASN'T."},
+    {"speaker": "Fox Mulder", "text": "YOU SAT THERE AND YOU WAITED."}
+  ],
+  "380": [
+    {"speaker": "Tessa", "text": "NO."},
+    {"speaker": "Fox Mulder", "text": "YOU SNUCK UP FROM BEHIND HIM AND YOU SHOT HIM IN THE BACK."}
+  ],
+  "386": [
+    {"speaker": "Tessa", "text": "I DIDN'T KILL HER!"},
+    {"speaker": "Fox Mulder", "text": "WHERE'S SHE BURIED?"}
+  ],
+  "387": [
+    {"speaker": "Tessa", "text": "I DON'T KNOW!"},
+    {"speaker": "Fox Mulder", "text": "YOU DON'T KNOW WHERE YOU BURIED HER, TESSA?"}
+  ],
+  "393": [
+    {"speaker": "Fox Mulder", "text": "WHICH IS?"},
+    {"speaker": "Dana Scully", "text": "IN ALL LIKELIHOOD, RUBY IS DEAD."}
+  ],
+  "410": [
+    {"speaker": "Dana Scully", "text": "MULDER, WHERE ARE YOU GOING?"},
+    {"speaker": "Fox Mulder", "text": "TO TALK TO THE BOY."}
+  ],
+  "444": [
+    {"speaker": "Fox Mulder", "text": "ARE YOU OKAY?"},
+    {"speaker": "Darlene Morris", "text": "IT'S HERE."}
+  ],
+  "445": [
+    {"speaker": "Darlene Morris", "text": "I SAW IT."},
+    {"speaker": "Fox Mulder", "text": "WHERE'S KEVIN?"}
+  ],
+  "446": [
+    {"speaker": "Darlene Morris", "text": "I COULDN'T KEEP UP WITH HIM."},
+    {"speaker": "Dana Scully", "text": "GO AHEAD."}
+  ],
+  "448": [
+    {"speaker": "Fox Mulder", "text": "ARE YOU OKAY?"},
+    {"speaker": "Kevin Morris", "text": "SHE'S BACK."}
+  ],
+  "536": [
+    {"speaker": "Dr. Heitz Werber", "text": "THE VOICE?"},
+    {"speaker": "Fox Mulder", "text": "THE VOICE IN MY HEAD."}
+  ]
+}

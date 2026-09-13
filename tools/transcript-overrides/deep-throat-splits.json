@@ -1,0 +1,66 @@
+{
+  "3": [
+    {"speaker": "Anita Budahas", "text": "WHAT'S GOING ON?"},
+    {"speaker": "Commanding Officer", "text": "STAND BY. MRS. BUDAHAS?"}
+  ],
+  "28": [
+    {"speaker": "Dana Scully", "text": "WHICH WAS WHAT?"},
+    {"speaker": "Fox Mulder", "text": "THE MILITARY WILL NOT COMMENT"}
+  ],
+  "30": [
+    {"speaker": "Fox Mulder", "text": "THE MILITARY WILL NOT COMMENT AT ALL."},
+    {"speaker": "Dana Scully", "text": "WHAT DO YOU MEAN?"}
+  ],
+  "91": [
+    {"speaker": "Anita Budahas", "text": "YES."},
+    {"speaker": "Fox Mulder", "text": "WE'RE FROM THE F.B.I."}
+  ],
+  "170": [
+    {"speaker": "Fox Mulder", "text": "COLONEL KISSEL?"},
+    {"speaker": "Colonel Kissel", "text": "YES?"}
+  ],
+  "248": [
+    {"speaker": "Fox Mulder", "text": "LET'S GO. YOU'RE COMING WITH US."},
+    {"speaker": "Emil", "text": "WHAT?"}
+  ],
+  "264": [
+    {"speaker": "Walkie-Talkie", "text": "WE'RE OPENING THE CAGE."},
+    {"speaker": "Paul Mossinger", "text": "REDBIRD OUT."}
+  ],
+  "280": [
+    {"speaker": "Dana Scully", "text": "WHAT'S THAT?"},
+    {"speaker": "Fox Mulder", "text": "EVIDENCE."}
+  ],
+  "286": [
+    {"speaker": "Dana Scully", "text": "IF I WERE THAT STONED--"},
+    {"speaker": "Fox Mulder", "text": "IF YOU WERE THAT STONED, WHAT?"}
+  ],
+  "316": [
+    {"speaker": "Dana Scully", "text": "YOU READY FOR THIS?"},
+    {"speaker": "Fox Mulder", "text": "WHAT?"}
+  ],
+  "445": [
+    {"speaker": "Dana Scully", "text": "CAN I USE YOURS TO MAKE A CREDIT CARD CALL, PLEASE?"},
+    {"speaker": "Motel Manager", "text": "SURE THING."}
+  ],
+  "466": [
+    {"speaker": "Emil", "text": "WE TOOK HIM TO THE BASE."},
+    {"speaker": "Ladonna", "text": "WE WAITED FOR HIM."}
+  ],
+  "473": [
+    {"speaker": "Dana Scully", "text": "WHAT ARE WE DOING?"},
+    {"speaker": "Paul Mossinger", "text": "WAITING."}
+  ],
+  "491": [
+    {"speaker": "Fox Mulder", "text": "HI."},
+    {"speaker": "Anita Budahas", "text": "HELLO."}
+  ],
+  "499": [
+    {"speaker": "Fox Mulder", "text": "THEY THREATENED HER--"},
+    {"speaker": "Dana Scully", "text": "THAT'S ENOUGH, MULDER!"}
+  ],
+  "518": [
+    {"speaker": "Deep Throat", "text": "YOUR LIVES MAY BE IN DANGER."},
+    {"speaker": "Fox Mulder", "text": "WHY?"}
+  ]
+}

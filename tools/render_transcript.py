@@ -15,6 +15,15 @@ def esc(value: object) -> str:
 
 
 def render(data: dict) -> str:
+    episode = data["episode"]
+    season = int(data["season"])
+    episode_number = int(data.get("episode_number", 1))
+    production_code = data["production_code"]
+    airdate = data.get("airdate", "September 10, 1993")
+    previous_url = data.get("previous_url", "/transcripts/")
+    previous_title = data.get("previous_title", "Transcript archive")
+    next_url = data.get("next_url", "")
+    next_title = data.get("next_title", "")
     scenes: dict[int, list[dict]] = defaultdict(list)
     for entry in data["entries"]:
         scenes[int(entry["scene"])].append(entry)
@@ -49,8 +58,8 @@ def render(data: dict) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pilot Transcript — Boggsfiles</title>
-  <meta name="description" content="Read the character-labelled transcript for The X-Files Pilot, prepared from the official DVD subtitles.">
+  <title>{esc(episode)} Transcript — Boggsfiles</title>
+  <meta name="description" content="Read the character-labelled transcript for The X-Files {esc(episode)}, prepared from the official DVD subtitles.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -59,14 +68,14 @@ def render(data: dict) -> str:
 <body>
   <header class="site-header"><nav class="shell"><a class="brand" href="/">BOGGS<span class="x">X</span>FILES</a><div class="links"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a class="active" href="/transcripts/">Transcripts</a><a href="/#script-vs-screen">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/memorabilia/">Memorabilia</a><a href="/resources/">Resources</a></div></nav></header>
   <main>
-    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> Season 1 <span>/</span> Pilot</div><div class="hero-grid"><div><div class="eyebrow">Season 1 · Episode 1</div><h1>Pilot</h1><p>Character-labelled dialogue prepared from the official DVD subtitle track.</p></div><div class="episode-file"><span>Production code</span><b>1X79</b><small>Original airdate · September 10, 1993</small></div></div></div></section>
+    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> Season {season} <span>/</span> {esc(episode)}</div><div class="hero-grid"><div><div class="eyebrow">Season {season} · Episode {episode_number}</div><h1>{esc(episode)}</h1><p>Character-labelled dialogue prepared from the official DVD subtitle track.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>Original airdate · {esc(airdate)}</small></div></div></div></section>
     <div class="search-rail"><div class="shell search-inner"><label for="transcript-search">Search this transcript</label><div class="search-box"><input id="transcript-search" type="search" placeholder="Search dialogue or character…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div id="search-count" aria-live="polite">{entry_count} dialogue entries</div></div></div>
     <div class="shell transcript-layout">
-      <aside class="episode-notes"><div class="note-block"><span>File</span><b>01 / 24</b></div><div class="note-block"><span>Source</span><b>Season 1 DVD subtitles</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
+      <aside class="episode-notes"><div class="note-block"><span>File</span><b>{episode_number:02d} / 24</b></div><div class="note-block"><span>Source</span><b>Season {season} DVD subtitles</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
       <div class="transcript-body">{''.join(scene_html)}<div id="no-results" hidden><b>No matching dialogue</b><p>Try another character, phrase, or keyword.</p></div></div>
     </div>
     <section class="method"><div class="shell"><span>About this transcript</span><p>The dialogue comes from the official DVD subtitle track supplied by Boggsfiles. Speaker and scene attribution was cross-checked against character-labelled reference material. Subtitle wording is preserved while capitalization and spacing are standardized for easier reading.</p></div></section>
-    <nav class="episode-nav shell" aria-label="Transcript navigation"><a href="/transcripts/">← Transcript archive</a><span>Next episode coming soon →</span></nav>
+    <nav class="episode-nav shell" aria-label="Transcript navigation"><a href="{esc(previous_url)}">← {esc(previous_title)}</a>{f'<a href="{esc(next_url)}">{esc(next_title)} →</a>' if next_url else '<span>Next episode coming soon →</span>'}</nav>
   </main>
   <footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/transcripts/">All transcripts</a></span></div></footer>
   <script>

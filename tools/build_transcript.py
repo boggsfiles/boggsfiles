@@ -46,7 +46,7 @@ SPEAKER_NAMES = {
     "HEITZ WERBER": "Dr. Heitz Werber",
 }
 
-MANUAL_SPEAKERS = {
+PILOT_MANUAL_SPEAKERS = {
     273: "Dr. Glass",
     274: "Dr. Glass",
     275: "Dr. Glass",
@@ -76,9 +76,20 @@ PROPER_CASE = {
     "peggy": "Peggy", "o'dell": "O'Dell", "theresa": "Theresa", "nemman": "Nemman",
     "oregon": "Oregon", "bellefleur": "Bellefleur", "texas": "Texas",
     "shamrock": "Shamrock", "sturgis": "Sturgis", "south dakota": "South Dakota",
+    "u.p.s.": "UPS", "n.s.a.": "NSA", "d.c.": "D.C.",
+    "robert budahas": "Robert Budahas", "ellens air base": "Ellens Air Base",
+    "idaho": "Idaho", "boise": "Boise", "roswell": "Roswell",
+    "new mexico": "New Mexico", "green bay": "Green Bay", "lombardi": "Lombardi",
+    "tom colton": "Tom Colton", "eugene tooms": "Eugene Tooms",
+    "george usher": "George Usher", "frank briggs": "Frank Briggs",
+    "baltimore": "Baltimore", "maryland": "Maryland", "exeter": "Exeter",
+    "darlene morris": "Darlene Morris", "kevin morris": "Kevin Morris",
+    "ruby morris": "Ruby Morris", "sioux city": "Sioux City", "iowa": "Iowa",
+    "lake okobogee": "Lake Okobogee", "greg randall": "Greg Randall",
+    "leza atsumi": "Leza Atsumi", "brandenburg": "Brandenburg", "nasa": "NASA",
 }
 
-SCENE_LOCATIONS = {
+PILOT_SCENE_LOCATIONS = {
     1: "Collum National Forest · Northwest Oregon",
     2: "FBI Headquarters · Washington, D.C.",
     3: "Airplane to Oregon",
@@ -124,17 +135,56 @@ def normalize(value: str) -> str:
     return " ".join(words)
 
 
-def parse_srt(path: Path) -> list[dict]:
+def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], int]:
+    cue_splits = cue_splits or {}
     raw = path.read_text(encoding="utf-8-sig", errors="replace").replace("\r\n", "\n")
     cues = []
+    source_cues = 0
     for block in re.split(r"\n{2,}", raw.strip()):
         lines = block.splitlines()
         if len(lines) < 3 or "-->" not in lines[1]:
             continue
-        text = clean_markup(" ".join(lines[2:]))
-        if text:
-            cues.append({"number": int(lines[0]), "text": text})
-    return cues
+        source_cues += 1
+        number = int(lines[0])
+        if str(number) in cue_splits:
+            for subindex, segment in enumerate(cue_splits[str(number)]):
+                cues.append({"number": number, "subindex": subindex,
+                             "text": segment["text"],
+                             "explicit_speaker": segment.get("speaker", "")})
+            continue
+        text_lines = [clean_markup(line) for line in lines[2:] if clean_markup(line)]
+        dashed = len([line for line in text_lines if re.match(r"^-\s+", line)]) > 1
+        segments: list[dict] = []
+        current: list[str] = []
+        current_speaker = ""
+        def flush() -> None:
+            nonlocal current, current_speaker
+            if current:
+                segments.append({"text": " ".join(current), "explicit_speaker": current_speaker})
+            current = []
+            current_speaker = ""
+        for line in text_lines:
+            label_only = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]+):$", line)
+            inline_label = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]+):\s+(.+)$", line)
+            if dashed and re.match(r"^-\s+", line):
+                flush()
+                current = [re.sub(r"^-\s+", "", line)]
+            elif label_only and (not label_only.group(1).isupper() or label_only.group(1).upper() in SPEAKER_NAMES):
+                flush()
+                current_speaker = label_only.group(1)
+            elif inline_label and (not inline_label.group(1).isupper() or inline_label.group(1).upper() in SPEAKER_NAMES):
+                flush()
+                current_speaker = inline_label.group(1)
+                current = [inline_label.group(2)]
+            else:
+                current.append(line)
+        flush()
+        for subindex, segment in enumerate(segments):
+            text = segment["text"]
+            if text:
+                cues.append({"number": number, "subindex": subindex, "text": text,
+                             "explicit_speaker": segment["explicit_speaker"]})
+    return cues, source_cues
 
 
 def parse_reference(path: Path) -> list[RefTurn]:
@@ -155,14 +205,18 @@ def parse_reference(path: Path) -> list[RefTurn]:
             continue
         if scene == 0:
             continue
-        if expecting_location and not paragraph.startswith("("):
-            location = paragraph.replace(";", " · ")
-            expecting_location = False
-            continue
+        speaker_match = re.match(r"^([A-Z][A-Z0-9 .'-]+):\s*(.*)$", paragraph)
+        if expecting_location:
+            if paragraph.startswith("(") or speaker_match:
+                location = f"Scene {scene:02d}"
+                expecting_location = False
+            else:
+                location = paragraph.replace(";", " · ")
+                expecting_location = False
+                continue
         if paragraph.startswith("("):
             continue
-        match = re.match(r"^([A]+)", paragraph)
-        match = re.match(r"^([A-Z][A-Z0-9 .'-]+):\s*(.*)$", paragraph)
+        match = speaker_match
         if match:
             current_speaker = SPEAKER_NAMES.get(match.group(1), match.group(1).title())
             dialogue = match.group(2).strip()
@@ -203,6 +257,18 @@ def cue_kind(text: str) -> str:
     return "dialogue"
 
 
+def cue_override(overrides: dict, cue: dict):
+    manual_key = f'{cue["number"]}.{cue.get("subindex", 0)}'
+    for key in (manual_key, str(cue["number"]), cue["number"]):
+        if key in overrides:
+            return overrides[key]
+    for key, value in overrides.items():
+        match = re.fullmatch(r"(\d+)-(\d+)", str(key))
+        if match and int(match.group(1)) <= cue["number"] <= int(match.group(2)):
+            return value
+    return None
+
+
 def readable_case(value: str) -> str:
     value = value.strip()
     if not value:
@@ -218,7 +284,12 @@ def readable_case(value: str) -> str:
     return result
 
 
-def align(cues: list[dict], turns: list[RefTurn]) -> list[dict]:
+def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str] | None = None,
+          scene_locations: dict[int, str] | None = None,
+          scene_overrides: dict[str, dict] | None = None) -> list[dict]:
+    manual_speakers = manual_speakers or {}
+    scene_locations = scene_locations or {}
+    scene_overrides = scene_overrides or {}
     ref_words: list[str] = []
     ref_meta: list[tuple[str, int, str, int]] = []
     for index, turn in enumerate(turns):
@@ -233,12 +304,9 @@ def align(cues: list[dict], turns: list[RefTurn]) -> list[dict]:
     kinds: dict[int, str] = {}
     for index, cue in enumerate(cues):
         kinds[index] = cue_kind(cue["text"])
-        explicit = re.match(r"^(Man|Woman|Mulder|Scully|Doctor|Nurse|Billy|Pilot):\s*(.*)$", cue["text"], re.I)
-        if explicit:
-            explicit_tags[index] = explicit.group(1).lower()
-            display_text[index] = explicit.group(2).strip()
-        else:
-            display_text[index] = cue["text"]
+        if cue.get("explicit_speaker"):
+            explicit_tags[index] = cue["explicit_speaker"]
+        display_text[index] = cue["text"]
         if kinds[index] == "dialogue":
             for word in normalize(display_text[index]).split():
                 cue_words.append(word)
@@ -271,31 +339,24 @@ def align(cues: list[dict], turns: list[RefTurn]) -> list[dict]:
             previous_dialogue = chosen
         else:
             chosen = previous_dialogue or next_dialogue_meta.get(index) or (
-                "Unknown Speaker", 1, "Collum National Forest, Northwest Oregon", 0)
+                "Unknown Speaker", 1, "Scene 01", 0)
             speaker, scene, location, ref_index = chosen
             score = 0.0 if kind == "dialogue" else 1.0
 
         tag = explicit_tags.get(index)
-        if tag == "mulder":
-            speaker = "Fox Mulder"
-        elif tag == "scully":
-            speaker = "Dana Scully"
-        elif tag == "man" and score < 0.5:
-            speaker = "Unidentified Man"
-        elif tag == "woman" and score < 0.5:
-            speaker = "Unidentified Woman"
-        elif tag == "doctor":
-            speaker = "Dr. Glass"
-        elif tag == "nurse":
-            speaker = "Nurse"
-        elif tag == "billy":
-            speaker = "Billy Miles"
-        elif tag == "pilot":
-            speaker = "Airline Pilot"
-        speaker = MANUAL_SPEAKERS.get(cue["number"], speaker)
-        if cue["number"] == 463:
-            scene = 12
-        location = SCENE_LOCATIONS.get(scene, location)
+        if tag:
+            canonical = SPEAKER_NAMES.get(tag.upper(), tag.title())
+            if tag.lower() == "man" and score >= 0.5:
+                canonical = speaker
+            elif tag.lower() == "woman" and score >= 0.5:
+                canonical = speaker
+            speaker = canonical
+        speaker = cue_override(manual_speakers, cue) or speaker
+        scene_override = cue_override(scene_overrides, cue)
+        if scene_override:
+            scene = int(scene_override["scene"])
+            location = scene_override.get("location", f"Scene {scene:02d}")
+        location = scene_locations.get(scene, location)
         if kind == "sound":
             speaker = "Sound"
 
@@ -327,16 +388,54 @@ def main() -> None:
     parser.add_argument("srt", type=Path)
     parser.add_argument("reference", type=Path)
     parser.add_argument("output", type=Path)
+    parser.add_argument("--episode", required=True)
+    parser.add_argument("--code", required=True)
+    parser.add_argument("--season", type=int, required=True)
+    parser.add_argument("--episode-number", type=int, required=True)
+    parser.add_argument("--airdate", required=True)
+    parser.add_argument("--slug", required=True)
+    parser.add_argument("--previous-url", default="/transcripts/")
+    parser.add_argument("--previous-title", default="Transcript archive")
+    parser.add_argument("--next-url", default="")
+    parser.add_argument("--next-title", default="")
+    parser.add_argument("--pilot-overrides", action="store_true")
+    parser.add_argument("--speaker-overrides", type=Path)
+    parser.add_argument("--scene-overrides", type=Path)
+    parser.add_argument("--cue-splits", type=Path)
     args = parser.parse_args()
-    cues = parse_srt(args.srt)
+    cue_splits = {}
+    if args.cue_splits:
+        cue_splits = json.loads(args.cue_splits.read_text(encoding="utf-8"))
+    cues, source_cue_count = parse_srt(args.srt, cue_splits)
     turns = parse_reference(args.reference)
-    aligned = align(cues, turns)
+    speaker_overrides = {}
+    if args.speaker_overrides:
+        speaker_overrides = json.loads(args.speaker_overrides.read_text(encoding="utf-8"))
+    if args.pilot_overrides:
+        speaker_overrides = {**PILOT_MANUAL_SPEAKERS, **speaker_overrides}
+    scene_overrides = {}
+    if args.scene_overrides:
+        scene_overrides = json.loads(args.scene_overrides.read_text(encoding="utf-8"))
+    aligned = align(
+        cues,
+        turns,
+        speaker_overrides,
+        PILOT_SCENE_LOCATIONS if args.pilot_overrides else {},
+        scene_overrides,
+    )
     grouped = group_entries(aligned)
     payload = {
-        "episode": "Pilot",
-        "production_code": "1X79",
-        "season": 1,
-        "source_cues": len(cues),
+        "episode": args.episode,
+        "production_code": args.code,
+        "season": args.season,
+        "episode_number": args.episode_number,
+        "airdate": args.airdate,
+        "slug": args.slug,
+        "previous_url": args.previous_url,
+        "previous_title": args.previous_title,
+        "next_url": args.next_url,
+        "next_title": args.next_title,
+        "source_cues": source_cue_count,
         "entries": grouped,
         "review": {
             "low_confidence_cues": [x for x in aligned if x["kind"] == "dialogue" and x["score"] < 0.58],
