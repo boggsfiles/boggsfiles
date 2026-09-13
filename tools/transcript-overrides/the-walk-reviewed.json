@@ -1,0 +1,89 @@
+{
+  "speakers": {
+    "256": "Nurse",
+    "276": "Leonard Trimble (Rappo)",
+    "307": "Dana Scully"
+  },
+  "splits": {
+    "18.0": [
+      {
+        "speaker": "Firefighter",
+        "text": "WHERE IS HE ?"
+      },
+      {
+        "speaker": "Nurse",
+        "text": "DOWN HERE. HE'S IN THERE."
+      }
+    ],
+    "101.0": [
+      {
+        "speaker": "Leonard Trimble (Rappo)",
+        "text": "WHAT IS IT, ROACH ?"
+      },
+      {
+        "speaker": "Quinton Roach",
+        "text": "WHAT'S WHAT ?"
+      }
+    ],
+    "234.0": [
+      {
+        "speaker": "General Callahan",
+        "text": "IS HE ALL RIGHT ?"
+      },
+      {
+        "speaker": "Frances Callahan",
+        "text": "WELL, HE'S UPSTAIRS IN HIS ROOM, BUT HE'S TERRIFIED."
+      }
+    ],
+    "235.0": [
+      {
+        "speaker": "Frances Callahan",
+        "text": "I'M-- I'M SHAKING MYSELF."
+      },
+      {
+        "speaker": "General Callahan",
+        "text": "FRANCES, THESE PEOPLE ARE WITH THE F.B.I."
+      }
+    ],
+    "237.0": [
+      {
+        "speaker": "Frances Callahan",
+        "text": "WHY ? WHAT'S HAPPENING ?"
+      },
+      {
+        "speaker": "General Callahan",
+        "text": "FRANCES, PLEASE."
+      }
+    ],
+    "291.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "TURN AROUND !"
+      },
+      {
+        "speaker": "Quinton Roach",
+        "text": "OKAY, OKAY, OKAY, OKAY, OKAY, OKAY."
+      }
+    ],
+    "337.0": [
+      {
+        "speaker": "Guard",
+        "text": "HEY, KEEP IT DOWN IN THERE !"
+      },
+      {
+        "speaker": "Quinton Roach",
+        "text": "LET ME OUTTA HERE !"
+      }
+    ],
+    "375.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THAT'S WHY QUINTON CALLED HIMSELF THE MAILMAN."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S INSANE."
+      }
+    ]
+  }
+}

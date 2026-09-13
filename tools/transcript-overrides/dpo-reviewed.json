@@ -1,0 +1,64 @@
+{
+  "speakers": {
+    "28-30": "Music (radio)",
+    "33-39": "Music (radio)",
+    "283-285": "Motorist",
+    "335": "Traffic Officer",
+    "355": "Traffic Officer",
+    "471-472": "Game Voice",
+    "570-573": "Music (television)",
+    "575-580": "Music (television)"
+  },
+  "splits": {
+    "27.0": [
+      {
+        "speaker": "Jack",
+        "text": "I'M NOT WASTING MY TIME."
+      },
+      {
+        "speaker": "Music (radio)",
+        "text": "\u266a RING \u266a"
+      }
+    ],
+    "381.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH. WHAT IS THAT ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S A SEVERE CHEMICAL IMBALANCE..."
+      }
+    ],
+    "392.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "AND JUST WALKED AWAY."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "SO YOU'RE SAYING THAT HE'S SOME KIND OF A LIGHTNING ROD ?"
+      }
+    ],
+    "473.0": [
+      {
+        "speaker": "Game Voice",
+        "text": "FIGHT TWO, READY ? GO !"
+      },
+      {
+        "speaker": "Zero",
+        "text": "DUDE ?"
+      }
+    ],
+    "549.0": [
+      {
+        "speaker": "Darin Oswald",
+        "text": "MRS. KIVEAT !"
+      },
+      {
+        "speaker": "Sheriff Teller",
+        "text": "OKAY, SON, TURN AROUND. LET'S GO."
+      }
+    ]
+  }
+}

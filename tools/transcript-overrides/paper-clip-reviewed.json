@@ -1,0 +1,51 @@
+{
+  "speakers": {
+    "122": "Well-Manicured Man",
+    "123.0": "Well-Manicured Man",
+    "123.1": "Syndicate Elder",
+    "286.0": "Dana Scully",
+    "366-367": "Krycek\u2019s Associate"
+  },
+  "splits": {
+    "73.0": [
+      {
+        "speaker": "Doctor",
+        "text": "ALL RIGHT. WHAT'S HER NAME ?"
+      },
+      {
+        "speaker": "Margaret Scully",
+        "text": "UH, SCULLY. DANA SCULLY."
+      }
+    ],
+    "124.0": [
+      {
+        "speaker": "Well-Manicured Man",
+        "text": "THIS IS YOUR MAN."
+      },
+      {
+        "speaker": "Cigarette-Smoking Man",
+        "text": "THERE WAS A MISTAKE."
+      }
+    ],
+    "219.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S NOT WORKING HERE EITHER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU SURE THAT'S THE RIGHT NUMBER ?"
+      }
+    ],
+    "368.0": [
+      {
+        "speaker": "Alex Krycek",
+        "text": "NO."
+      },
+      {
+        "speaker": "Krycek\u2019s Associate",
+        "text": "ARE YOU SURE ?"
+      }
+    ]
+  }
+}

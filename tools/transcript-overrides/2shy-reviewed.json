@@ -1,0 +1,31 @@
+{
+  "speakers": {
+    "35-36": "Police Officer",
+    "193": "Sex Worker",
+    "209": "Sex Worker",
+    "384": "Police Officer",
+    "394-395": "Police Officer"
+  },
+  "splits": {
+    "3.0": [
+      {
+        "speaker": "Lauren",
+        "text": "REALLY ?"
+      },
+      {
+        "speaker": "Virgil Incanto",
+        "text": "NO, I'M PRETTY MUCH OF A HOMEBODY."
+      }
+    ],
+    "318.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THANKS."
+      },
+      {
+        "speaker": "Detective Cross",
+        "text": "I'M SORRY TO BOTHER YOU."
+      }
+    ]
+  }
+}

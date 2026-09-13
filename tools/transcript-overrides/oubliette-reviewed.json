@@ -1,0 +1,75 @@
+{
+  "speakers": {
+    "35": "Investigator",
+    "39": "Investigator",
+    "179": "Dispatcher (radio)",
+    "180-181": "Paramedic (radio)",
+    "226": "Lucy Householder",
+    "273": "Carl Wade",
+    "279": "Amy Jacobs",
+    "474": "Emergency Radio",
+    "478": "Emergency Radio"
+  },
+  "splits": {
+    "36.0": [
+      {
+        "speaker": "Investigator",
+        "text": "NAMES. OKAY ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M LOOKING FOR THE AGENT IN CHARGE."
+      }
+    ],
+    "77.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, THEY HAVEN'T FOUND HER."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "WELL, WHAT ARE WE DOING HERE ?"
+      }
+    ],
+    "142.0": [
+      {
+        "speaker": "Eubanks",
+        "text": "SHE'S DONE SOME TIME."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THAT DOESN'T SURPRISE ME, GIVEN HER HISTORY."
+      }
+    ],
+    "194.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW'D YOU SCRATCH YOUR FACE ?"
+      },
+      {
+        "speaker": "Lucy Householder",
+        "text": "MUST HAVE DONE IT IN MY SLEEP."
+      }
+    ],
+    "228.0": [
+      {
+        "speaker": "Lucy Householder",
+        "text": "STOP !"
+      },
+      {
+        "speaker": "Nurse",
+        "text": "HOW ABOUT YOU JUST SLIP UNDER THE COVER ?"
+      }
+    ],
+    "243.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "A MAN NAMED CARL WADE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WELL, WHAT HAVE YOU GOT ON HIM ?"
+      }
+    ]
+  }
+}
