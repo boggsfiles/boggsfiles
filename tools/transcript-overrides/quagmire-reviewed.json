@@ -1,0 +1,91 @@
+{
+  "speakers": {
+    "19": "Bailey",
+    "24": "Bailey",
+    "130-131": "Fisherman",
+    "133": "Fisherman",
+    "158": "Ted Bertram",
+    "187": "Dana Scully",
+    "218-219": "Sheriff Lance Hindt",
+    "231-241": "Ansel Bray",
+    "243": "Officer",
+    "257": "Fox Mulder",
+    "259": "Sheriff Lance Hindt",
+    "264": "Dana Scully",
+    "265": "Fox Mulder",
+    "331": "Dana Scully",
+    "512": "Paramedic (radio)"
+  },
+  "splits": {
+    "224.0": [
+      {
+        "speaker": "Sheriff Lance Hindt",
+        "text": "DESIGNATED BOATING AREA."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "BUT 20 FEET FROM SHORE AND TWICE IN ONE DAY ?"
+      }
+    ],
+    "244.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THIS ROLL'S BEEN EXPOSED. CAN YOU GET THAT DEVELOPED ?"
+      },
+      {
+        "speaker": "Officer",
+        "text": "YES, SIR."
+      }
+    ],
+    "255.0": [
+      {
+        "speaker": "Sheriff Lance Hindt",
+        "text": "WHOA !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "SHERIFF !"
+      }
+    ],
+    "281.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "GOOD NIGHT, MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "ALL RIGHT. I'LL SEE YOU IN THE MORNING."
+      }
+    ],
+    "333.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MAYDAY ! MAYDAY !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "SCULLY, LET'S GET OUTTA HERE !"
+      }
+    ],
+    "496.0": [
+      {
+        "speaker": "Dr. Faraday",
+        "text": "I DIDN'T WANT TO BELIEVE YOU."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "I THINK YOU NICKED AN ARTERY."
+      }
+    ],
+    "500.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER, HELP IS COMING."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU TAKE CARE OF HIM, SCULLY."
+      }
+    ]
+  }
+}

@@ -79,6 +79,12 @@ SEASON_3 = [
     ('apocrypha', 'Apocrypha', '3X16', 'The search for Krycek connects a recovered vessel, a stolen tape, and the attack on Skinner.'),
     ('pusher', 'Pusher', '3X17', 'A man who can bend others to his will draws Mulder into a deadly contest.'),
     ('teso-dos-bichos', 'Teso Dos Bichos', '3X18', 'Deaths at a museum follow the arrival of an ancient burial urn from Ecuador.'),
+    ('hell-money', 'Hell Money', '3X19', 'A series of deaths in San Francisco’s Chinatown exposes a deadly underground lottery.'),
+    ('jose-chungs-from-outer-space', 'Jose Chung’s From Outer Space', '3X20', 'A writer interviews Scully about an alien abduction case full of contradictory accounts.'),
+    ('avatar', 'Avatar', '3X21', 'Skinner becomes a murder suspect as a mysterious woman haunts his waking life.'),
+    ('quagmire', 'Quagmire', '3X22', 'Deaths near a Georgia lake send Mulder and Scully searching for a legendary creature.'),
+    ('wetwired', 'Wetwired', '3X23', 'A strange television signal fuels paranoia and threatens Scully’s trust in Mulder.'),
+    ('talitha-cumi', 'Talitha Cumi', '3X24', 'A mysterious healer offers answers as Mulder’s mother falls critically ill.'),
 ]
 
 SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3}

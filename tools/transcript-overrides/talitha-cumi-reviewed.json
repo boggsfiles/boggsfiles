@@ -1,0 +1,81 @@
+{
+  "speakers": {
+    "120.0": "Fox Mulder",
+    "1": "Muntz",
+    "8.1": "Diner Patron",
+    "14.0": "Waitress",
+    "16": "Diner Patron",
+    "29": "Diner Patron",
+    "36": "Police Officer",
+    "41-42": "Police Officer",
+    "75": "Muntz",
+    "192": "Office Worker",
+    "194.1": "Office Worker",
+    "195": "Office Worker",
+    "315-316": "Bystander",
+    "388": "Cigarette-Smoking Man",
+    "390": "X"
+  },
+  "splits": {
+    "176.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S BEEN A VERY LONG DAY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I WANNA GO BACK TO D.C."
+      }
+    ],
+    "180.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "DID THEY GET ANY TAPE OF THE MAN IN QUESTION ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH, AT 8:22."
+      }
+    ],
+    "182.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHOA ! WHAT HAPPENED THERE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH, HE'S GONE."
+      }
+    ],
+    "293.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHERE HAVE YOU BEEN ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "AT OUR SUMMER HOUSE. HE WAS THERE WITH MY MOTHER."
+      }
+    ],
+    "379.0": [
+      {
+        "speaker": "Cigarette-Smoking Man",
+        "text": "SHE CONTACTED ME."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU'RE A LIAR !"
+      }
+    ],
+    "391.0": [
+      {
+        "speaker": "X",
+        "text": "DO YOU HAVE IT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YES."
+      }
+    ]
+  }
+}

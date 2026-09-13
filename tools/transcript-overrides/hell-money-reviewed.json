@@ -1,0 +1,27 @@
+{
+  "speakers": {
+    "253": "Dana Scully"
+  },
+  "splits": {
+    "295.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "COULD I SEE HIS CHART ?"
+      },
+      {
+        "speaker": "Lieutenant Neary",
+        "text": "YEAH. HIS CHART ?"
+      }
+    ],
+    "374.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHAT IS THAT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "SOUNDS LIKE IT'S COMING FROM UPSTAIRS."
+      }
+    ]
+  }
+}
