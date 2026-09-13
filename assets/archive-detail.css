@@ -4,7 +4,7 @@
 .archive-hero h1{font:400 clamp(4rem,9vw,8rem)/.84 var(--display);text-transform:uppercase;letter-spacing:-.03em;margin:26px 0 20px}
 .archive-hero p{max-width:760px;color:#aeb5af;margin:0}
 .archive-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:32px;color:#7f8982;text-transform:uppercase;font-size:.63rem;letter-spacing:.15em}
-.archive-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:var(--ink);border:1px solid var(--line);margin:58px 0 90px}
+.archive-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:22px;row-gap:28px;background:transparent;border:0;margin:58px 0 90px}
 .episode{grid-column:span 2;min-height:410px;background:#0d110f;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid var(--line)}
 .archive-grid>.episode:last-child:nth-child(3n+1){grid-column:3/span 2}
 .archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:2/span 2}
