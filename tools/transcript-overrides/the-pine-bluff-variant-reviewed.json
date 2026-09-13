@@ -1,0 +1,35 @@
+{
+  "speakers": {
+    "15": "Men (surveillance recording)",
+    "17": "Walter Skinner",
+    "21": "Jacob Haley",
+    "23.0": "Jacob Haley",
+    "134": "Moviegoer",
+    "135": "Moviegoer",
+    "174": "Man in movie",
+    "176": "Man in movie",
+    "443": "Bank Customer"
+  },
+  "splits": {
+    "46.0": [
+      {
+        "speaker": "Walter Skinner",
+        "text": "WE NEED A DOCTOR !"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "WHERE'S MULDER ?"
+      }
+    ],
+    "172.0": [
+      {
+        "speaker": "Man in movie",
+        "text": "[ Movie: Man ] TRUST ME, GUYS."
+      },
+      {
+        "speaker": "Teen 1",
+        "text": "SHH."
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "speakers": {
+    "100": "Fox Mulder"
+  },
+  "splits": {
+    "223.0": [
+      {
+        "speaker": "Melvin Frohike",
+        "text": "OKAY, HANG ON. I'M COMING !"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "SOMEBODY GONNA LET ME IN ?"
+      }
+    ]
+  }
+}

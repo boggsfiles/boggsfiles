@@ -1,0 +1,18 @@
+{
+  "speakers": {
+    "454": "Voice on television",
+    "485": "Walter Skinner"
+  },
+  "splits": {
+    "487.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "GET OUT OF THE WAY ! GET OUT OF HERE ! NO !"
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "STOP IT !"
+      }
+    ]
+  }
+}
