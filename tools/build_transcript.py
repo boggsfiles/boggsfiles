@@ -109,6 +109,20 @@ SPEAKER_NAMES = {
     "FLORIDA": "Florida Mission Control",
     "ALBUQUERQUE": "Albuquerque Ground Control",
     "SOME GUY": "Mission Control Staffer",
+    "LULU": "Lula",
+    "BIBLE COP": "Undercover Officer",
+    "JOE CRANDELL": "Joe Crandall",
+    "PURDUE": "Reggie Purdue",
+    "BARNETT": "John Barnett",
+    "MULDER ON RECORDER": "Fox Mulder (recorded)",
+    "JOHN BARNETT ON RECORDER": "John Barnett (recorded)",
+    "SCULLY ON MACHINE": "Dana Scully (recorded)",
+    "MARGARET SCULLY ON MACHINE": "Margaret Scully (recorded)",
+    "KATHY ON MACHINE": "Kathy (recorded)",
+    "HARTLEY": "Reverend Hartley",
+    "DANIELS": "Sheriff Daniels",
+    "LILLIAN": "Lillian Daniels",
+    "TSKANY": "Sheriff Tskany",
 }
 
 PILOT_MANUAL_SPEAKERS = {
@@ -246,6 +260,10 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
         flush()
         for subindex, segment in enumerate(segments):
             text = segment["text"]
+            # Some Season 1 DVD subtitle tracks end with a disc-authoring credit
+            # after the episode itself. It is not part of the aired transcript.
+            if normalize(text) == "i made this":
+                continue
             if text:
                 cues.append({"number": number, "subindex": subindex, "text": text,
                              "explicit_speaker": segment["explicit_speaker"]})
