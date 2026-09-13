@@ -1,0 +1,33 @@
+{
+  "speakers": {
+    "22": "Paramedic",
+    "30.0": "Paramedic",
+    "159-171": "Max Fenig (recording)",
+    "175": "Mike Millar",
+    "477-488": "Max Fenig (recording)",
+    "126-127": "Music (recording)",
+    "309": "Music (recording)"
+  },
+  "splits": {
+    "121.0": [
+      {
+        "speaker": "Gardener",
+        "text": "HE'S OVER THERE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THANK YOU."
+      }
+    ],
+    "370.0": [
+      {
+        "speaker": "Airport Passenger",
+        "text": "TELL ME, IS YOUR WIFE GOING TO BE WITH YOU ?"
+      },
+      {
+        "speaker": "Airport Passenger 2",
+        "text": "NO, I'M GOING ALONE."
+      }
+    ]
+  }
+}

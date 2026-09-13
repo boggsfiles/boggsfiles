@@ -1,0 +1,85 @@
+{
+  "speakers": {
+    "4": "Lawyer",
+    "6-11": "Courtroom Voices",
+    "39": "Ed Jerse",
+    "70": "Coworker",
+    "158-160": "Ed Jerse",
+    "192": "Ms. Schilling",
+    "191.1": "Music (television)",
+    "193-195": "Music (television)",
+    "502": "Dana Scully"
+  },
+  "splits": {
+    "17.0": [
+      {
+        "speaker": "Bartender",
+        "text": "HERE."
+      },
+      {
+        "speaker": "Music (radio)",
+        "text": "\u266a TO FIND OUT WHAT THE THING WAS FOR, BEEN READING \u266a"
+      }
+    ],
+    "18.0": [
+      {
+        "speaker": "Music (radio)",
+        "text": "\u266a BUT, MAN, THE TIME CAME TO EXPLORE \u266a"
+      },
+      {
+        "speaker": "Ed Jerse",
+        "text": "THANKS."
+      }
+    ],
+    "71.0": [
+      {
+        "speaker": "Coworker",
+        "text": "ALL RIGHT, THEN I JUST PUNCH IT UP HERE ?"
+      },
+      {
+        "speaker": "Ed Jerse",
+        "text": "SAY IT TO MY FACE."
+      }
+    ],
+    "165.0": [
+      {
+        "speaker": "Music (television)",
+        "text": "\u266a TO PRETEND \u266a"
+      },
+      {
+        "speaker": "Ed Jerse",
+        "text": "KNOCK IT OFF !"
+      }
+    ],
+    "179.0": [
+      {
+        "speaker": "Ed Jerse",
+        "text": "THEY'VE EVEN PROGRAMMED THE TV TO CRITICIZE ME."
+      },
+      {
+        "speaker": "Music (television)",
+        "text": "\u266a FIND MY WAY \u266a"
+      }
+    ],
+    "190.0": [
+      {
+        "speaker": "Music (television)",
+        "text": "I'M NO DIFFERENT FROM ANYBODY ELSE."
+      },
+      {
+        "speaker": "Ms. Schilling",
+        "text": "GET OUT OF MY APARTMENT !"
+      }
+    ],
+    "411.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DANA SCULLY, PLEASE."
+      },
+      {
+        "speaker": "Hotel Receptionist",
+        "text": "THANK YOU. I'LL RING."
+      }
+    ]
+  }
+}

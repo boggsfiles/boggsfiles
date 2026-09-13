@@ -1,0 +1,50 @@
+{
+  "speakers": {
+    "3-5": "Mourners",
+    "130.0": "Derek",
+    "187": "Kenneth Ungar",
+    "372": "Jacob Weiss"
+  },
+  "splits": {
+    "210.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S BEAUTIFUL."
+      },
+      {
+        "speaker": "Ariel Weiss",
+        "text": "MM-HMM."
+      }
+    ],
+    "252.0": [
+      {
+        "speaker": "Ariel Weiss",
+        "text": "I NEED TO SEE HIM."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "ARIEL, I SUGGEST THAT YOU GET HIM AN ATTORNEY."
+      }
+    ],
+    "282.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WELL, WHO ? HIS DAUGHTER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT WAS SOMEBODY BIG ENOUGH AND STRONG ENOUGH TO KNOCK ME DOWN."
+      }
+    ],
+    "420.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WE HAVE TO GO."
+      },
+      {
+        "speaker": "Ariel Weiss",
+        "text": "NO."
+      }
+    ]
+  }
+}

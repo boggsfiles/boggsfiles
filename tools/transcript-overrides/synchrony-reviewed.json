@@ -1,0 +1,53 @@
+{
+  "speakers": {
+    "263": "Medical Technician",
+    "291": "Doctor",
+    "293": "Medical Technician",
+    "306": "Lisa",
+    "309": "Pedestrian",
+    "485": "Doctor",
+    "489.1": "Doctor"
+  },
+  "splits": {
+    "434.0": [
+      {
+        "speaker": "Jason Nichols",
+        "text": "WHAT ARE YOU DOING HERE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'VE ARRANGED FOR YOUR BAIL."
+      }
+    ],
+    "435.0": [
+      {
+        "speaker": "Jason Nichols",
+        "text": "I ASSUMED IT WAS LISA."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO. THAT'S WHY I'M HERE. SOMETHING'S HAPPENED TO HER."
+      }
+    ],
+    "514.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "UH, LET ME GET BACK TO YOU, SCULLY."
+      }
+    ],
+    "564.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WE SHOULD PUT OUT AN A.P.B. ON THE OLD MAN."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WE WON'T FIND HIM."
+      }
+    ]
+  }
+}

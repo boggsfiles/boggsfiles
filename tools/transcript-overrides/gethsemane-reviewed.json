@@ -1,0 +1,32 @@
+{
+  "speakers": {
+    "1-7": "Panelist (television)",
+    "45": "Expedition Members",
+    "71": "Bill Scully Jr.",
+    "77": "Margaret Scully",
+    "80": "Margaret Scully",
+    "255": "Fox Mulder"
+  },
+  "splits": {
+    "68.0": [
+      {
+        "speaker": "Household Staff",
+        "text": "GOOD EVENING. MAY I TAKE YOUR COAT ?"
+      },
+      {
+        "speaker": "Bill Scully Jr.",
+        "text": "THANK YOU."
+      }
+    ],
+    "215.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHY ?"
+      },
+      {
+        "speaker": "Lab Technician",
+        "text": "THERE'S SOME CELLULAR MATERIAL WITHIN THE MATRIX."
+      }
+    ]
+  }
+}

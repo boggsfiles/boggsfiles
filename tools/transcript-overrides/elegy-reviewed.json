@@ -1,0 +1,74 @@
+{
+  "speakers": {
+    "10-12": "Harold",
+    "65": "Dana Scully",
+    "310": "Harold",
+    "341-344": "Harold",
+    "398": "Police Officer",
+    "408": "Harold",
+    "410": "Harold",
+    "416": "Harold"
+  },
+  "splits": {
+    "161.0": [
+      {
+        "speaker": "Staff Member",
+        "text": "HAROLD, DOWN."
+      },
+      {
+        "speaker": "Harold",
+        "text": "NO, NO, NO, NO, PLEASE LEAVE ME ALONE."
+      }
+    ],
+    "162.0": [
+      {
+        "speaker": "Staff Member",
+        "text": "DON'T, HAROLD."
+      },
+      {
+        "speaker": "Harold",
+        "text": "LEAVE ME ALONE ! NO, NO, NO, NO !"
+      }
+    ],
+    "163.0": [
+      {
+        "speaker": "Harold",
+        "text": "NO, NO, NO, NO, NO !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HAROLD, LISTEN TO ME."
+      }
+    ],
+    "270.0": [
+      {
+        "speaker": "Angie Pintero",
+        "text": "HE'S A SWEET KID."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH. YOU KNOW WHERE HE IS NOW ?"
+      }
+    ],
+    "304.0": [
+      {
+        "speaker": "Harold",
+        "text": "EIGHTY, NINETY-TWO, NINETY-NINE, ONE-OH-EIGHT."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MRS. SCHIPIRO."
+      }
+    ],
+    "417.0": [
+      {
+        "speaker": "Nurse Innes",
+        "text": "WHY DON'T YOU LET ME SIT WITH HIM FOR A BIT ?"
+      },
+      {
+        "speaker": "Alpert",
+        "text": "OKAY, SURE."
+      }
+    ]
+  }
+}

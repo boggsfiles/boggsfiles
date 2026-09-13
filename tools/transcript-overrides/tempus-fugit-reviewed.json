@@ -1,0 +1,37 @@
+{
+  "speakers": {
+    "442.0": "Bartender"
+  },
+  "splits": {
+    "307.0": [
+      {
+        "speaker": "Scott Garrett",
+        "text": "DID YOU FIND HIM, SERGEANT ?"
+      },
+      {
+        "speaker": "Soldier",
+        "text": "HE'S NOT UP THERE."
+      }
+    ],
+    "405.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I'M JUST GONNA GET SOME THINGS."
+      },
+      {
+        "speaker": "Louis Frish",
+        "text": "WHERE THEN ?"
+      }
+    ],
+    "441.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YOU WANT A DRINK ? YOU NEED A DRINK."
+      },
+      {
+        "speaker": "Louis Frish",
+        "text": "YES."
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "speakers": {
+    "23": "Dana Scully",
+    "89.0": "Dana Scully",
+    "365": "Soldier",
+    "366": "Driver",
+    "529": "Nathaniel Teager",
+    "537-539": "Nathaniel Teager"
+  },
+  "splits": {
+    "367.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M AFTER YOU."
+      },
+      {
+        "speaker": "Soldier",
+        "text": "ALL RIGHT, MOVE THEM OUT."
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "speakers": {
+    "15-18": "Sports Announcer (television)",
+    "226": "Postal Worker",
+    "299.1": "Parent",
+    "300.0": "Dr. Linzer",
+    "300.1": "Parent"
+  },
+  "splits": {
+    "3.0": [
+      {
+        "speaker": "Misty Nagata",
+        "text": "YOU HAD ONE 15 MINUTES AGO."
+      },
+      {
+        "speaker": "Jane Brody",
+        "text": "FORTY-FIVE MINUTES."
+      }
+    ],
+    "27.0": [
+      {
+        "speaker": "Walter Skinner",
+        "text": "SPECIAL AGENT FOX MULDER."
+      },
+      {
+        "speaker": "Officer Robbins",
+        "text": "WORKIN' THE LATE SHIFT, AGENT MULDER ?"
+      }
+    ],
+    "49.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I WAS TRYIN' TO REACH YOU. THINK YOUR PHONE'S OFF THE HOOK."
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "WELL, I NEEDED SOME SLEEP."
+      }
+    ],
+    "301.0": [
+      {
+        "speaker": "Walter Skinner",
+        "text": "DR. LINZER ? MY NAME'S WALTER SKINNER."
+      },
+      {
+        "speaker": "Dr. Linzer",
+        "text": "ALL RIGHT, THANK YOU."
+      }
+    ],
+    "304.0": [
+      {
+        "speaker": "Dr. Linzer",
+        "text": "I'M RIGHT IN THE MIDDLE OF IT."
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "IF YOU'VE BEEN TREATING THESE CHILDREN FOR BEE STINGS,"
+      }
+    ]
+  }
+}

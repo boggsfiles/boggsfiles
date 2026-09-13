@@ -1,0 +1,64 @@
+{
+  "speakers": {
+    "1": "Nurse",
+    "22": "Operating Room Nurse",
+    "27": "Amanda",
+    "271": "Mrs. Niemann",
+    "274": "Eddie Van Blundht (as Fred Niemann)",
+    "276-277": "Eddie Van Blundht (as Fred Niemann)",
+    "331.1": "Fox Mulder",
+    "368": "Eddie Van Blundht (as Mulder)"
+  },
+  "splits": {
+    "33.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "CHILDREN BORN WITH VESTIGIAL TAILS DON'T INTEREST YOU ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "CODAL APPENDAGES."
+      }
+    ],
+    "111.0": [
+      {
+        "speaker": "Mrs. Niemann",
+        "text": "JUST TELL HIM WE'RE GONNA SUE."
+      },
+      {
+        "speaker": "Fred Niemann",
+        "text": "AH, YOU TOO, HUH ?"
+      }
+    ],
+    "293.0": [
+      {
+        "speaker": "Fred Niemann",
+        "text": "HONEY, WHAT DO YOU MEAN I WENT INTO THE BATHROOM ?"
+      },
+      {
+        "speaker": "Mrs. Niemann",
+        "text": "SHH, COME HERE."
+      }
+    ],
+    "373.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M HERE TO SEE AMANDA NELLIGAN."
+      },
+      {
+        "speaker": "Nurse",
+        "text": "JUST DOWN THE HALL THERE."
+      }
+    ],
+    "411.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I'M ON MY WAY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "GOOD."
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "speakers": {
+    "8": "Teena Mulder (memory)",
+    "451.1": "Young Fox Mulder (memory)",
+    "463": "Police Officer",
+    "498": "Young Fox Mulder (memory)"
+  },
+  "splits": {
+    "443.0": [
+      {
+        "speaker": "Dr. Goldstein",
+        "text": "A slight electrical stimulation."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "You triggered my memory."
+      }
+    ]
+  }
+}
