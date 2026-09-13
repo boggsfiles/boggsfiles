@@ -87,7 +87,9 @@ SEASON_3 = [
     ('talitha-cumi', 'Talitha Cumi', '3X24', 'A mysterious healer offers answers as Mulder’s mother falls critically ill.'),
 ]
 
-SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3}
+SEASON_4 = [('herrenvolk', 'Herrenvolk', '4X01', 'A mysterious healer leads Mulder toward a hidden operation as Scully searches for answers.'), ('home', 'Home', '4X03', 'An isolated family conceals a horrifying secret in a small Pennsylvania town.'), ('teliko', 'Teliko', '4X04', 'A series of disappearances draws the agents toward a suspect with an unusual condition.'), ('unruhe', 'Unruhe', '4X02', 'Distorted photographs offer clues to a kidnapper’s terrifying delusions.'), ('the-field-where-i-died', 'The Field Where I Died', '4X05', 'An investigation into a religious compound stirs memories of possible past lives.'), ('sanguinarium', 'Sanguinarium', '4X06', 'Strange deaths at a hospital lead the agents to suspect a sinister influence.'), ('musings-of-a-cigarette-smoking-man', 'Musings of a Cigarette-Smoking Man', '4X07', 'Frohike recounts the possible hidden history of the Cigarette-Smoking Man.'), ('tunguska', 'Tunguska', '4X09', 'A diplomatic courier’s mysterious cargo sends Mulder and Krycek to Russia.'), ('terma', 'Terma', '4X10', 'Scully faces a Senate inquiry while Mulder tries to escape a secret experiment.'), ('paper-hearts', 'Paper Hearts', '4X08', 'A disturbing dream draws Mulder back to a convicted child killer and his victims.')]
+
+SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4}
 
 HEAD = '''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -103,8 +105,8 @@ def season_landing() -> str:
     for season in range(1,10):
         live=season in SEASONS
         count=len(SEASONS.get(season, []))
-        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "little-green-men"
-        image_ext="jpg" if season == 3 else "webp"
+        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "little-green-men"
+        image_ext="jpg" if season >= 3 else "webp"
         cards.append(f'''<a class="season-card {'live' if live else 'soon'}" href="/transcripts/season-{season}/">
           <div class="season-visual"><span>{season:02d}</span>{f'<img src="/assets/transcript-stills/{image}.{image_ext}" alt="Scene from Season {season}">' if live else ''}</div>
           <div class="season-copy"><div><span class="eyebrow">{f'{count} transcripts live' if live else 'Collection pending'}</span><h2>Season {season}</h2></div><b>{'Explore season →' if live else 'Coming soon →'}</b></div></a>''')
@@ -117,12 +119,12 @@ def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:
     cards=[]
     for number,(slug,title,code,description) in enumerate(episodes,1):
         cards.append(f'''<a class="episode-card" href="/transcripts/season-{season}/{slug}/"><img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {number:02d} · {code}</span><h2>{title}</h2><p>{description}</p><b>Read transcript →</b></div></a>''')
-    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1995–1996"
+    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1995–1996"
     intro = "The beginning of the X-Files—and the beginning of Mulder and Scully." if season == 1 else "The X-Files is closed, but the search continues as Mulder and Scully are pulled back toward the cases that defined them."
-    if season == 3:
+    if season in (3,4):
         intro = "Mulder and Scully pursue the conspiracy and investigate a new collection of unexplained cases."
     total = 25 if season == 2 else 24
-    source_index = "first-season-index.html" if season == 1 else "second-season-index.html" if season == 2 else "third-season-index.html"
+    source_index = "first-season-index.html" if season == 1 else "second-season-index.html" if season == 2 else "fourth-season-index.html" if season == 4 else "third-season-index.html"
     return f'''<!doctype html><html lang="en"><head><title>Season {season} Transcripts — Boggsfiles</title><meta name="description" content="Browse character-labelled transcripts for The X-Files Season {season}.">{HEAD}<style>{BASE}
     .episodes{{padding:72px 0 0}}.season-head{{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}}.season-head h2{{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}}.season-head>span{{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}}.episode-grid{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}}.episode-card{{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}}.episode-card:hover{{background:#141b18}}.episode-card img{{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}}.episode-card:hover img{{filter:saturate(.95) brightness(.9)}}.episode-copy{{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:290px}}.episode-copy>span{{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}}.episode-copy h2{{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}}.episode-copy p{{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}}.episode-copy b{{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}}.source-note{{color:#747e77;font-size:.55rem;margin-top:22px;text-align:right}}.source-note a{{text-decoration:underline;text-underline-offset:3px}}@media(max-width:1160px){{.episode-grid{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:650px){{.episode-grid{{grid-template-columns:1fr}}.episode-copy{{min-height:240px}}.season-head{{align-items:start;flex-direction:column;gap:18px}}}}
     </style>{ASSETS}</head><body>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> &nbsp;/&nbsp; Season {season}</div><div class="eyebrow">{years}</div><h1>Season {season}</h1><p>{intro} Read each episode without timestamps, with dialogue attributed to its speaker and divided into searchable scenes.</p><div class="summary"><div class="stat"><b>{len(episodes)}</b><span>Transcripts live</span></div><div class="stat"><b>{total}</b><span>Episodes total</span></div><div class="stat"><b>{season}X</b><span>Production files</span></div></div></div></section><section class="episodes"><div class="shell"><div class="season-head"><div><div class="eyebrow">Episode files</div><h2>Read Season {season}</h2></div><span>Broadcast order · Four across</span></div><div class="episode-grid">{''.join(cards)}</div><p class="source-note">Episode screen captures: <a href="https://xfilesarchive.com/{source_index}">The X-Files Archive</a>.</p></div></section></main><footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/transcripts/">All seasons</a></span></div></footer></body></html>'''
@@ -139,7 +141,7 @@ def main() -> None:
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(season_page(season, episodes),encoding="utf-8")
-    for season in range(4,10):
+    for season in range(5,10):
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(placeholder(season),encoding="utf-8")

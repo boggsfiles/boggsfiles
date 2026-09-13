@@ -1,0 +1,22 @@
+{
+  "speakers": {
+    "4-7": "Flight Announcer",
+    "11-12": "Flight Attendant",
+    "151": "Office Assistant",
+    "252": "Motorist",
+    "454": "Emergency Operator",
+    "457.1": "Emergency Operator"
+  },
+  "splits": {
+    "154.0": [
+      {
+        "speaker": "Marita Covarrubias",
+        "text": "WHAT ARE YOU DOING ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M SORRY I FRIGHTENED YOU."
+      }
+    ]
+  }
+}

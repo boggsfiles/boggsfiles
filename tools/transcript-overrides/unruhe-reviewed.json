@@ -1,0 +1,69 @@
+{
+  "speakers": {
+    "79": "Officer",
+    "81": "Officer",
+    "167-170": "Police Officer",
+    "345-348": "Police Officer",
+    "371": "Paramedic",
+    "390": "Dana Scully",
+    "411": "Officer",
+    "465": "Officer",
+    "473": "Gerry Schnauz"
+  },
+  "splits": {
+    "53.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MIND IF I TAKE A LOOK ?"
+      },
+      {
+        "speaker": "Druggist",
+        "text": "PLEASE, HELP YOURSELF."
+      }
+    ],
+    "84.0": [
+      {
+        "speaker": "Inspector Puett",
+        "text": "AGENT."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "INSPECTOR."
+      }
+    ],
+    "185.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "COLLEGE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "\" UNREST,\" HUH ?"
+      }
+    ],
+    "455.0": [
+      {
+        "speaker": "Officer Corning",
+        "text": "WE'VE GOT THE STATE POLICE LOOKING AS FAR--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHY ARE THERE SIX ?"
+      },
+      {
+        "speaker": "Officer Corning",
+        "text": "WHAT ?"
+      }
+    ],
+    "472.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "NO, GERRY, STOP !"
+      },
+      {
+        "speaker": "Gerry Schnauz",
+        "text": "SHH."
+      }
+    ]
+  }
+}

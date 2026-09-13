@@ -1,0 +1,32 @@
+{
+  "speakers": {
+    "12": "Dana Scully",
+    "230.0": "Mother",
+    "230.1": "Caitlin Ross",
+    "231": "Mother",
+    "335.1": "Airline Employee",
+    "370": "Police Officer"
+  },
+  "splits": {
+    "160.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "NAME 'EM."
+      },
+      {
+        "speaker": "John Lee Roche",
+        "text": "WELL, I THINK YOU KNOW ONE OF THEM ALREADY."
+      }
+    ],
+    "401.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "-[ Scully ] IT'S OKAY. I GOT YOU."
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "-[ Skinner ] CALL AN AMBULANCE."
+      }
+    ]
+  }
+}

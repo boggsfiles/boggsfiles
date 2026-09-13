@@ -1,0 +1,15 @@
+{
+  "speakers": {},
+  "splits": {
+    "356.0": [
+      {
+        "speaker": "Mrs. Peacock",
+        "text": "GO AWAY ! GET AWAY !"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "LET'S MOVE THE BED."
+      }
+    ]
+  }
+}

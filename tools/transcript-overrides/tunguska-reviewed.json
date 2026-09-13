@@ -1,0 +1,23 @@
+{
+  "speakers": {
+    "2": "Hearing Clerk",
+    "47.1": "Courier",
+    "92-98": "FBI Tactical Team",
+    "152-156": "Airport Announcer",
+    "200": "Walter Skinner",
+    "330": "Well-Manicured Man",
+    "421": "Senator Sorenson"
+  },
+  "splits": {
+    "278.0": [
+      {
+        "speaker": "Marita Covarrubias",
+        "text": "HOW DID YOU KNOW WHERE I LIVE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "F.B.I. DATABASE."
+      }
+    ]
+  }
+}
