@@ -1,0 +1,53 @@
+{
+  "speakers": {
+    "4": "Fox Mulder",
+    "61": "Fox Mulder",
+    "62": "Walter Skinner",
+    "80.1": "Hospital Announcer",
+    "203.1": "Doctor",
+    "317.1": "Dana Scully",
+    "409": "Television Speaker"
+  },
+  "splits": {
+    "15.0": [
+      {
+        "speaker": "Walter Skinner",
+        "text": "WHERE YOU GOIN' ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I.C.U."
+      }
+    ],
+    "139.0": [
+      {
+        "speaker": "Margaret Scully",
+        "text": "DANA ? HI, FOX."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HI, MRS. SCULLY."
+      }
+    ],
+    "201.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT'S NOT SCIENCE FICTION."
+      },
+      {
+        "speaker": "Bill Scully Jr.",
+        "text": "HE'S NEVER HEARD OF IT !"
+      }
+    ],
+    "310.0": [
+      {
+        "speaker": "Samantha",
+        "text": "I HAVE CHILDREN OF MY OWN."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "DON'T-- NO. NO, PLEASE DON'T GO."
+      }
+    ]
+  }
+}

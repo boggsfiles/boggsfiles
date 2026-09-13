@@ -1,0 +1,18 @@
+{
+  "speakers": {
+    "216": "Dana Scully",
+    "408": "Military Officer"
+  },
+  "splits": {
+    "382.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THINKING ABOUT WHAT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WELL, THE USUAL."
+      }
+    ]
+  }
+}

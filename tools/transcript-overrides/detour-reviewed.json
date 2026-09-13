@@ -1,0 +1,35 @@
+{
+  "speakers": {},
+  "splits": {
+    "39.0": [
+      {
+        "speaker": "Louis",
+        "text": "DAD ?"
+      },
+      {
+        "speaker": "Father",
+        "text": "BO. COME HERE, BO."
+      }
+    ],
+    "350.0": [
+      {
+        "speaker": "Jeff",
+        "text": "I GOT IT ! I GOT IT ON MY SCREEN."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHERE ? WHERE !"
+      }
+    ],
+    "489.0": [
+      {
+        "speaker": "Kinsley",
+        "text": "THAT'S LATIN."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH. IT MEANS, \"INTO DARKNESS.\""
+      }
+    ]
+  }
+}

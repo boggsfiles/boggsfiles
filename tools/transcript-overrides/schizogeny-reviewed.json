@@ -1,0 +1,15 @@
+{
+  "speakers": {},
+  "splits": {
+    "93.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "HOW DO YOU MEAN ?"
+      },
+      {
+        "speaker": "Patti",
+        "text": "THE HAZELNUT TREES ALL GOT A DISEASE."
+      }
+    ]
+  }
+}

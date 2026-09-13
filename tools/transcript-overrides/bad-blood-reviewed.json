@@ -1,0 +1,42 @@
+{
+  "speakers": {
+    "2": "Ronnie Strickland",
+    "13": "Ronnie Strickland",
+    "424-425": "Fox Mulder",
+    "466": "Fox Mulder",
+    "469-471": "Fox Mulder",
+    "490": "Ronnie Strickland"
+  },
+  "splits": {
+    "39.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "RONNIE STRICKLAND WAS A VAMPIRE."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "WHERE'S YOUR PROOF ?"
+      }
+    ],
+    "455.0": [
+      {
+        "speaker": "Ronnie Strickland",
+        "text": "12.98."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'LL GET MY WALLET."
+      }
+    ],
+    "467.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THIS IS SCULLY. HELLO ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "UH-- DE--"
+      }
+    ]
+  }
+}

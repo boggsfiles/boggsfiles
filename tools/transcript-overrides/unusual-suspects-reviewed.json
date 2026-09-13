@@ -1,0 +1,88 @@
+{
+  "speakers": {
+    "20": "Fox Mulder",
+    "33": "Prisoners",
+    "99.0": "Melvin Frohike",
+    "99.1": "Richard Langly",
+    "220.1": "Melvin Frohike",
+    "237.1": "Federal Agent",
+    "242.0": "Federal Agent",
+    "427": "John Fitzgerald Byers",
+    "429": "Clean-Up Team",
+    "430.0": "Lone Gunmen",
+    "430.1": "Fox Mulder",
+    "449": "Lone Gunmen"
+  },
+  "splits": {
+    "17.0": [
+      {
+        "speaker": "Police Officer",
+        "text": "WHO'S HERE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THEY'RE HERE. THEY'RE HERE. THEY'RE HERE. THEY'RE HERE."
+      }
+    ],
+    "22.0": [
+      {
+        "speaker": "Richard Langly",
+        "text": "DON'T SHOOT !"
+      },
+      {
+        "speaker": "Police Officer",
+        "text": "TURN AROUND, SLOWLY !"
+      }
+    ],
+    "147.0": [
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "HOLLY."
+      },
+      {
+        "speaker": "Susanne Modeski",
+        "text": "IT'S NICE TO MEET YOU."
+      }
+    ],
+    "175.0": [
+      {
+        "speaker": "Susanne Modeski",
+        "text": "WHAT DID YOU DO ?"
+      },
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "IT'S A GOVERNMENT SYSTEM."
+      }
+    ],
+    "192.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, THANKS, HANDSOME."
+      },
+      {
+        "speaker": "Melvin Frohike",
+        "text": "AH, A MAN OF DISTINCTION."
+      }
+    ],
+    "213.0": [
+      {
+        "speaker": "Melvin Frohike",
+        "text": "COME ON, F.C.C."
+      },
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "BUT-- UH-- UH--"
+      }
+    ],
+    "236.0": [
+      {
+        "speaker": "Melvin Frohike",
+        "text": "WHAT WAS THAT ALL ABOUT ?"
+      },
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "HER EX-BOYFRIEND IS WITH THE F.B.I. ?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "speakers": {
+    "121": "Female Doctor",
+    "144.1": "Hospital Staff",
+    "210": "Dana Scully",
+    "211-212": "Television Voices",
+    "247": "Hospital Announcer",
+    "297": "Doctor"
+  },
+  "splits": {
+    "198.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "CONDESCENDING LIAR !"
+      },
+      {
+        "speaker": "Dr. Calderon",
+        "text": "HELP !"
+      }
+    ],
+    "350.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "ACTUALLY, I'M LOOKING FOR HIM."
+      },
+      {
+        "speaker": "Anna Fugazzi",
+        "text": "HE'S SUPPOSED TO BE HERE."
+      }
+    ]
+  }
+}

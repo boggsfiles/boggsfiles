@@ -1,0 +1,48 @@
+{
+  "speakers": {
+    "273-276": "Dana Scully (recording)",
+    "393.1": "Shaineh Berkowitz"
+  },
+  "splits": {
+    "31.0": [
+      {
+        "speaker": "Shaineh Berkowitz",
+        "text": "I CAN'T BELIEVE THIS."
+      },
+      {
+        "speaker": "Jerry Springer (television)",
+        "text": "[ Springer ] GOOD FOR YOU."
+      }
+    ],
+    "37.0": [
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a LONELINESS \u266a"
+      },
+      {
+        "speaker": "Shaineh Berkowitz",
+        "text": "HELLO ?"
+      }
+    ],
+    "363.0": [
+      {
+        "speaker": "Film Dialogue (Mask)",
+        "text": "WHAT'S"
+      },
+      {
+        "speaker": "Film Dialogue (Mask)",
+        "text": "HER NAME ? HER NAME IS DIANA."
+      }
+    ],
+    "391.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU MAY HAVE BEEN RIGHT, SCULLY."
+      }
+    ]
+  }
+}

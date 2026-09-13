@@ -1,0 +1,38 @@
+{
+  "speakers": {
+    "405": "Officer",
+    "416": "Hospital Staff"
+  },
+  "splits": {
+    "10.0": [
+      {
+        "speaker": "Therapist",
+        "text": "I'M PLEASED WITH"
+      },
+      {
+        "speaker": "Piero",
+        "text": "YOUR IMPROVEMENT. YOU BACK OFF."
+      }
+    ],
+    "151.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER, HANG UP THE PHONE."
+      },
+      {
+        "speaker": "Robert Modell",
+        "text": "I HAVE SOMETHING I NEED YOU TO HEAR."
+      }
+    ],
+    "378.0": [
+      {
+        "speaker": "Therapist",
+        "text": "IT'S EMPTY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHERE'D YOU LEAVE 'EM ?"
+      }
+    ]
+  }
+}

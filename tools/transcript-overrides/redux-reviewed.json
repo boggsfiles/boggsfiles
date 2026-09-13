@@ -1,0 +1,31 @@
+{
+  "speakers": {
+    "1.0": "Announcer (recap)",
+    "1.1": "Dr. Arlinsky (recap)",
+    "2-3": "Dr. Arlinsky (recap)",
+    "4-5": "Fox Mulder (recap)",
+    "6": "Michael Kritschgau (recap)",
+    "7.1": "Dana Scully (recap)",
+    "8-12": "Dana Scully (recap)",
+    "13": "FBI Official (recap)",
+    "14-15": "Dana Scully (recap)",
+    "16-23": "Television Panelist",
+    "54": "Michael Kritschgau",
+    "59": "Answering Machine",
+    "112": "Detective",
+    "187": "Telephone Operator",
+    "298": "Attendant"
+  },
+  "splits": {
+    "113.0": [
+      {
+        "speaker": "Fox Mulder (voice-over)",
+        "text": "BUT NOW, I ASK HER TO LIE..."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "YEAH."
+      }
+    ]
+  }
+}

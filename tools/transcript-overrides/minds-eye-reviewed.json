@@ -1,0 +1,35 @@
+{
+  "speakers": {},
+  "splits": {
+    "84.0": [
+      {
+        "speaker": "Marty Glenn",
+        "text": "DID I SAY THAT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MM- HMM."
+      }
+    ],
+    "340.0": [
+      {
+        "speaker": "Gotts",
+        "text": "SHE'S NOBODY. SHE KNOWS NOTHIN'."
+      },
+      {
+        "speaker": "Dealer",
+        "text": "UH-HUH. YEAH, RIGHT."
+      }
+    ],
+    "471.0": [
+      {
+        "speaker": "Marty Glenn",
+        "text": "IT'S TOO LATE FOR THAT ANYWAY."
+      },
+      {
+        "speaker": "Detective Pennock",
+        "text": "WHY'S THAT ?"
+      }
+    ]
+  }
+}

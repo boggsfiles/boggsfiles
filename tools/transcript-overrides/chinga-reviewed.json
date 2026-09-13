@@ -1,0 +1,113 @@
+{
+  "speakers": {
+    "139-141": "Music (recording)",
+    "315": "Chief Bonsaint",
+    "344": "Music (recording)",
+    "354-365": "Music (recording)",
+    "397-398": "Music (recording)",
+    "406": "Music (recording)",
+    "408": "Music (recording)"
+  },
+  "splits": {
+    "138.0": [
+      {
+        "speaker": "Buddy",
+        "text": "YOU SHOULDN'T BE ALONE."
+      },
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a YOU PUT YOUR BACKSIDE IN \u266a"
+      }
+    ],
+    "152.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YOU KNOW HER ?"
+      },
+      {
+        "speaker": "Chief Bonsaint",
+        "text": "MELISSA TURNER ?"
+      }
+    ],
+    "269.0": [
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a YOU PUT YOUR LEFT FOOT IN YOU PUT YOUR LEFT FOOT OUT \u266a"
+      },
+      {
+        "speaker": "Jane Froelich",
+        "text": "HELLO ?"
+      }
+    ],
+    "273.0": [
+      {
+        "speaker": "Jane Froelich",
+        "text": "WHO'S THERE ? IS ANYONE THERE ?"
+      },
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a YOU PUT YOUR RIGHT ARM IN \u266a"
+      }
+    ],
+    "280.0": [
+      {
+        "speaker": "Chinga (doll)",
+        "text": "I WANT TO PLAY."
+      },
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a THAT'S WHAT IT'S ALL-- \u266a"
+      }
+    ],
+    "284.0": [
+      {
+        "speaker": "Jane Froelich",
+        "text": "I'M NOT AFRAID OF YOU."
+      },
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a THAT'S WHAT IT'S ALL ABOUT \u266a"
+      }
+    ],
+    "404.0": [
+      {
+        "speaker": "Melissa Turner",
+        "text": "IT ISN'T ME, BUDDY."
+      },
+      {
+        "speaker": "Buddy",
+        "text": "YEAH, WELL, WE'RE GONNA SEE ABOUT THAT."
+      }
+    ],
+    "405.0": [
+      {
+        "speaker": "Buddy",
+        "text": "YOU'RE COMING WITH ME."
+      },
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a THAT'S WHAT IT'S ALL ABOUT RIGHT ARM \u266a"
+      }
+    ],
+    "407.0": [
+      {
+        "speaker": "Music (recording)",
+        "text": "\u266a YOU PUT YOUR RIGHT ARM OUT \u266a"
+      },
+      {
+        "speaker": "Buddy",
+        "text": "AND YOUR LITTLE BRAT."
+      }
+    ],
+    "514.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "POLLY, GIVE ME THE DOLL."
+      },
+      {
+        "speaker": "Chinga (doll)",
+        "text": "I WANT TO PLAY."
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "speakers": {
+    "171-176": "News Announcer (radio)",
+    "298-299": "Television Speaker",
+    "323-324": "Television Speaker",
+    "328": "Arthur Dales"
+  },
+  "splits": {
+    "300.0": [
+      {
+        "speaker": "Television Speaker",
+        "text": "I HAPPEN TO BE THE RANKING MEMBER--"
+      },
+      {
+        "speaker": "Arthur Dales",
+        "text": "ATTABOY, TAIL GUNNER."
+      }
+    ],
+    "333.0": [
+      {
+        "speaker": "Arthur Dales",
+        "text": "THAT ACCOUNT FOR THE SMELL ?"
+      },
+      {
+        "speaker": "Coroner",
+        "text": "YEAH, MAYBE."
+      }
+    ]
+  }
+}

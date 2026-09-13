@@ -1,0 +1,64 @@
+{
+  "speakers": {
+    "75": "Dana Scully",
+    "105": "Dana Scully",
+    "322": "Dr. Calderon",
+    "339": "Bill Scully Jr."
+  },
+  "splits": {
+    "118.0": [
+      {
+        "speaker": "Marshall Sim",
+        "text": "YOU WERE HERE EARLIER."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "YES, THE DETECTIVE TOLD ME..."
+      },
+      {
+        "speaker": "Marshall Sim",
+        "text": "YES."
+      }
+    ],
+    "295.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHERE'D THE CHECKS COME FROM ?"
+      },
+      {
+        "speaker": "Detective Kresge",
+        "text": "A PHARMACEUTICAL FIRM IN CHULA VISTA."
+      }
+    ],
+    "327.0": [
+      {
+        "speaker": "Marshall Sim",
+        "text": "I DIDN'T KILL HER !"
+      },
+      {
+        "speaker": "Detective Kresge",
+        "text": "IF YOU REFUSE TO REMAIN SILENT,"
+      }
+    ],
+    "342.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHAT DO YOU MEAN ?"
+      },
+      {
+        "speaker": "Bill Scully Jr.",
+        "text": "I'M HERE, DANA. YOU'RE A MILLION MILES AWAY."
+      }
+    ],
+    "472.0": [
+      {
+        "speaker": "Tara Scully",
+        "text": "I'VE BEEN WAITING FOR MONTHS !"
+      },
+      {
+        "speaker": "Bill Scully Jr.",
+        "text": "LET ME OPEN IT."
+      }
+    ]
+  }
+}

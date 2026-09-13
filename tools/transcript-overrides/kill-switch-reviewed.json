@@ -1,0 +1,28 @@
+{
+  "speakers": {
+    "81": "Officer",
+    "117": "Music (recording)"
+  },
+  "splits": {
+    "28.0": [
+      {
+        "speaker": "Agent Boyce",
+        "text": "SALAZAR ? WHO IS THIS ?"
+      },
+      {
+        "speaker": "Artificial Intelligence (phone)",
+        "text": "FOURTEENTH AND ARLINGTON."
+      }
+    ],
+    "325.0": [
+      {
+        "speaker": "Paramedic (simulation)",
+        "text": "EASY. COME ON."
+      },
+      {
+        "speaker": "Paramedic (simulation)",
+        "text": "JUST- JUST RELAX."
+      }
+    ]
+  }
+}
