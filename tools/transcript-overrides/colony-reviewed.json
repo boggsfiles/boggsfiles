@@ -1,0 +1,42 @@
+{
+  "speakers": {
+    "1-11": "Fox Mulder (voice-over)",
+    "14": "Rescue Worker",
+    "18": "Doctor",
+    "26-33": "Fox Mulder (voice-over)",
+    "46.1": "Ship Crew",
+    "49-59": "Reporter (TV)",
+    "165-169": "",
+    "488": "Fox Mulder (phone)",
+    "490": "Dana Scully",
+    "492-494": "Fox Mulder (phone)"
+  },
+  "splits": {
+    "78.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT'S TAKEN ME ALL MORNING TO FIGURE THAT OUT."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "WHAT'D YOU FIND ?"
+      }
+    ],
+    "90.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "-WHAT ABOUT A MAN YOU ARRESTED ? THIS, UH, PREACHER ?"
+      },
+      {
+        "speaker": "Federal Marshal",
+        "text": "-REV. CALVIN SISTRUNK."
+      }
+    ],
+    "489.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I GOT YOUR MESSAGE. WHERE HAVE YOU BEEN ?"
+      }
+    ]
+  }
+}

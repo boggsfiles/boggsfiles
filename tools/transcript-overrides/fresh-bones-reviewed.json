@@ -1,0 +1,33 @@
+{
+  "speakers": {
+    "11": "Baby",
+    "80": "Soldier",
+    "82": "Soldier",
+    "85": "Soldier",
+    "257": "Fox Mulder",
+    "460": "Mrs. McAlpin",
+    "524": "Camp PA"
+  },
+  "splits": {
+    "273.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HERE YOU GO."
+      },
+      {
+        "speaker": "Chester",
+        "text": "MERCI."
+      }
+    ],
+    "316.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THINK HE'S TELLING THE TRUTH ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "UNTIL I CAN FIGURE OUT WHY HE'D LIE, YEAH."
+      }
+    ]
+  }
+}

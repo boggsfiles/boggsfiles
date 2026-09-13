@@ -1,0 +1,71 @@
+{
+  "speakers": {
+    "7": "Lt. Brian Tillman",
+    "8": "Lt. Brian Tillman",
+    "10.0": "Lt. Brian Tillman",
+    "10.1": "Reporter",
+    "92": "Dana Scully",
+    "124": "Fox Mulder",
+    "139": "B.J. Morrow",
+    "187": "Lt. Brian Tillman",
+    "204": "",
+    "241": "Lt. Brian Tillman",
+    "253": "Lt. Brian Tillman",
+    "328": "B.J. Morrow",
+    "329": "Hospital Staff",
+    "395-400": "Mrs. Thibedeaux",
+    "512-513": "Woman on TV"
+  },
+  "splits": {
+    "9.0": [
+      {
+        "speaker": "Lt. Brian Tillman",
+        "text": "THE INVESTIGATION--"
+      },
+      {
+        "speaker": "Reporter",
+        "text": "CAN YOU GIVE US A NAME ?"
+      }
+    ],
+    "204.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "B.J. ?"
+      },
+      {
+        "speaker": "B.J. Morrow",
+        "text": "IT'S HER."
+      }
+    ],
+    "449.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "-THAT'S B.J.'S FATHER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "-B.J. IS COKELY'S GRANDDAUGHTER."
+      }
+    ],
+    "486.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "CAN YOU STAND ? HERE."
+      },
+      {
+        "speaker": "Mrs. Thibedeaux",
+        "text": "I-- I THINK SO."
+      }
+    ],
+    "498.0": [
+      {
+        "speaker": "Lt. Brian Tillman",
+        "text": "AGENT SCULLY, I'VE GOTTA TALK TO YOU."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "WE'RE GETTING A STATEMENT."
+      }
+    ]
+  }
+}

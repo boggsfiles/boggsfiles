@@ -1,0 +1,57 @@
+{
+  "speakers": {
+    "1.1": "Committee Members",
+    "23": "Deborah",
+    "41": "Dave",
+    "45": "Dave",
+    "209-210": "Mrs. Paddock",
+    "214": "Student",
+    "219": "Mrs. Paddock",
+    "220": "Mrs. Paddock",
+    "230": "Shannon",
+    "267-275": "Shannon",
+    "468": "Fox Mulder"
+  },
+  "splits": {
+    "135.0": [
+      {
+        "speaker": "Vitaris",
+        "text": "IT WASN'T ANY OF US."
+      },
+      {
+        "speaker": "Calcagni",
+        "text": "SOMETHING IS HERE."
+      }
+    ],
+    "184.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MAYBE THERE'S NOTHING HERE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "OR HE'S HIDING SOMETHING."
+      }
+    ],
+    "219.0": [
+      {
+        "speaker": "Mrs. Paddock",
+        "text": "I'M SURE HE'LL BE HERE SOON."
+      },
+      {
+        "speaker": "Shannon",
+        "text": "NO !"
+      }
+    ],
+    "403.0": [
+      {
+        "speaker": "Ausbury",
+        "text": "NEVER SEXUALLY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "AND THE RITUALS ?"
+      }
+    ]
+  }
+}

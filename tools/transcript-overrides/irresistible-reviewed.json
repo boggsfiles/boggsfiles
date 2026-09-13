@@ -1,0 +1,73 @@
+{
+  "speakers": {
+    "20": "Toews",
+    "25": "Toews",
+    "30-31": "Toews",
+    "76": "Dana Scully",
+    "105-107": "Sports Announcer (TV)",
+    "113": "Fox Mulder",
+    "140": "Dana Scully",
+    "149": "Sports Announcer (TV)",
+    "175": "Prostitute",
+    "176": "Satin",
+    "219": "Agent Moe Bocks",
+    "229": "Investigator",
+    "240": "",
+    "280": "Prostitute",
+    "322": "Donnie Pfaster",
+    "336.1": "Donnie Pfaster",
+    "339-340": "Coed",
+    "350-351": "Agent Moe Bocks",
+    "355": "Fox Mulder",
+    "356-359": "Suspect",
+    "362": "Fox Mulder",
+    "382": "Donnie Pfaster",
+    "397": "Suspect",
+    "412": "Dana Scully",
+    "422": "Dana Scully",
+    "435": "Dana Scully",
+    "452": "Examiner",
+    "467.1": "FBI Agent",
+    "480": "Agent Moe Bocks",
+    "481-485": "FBI Tactical Officer",
+    "486": "FBI Agent",
+    "487": "Agent Moe Bocks",
+    "495": "Agent Moe Bocks",
+    "503-506": "Agent Moe Bocks",
+    "507.1": "FBI Agent",
+    "544": "Dana Scully",
+    "545": "FBI Tactical Officer",
+    "547-548": "Agent Moe Bocks",
+    "550": "FBI Agent",
+    "554": "Agent Moe Bocks",
+    "558": "Fox Mulder"
+  },
+  "splits": {
+    "240.0": [
+      {
+        "speaker": "Ellen",
+        "text": "HE'S TAKING OVER FOR SKIP."
+      },
+      {
+        "speaker": "Lisa",
+        "text": "OH, HI."
+      }
+    ],
+    "328.0": [
+      {
+        "speaker": "Donnie Pfaster",
+        "text": "I KNOW. YOU SIT UP FRONT."
+      }
+    ],
+    "454.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I HAD A MEETING."
+      },
+      {
+        "speaker": "Examiner",
+        "text": "I GOT GOOD NEWS."
+      }
+    ]
+  }
+}

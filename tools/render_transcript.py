@@ -50,7 +50,7 @@ def render(data: dict) -> str:
                 )
         scene_html.append(
             f'<section class="scene" id="scene-{scene_number}">'
-            f'{HEADER}'
+            f'<div class="scene-head"><span>Scene {scene_number:02d}</span><h2>{esc(location)}</h2></div>'
             f'<div class="scene-dialogue">{"".join(rows)}</div></section>'
         )
 

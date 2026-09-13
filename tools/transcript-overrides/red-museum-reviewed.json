@@ -1,0 +1,37 @@
+{
+  "speakers": {
+    "13-14": "Man on TV",
+    "36": "Dispatcher (radio)",
+    "169": "Fox Mulder",
+    "197": "Teenager",
+    "220-222": "Music (radio)",
+    "225": "Katie",
+    "227": "Katie",
+    "305.0": "Man",
+    "305.1": "Woman",
+    "330": "Dana Scully",
+    "433": "Beth Kane"
+  },
+  "splits": {
+    "101.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THEY'RE WALK-INS."
+      },
+      {
+        "speaker": "Woman",
+        "text": "\"REPEAT IN PRAYER--"
+      }
+    ],
+    "518.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YES."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WELL, IT ALL MAKES SENSE. THE MONEY IN THE BRIEFCASE."
+      }
+    ]
+  }
+}

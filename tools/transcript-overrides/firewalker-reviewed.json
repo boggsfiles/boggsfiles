@@ -1,0 +1,41 @@
+{
+  "speakers": {
+    "78.1": "Pilot (radio)",
+    "79-80": "Dispatcher (radio)",
+    "81": "Pilot (radio)",
+    "118": "",
+    "155": "Dana Scully",
+    "176": "Fox Mulder",
+    "161": "Jason Ludwig",
+    "162.0": "Jesse O'Neil",
+    "162.1": "Fox Mulder",
+    "233-241": "Daniel Trepkos (recorded)",
+    "385-389": "Dana Scully"
+  },
+  "splits": {
+    "17.0": [
+      {
+        "speaker": "Dr. Adam Pierce",
+        "text": "ERIKSON."
+      },
+      {
+        "speaker": "Vosberg",
+        "text": "WHAT THE HELL ?"
+      },
+      {
+        "speaker": "Dr. Adam Pierce",
+        "text": "GIMME THAT !"
+      }
+    ],
+    "118.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, WE'RE WITH THE F.B.I."
+      },
+      {
+        "speaker": "Jesse O'Neil",
+        "text": "F.B.I. ?"
+      }
+    ]
+  }
+}

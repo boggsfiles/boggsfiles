@@ -1,0 +1,72 @@
+{
+  "speakers": {
+    "36": "Nurse Charters",
+    "181.1": "Tiernan",
+    "213": "Ms. Dawson",
+    "232": "Tiernan",
+    "274": "Dorothy",
+    "528.1": "Orderly"
+  },
+  "splits": {
+    "18.0": [
+      {
+        "speaker": "Stan Phillips",
+        "text": "WHY'D YOU DO THAT ?"
+      },
+      {
+        "speaker": "Nurse Charters",
+        "text": "BECAUSE RULES ARE RULES, STAN."
+      }
+    ],
+    "82.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "PHYSICAL OR--"
+      },
+      {
+        "speaker": "Nurse Charters",
+        "text": "YEAH, YEAH, YEAH."
+      }
+    ],
+    "166.0": [
+      {
+        "speaker": "Ms. Dawson",
+        "text": "CERTAINLY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MISS DAWSON, DID YOU GET A CHANCE TO SEE MICHELLE..."
+      }
+    ],
+    "204.0": [
+      {
+        "speaker": "Gung",
+        "text": "WHERE'D YOU GET THAT ?"
+      },
+      {
+        "speaker": "Stan Phillips",
+        "text": "AW, IT WAS HAL'S."
+      }
+    ],
+    "273.0": [
+      {
+        "speaker": "Dorothy",
+        "text": "NO, PLEASE DON'T. I DON'T WA-- I DON'T WA--"
+      },
+      {
+        "speaker": "Tiernan",
+        "text": "OPEN UP. THERE WE GO."
+      }
+    ],
+    "402.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT'S IBOTENIC ACID ?"
+      },
+      {
+        "speaker": "Dr. Grago",
+        "text": "I THINK IT'S A KIND OF POISON."
+      }
+    ]
+  }
+}
