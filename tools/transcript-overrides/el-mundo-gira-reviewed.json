@@ -1,0 +1,43 @@
+{
+  "speakers": {
+    "11.0": "Soledad Buente",
+    "15.0": "Truck Foreman",
+    "16.1": "Flakita",
+    "163.0": "INS Officer",
+    "164.0": "INS Officer",
+    "192.0": "Fox Mulder",
+    "192.1": "Dana Scully"
+  },
+  "splits": {
+    "16.0": [
+      {
+        "speaker": "Eladio Buente",
+        "text": "SI."
+      },
+      {
+        "speaker": "Maria Dorantes",
+        "text": "NO."
+      }
+    ],
+    "138.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT\u2019D HE SAY?"
+      },
+      {
+        "speaker": "Agent Lozano",
+        "text": "\"I DIDN\u2019T DO IT.\""
+      }
+    ],
+    "340.0": [
+      {
+        "speaker": "Agent Lozano",
+        "text": "WHERE IS HE?"
+      },
+      {
+        "speaker": "Gabrielle Buente",
+        "text": "\u00bf QUE ?"
+      }
+    ]
+  }
+}
