@@ -1,0 +1,227 @@
+{
+  "title": "Herrenvolk",
+  "code": "4X01",
+  "season": 4,
+  "episode": 1,
+  "summary": "The season opener was rewritten in the summer and then trimmed on the day. Three passes are on file — the Blue of 8 July, a set of Pink pages ten days later, and a full Green of 21 July — and between them they show Scully’s smallpox science being sharpened word by word and the Bounty Hunter’s wound acquiring its green ooze. What the broadcast then removed is mostly Mulder pleading. Two of his lines to the Bounty Hunter in the parking lot are gone, dialogue inside the honeycomb bunker is trimmed, and Skinner lost the line that sends Scully to Pendrell. What it added is small and practical — a car running out of gas, a promise that Jeremiah Smith will get his hearing.",
+  "findings": [
+    {
+      "id": "parking-lot",
+      "category": "cut",
+      "title": "“His miracles are used to confound us” — and “Her life is inconsequential to you”",
+      "meta": "Blue & Green sc.49 · aired 33:06–33:31",
+      "intro": "The parking-lot confrontation is the episode’s moral centre: Mulder on the ground, the Bounty Hunter holding him up by the collar, and the offer of a life for a life. Both drafts give the alien a paragraph explaining why Jeremiah must die, and give Mulder a last plea. Neither survives.",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.49 — THE EXCHANGE AS WRITTEN",
+          "kind": "script",
+          "text": "BOUNTY HUNTER: He must. His miracles are used to confound us. But it’s all just trickery. Like everything you’ve seen. MULDER: That girl is my sister! BOUNTY HUNTER: He shows you pieces but tells you nothing of the whole… MULDER: Kill me. Let them go. BOUNTY HUNTER: You’d trade your life for his? MULDER: For my mother’s. (beat) Please. Her life is inconsequential to you. BOUNTY HUNTER: (gently) Everything dies."
+        },
+        {
+          "label": "AIRED — 33:06–33:31",
+          "kind": "aired",
+          "text": "“Please. You can’t kill him. He can’t die.” / “He must.” / “That girl is my sister.” / “He shows you pieces, but tells you nothing of the whole, because he’s inconsequential, a traitor to the project.” / “Kill me. Let them go.” / “You’d trade your life for his?” / “For my mother’s.” / (eight seconds) / “Everything dies.”"
+        }
+      ],
+      "trail": "Blue → Green (“it’s all just trickery” marked X) → both lines cut for air",
+      "analysis": "The captions leave no room for either: “He must” is at 33:11 and “That girl is my sister” at 33:12. The trickery line had just been revised at the Green — the writer was still working on it three days before the shoot — and it went anyway. What is lost with it is the alien’s account of Jeremiah as a conjuror; on the disc he is only “inconsequential.” And Mulder’s “Please” moves: the script has him beg at the end, the broadcast has him beg at the start, before he has been answered."
+    },
+    {
+      "id": "honeycomb",
+      "category": "cut",
+      "title": "The honeycomb bunker plays silent",
+      "meta": "Blue & Green sc.42 · aired 26:27–28:04",
+      "intro": "Mulder, Jeremiah and the girl enter the apiary with a gas can. The report identifies dialogue removed from this sequence and an 86-second gap in the DVD captions while the wall comes down.",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.42 — SCRIPT EXCERPT",
+          "kind": "script",
+          "text": "MULDER: Well, then… does anybody have a match? JEREMIAH: I think we walked into our own trap. […] MULDER: I need that gas can… JEREMIAH: What are you doing?! MULDER: Trying to save our lives. […] MULDER: RUN!"
+        },
+        {
+          "label": "AIRED — 26:27–28:04",
+          "kind": "aired",
+          "text": "“Is that the only way out?” / “I think we’ve walked into our own trap.” / — eighty-six seconds of bees — / “[Groans] Come on!”"
+        }
+      ],
+      "trail": "Blue → Green → dialogue trimmed for air",
+      "analysis": "“Does anybody have a match?” is the only joke the script gives Mulder after his mother’s collapse, and it is the one line in the sequence that tells the audience what he is about to do with the gasoline. Without it, the broadcast plays the honeycomb wall as a thing that happens to the Bounty Hunter rather than a thing Mulder does."
+    },
+    {
+      "id": "wanderer",
+      "category": "cut",
+      "title": "“I’m a happy wanderer.”",
+      "meta": "Blue & Green sc.26 · aired 15:18–15:37",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.26",
+          "kind": "script",
+          "text": "Jeremiah points to the hills behind Mulder. JEREMIAH: Over those hills. MULDER: I’m a happy wanderer. And he starts out on foot."
+        },
+        {
+          "label": "AIRED — 15:18–15:37",
+          "kind": "aired",
+          "text": "“That’s it for the gas.” / “How much further from here?” / “About 20 miles. Maybe half that on foot over those hills.” / “Let’s go.”"
+        }
+      ],
+      "trail": "",
+      "analysis": "The script describes the Honda “running on fumes” in a stage direction and lets Mulder make a small joke of the walk ahead. The disc says the practical thing out loud and drops the joke. Recorded with the honeycomb finding above: every light line Mulder was given in the middle of this episode was removed."
+    },
+    {
+      "id": "formulate",
+      "category": "cut",
+      "title": "Skinner’s “formulate” line",
+      "meta": "Blue & Green sc.27 · aired 16:38",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.27",
+          "kind": "script",
+          "text": "SKINNER: Well, we have, Agent Scully. SCULLY: (surprised) Sir? SKINNER: There’s something I’d like you to look at right away. Something that might help you “formulate” a clearer picture for us about who Jeremiah Smith is. And what he’s up to."
+        }
+      ],
+      "trail": "",
+      "analysis": "On the disc, “Well, we have, Agent Scully” / “Sir?” is at 16:38 and Pendrell is already talking at 16:41. The line that threw Scully’s own word back at her — she had just said the agents “haven’t exactly formulated any clear suspicions” — is gone, and with it the sarcasm."
+    },
+    {
+      "id": "pendrell",
+      "category": "cut",
+      "title": "“Can you see alright, Agent Scully?”",
+      "meta": "Blue & Green sc.28 · aired 16:41–17:25",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.28 — NOT ON THE DISC",
+          "kind": "script",
+          "text": "PENDRELL: Can you see alright, Agent Scully? He adjusts his chair so that she might stand closer. A gesture that should not be lost on the audience."
+        }
+      ],
+      "trail": "",
+      "analysis": "The script is explicit that Pendrell’s crush is meant to register. The caption track runs straight from the file description to “The data was all locked in password files” with no line between; if the chair business was shot, it was shot silent."
+    },
+    {
+      "id": "sister",
+      "category": "changed",
+      "title": "“That looks just like my sister.”",
+      "meta": "Blue & Green sc.30 · aired 19:26–19:40",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.30",
+          "kind": "script",
+          "text": "MULDER: WHAT IS GOING ON HERE!! JEREMIAH: What did I tell you, Mr. Mulder — MULDER: It’s my sister! JEREMIAH: Yes. MULDER: But… it can’t be. She’s no older than the day she was taken."
+        },
+        {
+          "label": "AIRED — 19:26–19:40",
+          "kind": "aired",
+          "text": "“What is this?” / “What’s going on here?” / “What did I tell you?” / “That looks just like my sister.” / “But that’s not possible. She’s no older than the day she was taken.”"
+        }
+      ],
+      "trail": "Blue → Green → Aired, reworded",
+      "analysis": "A one-word change of stance. On the page Mulder asserts and Jeremiah confirms; on the disc Mulder compares, Jeremiah says nothing, and the script’s “Yes” is never spoken. The broadcast is more careful than the draft about what it lets the audience believe in the first act — and, as it turns out, more honest."
+    },
+    {
+      "id": "gas",
+      "category": "changed",
+      "title": "“I’ll go see if I can find some gas.”",
+      "meta": "Blue & Green sc.34 · aired 22:00",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.34",
+          "kind": "script",
+          "text": "JEREMIAH: I’m going to go see if I can find a car."
+        },
+        {
+          "label": "AIRED — 22:00",
+          "kind": "aired",
+          "text": "“I’ll go see if I can find some gas.”"
+        }
+      ],
+      "trail": "",
+      "analysis": "The car that ran dry is the one they drive away in, and the gas can Jeremiah is carrying two scenes later is what saves them in the bunker. Both drafts already had the can; neither had a line explaining where it came from. The disc supplies it."
+    },
+    {
+      "id": "promise",
+      "category": "changed",
+      "title": "“They’ll get their chance. We’ll be there.”",
+      "meta": "in neither draft · aired 32:50",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "AIRED — 32:47–32:51",
+          "kind": "aired",
+          "text": "SCULLY: There’s a lot of people who want to talk to Jeremiah Smith. MULDER: They’ll get their chance. We’ll be there."
+        }
+      ],
+      "trail": "",
+      "analysis": "The script ends the phone call on Scully’s line and cuts to the squeal of tyres. The broadcast gives Mulder an answer — a promise, made about four seconds before the truck hits the phone booth — that is in no draft on file."
+    },
+    {
+      "id": "corridor",
+      "category": "changed",
+      "title": "The hospital corridor gains its bureaucracy",
+      "meta": "in neither draft · aired 33:56–34:15",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "AIRED — 33:56–34:15",
+          "kind": "aired",
+          "text": "“[Man] He’s in touch with the perimeter.” / “[Woman] I’m sorry, sir. For security reasons —” / “Five hours we’re out here swinging in the wind, Agent Scully.” / “Something’s wrong. Something happened.” / “You don’t have any way of getting a hold of him?”"
+        }
+      ],
+      "trail": "",
+      "analysis": "Skinner’s “swinging in the wind” and Scully’s reply are scripted. The agent’s radio line, the receptionist, and Skinner’s second question are not; they were added to fill the corridor before Mulder walks in."
+    },
+    {
+      "id": "immunity",
+      "category": "changed",
+      "title": "“It’s probably not a good idea to hide in there.”",
+      "meta": "Blue & Green sc.41 · aired 25:36",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.41",
+          "kind": "script",
+          "text": "MULDER: So this isn’t a place we’re going to want to hide. JEREMIAH: No. You have no immunity to them."
+        },
+        {
+          "label": "AIRED — 25:36–25:38",
+          "kind": "aired",
+          "text": "“It’s probably not a good idea to hide in there.” / “You have no immunity to them.” / “But you do?”"
+        }
+      ],
+      "trail": "",
+      "analysis": "Small, and recorded for its tone: the script’s flat statement became a hedge. Jeremiah’s “No” is dropped and his “immunity” line follows directly."
+    },
+    {
+      "id": "never-know",
+      "category": "shippy",
+      "title": "“She’ll never know.”",
+      "meta": "Blue & Green sc.51 · aired 34:52 & 35:01",
+      "intro": "",
+      "quotes": [
+        {
+          "label": "GREEN (07/21/96), SC.51",
+          "kind": "script",
+          "text": "Scully moves to his side, taking a blanket from the Nurse, putting it around Mulder’s shoulders. MULDER: She’ll never know. Scully takes Mulder in her arms and he begins to sob, collapsing into her. MULDER: She’ll never know."
+        }
+      ],
+      "trail": "",
+      "analysis": "Both lines aired, nine seconds apart, the second one captioned as a whisper. The embrace is a stage direction and the caption track cannot see it — what it can confirm is that the two lines are separated by exactly the silence the script asks for."
+    },
+    {
+      "id": "hope",
+      "category": "shippy",
+      "title": "“I feel it, too. I know it.”",
+      "meta": "Blue & Green sc.54 · aired 36:59–38:51",
+      "intro": "",
+      "quotes": [],
+      "trail": "",
+      "analysis": "The bedside scene reaches the screen almost word for word, including the exchange the season is built on: “Nothing happens in contradiction to nature, only in contradiction to what we know of it. And that’s a place to start. That’s where the hope is.” One change: the script has Scully say “you can’t give up on that”; on the disc it is “you can’t give up on her.” Recorded also because of what did not survive around it. The Green wants Skinner to touch the bruises on Scully’s neck and Pendrell to move his chair for her; the first is a stage direction the captions cannot check, the second is a line, and it was cut. The report reads the bedside scene as a moment of intimacy between Mulder and Scully; captions alone cannot establish every gesture in the episode."
+    }
+  ],
+  "takeaway": "Three drafts, and the writing between them is all in one direction: toward precision. The Pink of 18 July replaces “protein code” with “protein amino acid sequence code,” “a single, unique protein” with “a single, non-random protein pattern,” and moves the late-night briefing into “the middle of a workday” — and every one of those revisions is what aired. The Green of 21 July adds the green ooze that bubbles from the Bounty Hunter’s wound and then sucks itself back in, the first time the script commits to what he is. The cutting then goes the other way, toward silence. Mulder loses his joke about a match, his joke about wandering, his last plea in the parking lot; the Bounty Hunter loses his description of Jeremiah as a trickster; Skinner loses his sarcasm. What is left is an episode in which the people who know things say less, and the man who wants to know says less still.",
+  "methodology": "Aired-side wording is sourced from the closed captions on the Region 1 DVD (Season 4, Disc 1), quoted with timecodes and checked line by line against the episode. Three of the four passes named on the title page are on file: the Blue-Full of 8 July, eleven Pink pages of 18 July covering scenes 43–49, and the Green-Full of 21 July. The White of 5 July is not held. Page headers were read individually; the Green’s title page was OCR’d twice to confirm its date. Every absence above was confirmed by reading the scene in the Green and the surrounding seconds of the caption track, not by a count. The search ignores punctuation, line breaks and revision marks and treats spaces as optional between characters. Two findings are limited by what captions can carry: the honeycomb sequence is reported as silent on the evidence of an 86-second gap between captions, and Pendrell’s chair gesture is reported as cut on the evidence that its line is absent — the gesture itself cannot be checked from a caption track."
+}
