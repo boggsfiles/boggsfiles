@@ -1,0 +1,76 @@
+{
+  "speakers": {
+    "1": "Ship Officer (recap)",
+    "2.0": "Dana Scully (recap)",
+    "2.1": "Gregor Clone (recap)",
+    "3.0": "Fox Mulder (recap)",
+    "3.1": "Bill Mulder (recap)",
+    "4": "Samantha Mulder (recap)",
+    "6.0": "Dana Scully (recap)",
+    "6.1": "Fox Mulder (phone, recap)",
+    "7-8": "Fox Mulder (phone, recap)",
+    "20": "Captain",
+    "36": "",
+    "44": "Alien Bounty Hunter (as Mulder)",
+    "47-48": "Alien Bounty Hunter (as Mulder)",
+    "50": "Alien Bounty Hunter (as Mulder)",
+    "51.1": "Alien Bounty Hunter (as Mulder)",
+    "54": "Alien Bounty Hunter (as Mulder)",
+    "56": "Alien Bounty Hunter (as Mulder)",
+    "58-60": "Alien Bounty Hunter (as Mulder)",
+    "158": "Rescue Worker",
+    "31": "Captain"
+  },
+  "splits": {
+    "32.0": [
+      {
+        "speaker": "Captain",
+        "text": "PREPARE TO FIRE ON COMMAND."
+      },
+      {
+        "speaker": "Radar Officer",
+        "text": "SHOULDN'T WE ATTEMPT TO IDENTIFY THIS OBJECT FIRST ?"
+      }
+    ],
+    "36.0": [
+      {
+        "speaker": "Captain",
+        "text": "THE REACTOR'S GONE DOWN."
+      },
+      {
+        "speaker": "Crew Member",
+        "text": "NOTHING HERE."
+      }
+    ],
+    "53.0": [
+      {
+        "speaker": "Alien Bounty Hunter (as Mulder)",
+        "text": "WHAT'S WRONG ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "DO IT !"
+      }
+    ],
+    "55.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I DON'T KNOW WHO YOU ARE."
+      },
+      {
+        "speaker": "Alien Bounty Hunter (as Mulder)",
+        "text": "I'M GONNA TAKE MY LEFT HAND,"
+      }
+    ],
+    "57.0": [
+      {
+        "speaker": "Alien Bounty Hunter (as Mulder)",
+        "text": "DON'T SHOOT ME. GOT SHOT ONCE. I DIDN'T MUCH CARE FOR IT."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "KEEP YOUR HANDS UP."
+      }
+    ]
+  }
+}

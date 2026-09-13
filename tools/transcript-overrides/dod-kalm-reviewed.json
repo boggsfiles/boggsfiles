@@ -1,0 +1,50 @@
+{
+  "speakers": {
+    "2-3": "Sailor",
+    "11": "Sailor",
+    "185": "Dana Scully",
+    "402": "Dana Scully"
+  },
+  "splits": {
+    "79.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WRINKLE IN TIME ? WHAT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "DO YOU KNOW ANYTHING ABOUT THE PHILADELPHIA EXPERIMENT ?"
+      }
+    ],
+    "105.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "-I SEE FEAR IN THESE MEN'S EYES."
+      },
+      {
+        "speaker": "Henry Trondheim",
+        "text": "-BRUNTDLAND COULDN'T HAVE TAKEN YOU OUT THERE ANYWAY."
+      }
+    ],
+    "257.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "SCULLY ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "HMM ?"
+      }
+    ],
+    "277.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "GROW OLD, YOU MEAN."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "IS THE PREVAILING THEORY ON HOW OUR BODIES AGE."
+      }
+    ]
+  }
+}

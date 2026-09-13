@@ -1,0 +1,38 @@
+{
+  "speakers": {
+    "3-4": "Radio Reporter",
+    "11": "Woman",
+    "31-32": "Police Officer",
+    "60-61": "Police Officer",
+    "283.0": "Fox Mulder",
+    "296": "",
+    "297": "Fox Mulder",
+    "404": "Helicopter Crew",
+    "427": "Dana Scully",
+    "430": "Black Ops Soldier",
+    "438": "Black Ops Soldier",
+    "439": "Black Ops Soldier"
+  },
+  "splits": {
+    "253.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER, LISTEN TO ME."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU'VE GOTTA BELIEVE ME, SCULLY."
+      }
+    ],
+    "296.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "KEEP IT."
+      },
+      {
+        "speaker": "Taxi Driver",
+        "text": "THANK YOU."
+      }
+    ]
+  }
+}

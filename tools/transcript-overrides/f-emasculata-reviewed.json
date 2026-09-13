@@ -1,0 +1,42 @@
+{
+  "speakers": {
+    "102": "Woman",
+    "123": "Marshal",
+    "136": "Fox Mulder",
+    "196": "Operator",
+    "198": "Operator",
+    "201": "Marshal",
+    "205": "Marshal",
+    "260": "FBI Agent",
+    "266": "FBI Agent",
+    "453": "FBI Agent"
+  },
+  "splits": {
+    "184.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "ANY IDEA WHERE THEY'RE HEADED ?"
+      },
+      {
+        "speaker": "Tapia",
+        "text": "GOT 23 POSSIBLE ROADS AND THOROUGHFARES."
+      }
+    ],
+    "206.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HEY, WHAT'S GOING ON HERE ? WHAT'S GOING ON ?"
+      }
+    ],
+    "301.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "POSSIBLY DECEIVED."
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "DECEIVED ? BY WHOM ?"
+      }
+    ]
+  }
+}

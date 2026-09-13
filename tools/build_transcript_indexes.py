@@ -49,6 +49,15 @@ SEASON_2 = [
     ("die-hand-die-verletzt", "Die Hand Die Verletzt", "2X14", "A teenager's death exposes a school's secrets and a sinister substitute teacher."),
     ("fresh-bones", "Fresh Bones", "2X15", "Deaths at a refugee camp lead Mulder and Scully into a case of abuse and apparent voodoo."),
     ("colony", "Colony", "2X16", "Identical murder victims and a visitor from Mulder's past draw the agents into a dangerous pursuit."),
+    ("end-game", "End Game", "2X17", "A hostage exchange sends Mulder north in pursuit of the alien bounty hunter."),
+    ("fearful-symmetry", "Fearful Symmetry", "2X18", "Missing zoo animals and impossible attacks lead the agents to a mysterious pattern."),
+    ("dod-kalm", "Død Kalm", "2X19", "Mulder and Scully board a deserted ship whose remaining crew have aged overnight."),
+    ("humbug", "Humbug", "2X20", "A murder investigation brings the agents to a Florida community of sideshow performers."),
+    ("the-calusari", "The Calusari", "2X21", "A family tragedy draws Mulder and Scully toward a child's unsettling connection to an unseen force."),
+    ("f-emasculata", "F. Emasculata", "2X22", "An escaped-prisoner search exposes a deadly outbreak and a concealed experiment."),
+    ("soft-light", "Soft Light", "2X23", "A physicist's shadow becomes the focus of a series of unexplained disappearances."),
+    ("our-town", "Our Town", "2X24", "A missing inspector leads the agents into a poultry town with a horrifying secret."),
+    ("anasazi", "Anasazi", "2X25", "Stolen government records send Mulder and Scully toward a buried discovery in New Mexico."),
 ]
 
 SEASONS = {1: SEASON_1, 2: SEASON_2}

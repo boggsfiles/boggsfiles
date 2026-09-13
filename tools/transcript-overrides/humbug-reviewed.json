@@ -1,0 +1,31 @@
+{
+  "speakers": {
+    "123": "Music (radio)",
+    "127": "Music (radio)",
+    "222-231": "Music (radio)",
+    "257": "Dana Scully",
+    "470": "Lanny"
+  },
+  "splits": {
+    "89.0": [
+      {
+        "speaker": "Woman",
+        "text": "ATTENTION-GETTER, THAT'S ALL YOU ARE !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I CAN'T WAIT FOR THE WAKE."
+      }
+    ],
+    "553.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YOU'RE TAKING OFF ?"
+      },
+      {
+        "speaker": "Blockhead",
+        "text": "ARE YOU KIDDING ?"
+      }
+    ]
+  }
+}

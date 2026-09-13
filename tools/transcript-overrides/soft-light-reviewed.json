@@ -1,0 +1,18 @@
+{
+  "speakers": {
+    "62.0": "Dana Scully",
+    "477": "Man on Phone"
+  },
+  "splits": {
+    "412.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT DID YOU FIND OUT, SCULLY ?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "speakers": {
+    "28": "Girl",
+    "29": "Mother",
+    "32": "Mother",
+    "34": "Police Officer",
+    "36": "Police Officer",
+    "156-157": "Zoo Worker (video)",
+    "362": "Board Member",
+    "422": "Willa Ambrose",
+    "574": "Dispatcher (radio)",
+    "579": "Dispatcher (radio)"
+  },
+  "splits": {
+    "33.0": [
+      {
+        "speaker": "Police Officer",
+        "text": "COME ON, FOLKS. STAY BACK."
+      },
+      {
+        "speaker": "Girl",
+        "text": "NO, MOM !"
+      }
+    ]
+  }
+}
