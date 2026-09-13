@@ -1,0 +1,204 @@
+{
+  "speakers": {
+    "36": "Hospital Staff",
+    "92": "Hospital Staff",
+    "96": "Hospital PA",
+    "102": "Fox Mulder",
+    "138.1": "Medical Staff",
+    "143": "Medical Staff",
+    "221": "Walter Skinner",
+    "268": "Nurse Owens",
+    "314": "Walter Skinner",
+    "396-397": "Hospital Staff",
+    "407-408": "Hospital Staff",
+    "415": "Fox Mulder",
+    "417": "Fox Mulder",
+    "419": "Fox Mulder",
+    "34": "Nurse",
+    "38": "Fox Mulder",
+    "41": "Fox Mulder",
+    "126": "Byers"
+  },
+  "splits": {
+    "39.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW DID SHE GET HERE ?"
+      },
+      {
+        "speaker": "Nurse",
+        "text": "MS. SCULLY WAS IN THIS CONDITION WHEN I ARRIVED FOR THE EVENING."
+      }
+    ],
+    "40.0": [
+      {
+        "speaker": "Nurse",
+        "text": "IF YOU STEP OUTSIDE, PERHAPS DR. DALY MAY--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "IS THAT DALY ?"
+      }
+    ],
+    "42.0": [
+      {
+        "speaker": "Doctor Daly",
+        "text": "WOULD YOU SETTLE DOWN ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WAS IT PARAMEDICS ? F.B.I. ? MILITARY ?"
+      }
+    ],
+    "142.0": [
+      {
+        "speaker": "Doctor",
+        "text": "TWO HUNDRED JOULES. CLEAR ? WHAT DO WE GOT ?"
+      },
+      {
+        "speaker": "Medical Staff",
+        "text": "CLEAR."
+      }
+    ],
+    "144.0": [
+      {
+        "speaker": "Doctor",
+        "text": "LET'S GO AGAIN. 260. CLEAR ?"
+      },
+      {
+        "speaker": "Nurse",
+        "text": "CLEAR."
+      }
+    ],
+    "147.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THERE WAS A MAN. HE TOOK SCULLY'S BLOOD. HE--"
+      },
+      {
+        "speaker": "X",
+        "text": "FORGET HIM !"
+      }
+    ],
+    "225.0": [
+      {
+        "speaker": "Skinner",
+        "text": "THE RUMOR HAS IT THAT YOU WERE INVOLVED IN THE LAUNDRY ROOM ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, SIR."
+      }
+    ],
+    "226.0": [
+      {
+        "speaker": "Skinner",
+        "text": "A MAN WAS EXECUTED, AGENT MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I WAS WITH SCULLY."
+      }
+    ],
+    "227.0": [
+      {
+        "speaker": "Skinner",
+        "text": "TRACES OF HER BLOOD WERE FOUND AT THE SCENE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MAY I SEE THE POLICE REPORT ?"
+      }
+    ],
+    "230.0": [
+      {
+        "speaker": "Skinner",
+        "text": "KNOCK IT OFF !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW DOES IT FEEL ?"
+      }
+    ],
+    "235.0": [
+      {
+        "speaker": "Walter Skinner",
+        "text": "HOW DO YOU KNOW THAT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT'S A RUMOR. WHO IS HE ?"
+      }
+    ],
+    "236.0": [
+      {
+        "speaker": "Skinner",
+        "text": "IT'S NOT YOUR--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "OH, YOU CAN HAVE IT ALL !"
+      }
+    ],
+    "287.0": [
+      {
+        "speaker": "Cigarette-Smoking Man",
+        "text": "HOW'D YOU FIND ME ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "SHUT UP !"
+      }
+    ],
+    "360.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "BUT WE BARELY KNOW EACH OTHER."
+      },
+      {
+        "speaker": "X",
+        "text": "I CAN'T TELL YOU WHY SHE WAS TAKEN."
+      }
+    ],
+    "362.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW ?"
+      },
+      {
+        "speaker": "X",
+        "text": "THEY BELIEVE YOU'LL BE OUT OF TOWN."
+      }
+    ],
+    "388.0": [
+      {
+        "speaker": "Melissa Scully",
+        "text": "ONLY THE LIGHT WILL--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "OH, ENOUGH WITH THE HARMONIC CONVERGENCE CRAP."
+      }
+    ],
+    "43.0": [
+      {
+        "speaker": "Dr. Daly",
+        "text": "I CAN'T ANSWER THAT. I WAS JUST ASSIGNED TO HER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "ANSWER ME RIGHT NOW !"
+      }
+    ],
+    "45.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHO DID THIS TO HER ? I WANT TO SEE HER ADMISSION FORMS !"
+      },
+      {
+        "speaker": "Nurse",
+        "text": "SIR !"
+      }
+    ]
+  }
+}

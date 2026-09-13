@@ -1,0 +1,186 @@
+{
+  "speakers": {
+    "51-56": "Fox Mulder",
+    "143": "Guard",
+    "181": "Fox Mulder",
+    "197": "Kristen",
+    "222": "Detective Nettles",
+    "239": "Police Officer",
+    "256": "Kristen",
+    "310": "Fox Mulder",
+    "315": "Fox Mulder",
+    "361": "Fox Mulder"
+  },
+  "splits": {
+    "8.0": [
+      {
+        "speaker": "Lore",
+        "text": "BUT WHEN I MET YOU AT THE CORPORATE PARTY, I--"
+      },
+      {
+        "speaker": "Woman",
+        "text": "SHH."
+      }
+    ],
+    "18.0": [
+      {
+        "speaker": "Detective Nettles",
+        "text": "DON'T LET THE MEDIA IN ON THE WRITINGS IN BLOOD ON THE WALL."
+      },
+      {
+        "speaker": "Detective Munson",
+        "text": "OKAY."
+      }
+    ],
+    "22.0": [
+      {
+        "speaker": "Detective Nettles",
+        "text": "NOBODY CALLED THE BUREAU."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THEY SHOULD HAVE."
+      }
+    ],
+    "25.0": [
+      {
+        "speaker": "Detective Nettles",
+        "text": "I THINK WE CAN HANDLE THINGS."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THERE'S NO TIME FOR RIVALRIES."
+      }
+    ],
+    "29.0": [
+      {
+        "speaker": "Detective Nettles",
+        "text": "JUST HOW DO YOU KNOW ALL THIS ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THERE'S A FILE ON THE MURDERS."
+      }
+    ],
+    "61.0": [
+      {
+        "speaker": "Detective Nettles",
+        "text": "NOW, THIS IS DETECTIVE GWYNN--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M WORKING ALONE."
+      }
+    ],
+    "71.0": [
+      {
+        "speaker": "Voice",
+        "text": "YOU MEAN FRANK ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHEN WAS HE HIRED ?"
+      }
+    ],
+    "94.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOUR FINGERPRINTS WERE FOUND AT THE CRIME SCENE."
+      },
+      {
+        "speaker": "John, The Son",
+        "text": "NO !"
+      }
+    ],
+    "182.0": [
+      {
+        "speaker": "Kristen",
+        "text": "YOU'RE NOT INTERESTED IN THIS PLACE, IN WHAT WE DO."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW DO YOU KNOW ?"
+      }
+    ],
+    "238.0": [
+      {
+        "speaker": "Detective Munson",
+        "text": "ONLY THIS ONE--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HAS BLOOD IN IT."
+      }
+    ],
+    "342.0": [
+      {
+        "speaker": "Kristen",
+        "text": "BUT HE'S"
+      },
+      {
+        "speaker": "John, The Son",
+        "text": "NO-- HE IS."
+      }
+    ],
+    "349.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THEY HERE ?"
+      },
+      {
+        "speaker": "Kristen",
+        "text": "THE FIRE."
+      }
+    ],
+    "350.0": [
+      {
+        "speaker": "Kristen",
+        "text": "YOU HAVE TO GO."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MY CAR'S DOWN THE HILL."
+      }
+    ],
+    "360.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU ALL RIGHT ?"
+      },
+      {
+        "speaker": "Kristen",
+        "text": "I WON'T LEAVE WITHOUT HIM."
+      }
+    ],
+    "376.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THE REMAINS ?"
+      },
+      {
+        "speaker": "Firefighter",
+        "text": "THE FIRE WAS EXTREMELY HOT."
+      }
+    ],
+    "17.0": [
+      {
+        "speaker": "Detective Munson",
+        "text": "LET'S START IN THE BEDROOM AND WORK OUR WAY DOWNSTAIRS."
+      },
+      {
+        "speaker": "Officer",
+        "text": "OKAY."
+      }
+    ],
+    "74.0": [
+      {
+        "speaker": "Maxwell",
+        "text": "HEY ! EASY, MAN. EASY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "FEDERAL AGENT !"
+      }
+    ]
+  }
+}

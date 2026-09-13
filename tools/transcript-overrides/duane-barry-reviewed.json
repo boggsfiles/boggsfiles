@@ -1,0 +1,498 @@
+{
+  "speakers": {
+    "19": "Duane Barry",
+    "23": "Duane Barry",
+    "57": "",
+    "61": "Dr. Hakkie",
+    "73": "Police Officer",
+    "74": "Police Officer",
+    "79": "Tactical Officer",
+    "80": "Tactical Officer",
+    "155": "Fox Mulder",
+    "283.0": "Rescue Officer",
+    "283.1": "Rescue Officer",
+    "338": "FBI Agent",
+    "362": "Duane Barry",
+    "439": "Gwen and Kimberly",
+    "450": "Fox Mulder",
+    "508": "Lucy Kazdin",
+    "540": "Store Clerk",
+    "546.1": "Dana Scully",
+    "557": "Fox Mulder (recorded)",
+    "112": "Lucy Kazdin",
+    "245": "Fox Mulder",
+    "369": "Tactical Commander"
+  },
+  "splits": {
+    "10.0": [
+      {
+        "speaker": "Man #5 On Tv",
+        "text": "ENOUGH ! TO THY POST !"
+      },
+      {
+        "speaker": "Man #4 On Tv",
+        "text": "AYE, SIRE !"
+      }
+    ],
+    "37.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "I DON'T LIKE THE WAY IT MAKES ME FEEL."
+      },
+      {
+        "speaker": "Hakkie",
+        "text": "OKAY. ALL RIGHT."
+      }
+    ],
+    "40.0": [
+      {
+        "speaker": "Hakkie",
+        "text": "BECAUSE OF YOUR BEHAVIOR."
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "I KNOW. I KNOW."
+      }
+    ],
+    "46.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "THEY'RE GONNA TAKE DUANE BARRY TO THE PLACE."
+      },
+      {
+        "speaker": "Hakkie",
+        "text": "NOBODY'S COMIN', DUANE."
+      }
+    ],
+    "67.0": [
+      {
+        "speaker": "Krycek",
+        "text": "THEY WANT YOU OUT THERE RIGHT AWAY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT KIND OF SITUATION ?"
+      }
+    ],
+    "69.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "AND THEY WANT ME ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "YEAH."
+      }
+    ],
+    "70.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT FOR ?"
+      },
+      {
+        "speaker": "Alex Krycek",
+        "text": "A GUY ESCAPED A MENTAL INSTITUTION."
+      }
+    ],
+    "75.0": [
+      {
+        "speaker": "Krycek",
+        "text": "KRYCEK, MULDER, F.B.I. WHERE'S THE COMMAND POST ?"
+      },
+      {
+        "speaker": "Policeman",
+        "text": "RIGHT THAT WAY, SIR."
+      }
+    ],
+    "76.0": [
+      {
+        "speaker": "Man #1",
+        "text": "YES, SIR !"
+      },
+      {
+        "speaker": "Man #2",
+        "text": "OKAY, I GOT IT RIGHT HERE IN FRONT OF ME."
+      }
+    ],
+    "81.0": [
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "AGENT MULDER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH."
+      }
+    ],
+    "83.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THIS IS AGENT KRYCEK."
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "LET ME SHOW YOU WHAT WE'VE GOT."
+      }
+    ],
+    "156.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HE'S F.B.I., ISN'T HE ?"
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "FORMER F.B.I."
+      }
+    ],
+    "161.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THAT WE CAN POLICE OUR OWN ?"
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "THEY WOULD LIKE IT DONE AS NEATLY AS POSSIBLE."
+      }
+    ],
+    "171.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WOULD YOU LIKE TO KNOW WHAT THEY DO TO A WOMAN'S OVARIES ?"
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "NOT PARTICULARLY."
+      }
+    ],
+    "173.0": [
+      {
+        "speaker": "Krycek",
+        "text": "IS THERE ANYTHING I CAN DO ?"
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "YEAH."
+      }
+    ],
+    "174.0": [
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "WHAT'S YOUR NAME AGAIN ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "KRYCEK."
+      }
+    ],
+    "179.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "SCULLY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT'S ME. I'M IN VIRGINIA."
+      }
+    ],
+    "181.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHAT'S GOING ON OUT THERE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT'S THE MEDIA SAYING ?"
+      }
+    ],
+    "184.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "SERIOUSLY ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH. HIS NAME IS DUANE BARRY. LOOK, SCULLY, I NEED YOUR HELP."
+      }
+    ],
+    "188.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THE LIGHTS JUST WENT OUT HERE."
+      }
+    ],
+    "189.0": [
+      {
+        "speaker": "Man #2",
+        "text": "[ Men Shouting ] NO, WE'RE LOSING POWER."
+      },
+      {
+        "speaker": "Sniper",
+        "text": "WHAT THE HELL IS GOING ON ?"
+      }
+    ],
+    "192.0": [
+      {
+        "speaker": "Tactical Commander",
+        "text": "NOTHING. ABSOLUTELY NOTHING, SIR. [ Groaning ]"
+      },
+      {
+        "speaker": "Man #1",
+        "text": "WHAT THE--"
+      }
+    ],
+    "199.0": [
+      {
+        "speaker": "Rich",
+        "text": "WE'VE LOST OUR CAPTURED LINE."
+      },
+      {
+        "speaker": "Man #1",
+        "text": "WE HAVE FOUR OR FIVE SHOTS FIRED !"
+      }
+    ],
+    "200.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT'S THE NUMBER IN THERE ?"
+      },
+      {
+        "speaker": "Rich",
+        "text": "555-2804."
+      }
+    ],
+    "203.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DUANE ? IS EVERYONE ALL RIGHT ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "I TOLD YA."
+      }
+    ],
+    "221.0": [
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "YOU REALLY WANT TO DO THIS ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH."
+      }
+    ],
+    "237.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DUANE ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "HANDS IN THE AIR."
+      }
+    ],
+    "242.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "GOT A GUN IN THE KIT ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO."
+      }
+    ],
+    "243.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "ARE YOU WEARIN' A WIRE ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO."
+      }
+    ],
+    "249.0": [
+      {
+        "speaker": "Janus",
+        "text": "HOW'S HE DOIN' ?"
+      },
+      {
+        "speaker": "Gwen",
+        "text": "HE'S BAD."
+      }
+    ],
+    "300.0": [
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "I NEED A CLEAR PICTURE OF WHAT'S GOING ON IN THERE."
+      },
+      {
+        "speaker": "Man",
+        "text": "RIGHT AWAY."
+      }
+    ],
+    "303.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "ARE THEY TALL ? OR SMALL ? DIMINUTIVE ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "NO ! NO !"
+      }
+    ],
+    "343.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YOU'VE GOT TO GET HIM OUT OF THERE."
+      },
+      {
+        "speaker": "Krycek",
+        "text": "THEY'RE WORKING ON IT."
+      }
+    ],
+    "345.0": [
+      {
+        "speaker": "Krycek",
+        "text": "HOW CAN YOU BE SURE ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "BECAUSE DUANE BARRY IS NOT WHAT MULDER THINKS HE IS."
+      }
+    ],
+    "373.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I JUST FLEW DOWN HERE FROM WASHINGTON."
+      },
+      {
+        "speaker": "FBI Agent",
+        "text": "WE'VE GOT A SITUATION IN PROGRESS."
+      }
+    ],
+    "374.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "ALL RIGHT. WELL, THEN LET ME TALK TO SOMEONE WHO'S IN CHARGE."
+      },
+      {
+        "speaker": "Alex Krycek",
+        "text": "YOU ARE."
+      }
+    ],
+    "375.0": [
+      {
+        "speaker": "Krycek",
+        "text": "CALM DOWN, SCULLY."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "DON'T TELL ME TO CALM DOWN. I'M NOT GOING TO CALM DOWN..."
+      }
+    ],
+    "379.0": [
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "WHAT INFORMATION ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "I THINK THERE HAS BEEN A CRITICAL MISJUDGMENT HERE."
+      }
+    ],
+    "384.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THE BULLET PIERCING HIS BILATERAL FRONTAL LOBES."
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "RIGHT."
+      }
+    ],
+    "410.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "I JUST WANT TO GO BACK TO THE PLACE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT PLACE ?"
+      }
+    ],
+    "419.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "HE IS NOT WHAT YOU THINK HE IS."
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "WHAT ?"
+      }
+    ],
+    "420.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOW DO THEY FIND YOU EACH TIME ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "IMPLANTS--"
+      }
+    ],
+    "462.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "YOU'RE JUST LIKE ALL THE OTHERS. YOU SAY YOU BELIEVE ME."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "DUANE--"
+      }
+    ],
+    "463.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I DO BELIEVE YOU. I BELIEVE YOU."
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "BUT YOU DON'T."
+      }
+    ],
+    "464.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "YOU LIE, JUST LIKE EVERYBODY ELSE !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, I BELIEVE YOU, DUANE !"
+      }
+    ],
+    "492.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, I WAS SURPRISED TO GET YOUR CALL."
+      },
+      {
+        "speaker": "Lucy Kazdin",
+        "text": "YEAH, WELL, AS IT TURNED OUT,"
+      }
+    ],
+    "57.0": [
+      {
+        "speaker": "Man",
+        "text": "DO IT, MAN !"
+      },
+      {
+        "speaker": "Dr. Hakkie",
+        "text": "PUT DOWN THE GUN, DUANE."
+      }
+    ]
+  }
+}

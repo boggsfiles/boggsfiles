@@ -1,0 +1,479 @@
+{
+  "speakers": {
+    "15": "Crime Scene Officer",
+    "17": "Crime Scene Officer",
+    "30-32": "Holly Weir (TV reporter)",
+    "47": "Walter Skinner",
+    "81": "Music (radio)",
+    "85-86": "Music (radio)",
+    "134": "Duane Barry (recorded)",
+    "141": "Fox Mulder",
+    "146": "Alex Krycek",
+    "175": "Fox Mulder",
+    "204": "Tram Operator",
+    "207.0": "Tram Operator",
+    "211": "Tram Operator",
+    "214.1": "Tram Operator",
+    "229-241": "Radio Broadcast",
+    "246": "Duane Barry",
+    "264": "Police Radio",
+    "266": "Fox Mulder",
+    "288": "Duane Barry",
+    "314": "Fox Mulder",
+    "330": "Paramedic",
+    "331": "Paramedic",
+    "401": "X",
+    "95": "Patrolman",
+    "100": "Duane Barry",
+    "145": "Alex Krycek",
+    "183": "Fox Mulder"
+  },
+  "splits": {
+    "72.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I KNOW HOW HE THINKS."
+      },
+      {
+        "speaker": "Skinner",
+        "text": "YOU'RE TOO CLOSE TO THIS CASE !"
+      }
+    ],
+    "74.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "SIR--"
+      },
+      {
+        "speaker": "Skinner",
+        "text": "THAT'S AN ORDER, AGENT MULDER."
+      }
+    ],
+    "120.0": [
+      {
+        "speaker": "Video Technician",
+        "text": "OH, MY GOD !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "SHE'S STILL ALIVE."
+      }
+    ],
+    "123.0": [
+      {
+        "speaker": "Mulder On Recording",
+        "text": "WHAT PLACE ?"
+      },
+      {
+        "speaker": "Duane Barry On Recording",
+        "text": "WHERE IT FIRST STARTED."
+      }
+    ],
+    "124.0": [
+      {
+        "speaker": "Duane Barry On Recording",
+        "text": "WHERE THEY FIRST CAME AND GOT ME."
+      },
+      {
+        "speaker": "Mulder On Recording",
+        "text": "WHERE IS THAT ?"
+      }
+    ],
+    "131.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THANKS."
+      },
+      {
+        "speaker": "Krycek",
+        "text": "YEAH."
+      }
+    ],
+    "140.0": [
+      {
+        "speaker": "Duane Barry On Recording",
+        "text": "ASCENDING TO THE STARS."
+      },
+      {
+        "speaker": "Krycek",
+        "text": "WHAT IS IT ?"
+      }
+    ],
+    "143.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DOESN'T ROUTE 229 LEAD TO THE BLUE RIDGE PARKWAY ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "I DON'T KNOW."
+      }
+    ],
+    "148.0": [
+      {
+        "speaker": "Krycek",
+        "text": "WHERE ARE WE GOING ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "JUST GET YOUR CAR."
+      }
+    ],
+    "149.0": [
+      {
+        "speaker": "Krycek",
+        "text": "WHAT ABOUT SKINNER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'LL DEAL WITH SKINNER."
+      }
+    ],
+    "156.0": [
+      {
+        "speaker": "Krycek",
+        "text": "MAYBE I SHOULD DRIVE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M FINE."
+      }
+    ],
+    "157.0": [
+      {
+        "speaker": "Krycek",
+        "text": "YOU HAVEN'T SLEPT YET. I HAVE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I SAID I'M FINE."
+      }
+    ],
+    "176.0": [
+      {
+        "speaker": "Krycek",
+        "text": "HAVE YOU SEEN THIS GUY ?"
+      },
+      {
+        "speaker": "Tram Operator",
+        "text": "YEAH, HE WAS HERE."
+      }
+    ],
+    "180.0": [
+      {
+        "speaker": "Krycek",
+        "text": "HOW LONG AGO ?"
+      },
+      {
+        "speaker": "Tram Operator",
+        "text": "ABOUT 45 MINUTES."
+      }
+    ],
+    "181.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DID HE HAVE A WOMAN WITH HIM ?"
+      },
+      {
+        "speaker": "Tram Operator",
+        "text": "NO."
+      }
+    ],
+    "182.0": [
+      {
+        "speaker": "Alex Krycek",
+        "text": "HOW LONG DOES IT TAKE TO DRIVE TO THE TOP ?"
+      },
+      {
+        "speaker": "Tram Operator",
+        "text": "A LITTLE OVER AN HOUR."
+      }
+    ],
+    "192.0": [
+      {
+        "speaker": "Krycek",
+        "text": "WHAT ARE YOU DOING ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "STAY HERE,"
+      }
+    ],
+    "214.1": [
+      {
+        "speaker": "Tram Operator",
+        "text": "HE SHOULD BE UP TOP IN A MINUTE."
+      }
+    ],
+    "220.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "HELLO ? HELLO, KRYCEK, CAN YOU READ ME ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "I'VE GOT HIM STALLED UP THERE."
+      }
+    ],
+    "247.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "FEDERAL AGENT !"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "YES !"
+      }
+    ],
+    "249.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "YES !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I SAID FREEZE !"
+      }
+    ],
+    "253.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "I'M NOT GOING ANYWHERE !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHERE IS SHE ?"
+      }
+    ],
+    "254.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHERE'D YOU LEAVE HER ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "THEY TOOK HER !"
+      }
+    ],
+    "255.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHO ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "THEM !"
+      }
+    ],
+    "272.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THEN WHERE'D YOU TAKE HER ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "I DIDN'T."
+      }
+    ],
+    "281.0": [
+      {
+        "speaker": "Duane Barry",
+        "text": "YOU SAW IT."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I SAW A HELICOPTER."
+      }
+    ],
+    "290.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DID YOU HURT HER ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "NO."
+      }
+    ],
+    "313.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT ARE YOU DOING IN THERE ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "I HEARD HIM--"
+      }
+    ],
+    "315.0": [
+      {
+        "speaker": "Krycek",
+        "text": "I HEARD HIM GAGGING IN THERE. HE COULDN'T BREATHE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO ONE-- NO ONE--"
+      }
+    ],
+    "316.0": [
+      {
+        "speaker": "Krycek",
+        "text": "HE SAID YOU CHOKED HIM."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO ONE IS TO INTERROGATE THE SUSPECT."
+      }
+    ],
+    "317.0": [
+      {
+        "speaker": "Krycek",
+        "text": "EXCEPT YOU ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "EXCEPT ME."
+      }
+    ],
+    "319.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT'D HE SAY ?"
+      },
+      {
+        "speaker": "Krycek",
+        "text": "HE STARTED WHISTLING \"STAIRWAY TO HEAVEN.\""
+      }
+    ],
+    "322.0": [
+      {
+        "speaker": "Skinner",
+        "text": "YOU GOT DUANE BARRY ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YES, SIR."
+      }
+    ],
+    "326.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT HAPPENED ?"
+      },
+      {
+        "speaker": "Guard",
+        "text": "HE WAS GAGGING."
+      }
+    ],
+    "340.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "ARE YOU THE PATHOLOGIST ?"
+      },
+      {
+        "speaker": "Pathologist",
+        "text": "YES."
+      }
+    ],
+    "347.0": [
+      {
+        "speaker": "Pathologist",
+        "text": "THEY SHOULD BE FINISHED SHORTLY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'D BE INTERESTED TO SEE WHAT YOU FIND."
+      }
+    ],
+    "358.0": [
+      {
+        "speaker": "Cigarette-Smoking Man",
+        "text": "THE OBJECT NOW IS TO PRESERVE IT."
+      },
+      {
+        "speaker": "Krycek",
+        "text": "FOR HOW MUCH LONGER ?"
+      }
+    ],
+    "398.0": [
+      {
+        "speaker": "Krycek",
+        "text": "WHY ? WHERE ARE YOU GOING ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THERE'S SOMEBODY I GOTTA SEE."
+      }
+    ],
+    "399.0": [
+      {
+        "speaker": "Krycek",
+        "text": "BUT WE'RE SCHEDULED AT O.P.C.--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I KNOW. JUST GIVE ME THE KEYS, PLEASE."
+      }
+    ],
+    "402.0": [
+      {
+        "speaker": "X",
+        "text": "THERE'S NOTHING THE SENATOR CAN DO FOR YOU NOW."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT ?"
+      }
+    ],
+    "403.0": [
+      {
+        "speaker": "X",
+        "text": "NOT WITHOUT COMMITTING POLITICAL SUICIDE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHY ?"
+      }
+    ],
+    "407.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I NEED HIS HELP."
+      },
+      {
+        "speaker": "X",
+        "text": "NO ONE CAN HELP YOU NOW."
+      }
+    ],
+    "463.0": [
+      {
+        "speaker": "Skinner",
+        "text": "LET IT GO, AGENT MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "LIKE HELL."
+      }
+    ],
+    "291.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "DID YOU HURT HER ?"
+      },
+      {
+        "speaker": "Duane Barry",
+        "text": "WHAT IS THIS ? NO !"
+      }
+    ],
+    "308.0": [
+      {
+        "speaker": "Officer",
+        "text": "HEY, MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, THANK YOU."
+      }
+    ]
+  }
+}
