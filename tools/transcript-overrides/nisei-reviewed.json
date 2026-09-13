@@ -1,0 +1,18 @@
+{
+  "speakers": {
+    "17": "Japanese Doctor",
+    "234": "Fox Mulder"
+  },
+  "splits": {
+    "376.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHERE ARE YOU ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THE TRAIN YARD IN QUINNIMONT, WEST VIRGINIA."
+      }
+    ]
+  }
+}

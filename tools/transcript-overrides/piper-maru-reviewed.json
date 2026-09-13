@@ -1,0 +1,54 @@
+{
+  "speakers": {
+    "8": "FBI Employee",
+    "111-112": "Military Personnel",
+    "115": "Military Personnel",
+    "160-161": "Child (memory)",
+    "189": "Woman",
+    "269": "Airline Clerk",
+    "271": "Airline Clerk",
+    "444": "Fox Mulder"
+  },
+  "splits": {
+    "52.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "AND WHAT I BELIEVE WAS THE REMAINS OF A UFO."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "OH, MULDER--"
+      }
+    ],
+    "171.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT HAPPENED ? DID YOU FALL ?"
+      },
+      {
+        "speaker": "Gauthier",
+        "text": "I DON'T KNOW."
+      }
+    ],
+    "270.0": [
+      {
+        "speaker": "Airline Clerk",
+        "text": "HAVE A GOOD TRIP."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THANK YOU."
+      }
+    ],
+    "422.0": [
+      {
+        "speaker": "Waitress",
+        "text": "YOU'LL HAVE TO DEAL WITH THE PHONE COMPANY, SIR."
+      },
+      {
+        "speaker": "Luis Cardinal",
+        "text": "YOU DEAL WITH THEM."
+      }
+    ]
+  }
+}

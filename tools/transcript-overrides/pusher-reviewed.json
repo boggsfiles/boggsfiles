@@ -1,0 +1,29 @@
+{
+  "speakers": {
+    "172": "Dana Scully",
+    "399.1": "Frank Burst",
+    "451": "SWAT Officer"
+  },
+  "splits": {
+    "14.0": [
+      {
+        "speaker": "Robert Patrick Modell",
+        "text": "THINK YOU'RE GONNA HOLD ME ?"
+      },
+      {
+        "speaker": "Frank Burst",
+        "text": "I WANT HIM IN A WAIST CHAIN AND LEG IRONS."
+      }
+    ],
+    "353.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "A HEAD INJURY, NEUROLOGICAL DISEASE, BRAIN TUMOR OR LESION."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "A TUMOR ?"
+      }
+    ]
+  }
+}

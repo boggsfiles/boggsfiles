@@ -1,0 +1,51 @@
+{
+  "speakers": {
+    "14": "FBI Agent",
+    "143": "Attack Victim",
+    "144.1": "Doctor",
+    "341.1": "John Mostow (vision)",
+    "378.1": "Bill Patterson"
+  },
+  "splits": {
+    "18.0": [
+      {
+        "speaker": "FBI Agent",
+        "text": "YOU HAVE THE RIGHT TO AN ATTORNEY."
+      },
+      {
+        "speaker": "John Mostow",
+        "text": "YOU'RE HURTING ME !"
+      }
+    ],
+    "287.0": [
+      {
+        "speaker": "John Mostow",
+        "text": "IT WANTS WHAT IT WANTS."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "TO KILL INNOCENT YOUNG MEN BY CARVING UP THEIR FACES ?"
+      }
+    ],
+    "309.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "YOUR MESSAGE SAID THAT YOU IDENTIFIED THEM."
+      },
+      {
+        "speaker": "Technician",
+        "text": "I DID."
+      }
+    ],
+    "358.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH ?"
+      }
+    ]
+  }
+}

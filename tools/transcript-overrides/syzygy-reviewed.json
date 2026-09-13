@@ -1,0 +1,75 @@
+{
+  "speakers": {
+    "15": "Boom",
+    "32.1": "Police Officer",
+    "84": "Detective White",
+    "88": "Police Officer",
+    "195-199": "Basketball Coach",
+    "202-203": "Basketball Player",
+    "216": "Eric Fowler",
+    "217-218": "Basketball Coach",
+    "219.0": "Basketball Player",
+    "219.1": "Basketball Coach",
+    "221-222": "Eric Fowler",
+    "232": "Witness",
+    "241.1": "Townsman",
+    "263": "Detective White",
+    "314-316.0": "Music (party)",
+    "317-318.0": "Music (party)",
+    "316.1": "Partygoer",
+    "318.1": "Partygoer",
+    "319-322": "Partygoers",
+    "323": "Partygoer",
+    "326-333": "Partygoers",
+    "342": "Partygoer",
+    "348-350": "Dana Scully",
+    "371": "Dana Scully",
+    "434": "Margi",
+    "437-438": "Margi",
+    "439": "Officer",
+    "501-502": "Police Officer",
+    "507-508": "Police Officer"
+  },
+  "splits": {
+    "43.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "AT THE INTERSECTION ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "AT THE STOPLIGHT."
+      }
+    ],
+    "266.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "NO, YOU GO AHEAD."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, NO, NO. BE MY GUEST."
+      }
+    ],
+    "270.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "IS THAT LETTERING ?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "\" R.W.G.\""
+      }
+    ],
+    "223.0": [
+      {
+        "speaker": "Eric Fowler",
+        "text": "SOMEONE HELP ME !"
+      },
+      {
+        "speaker": "Basketball Player",
+        "text": "GRAB ON TO IT !"
+      }
+    ]
+  }
+}

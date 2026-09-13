@@ -1,0 +1,59 @@
+{
+  "speakers": {
+    "62": "Fox Mulder",
+    "227": "Alex Krycek",
+    "376-377": "Police Officer"
+  },
+  "splits": {
+    "78.0": [
+      {
+        "speaker": "Operative 1",
+        "text": "WHERE'S THE DIGITAL TAPE ?"
+      },
+      {
+        "speaker": "Alex Krycek",
+        "text": "I DON'T HAVE IT."
+      }
+    ],
+    "316.0": [
+      {
+        "speaker": "Well-Manicured Man",
+        "text": "NO."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU ANSWER A FEW QUESTIONS FOR ME FIRST,"
+      }
+    ],
+    "322.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "ALMOST THE ENTIRE CREW DIED."
+      },
+      {
+        "speaker": "Well-Manicured Man",
+        "text": "YES. IT'S STILL A MYSTERY."
+      }
+    ],
+    "386.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S HIM, MULDER, THE MAN WHO SHOT MY SISTER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "UH, SCULLY--"
+      }
+    ],
+    "432.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHAT DO YOU MEAN, \"MISTAKENLY\" ?"
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "THAT'S WHAT I NEED TO TALK TO SCULLY ABOUT."
+      }
+    ]
+  }
+}
