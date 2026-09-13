@@ -44,6 +44,71 @@ SPEAKER_NAMES = {
     "FIREMAN": "Firefighter",
     "BILLY MILES": "Billy Miles",
     "HEITZ WERBER": "Dr. Heitz Werber",
+    "MULDR": "Fox Mulder",
+    "SCULLY VOICE OVER": "Dana Scully (voice-over)",
+    "SCULLY WHISPERS": "Dana Scully",
+    "TOMSON": "Detective Thompson",
+    "DORLAND": "Robert Dorland",
+    "DORLUND": "Robert Dorland",
+    "MR. DORLAND": "Robert Dorland",
+    "MR DORLAND": "Robert Dorland",
+    "COS COMPUTER": "COS Computer",
+    "COMPUTER": "COS Computer",
+    "COMPUTER VOICE": "COS Computer",
+    "MICHELL": "Michelle Generoo",
+    "MICHELLE": "Michelle Generoo",
+    "MICHELLE GENEROO": "Michelle Generoo",
+    "GENEROO": "Michelle Generoo",
+    "EMT1": "Paramedic 1",
+    "EMT2": "Paramedic 2",
+    "MCGRATH": "Section Chief McGrath",
+    "SECTION CHIEF MCGRATH": "Section Chief McGrath",
+    "MRS WRIGHT": "Mrs. Wright",
+    "DR KENDRICK ON TAPE": "Dr. Sally Kendrick (recorded)",
+    "SALLY KENDRICK ON TAPE": "Dr. Sally Kendrick (recorded)",
+    "DEEP THROAT VOICE OVER": "Deep Throat (voice-over)",
+    "CINDY VOICE OVER": "Cindy Reardon (voice-over)",
+    "CINDY": "Cindy Reardon",
+    "TEENA": "Teena Simmons",
+    "TEENA AND CINDY": "Teena Simmons & Cindy Reardon",
+    "TEENA OR CINDY": "Teena Simmons or Cindy Reardon",
+    "L'IVELY": "Cecil L'Ively",
+    "BOGGS": "Luther Lee Boggs",
+    "MAGGIE": "Margaret Scully",
+    "MARTY (WOMAN)": "Marty",
+    "MAN'S VOICE": "Man's Voice",
+    "DASILVA": "Nancy Da Silva",
+    "BELT": "Colonel Marcus Aurelius Belt",
+    "YOUNG BELT": "Young Marcus Belt",
+    "YOUNG BELT IN SPACE": "Young Marcus Belt",
+    "MULDER AND SCULLY": "Fox Mulder & Dana Scully",
+    "FLORIDA MC": "Florida Mission Control",
+    "SHUTTLE LC": "Shuttle Launch Control",
+    "OTC": "Orbiter Crew",
+    "SHUTTLE": "Orbiter Crew",
+    "HOUSTON": "Houston Mission Control",
+    "CURLY HOUSTON": "Houston Mission Control",
+    "MRS REARDON": "Mrs. Reardon",
+    "TRUCK DRIVER'S WIFE": "Truck Driver's Wife",
+    "GREEN": "Phoebe Green",
+    "PHOEBE": "Phoebe Green",
+    "MARSDEN": "Sir Malcolm Marsden",
+    "MALCOLM MARSDEN": "Sir Malcolm Marsden",
+    "LIZ": "Liz Hawley",
+    "ELIZABETH": "Liz Hawley",
+    "SISTER ABBY": "Sister Abigail",
+    "JERRY": "Jerry Lamana",
+    "LAMANA": "Jerry Lamana",
+    "MAX": "Max Fenig",
+    "HENDERSON": "Colonel Calvin Henderson",
+    "WRIGHT": "Deputy Wright",
+    "CTGG": "NASA Data Technician",
+    "TECHMECH GUY": "NASA Technician",
+    "CURLY HAIRED TECH": "Houston Technician",
+    "HOUSTON TECH": "Houston Technician",
+    "FLORIDA": "Florida Mission Control",
+    "ALBUQUERQUE": "Albuquerque Ground Control",
+    "SOME GUY": "Mission Control Staffer",
 }
 
 PILOT_MANUAL_SPEAKERS = {
@@ -189,14 +254,16 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
 
 def parse_reference(path: Path) -> list[RefTurn]:
     raw = path.read_text(encoding="utf-8", errors="replace").replace("\r\n", "\n")
-    paragraphs = [re.sub(r"\s+", " ", p).strip() for p in re.split(r"\n{2,}", raw) if p.strip()]
+    lines = [re.sub(r"\s+", " ", line).strip() for line in raw.splitlines()]
     turns: list[RefTurn] = []
     scene = 0
     location = ""
     current_speaker = ""
     expecting_location = False
-    for paragraph in paragraphs:
-        scene_match = re.match(r"^SCENE (\d+)(?:\s+(.+))?$", paragraph)
+    for line in lines:
+        if not line:
+            continue
+        scene_match = re.match(r"^SCENE (\d+)(?:\s+(.+))?$", line)
         if scene_match:
             scene = int(scene_match.group(1))
             location = (scene_match.group(2) or "").replace(";", " · ")
@@ -205,26 +272,30 @@ def parse_reference(path: Path) -> list[RefTurn]:
             continue
         if scene == 0:
             continue
-        speaker_match = re.match(r"^([A-Z][A-Z0-9 .'-]+):\s*(.*)$", paragraph)
+        if re.fullmatch(r"[-* ]{8,}", line) or "OPENING CREDITS" in line:
+            current_speaker = ""
+            continue
+        speaker_match = re.match(r"^([A-Z][A-Z0-9 .'-]+):\s*(.*)$", line)
+        embedded_speaker = re.search(r"\)\s*([A-Z][A-Z0-9 .'-]+):\s*(.*)$", line)
         if expecting_location:
-            if paragraph.startswith("(") or speaker_match:
+            if line.startswith("(") or speaker_match:
                 location = f"Scene {scene:02d}"
                 expecting_location = False
             else:
-                location = paragraph.replace(";", " · ")
+                location = line.replace(";", " · ")
                 expecting_location = False
                 continue
-        if paragraph.startswith("("):
-            continue
-        match = speaker_match
+        match = speaker_match or embedded_speaker
         if match:
             current_speaker = SPEAKER_NAMES.get(match.group(1), match.group(1).title())
             dialogue = match.group(2).strip()
             if dialogue:
                 turns.append(RefTurn(current_speaker, dialogue, scene, location))
             continue
+        if line.startswith("("):
+            continue
         if current_speaker:
-            turns.append(RefTurn(current_speaker, paragraph, scene, location))
+            turns.append(RefTurn(current_speaker, line, scene, location))
     return turns
 
 
@@ -319,15 +390,50 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
             cue_index = cue_word_owner[match.b + offset]
             votes[cue_index].append(ref_meta[match.a + offset])
 
+    sequential_matches: dict[int, tuple[tuple[str, int, str, int], float]] = {}
+    reference_cursor = 0
+    for index, cue in enumerate(cues):
+        if kinds[index] != "dialogue" or not turns:
+            continue
+        cue_text = normalize(display_text[index])
+        start = max(0, reference_cursor - 1)
+        stop = min(len(turns), reference_cursor + 29)
+        ranked = []
+        for ref_i in range(start, stop):
+            match_score = similarity(cue_text, normalize(turns[ref_i].text))
+            ranked.append((match_score - max(0, ref_i - reference_cursor) * 0.002, match_score, ref_i))
+        if ranked:
+            _, match_score, ref_i = max(ranked)
+            if match_score >= 0.52:
+                turn = turns[ref_i]
+                sequential_matches[index] = ((turn.speaker, turn.scene, turn.location, ref_i), match_score)
+                reference_cursor = max(reference_cursor, ref_i)
+
     results = []
     previous_dialogue = None
     next_dialogue_meta: dict[int, tuple[str, int, str, int]] = {}
+    next_vote_at: dict[int, int] = {}
     upcoming = None
+    upcoming_at = None
     for index in range(len(cues) - 1, -1, -1):
         if votes[index]:
             upcoming = Counter(votes[index]).most_common(1)[0][0]
+            upcoming_at = index
         if upcoming:
             next_dialogue_meta[index] = upcoming
+            next_vote_at[index] = upcoming_at
+
+    previous_vote_meta: dict[int, tuple[str, int, str, int]] = {}
+    previous_vote_at: dict[int, int] = {}
+    previous = None
+    previous_at = None
+    for index in range(len(cues)):
+        if votes[index]:
+            previous = Counter(votes[index]).most_common(1)[0][0]
+            previous_at = index
+        if previous:
+            previous_vote_meta[index] = previous
+            previous_vote_at[index] = previous_at
 
     for index, cue in enumerate(cues):
         kind = kinds[index]
@@ -338,10 +444,40 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
             score = count / word_count
             previous_dialogue = chosen
         else:
-            chosen = previous_dialogue or next_dialogue_meta.get(index) or (
-                "Unknown Speaker", 1, "Scene 01", 0)
+            before = previous_vote_meta.get(index)
+            after = next_dialogue_meta.get(index)
+            chosen = before or after or ("Unknown Speaker", 1, "Scene 01", 0)
+            if kind == "dialogue" and before and after:
+                before_ref = before[3]
+                after_ref = after[3]
+                lo, hi = sorted((before_ref, after_ref))
+                candidates = range(max(0, lo - 1), min(len(turns), hi + 2))
+                cue_text = normalize(display_text[index])
+                ranked = sorted(
+                    ((similarity(cue_text, normalize(turns[ref_i].text)), ref_i) for ref_i in candidates),
+                    reverse=True,
+                )
+                if ranked and ranked[0][0] >= 0.42:
+                    ref_i = ranked[0][1]
+                    turn = turns[ref_i]
+                    chosen = (turn.speaker, turn.scene, turn.location, ref_i)
+                elif before_ref == after_ref:
+                    chosen = before
+                else:
+                    before_at = previous_vote_at[index]
+                    after_at = next_vote_at[index]
+                    ratio = (index - before_at) / max(1, after_at - before_at)
+                    ref_i = round(before_ref + ratio * (after_ref - before_ref))
+                    ref_i = max(0, min(len(turns) - 1, ref_i))
+                    turn = turns[ref_i]
+                    chosen = (turn.speaker, turn.scene, turn.location, ref_i)
             speaker, scene, location, ref_index = chosen
             score = 0.0 if kind == "dialogue" else 1.0
+
+        sequential = sequential_matches.get(index)
+        if sequential and (score < 0.58 or sequential[1] >= score + 0.08):
+            chosen, score = sequential
+            speaker, scene, location, ref_index = chosen
 
         tag = explicit_tags.get(index)
         if tag:
@@ -351,6 +487,7 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
             elif tag.lower() == "woman" and score >= 0.5:
                 canonical = speaker
             speaker = canonical
+        speaker = SPEAKER_NAMES.get(speaker.upper(), speaker)
         speaker = cue_override(manual_speakers, cue) or speaker
         scene_override = cue_override(scene_overrides, cue)
         if scene_override:
