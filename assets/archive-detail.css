@@ -46,6 +46,19 @@
 .schedule-arrow{position:absolute;right:2px;top:14px;color:var(--red);font-size:1rem}
 .oneliner-preview{position:relative;background:#111614}
 .oneliner-preview iframe{display:block;width:100%;height:100%;border:0;pointer-events:none;background:#111614}
+.call-seasons{margin-top:66px}
+.call-season{margin-top:70px}.call-season:first-child{margin-top:0}
+.call-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;margin-top:26px}
+.call-episode{grid-column:span 2;border:1px solid var(--line);background:#0d110f;padding:25px;display:flex;flex-direction:column;min-height:238px}
+.call-grid>.call-episode:last-child:nth-child(3n+1){grid-column:3/span 2}
+.call-grid>.call-episode:nth-last-child(2):nth-child(3n+1){grid-column:2/span 2}
+.call-episode-head{display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--red);font-size:.59rem;letter-spacing:.14em;text-transform:uppercase}
+.call-episode-head small{color:#747e77;font:inherit;letter-spacing:.1em;text-align:right}
+.call-episode h2{font:400 1.85rem/1.05 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:16px 0 25px}
+.call-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto}
+.call-days a{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #3e4741;padding:10px 11px;color:#b7beb9;font-size:.61rem;letter-spacing:.06em;text-transform:uppercase;transition:.2s}
+.call-days a:hover,.call-days a:focus-visible{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+.call-days i{color:var(--red);font-style:normal}
 .comic-browser{margin-top:46px;border:1px solid var(--line);background:#0c100e}
 .comic-browser-head{display:flex;align-items:end;justify-content:space-between;gap:28px;padding:30px 32px;border-bottom:1px solid var(--line)}
 .comic-browser-head span{color:var(--red);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase}
@@ -79,6 +92,8 @@
 @media(min-width:1101px) and (hover:hover) and (pointer:fine){.season-rail{display:block}.season-nav-bottom{display:none}.season-rail .season-link{width:62px;min-height:100px;padding:13px 6px}.season-rail .season-prev{left:6px}.season-rail .season-next{right:6px}}
 @media(max-width:1050px){.schedule-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1){grid-column:span 2}.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:2/span 2}}
 @media(max-width:900px){.comic-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1000px){.call-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.call-episode,.call-grid>.call-episode:last-child:nth-child(3n+1),.call-grid>.call-episode:nth-last-child(2):nth-child(3n+1){grid-column:span 2}.call-grid>.call-episode:last-child:nth-child(2n+1){grid-column:2/span 2}}
 @media(max-width:1100px){.archive-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1){grid-column:span 2}.archive-grid>.episode:last-child:nth-child(2n+1){grid-column:2/span 2}}
 @media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1),.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1),.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:auto}.episode{min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}.season-nav-bottom{margin:-38px auto 58px;padding:0 14px}.season-nav-bottom .season-link{min-width:0;flex:1;padding:12px 10px}.season-link b{font-size:.55rem}}
 @media(max-width:620px){.comic-browser{margin-top:34px}.comic-browser-head{display:block;padding:25px 22px}.comic-browser-head p{margin-top:14px}.comic-shelf summary{padding:21px 22px}.comic-shelf summary span{display:block}.comic-shelf summary small{display:block;margin-top:5px}.comic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.comic-issue{min-height:104px;padding:18px}}
+@media(max-width:620px){.call-grid{grid-template-columns:1fr}.call-episode,.call-grid>.call-episode:last-child:nth-child(3n+1),.call-grid>.call-episode:nth-last-child(2):nth-child(3n+1),.call-grid>.call-episode:last-child:nth-child(2n+1){grid-column:auto}.call-episode{min-height:0;padding:22px}.call-days{grid-template-columns:1fr 1fr}}
