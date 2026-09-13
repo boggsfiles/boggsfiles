@@ -9,6 +9,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from transcript_header import HEADER, ASSETS
+from browse_navigation import navigation, ASSET as NAV_ASSET
 
 
 def esc(value: object) -> str:
@@ -66,7 +67,7 @@ def render(data: dict) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/transcript.css">
-{ASSETS}</head>
+{ASSETS}{NAV_ASSET}</head>
 <body>
   {HEADER}
   <main>
@@ -77,7 +78,7 @@ def render(data: dict) -> str:
       <div class="transcript-body">{''.join(scene_html)}<div id="no-results" hidden><b>No matching dialogue</b><p>Try another character, phrase, or keyword.</p></div></div>
     </div>
     <section class="method"><div class="shell"><span>About this transcript</span><p>The dialogue comes from the official DVD subtitle track supplied by Boggsfiles. Speaker and scene attribution was cross-checked against character-labelled reference material. Subtitle wording is preserved while capitalization and spacing are standardized for easier reading.</p></div></section>
-    <nav class="episode-nav shell" aria-label="Transcript navigation"><a href="{esc(previous_url)}">← {esc(previous_title)}</a>{f'<a href="{esc(next_url)}">{esc(next_title)} →</a>' if next_url else '<span>Next episode coming soon →</span>'}</nav>
+    {navigation((previous_url,previous_title) if previous_url else None,(next_url,next_title) if next_url else None,"Transcript navigation")}
   </main>
   <footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/transcripts/">All transcripts</a></span></div></footer>
   <script>
