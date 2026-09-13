@@ -30,6 +30,14 @@ STILLS = {
     "miracle-man": "MiracleManBR271.jpg",
     "shapes": "ShapesBR179.jpg",
     "darkness-falls": "DarknessFallsBR267.jpg",
+    "tooms": "ToomsBR107.jpg",
+    "born-again": "BornAgainBR99.jpg",
+    "roland": "RolandBR255.jpg",
+    "the-erlenmeyer-flask": "TheErlenmeyerFlaskBR103.jpg",
+    "little-green-men": "LittleGreenMenBR238.jpg",
+    "the-host": "TheHostBR153.jpg",
+    "blood": "BloodBR164.jpg",
+    "sleepless": "SleeplessBR70.jpg",
 }
 
 
@@ -51,7 +59,10 @@ def main() -> None:
         image = Image.open(io.BytesIO(payload)).convert("RGB")
         if image.width > 1280:
             image.thumbnail((1280, 1280))
-        image.save(destination / f"{slug}.webp", "WEBP", quality=84, method=6)
+        output = destination / f"{slug}.webp"
+        temporary = output.with_suffix(".webp.tmp")
+        image.save(temporary, "WEBP", quality=84, method=6)
+        temporary.replace(output)
         sources[slug] = url
     Path("tools/transcript-still-sources.json").write_text(
         json.dumps(sources, indent=2) + "\n", encoding="utf-8"

@@ -123,6 +123,15 @@ SPEAKER_NAMES = {
     "DANIELS": "Sheriff Daniels",
     "LILLIAN": "Lillian Daniels",
     "TSKANY": "Sheriff Tskany",
+    "SCULLY'S VOICE": "Dana Scully (voice-over)",
+    "ED": "Edward Funsch",
+    "MOTOLA": "Matola",
+    "MAN ON VOYAGER RECORD": "Kurt Waldheim (recorded)",
+    "KURT WALDHEIM ON MESSAGE": "Kurt Waldheim (recorded)",
+    "KURT WALDHEIM ON MACHINE": "Kurt Waldheim (recorded)",
+    "SCULLY ON TAPE": "Dana Scully (recorded)",
+    "SKINNER ON TAPE": "Walter Skinner (recorded)",
+    "MULDER ON ANSWERING MACHINE": "Fox Mulder (recorded)",
 }
 
 PILOT_MANUAL_SPEAKERS = {
@@ -206,6 +215,25 @@ def clean_markup(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def is_caption_credit(value: str) -> bool:
+    normalized = normalize(value)
+    return normalized.startswith("closed captioned") or normalized.startswith("captions inc") or normalized.startswith("captioning made possible")
+
+
+def is_sound_label(value: str) -> bool:
+    value = value.lower()
+    terms = (
+        "music", "singing", "laugh", "scream", "shout", "yell", "whisper",
+        "beep", "ring", "buzz", "hum", "rumbl", "rattl", "whirr", "crack",
+        "clatter", "thunder", "gunshot", "explosion", "grunting", "panting",
+        "breathing", "sniff", "gasp", "sigh", "winc", "indistinct",
+        "conversing", "speaking", "replying", "continues", "static", "yawn",
+        "turns on", "car starts", "tv stops", "slow motion", "slow-motion",
+        "sirens approaching", "recording", "groan", "scoff", "yelp",
+    )
+    return any(term in value for term in terms)
+
+
 def normalize(value: str) -> str:
     value = clean_markup(value).lower().replace("’", "'")
     value = re.sub(r"\b(?:um|uh|er)\b", " ", value)
@@ -232,6 +260,7 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
                              "explicit_speaker": segment.get("speaker", "")})
             continue
         text_lines = [clean_markup(line) for line in lines[2:] if clean_markup(line)]
+        text_lines = [line for line in text_lines if not is_caption_credit(line)]
         dashed = len([line for line in text_lines if re.match(r"^-\s+", line)]) > 1
         segments: list[dict] = []
         current: list[str] = []
@@ -245,6 +274,8 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
         for line in text_lines:
             label_only = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]+):$", line)
             inline_label = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]+):\s+(.+)$", line)
+            bracket_label = re.match(r"^\[\s*([A-Za-z][A-Za-z0-9 #.'-]+)\s*\]$", line)
+            bracket_inline = re.match(r"^\[\s*([A-Za-z][A-Za-z0-9 #.'-]+)\s*\]\s+(.+)$", line)
             if dashed and re.match(r"^-\s+", line):
                 flush()
                 current = [re.sub(r"^-\s+", "", line)]
@@ -255,6 +286,13 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
                 flush()
                 current_speaker = inline_label.group(1)
                 current = [inline_label.group(2)]
+            elif bracket_label and not is_sound_label(bracket_label.group(1)):
+                flush()
+                current_speaker = bracket_label.group(1).strip()
+            elif bracket_inline and not is_sound_label(bracket_inline.group(1)):
+                flush()
+                current_speaker = bracket_inline.group(1).strip()
+                current = [bracket_inline.group(2)]
             else:
                 current.append(line)
         flush()
@@ -338,7 +376,8 @@ def similarity(a: str, b: str) -> float:
 
 
 def cue_kind(text: str) -> str:
-    stripped = re.sub(r"\([^)]*\)", "", text).strip()
+    stripped = re.sub(r"\([^)]*\)|\[[^]]*\]", "", text)
+    stripped = re.sub(r"[♪♫\W_]+", "", stripped, flags=re.UNICODE).strip()
     if not stripped:
         return "sound"
     if re.fullmatch(r"[\[(].*[\])]", text.strip()):
@@ -429,6 +468,8 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
 
     results = []
     previous_dialogue = None
+    last_scene = 1
+    last_location = "Scene 01"
     next_dialogue_meta: dict[int, tuple[str, int, str, int]] = {}
     next_vote_at: dict[int, int] = {}
     upcoming = None
@@ -464,7 +505,10 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
         else:
             before = previous_vote_meta.get(index)
             after = next_dialogue_meta.get(index)
-            chosen = before or after or ("Unknown Speaker", 1, "Scene 01", 0)
+            # An unmatched subtitle line normally continues the preceding turn.
+            # Prefer that local continuity over interpolating between distant,
+            # repeated phrases elsewhere in the reference transcript.
+            chosen = previous_dialogue or before or after or ("Unknown Speaker", 1, "Scene 01", 0)
             if kind == "dialogue" and before and after:
                 before_ref = before[3]
                 after_ref = after[3]
@@ -479,6 +523,8 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
                     ref_i = ranked[0][1]
                     turn = turns[ref_i]
                     chosen = (turn.speaker, turn.scene, turn.location, ref_i)
+                elif previous_dialogue:
+                    chosen = previous_dialogue
                 elif before_ref == after_ref:
                     chosen = before
                 else:
@@ -512,8 +558,15 @@ def align(cues: list[dict], turns: list[RefTurn], manual_speakers: dict[int, str
             scene = int(scene_override["scene"])
             location = scene_override.get("location", f"Scene {scene:02d}")
         location = scene_locations.get(scene, location)
+        if kind == "dialogue" and scene < last_scene and not scene_override:
+            scene = last_scene
+            location = last_location
         if kind == "sound":
             speaker = "Sound"
+        else:
+            last_scene = scene
+            last_location = location
+            previous_dialogue = (speaker, scene, location, ref_index)
 
         results.append({**cue, "text": display_text[index], "speaker": speaker,
                         "scene": scene, "location": location,
