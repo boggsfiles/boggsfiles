@@ -689,9 +689,13 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ['https://videos.sproutvideo.com/embed/ee9ad3bb1510e2c764/0875abb404383713', 'https://videos.sproutvideo.com/embed/dc9ad3bb1510e1c356/296cabfc05b04350', 'https://videos.sproutvideo.com/embed/ee9ad3bb1510e1c464/02a2b166978e633f', 'https://videos.sproutvideo.com/embed/069ad3bb1510e0c18c/2f8f86f76ebe40ac']
     if label == "Apocrypha" and active == "Dailies":
         frames = ["https://videos.sproutvideo.com/embed/dc9ad3bb1510e3c156/1e7eaf81ca76ee1b"]
+    if label == "Irresistible" and active == "Dailies":
+        frames = ["https://videos.sproutvideo.com/embed/dc9ad3b4131ee8cd56/e7c94e921bc484f8"]
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
+        if label == "Irresistible" and "sproutvideo" in src:
+            player_attrs = player_attrs.replace("4/3", "640/482")
         media.append(f'<div class="media"><iframe{player_attrs} src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
     if not frames:
         image_key = re.sub(r"[^a-z0-9]+", "-", route.lower()).strip("-")
