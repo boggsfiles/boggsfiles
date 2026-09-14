@@ -693,10 +693,14 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ["https://videos.sproutvideo.com/embed/dc9ad3b4131ee8cd56/e7c94e921bc484f8"]
     if label == "Kitsunegari" and active == "Dailies":
         frames = ["https://videos.sproutvideo.com/embed/8c9ad3b4131fe0cc06/95955948703214ea"]
+    if label == "Quagmire" and active == "Dailies":
+        frames = ['https://videos.sproutvideo.com/embed/dc9ad3b4131fe8cc56/4f4db09c939c8d2b', 'https://videos.sproutvideo.com/embed/489ad3b4131fe4c2c2/571d4629860f70ad']
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
         if label in ("Irresistible", "Kitsunegari") and "sproutvideo" in src:
+            player_attrs = player_attrs.replace("4/3", "640/482")
+        if src == "https://videos.sproutvideo.com/embed/489ad3b4131fe4c2c2/571d4629860f70ad":
             player_attrs = player_attrs.replace("4/3", "640/482")
         media.append(f'<div class="media"><iframe{player_attrs} src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
     if not frames:
