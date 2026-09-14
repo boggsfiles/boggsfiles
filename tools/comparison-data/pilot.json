@@ -1,0 +1,334 @@
+{
+  "title": "Pilot",
+  "slug": "pilot",
+  "code": "1X79",
+  "season": 1,
+  "episode": 1,
+  "credits": "Written by Chris Carter",
+  "airdate": "September 10, 1993",
+  "description": "Scully’s missing boyfriend, her cut classroom introduction, and the first moments of trust: three archived drafts meet the aired Pilot.",
+  "summary": "Three archived drafts trace the beginning of The X-Files: the White First Draft of December 17, 1992; the Blue revision of March 15, 1993; and the Goldenrod of April 2, 1993. Entire scenes survive on the page but disappear from the broadcast, while one early joke returns. The surviving dialogue also records the first steps of Mulder and Scully’s partnership.",
+  "category_descriptions": {
+    "cut": "Six findings covering a missing subplot, deleted scenes, and smaller dialogue trims.",
+    "changed": "A First Draft joke disappears from the later archived scripts, then returns in the aired dialogue.",
+    "shippy": "Early trust and partnership, with interpretation distinguished from dialogue and stage directions."
+  },
+  "drafts": [
+    {
+      "date": "December 17, 1992",
+      "revision": "White · First Draft",
+      "format": "Full · 59 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1Hp4u5ZNTkjJQk28uST4CyubF0gGZXdEN/view?usp=share_link"
+    },
+    {
+      "date": "March 15, 1993",
+      "revision": "Blue · 1st revision",
+      "format": "Full · 56 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1Q1QRTA8SvxsD3m9Lq1XDfvgNuIwP_7W1/view?usp=sharing"
+    },
+    {
+      "date": "April 2, 1993",
+      "revision": "Goldenrod · 5th revision",
+      "format": "Full · 59 pages",
+      "status": "Compared",
+      "url": "https://drive.google.com/file/d/1w1N2qq14uvTbUJ4nHtCV5BN_R46PG4-I/view?usp=share_link"
+    }
+  ],
+  "findings": [
+    {
+      "id": "ethan-minette",
+      "category": "cut",
+      "title": "Scully’s boyfriend, Ethan Minette — an entire subplot removed",
+      "meta": "Goldenrod pp.10–11, 22–23, 58–59 · scenes 18, 36, 103–105",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "In the archived scripts, Scully has a boyfriend, Ethan Minette. In the later drafts he sees her off before Oregon—a tense farewell because they had a vacation planned—she calls him from her motel room, and he is asleep beside her when Mulder calls at 11:21 p.m. about the missing Billy Miles case file. None of Ethan’s subplot appears in the aired Pilot."
+        },
+        {
+          "kind": "body",
+          "text": "Ethan is already present in the First Draft, but as a lobbyist Scully meets at a dinner. By Blue, he has been reworked into a TV newsroom director. That version survives to Goldenrod. The closing apartment scene carries a Pink-stage revision stamp dated March 21, 1993: the ending remained in the shooting draft rather than being rewritten away on the page."
+        },
+        {
+          "kind": "panel",
+          "label": "SCRIPT ONLY · CLOSING SCENE",
+          "text": "103 INT. DANA SCULLY/ETHAN MINETTE APARTMENT BEDROOM — NIGHT. Ethan is fast asleep, lying next to Scully. Spoons. […] ETHAN: Anybody important? SCULLY: Just work.",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "panel",
+          "label": "AIRED · CLOSING CALL",
+          "text": "SCULLY: Hello? […] MULDER: Scully, it’s me. I haven’t been able to sleep. I talked to the D.A.’s office in Raymond County, Oregon. There’s no case file on Billy Miles. The paperwork we filed is gone. We need to talk, Scully. SCULLY: Y–yes. Tomorrow.",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The captioned call contains no third speaker and no “Anybody important?” / “Just work” exchange. Captions establish the missing dialogue; by themselves, they do not establish who is physically present or when a scene was cut."
+        }
+      ]
+    },
+    {
+      "id": "quantico-classroom",
+      "category": "cut",
+      "title": "Scully’s classroom introduction at Quantico",
+      "meta": "Goldenrod p.3 · scene 6",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The Goldenrod introduces Scully mid-lecture at the FBI Academy, teaching trainees the physiology of electrocution and cattle-prod injuries before she is summoned to Blevins’ office. It establishes her as credentialed and already commanding a room. The aired introduction instead brings her to FBI Headquarters."
+        },
+        {
+          "kind": "panel",
+          "label": "SCRIPT ONLY",
+          "text": "SCULLY: …electrocution affects electrolytic conduction, disrupting the heartbeat and most of the autonomic systems. Death actually occurs from tissue damage, necrosis, in the heart itself… A cattle prod, incidentally, can kill.",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The lecture exists in every draft on file, including the First Draft. Goldenrod page 3 retains a Pink-stage stamp, March 21, 1993. In the DVD captions, “It’s happening again, isn’t it?” is followed by 22 seconds without captions, then Scully identifying herself at the front desk. None of the classroom dialogue is present."
+        }
+      ]
+    },
+    {
+      "id": "dr-glass",
+      "category": "cut",
+      "title": "Dr. Glass’s missing exchange about Karen Swenson",
+      "meta": "Goldenrod p.24 · scene 40",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The First Draft’s psychiatric-hospital scene revolves around a different suspect, Danny Doty, who disappears from the later scripts. This Karen Swenson exchange arrives in Blue and survives to Goldenrod, whose page retains a Pink revision stamp."
+        },
+        {
+          "kind": "panel",
+          "label": "SCRIPT ONLY",
+          "text": "SCULLY: Karen Swenson. Did you treat her? DR. GLASS: Yes. For several years. SCULLY: Do you believe she was murdered? DR. GLASS: I don’t know. I am not in the business of law enforcement.",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "On the caption track, “Were any of those Ray Soames’ classmates?” / “Yes” is followed two seconds later by “We’re trying to find a connection in these deaths” and the hypnosis question. The intervening Karen Swenson exchange is absent."
+        }
+      ]
+    },
+    {
+      "id": "peggy-pregnancy",
+      "category": "cut",
+      "title": "The abortion revelation — Peggy O’Dell’s pregnancy",
+      "meta": "Goldenrod pp.41–42 · scene 75",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "In the scripted diner scene, Theresa Nemman reveals that Billy Miles got Peggy O’Dell pregnant the summer after graduation. What followed implies that whatever Peggy carried was not human. The aired dialogue stops short of that revelation."
+        },
+        {
+          "kind": "panel",
+          "label": "SCRIPT ONLY",
+          "text": "THERESA: Billy Miles got Peggy O’Dell pregnant. But there was no baby in the abortion. There was something else. My father said it’s because Peggy had the marks.",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The captioned dialogue goes from “He wants to protect me” to “He thinks he can protect me, but I don’t think he can,” then to Scully asking about the marks. There is no pregnancy or abortion revelation."
+        },
+        {
+          "kind": "body",
+          "text": "The core reveal exists in every archived draft, including the First Draft. Goldenrod’s two pages retain Green- and Pink-stage stamps. The material survived the writing passes represented here; the documents do not establish whether standards, pacing, or another decision caused its omission."
+        }
+      ]
+    },
+    {
+      "id": "sulphur-and-trucker",
+      "category": "cut",
+      "title": "Sulphur in the air, and someone chasing Peggy",
+      "meta": "Goldenrod p.32, scene 56 · p.38, scene 68A",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "Two smaller sensory beats disappear. After the nine-minute time loss, script-Mulder asks Scully to smell the air before his zip-code joke. The truck driver who hits Peggy also has an additional, more ominous line."
+        },
+        {
+          "kind": "panel",
+          "label": "SCRIPT ONLY · TWO TRIMS",
+          "text": "MULDER: “smell the air… it smells like sulphur”\nTRUCK DRIVER: “Like someone’s chasing her”",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The sulphur line is absent from the First Draft, appears in Blue, and remains through Goldenrod. The aired captions move directly from “It’s a universal invariant” to “Not in this zip code.” The trucker’s only captioned line is “She ran right out in front of me.” These trims remove atmosphere without removing either event."
+        }
+      ]
+    },
+    {
+      "id": "coroner-opening",
+      "category": "cut",
+      "title": "The very first line loses “no visible cause”",
+      "meta": "Goldenrod p.2 · scenes 2–3",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "The coroner’s opening voiceover loses a small phrase. The First Draft is longer still, including “a few scrapes and bruises”; Blue and Goldenrod retain the “no visible cause” wording, which the aired captions omit."
+        },
+        {
+          "kind": "panel",
+          "label": "GOLDENROD",
+          "text": "“…no visible cause, no sign of battery or sexual assault…”",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "panel",
+          "label": "AIRED · DVD CAPTIONS",
+          "text": "“No sign of battery or sexual assault.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The aired opening gives the time of death as between eight and 12 hours earlier, then moves to the absence of battery or sexual assault and “All we have is this.” It is a small trim that only becomes obvious beside the script."
+        }
+      ]
+    },
+    {
+      "id": "produce-section",
+      "category": "changed",
+      "title": "The “produce section” joke — cut, then restored",
+      "meta": "Goldenrod p.48 · scene 82",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "In the First Draft, the male Orderly watching Billy Miles makes the “produce section” joke. Blue removes it; Goldenrod also lacks it and includes “I’ve got my own job to do. Now what’s she doing?” Yet the aired caption track restores the original joke almost verbatim, attributed to a Nurse."
+        },
+        {
+          "kind": "panel",
+          "label": "FIRST DRAFT · ORDERLY",
+          "text": "“Not me. That’s not my ward. Not my aisle of the produce section.”",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "panel",
+          "label": "AIRED · NURSE",
+          "text": "“Not me. It’s not my ward, not my aisle of the produce section.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "The caption track identifies the same Nurse speaker who earlier says “we could stand here until the second coming.” No later archived draft restores the joke. Its return could reflect a restoration or improvisation during production, but these sources do not establish how it happened."
+        }
+      ]
+    },
+    {
+      "id": "ethan-partnership",
+      "category": "shippy",
+      "title": "Removing Ethan recenters the episode",
+      "meta": "Interpretation · see Ethan Minette finding",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "With Ethan in the script, Scully has an established relationship outside the new partnership, and Mulder’s late-night call interrupts a shared bedroom. Without Ethan’s subplot, the closing call puts the emotional focus on Mulder and Scully."
+        },
+        {
+          "kind": "body",
+          "text": "That is an interpretation of the change’s effect, not a documented explanation of why it was made. The archived drafts and captions do not identify who made the decision or whether the reason was runtime, story, or something else."
+        }
+      ]
+    },
+    {
+      "id": "medical-opinion",
+      "category": "shippy",
+      "title": "“Maybe I can get your medical opinion on this.”",
+      "meta": "Goldenrod scene 16 · present in script and air",
+      "blocks": [
+        {
+          "kind": "panel",
+          "label": "AIRED",
+          "text": "“Maybe I can get your medical opinion on this.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "Alone in his office with the lights off, Mulder introduces the case that consumes him to someone he has only just met. It is a test of Scully’s expertise, and an early opening for trust. The aired invitation is leaner than the script’s earlier “Maybe what you can explain to me is…” framing."
+        }
+      ]
+    },
+    {
+      "id": "mosquito-bites",
+      "category": "shippy",
+      "title": "“Mosquito bites.” — and the hug",
+      "meta": "Goldenrod scenes 62–64 · physical staging remains qualified",
+      "blocks": [
+        {
+          "kind": "body",
+          "text": "A frightened Scully shows Mulder the marks on her back. He reassures her, and the scene becomes an early physical-trust moment. The report’s caption comparison confirms the dialogue, while the exact staging needs separate video verification."
+        },
+        {
+          "kind": "panel",
+          "label": "AIRED · DVD CAPTIONS",
+          "text": "“Mosquito bites.” / “Are you sure?” / “Yeah, I got eaten up a lot myself out there.”\n[Ten-second gap without captions]\n“You okay?” / “Yes.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "panel",
+          "label": "GOLDENROD · STAGE DIRECTION",
+          "text": "Mulder “[running] one hand gently down to the base of her spine… his face up close just over Scully’s trembling buttocks.”",
+          "tone": "script",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "Captions record speech and sound cues, not blocking or camera work. They cannot confirm or rule out this more intimate stage direction. Its correspondence to the filmed scene remains unverified here; the silent gap is not proof that the direction was filmed."
+        }
+      ]
+    },
+    {
+      "id": "samantha",
+      "category": "shippy",
+      "title": "Mulder tells Scully about his sister",
+      "meta": "Goldenrod scenes 63–66 · present in script and air",
+      "blocks": [
+        {
+          "kind": "panel",
+          "label": "SCRIPT & AIRED",
+          "text": "“I’m telling you this, Scully, because you need to know, because of what you’ve seen.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "He offers Scully his first real personal vulnerability, explaining the experience behind his pursuit. The supplied comparison identifies the line as word-for-word in both the script and DVD captions."
+        }
+      ]
+    },
+    {
+      "id": "not-alone",
+      "category": "shippy",
+      "title": "“Agent Mulder believes we are not alone.”",
+      "meta": "Goldenrod scenes 101–102 · present in script and air",
+      "blocks": [
+        {
+          "kind": "panel",
+          "label": "SCRIPT & AIRED",
+          "text": "“Agent Mulder believes we are not alone.”",
+          "tone": "aired",
+          "paired": false
+        },
+        {
+          "kind": "body",
+          "text": "In the closing debrief, Scully reports Mulder’s belief without adopting it as her own conclusion. The report reads this as an early act of loyalty: she states his position without dismissing him. The line is identical in the script and DVD captions; the protective intent is interpretation."
+        }
+      ]
+    }
+  ]
+}

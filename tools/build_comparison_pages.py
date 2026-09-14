@@ -41,15 +41,24 @@ def draft_rows(drafts):
  return ''.join(rows)
 
 def build():
- data=json.loads(Path('tools/comparison-data/herrenvolk.json').read_text())
- data.update(slug='herrenvolk',credits='Written by Chris Carter · Directed by R. W. Goodwin',airdate='October 4, 1996')
- ROOT.mkdir(exist_ok=True);(ROOT/'season-4/herrenvolk').mkdir(parents=True,exist_ok=True)
+ reports=[]
+ for source in Path('tools/comparison-data').glob('*.json'):
+  data=json.loads(source.read_text())
+  if 'findings' not in data:continue
+  data.setdefault('slug',source.stem)
+  if data['slug']=='herrenvolk':data.update(credits='Written by Chris Carter · Directed by R. W. Goodwin',airdate='October 4, 1996')
+  reports.append(data)
+ reports.sort(key=lambda d:(int(d['season']),int(d['episode'])))
+ ROOT.mkdir(exist_ok=True)
  Path('dist/assets/comparisons.css').write_text(CSS)
- seasons=''.join(f'<a href="#season-{n}">Season {n} · 1 report</a>' if n in (3,4) else f'<span>Season {n} · forthcoming</span>' for n in range(1,10))
- landing=f'''<section class="hero"><div class="shell"><div class="crumb"><a href="/archive/">Archive</a> / Script vs. Screen</div><div class="eyebrow">The page versus the episode</div><h1>Script vs.<br>Screen</h1><p>What was written. What changed. What made it to air. Explore the drafts alongside the finished episode, from missing dialogue to the moments that stayed with us.</p><div class="stats"><div><b>2</b><span>Episode reports</span></div><div><b>18</b><span>Findings</span></div><div><b>5</b><span>Drafts compared</span></div></div></div></section><section class="section"><div class="shell"><div class="eyebrow">Case files by season</div><h2>Between page and screen</h2><div class="seasons" aria-label="Season availability">{seasons}</div><div id="season-3" style="margin-bottom:48px"><div class="meta">Season 3 · 1995–1996</div><a class="feature" href="/script-vs-screen/season-3/the-blessing-way/"><img src="/assets/comparison-stills/the-blessing-way.jpg" alt="Scene from The Blessing Way" loading="lazy"><div class="feature-copy"><div class="eyebrow">Episode 01 · 3X01</div><h3>The Blessing Way</h3><p>Two archived drafts reveal the missing conversation between Scully, her mother, and Melissa—and the joke rewritten before air.</p><div class="meta">2 cuts / 2 changes / 2 shippy moments</div><strong>Read the comparison →</strong></div></a></div><div id="season-4"><div class="meta">Season 4 · 1996–1997</div><a class="feature" href="/script-vs-screen/season-4/herrenvolk/"><img src="/assets/comparison-stills/herrenvolk.jpg" alt="Scene from Herrenvolk" loading="lazy"><div class="feature-copy"><div class="eyebrow">Episode 01 · 4X01</div><h3>Herrenvolk</h3><p>Mulder’s missing pleas, Scully’s revised science, and the silence between them. Three archived drafts meet the aired season opener.</p><div class="meta">5 cuts / 5 changes / 2 shippy moments</div><strong>Read the comparison →</strong></div></a></div><p class="library-note">Read each report on the site. More episode files will appear here as the collection grows.</p></div></section>'''
+ seasons=''.join(f'<a href="#season-{n}">Season {n} · {sum(d["season"]==n for d in reports)} report</a>' if any(d['season']==n for d in reports) else f'<span>Season {n} · forthcoming</span>' for n in range(1,10))
+ cards=[]
+ for data in reports:
+  counts={k:sum(f['category']==k for f in data['findings']) for k in ('cut','changed','shippy')}
+  cards.append(f'<div id="season-{data["season"]}" style="margin-bottom:48px"><div class="meta">Season {data["season"]}</div><a class="feature" href="/script-vs-screen/season-{data["season"]}/{data["slug"]}/"><img src="/assets/comparison-stills/{data["slug"]}.jpg" alt="Scene from {E(data["title"])}" loading="lazy"><div class="feature-copy"><div class="eyebrow">Episode {data["episode"]:02d} · {E(data["code"])}</div><h3>{E(data["title"])}</h3><p>{E(data.get("description", "Explore the archived drafts alongside the aired episode."))}</p><div class="meta">{counts["cut"]} cuts / {counts["changed"]} changes / {counts["shippy"]} shippy moments</div><strong>Read the comparison →</strong></div></a></div>')
+ landing=f'''<section class="hero"><div class="shell"><div class="crumb"><a href="/archive/">Archive</a> / Script vs. Screen</div><div class="eyebrow">The page versus the episode</div><h1>Script vs.<br>Screen</h1><p>What was written. What changed. What made it to air. Explore the drafts alongside the finished episode, from missing dialogue to the moments that stayed with us.</p><div class="stats"><div><b>{len(reports)}</b><span>Episode reports</span></div><div><b>{sum(len(d['findings']) for d in reports)}</b><span>Findings</span></div><div><b>{sum(sum(x['status']=='Compared' for x in d['drafts']) for d in reports)}</b><span>Drafts compared</span></div></div></div></section><section class="section"><div class="shell"><div class="eyebrow">Case files by season</div><h2>Between page and screen</h2><div class="seasons" aria-label="Season availability">{seasons}</div>{''.join(cards)}<p class="library-note">Read each report on the site. More episode files will appear here as the collection grows.</p></div></section>'''
  (ROOT/'index.html').write_text(page('Script vs. Screen',landing))
- render_report(data)
- render_report(json.loads(Path('tools/comparison-data/the-blessing-way.json').read_text()))
+ for data in reports:render_report(data)
 def render_report(data):
  counts={key:sum(f['category']==key for f in data['findings']) for key in ('cut','changed','shippy')}
  categories=[('cut','Cut from screen','Dialogue cut or trimmed between the archived drafts and the DVD captions.'),('changed','Changed for screen','Reworded dialogue and additions in the aired episode.'),('shippy','♥ Shippy moments','He comes back from Canada with nothing, and she is the one waiting.')]
@@ -69,6 +78,8 @@ def render_report(data):
   season,episode,slug,title=reports[i]
   return (f'/script-vs-screen/season-{season}/{slug}/',title)
  report+=navigation(neighbor(current-1),neighbor(current+1),'Comparison navigation')
+ if data['slug']=='pilot':
+  report=report.replace('<div class="shell report-layout">','<div class="shell" style="padding-top:40px"><img src="/assets/comparison-stills/pilot.jpg" alt="Mulder sitting beside the motel bed while Scully listens" style="display:block;width:100%;max-height:440px;object-fit:cover;object-position:center;border:1px solid #465044"></div><div class="shell report-layout">')
  destination=ROOT/f'season-{data["season"]}'/data['slug']
  destination.mkdir(parents=True,exist_ok=True)
  (destination/'index.html').write_text(page(data['title']+' — Script vs. Screen',report))
