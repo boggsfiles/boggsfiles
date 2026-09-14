@@ -681,6 +681,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
     # Preserve owner-supplied replacement players when rebuilding archive pages.
     if label == "Born Again" and active == "Dailies":
         frames = ["https://videos.sproutvideo.com/embed/729ad3bb1513e5c1f8/95237c0f1a668b1e"]
+    if label == "Die Hand Die Verletzt" and active == "Dailies":
+        frames = ["https://videos.sproutvideo.com/embed/489ad3bb1513e0c3c2/a543370c6c67b2ec"]
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
