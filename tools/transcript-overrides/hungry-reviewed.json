@@ -1,0 +1,14 @@
+{
+  "splits": {
+    "119.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "IS THAT RIGHT ?"
+      },
+      {
+        "speaker": "Rob Roberts",
+        "text": "UH, YEAH, SURE. FRIDAY."
+      }
+    ]
+  }
+}

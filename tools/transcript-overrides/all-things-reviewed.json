@@ -1,0 +1,24 @@
+{
+  "splits": {
+    "22.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I HEARD YOU, SCULLY."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "SZEZESNY DID INDEED DROWN."
+      }
+    ],
+    "285.0": [
+      {
+        "speaker": "Nurse",
+        "text": "NO PULSE, NO RESPS."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "THREE HUNDRED JOULES."
+      }
+    ]
+  }
+}

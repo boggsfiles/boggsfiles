@@ -20,7 +20,7 @@ def render(data: dict) -> str:
     episode = data["episode"]
     season = int(data["season"])
     episode_number = int(data.get("episode_number", 1))
-    season_episode_total = 22 if season == 6 else 20 if season == 5 else 25 if season == 2 else 24
+    season_episode_total = 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
     production_code = data["production_code"]
     airdate = data.get("airdate", "September 10, 1993")
     previous_url = data.get("previous_url", "/transcripts/")

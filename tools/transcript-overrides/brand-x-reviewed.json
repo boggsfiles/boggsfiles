@@ -1,0 +1,24 @@
+{
+  "splits": {
+    "117.0": [
+      {
+        "speaker": "Dr. Peter Voss",
+        "text": "WHAT ARE YOU DOING HERE ?"
+      },
+      {
+        "speaker": "Daryl Weaver",
+        "text": "I RUN OUT OF SMOKES."
+      }
+    ],
+    "204.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WELL, WHAT IS YOUR NAME, SIR ?"
+      },
+      {
+        "speaker": "Daryl Weaver",
+        "text": "DARRYL WEAVER."
+      }
+    ]
+  }
+}

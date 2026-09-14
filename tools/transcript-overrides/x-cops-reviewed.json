@@ -1,0 +1,44 @@
+{
+  "splits": {
+    "102.0": [
+      {
+        "speaker": "Officer",
+        "text": "TURN AROUND !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'VE GOT I.D. IN MY BACK POCKET !"
+      }
+    ],
+    "228.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "OH. ALL RIGHT. GOOD."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH, IT'S SOMETHING ELSE."
+      }
+    ],
+    "284.0": [
+      {
+        "speaker": "Steve",
+        "text": "SURE DO."
+      },
+      {
+        "speaker": "Sergeant Duthie",
+        "text": "CHANTARA A STREETWALKER ?"
+      }
+    ],
+    "621.0": [
+      {
+        "speaker": "Sergeant Duthie",
+        "text": "FOR [ Bleep ] SAKES."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "NO, NO, NO. IT MAKES PERFECT SENSE."
+      }
+    ]
+  }
+}

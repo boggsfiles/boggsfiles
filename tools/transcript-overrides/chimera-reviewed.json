@@ -1,0 +1,14 @@
+{
+  "splits": {
+    "357.0": [
+      {
+        "speaker": "Ellen Adderly",
+        "text": "DO YOU NEED MILK ?"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "MM-MM. I'M FINE."
+      }
+    ]
+  }
+}

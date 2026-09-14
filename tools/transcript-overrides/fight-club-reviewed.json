@@ -1,0 +1,34 @@
+{
+  "splits": {
+    "100.0": [
+      {
+        "speaker": "Lulu Pfeiffer",
+        "text": "NOT ANY LONGER. I'VE MOVED."
+      },
+      {
+        "speaker": "First Koko\u2019s manager",
+        "text": "YOU'VE MOVED ?"
+      }
+    ],
+    "241.0": [
+      {
+        "speaker": "Bert Zupanic",
+        "text": "WHAT ?"
+      },
+      {
+        "speaker": "Saperstein",
+        "text": "YOUR GOOD LUCK CHARM DON'T SOUND SO LUCKY NO MORE."
+      }
+    ],
+    "365.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "CAN YOU WAKE HIM UP FOR ME ?"
+      },
+      {
+        "speaker": "Prison Guard",
+        "text": "YOU SURE YOU WANNA DO THAT ?"
+      }
+    ]
+  }
+}

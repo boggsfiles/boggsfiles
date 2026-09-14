@@ -1,0 +1,14 @@
+{
+  "splits": {
+    "129.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THAT'S THE WOMAN FROM THE TRAILER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "IT'S THE YOUNG WOMAN FROM THE TRAILER."
+      }
+    ]
+  }
+}

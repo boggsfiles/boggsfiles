@@ -1,0 +1,14 @@
+{
+  "splits": {
+    "593.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "PRETTY SILLY."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "AND WHAT ABOUT US ?"
+      }
+    ]
+  }
+}

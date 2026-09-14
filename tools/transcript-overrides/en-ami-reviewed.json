@@ -1,0 +1,24 @@
+{
+  "splits": {
+    "52.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "IT'S NOT A CASE, MULDER."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "YEAH, NOT YET."
+      }
+    ],
+    "61.0": [
+      {
+        "speaker": "Cameron McPeck",
+        "text": "ARE WE UNDER INVESTIGATION?"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "UH, NO."
+      }
+    ]
+  }
+}

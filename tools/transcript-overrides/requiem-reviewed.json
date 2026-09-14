@@ -1,0 +1,34 @@
+{
+  "splits": {
+    "161.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHY NOT ?"
+      },
+      {
+        "speaker": "Billy Miles",
+        "text": "WELL, IT'S OUR COUNTY,"
+      }
+    ],
+    "195.0": [
+      {
+        "speaker": "Detective Miles",
+        "text": "COME ON OVER HERE WITH THOSE."
+      },
+      {
+        "speaker": "Billy Miles",
+        "text": "HE WAS MARRIED. NEW BABY."
+      }
+    ],
+    "441.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "THEY ALL EXPERIENCE ANOMALOUS BRAIN ACTIVITY."
+      },
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "ELECTROENCEPHALITIC TRAUMA."
+      }
+    ]
+  }
+}
