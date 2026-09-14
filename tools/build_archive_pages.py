@@ -687,6 +687,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ['https://videos.sproutvideo.com/embed/aa9ad3bb1510efcc20/6942659d582a8601', 'https://videos.sproutvideo.com/embed/ee9ad3bb1510efca64/caf3494715807fa2', 'https://videos.sproutvideo.com/embed/069ad3bb1510eecf8c/738b4d0faab10d86', 'https://videos.sproutvideo.com/embed/8c9ad3bb1510eec406/124e886bb055fe1d', 'https://videos.sproutvideo.com/embed/069ad3bb1513e4c68c/aa8fd8d529d6f239']
     if label == "Ascension" and active == "Dailies":
         frames = ['https://videos.sproutvideo.com/embed/ee9ad3bb1510e2c764/0875abb404383713', 'https://videos.sproutvideo.com/embed/dc9ad3bb1510e1c356/296cabfc05b04350', 'https://videos.sproutvideo.com/embed/ee9ad3bb1510e1c464/02a2b166978e633f', 'https://videos.sproutvideo.com/embed/069ad3bb1510e0c18c/2f8f86f76ebe40ac'] + frames[4:]
+    if label == "Apocrypha" and active == "Dailies":
+        frames = ["https://videos.sproutvideo.com/embed/dc9ad3bb1510e3c156/1e7eaf81ca76ee1b"]
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
