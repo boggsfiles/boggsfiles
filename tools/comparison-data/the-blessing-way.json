@@ -4,10 +4,10 @@
   "code": "3X01",
   "season": 3,
   "episode": 1,
-  "summary": "Two passes, nine days apart. Both on file. The Blue carries 52 revision marks across 60 pages — a light pass, and almost all of it cosmetic. The single largest change to this episode was not made on either of them.",
+  "summary": "Two passes, nine days apart. Both on file. The Blue carries 52 revision marks across 60 pages, a light pass, and almost all of it cosmetic. The single largest change to this episode was not made on either of them.",
   "credits": "Written by Chris Carter · Directed by R. W. Goodwin",
   "airdate": "September 22, 1995",
-  "description": "Two archived drafts reveal the missing conversation between Scully, her mother, and Melissa—and the joke rewritten before air.",
+  "description": "Two archived drafts reveal the missing conversation between Scully, her mother, and Melissa and the joke rewritten before air.",
   "category_descriptions": {
     "cut": "Four pages survived both drafts intact and never reached the screen.",
     "changed": "Rewritten dialogue and performance changes between the drafts and the aired episode.",
@@ -33,7 +33,7 @@
     {
       "id": "scene-16",
       "category": "cut",
-      "title": "Scene 16 — the whole of it",
+      "title": "Scene 16: the whole of it",
       "meta": "White pp.11–14 · Blue, unchanged · never aired",
       "blocks": [
         {
@@ -42,8 +42,8 @@
         },
         {
           "kind": "panel",
-          "text": "“What is it, Dana?” / “I’ve made a terrible mistake. Dad would be so ashamed of me.” — sobbing — then Albert Hosteen’s narration, New Mexico, morning.",
-          "label": "AIRED — 08:06–08:22",
+          "text": "“What is it, Dana?” / “I’ve made a terrible mistake. Dad would be so ashamed of me.”, sobbing, then Albert Hosteen’s narration, New Mexico, morning.",
+          "label": "AIRED: 08:06–08:22",
           "tone": "aired",
           "paired": false
         },
@@ -54,18 +54,18 @@
         {
           "kind": "panel",
           "text": "MRS. SCULLY: How can you fault yourself, Dana? You had to make a choice. I think you did what you felt was right. SCULLY: No. I did what I felt was right for my partner. MRS. SCULLY: But wouldn’t Mulder have done the same for you? SCULLY: Yes. But that’s just it. I behaved exactly how Mulder would have behaved. I lied and countermanded my superiors because the pursuit of the truth seemed more important.",
-          "label": "WHITE (07/03) & BLUE (07/12), SC.16 — NOT ON THE DISC",
+          "label": "WHITE (07/03) & BLUE (07/12), SC.16: NOT ON THE DISC",
           "tone": "script",
           "paired": false
         },
         {
           "kind": "body",
-          "text": "Her mother’s answer to it is the thing the broadcast most conspicuously loses — a direct reply to “Dad would be so ashamed of me,” which on air is left standing:"
+          "text": "Her mother’s answer to it is the thing the broadcast most conspicuously loses, a direct reply to “Dad would be so ashamed of me,” which on air is left standing:"
         },
         {
           "kind": "panel",
-          "text": "MRS. SCULLY: Dana. If you’re really worried about what Dad would have thought of you — I think he would have seen there was no right choice. Or no wrong one. (Dana does not appear heartened by this.) I think he would have been proud and supportive of his daughter either way.",
-          "label": "WHITE & BLUE, SC.16 — NOT ON THE DISC",
+          "text": "MRS. SCULLY: Dana. If you’re really worried about what Dad would have thought of you, I think he would have seen there was no right choice. Or no wrong one. (Dana does not appear heartened by this.) I think he would have been proud and supportive of his daughter either way.",
+          "label": "WHITE & BLUE, SC.16: NOT ON THE DISC",
           "tone": "script",
           "paired": false
         }
@@ -79,23 +79,23 @@
       "blocks": [
         {
           "kind": "body",
-          "text": "The back half of Scene 16 is a two-hander between Dana and Melissa, and it is the episode’s only real Mulder-and-Scully material — conducted, since he is nine hundred miles away in a hogan, entirely in the third person."
+          "text": "The back half of Scene 16 is a two-hander between Dana and Melissa, and it is the episode’s only real Mulder-and-Scully material, conducted, since he is nine hundred miles away in a hogan, entirely in the third person."
         },
         {
           "kind": "panel",
           "text": "MELISSA: Something’s happened to the man you work with, hasn’t it? … I’ve been feeling it for the past two days. SCULLY: Melissa… Mulder is very likely dead. MELISSA: You don’t believe that. SCULLY: No, I do believe it, Melissa. MELISSA: Well, I’m getting strong feelings otherwise. SCULLY: I wish it weren’t true. MELISSA: No, it’s deeper than that. You’re radiating, Dana. You have a connection with him that is still strong and powerful.",
-          "label": "WHITE & BLUE, SC.16 — NOT ON THE DISC",
+          "label": "WHITE & BLUE, SC.16: NOT ON THE DISC",
           "tone": "script",
           "paired": false
         },
         {
           "kind": "body",
-          "text": "It escalates into a real fight. Scully gets off the sofa “angered by her sister’s loopy insensitivity”; Melissa tells her to get a second opinion; Scully tells her this is not a medical condition but a statement of fact, and that based on the empirical evidence — “which I happen to have gathered” — it looks like a pretty damn sure bet that “you’re whistling in the graveyard.” Melissa answers that if she could see through her guilt and anger she might look past her Western empiricism. And Scully ends it:"
+          "text": "It escalates into a real fight. Scully gets off the sofa “angered by her sister’s loopy insensitivity”; Melissa tells her to get a second opinion; Scully tells her this is not a medical condition but a statement of fact, and that based on the empirical evidence, “which I happen to have gathered”, it looks like a pretty damn sure bet that “you’re whistling in the graveyard.” Melissa answers that if she could see through her guilt and anger she might look past her Western empiricism. And Scully ends it:"
         },
         {
           "kind": "panel",
           "text": "SCULLY: Thank you. I’ll make sure to consult my tarot cards when I’m out looking for a new job. (beat) I’ve lost someone, Melissa. I’d like to deal with it in my own way.",
-          "label": "WHITE & BLUE, SC.16, LAST LINES — NOT ON THE DISC",
+          "label": "WHITE & BLUE, SC.16, LAST LINES: NOT ON THE DISC",
           "tone": "script",
           "paired": false
         },
@@ -125,7 +125,7 @@
         {
           "kind": "panel",
           "text": "SCULLY: It looks like a computer chip. MD: (baffled) That’s what it looks like.",
-          "label": "BLUE (07/12) (MARKED X) & AIRED — 24:44",
+          "label": "BLUE (07/12) (MARKED X) & AIRED: 24:44",
           "tone": "script",
           "paired": true
         },
@@ -154,7 +154,7 @@
       "blocks": [
         {
           "kind": "body",
-          "text": "The monologue in Mulder’s vision is otherwise word-perfect across White, Blue and broadcast — the absence of time, the perpetual night, the dull clarity of the dead. Three small things move on the day. “There is truth here, old friend” becomes “There is truth, you know, old friend.” “Fight the monsters without and within ” is reversed to “ within and without.” And the last sentence in both drafts — “You have but precious time” — is not spoken; the scene goes straight from the monsters into the hissing and the clamour of the boxcar. These are performance-level differences rather than script changes, and are recorded as such."
+          "text": "The monologue in Mulder’s vision is otherwise word-perfect across White, Blue and broadcast, the absence of time, the perpetual night, the dull clarity of the dead. Three small things move on the day. “There is truth here, old friend” becomes “There is truth, you know, old friend.” “Fight the monsters without and within ” is reversed to “ within and without.” And the last sentence in both drafts, “You have but precious time”, is not spoken; the scene goes straight from the monsters into the hissing and the clamour of the boxcar. These are performance-level differences rather than script changes, and are recorded as such."
         }
       ]
     },
@@ -166,11 +166,11 @@
       "blocks": [
         {
           "kind": "body",
-          "text": "This is true of the drafts and true of the broadcast. Mulder spends the hour in the quarry, the boxcar and the hogan; Scully spends it in Washington. He has one line audible to anyone but himself — the dream voice at 31:49, “I have been on the bridge that spans two worlds” — and it is spoken to no one. There is no frame in the episode with both of them in it."
+          "text": "This is true of the drafts and true of the broadcast. Mulder spends the hour in the quarry, the boxcar and the hogan; Scully spends it in Washington. He has one line audible to anyone but himself, the dream voice at 31:49, “I have been on the bridge that spans two worlds”, and it is spoken to no one. There is no frame in the episode with both of them in it."
         },
         {
           "kind": "body",
-          "text": "Which is why the loss of Scene 16 lands where it does. It was the compensating scene: the place where the script let someone else say the thing out loud, so that the separation would register as a separation. Without it the episode simply runs two stories in parallel, and the closest it comes to the subject is Scully telling a room full of her superiors that she did what she did for her partner — a line that is also in Scene 16, and also cut."
+          "text": "Which is why the loss of Scene 16 lands where it does. It was the compensating scene: the place where the script let someone else say the thing out loud, so that the separation would register as a separation. Without it the episode simply runs two stories in parallel, and the closest it comes to the subject is Scully telling a room full of her superiors that she did what she did for her partner, a line that is also in Scene 16, and also cut."
         }
       ]
     },

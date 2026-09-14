@@ -40,12 +40,12 @@
     {
       "id": "ethan-minette",
       "category": "cut",
-      "title": "Scully’s boyfriend, Ethan Minette — an entire subplot removed",
+      "title": "Scully’s boyfriend, Ethan Minette: an entire subplot removed",
       "meta": "Goldenrod pp.10–11, 22–23, 58–59 · scenes 18, 36, 103–105",
       "blocks": [
         {
           "kind": "body",
-          "text": "In the archived scripts, Scully has a boyfriend, Ethan Minette. In the later drafts he sees her off before Oregon—a tense farewell because they had a vacation planned—she calls him from her motel room, and he is asleep beside her when Mulder calls at 11:21 p.m. about the missing Billy Miles case file. None of Ethan’s subplot appears in the aired Pilot."
+          "text": "In the archived scripts, Scully has a boyfriend, Ethan Minette. In the later drafts he sees her off before Oregon, a tense farewell because they had a vacation planned, she calls him from her motel room, and he is asleep beside her when Mulder calls at 11:21 p.m. about the missing Billy Miles case file. None of Ethan’s subplot appears in the aired Pilot."
         },
         {
           "kind": "body",
@@ -54,7 +54,7 @@
         {
           "kind": "panel",
           "label": "SCRIPT ONLY · CLOSING SCENE",
-          "text": "103 INT. DANA SCULLY/ETHAN MINETTE APARTMENT BEDROOM — NIGHT. Ethan is fast asleep, lying next to Scully. Spoons. […] ETHAN: Anybody important? SCULLY: Just work.",
+          "text": "103 INT. DANA SCULLY/ETHAN MINETTE APARTMENT BEDROOM, NIGHT. Ethan is fast asleep, lying next to Scully. Spoons. […] ETHAN: Anybody important? SCULLY: Just work.",
           "tone": "script",
           "paired": false
         },
@@ -120,7 +120,7 @@
     {
       "id": "peggy-pregnancy",
       "category": "cut",
-      "title": "The abortion revelation — Peggy O’Dell’s pregnancy",
+      "title": "The abortion revelation: Peggy O’Dell’s pregnancy",
       "meta": "Goldenrod pp.41–42 · scene 75",
       "blocks": [
         {
@@ -200,7 +200,7 @@
     {
       "id": "produce-section",
       "category": "changed",
-      "title": "The “produce section” joke — cut, then restored",
+      "title": "The “produce section” joke: cut, then restored",
       "meta": "Goldenrod p.48 · scene 82",
       "blocks": [
         {
@@ -265,7 +265,7 @@
     {
       "id": "mosquito-bites",
       "category": "shippy",
-      "title": "“Mosquito bites.” — and the hug",
+      "title": "“Mosquito bites.” and the hug",
       "meta": "Goldenrod scenes 62–64 · physical staging remains qualified",
       "blocks": [
         {
