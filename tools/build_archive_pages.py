@@ -289,7 +289,9 @@ def build_script_page(label: str, slug: str):
             f'<a class="draft" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{html.escape(name)} ↗</a>'
             for name, url in sorted(card["links"], key=draft_sort_key)
         )
-        anchor = ' id="bad-blood" style="scroll-margin-top:112px"' if slug == "season-5" and card["title"] == "Bad Blood 5X12" else ""
+        featured_anchors = {("season-5", "Bad Blood 5X12"): "bad-blood", ("season-2", "Duane Barry 2X05"): "duane-barry", ("season-1", "Tooms 1X20"): "tooms", ("season-3", "Grotesque 3X14"): "grotesque"}
+        anchor_id = featured_anchors.get((slug, card["title"]))
+        anchor = f' id="{anchor_id}" style="scroll-margin-top:112px"' if anchor_id else ""
         cards_html.append(f'<article class="episode"{anchor}><div class="episode-image"{image_style}></div><div class="episode-body"><span class="episode-no">File {index:02d}</span><h2>{html.escape(card["title"])}</h2><div class="drafts">{buttons}</div></div></article>')
     season_match = re.fullmatch(r"season-(\d+)", slug)
     season_nav = season_navigation(int(season_match.group(1))) if season_match else ""
