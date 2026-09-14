@@ -697,6 +697,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ['https://videos.sproutvideo.com/embed/dc9ad3b4131fe8cc56/4f4db09c939c8d2b', 'https://videos.sproutvideo.com/embed/489ad3b4131fe4c2c2/571d4629860f70ad']
     if label == "Musings of a Cigarette Smoking Man" and active == "Dailies":
         frames = ['https://videos.sproutvideo.com/embed/069ad3b41318e4c48c/5b67f61dc95d10e5', 'https://videos.sproutvideo.com/embed/dc9ad3b41318e2c156/065b20dc0cf5f8db', 'https://videos.sproutvideo.com/embed/729ad3b41318e0c6f8/bc0a7891dcc6b245', 'https://videos.sproutvideo.com/embed/dc9ad3b41318eecd56/074d833b38cccac9', 'https://videos.sproutvideo.com/embed/aa9ad3b41318efcd20/a6fadee57e216766', 'https://videos.sproutvideo.com/embed/109ad3b41319e7c39a/e5db6011374f88d2']
+    if label == "Paper Hearts" and active == "Dailies":
+        frames = ['https://videos.sproutvideo.com/embed/069ad3b41319e3c28c/87a1d15dac5e59a5', 'https://videos.sproutvideo.com/embed/ee9ad3b41319e3c664/514b8914a9505917', 'https://videos.sproutvideo.com/embed/dc9ad3b41319e2c056/c6b3f7dfc3091fe8', 'https://videos.sproutvideo.com/embed/069ad3b41319e1c08c/267375a4500ff175', 'https://videos.sproutvideo.com/embed/109ad3b41319e1c59a/a97db2b313983abf', 'https://videos.sproutvideo.com/embed/729ad3b41319e0c7f8/1885543b1eb40838', 'https://videos.sproutvideo.com/embed/ee9ad3b41319e0c564/42d727a58672dcc8', 'https://videos.sproutvideo.com/embed/069ad3b41319efce8c/5c91fa27467f4250', 'https://videos.sproutvideo.com/embed/489ad3b41319efcfc2/1d06888f01e6f7d3', 'https://videos.sproutvideo.com/embed/ee9ad3b41319efca64/43b86516e607a1b0', 'https://videos.sproutvideo.com/embed/109ad3b41319efcb9a/ba80525ca3c6cc86', 'https://videos.sproutvideo.com/embed/8c9ad3b41319efc506/0eab1ca23804e74e', 'https://videos.sproutvideo.com/embed/aa9ad3b41319eecd20/7f516eba71c68f74', 'https://videos.sproutvideo.com/embed/489ad3b41319eecec2/10821663f67975e1', 'https://videos.sproutvideo.com/embed/729ad3b41319eec9f8/4f7ce11ed0acdcb2']
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
@@ -704,6 +706,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             player_attrs = player_attrs.replace("4/3", "640/482")
         if src == "https://videos.sproutvideo.com/embed/489ad3b4131fe4c2c2/571d4629860f70ad":
             player_attrs = player_attrs.replace("4/3", "640/482")
+        if src == "https://videos.sproutvideo.com/embed/069ad3b41319e3c28c/87a1d15dac5e59a5":
+            player_attrs = player_attrs.replace("4/3", "640/483")
         media.append(f'<div class="media"><iframe{player_attrs} src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
     if not frames:
         image_key = re.sub(r"[^a-z0-9]+", "-", route.lower()).strip("-")
