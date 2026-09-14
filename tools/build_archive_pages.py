@@ -705,6 +705,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ['https://videos.sproutvideo.com/embed/489ad3b4131ae7c4c2/ed8b100e8f7b47e2', 'https://videos.sproutvideo.com/embed/8c9ad3b4131ae7ce06/5ffab6669f30b42a', 'https://videos.sproutvideo.com/embed/8c9ad3b4131ae0c906/b6ce93a6dea6ae45', 'https://videos.sproutvideo.com/embed/dc9ad3b4131ae1c056/df4d7116d0d7e18d', 'https://videos.sproutvideo.com/embed/ee9ad3b4131ae1c764/a501c41b9ec6d18d', 'https://videos.sproutvideo.com/embed/dc9ad3b4131ae2c356/8eb2cb185fd9220d', 'https://videos.sproutvideo.com/embed/069ad3b4131ae2c08c/336f096425242b86']
     if label == "Tunguska" and active == "Dailies":
         frames = ['https://videos.sproutvideo.com/embed/729ad3b4131ae2c6f8/f6e8b2621ad84286', 'https://videos.sproutvideo.com/embed/5a9ad3b4131ae2cad0/6c106968d3bdd929', 'https://videos.sproutvideo.com/embed/069ad3b4131ae3c18c/2deff7a82043a040', 'https://videos.sproutvideo.com/embed/489ad3b4131ae3c0c2/c67e09c432025ea9', 'https://videos.sproutvideo.com/embed/5a9ad3b4131ae3cbd0/569077881abaa9fc', 'https://videos.sproutvideo.com/embed/109ad3b4131aeccb9a/3d5a2210a73a4730', 'https://videos.sproutvideo.com/embed/489ad3b4131aedcec2/16770156a8da7827']
+    if label == "Deep Throat" and active == "Dailies":
+        frames = ['https://videos.sproutvideo.com/embed/069ad3b41318e6c68c/267839abfb3792ca', 'https://videos.sproutvideo.com/embed/069ad3b41318e7c78c/a484dac5b89bdbb0']
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
