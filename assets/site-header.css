@@ -15,3 +15,20 @@ header.bf-header{position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(2
 @media(max-width:560px){.bf-header .bf-inner{width:calc(100% - 28px);height:72px}.search-rail{top:72px}}
 
 header.bf-header-home{position:absolute;left:0;right:0;background:linear-gradient(#0b0e0de8,transparent)}
+
+/* Shared collection rule: keep final rows centered as cards are added. */
+:where(.episode-grid,.season-grid,.seasons:has(>.season),.collection:not(.production-grid),.special-grid,.grid:has(>.card),.comic-grid,.media-grid){
+ --card-columns:3;--card-gap:1px;display:flex!important;flex-wrap:wrap;justify-content:center;gap:var(--card-gap)!important;background:transparent!important;border:0!important;
+}
+:where(.episode-grid,.season-grid,.seasons:has(>.season),.collection:not(.production-grid),.special-grid,.grid:has(>.card),.comic-grid,.media-grid)>*{
+ box-sizing:border-box;flex:0 0 calc((100% - (var(--card-columns) - 1)*var(--card-gap))/var(--card-columns));min-width:0;
+}
+:where(.episode-grid,.season-grid,.seasons:has(>.season),.collection:not(.production-grid),.comic-grid,.grid:has(>.card))>*{border:1px solid var(--line,#343c38)}
+.episode-grid{--card-columns:4}.grid:has(>.card),.media-grid{--card-columns:2}.special-grid{--card-gap:15px}.media-grid{--card-gap:18px}.comic-grid{--card-columns:5}
+@media(max-width:1160px){.episode-grid{--card-columns:2}}
+@media(max-width:1000px){.season-grid{--card-columns:2}}
+@media(max-width:900px){.comic-grid{--card-columns:3}}
+@media(max-width:800px){.seasons:has(>.season),.collection:not(.production-grid){--card-columns:2}.special-grid{--card-columns:1}}
+@media(max-width:760px){.media-grid{--card-columns:1}}
+@media(max-width:650px){.episode-grid{--card-columns:1}}
+@media(max-width:620px){.season-grid,.seasons:has(>.season),.collection:not(.production-grid),.grid:has(>.card){--card-columns:1}.comic-grid{--card-columns:2}}
