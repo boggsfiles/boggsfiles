@@ -1,0 +1,24 @@
+{
+  "splits": {
+    "10.0": [
+      {
+        "speaker": "Dr Cabrera",
+        "text": "THIS MAN IS AN F.B.I. AGENT."
+      },
+      {
+        "speaker": "Orderly",
+        "text": "WELL, WHAT'S WRONG WITH HIM ?"
+      }
+    ],
+    "109.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "SAYS WHO ?"
+      },
+      {
+        "speaker": "Walter Skinner",
+        "text": "SAYS THE DOCTOR WHO RELEASED ME FROM THE HOSPITAL."
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "splits": {
+    "182.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I GUESS, UH, WE'RE A LITTLE EARLY."
+      },
+      {
+        "speaker": "Daryl",
+        "text": "O YE OF LITTLE FAITH."
+      }
+    ],
+    "224.1": [
+      {
+        "speaker": "Holman",
+        "text": "HE LEFT."
+      },
+      {
+        "speaker": "Sheila",
+        "text": "I KNOW."
+      }
+    ],
+    "297.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU DIDN'T CAUSE ANY OF IT."
+      },
+      {
+        "speaker": "Sheila",
+        "text": "OH. YOU'RE SURE ?"
+      }
+    ],
+    "312.0": [
+      {
+        "speaker": "Daryl",
+        "text": "ALL RIGHT, WHAT WAS I SAYING ?"
+      },
+      {
+        "speaker": "Cindy",
+        "text": "\" POWERS OF CONCENTRATION.\""
+      }
+    ],
+    "340.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "THERE'S EVEN THAT DISORDER--"
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "\" SAD.\""
+      }
+    ]
+  }
+}

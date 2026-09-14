@@ -1,0 +1,18 @@
+{
+  "speakers": {
+    "18.0": "Dana Scully",
+    "298.0": "Fox Mulder"
+  },
+  "splits": {
+    "37.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "I MISSED THE MEETING."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "NO, YOU DIDN'T MISS THE MEETING."
+      }
+    ]
+  }
+}

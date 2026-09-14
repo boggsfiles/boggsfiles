@@ -1,0 +1,19 @@
+{
+  "speakers": {
+    "241.0": "Man harassing woman",
+    "242.0": "Man harassing woman",
+    "246.0": "Man harassing woman"
+  },
+  "splits": {
+    "361.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "MULDER."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "HI. MULDER, IT'S ME."
+      }
+    ]
+  }
+}

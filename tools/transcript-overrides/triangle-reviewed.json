@@ -1,0 +1,29 @@
+{
+  "speakers": {
+    "304.0": "Dana Scully",
+    "477.0": "1939 Cigarette Smoking Man",
+    "591.0": "Walter Skinner"
+  },
+  "splits": {
+    "199.0": [
+      {
+        "speaker": "John Fitzgerald Byers",
+        "text": "MULDER'S DISAPPEARED."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "FROM WHERE ?"
+      }
+    ],
+    "387.0": [
+      {
+        "speaker": "Crewman 2",
+        "text": "WHAT ARE YOU DOIN' DOWN HERE ?"
+      },
+      {
+        "speaker": "Sailor",
+        "text": "HAVIN' A CUP OF TEA."
+      }
+    ]
+  }
+}

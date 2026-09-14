@@ -1,0 +1,30 @@
+{
+  "speakers": {
+    "43.0": "African man",
+    "44.0": "African man",
+    "45.0": "African man",
+    "239.0": "Fox Mulder"
+  },
+  "splits": {
+    "108.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "OH, COME ON."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I WONDER IF THERE'S SOMETHING TO THIS."
+      }
+    ],
+    "228.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I'LL COME GET YOU--"
+      },
+      {
+        "speaker": "Landlord",
+        "text": "YEAH, YEAH, YEAH."
+      }
+    ]
+  }
+}

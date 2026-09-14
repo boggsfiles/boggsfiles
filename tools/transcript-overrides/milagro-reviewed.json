@@ -1,0 +1,19 @@
+{
+  "speakers": {
+    "46.0": "Kevin",
+    "47.0": "Kevin",
+    "48.0": "Kevin"
+  },
+  "splits": {
+    "30.0": [
+      {
+        "speaker": "Kevin",
+        "text": "I'M NOT EVEN DOING ANYTHING."
+      },
+      {
+        "speaker": "Maggie",
+        "text": "WELL, YOU'RE THINKING ABOUT IT."
+      }
+    ]
+  }
+}

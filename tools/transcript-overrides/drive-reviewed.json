@@ -1,0 +1,21 @@
+{
+  "speakers": {
+    "243.0": "Police radio",
+    "244.0": "Police radio",
+    "245.0": "Police radio",
+    "340.0": "Patrick Crump",
+    "394.0": "Medical attendant"
+  },
+  "splits": {
+    "355.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "YOU THINK THE GOVERNMENT DID THIS TO YOU ?"
+      },
+      {
+        "speaker": "Crump",
+        "text": "OH, HELL, YEAH. WHO ELSE ?"
+      }
+    ]
+  }
+}

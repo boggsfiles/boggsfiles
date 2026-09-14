@@ -1,0 +1,14 @@
+{
+  "splits": {
+    "342.0": [
+      {
+        "speaker": "Detweiler",
+        "text": "YOU'RE NOT MAKING ANY SENSE."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "OH, I THINK I AM."
+      }
+    ]
+  }
+}

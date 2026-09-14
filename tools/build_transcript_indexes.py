@@ -102,7 +102,9 @@ SEASON_5 = [('redux', 'Redux', '5X02', 'Mulder challenges the evidence behind th
 
 SEASON_5 += [('all-souls', 'All Souls', '5X17', 'The deaths of four girls draw Scully into a case that tests her faith and her grief.'), ('the-pine-bluff-variant', 'The Pine Bluff Variant', '5X18', 'Scully suspects Mulder is hiding something as he infiltrates a group planning a biological attack.'), ('folie-a-deux', 'Folie à Deux', '5X19', 'A hostage crisis leaves Mulder seeing a threat that no one else believes is real.'), ('the-end', 'The End', '5X20', 'A gifted young chess player brings Diana Fowley into the case as the X-Files faces a devastating threat.')]
 
-SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5}
+SEASON_6 = [('the-beginning', 'The Beginning', '6ABX01', 'An alien creature draws Mulder and Scully back into a case they are forbidden to investigate.'), ('drive', 'Drive', '6ABX02', 'A desperate man forces Mulder westward while Scully searches for the cause of his illness.'), ('triangle', 'Triangle', '6ABX03', 'Mulder boards a ship in the Bermuda Triangle and finds himself in 1939.'), ('dreamland', 'Dreamland', '6ABX04', 'An encounter near Area 51 leaves Mulder living another man’s life.'), ('dreamland-ii', 'Dreamland II', '6ABX05', 'Mulder and Morris Fletcher struggle with the consequences of their switched identities.'), ('how-the-ghosts-stole-christmas', 'How the Ghosts Stole Christmas', '6ABX08', 'A Christmas Eve visit to a haunted house becomes a test of the agents’ trust.'), ('terms-of-endearment', 'Terms of Endearment', '6ABX06', 'A missing baby leads Mulder and Scully to a father with a secret.'), ('the-rain-king', 'The Rain King', '6ABX07', 'A Kansas town’s unusual weather draws the agents into a complicated romance.'), ('sr-819', 'S.R. 819', '6ABX10', 'Skinner falls gravely ill as a mysterious caller threatens his life.'), ('tithonus', 'Tithonus', '6ABX09', 'Scully investigates a photographer who seems to know when people will die.'), ('two-fathers', 'Two Fathers', '6ABX11', 'Cassandra Spender returns with knowledge that threatens the conspiracy.'), ('one-son', 'One Son', '6ABX12', 'The agents confront the final preparations for alien colonization.'), ('agua-mala', 'Agua Mala', '6ABX14', 'A hurricane traps Mulder and Scully with a creature that travels through water.'), ('monday', 'Monday', '6ABX15', 'A bank robbery forces the agents to relive the same deadly day.'), ('arcadia', 'Arcadia', '6ABX13', 'Mulder and Scully pose as a married couple in a community with strict rules.'), ('alpha', 'Alpha', '6ABX16', 'A rare animal’s arrival leads to a series of killings and a disputed identity.'), ('trevor', 'Trevor', '6ABX17', 'An escaped prisoner appears able to pass through solid objects.'), ('milagro', 'Milagro', '6ABX18', 'A writer living next to Mulder becomes entangled in a murder investigation.'), ('the-unnatural', 'The Unnatural', '6ABX19', 'A baseball story leads Mulder to an extraordinary player from the past.'), ('three-of-a-kind', 'Three of a Kind', '6ABX20', 'The Lone Gunmen call Scully to Las Vegas after Byers spots Susanne Modeski.'), ('field-trip', 'Field Trip', '6ABX21', 'A missing couple leads the agents into a cave and a series of deceptive realities.'), ('biogenesis', 'Biogenesis', '6ABX22', 'An artifact from the African coast has a disturbing effect on Mulder.')]
+
+SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6}
 
 HEAD = '''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -118,7 +120,7 @@ def season_landing() -> str:
     for season in range(1,10):
         live=season in SEASONS
         count=len(SEASONS.get(season, []))
-        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "redux" if season == 5 else "little-green-men"
+        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "redux" if season == 5 else "the-beginning" if season == 6 else "little-green-men"
         image_ext="jpg" if season >= 3 else "webp"
         cards.append(f'''<a class="season-card {'live' if live else 'soon'}" href="/transcripts/season-{season}/">
           <div class="season-visual"><span>{season:02d}</span>{f'<img src="/assets/transcript-stills/{image}.{image_ext}" alt="Scene from Season {season}">' if live else ''}</div>
@@ -141,11 +143,11 @@ def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:
         closing = '</article>' if pending else '</a>'
         cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {number:02d} · {code}</span><h2>{title}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
 
-    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1995–1996"
+    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1998–1999" if season == 6 else "1995–1996"
     intro = "The beginning of the X-Files and the beginning of Mulder and Scully." if season == 1 else "The X-Files is closed, but the search continues as Mulder and Scully are pulled back toward the cases that defined them."
-    if season in (3,4,5):
+    if season in (3,4,5,6):
         intro = "Mulder and Scully pursue the conspiracy and investigate a new collection of unexplained cases."
-    total = 20 if season == 5 else 25 if season == 2 else 24
+    total = 22 if season == 6 else 20 if season == 5 else 25 if season == 2 else 24
     source_index = "first-season-index.html" if season == 1 else "second-season-index.html" if season == 2 else "fourth-season-index.html" if season == 4 else "fifth-season-index.html" if season == 5 else "third-season-index.html"
     return f'''<!doctype html><html lang="en"><head><title>Season {season} Transcripts - Boggsfiles</title><meta name="description" content="Browse character-labelled transcripts for The X-Files Season {season}.">{HEAD}<style>{BASE}
     .episodes{{padding:72px 0 0}}.season-head{{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}}.season-head h2{{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}}.season-head>span{{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}}.episode-grid{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}}.episode-card{{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}}.episode-card:hover{{background:#141b18}}.episode-card img{{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}}.episode-card:hover img{{filter:saturate(.95) brightness(.9)}}.episode-copy{{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:290px}}.episode-copy>span{{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}}.episode-copy h2{{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}}.episode-copy p{{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}}.episode-copy b{{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}}.source-note{{color:#747e77;font-size:.55rem;margin-top:22px;text-align:right}}.source-note a{{text-decoration:underline;text-underline-offset:3px}}@media(max-width:1160px){{.episode-grid{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:650px){{.episode-grid{{grid-template-columns:1fr}}.episode-copy{{min-height:240px}}.season-head{{align-items:start;flex-direction:column;gap:18px}}}}
@@ -163,7 +165,7 @@ def main() -> None:
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(season_page(season, episodes),encoding="utf-8")
-    for season in range(6,10):
+    for season in range(7,10):
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(placeholder(season),encoding="utf-8")

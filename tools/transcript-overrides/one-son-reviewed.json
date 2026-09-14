@@ -1,0 +1,30 @@
+{
+  "splits": {
+    "24.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHO ARE YOU ?"
+      },
+      {
+        "speaker": "Cdc Biosuit Man",
+        "text": "GET DOWN !"
+      }
+    ],
+    "79.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "I MEAN, THE REMARKABLE THING IS SHE WAS WELL."
+      }
+    ],
+    "142.0": [
+      {
+        "speaker": "Jeffrey Spender",
+        "text": "HOW ARE YOU FEELING ?"
+      },
+      {
+        "speaker": "Cassandra Spender",
+        "text": "I'M FINE."
+      }
+    ]
+  }
+}

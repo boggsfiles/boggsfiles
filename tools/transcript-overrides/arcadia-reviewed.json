@@ -1,0 +1,24 @@
+{
+  "speakers": {
+    "441.0": "Mike Raskub",
+    "348.0": "Fox Mulder"
+  },
+  "splits": {
+    "122.0": [
+      {
+        "speaker": "Fox Mulder",
+        "text": "FINE."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "THIS TELLS ME THAT YOU'RE NOT TAKING THIS SERIOUSLY."
+      }
+    ],
+    "295.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "WHAT'S HE GOT THERE ? DEEP BREATH."
+      }
+    ]
+  }
+}

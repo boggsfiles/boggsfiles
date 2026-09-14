@@ -1,0 +1,50 @@
+{
+  "speakers": {
+    "60.0": "Vin Scully",
+    "110.0": "Vin Scully",
+    "406.0": "Bus announcer",
+    "497.0": "Umpire"
+  },
+  "splits": {
+    "138.0": [
+      {
+        "speaker": "Arthur Dales",
+        "text": "FORTY-SEVEN. FORTY-SEVEN,"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "WHATEVER."
+      }
+    ],
+    "265.0": [
+      {
+        "speaker": "Josh Exley",
+        "text": "MUST'VE BEEN A REAL BIG ONE."
+      },
+      {
+        "speaker": "Young Arthur Dales",
+        "text": "COULD'VE RIPPED YOUR HEAD OFF."
+      }
+    ],
+    "302.0": [
+      {
+        "speaker": "Josh Exley",
+        "text": "HEY, MORNIN', POORBOY."
+      },
+      {
+        "speaker": "Poorboy",
+        "text": "MORNIN', EX. HOW'S THE MELON ?"
+      }
+    ],
+    "386.0": [
+      {
+        "speaker": "Young Arthur Dales",
+        "text": "YEAH."
+      },
+      {
+        "speaker": "Josh Exley",
+        "text": "THAT WAS LIKE MUSIC TO ME."
+      }
+    ]
+  }
+}

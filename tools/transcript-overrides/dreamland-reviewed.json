@@ -1,0 +1,32 @@
+{
+  "speakers": {
+    "34.0": "Morris Fletcher",
+    "235.0": "Television announcer",
+    "429.0": "Fox Mulder",
+    "430.0": "Fox Mulder",
+    "431.0": "Fox Mulder",
+    "119.0": "Fox Mulder"
+  },
+  "splits": {
+    "205.0": [
+      {
+        "speaker": "Boy",
+        "text": "YO, DAD."
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "HOWDY, TERRY."
+      }
+    ],
+    "231.0": [
+      {
+        "speaker": "Joanne Fletcher",
+        "text": "MAYBE IT'S BETTER IF YOU JUST--"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "I'M SORRY."
+      }
+    ]
+  }
+}

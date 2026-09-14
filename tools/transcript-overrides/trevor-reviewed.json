@@ -1,0 +1,23 @@
+{
+  "speakers": {
+    "226.0": "Police radio",
+    "362.0": "Newscaster",
+    "363.0": "Newscaster",
+    "364.0": "Newscaster",
+    "365.0": "Newscaster",
+    "366.0": "Newscaster",
+    "367.0": "Newscaster"
+  },
+  "splits": {
+    "25.0": [
+      {
+        "speaker": "Fellowes",
+        "text": "NOW, WHAT YOU GO AND DO THAT FOR ?"
+      },
+      {
+        "speaker": "Pinker Rawls",
+        "text": "THE MAN PISSED ME OFF, BOSS."
+      }
+    ]
+  }
+}

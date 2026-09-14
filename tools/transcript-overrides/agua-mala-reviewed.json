@@ -1,0 +1,39 @@
+{
+  "speakers": {
+    "517.0": "Dana Scully",
+    "519.0": "Dana Scully",
+    "540.0": "Fox Mulder"
+  },
+  "splits": {
+    "207.0": [
+      {
+        "speaker": "Dana Scully",
+        "text": "MULDER !"
+      },
+      {
+        "speaker": "Fox Mulder",
+        "text": "THAT WAS JUST ONE \"HOWDY DO\" OVER THE LINE."
+      }
+    ],
+    "451.0": [
+      {
+        "speaker": "Walter",
+        "text": "YOU MEAN HE TURNED INTO ONE OF THOSE THINGS ?"
+      },
+      {
+        "speaker": "Angela",
+        "text": "THEY'RE MORE OF THEM ?"
+      }
+    ],
+    "465.0": [
+      {
+        "speaker": "George",
+        "text": "I'M NOT LETTING HIM IN HERE."
+      },
+      {
+        "speaker": "Dana Scully",
+        "text": "HE'S GONNA DIE !"
+      }
+    ]
+  }
+}
