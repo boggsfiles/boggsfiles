@@ -678,9 +678,13 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Cases and stories preserved from The X-Files print archive.</p><div class="archive-meta"><span>{len(items)} comic files</span><span>Original scans</span><span>Preserved by Boggsfiles</span></div></div></section><div class="shell detail-wrap">{copy}<section class="comic-browser" aria-label="Comic archive"><div class="comic-browser-head"><div><span>Browse the collection</span><h2>Choose an archive shelf</h2></div><p>Each card now uses the source file’s actual issue number or title.</p></div>{"".join(shelves)}</section></div>'''
         write_route(route, page(label, body, active))
         return
+    # Preserve owner-supplied replacement players when rebuilding archive pages.
+    if label == "Born Again" and active == "Dailies":
+        frames = ["https://videos.sproutvideo.com/embed/729ad3bb1513e5c1f8/95237c0f1a668b1e"]
     media = []
     for src in frames:
-        media.append(f'<div class="media"><iframe src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
+        player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
+        media.append(f'<div class="media"><iframe{player_attrs} src="{html.escape(src, quote=True)}" loading="lazy" allow="autoplay; encrypted-media" allowfullscreen title="{html.escape(label)} archive media"></iframe></div>')
     if not frames:
         image_key = re.sub(r"[^a-z0-9]+", "-", route.lower()).strip("-")
         for index, src in enumerate(images[:18], 1):
