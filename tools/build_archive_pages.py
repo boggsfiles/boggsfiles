@@ -695,6 +695,8 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
         frames = ["https://videos.sproutvideo.com/embed/8c9ad3b4131fe0cc06/95955948703214ea"]
     if label == "Quagmire" and active == "Dailies":
         frames = ['https://videos.sproutvideo.com/embed/dc9ad3b4131fe8cc56/4f4db09c939c8d2b', 'https://videos.sproutvideo.com/embed/489ad3b4131fe4c2c2/571d4629860f70ad']
+    if label == "Musings of a Cigarette Smoking Man" and active == "Dailies":
+        frames = ['https://videos.sproutvideo.com/embed/069ad3b41318e4c48c/5b67f61dc95d10e5', 'https://videos.sproutvideo.com/embed/dc9ad3b41318e2c156/065b20dc0cf5f8db', 'https://videos.sproutvideo.com/embed/729ad3b41318e0c6f8/bc0a7891dcc6b245', 'https://videos.sproutvideo.com/embed/dc9ad3b41318eecd56/074d833b38cccac9', 'https://videos.sproutvideo.com/embed/aa9ad3b41318efcd20/a6fadee57e216766', 'https://videos.sproutvideo.com/embed/109ad3b41319e7c39a/e5db6011374f88d2']
     media = []
     for src in frames:
         player_attrs = ' class="sproutvideo-player" style="aspect-ratio:4/3" referrerpolicy="no-referrer-when-downgrade"' if "videos.sproutvideo.com/embed/" in src else ""
