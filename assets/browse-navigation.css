@@ -4,3 +4,9 @@
 @media print{.browse-rail,.browse-bottom{display:none!important}body:has(.browse-bottom){padding-bottom:0}}
 
 @media(min-width:1101px){.browse-rail .browse-link{width:46px;min-height:46px;height:46px;padding:0;gap:0}.browse-rail .browse-link span{font-size:1.4rem}.browse-rail .browse-link b{position:absolute;top:50%;transform:translateY(-50%);width:max-content;max-width:280px;padding:11px 15px;background:#0b0e0d;border:1px solid #59625c;font-size:.75rem;line-height:1.5;overflow-wrap:normal;text-align:left;opacity:0;visibility:hidden;pointer-events:none}.browse-rail .browse-prev b{left:calc(100% + 8px)}.browse-rail .browse-next b{right:calc(100% + 8px)}.browse-rail .browse-link:hover b,.browse-rail .browse-link:focus-visible b{opacity:1;visibility:visible}}
+
+/* Keep page-specific anchor styles from shifting the navigation controls. */
+nav.browse-rail a.browse-link,nav.browse-bottom a.browse-link{display:flex;align-items:center;justify-content:center;margin-top:0;margin-bottom:0;letter-spacing:normal;box-sizing:border-box}
+nav .browse-link .browse-icon{display:flex;align-items:center;justify-content:center;width:22px;height:22px;flex:0 0 22px;line-height:0;margin:0;padding:0}
+.browse-icon svg{display:block;width:22px;height:22px;flex:none}.browse-prev .browse-icon svg{transform:rotate(180deg)}
+@media(min-width:1101px){nav.browse-rail a.browse-link{display:grid;place-items:center;width:46px;height:46px;min-height:46px;padding:0;margin:0}}
