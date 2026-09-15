@@ -20,7 +20,7 @@ def render(data: dict) -> str:
     episode = data["episode"]
     season = int(data["season"])
     episode_number = int(data.get("episode_number", 1))
-    season_episode_total = 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
+    season_episode_total = 20 if season == 9 else 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
     production_code = data["production_code"]
     airdate = data.get("airdate", "September 10, 1993")
     previous_url = data.get("previous_url", "/transcripts/")
@@ -71,10 +71,10 @@ def render(data: dict) -> str:
 <body>
   {HEADER}
   <main>
-    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> <a href="/transcripts/season-{season}/">Season {season}</a> <span>/</span> {esc(episode)}</div><div class="hero-grid"><div><div class="eyebrow">Season {season} · Episode {episode_number}</div><h1>{esc(episode)}</h1><p>Character-labelled dialogue prepared from the official DVD subtitle track.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>Original airdate · {esc(airdate)}</small></div></div></div></section>
+    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> <a href="/transcripts/season-{season}/">Season {season}</a> <span>/</span> {esc(episode)}</div><div class="hero-grid"><div><div class="eyebrow">Season {season} · Episode {('19–20' if season == 9 and episode_number == 19 else episode_number)}</div><h1>{esc(episode)}</h1><p>Character-labelled dialogue prepared from the official DVD subtitle track.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>Original airdate · {esc(airdate)}</small></div></div></div></section>
     <div class="search-rail"><div class="shell search-inner"><label for="transcript-search">Search this transcript</label><div class="search-box"><input id="transcript-search" type="search" placeholder="Search dialogue or character…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div id="search-count" aria-live="polite">{entry_count} dialogue entries</div></div></div>
     <div class="shell transcript-layout">
-      <aside class="episode-notes"><div class="note-block"><span>File</span><b>{episode_number:02d} / {season_episode_total}</b></div><div class="note-block"><span>Source</span><b>Season {season} DVD subtitles</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
+      <aside class="episode-notes"><div class="note-block"><span>File</span><b>{('19–20' if season == 9 and episode_number == 19 else f'{episode_number:02d}')} / {season_episode_total}</b></div><div class="note-block"><span>Source</span><b>Season {season} DVD subtitles</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
       <div class="transcript-body">{''.join(scene_html)}<div id="no-results" hidden><b>No matching dialogue</b><p>Try another character, phrase, or keyword.</p></div></div>
     </div>
     <section class="method"><div class="shell"><span>About this transcript</span><p>The dialogue comes from the official DVD subtitle track supplied by Boggsfiles. Speaker and scene attribution was cross-checked against character-labelled reference material. Subtitle wording is preserved while capitalization and spacing are standardized for easier reading.</p></div></section>
