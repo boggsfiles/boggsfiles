@@ -133,7 +133,8 @@ MOVIES = [
 ]
 MOVIES_LIVE = {"fight-the-future", "i-want-to-believe"}
 
-SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9, 10: SEASON_10, 11: SEASON_11}
+SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9, 10: SEASON_10}
+SEASONS_PENDING = {11: SEASON_11}   # move into SEASONS when its transcripts are rendered
 
 HEAD = '''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,17 +186,21 @@ def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:
         closing = '</article>' if pending else '</a>'
         cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {('19–20' if season == 9 and slug == 'the-truth' else f'{number:02d}')} · {code}</span><h2>{title}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
 
-    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1998–1999" if season == 6 else "1999–2000" if season == 7 else "2000–2001" if season == 8 else "2001–2002" if season == 9 else "1995–1996"
+    years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1998–1999" if season == 6 else "1999–2000" if season == 7 else "2000–2001" if season == 8 else "2001–2002" if season == 9 else "2016" if season == 10 else "2018" if season == 11 else "1995–1996"
     intro = "The beginning of the X-Files and the beginning of Mulder and Scully." if season == 1 else "The X-Files is closed, but the search continues as Mulder and Scully are pulled back toward the cases that defined them."
     if season in (3,4,5,6,7,8,9):
         intro = "Mulder and Scully pursue the conspiracy and investigate a new collection of unexplained cases."
     if season == 9:
         intro = "Doggett, Reyes, and Scully investigate new cases as the search for the truth continues."
-    total = 20 if season == 9 else 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
+    if season == 10:
+        intro = "Fourteen years after the X-Files closed, Mulder and Scully return to the FBI for a six-episode event season, prepared here from the Blu-ray subtitle tracks."
+    if season == 11:
+        intro = "The final season: ten episodes that close the search for William and the fate of the X-Files, prepared from the Blu-ray subtitle tracks."
+    total = 6 if season == 10 else 10 if season == 11 else 20 if season == 9 else 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
     source_index = "first-season-index.html" if season == 1 else "second-season-index.html" if season == 2 else "fourth-season-index.html" if season == 4 else "fifth-season-index.html" if season == 5 else "third-season-index.html"
     return f'''<!doctype html><html lang="en"><head><title>Season {season} Transcripts - Boggsfiles</title><meta name="description" content="Browse character-labelled transcripts for The X-Files Season {season}.">{HEAD}<style>{BASE}
     .episodes{{padding:72px 0 0}}.season-head{{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}}.season-head h2{{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}}.season-head>span{{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}}.episode-grid{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}}.episode-card{{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}}.episode-card:hover{{background:#141b18}}.episode-card img{{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}}.episode-card:hover img{{filter:saturate(.95) brightness(.9)}}.episode-card img[src="/assets/transcript-stills/chimera.jpg"]{{clip-path:inset(0 0 2px 0)}}.episode-copy{{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:290px}}.episode-copy>span{{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}}.episode-copy h2{{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}}.episode-copy p{{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}}.episode-copy b{{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}}.source-note{{color:#747e77;font-size:.55rem;margin-top:22px;text-align:right}}.source-note a{{text-decoration:underline;text-underline-offset:3px}}@media(max-width:1160px){{.episode-grid{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:650px){{.episode-grid{{grid-template-columns:1fr}}.episode-copy{{min-height:240px}}.season-head{{align-items:start;flex-direction:column;gap:18px}}}}
-    </style>{ASSETS}{NAV_ASSET}</head><body>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> &nbsp;/&nbsp; Season {season}</div><div class="eyebrow">{years}</div><h1>Season {season}</h1><p>{intro} Read each episode without timestamps, with dialogue attributed to its speaker and divided into searchable scenes.</p><div class="summary"><div class="stat"><b>{len(episodes)}</b><span>Transcripts live</span></div><div class="stat"><b>{total}</b><span>Episodes total</span></div><div class="stat"><b>{season}X</b><span>Production files</span></div></div></div></section><section class="episodes"><div class="shell"><div class="season-head"><div><div class="eyebrow">Episode files</div><h2>Read Season {season}</h2></div><span>Broadcast order · Four across</span></div><div class="episode-grid">{''.join(cards)}</div></div></section>{navigation((f"/transcripts/season-{season-1}/",f"Season {season-1}") if season>1 else None,(f"/transcripts/season-{season+1}/",f"Season {season+1}") if season<9 else None,"Season navigation")}</main><footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/transcripts/">All seasons</a></span></div></footer></body></html>'''
+    </style>{ASSETS}{NAV_ASSET}</head><body>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> &nbsp;/&nbsp; Season {season}</div><div class="eyebrow">{years}</div><h1>Season {season}</h1><p>{intro} Read each episode without timestamps, with dialogue attributed to its speaker and divided into searchable scenes.</p><div class="summary"><div class="stat"><b>{len(episodes)}</b><span>Transcripts live</span></div><div class="stat"><b>{total}</b><span>Episodes total</span></div><div class="stat"><b>{'1AYW' if season == 10 else '2AYW' if season == 11 else f'{season}X'}</b><span>Production files</span></div></div></div></section><section class="episodes"><div class="shell"><div class="season-head"><div><div class="eyebrow">Episode files</div><h2>Read Season {season}</h2></div><span>Broadcast order · Four across</span></div><div class="episode-grid">{''.join(cards)}</div></div></section>{navigation((f"/transcripts/season-{season-1}/",f"Season {season-1}") if season>1 else None,(f"/transcripts/season-{season+1}/",f"Season {season+1}") if season<11 else None,"Season navigation")}</main><footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/transcripts/">All seasons</a></span></div></footer></body></html>'''
 
 
 def movies_page() -> str:
@@ -224,7 +229,7 @@ def main() -> None:
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(season_page(season, episodes),encoding="utf-8")
-    for season in range(10,10):
+    for season in SEASONS_PENDING:
         directory=root/f"season-{season}"
         directory.mkdir(parents=True,exist_ok=True)
         (directory/"index.html").write_text(placeholder(season),encoding="utf-8")
