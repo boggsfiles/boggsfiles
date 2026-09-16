@@ -76,7 +76,7 @@ def episodes() -> list[dict]:
         live = (src / "index.json").exists()
         dar = "16/9" if int(season) >= 5 else "4/3"
         rows.append({"season": int(season), "code": code, "title": title, "slug": slug, "source": src, "live": live, "aspect": dar,
-                     "media": "Blu-ray" if int(season) >= 10 else "DVD", "num": int(m[2])})
+                     "media": "Blu-ray" if int(season) >= 10 else "DVD", "num": 0 if code == "1X79" else int(m[2])})   # Pilot (1X79) airs first
     return rows
 
 
@@ -178,6 +178,7 @@ def main() -> None:
     seasons_live = {}
     for s in range(1, 12):
         rows = sorted([e for e in eps if e["season"] == s], key=lambda e: e["num"])
+        for i, e in enumerate(rows, 1): e["num"] = i          # display number = position in the season (Pilot = 1)
         live = [e for e in rows if e["live"]]
         seasons_live[s] = len(live)
         if not rows: continue
