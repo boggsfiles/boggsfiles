@@ -1,0 +1,211 @@
+1|1X01|Deep Throat|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC1/C1_t01.mkv
+1|1X02|Squeeze|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC1/D1_t02.mkv
+1|1X03|Conduit|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC1/E1_t03.mkv
+1|1X04|The Jersey Devil|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC2/B1_t00.mkv
+1|1X05|Shadows|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC2/C1_t01.mkv
+1|1X06|Ghost in the Machine|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC2/D1_t02.mkv
+1|1X07|Ice|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC2/E1_t03.mkv
+1|1X08|Space|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC3/B1_t00.mkv
+1|1X09|Fallen Angel|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC3/C1_t01.mkv
+1|1X10|Eve|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC3/D1_t02.mkv
+1|1X11|Fire|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC3/E1_t03.mkv
+1|1X12|Beyond the Sea|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC4/C1_t00.mkv
+1|1X13|Gender Bender|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC4/D1_t01.mkv
+1|1X14|Lazarus|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC4/E1_t02.mkv
+1|1X15|Young at Heart|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC4/F1_t03.mkv
+1|1X16|E.B.E.|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC5/B1_t00.mkv
+1|1X17|Miracle Man|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC5/C1_t01.mkv
+1|1X18|Shapes|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC5/D1_t02.mkv
+1|1X19|Darkness Falls|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC5/E1_t03.mkv
+1|1X20|Tooms|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC6/D1_t00.mkv
+1|1X21|Born Again|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC6/E1_t01.mkv
+1|1X22|Roland|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC6/F1_t02.mkv
+1|1X23|The Erlenmeyer Flask|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC6/G1_t03.mkv
+1|1X79|Pilot|/Users/lindseyboggs/Movies/Season 1 XF Transcripts/XFDISC1/B1_t00.mkv
+2|2X01|Little Green Men|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc1Season2/B1_t00.mkv
+2|2X02|The Host|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc1Season2/C1_t01.mkv
+2|2X03|Blood|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc1Season2/D1_t02.mkv
+2|2X04|Sleepless|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc1Season2/E1_t03.mkv
+2|2X05|Duane Barry|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc2Season2/B1_t00.mkv
+2|2X06|Ascension|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc2Season2/D1_t01.mkv
+2|2X07|3|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc2Season2/E1_t02.mkv
+2|2X08|One Breath|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc2Season2/F1_t03.mkv
+2|2X09|Firewalker|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc3Season2/B1_t00.mkv
+2|2X10|Red Museum|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc3Season2/C1_t01.mkv
+2|2X11|Excelsis Dei|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc3Season2/D1_t02.mkv
+2|2X12|Aubrey|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc3Season2/E1_t03.mkv
+2|2X13|Irresistible|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc4Season2/B1_t00.mkv
+2|2X14|Die Hand Die Verletzt|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc4Season2/D1_t01.mkv
+2|2X15|Fresh Bones|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc4Season2/E1_t02.mkv
+2|2X16|Colony|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc4Season2/F1_t03.mkv
+2|2X17|End Game|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc5Season2/B1_t00.mkv
+2|2X18|Fearful Symmetry|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc5Season2/C1_t01.mkv
+2|2X19|Dod Kalm|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc5Season2/D1_t02.mkv
+2|2X20|Humbug|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc5Season2/E1_t03.mkv
+2|2X21|The Calusari|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc6Season2/B1_t00.mkv
+2|2X22|F. Emasculata|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc6Season2/C1_t01.mkv
+2|2X23|Soft Light|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc6Season2/D1_t02.mkv
+2|2X24|Our Town|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc6Season2/E1_t03.mkv
+2|2X25|Anasazi|/Users/lindseyboggs/Movies/Season 2 XF Transcripts/Disc7Season2/C1_t00.mkv
+3|3X01|The Blessing Way|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc1Season3/B1_t00.mkv
+3|3X02|Paper Clip|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc1Season3/C1_t01.mkv
+3|3X03|DPO|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc1Season3/E1_t02.mkv
+3|3X04|Clyde Bruckmans Final Repose|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc1Season3/F1_t03.mkv
+3|3X05|The List|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc2Season3/B1_t00.mkv
+3|3X06|2Shy|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc2Season3/C1_t01.mkv
+3|3X07|The Walk|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc2Season3/D1_t02.mkv
+3|3X08|Oubliette|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc2Season3/F1_t03.mkv
+3|3X09|Nisei|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc3Season3/B1_t00.mkv
+3|3X10|731|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc3Season3/C1_t01.mkv
+3|3X11|Revelations|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc3Season3/D1_t02.mkv
+3|3X12|War of the Coprophages|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc3Season3/E1_t03.mkv
+3|3X13|Syzygy|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc4Season3/B1_t00.mkv
+3|3X14|Grotesque|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc4Season3/C1_t01.mkv
+3|3X15|Piper Maru|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc4Season3/D1_t02.mkv
+3|3X16|Apocrypha|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc4Season3/F1_t03.mkv
+3|3X17|Pusher|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc5Season3/B1_t00.mkv
+3|3X18|Teso Dos Bichos|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc5Season3/D1_t01.mkv
+3|3X19|Hell Money|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc5Season3/E1_t02.mkv
+3|3X20|Jose Chungs From Outer Space|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc5Season3/F1_t03.mkv
+3|3X21|Avatar|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc6Season3/B1_t00.mkv
+3|3X22|Quagmire|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc6Season3/C1_t01.mkv
+3|3X23|Wetwired|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc6Season3/D1_t02.mkv
+3|3X24|Talitha Cumi|/Users/lindseyboggs/Movies/Season 3 XF Transcripts/Disc6Season3/E1_t03.mkv
+4|4X01|Herrenvolk|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc1Season4/B1_t00.mkv
+4|4X02|Unruhe|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc1Season4/F1_t03.mkv
+4|4X03|Home|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc1Season4/C1_t01.mkv
+4|4X04|Teliko|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc1Season4/E1_t02.mkv
+4|4X05|The Field Where I Died|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc2Season4/B1_t00.mkv
+4|4X06|Sanguinarium|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc2Season4/C1_t01.mkv
+4|4X07|Musings of a Cigarette Smoking Man|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc2Season4/D1_t02.mkv
+4|4X08|Paper Hearts|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D3/mkv/4X08 Paper Hearts.mkv
+4|4X09|Tunguska|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc2Season4/E1_t03.mkv
+4|4X10|Terma|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D3/mkv/4X10 Terma.mkv
+4|4X11|El Mundo Gira|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D3/mkv/4X11 El Mundo Gira.mkv
+4|4X12|Kaddish|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc4Season4/E1_t02.mkv
+4|4X13|Never Again|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc4Season4/B1_t00.mkv
+4|4X14|Leonard Betts|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D3/mkv/4X14 Leonard Betts.mkv
+4|4X15|Memento Mori|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc4Season4/C1_t01.mkv
+4|4X16|Unrequited|/Users/lindseyboggs/Movies/Season 4 XF Transcripts/Disc4Season4/F1_t03.mkv
+4|4X17|Tempus Fugit|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D5/mkv/4X17 Tempus Fugit.mkv
+4|4X18|Max|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D5/mkv/4X18 Max.mkv
+4|4X19|Synchrony|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D5/mkv/4X19 Synchrony.mkv
+4|4X20|Small Potatoes|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D5/mkv/4X20 Small Potatoes.mkv
+4|4X21|Zero Sum|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D6/mkv/4X21 Zero Sum.mkv
+4|4X22|Elegy|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D6/mkv/4X22 Elegy.mkv
+4|4X23|Demons|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D6/mkv/4X23 Demons.mkv
+4|4X24|Gethsemane|/Users/lindseyboggs/Movies/XF_discrip/XF_S4_D6/mkv/4X24 Gethsemane.mkv
+5|5X01|Unusual Suspects|/Users/lindseyboggs/Movies/XF_discrip/XFS5D1/mkv/5X01 Unusual Suspects.mkv
+5|5X02|Redux|/Users/lindseyboggs/Movies/XF_discrip/XFS5D1/mkv/5X02 Redux.mkv
+5|5X03|Redux II|/Users/lindseyboggs/Movies/XF_discrip/XFS5D1/mkv/5X03 Redux II.mkv
+5|5X04|Detour|/Users/lindseyboggs/Movies/XF_discrip/XFS5D1/mkv/5X04 Detour.mkv
+5|5X05|Christmas Carol|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D2/mkv/5X05 Christmas Carol.mkv
+5|5X06|The Post-Modern Prometheus|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D2/mkv/5X06 The Post-Modern Prometheus.mkv
+5|5X07|Emily|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D2/mkv/5X07 Emily.mkv
+5|5X08|Kitsunegari|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D2/mkv/5X08 Kitsunegari.mkv
+5|5X09|Schizogeny|/Users/lindseyboggs/Movies/XF_discrip/XFS5D3/mkv/5X09 Schizogeny.mkv
+5|5X10|Chinga|/Users/lindseyboggs/Movies/XF_discrip/XFS5D3/mkv/5X10 Chinga.mkv
+5|5X11|Kill Switch|/Users/lindseyboggs/Movies/XF_discrip/XFS5D3/mkv/5X11 Kill Switch.mkv
+5|5X12|Bad Blood|/Users/lindseyboggs/Movies/XF_discrip/XFS5D3/mkv/5X12 Bad Blood.mkv
+5|5X13|Patient X|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D4/mkv/5X13 Patient X.mkv
+5|5X14|The Red and the Black|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D4/mkv/5X14 The Red and the Black.mkv
+5|5X15|Travelers|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D4/mkv/5X15 Travelers.mkv
+5|5X16|Mind's Eye|/Users/lindseyboggs/Movies/XF_discrip/XF_S5_D4/mkv/5X16 Mind's Eye.mkv
+5|5X17|All Souls|/Users/lindseyboggs/Movies/XF_discrip/XFILE5_DISC5/mkv/5X17 All Souls.mkv
+5|5X18|The Pine Bluff Variant|/Users/lindseyboggs/Movies/XF_discrip/XFILE5_DISC5/mkv/5X18 The Pine Bluff Variant.mkv
+5|5X19|Folie a Deux|/Users/lindseyboggs/Movies/XF_discrip/XFILE5_DISC5/mkv/5X19 Folie a Deux.mkv
+5|5X20|The End|/Users/lindseyboggs/Movies/XF_discrip/XFILE5_DISC5/mkv/5X20 The End.mkv
+6|6X01|The Beginning|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D1/mkv/6X01 The Beginning.mkv
+6|6X02|Drive|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D1/mkv/6X02 Drive.mkv
+6|6X03|Triangle|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D1/mkv/6X03 Triangle.mkv
+6|6X04|Dreamland|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D1/mkv/6X04 Dreamland.mkv
+6|6X05|Dreamland II|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D2/mkv/6X05 Dreamland II.mkv
+6|6X06|Terms of Endearment|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D2/mkv/6X06 Terms of Endearment.mkv
+6|6X07|The Rain King|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D2/mkv/6X07 The Rain King.mkv
+6|6X08|How the Ghosts Stole Christmas|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D2/mkv/6X08 How the Ghosts Stole Christmas.mkv
+6|6X09|Tithonus|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D3/mkv/6X09 Tithonus.mkv
+6|6X10|S.R. 819|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D3/mkv/6X10 S.R. 819.mkv
+6|6X11|Two Fathers|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D3/mkv/6X11 Two Fathers.mkv
+6|6X12|One Son|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D3/mkv/6X12 One Son.mkv
+6|6X13|Arcadia|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D4/mkv/6X13 Arcadia.mkv
+6|6X14|Agua Mala|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D4/mkv/6X14 Agua Mala.mkv
+6|6X15|Monday|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D4/mkv/6X15 Monday.mkv
+6|6X16|Alpha|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S6_D4/mkv/6X16 Alpha.mkv
+6|6X17|Trevor|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D5/mkv/6X17 Trevor.mkv
+6|6X18|Milagro|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D5/mkv/6X18 Milagro.mkv
+6|6X19|The Unnatural|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D5/mkv/6X19 The Unnatural.mkv
+6|6X20|Three of a Kind|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D5/mkv/6X20 Three of a Kind.mkv
+6|6X21|Field Trip|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D6/mkv/6X21 Field Trip.mkv
+6|6X22|Biogenesis|/Users/lindseyboggs/Movies/XF_discrip/XF_S6_D6/mkv/6X22 Biogenesis.mkv
+7|7X01|The Sixth Extinction|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X01 The Sixth Extinction.mkv
+7|7X02|Amor Fati|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X02 Amor Fati.mkv
+7|7X03|Hungry|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X03 Hungry.mkv
+7|7X04|Millennium|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X04 Millennium.mkv
+7|7X05|Rush|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X05 Rush.mkv
+7|7X06|The Goldberg Variation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X06 The Goldberg Variation.mkv
+7|7X07|Orison|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X07 Orison.mkv
+7|7X08|The Amazing Maleeni|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X08 The Amazing Maleeni.mkv
+7|7X09|Signs and Wonders|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X09 Signs and Wonders.mkv
+7|7X10|Sein und Zeit|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X10 Sein und Zeit.mkv
+7|7X11|Closure|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X11 Closure.mkv
+7|7X12|X-Cops|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X12 X-Cops.mkv
+7|7X13|First Person Shooter|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X13 First Person Shooter.mkv
+7|7X14|Theef|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X14 Theef.mkv
+7|7X15|En Ami|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X15 En Ami.mkv
+7|7X16|Chimera|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X16 Chimera.mkv
+7|7X17|all things|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X17 all things.mkv
+7|7X18|Brand X|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X18 Brand X.mkv
+7|7X19|Hollywood AD|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X19 Hollywood AD.mkv
+7|7X20|Fight Club|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X20 Fight Club.mkv
+7|7X21|Je Souhaite|/Users/lindseyboggs/Movies/XF_discrip/XF_S7_D6/mkv/7X21 Je Souhaite.mkv
+7|7X22|Requiem|/Users/lindseyboggs/Movies/XF_discrip/XF_S7_D6/mkv/7X22 Requiem.mkv
+8|8X01|Within|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X01 Within.mkv
+8|8X02|Without|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X02 Without.mkv
+8|8X03|Patience|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X03 Patience.mkv
+8|8X04|Roadrunners|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X04 Roadrunners.mkv
+8|8X05|Invocation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X05 Invocation.mkv
+8|8X06|Redrum|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X06 Redrum.mkv
+8|8X07|Via Negativa|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X07 Via Negativa.mkv
+8|8X08|Surekill|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X08 Surekill.mkv
+8|8X09|Salvage|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X09 Salvage.mkv
+8|8X10|Badlaa|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X10 Badlaa.mkv
+8|8X11|The Gift|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X11 The Gift.mkv
+8|8X12|Medusa|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X12 Medusa.mkv
+8|8X13|Per Manum|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X13 Per Manum.mkv
+8|8X14|This Is Not Happening|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X14 This Is Not Happening.mkv
+8|8X15|DeadAlive|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X15 DeadAlive.mkv
+8|8X16|Three Words|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X16 Three Words.mkv
+8|8X17|Empedocles|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X17 Empedocles.mkv
+8|8X18|Vienen|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X18 Vienen.mkv
+8|8X19|Alone|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X19 Alone.mkv
+8|8X20|Essence|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X20 Essence.mkv
+8|8X21|Existence|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D6/mkv/8X21 Existence.mkv
+9|9X01|Nothing Important Happened Today|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X01 Nothing Important Happened Today.mkv
+9|9X02|Nothing Important Happened Today II|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X02 Nothing Important Happened Today II.mkv
+9|9X03|Daemonicus|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X03 Daemonicus.mkv
+9|9X04|4-D|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X04 4-D.mkv
+9|9X05|Lord of the Flies|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X05 Lord of the Flies.mkv
+9|9X06|Trust No 1|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X06 Trust No 1.mkv
+9|9X07|John Doe|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X07 John Doe.mkv
+9|9X08|Hellbound|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X08 Hellbound.mkv
+9|9X09|Provenance|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X09 Provenance.mkv
+9|9X10|Providence|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X10 Providence.mkv
+9|9X11|Audrey Pauley|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X11 Audrey Pauley.mkv
+9|9X12|Underneath|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X12 Underneath.mkv
+9|9X13|Improbable|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X13 Improbable.mkv
+9|9X14|Scary Monsters|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X14 Scary Monsters.mkv
+9|9X15|Jump the Shark|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X15 Jump the Shark.mkv
+9|9X16|William|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X16 William.mkv
+9|9X17|Release|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X17 Release.mkv
+9|9X18|Sunshine Days|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X18 Sunshine Days.mkv
+9|9X19-20|The Truth|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X19-20 The Truth.mkv
+10|10X01|My Struggle|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X01 My Struggle.mkv
+10|10X02|Founder's Mutation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X02 Founder's Mutation.mkv
+10|10X03|Mulder and Scully Meet the Were-Monster|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X03 Mulder and Scully Meet the Were-Monster.mkv
+10|10X04|Home Again|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X04 Home Again.mkv
+10|10X05|Babylon|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D2/mkv/10X05 Babylon.mkv
+10|10X06|My Struggle II|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D2/mkv/10X06 My Struggle II.mkv
+11|11X01|My Struggle III|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X01 My Struggle III.mkv
+11|11X02|This|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X02 This.mkv
+11|11X03|Plus One|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X03 Plus One.mkv
+11|11X04|The Lost Art of Forehead Sweat|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X04 The Lost Art of Forehead Sweat.mkv
