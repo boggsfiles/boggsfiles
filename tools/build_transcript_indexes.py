@@ -133,8 +133,8 @@ MOVIES = [
 ]
 MOVIES_LIVE = {"fight-the-future", "i-want-to-believe"}
 
-SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9, 10: SEASON_10}
-SEASONS_PENDING = {11: SEASON_11}   # move into SEASONS when its transcripts are rendered
+SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9, 10: SEASON_10, 11: SEASON_11}
+SEASONS_PENDING = {}   # seasons still awaiting transcripts get a placeholder page
 
 HEAD = '''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

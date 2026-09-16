@@ -1,0 +1,376 @@
+{
+ "speakers": {
+  "2-22": "Title Card",
+  "27-28": "Computer",
+  "30-31": "Computer",
+  "45": "Computer",
+  "47": "Computer",
+  "71": "Computer",
+  "73": "Computer",
+  "75-80": "Computer",
+  "82": "Computer",
+  "84-86": "Computer",
+  "90": "Computer",
+  "92": "Computer",
+  "95-98": "Computer",
+  "103": "Computer",
+  "186": "Computer",
+  "245": "Computer",
+  "255": "Computer",
+  "333": "Computer",
+  "343": "Computer",
+  "378-380": "Computer",
+  "382": "Computer",
+  "388": "Computer",
+  "395-398": "Computer",
+  "400": "Computer",
+  "402": "Computer",
+  "408": "Computer",
+  "413": "Computer",
+  "415": "Computer",
+  "50.0": "Fox Mulder",
+  "53.1": "Fox Mulder",
+  "54": "Fox Mulder",
+  "122": "Fox Mulder",
+  "125": "Fox Mulder",
+  "127.0": "Fox Mulder",
+  "128-131": "Fox Mulder",
+  "133": "Fox Mulder",
+  "137-138": "Fox Mulder",
+  "140": "Fox Mulder",
+  "142": "Fox Mulder",
+  "146-148": "Fox Mulder",
+  "151": "Fox Mulder",
+  "153": "Fox Mulder",
+  "156": "Fox Mulder",
+  "159-160": "Fox Mulder",
+  "194-195": "Fox Mulder",
+  "197-200": "Fox Mulder",
+  "202": "Fox Mulder",
+  "213": "Fox Mulder",
+  "228": "Fox Mulder",
+  "232": "Fox Mulder",
+  "234.1": "Fox Mulder",
+  "235-236": "Fox Mulder",
+  "239": "Fox Mulder",
+  "243": "Fox Mulder",
+  "329.1": "Fox Mulder",
+  "331": "Fox Mulder",
+  "367": "Fox Mulder",
+  "386": "Fox Mulder",
+  "390": "Fox Mulder",
+  "392": "Fox Mulder",
+  "407.1": "Fox Mulder",
+  "421": "Fox Mulder",
+  "427": "Fox Mulder",
+  "456.1": "Fox Mulder",
+  "462.0": "Fox Mulder",
+  "464": "Fox Mulder",
+  "466": "Fox Mulder",
+  "468": "Fox Mulder",
+  "50.1": "Dana Scully",
+  "53.0": "Dana Scully",
+  "106": "Dana Scully",
+  "109": "Dana Scully",
+  "112.0": "Dana Scully",
+  "115.0": "Dana Scully",
+  "116": "Dana Scully",
+  "117.1": "Dana Scully",
+  "119.1": "Dana Scully",
+  "120": "Dana Scully",
+  "167": "Dana Scully",
+  "171-174": "Dana Scully",
+  "184": "Dana Scully",
+  "190": "Dana Scully",
+  "193": "Dana Scully",
+  "256": "Dana Scully",
+  "259": "Dana Scully",
+  "289.0": "Dana Scully",
+  "291.0": "Dana Scully",
+  "293.0": "Dana Scully",
+  "373": "Dana Scully",
+  "387": "Dana Scully",
+  "404.0": "Dana Scully",
+  "406.1": "Dana Scully",
+  "407.0": "Dana Scully",
+  "417": "Dana Scully",
+  "420": "Dana Scully",
+  "423": "Dana Scully",
+  "456.0": "Dana Scully",
+  "465": "Dana Scully",
+  "467": "Dana Scully",
+  "104": "Whipz Car",
+  "111": "Whipz Car",
+  "112.1": "Whipz Car",
+  "113-114": "Whipz Car",
+  "115.1": "Whipz Car",
+  "117.0": "Whipz Car",
+  "119.0": "Whipz Car",
+  "127.1": "Gydz",
+  "132": "Gydz",
+  "143-144": "Gydz",
+  "154": "Gydz",
+  "206-209": "Bigly Credit",
+  "211": "Bigly Credit",
+  "214-220": "TV",
+  "234.0": "Recorded Voice",
+  "285-286": "Recorded Voice",
+  "329.0": "Recorded Voice",
+  "287-288": "Automated Operator",
+  "289.1": "Automated Operator",
+  "290": "Automated Operator",
+  "291.1": "Automated Operator",
+  "292": "Automated Operator",
+  "293.1": "Automated Operator",
+  "294": "Automated Operator",
+  "404.1": "Wendy",
+  "405": "Wendy",
+  "406.0": "Wendy",
+  "460": "Shirley",
+  "462.1": "Shirley",
+  "463": "Shirley"
+ },
+ "splits": {
+  "50": [
+   {
+    "text": "Ah.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Ooh.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "53": [
+   {
+    "text": "Ugh.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Heh.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "112": [
+   {
+    "text": "Yes.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "You can answer in complete sentences.",
+    "speaker": "Whipz Car"
+   }
+  ],
+  "115": [
+   {
+    "text": "Be quiet.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Would you like to watch television?",
+    "speaker": "Whipz Car"
+   }
+  ],
+  "117": [
+   {
+    "text": "Music? You can say names of artists or songs.",
+    "speaker": "Whipz Car"
+   },
+   {
+    "text": "No. No music. Be quiet.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "119": [
+   {
+    "text": "All right. Taking you home.",
+    "speaker": "Whipz Car"
+   },
+   {
+    "text": "Slow down.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "127": [
+   {
+    "text": "Home.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Let's get started. Drive safely.",
+    "speaker": "Gydz"
+   }
+  ],
+  "289": [
+   {
+    "text": "Returns.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm sorry, I did not catch that.",
+    "speaker": "Automated Operator"
+   }
+  ],
+  "291": [
+   {
+    "text": "Returns.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I did not catch that.",
+    "speaker": "Automated Operator"
+   }
+  ],
+  "293": [
+   {
+    "text": "Returns.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm sorry, let me put you on hold...",
+    "speaker": "Automated Operator"
+   }
+  ],
+  "329": [
+   {
+    "text": "Fox Mulder.",
+    "speaker": "Recorded Voice"
+   },
+   {
+    "text": "Here. Present.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "404": [
+   {
+    "text": "Hello?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Hello?",
+    "speaker": "Wendy"
+   }
+  ],
+  "406": [
+   {
+    "text": "I had to adjust my headset. Heh. I'm Wendy--",
+    "speaker": "Wendy"
+   },
+   {
+    "text": "Oh, shut up.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "407": [
+   {
+    "text": "I can't get out.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Let's get to the neighbors', use their phone.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "456": [
+   {
+    "text": "Heh.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "We have to be better teachers.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "462": [
+   {
+    "text": "Oh, thank you, Shirley.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "You're welcome.",
+    "speaker": "Shirley"
+   }
+  ]
+ },
+ "text": {
+  "6": "...of an innocent 19-year-old girl...",
+  "10": "The AI would learn from humans.",
+  "11": "It was constructed to become progressively more intelligent.",
+  "21": "Humans must take care in teaching AI...",
+  "111": "You are going to 1213 37th Place. Is that correct?",
+  "138": "It's not e-- It doesn't even-- It's-- Doesn't even sound like it.",
+  "214": "MAN 1: It looks good at NASA One.\nMAN 2: Roger.",
+  "218": "MAN 3: Inboards and outboards are on.\nMAN 2: Coming forward with the sidestick.",
+  "331": "Pfft.",
+  "396": "Contacting emergency services.",
+  "397": "Call 911.",
+  "400": "Call 911.\nCall 911.",
+  "408": "COMPUTER 2: Contacting emergency services.",
+  "415": "Contacting emergency services.",
+  "135": "[\"TEACH YOUR CHILDREN\" PLAYING]",
+  "272": "[\"TEACH YOUR CHILDREN\" PLAYING OVER CELL PHONE]",
+  "274": "[\"TEACH YOUR CHILDREN\" CONTINUES PLAYING]",
+  "296": "[\"TEACH YOUR CHILDREN\" PLAYING]",
+  "301": "[\"TEACH YOUR CHILDREN\" CONTINUES PLAYING]",
+  "328": "[\"TEACH YOUR CHILDREN\" CONTINUES PLAYING]",
+  "334": "[\"TEACH YOUR CHILDREN\" CONTINUES PLAYING]",
+  "344": "[\"TEACH YOUR CHILDREN\" PLAYING]"
+ },
+ "drop": [
+  "145",
+  "149",
+  "275",
+  "277",
+  "279",
+  "280",
+  "281",
+  "283",
+  "297",
+  "299",
+  "302",
+  "304",
+  "305",
+  "307",
+  "308",
+  "309",
+  "310",
+  "312",
+  "314",
+  "315",
+  "317",
+  "318",
+  "319",
+  "320",
+  "321",
+  "323",
+  "324",
+  "325",
+  "326",
+  "327",
+  "345",
+  "347",
+  "353",
+  "361",
+  "362"
+ ],
+ "scenes": {
+  "1": "Prologue · Tay",
+  "23": "Forowa Sushi",
+  "103": "Forowa Sushi · Outside",
+  "111": "The Driverless Whipz",
+  "122": "Mulder's Car",
+  "174": "Forowa Sushi · Scully",
+  "186": "Scully's Apartment",
+  "194": "Mulder's House",
+  "206": "Mulder's House · Bigly Credit",
+  "236": "Scully's Apartment · Night",
+  "245": "Scully's Apartment · The Front Door",
+  "285": "Scully's Apartment · E-Norm-Uz",
+  "329": "Mulder's House · The Drone",
+  "343": "Scully's Apartment · The Robot",
+  "378": "Scully's Apartment · Intruder Alert",
+  "404": "Scully's Apartment · Wendy",
+  "417": "The Factory",
+  "460": "The Diner · Dawn"
+ }
+}

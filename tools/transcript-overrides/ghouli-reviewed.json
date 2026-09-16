@@ -1,0 +1,851 @@
+{
+ "speakers": {
+  "3": "Brianna",
+  "9": "Brianna",
+  "11.1": "Brianna",
+  "12": "Brianna",
+  "14": "Brianna",
+  "25.0": "Brianna",
+  "105-108": "Brianna",
+  "112.1": "Brianna",
+  "113": "Brianna",
+  "116-117": "Brianna",
+  "119-121": "Brianna",
+  "122.0": "Brianna",
+  "124-125": "Brianna",
+  "126.0": "Brianna",
+  "129.1": "Brianna",
+  "130.1": "Brianna",
+  "136-138": "Brianna",
+  "141": "Brianna",
+  "435-436": "Brianna",
+  "438": "Brianna",
+  "441": "Brianna",
+  "445": "Brianna",
+  "446.0": "Brianna",
+  "447.1": "Brianna",
+  "448": "Brianna",
+  "449.0": "Brianna",
+  "455.0": "Brianna",
+  "460": "Brianna",
+  "462": "Brianna",
+  "470": "Brianna",
+  "4": "Sarah",
+  "6": "Sarah",
+  "10": "Sarah",
+  "11.0": "Sarah",
+  "13": "Sarah",
+  "15": "Sarah",
+  "25.1": "Sarah",
+  "109": "Sarah",
+  "111": "Sarah",
+  "114.1": "Sarah",
+  "118.1": "Sarah",
+  "122.1": "Sarah",
+  "123": "Sarah",
+  "129.0": "Sarah",
+  "131-132": "Sarah",
+  "134": "Sarah",
+  "140": "Sarah",
+  "486-488": "Sarah",
+  "490": "Sarah",
+  "492": "Sarah",
+  "493.0": "Sarah",
+  "28-32": "Dana Scully",
+  "39": "Dana Scully",
+  "42-43": "Dana Scully",
+  "45-46": "Dana Scully",
+  "52.1": "Dana Scully",
+  "56.0": "Dana Scully",
+  "58.1": "Dana Scully",
+  "64": "Dana Scully",
+  "66.0": "Dana Scully",
+  "74-75": "Dana Scully",
+  "77": "Dana Scully",
+  "81": "Dana Scully",
+  "88": "Dana Scully",
+  "89.1": "Dana Scully",
+  "90-91": "Dana Scully",
+  "96": "Dana Scully",
+  "98": "Dana Scully",
+  "100": "Dana Scully",
+  "103": "Dana Scully",
+  "112.0": "Dana Scully",
+  "115": "Dana Scully",
+  "118.0": "Dana Scully",
+  "130.0": "Dana Scully",
+  "135": "Dana Scully",
+  "139": "Dana Scully",
+  "143": "Dana Scully",
+  "144.1": "Dana Scully",
+  "145.0": "Dana Scully",
+  "146.1": "Dana Scully",
+  "147": "Dana Scully",
+  "149": "Dana Scully",
+  "171-176": "Dana Scully",
+  "179": "Dana Scully",
+  "182-185": "Dana Scully",
+  "189": "Dana Scully",
+  "191-199": "Dana Scully",
+  "215-244": "Dana Scully",
+  "247.0": "Dana Scully",
+  "251-252": "Dana Scully",
+  "254.1": "Dana Scully",
+  "255.1": "Dana Scully",
+  "261": "Dana Scully",
+  "265-266": "Dana Scully",
+  "270": "Dana Scully",
+  "273": "Dana Scully",
+  "274.1": "Dana Scully",
+  "283": "Dana Scully",
+  "290-291": "Dana Scully",
+  "293-294": "Dana Scully",
+  "296.1": "Dana Scully",
+  "297": "Dana Scully",
+  "299.0": "Dana Scully",
+  "301": "Dana Scully",
+  "302.0": "Dana Scully",
+  "306": "Dana Scully",
+  "312": "Dana Scully",
+  "318-319": "Dana Scully",
+  "326": "Dana Scully",
+  "328": "Dana Scully",
+  "387": "Dana Scully",
+  "389-390": "Dana Scully",
+  "395-401": "Dana Scully",
+  "405-407": "Dana Scully",
+  "411": "Dana Scully",
+  "414": "Dana Scully",
+  "426-427": "Dana Scully",
+  "429": "Dana Scully",
+  "431": "Dana Scully",
+  "482": "Dana Scully",
+  "484": "Dana Scully",
+  "513": "Dana Scully",
+  "518": "Dana Scully",
+  "523": "Dana Scully",
+  "526": "Dana Scully",
+  "529": "Dana Scully",
+  "531": "Dana Scully",
+  "534": "Dana Scully",
+  "539": "Dana Scully",
+  "540.1": "Dana Scully",
+  "543": "Dana Scully",
+  "545": "Dana Scully",
+  "547.0": "Dana Scully",
+  "549.0": "Dana Scully",
+  "550": "Dana Scully",
+  "556-557": "Dana Scully",
+  "558.0": "Dana Scully",
+  "559": "Dana Scully",
+  "560.1": "Dana Scully",
+  "561": "Dana Scully",
+  "565-566": "Dana Scully",
+  "568": "Dana Scully",
+  "569.1": "Dana Scully",
+  "40-41": "Fox Mulder",
+  "44": "Fox Mulder",
+  "47-51": "Fox Mulder",
+  "52.0": "Fox Mulder",
+  "53-55": "Fox Mulder",
+  "56.1": "Fox Mulder",
+  "59.0": "Fox Mulder",
+  "60": "Fox Mulder",
+  "69": "Fox Mulder",
+  "76": "Fox Mulder",
+  "78-80": "Fox Mulder",
+  "83": "Fox Mulder",
+  "87": "Fox Mulder",
+  "89.0": "Fox Mulder",
+  "92-95": "Fox Mulder",
+  "97": "Fox Mulder",
+  "102.0": "Fox Mulder",
+  "104": "Fox Mulder",
+  "110": "Fox Mulder",
+  "114.0": "Fox Mulder",
+  "126.1": "Fox Mulder",
+  "127-128": "Fox Mulder",
+  "133": "Fox Mulder",
+  "142": "Fox Mulder",
+  "144.0": "Fox Mulder",
+  "145.1": "Fox Mulder",
+  "146.0": "Fox Mulder",
+  "150-151": "Fox Mulder",
+  "159": "Fox Mulder",
+  "161": "Fox Mulder",
+  "167-169": "Fox Mulder",
+  "177-178": "Fox Mulder",
+  "180-181": "Fox Mulder",
+  "186-188": "Fox Mulder",
+  "190": "Fox Mulder",
+  "201": "Fox Mulder",
+  "203": "Fox Mulder",
+  "206-207": "Fox Mulder",
+  "209": "Fox Mulder",
+  "211": "Fox Mulder",
+  "247.1": "Fox Mulder",
+  "248": "Fox Mulder",
+  "253": "Fox Mulder",
+  "254.0": "Fox Mulder",
+  "255.0": "Fox Mulder",
+  "272": "Fox Mulder",
+  "274.0": "Fox Mulder",
+  "277-278": "Fox Mulder",
+  "280-282": "Fox Mulder",
+  "284-289": "Fox Mulder",
+  "292": "Fox Mulder",
+  "295": "Fox Mulder",
+  "296.0": "Fox Mulder",
+  "298": "Fox Mulder",
+  "309-311": "Fox Mulder",
+  "313-315": "Fox Mulder",
+  "317": "Fox Mulder",
+  "321-322": "Fox Mulder",
+  "325": "Fox Mulder",
+  "331": "Fox Mulder",
+  "335.0": "Fox Mulder",
+  "337-338": "Fox Mulder",
+  "340": "Fox Mulder",
+  "342": "Fox Mulder",
+  "344.1": "Fox Mulder",
+  "346.1": "Fox Mulder",
+  "354-355": "Fox Mulder",
+  "361": "Fox Mulder",
+  "367": "Fox Mulder",
+  "368-369": "Fox Mulder",
+  "373-379": "Fox Mulder",
+  "381-383": "Fox Mulder",
+  "404": "Fox Mulder",
+  "410": "Fox Mulder",
+  "412-413": "Fox Mulder",
+  "415": "Fox Mulder",
+  "417-422": "Fox Mulder",
+  "424-425": "Fox Mulder",
+  "428": "Fox Mulder",
+  "478.0": "Fox Mulder",
+  "481.0": "Fox Mulder",
+  "504": "Fox Mulder",
+  "510": "Fox Mulder",
+  "522": "Fox Mulder",
+  "524-525": "Fox Mulder",
+  "527": "Fox Mulder",
+  "530": "Fox Mulder",
+  "535": "Fox Mulder",
+  "555": "Fox Mulder",
+  "558.1": "Fox Mulder",
+  "560.0": "Fox Mulder",
+  "562-564": "Fox Mulder",
+  "58.0": "Detective Costa",
+  "59.1": "Detective Costa",
+  "61-63": "Detective Costa",
+  "65": "Detective Costa",
+  "66.1": "Detective Costa",
+  "67-68": "Detective Costa",
+  "70-73": "Detective Costa",
+  "84-86": "Detective Costa",
+  "154-158": "Detective Costa",
+  "160": "Detective Costa",
+  "162-166": "Detective Costa",
+  "477": "Detective Costa",
+  "478.1": "Detective Costa",
+  "479-480": "Detective Costa",
+  "481.1": "Detective Costa",
+  "483": "Detective Costa",
+  "101": "Barista",
+  "102.1": "Barista",
+  "344.0": "Barista",
+  "345.0": "Barista",
+  "346.0": "Barista",
+  "408": "Barista",
+  "204.0": "Mr. Paulsen",
+  "205": "Mr. Paulsen",
+  "208": "Mr. Paulsen",
+  "210": "Mr. Paulsen",
+  "212": "Mr. Paulsen",
+  "323-324": "Mr. Paulsen",
+  "330": "Mr. Paulsen",
+  "496": "Mr. Paulsen",
+  "204.1": "Mr. Green",
+  "327": "Mr. Green",
+  "329": "Mr. Green",
+  "508": "Mr. Green",
+  "514-515": "Mr. Green",
+  "267": "Dr. Harris",
+  "269": "Dr. Harris",
+  "271": "Dr. Harris",
+  "275-276": "Dr. Harris",
+  "279": "Dr. Harris",
+  "299.1": "Stranger",
+  "300": "Stranger",
+  "302.1": "Stranger",
+  "303-305": "Stranger",
+  "307": "Stranger",
+  "540.0": "Stranger",
+  "541-542": "Stranger",
+  "544": "Stranger",
+  "546": "Stranger",
+  "547.1": "Stranger",
+  "548": "Stranger",
+  "549.1": "Stranger",
+  "551-552": "Stranger",
+  "258-259": "Woman",
+  "333-334": "Walter Skinner",
+  "335.1": "Walter Skinner",
+  "336": "Walter Skinner",
+  "339": "Walter Skinner",
+  "341": "Walter Skinner",
+  "343": "Walter Skinner",
+  "345.1": "Walter Skinner",
+  "347-349": "Walter Skinner",
+  "353": "Walter Skinner",
+  "356-360": "Walter Skinner",
+  "362-366": "Walter Skinner",
+  "370-372": "Walter Skinner",
+  "380": "Walter Skinner",
+  "350-352": "Cigarette-Smoking Man",
+  "384-386": "Dr. Scholz",
+  "388": "Dr. Scholz",
+  "391-394": "Dr. Scholz",
+  "402": "Dr. Scholz",
+  "437": "Jackson Van De Kamp",
+  "439-440": "Jackson Van De Kamp",
+  "442-444": "Jackson Van De Kamp",
+  "446.1": "Jackson Van De Kamp",
+  "447.0": "Jackson Van De Kamp",
+  "449.1": "Jackson Van De Kamp",
+  "450-454": "Jackson Van De Kamp",
+  "455.1": "Jackson Van De Kamp",
+  "456-459": "Jackson Van De Kamp",
+  "461": "Jackson Van De Kamp",
+  "463-467": "Jackson Van De Kamp",
+  "469": "Jackson Van De Kamp",
+  "473": "Jackson Van De Kamp",
+  "475": "Jackson Van De Kamp",
+  "485": "Jackson Van De Kamp",
+  "489": "Jackson Van De Kamp",
+  "491": "Jackson Van De Kamp",
+  "493.1": "Jackson Van De Kamp",
+  "494": "Jackson Van De Kamp",
+  "567": "Jackson Van De Kamp",
+  "569.0": "Jackson Van De Kamp",
+  "512": "Man",
+  "532": "Man"
+ },
+ "splits": {
+  "11": [
+   {
+    "text": "You are.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "No--",
+    "speaker": "Brianna"
+   }
+  ],
+  "52": [
+   {
+    "text": "He believed those visions were messages sent.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "He also believed in the lost city of Atlantis.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "56": [
+   {
+    "text": "We're being followed.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Since the airport.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "66": [
+   {
+    "text": "What's the condition of the girls now?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Both lost a lot of blood.",
+    "speaker": "Detective Costa"
+   }
+  ],
+  "112": [
+   {
+    "text": "And how did you find this Ghouli?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I fell into this hole into its lair, I guess.",
+    "speaker": "Brianna"
+   }
+  ],
+  "114": [
+   {
+    "text": "What about Brianna Stapleton?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I didn't see anybody else.",
+    "speaker": "Sarah"
+   }
+  ],
+  "115": [
+   {
+    "text": "She was on the floor, next to you.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Also injured.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "122": [
+   {
+    "text": "Someone was next to me.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "I couldn't see him. It was a dark figure.",
+    "speaker": "Sarah"
+   }
+  ],
+  "126": [
+   {
+    "text": "I would just end up back inside again.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "Like a maze.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "129": [
+   {
+    "text": "A souvenir.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "Yeah. You shake it and it snows.",
+    "speaker": "Brianna"
+   }
+  ],
+  "143": [
+   {
+    "text": "And the girls apparently the same boyfriend.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Jackson Van de Kamp.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "144": [
+   {
+    "text": "Scully.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I know.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "145": [
+   {
+    "text": "Mulder, it has to be a coincidence.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, it's not. You were sent here.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "146": [
+   {
+    "text": "We are meant to be here.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "We gotta find out where this kid lives.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "161": [
+   {
+    "text": "There's something dirty in the water.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "The back door was open.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "247": [
+   {
+    "text": "Have you been there the whole time?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, but I heard enough.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "254": [
+   {
+    "text": "We can get a DNA comparison at the lab here.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Okay.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "274": [
+   {
+    "text": "It's not good news.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I know. It's William.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "296": [
+   {
+    "text": "But this doesn't change anything.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Not yet.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "299": [
+   {
+    "text": "Oh. Aah! I'm sorry.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Aah! Oh.",
+    "speaker": "Stranger"
+   }
+  ],
+  "302": [
+   {
+    "text": "No, it's my fault. I'm sorry.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "It's okay.",
+    "speaker": "Stranger"
+   }
+  ],
+  "335": [
+   {
+    "text": "Let me guess, the DOD.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "And the DOJ.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "344": [
+   {
+    "text": "Bob?",
+    "speaker": "Barista"
+   },
+   {
+    "text": "Skinner, you're breaking up. I can't--",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "345": [
+   {
+    "text": "Bob?",
+    "speaker": "Barista"
+   },
+   {
+    "text": "Mulder....",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "346": [
+   {
+    "text": "Double cappuccino, extra foam?",
+    "speaker": "Barista"
+   },
+   {
+    "text": "Yeah. Yeah.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "353": [
+   {
+    "text": "Mulder, why did you wanna meet out here?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "It's cold and it smells.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "367": [
+   {
+    "text": "Project Crossroads.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I read the report.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "386": [
+   {
+    "text": "And we never discussed any suicidal ideation.",
+    "speaker": "Dr. Scholz"
+   },
+   {
+    "text": "Your claims don't describe the patient I know.",
+    "speaker": "Dr. Scholz"
+   }
+  ],
+  "412": [
+   {
+    "text": "It's a false reality, Scully.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Just like everything we've seen so far.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "424": [
+   {
+    "text": "Let's go.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Jackson knew he was being hunted.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "436": [
+   {
+    "text": "Thank God.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "They told me you were dead.",
+    "speaker": "Brianna"
+   }
+  ],
+  "446": [
+   {
+    "text": "Are you Ghouli?",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "No. There's no such thing as Ghouli.",
+    "speaker": "Jackson Van De Kamp"
+   }
+  ],
+  "447": [
+   {
+    "text": "I made up everything on the website.",
+    "speaker": "Jackson Van De Kamp"
+   },
+   {
+    "text": "No, Jackson.",
+    "speaker": "Brianna"
+   }
+  ],
+  "449": [
+   {
+    "text": "You attacked each other.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "You saw what I projected into your head.",
+    "speaker": "Jackson Van De Kamp"
+   }
+  ],
+  "455": [
+   {
+    "text": "That's really messed up.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "It is.",
+    "speaker": "Jackson Van De Kamp"
+   }
+  ],
+  "478": [
+   {
+    "text": "You have Jackson Van de Kamp in custody?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Not yet.",
+    "speaker": "Detective Costa"
+   }
+  ],
+  "481": [
+   {
+    "text": "How do you know he's inside?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I got a text from Sarah Turner. That's him.",
+    "speaker": "Detective Costa"
+   }
+  ],
+  "488": [
+   {
+    "text": "So I-- And I texted them.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "I'm so sorry.",
+    "speaker": "Sarah"
+   }
+  ],
+  "493": [
+   {
+    "text": "This is-- This is all my fault.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "No, no, no. Look.",
+    "speaker": "Jackson Van De Kamp"
+   }
+  ],
+  "540": [
+   {
+    "text": "Are you following me?",
+    "speaker": "Stranger"
+   },
+   {
+    "text": "Hey.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "541": [
+   {
+    "text": "Didn't I see you at the hospital?",
+    "speaker": "Stranger"
+   },
+   {
+    "text": "It must be kismet. Heh.",
+    "speaker": "Stranger"
+   }
+  ],
+  "542": [
+   {
+    "text": "But I doubt we'll be seeing each other again.",
+    "speaker": "Stranger"
+   },
+   {
+    "text": "I'm driving across country.",
+    "speaker": "Stranger"
+   }
+  ],
+  "547": [
+   {
+    "text": "Are you Dr. Masao Matsumoto?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "A doctor?",
+    "speaker": "Stranger"
+   }
+  ],
+  "558": [
+   {
+    "text": "The Pick Up Artist.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What are you talking about?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "560": [
+   {
+    "text": "What did he say?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "He gave me a piece of advice. He said....",
+    "speaker": "Dana Scully"
+   }
+  ]
+ },
+ "text": {
+  "9": "Are you Ghouli?",
+  "13": "That's what Ghouli would say. You're trying to trick me.",
+  "70": "Anonymous 911 call. Didn't leave a name.",
+  "86": "He said that the girls asked him if he found Ghouli.",
+  "89": "Ghouli probably feeds on human flesh.\nYawn.",
+  "105": "Ghouli's real.",
+  "117": "Okay? All I saw was Ghouli.",
+  "120": "It felt real, like I was really living it. At first it was scary because I couldn't move.",
+  "158": "...he realized he was gonna get caught and killed himself.",
+  "185": "...so he was off his medication.",
+  "193": "...because he wouldn't take the slave name given to his ancestral family.",
+  "237": "And I thought...",
+  "243": "I'm just so sorry.",
+  "298": "I know it.",
+  "311": "How many 17-year-olds with two girlfriends have a search history that clean?",
+  "321": "Look at that. Hundreds of posts to ghouli.net.",
+  "338": "...because the DOD is involved in a conspiracy they're trying to cover up.",
+  "341": "You need to come back so we can discuss your activities.",
+  "358": "When they decided to combine alien and human DNA to create hybrids.",
+  "366": "...using components of alien technology, hybrid DNA.",
+  "390": "...visions?",
+  "417": "Her body was moved after she was shot to make it look like there was one shooter.",
+  "445": "Like a prank. Like, you'd see the Ghouli and you just run away.",
+  "505": "[CROWD CLAMORING]"
+ },
+ "scenes": {
+  "1": "The Abandoned Ferry · Night",
+  "28": "Scully's Vision · The Van de Kamp House",
+  "41": "FBI Headquarters · The X-Files Office",
+  "49": "Norfolk · The Drive",
+  "57": "The Shipyard · Detective Costa",
+  "64": "The Abandoned Ferry",
+  "90": "Coffee Shop",
+  "106": "Hospital · Brianna and Sarah",
+  "142": "Hospital · Hallway",
+  "147": "The Van de Kamp House",
+  "154": "The Van de Kamp House · Police",
+  "167": "Jackson's Room",
+  "200": "Outside the House · The DOD Men",
+  "215": "Hospital Morgue",
+  "257": "Hospital · Night",
+  "269": "Hospital · The Missing Body",
+  "282": "Hospital · Hallway",
+  "299": "Hospital · Parking Lot",
+  "306": "Jackson's Room · Day",
+  "323": "The Van de Kamp House · The DOD",
+  "333": "Skinner's Office",
+  "335": "Coffee Shop · Skinner Calls",
+  "347": "Skinner's Office · The Smoking Man",
+  "353": "The Abandoned Ferry · Skinner",
+  "384": "Dr. Scholz's Office",
+  "404": "Coffee Shop",
+  "417": "The Van de Kamp House · What Happened",
+  "425": "Coffee Shop",
+  "434": "Hospital · Brianna's Room",
+  "477": "Hospital · Parking Lot",
+  "487": "Hospital · Sarah's Room",
+  "496": "Hospital · The Chase",
+  "529": "Hospital · Outside",
+  "534": "The Drive Home",
+  "540": "Gas Station",
+  "555": "Gas Station · Mulder",
+  "564": "Gas Station · The Surveillance Video"
+ }
+}

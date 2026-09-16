@@ -267,9 +267,13 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
         number = int(lines[0])
         if str(number) in cue_splits:
             for subindex, segment in enumerate(cue_splits[str(number)]):
+                seg_text, seg_speaker = segment["text"], segment.get("speaker", "")
+                lab = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]+):\s+(.+)$", seg_text)
+                if not seg_speaker and lab and (not lab.group(1).isupper() or known_label(lab.group(1))):
+                    seg_speaker, seg_text = lab.group(1), lab.group(2)
                 cues.append({"number": number, "subindex": subindex,
-                             "text": segment["text"],
-                             "explicit_speaker": segment.get("speaker", "")})
+                             "text": seg_text,
+                             "explicit_speaker": seg_speaker})
             continue
         text_lines = [clean_markup(line) for line in lines[2:] if clean_markup(line)]
         text_lines = [line for line in text_lines if not is_caption_credit(line)]

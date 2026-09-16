@@ -1,0 +1,1060 @@
+{
+ "speakers": {
+  "1-9": "Andrew",
+  "11": "Andrew",
+  "14": "Andrew",
+  "15.1": "Andrew",
+  "16.1": "Andrew",
+  "22-23": "Andrew",
+  "26-28": "Andrew",
+  "31": "Andrew",
+  "34": "Andrew",
+  "37": "Andrew",
+  "10.0": "Diane Eggers",
+  "12": "Diane Eggers",
+  "15.0": "Diane Eggers",
+  "16.0": "Diane Eggers",
+  "17": "Diane Eggers",
+  "18.0": "Diane Eggers",
+  "19-21": "Diane Eggers",
+  "24": "Diane Eggers",
+  "156.0": "Diane Eggers",
+  "157": "Diane Eggers",
+  "174": "Diane Eggers",
+  "514": "Diane Eggers",
+  "516": "Diane Eggers",
+  "518": "Diane Eggers",
+  "521": "Diane Eggers",
+  "523": "Diane Eggers",
+  "525": "Diane Eggers",
+  "10.1": "Rick Eggers",
+  "13": "Rick Eggers",
+  "18.1": "Rick Eggers",
+  "41": "Rick Eggers",
+  "43": "Rick Eggers",
+  "45": "Rick Eggers",
+  "47": "Rick Eggers",
+  "55.1": "Rick Eggers",
+  "56.1": "Rick Eggers",
+  "59-60": "Rick Eggers",
+  "62": "Rick Eggers",
+  "65": "Rick Eggers",
+  "156.1": "Rick Eggers",
+  "172": "Rick Eggers",
+  "180-184": "Rick Eggers",
+  "186": "Rick Eggers",
+  "191": "Rick Eggers",
+  "274": "Rick Eggers",
+  "280.0": "Rick Eggers",
+  "281.0": "Rick Eggers",
+  "289": "Rick Eggers",
+  "290.0": "Rick Eggers",
+  "394.1": "Rick Eggers",
+  "438": "Rick Eggers",
+  "440.0": "Rick Eggers",
+  "441.0": "Rick Eggers",
+  "443.0": "Rick Eggers",
+  "445.0": "Rick Eggers",
+  "513": "Rick Eggers",
+  "515": "Rick Eggers",
+  "517": "Rick Eggers",
+  "519-520": "Rick Eggers",
+  "522": "Rick Eggers",
+  "524": "Rick Eggers",
+  "529": "Rick Eggers",
+  "532-534": "Rick Eggers",
+  "543": "Rick Eggers",
+  "29": "Mr. Chuckleteeth",
+  "32": "Mr. Chuckleteeth",
+  "36": "Mr. Chuckleteeth",
+  "38": "Mr. Chuckleteeth",
+  "549": "Mr. Chuckleteeth",
+  "42": "Officer Wentworth",
+  "44": "Officer Wentworth",
+  "58": "Officer Wentworth",
+  "61": "Officer Wentworth",
+  "63": "Officer Wentworth",
+  "82.1": "Officer Wentworth",
+  "86.1": "Officer Wentworth",
+  "179": "Officer Wentworth",
+  "185": "Officer Wentworth",
+  "187-190": "Officer Wentworth",
+  "192-193": "Officer Wentworth",
+  "195": "Officer Wentworth",
+  "260": "Officer Wentworth",
+  "366.1": "Officer Wentworth",
+  "367": "Officer Wentworth",
+  "433": "Officer Wentworth",
+  "437": "Officer Wentworth",
+  "440.1": "Officer Wentworth",
+  "441.1": "Officer Wentworth",
+  "442": "Officer Wentworth",
+  "443.1": "Officer Wentworth",
+  "450": "Officer Wentworth",
+  "489.0": "Officer Wentworth",
+  "491-497": "Officer Wentworth",
+  "499": "Officer Wentworth",
+  "501-503": "Officer Wentworth",
+  "504.1": "Officer Wentworth",
+  "507-509": "Officer Wentworth",
+  "46": "Searchers",
+  "48-51": "Searchers",
+  "53": "Searchers",
+  "55.0": "Chief Strong",
+  "56.0": "Chief Strong",
+  "57": "Chief Strong",
+  "66-68": "Chief Strong",
+  "71": "Chief Strong",
+  "72.1": "Chief Strong",
+  "73.1": "Chief Strong",
+  "75": "Chief Strong",
+  "77.1": "Chief Strong",
+  "78": "Chief Strong",
+  "79.0": "Chief Strong",
+  "81": "Chief Strong",
+  "89": "Chief Strong",
+  "90.0": "Chief Strong",
+  "169-171": "Chief Strong",
+  "173": "Chief Strong",
+  "175-176": "Chief Strong",
+  "196": "Chief Strong",
+  "197.0": "Chief Strong",
+  "199.0": "Chief Strong",
+  "200-201": "Chief Strong",
+  "202.1": "Chief Strong",
+  "244": "Chief Strong",
+  "247.0": "Chief Strong",
+  "249.0": "Chief Strong",
+  "252.0": "Chief Strong",
+  "253-254": "Chief Strong",
+  "256.1": "Chief Strong",
+  "257": "Chief Strong",
+  "258.1": "Chief Strong",
+  "259": "Chief Strong",
+  "263": "Chief Strong",
+  "265": "Chief Strong",
+  "267-269": "Chief Strong",
+  "271": "Chief Strong",
+  "272.1": "Chief Strong",
+  "275-279": "Chief Strong",
+  "280.1": "Chief Strong",
+  "281.1": "Chief Strong",
+  "283-287": "Chief Strong",
+  "290.1": "Chief Strong",
+  "310": "Chief Strong",
+  "357.0": "Chief Strong",
+  "358.0": "Chief Strong",
+  "359.1": "Chief Strong",
+  "361": "Chief Strong",
+  "366.0": "Chief Strong",
+  "399.1": "Chief Strong",
+  "400.0": "Chief Strong",
+  "404-405": "Chief Strong",
+  "406.0": "Chief Strong",
+  "408-419": "Chief Strong",
+  "420.0": "Chief Strong",
+  "579": "Chief Strong",
+  "581-590": "Chief Strong",
+  "592-593": "Chief Strong",
+  "594.0": "Chief Strong",
+  "596": "Chief Strong",
+  "599": "Chief Strong",
+  "600.0": "Chief Strong",
+  "601": "Chief Strong",
+  "69-70": "Dana Scully",
+  "72.0": "Dana Scully",
+  "73.0": "Dana Scully",
+  "74": "Dana Scully",
+  "77.0": "Dana Scully",
+  "79.1": "Dana Scully",
+  "80": "Dana Scully",
+  "82.0": "Dana Scully",
+  "83-85": "Dana Scully",
+  "86.0": "Dana Scully",
+  "87-88": "Dana Scully",
+  "92-95": "Dana Scully",
+  "97.0": "Dana Scully",
+  "98": "Dana Scully",
+  "99.0": "Dana Scully",
+  "100": "Dana Scully",
+  "105": "Dana Scully",
+  "112.1": "Dana Scully",
+  "113-114": "Dana Scully",
+  "118": "Dana Scully",
+  "120-121": "Dana Scully",
+  "123-124": "Dana Scully",
+  "125.1": "Dana Scully",
+  "127-129": "Dana Scully",
+  "131-133": "Dana Scully",
+  "135": "Dana Scully",
+  "137": "Dana Scully",
+  "138.0": "Dana Scully",
+  "139-140": "Dana Scully",
+  "142": "Dana Scully",
+  "143.1": "Dana Scully",
+  "145": "Dana Scully",
+  "147.0": "Dana Scully",
+  "151.0": "Dana Scully",
+  "152": "Dana Scully",
+  "245-246": "Dana Scully",
+  "247.1": "Dana Scully",
+  "248": "Dana Scully",
+  "249.1": "Dana Scully",
+  "250-251": "Dana Scully",
+  "252.1": "Dana Scully",
+  "254.1": "Dana Scully",
+  "255": "Dana Scully",
+  "256.0": "Dana Scully",
+  "258.0": "Dana Scully",
+  "272.0": "Dana Scully",
+  "273": "Dana Scully",
+  "282": "Dana Scully",
+  "288": "Dana Scully",
+  "292.0": "Dana Scully",
+  "293.0": "Dana Scully",
+  "294-297": "Dana Scully",
+  "302": "Dana Scully",
+  "303.1": "Dana Scully",
+  "304-305": "Dana Scully",
+  "306.1": "Dana Scully",
+  "307": "Dana Scully",
+  "309.0": "Dana Scully",
+  "314": "Dana Scully",
+  "318": "Dana Scully",
+  "320-321": "Dana Scully",
+  "323": "Dana Scully",
+  "325": "Dana Scully",
+  "327.0": "Dana Scully",
+  "333.1": "Dana Scully",
+  "334": "Dana Scully",
+  "351-352": "Dana Scully",
+  "355": "Dana Scully",
+  "369": "Dana Scully",
+  "371": "Dana Scully",
+  "372.1": "Dana Scully",
+  "376.0": "Dana Scully",
+  "378": "Dana Scully",
+  "386.0": "Dana Scully",
+  "403": "Dana Scully",
+  "422.0": "Dana Scully",
+  "423": "Dana Scully",
+  "426": "Dana Scully",
+  "428": "Dana Scully",
+  "455-456": "Dana Scully",
+  "468": "Dana Scully",
+  "470-471": "Dana Scully",
+  "474.0": "Dana Scully",
+  "475": "Dana Scully",
+  "477-478": "Dana Scully",
+  "481.0": "Dana Scully",
+  "489.1": "Dana Scully",
+  "500": "Dana Scully",
+  "505-506": "Dana Scully",
+  "554.1": "Dana Scully",
+  "556": "Dana Scully",
+  "558": "Dana Scully",
+  "563": "Dana Scully",
+  "565": "Dana Scully",
+  "571.0": "Dana Scully",
+  "574-575": "Dana Scully",
+  "576.0": "Dana Scully",
+  "577.0": "Dana Scully",
+  "607": "Dana Scully",
+  "76": "Fox Mulder",
+  "90.1": "Fox Mulder",
+  "91": "Fox Mulder",
+  "96": "Fox Mulder",
+  "97.1": "Fox Mulder",
+  "99.1": "Fox Mulder",
+  "101-104": "Fox Mulder",
+  "106-111": "Fox Mulder",
+  "112.0": "Fox Mulder",
+  "115-117": "Fox Mulder",
+  "119": "Fox Mulder",
+  "122": "Fox Mulder",
+  "125.0": "Fox Mulder",
+  "126": "Fox Mulder",
+  "130": "Fox Mulder",
+  "134": "Fox Mulder",
+  "136": "Fox Mulder",
+  "138.1": "Fox Mulder",
+  "141": "Fox Mulder",
+  "143.0": "Fox Mulder",
+  "144": "Fox Mulder",
+  "146": "Fox Mulder",
+  "147.1": "Fox Mulder",
+  "148-150": "Fox Mulder",
+  "151.1": "Fox Mulder",
+  "206": "Fox Mulder",
+  "208.0": "Fox Mulder",
+  "209": "Fox Mulder",
+  "211-212": "Fox Mulder",
+  "213.1": "Fox Mulder",
+  "215.0": "Fox Mulder",
+  "219": "Fox Mulder",
+  "222": "Fox Mulder",
+  "223.0": "Fox Mulder",
+  "226.0": "Fox Mulder",
+  "227.0": "Fox Mulder",
+  "236.1": "Fox Mulder",
+  "237.0": "Fox Mulder",
+  "243": "Fox Mulder",
+  "298": "Fox Mulder",
+  "301": "Fox Mulder",
+  "303.0": "Fox Mulder",
+  "306.0": "Fox Mulder",
+  "308": "Fox Mulder",
+  "309.1": "Fox Mulder",
+  "313": "Fox Mulder",
+  "319": "Fox Mulder",
+  "322": "Fox Mulder",
+  "324": "Fox Mulder",
+  "326": "Fox Mulder",
+  "327.1": "Fox Mulder",
+  "328-332": "Fox Mulder",
+  "333.0": "Fox Mulder",
+  "335-336": "Fox Mulder",
+  "353-354": "Fox Mulder",
+  "370": "Fox Mulder",
+  "372.0": "Fox Mulder",
+  "373-375": "Fox Mulder",
+  "376.1": "Fox Mulder",
+  "377": "Fox Mulder",
+  "379-381": "Fox Mulder",
+  "382.0": "Fox Mulder",
+  "383": "Fox Mulder",
+  "385": "Fox Mulder",
+  "387-390": "Fox Mulder",
+  "396-398": "Fox Mulder",
+  "406.1": "Fox Mulder",
+  "420.1": "Fox Mulder",
+  "422.1": "Fox Mulder",
+  "424-425": "Fox Mulder",
+  "427": "Fox Mulder",
+  "429-430": "Fox Mulder",
+  "432.1": "Fox Mulder",
+  "446-447": "Fox Mulder",
+  "448.1": "Fox Mulder",
+  "449.0": "Fox Mulder",
+  "458": "Fox Mulder",
+  "466-467": "Fox Mulder",
+  "469": "Fox Mulder",
+  "472-473": "Fox Mulder",
+  "474.1": "Fox Mulder",
+  "476": "Fox Mulder",
+  "479": "Fox Mulder",
+  "488": "Fox Mulder",
+  "490": "Fox Mulder",
+  "498": "Fox Mulder",
+  "504.0": "Fox Mulder",
+  "510": "Fox Mulder",
+  "551": "Fox Mulder",
+  "553": "Fox Mulder",
+  "554.0": "Fox Mulder",
+  "557": "Fox Mulder",
+  "571.1": "Fox Mulder",
+  "572-573": "Fox Mulder",
+  "576.1": "Fox Mulder",
+  "577.1": "Fox Mulder",
+  "609-611": "Fox Mulder",
+  "612.1": "Fox Mulder",
+  "613": "Fox Mulder",
+  "153-155": "Pastor",
+  "158-161": "Pastor",
+  "163-165": "Pastor",
+  "166.0": "Pastor",
+  "167.0": "Pastor",
+  "162": "Congregation",
+  "166.1": "Congregation",
+  "167.1": "Congregation",
+  "197.1": "Anna Strong",
+  "198": "Anna Strong",
+  "199.1": "Anna Strong",
+  "202.0": "Anna Strong",
+  "204": "Anna Strong",
+  "207": "Anna Strong",
+  "210": "Anna Strong",
+  "213.0": "Anna Strong",
+  "214": "Anna Strong",
+  "215.1": "Anna Strong",
+  "216-218": "Anna Strong",
+  "220-221": "Anna Strong",
+  "223.1": "Anna Strong",
+  "224-226": "Anna Strong",
+  "226.1": "Anna Strong",
+  "227.1": "Anna Strong",
+  "228-229": "Anna Strong",
+  "232": "Anna Strong",
+  "234-235": "Anna Strong",
+  "236.0": "Anna Strong",
+  "341-349": "Anna Strong",
+  "356": "Anna Strong",
+  "357.1": "Anna Strong",
+  "358.1": "Anna Strong",
+  "359.0": "Anna Strong",
+  "360": "Anna Strong",
+  "362-364": "Anna Strong",
+  "594.1": "Anna Strong",
+  "597-598": "Anna Strong",
+  "600.1": "Anna Strong",
+  "602": "Anna Strong",
+  "612.0": "Anna Strong",
+  "208.1": "Emily",
+  "230-231": "Emily",
+  "238.0": "Emily",
+  "239.1": "Emily",
+  "237.1": "Children on TV",
+  "238.1": "Children on TV",
+  "239.0": "Children on TV",
+  "240-241": "Children on TV",
+  "535-542": "Children on TV",
+  "545-548": "Children on TV",
+  "550": "Children on TV",
+  "560-562": "Children on TV",
+  "564": "Children on TV",
+  "566-570": "Children on TV",
+  "337": "Townspeople",
+  "434-436": "Townspeople",
+  "382.1": "Officer Sean",
+  "384": "Officer Sean",
+  "386.1": "Officer Sean",
+  "400.1": "Officer Sean",
+  "401": "Officer Sean",
+  "445.1": "Officer Sean",
+  "448.0": "Officer Sean",
+  "393.0": "Melvin Peter",
+  "394.0": "Melvin Peter",
+  "439": "Melvin Peter",
+  "444": "Melvin Peter",
+  "449.1": "Melvin Peter",
+  "457": "Melvin Peter",
+  "459": "Melvin Peter",
+  "393.1": "Woman",
+  "431": "Officer on Radio",
+  "432.0": "Officer on Radio",
+  "451-453": "Officers",
+  "461": "Bailiff",
+  "463-464": "Bailiff",
+  "462": "Judge",
+  "465": "Judge",
+  "480": "Judge",
+  "481.1": "Judge",
+  "482-485": "Judge",
+  "236": "Anna Strong"
+ },
+ "splits": {
+  "10": [
+   {
+    "text": "You can't call me.",
+    "speaker": "Diane Eggers"
+   },
+   {
+    "text": "But, Diane....",
+    "speaker": "Rick Eggers"
+   }
+  ],
+  "18": [
+   {
+    "text": "Stop calling.",
+    "speaker": "Diane Eggers"
+   },
+   {
+    "text": "Don't hang up, Diane. Di--",
+    "speaker": "Rick Eggers"
+   }
+  ],
+  "79": [
+   {
+    "text": "What's the FBI doing here?",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "The FBI has jurisdiction...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "86": [
+   {
+    "text": "...and would likely kill again.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Evidence doesn't support that.",
+    "speaker": "Officer Wentworth"
+   }
+  ],
+  "90": [
+   {
+    "text": "...we've dismissed.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "These aren't just careless assumptions.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "99": [
+   {
+    "text": "Really, Mulder?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Sometimes mixed with wild dogs.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "103": [
+   {
+    "text": "Does that sound like a wolf to you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I wasn't thinking wolf.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "106": [
+   {
+    "text": "It's a large black dog that guards the gates of the underworld.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "That's neither here nor there.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "112": [
+   {
+    "text": "...people don't just spontaneously combust.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "That woman was undoubtedly an innocent...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "125": [
+   {
+    "text": "Never gets easier.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "It's an innocent life cut short.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "138": [
+   {
+    "text": "You know the profile.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Eyewitnesses exculpate the mother.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "147": [
+   {
+    "text": "What would be the significance of that?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm not sure.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "151": [
+   {
+    "text": "And her mother was right there with her.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Seems very odd to me.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "166": [
+   {
+    "text": "...and free from our sins.",
+    "speaker": "Pastor"
+   },
+   {
+    "text": "Amen.",
+    "speaker": "Congregation"
+   }
+  ],
+  "197": [
+   {
+    "text": "She's just a little girl.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "We need to cooperate with them.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "199": [
+   {
+    "text": "Anna, just play nice.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "I was there. We didn't see anything.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "213": [
+   {
+    "text": "Bibbletiggles.",
+    "speaker": "Anna Strong"
+   },
+   {
+    "text": "...Bibbletiggles.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "215": [
+   {
+    "text": "Well, who wouldn't be?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I just-- I can't--",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "223": [
+   {
+    "text": "Are you from around here?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah, right down the street.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "236": [
+   {
+    "text": "Anything else, Agent Mulder?",
+    "speaker": "Anna Strong"
+   },
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "237": [
+   {
+    "text": "Thank you for your time.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Mr. Chuckleteeth",
+    "speaker": "Children on TV"
+   }
+  ],
+  "238": [
+   {
+    "text": "Mommy!",
+    "speaker": "Emily"
+   },
+   {
+    "text": "Happy as can be",
+    "speaker": "Children on TV"
+   }
+  ],
+  "239": [
+   {
+    "text": "Mr. Chuckleteeth, won't you play with me?",
+    "speaker": "Children on TV"
+   },
+   {
+    "text": "He was in the forest.",
+    "speaker": "Emily"
+   }
+  ],
+  "247": [
+   {
+    "text": "Don't go there.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "When the child is under the age of 5...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "249": [
+   {
+    "text": "Rick Eggers did not kill his son.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "Most of the time, friends and family...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "252": [
+   {
+    "text": "I've heard about enough.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "I want to rule him out as a suspect.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "254": [
+   {
+    "text": "A good cop.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "But I need your help.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "256": [
+   {
+    "text": "...to become violent towards themselves.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'd confront him myself, but I don't have to.",
+    "speaker": "Chief Strong"
+   }
+  ],
+  "258": [
+   {
+    "text": "With you or out on his own?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Why don't you ask him yourself?",
+    "speaker": "Chief Strong"
+   }
+  ],
+  "303": [
+   {
+    "text": "Whose house are we searching?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Convicted sex offender, Melvin Peter.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "306": [
+   {
+    "text": "Who figured that out?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Father of the deceased. Right over there.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "309": [
+   {
+    "text": "You sure about that, Mulder?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm not sure about anything.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "327": [
+   {
+    "text": "Why are you defending him?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm not defending him.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "333": [
+   {
+    "text": "...than to imprison one innocent man.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I am all for benefit of the doubt...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "357": [
+   {
+    "text": "No, no, no. No, Anna. No. Don't go there.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "Em.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "358": [
+   {
+    "text": "Don't.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "No, no, no. Emily!",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "359": [
+   {
+    "text": "Let me go! Emily!",
+    "speaker": "Anna Strong"
+   },
+   {
+    "text": "No. Stop, stop. Stop.",
+    "speaker": "Chief Strong"
+   }
+  ],
+  "376": [
+   {
+    "text": "Mulder, stop--",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "When casting spells or curses.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "382": [
+   {
+    "text": "But sometimes could take human shape...",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "What are you doing?",
+    "speaker": "Officer Sean"
+   }
+  ],
+  "386": [
+   {
+    "text": "What do you mean, a TV character?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Mind telling me what you're doing?",
+    "speaker": "Officer Sean"
+   }
+  ],
+  "394": [
+   {
+    "text": "What did I do wrong?",
+    "speaker": "Melvin Peter"
+   },
+   {
+    "text": "You killed my boy!",
+    "speaker": "Rick Eggers"
+   }
+  ],
+  "399": [
+   {
+    "text": "Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, it's....",
+    "speaker": "Chief Strong"
+   }
+  ],
+  "400": [
+   {
+    "text": "It's okay. He's right.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "You ought to take a beat, chief...",
+    "speaker": "Officer Sean"
+   }
+  ],
+  "406": [
+   {
+    "text": "Especially not Emily.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "Then what's your part in all of this?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "420": [
+   {
+    "text": "Oh, God.",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "Let's all give him some room.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "432": [
+   {
+    "text": "Officer involved.",
+    "speaker": "Officer on Radio"
+   },
+   {
+    "text": "Copy.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "437": [
+   {
+    "text": "Hold it. Eggers, stop! Stop!",
+    "speaker": "Officer Wentworth"
+   },
+   {
+    "text": "Hey! Back off! Don't do this!",
+    "speaker": "Officer Wentworth"
+   }
+  ],
+  "441": [
+   {
+    "text": "Let me go!",
+    "speaker": "Rick Eggers"
+   },
+   {
+    "text": "Hey! Relax, all right?",
+    "speaker": "Officer Wentworth"
+   }
+  ],
+  "445": [
+   {
+    "text": "Oh, no! Don't you talk to me about kids!",
+    "speaker": "Rick Eggers"
+   },
+   {
+    "text": "All right. Relax. Everyone, back up!",
+    "speaker": "Officer Sean"
+   }
+  ],
+  "449": [
+   {
+    "text": "Get off him. Hey!",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Please!",
+    "speaker": "Melvin Peter"
+   }
+  ],
+  "481": [
+   {
+    "text": "You still haven't answered my question.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Mr. Eggers.",
+    "speaker": "Judge"
+   }
+  ],
+  "571": [
+   {
+    "text": "There's a patrol car on the corner.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "There's no one inside.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "576": [
+   {
+    "text": "...and it was probably a crime of passion.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Yeah, and the gates of hell.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "594": [
+   {
+    "text": "Don't!",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "I have to end what I started.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "600": [
+   {
+    "text": "Our baby girl?",
+    "speaker": "Chief Strong"
+   },
+   {
+    "text": "I was only trying to curse you.",
+    "speaker": "Anna Strong"
+   }
+  ],
+  "612": [
+   {
+    "text": "No. No, I can end this. Please.",
+    "speaker": "Anna Strong"
+   },
+   {
+    "text": "No, no. You may have tapped into something...",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "129": "...is completely torn out and missing.",
+  "251": "Because they carry out their fantasies in private.",
+  "294": "I'm not quite sure yet. But the dead boy's father has had a breakdown.",
+  "321": "He's potentially John Wayne Gacy with a monkey.",
+  "332": "...that it's better to let 10 guilty men go free...",
+  "355": "Is this the killing field?",
+  "378": "Mulder, this is protecting no one, and you can't do this.",
+  "383": "...in the guise of their victims' ardent desires or a woman luring a man to his death or....",
+  "408": "I am a...",
+  "409": "...lustful man.",
+  "418": "See, I'm being punished.",
+  "428": "So you think Chief Strong unleashed something?",
+  "473": "...is in this courtroom today.",
+  "501": "I told Chief Strong, but he didn't wanna hear it.",
+  "509": "See him get what's coming to him.",
+  "573": "It has instructions for summoning spirits and demons.",
+  "601": "You've unleashed something you can't control!"
+ },
+ "scenes": {
+  "1": "Eastwood, Connecticut · Ash Hill Park",
+  "41": "The Forest · The Search",
+  "55": "The Forest · The Clearing",
+  "66": "The Clearing · Chief Strong",
+  "97": "The Clearing · Mulder and Scully",
+  "124": "The Morgue",
+  "153": "Andrew's Memorial",
+  "169": "The Memorial · The Eggers",
+  "179": "The Memorial · Wentworth and Eggers",
+  "196": "The Strong House",
+  "204": "The Strong House · Emily",
+  "243": "Police Station · Chief Strong's Office",
+  "259": "Police Station · Eggers Runs",
+  "275": "Melvin Peter's House",
+  "292": "Melvin Peter's House · Scully Calls",
+  "301": "Melvin Peter's House · Mulder Arrives",
+  "318": "Bentley Avenue · The Crowd",
+  "341": "The Strong House · Emily Missing",
+  "351": "The Clearing · Emily",
+  "369": "The Clearing · The Salt Circle",
+  "393": "Ash Hill Park · Melvin Peter",
+  "396": "The Clearing · Chief Strong Confesses",
+  "422": "The Clearing · After",
+  "433": "Main Street · The Mob",
+  "461": "The Courtroom",
+  "488": "Outside the Courthouse",
+  "513": "The Eggers House",
+  "529": "The Strong House · Eggers",
+  "554": "The Strong House · Mulder and Scully",
+  "579": "Chief Strong's Cruiser",
+  "592": "The Clearing · Anna",
+  "607": "The Clearing · The End"
+ }
+}

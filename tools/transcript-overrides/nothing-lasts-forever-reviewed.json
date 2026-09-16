@@ -1,0 +1,887 @@
+{
+ "speakers": {
+  "2": "Dr. Dave",
+  "4": "Dr. Dave",
+  "12-13": "Dr. Dave",
+  "16": "Dr. Dave",
+  "25": "Dr. Dave",
+  "27": "Dr. Dave",
+  "30": "Dr. Dave",
+  "31.1": "Dr. Dave",
+  "3": "Technician",
+  "14": "Technician",
+  "17": "Technician",
+  "22": "Technician",
+  "186-188": "Technician",
+  "5-7": "Man on Radio",
+  "11": "Juliet Bocanegra",
+  "19": "Juliet Bocanegra",
+  "24": "Juliet Bocanegra",
+  "28-29": "Juliet Bocanegra",
+  "31.0": "Juliet Bocanegra",
+  "33": "Juliet Bocanegra",
+  "163": "Juliet Bocanegra",
+  "196-200": "Juliet Bocanegra",
+  "288": "Juliet Bocanegra",
+  "289.1": "Juliet Bocanegra",
+  "291-292": "Juliet Bocanegra",
+  "295-297": "Juliet Bocanegra",
+  "298.0": "Juliet Bocanegra",
+  "303.1": "Juliet Bocanegra",
+  "305.1": "Juliet Bocanegra",
+  "306-307": "Juliet Bocanegra",
+  "504.0": "Juliet Bocanegra",
+  "510-511": "Juliet Bocanegra",
+  "544": "Juliet Bocanegra",
+  "546.0": "Juliet Bocanegra",
+  "547.1": "Juliet Bocanegra",
+  "558-561": "Juliet Bocanegra",
+  "35": "Father Hardy",
+  "37": "Father Hardy",
+  "39-44": "Father Hardy",
+  "47-49": "Father Hardy",
+  "162": "Father Hardy",
+  "192-195": "Father Hardy",
+  "201": "Father Hardy",
+  "36": "Congregation",
+  "38": "Congregation",
+  "45": "Congregation",
+  "53": "Detective Colquitt",
+  "58.0": "Detective Colquitt",
+  "59-60": "Detective Colquitt",
+  "67-68": "Detective Colquitt",
+  "55-56": "Detective Bludworth",
+  "69": "Detective Bludworth",
+  "51-52": "Dana Scully",
+  "61": "Dana Scully",
+  "64-65": "Dana Scully",
+  "70": "Dana Scully",
+  "77-78": "Dana Scully",
+  "80": "Dana Scully",
+  "81.1": "Dana Scully",
+  "82": "Dana Scully",
+  "83.0": "Dana Scully",
+  "84": "Dana Scully",
+  "86-87": "Dana Scully",
+  "89": "Dana Scully",
+  "90.1": "Dana Scully",
+  "91": "Dana Scully",
+  "92.0": "Dana Scully",
+  "93.0": "Dana Scully",
+  "94.1": "Dana Scully",
+  "95": "Dana Scully",
+  "99": "Dana Scully",
+  "148-149": "Dana Scully",
+  "153": "Dana Scully",
+  "156": "Dana Scully",
+  "158-161": "Dana Scully",
+  "204-210": "Dana Scully",
+  "212-213": "Dana Scully",
+  "215-216": "Dana Scully",
+  "219-222": "Dana Scully",
+  "224-226": "Dana Scully",
+  "232": "Dana Scully",
+  "283.0": "Dana Scully",
+  "287": "Dana Scully",
+  "289.0": "Dana Scully",
+  "293-294": "Dana Scully",
+  "308": "Dana Scully",
+  "407-408": "Dana Scully",
+  "425": "Dana Scully",
+  "426.1": "Dana Scully",
+  "428-430": "Dana Scully",
+  "439.0": "Dana Scully",
+  "440.0": "Dana Scully",
+  "459-460": "Dana Scully",
+  "464-465": "Dana Scully",
+  "467": "Dana Scully",
+  "474.0": "Dana Scully",
+  "475": "Dana Scully",
+  "481.0": "Dana Scully",
+  "489-490": "Dana Scully",
+  "494": "Dana Scully",
+  "550.1": "Dana Scully",
+  "553": "Dana Scully",
+  "554.1": "Dana Scully",
+  "556-557": "Dana Scully",
+  "565-569": "Dana Scully",
+  "572": "Dana Scully",
+  "574-582": "Dana Scully",
+  "588-594": "Dana Scully",
+  "603-604": "Dana Scully",
+  "610": "Dana Scully",
+  "613-615": "Dana Scully",
+  "54": "Fox Mulder",
+  "57": "Fox Mulder",
+  "58.1": "Fox Mulder",
+  "62-63": "Fox Mulder",
+  "66": "Fox Mulder",
+  "71-76": "Fox Mulder",
+  "79": "Fox Mulder",
+  "81.0": "Fox Mulder",
+  "83.1": "Fox Mulder",
+  "85": "Fox Mulder",
+  "88": "Fox Mulder",
+  "90.0": "Fox Mulder",
+  "92.1": "Fox Mulder",
+  "93.1": "Fox Mulder",
+  "94.0": "Fox Mulder",
+  "96-98": "Fox Mulder",
+  "100": "Fox Mulder",
+  "146-147": "Fox Mulder",
+  "150-152": "Fox Mulder",
+  "154-155": "Fox Mulder",
+  "157": "Fox Mulder",
+  "202-203": "Fox Mulder",
+  "206.0": "Fox Mulder",
+  "209.1": "Fox Mulder",
+  "211": "Fox Mulder",
+  "217-218": "Fox Mulder",
+  "227-230": "Fox Mulder",
+  "233-235": "Fox Mulder",
+  "282": "Fox Mulder",
+  "283.1": "Fox Mulder",
+  "284.1": "Fox Mulder",
+  "285": "Fox Mulder",
+  "298.1": "Fox Mulder",
+  "299-302": "Fox Mulder",
+  "303.0": "Fox Mulder",
+  "304": "Fox Mulder",
+  "305.0": "Fox Mulder",
+  "309-310": "Fox Mulder",
+  "404-406": "Fox Mulder",
+  "410": "Fox Mulder",
+  "420.0": "Fox Mulder",
+  "421-422": "Fox Mulder",
+  "424": "Fox Mulder",
+  "426.0": "Fox Mulder",
+  "427": "Fox Mulder",
+  "435-438": "Fox Mulder",
+  "444.0": "Fox Mulder",
+  "445": "Fox Mulder",
+  "455-458": "Fox Mulder",
+  "462.1": "Fox Mulder",
+  "463": "Fox Mulder",
+  "470": "Fox Mulder",
+  "496-497": "Fox Mulder",
+  "501": "Fox Mulder",
+  "504.1": "Fox Mulder",
+  "508": "Fox Mulder",
+  "512-515": "Fox Mulder",
+  "522": "Fox Mulder",
+  "528": "Fox Mulder",
+  "537": "Fox Mulder",
+  "539": "Fox Mulder",
+  "540.0": "Fox Mulder",
+  "541.0": "Fox Mulder",
+  "543.1": "Fox Mulder",
+  "549": "Fox Mulder",
+  "550.0": "Fox Mulder",
+  "551": "Fox Mulder",
+  "554.0": "Fox Mulder",
+  "570-571": "Fox Mulder",
+  "573": "Fox Mulder",
+  "583-587": "Fox Mulder",
+  "595-602": "Fox Mulder",
+  "605-609": "Fox Mulder",
+  "616": "Fox Mulder",
+  "112-113": "Announcer",
+  "114": "Barbara Beaumont",
+  "117": "Barbara Beaumont",
+  "118.1": "Barbara Beaumont",
+  "140": "Barbara Beaumont",
+  "165-166": "Barbara Beaumont",
+  "168-172": "Barbara Beaumont",
+  "174": "Barbara Beaumont",
+  "175.1": "Barbara Beaumont",
+  "176-185": "Barbara Beaumont",
+  "189-191": "Barbara Beaumont",
+  "237-239": "Barbara Beaumont",
+  "242": "Barbara Beaumont",
+  "244": "Barbara Beaumont",
+  "249": "Barbara Beaumont",
+  "253": "Barbara Beaumont",
+  "254.0": "Barbara Beaumont",
+  "255-256": "Barbara Beaumont",
+  "257.1": "Barbara Beaumont",
+  "258-260": "Barbara Beaumont",
+  "262-264": "Barbara Beaumont",
+  "266": "Barbara Beaumont",
+  "267.0": "Barbara Beaumont",
+  "268": "Barbara Beaumont",
+  "269.1": "Barbara Beaumont",
+  "270": "Barbara Beaumont",
+  "276-277": "Barbara Beaumont",
+  "279-280": "Barbara Beaumont",
+  "314-316": "Barbara Beaumont",
+  "318-319": "Barbara Beaumont",
+  "321.0": "Barbara Beaumont",
+  "323.0": "Barbara Beaumont",
+  "325": "Barbara Beaumont",
+  "333": "Barbara Beaumont",
+  "335": "Barbara Beaumont",
+  "338-340": "Barbara Beaumont",
+  "345-346": "Barbara Beaumont",
+  "355": "Barbara Beaumont",
+  "357-370": "Barbara Beaumont",
+  "395": "Barbara Beaumont",
+  "398": "Barbara Beaumont",
+  "400.0": "Barbara Beaumont",
+  "402-403": "Barbara Beaumont",
+  "462.0": "Barbara Beaumont",
+  "466": "Barbara Beaumont",
+  "468-469": "Barbara Beaumont",
+  "472-473": "Barbara Beaumont",
+  "474.1": "Barbara Beaumont",
+  "477-480": "Barbara Beaumont",
+  "481.1": "Barbara Beaumont",
+  "482-488": "Barbara Beaumont",
+  "491": "Barbara Beaumont",
+  "493": "Barbara Beaumont",
+  "495": "Barbara Beaumont",
+  "498": "Barbara Beaumont",
+  "118.0": "Barbara (on TV)",
+  "119": "Barbara (on TV)",
+  "121": "Barbara (on TV)",
+  "124-129": "Barbara (on TV)",
+  "131": "Barbara (on TV)",
+  "135": "Barbara (on TV)",
+  "137-138": "Barbara (on TV)",
+  "142-143": "Barbara (on TV)",
+  "391.1": "Barbara (on TV)",
+  "392-393": "Barbara (on TV)",
+  "120": "Joe (on TV)",
+  "123": "Joe (on TV)",
+  "132-134": "Joe (on TV)",
+  "136": "Joe (on TV)",
+  "391.0": "Joe (on TV)",
+  "394": "Joe (on TV)",
+  "173": "Followers",
+  "175.0": "Followers",
+  "240": "Kayla",
+  "247": "Kayla",
+  "261": "Kayla",
+  "264.1": "Kayla",
+  "265": "Kayla",
+  "269.0": "Kayla",
+  "241": "Dr. Luvenis",
+  "245-246": "Dr. Luvenis",
+  "248": "Dr. Luvenis",
+  "250-252": "Dr. Luvenis",
+  "254.1": "Dr. Luvenis",
+  "257.0": "Dr. Luvenis",
+  "267.1": "Dr. Luvenis",
+  "275": "Dr. Luvenis",
+  "278": "Dr. Luvenis",
+  "317": "Dr. Luvenis",
+  "320": "Dr. Luvenis",
+  "321.1": "Dr. Luvenis",
+  "322": "Dr. Luvenis",
+  "323.1": "Dr. Luvenis",
+  "324": "Dr. Luvenis",
+  "326-332": "Dr. Luvenis",
+  "334": "Dr. Luvenis",
+  "336": "Dr. Luvenis",
+  "341-344": "Dr. Luvenis",
+  "396": "Dr. Luvenis",
+  "399": "Dr. Luvenis",
+  "400.1": "Dr. Luvenis",
+  "401": "Dr. Luvenis",
+  "413-418": "Dr. Luvenis",
+  "452": "Dr. Luvenis",
+  "518-521": "Dr. Luvenis",
+  "525-527": "Dr. Luvenis",
+  "529-536": "Dr. Luvenis",
+  "538": "Dr. Luvenis",
+  "540.1": "Dr. Luvenis",
+  "541.1": "Dr. Luvenis",
+  "542": "Dr. Luvenis",
+  "543.0": "Dr. Luvenis",
+  "347-354": "Warren",
+  "356": "Warren",
+  "284.0": "Mrs. Bocanegra",
+  "409": "Building Super",
+  "419": "Building Super",
+  "420.1": "Building Super",
+  "431-434": "Building Super",
+  "439.1": "Building Super",
+  "440.1": "Building Super",
+  "441-443": "Building Super",
+  "444.1": "Building Super",
+  "446-450": "Building Super",
+  "507": "Follower",
+  "523-524": "Olivia Bocanegra",
+  "546.1": "Olivia Bocanegra",
+  "547.0": "Olivia Bocanegra"
+ },
+ "splits": {
+  "31": [
+   {
+    "text": "Those who love me, I will deliver.",
+    "speaker": "Juliet Bocanegra"
+   },
+   {
+    "text": "Ugh!",
+    "speaker": "Dr. Dave"
+   }
+  ],
+  "58": [
+   {
+    "text": "You guys ID this gentleman?",
+    "speaker": "Detective Colquitt"
+   },
+   {
+    "text": "His name is Robert Jenkins, 23.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "75": [
+   {
+    "text": "...familiar to fans of Hammer horror films.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Of which, I am one, guilty.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "81": [
+   {
+    "text": "Sounds like a motive.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "83": [
+   {
+    "text": "That no hospital is gonna take those organs.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "But maybe we can find a use for them.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "92": [
+   {
+    "text": "They're called progressive lenses.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No need to get defensive.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "93": [
+   {
+    "text": "I'm not defensive.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Presbyopia is a natural part...",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "94": [
+   {
+    "text": "...of the aging process.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "We're all gonna go through it, Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "118": [
+   {
+    "text": "A simple misunderstanding.",
+    "speaker": "Barbara (on TV)"
+   },
+   {
+    "text": "Uh-huh.",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "175": [
+   {
+    "text": "Ugliness and pain.",
+    "speaker": "Followers"
+   },
+   {
+    "text": "No.",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "187": [
+   {
+    "text": "Someone attacked us.",
+    "speaker": "Technician"
+   },
+   {
+    "text": "She killed Dr. Dave with a metal stake.",
+    "speaker": "Technician"
+   }
+  ],
+  "203": [
+   {
+    "text": "\"Vengeance is mine, I will repay.\"",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "That's what was on the organ cooler.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "206": [
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "When my brother Charlie was a baby...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "209": [
+   {
+    "text": "I later learned that it was rheumatic fever.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Hmm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "253": [
+   {
+    "text": "Our organs.",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "Your excuses...",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "254": [
+   {
+    "text": "...don't solve the problem.",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "I will find them.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "257": [
+   {
+    "text": "Barbara--",
+    "speaker": "Dr. Luvenis"
+   },
+   {
+    "text": "I think you'll agree...",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "264": [
+   {
+    "text": "Have I ever lied to you?",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "No.",
+    "speaker": "Kayla"
+   }
+  ],
+  "267": [
+   {
+    "text": "Close your eyes.",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "Barbara, please.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "269": [
+   {
+    "text": "I wanna be beautiful like you.",
+    "speaker": "Kayla"
+   },
+   {
+    "text": "All right, my ugly duckling...",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "283": [
+   {
+    "text": "We're from the FBI.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "We'd like to ask a few questions.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "284": [
+   {
+    "text": "You have news about my Olivia?",
+    "speaker": "Mrs. Bocanegra"
+   },
+   {
+    "text": "We spoke to Father Hardy at St. Joseph's.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "289": [
+   {
+    "text": "Sorry, but we're trying to help.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Olivia doesn't wanna be found.",
+    "speaker": "Juliet Bocanegra"
+   }
+  ],
+  "298": [
+   {
+    "text": "I've given up on her.",
+    "speaker": "Juliet Bocanegra"
+   },
+   {
+    "text": "Have you?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "303": [
+   {
+    "text": "You wanna save her.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "You have to leave.",
+    "speaker": "Juliet Bocanegra"
+   }
+  ],
+  "305": [
+   {
+    "text": "Become an avenger.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I want her to be found...",
+    "speaker": "Juliet Bocanegra"
+   }
+  ],
+  "321": [
+   {
+    "text": "Liar!",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "Barbara, this a dark time.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "323": [
+   {
+    "text": "Why can't we use one of them?",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "These children are our seeds.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "391": [
+   {
+    "text": "Whoops.",
+    "speaker": "Joe (on TV)"
+   },
+   {
+    "text": "Aah.",
+    "speaker": "Barbara (on TV)"
+   }
+  ],
+  "396": [
+   {
+    "text": "\"Double Trouble.\"",
+    "speaker": "Dr. Luvenis"
+   },
+   {
+    "text": "You've seen this a thousand times.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "400": [
+   {
+    "text": "You did that for me?",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "Everything I do.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "420": [
+   {
+    "text": "What do you know about the tenants?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "The only person I know is Barbara Beaumont.",
+    "speaker": "Building Super"
+   }
+  ],
+  "426": [
+   {
+    "text": "Gentlemen Prefer Blondes.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "TV Westerns. Dragnet.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "439": [
+   {
+    "text": "How long have you been a super here?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Seven years.",
+    "speaker": "Building Super"
+   }
+  ],
+  "440": [
+   {
+    "text": "Seven years, and you've never talked to her?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "All right, it's weird.",
+    "speaker": "Building Super"
+   }
+  ],
+  "444": [
+   {
+    "text": "Seven years and you've never crossed paths?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "She don't go out the front.",
+    "speaker": "Building Super"
+   }
+  ],
+  "445": [
+   {
+    "text": "What about the people on the fourth floor?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "They ever leave?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "462": [
+   {
+    "text": "Hello.",
+    "speaker": "Barbara Beaumont"
+   },
+   {
+    "text": "Hello.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "474": [
+   {
+    "text": "Did you know Jack Webb?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I did not.",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "481": [
+   {
+    "text": "We're looking for an 85-year-old woman.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Yes, well...",
+    "speaker": "Barbara Beaumont"
+   }
+  ],
+  "504": [
+   {
+    "text": "Those who love me, I will deliver.",
+    "speaker": "Juliet Bocanegra"
+   },
+   {
+    "text": "No!",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "540": [
+   {
+    "text": "We gotta get you to the hospital.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "This is what we want.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "541": [
+   {
+    "text": "Your experiment is over.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Not unless you want her to die first.",
+    "speaker": "Dr. Luvenis"
+   }
+  ],
+  "543": [
+   {
+    "text": "We are all running out of time.",
+    "speaker": "Dr. Luvenis"
+   },
+   {
+    "text": "No!",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "546": [
+   {
+    "text": "Olivia.",
+    "speaker": "Juliet Bocanegra"
+   },
+   {
+    "text": "Juliet?",
+    "speaker": "Olivia Bocanegra"
+   }
+  ],
+  "547": [
+   {
+    "text": "What are you doing here?",
+    "speaker": "Olivia Bocanegra"
+   },
+   {
+    "text": "I came for you.",
+    "speaker": "Juliet Bocanegra"
+   }
+  ],
+  "550": [
+   {
+    "text": "Scully?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "554": [
+   {
+    "text": "You stink.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Thanks, Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "587": [
+   {
+    "text": "Reason and faith in harmony.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Isn't that why we're so good together?",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "16": "Shame to waste a good pancreas.",
+  "86": "A liver has a \"need to use\" time limit on it.",
+  "88": "I'll go on some onion sites and see if any organs were put up for auction.",
+  "98": "...in the face of all this indifference and presbyopia.",
+  "104": "[WOMAN CONTINUES PRAYING IN SPANISH]",
+  "117": "It's as funny now as it was 50 years ago.",
+  "134": "...that's what I should've been afraid of when I said \"I do.\"",
+  "136": "I can barely afford to live with you. I just have one question, Barbara. Why?",
+  "194": "I'll pray for her.",
+  "207": "...he got seriously ill.",
+  "210": "Every night, Mom would tell us to get on our knees and pray for his recovery.",
+  "261": "I am?",
+  "295": "I know my sister. All right? She doesn't want our life.",
+  "359": "...I'm going to do something very, very special.",
+  "362": "I am going to perform my favorite song.",
+  "365": "Higher than Charo or Muhammad Ali.",
+  "370": "And so, Warren, to you I say....",
+  "371": "[SINGING \"THE MORNING AFTER\"]",
+  "394": "I don't want to be a suck-up....",
+  "423": "[GROANING]",
+  "478": "You--",
+  "494": "This is her. Have you seen this woman?",
+  "537": "Age isn't a disease, it's a natural progression.",
+  "578": "You can do it like a meditation.",
+  "584": "Therefore, I speak to him through you.",
+  "585": "So it's a transitive property of equality. If A equals B and B equals C...",
+  "606": "Because I don't know if any God is listening, but I am standing right here."
+ },
+ "drop": [
+  "372",
+  "373",
+  "374",
+  "375",
+  "376",
+  "377",
+  "378",
+  "379",
+  "380",
+  "381",
+  "382",
+  "383",
+  "384",
+  "385",
+  "386",
+  "387",
+  "388",
+  "389",
+  "390"
+ ],
+ "scenes": {
+  "1": "The Operating Theater",
+  "23": "The Operating Theater · Juliet",
+  "35": "St. Joseph's Church",
+  "51": "The Operating Theater · Day",
+  "112": "The Commune · The Barbara Beaumont Show",
+  "146": "St. Joseph's Church · Mulder and Scully",
+  "165": "The Commune · Barbara",
+  "192": "St. Joseph's · Father Hardy and Juliet",
+  "202": "St. Joseph's · Scully's Faith",
+  "232": "St. Joseph's · Outside",
+  "237": "The Commune · Barbara and Dr. Luvenis",
+  "282": "The Bocanegra House",
+  "308": "The Bocanegra House · Outside",
+  "314": "The Commune · Night",
+  "347": "The Commune · Warren",
+  "391": "The Commune · Bedroom",
+  "404": "The Apartment Building",
+  "413": "The Commune · The Surgery",
+  "419": "The Apartment Building · The Super",
+  "452": "The Commune · The Surgery",
+  "455": "The Fourth Floor",
+  "463": "The Commune · Barbara Beaumont",
+  "504": "The Commune · Juliet's Vengeance",
+  "518": "The Basement · Dr. Luvenis",
+  "549": "The Basement · Scully",
+  "565": "Cathedral of the Sacraments"
+ }
+}

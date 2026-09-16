@@ -1,0 +1,565 @@
+{
+ "speakers": {
+  "6-7": "Richard Langly",
+  "11-14": "Richard Langly",
+  "15.0": "Richard Langly",
+  "18.1": "Richard Langly",
+  "20.0": "Richard Langly",
+  "21-23": "Richard Langly",
+  "32-34": "Richard Langly",
+  "58": "Richard Langly",
+  "60-64": "Richard Langly",
+  "161": "Richard Langly",
+  "162": "Richard Langly",
+  "163.1": "Richard Langly",
+  "417-419": "Richard Langly",
+  "424-425": "Richard Langly",
+  "426.0": "Richard Langly",
+  "428-429": "Richard Langly",
+  "431-449": "Richard Langly",
+  "451-460": "Richard Langly",
+  "616-618": "Richard Langly",
+  "15.1": "Fox Mulder",
+  "18.0": "Fox Mulder",
+  "20.1": "Fox Mulder",
+  "24": "Fox Mulder",
+  "39": "Fox Mulder",
+  "50": "Fox Mulder",
+  "51.0": "Fox Mulder",
+  "55": "Fox Mulder",
+  "65.1": "Fox Mulder",
+  "76-77": "Fox Mulder",
+  "79-84": "Fox Mulder",
+  "88": "Fox Mulder",
+  "91.1": "Fox Mulder",
+  "92-94": "Fox Mulder",
+  "96-97": "Fox Mulder",
+  "99-100": "Fox Mulder",
+  "102-103": "Fox Mulder",
+  "105.1": "Fox Mulder",
+  "106.0": "Fox Mulder",
+  "108-110": "Fox Mulder",
+  "113-114": "Fox Mulder",
+  "124": "Fox Mulder",
+  "126": "Fox Mulder",
+  "129": "Fox Mulder",
+  "130.1": "Fox Mulder",
+  "131-132": "Fox Mulder",
+  "174": "Fox Mulder",
+  "177": "Fox Mulder",
+  "179": "Fox Mulder",
+  "183": "Fox Mulder",
+  "187": "Fox Mulder",
+  "194": "Fox Mulder",
+  "197": "Fox Mulder",
+  "208": "Fox Mulder",
+  "210-212": "Fox Mulder",
+  "214-215": "Fox Mulder",
+  "218": "Fox Mulder",
+  "220": "Fox Mulder",
+  "221.1": "Fox Mulder",
+  "224": "Fox Mulder",
+  "226.0": "Fox Mulder",
+  "227-228": "Fox Mulder",
+  "231": "Fox Mulder",
+  "233-240": "Fox Mulder",
+  "242-243": "Fox Mulder",
+  "245-248": "Fox Mulder",
+  "252-253": "Fox Mulder",
+  "254.1": "Fox Mulder",
+  "255-256": "Fox Mulder",
+  "259": "Fox Mulder",
+  "264-265": "Fox Mulder",
+  "267-271": "Fox Mulder",
+  "274-275": "Fox Mulder",
+  "277.1": "Fox Mulder",
+  "279": "Fox Mulder",
+  "282": "Fox Mulder",
+  "284": "Fox Mulder",
+  "293": "Fox Mulder",
+  "299": "Fox Mulder",
+  "300": "Fox Mulder",
+  "303": "Fox Mulder",
+  "312": "Fox Mulder",
+  "314": "Fox Mulder",
+  "315": "Fox Mulder",
+  "329": "Fox Mulder",
+  "331-333": "Fox Mulder",
+  "335": "Fox Mulder",
+  "340-341": "Fox Mulder",
+  "348-349": "Fox Mulder",
+  "351": "Fox Mulder",
+  "376": "Fox Mulder",
+  "382.1": "Fox Mulder",
+  "386": "Fox Mulder",
+  "388": "Fox Mulder",
+  "399": "Fox Mulder",
+  "405-407": "Fox Mulder",
+  "409-415": "Fox Mulder",
+  "420-423": "Fox Mulder",
+  "426.1": "Fox Mulder",
+  "430": "Fox Mulder",
+  "461-466": "Fox Mulder",
+  "467.1": "Fox Mulder",
+  "468": "Fox Mulder",
+  "469.0": "Fox Mulder",
+  "471-472": "Fox Mulder",
+  "474": "Fox Mulder",
+  "494-496": "Fox Mulder",
+  "497.0": "Fox Mulder",
+  "498": "Fox Mulder",
+  "517-518": "Fox Mulder",
+  "542": "Fox Mulder",
+  "548-551": "Fox Mulder",
+  "559": "Fox Mulder",
+  "561": "Fox Mulder",
+  "565-568": "Fox Mulder",
+  "572-573": "Fox Mulder",
+  "582": "Fox Mulder",
+  "594": "Fox Mulder",
+  "597": "Fox Mulder",
+  "600": "Fox Mulder",
+  "602": "Fox Mulder",
+  "604": "Fox Mulder",
+  "608": "Fox Mulder",
+  "611": "Fox Mulder",
+  "617.1": "Fox Mulder",
+  "19": "Dana Scully",
+  "35": "Dana Scully",
+  "51.1": "Dana Scully",
+  "52": "Dana Scully",
+  "65.0": "Dana Scully",
+  "67-75": "Dana Scully",
+  "78": "Dana Scully",
+  "85-87": "Dana Scully",
+  "89-90": "Dana Scully",
+  "91.0": "Dana Scully",
+  "95": "Dana Scully",
+  "98": "Dana Scully",
+  "104": "Dana Scully",
+  "105.0": "Dana Scully",
+  "106.1": "Dana Scully",
+  "112": "Dana Scully",
+  "117.1": "Dana Scully",
+  "128": "Dana Scully",
+  "130.0": "Dana Scully",
+  "175": "Dana Scully",
+  "180": "Dana Scully",
+  "191": "Dana Scully",
+  "206": "Dana Scully",
+  "207": "Dana Scully",
+  "213": "Dana Scully",
+  "216-217": "Dana Scully",
+  "219": "Dana Scully",
+  "221.0": "Dana Scully",
+  "222-223": "Dana Scully",
+  "225": "Dana Scully",
+  "226.1": "Dana Scully",
+  "229-230": "Dana Scully",
+  "232": "Dana Scully",
+  "241": "Dana Scully",
+  "244": "Dana Scully",
+  "249-251": "Dana Scully",
+  "254.0": "Dana Scully",
+  "257-258": "Dana Scully",
+  "260-261": "Dana Scully",
+  "266": "Dana Scully",
+  "272-273": "Dana Scully",
+  "276": "Dana Scully",
+  "277.0": "Dana Scully",
+  "278": "Dana Scully",
+  "280": "Dana Scully",
+  "294-295": "Dana Scully",
+  "301-302": "Dana Scully",
+  "313": "Dana Scully",
+  "316-317": "Dana Scully",
+  "334": "Dana Scully",
+  "344": "Dana Scully",
+  "357": "Dana Scully",
+  "364": "Dana Scully",
+  "384-385": "Dana Scully",
+  "398": "Dana Scully",
+  "402.0": "Dana Scully",
+  "403": "Dana Scully",
+  "427": "Dana Scully",
+  "449": "Dana Scully",
+  "467.0": "Dana Scully",
+  "469.1": "Dana Scully",
+  "470": "Dana Scully",
+  "473": "Dana Scully",
+  "478-479": "Dana Scully",
+  "480.1": "Dana Scully",
+  "481-482": "Dana Scully",
+  "488": "Dana Scully",
+  "492": "Dana Scully",
+  "497.1": "Dana Scully",
+  "499": "Dana Scully",
+  "581": "Dana Scully",
+  "599": "Dana Scully",
+  "601": "Dana Scully",
+  "603": "Dana Scully",
+  "605-607": "Dana Scully",
+  "609": "Dana Scully",
+  "111": "Perlu Commander",
+  "115-116": "Perlu Commander",
+  "118.1": "Perlu Commander",
+  "120": "Perlu Commander",
+  "123": "Perlu Commander",
+  "125": "Perlu Commander",
+  "127": "Perlu Commander",
+  "133-135": "Perlu Commander",
+  "144-153": "Perlu Commander",
+  "157.0": "Perlu Commander",
+  "163.0": "Perlu Commander",
+  "164-165": "Perlu Commander",
+  "201-202": "Perlu Commander",
+  "205": "Perlu Commander",
+  "507-508": "Perlu Commander",
+  "576": "Perlu Commander",
+  "578": "Perlu Commander",
+  "117.0": "Walter Skinner",
+  "118.0": "Walter Skinner",
+  "119": "Walter Skinner",
+  "121": "Walter Skinner",
+  "176": "Walter Skinner",
+  "178": "Walter Skinner",
+  "181-182": "Walter Skinner",
+  "184-186": "Walter Skinner",
+  "188-189": "Walter Skinner",
+  "192-193": "Walter Skinner",
+  "195-196": "Walter Skinner",
+  "198-199": "Walter Skinner",
+  "283": "Walter Skinner",
+  "285-292": "Walter Skinner",
+  "296-298": "Walter Skinner",
+  "304-311": "Walter Skinner",
+  "318-323": "Walter Skinner",
+  "326": "Walter Skinner",
+  "336-339": "Walter Skinner",
+  "157.1": "Man",
+  "402.1": "Man",
+  "404": "Man",
+  "500": "Man",
+  "502": "Man",
+  "504": "Man",
+  "342": "Dr. Hamby",
+  "345-347": "Dr. Hamby",
+  "350": "Dr. Hamby",
+  "352-356": "Dr. Hamby",
+  "358-363": "Dr. Hamby",
+  "365-375": "Dr. Hamby",
+  "377-381": "Dr. Hamby",
+  "382.0": "Dr. Hamby",
+  "387": "Dr. Hamby",
+  "389-393": "Dr. Hamby",
+  "480.0": "Agent Colquitt",
+  "484": "Agent Colquitt",
+  "487": "Agent Colquitt",
+  "490-491": "Agent Colquitt",
+  "493": "Agent Colquitt",
+  "510-516": "Erika Price",
+  "519-525": "Erika Price",
+  "527-541": "Erika Price",
+  "543-547": "Erika Price",
+  "552-558": "Erika Price",
+  "560": "Erika Price",
+  "562-563": "Erika Price",
+  "569-571": "Erika Price",
+  "574": "Erika Price"
+ },
+ "splits": {
+  "15": [
+   {
+    "text": "Mulder.",
+    "speaker": "Richard Langly"
+   },
+   {
+    "text": "Hmm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "18": [
+   {
+    "text": "Hmm.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "...Mulder.",
+    "speaker": "Richard Langly"
+   }
+  ],
+  "20": [
+   {
+    "text": "Fox Mulder.",
+    "speaker": "Richard Langly"
+   },
+   {
+    "text": "Langly?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "51": [
+   {
+    "text": "You all right?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "There's one in the room.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "65": [
+   {
+    "text": "Better call it in from a landline.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "91": [
+   {
+    "text": "Their bodies were incinerated.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "It's gotta be connected.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "105": [
+   {
+    "text": "The Critical Incident Response Group?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Never.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "106": [
+   {
+    "text": "I got 14 rounds.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Eight.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "117": [
+   {
+    "text": "Hello?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Skinner, it's Scully. I'm with Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "118": [
+   {
+    "text": "Listen to me, Scully.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "You don't have much time.",
+    "speaker": "Perlu Commander"
+   }
+  ],
+  "130": [
+   {
+    "text": "I don't know.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Why are we under suspicion?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "162": [
+   {
+    "text": "Richard Langly.",
+    "speaker": "Richard Langly"
+   },
+   {
+    "text": "Ringo Langly, I need to know.",
+    "speaker": "Richard Langly"
+   }
+  ],
+  "207": [
+   {
+    "text": "Frohike.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What are we looking for, Mulder?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "254": [
+   {
+    "text": "What is that?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Mm-hm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "277": [
+   {
+    "text": "An X-file?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Mm-hm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "300": [
+   {
+    "text": "We can't go to our home.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "They'll be waiting for us at our office.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "315": [
+   {
+    "text": "Why didn't you tell us?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "The X-files belonged to us.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "402": [
+   {
+    "text": "Whoa, whoa, whoa. Sorry.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Come on.",
+    "speaker": "Man"
+   }
+  ],
+  "426": [
+   {
+    "text": "Dana Scully?",
+    "speaker": "Richard Langly"
+   },
+   {
+    "text": "Heh.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "469": [
+   {
+    "text": "That was fun.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Uh--",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "480": [
+   {
+    "text": "I can take him upstairs to Holding.",
+    "speaker": "Agent Colquitt"
+   },
+   {
+    "text": "No, I'm taking him to Titanpointe.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "617": [
+   {
+    "text": "They know that we know.",
+    "speaker": "Richard Langly"
+   },
+   {
+    "text": "Destroy the backup.",
+    "speaker": "Richard Langly"
+   }
+  ]
+ },
+ "text": {
+  "1": "[RAMONES' \"CALIFORNIA SUN\" PLAYING OVER RADIO]",
+  "22": "I believe-- I believe you knew me as Langly.",
+  "34": "If I am, they know that I know.",
+  "63": "If I am...",
+  "74": "Wallace Road.",
+  "87": "...burial in the Arlington Cemetery.",
+  "141": "[MAN 2 SPEAKS IN RUSSIAN]",
+  "142": "[MAN 3 SPEAKS IN RUSSIAN]",
+  "143": "[MAN 2 SPEAKS IN RUSSIAN]",
+  "144": "[IN ENGLISH] Where's your phone, bro?",
+  "192": "Take it.",
+  "216": "Frohike looked 57 the day he was born.",
+  "223": "JFK was the 35th president, Eisenhower was the 34th president, FDR--",
+  "234": "...two...",
+  "238": "This is it.",
+  "251": "...in a graveyard that he didn't even know he was gonna be buried in?",
+  "346": "...hadn't seen you in five years, then I never would and I could...",
+  "390": "...using video signal manipulation to my cell.",
+  "396": "[GROANING]",
+  "401": "[THE RIVIERAS' \"CALIFORNIA SUN\" PLAYING OVER SPEAKER]",
+  "496": "...by an exhaust opening.",
+  "527": "...isn't about this is black, and this white.",
+  "547": "Its reason for being is to advance life, not end it.",
+  "569": "Very few have ever seen it, and those that do, don't realize what it is.",
+  "589": "[ALARM CONTINUES BLARING]",
+  "620": "[RAMONES' \"CALIFORNIA SUN\" PLAYING]"
+ },
+ "drop": [
+  "2",
+  "16",
+  "26",
+  "27",
+  "28",
+  "29",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "408",
+  "621"
+ ],
+ "scenes": {
+  "1": "Mulder's House · Night",
+  "65": "Mulder's House · After the Shooting",
+  "103": "Mulder's House · Surrounded",
+  "123": "Mulder's House · Outside",
+  "128": "Mulder's House · Inside",
+  "145": "Mulder's House · The Commander",
+  "176": "The Woods · Skinner",
+  "201": "Mulder's House · Perlu",
+  "206": "Arlington National Cemetery",
+  "264": "Internet Café",
+  "282": "Parking Structure · Skinner",
+  "305": "Skinner's Apartment",
+  "342": "University Classroom · Dr. Hamby",
+  "401": "Freeborn's Lament Bar",
+  "416": "The Bar · Langly Calls",
+  "461": "The Bus to New York",
+  "475": "Javits Federal Building",
+  "494": "The Tunnel to Titanpointe",
+  "507": "Titanpointe · Stairwell",
+  "514": "Titanpointe · Erika Price",
+  "576": "Titanpointe · The Simulation",
+  "603": "Titanpointe · Server Room",
+  "611": "Titanpointe · Conference Room",
+  "619": "Mulder's House · Day"
+ }
+}

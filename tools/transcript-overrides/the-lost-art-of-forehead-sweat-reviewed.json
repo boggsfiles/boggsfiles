@@ -1,0 +1,662 @@
+{
+ "speakers": {
+  "1-6": "Martin",
+  "10-11": "Martin",
+  "13": "Martin",
+  "15-17": "Martin",
+  "19.0": "Martin",
+  "20": "Martin",
+  "25": "Martin",
+  "28": "Martin",
+  "632": "Martin",
+  "7-8": "Buddy",
+  "12": "Buddy",
+  "14": "Buddy",
+  "18": "Buddy",
+  "19.1": "Buddy",
+  "21-23": "Buddy",
+  "26-27": "Buddy",
+  "106": "Buddy",
+  "107": "Young Mulder",
+  "32.0": "Fox Mulder",
+  "33.1": "Fox Mulder",
+  "34.1": "Fox Mulder",
+  "35.1": "Fox Mulder",
+  "36-40": "Fox Mulder",
+  "43-44": "Fox Mulder",
+  "45.0": "Fox Mulder",
+  "46.0": "Fox Mulder",
+  "47.1": "Fox Mulder",
+  "48": "Fox Mulder",
+  "54": "Fox Mulder",
+  "59": "Fox Mulder",
+  "61.1": "Fox Mulder",
+  "62": "Fox Mulder",
+  "66": "Fox Mulder",
+  "70.1": "Fox Mulder",
+  "73": "Fox Mulder",
+  "75": "Fox Mulder",
+  "78": "Fox Mulder",
+  "84-86": "Fox Mulder",
+  "88-94": "Fox Mulder",
+  "96": "Fox Mulder",
+  "97.0": "Fox Mulder",
+  "98": "Fox Mulder",
+  "99.1": "Fox Mulder",
+  "100-104": "Fox Mulder",
+  "109": "Fox Mulder",
+  "125-127": "Fox Mulder",
+  "129": "Fox Mulder",
+  "133": "Fox Mulder",
+  "134.1": "Fox Mulder",
+  "138.0": "Fox Mulder",
+  "139-144": "Fox Mulder",
+  "145.1": "Fox Mulder",
+  "147": "Fox Mulder",
+  "150": "Fox Mulder",
+  "152-153": "Fox Mulder",
+  "155": "Fox Mulder",
+  "159": "Fox Mulder",
+  "171": "Fox Mulder",
+  "172.1": "Fox Mulder",
+  "173-176": "Fox Mulder",
+  "179-180": "Fox Mulder",
+  "199.0": "Fox Mulder",
+  "229": "Fox Mulder",
+  "231-234": "Fox Mulder",
+  "235": "Fox Mulder",
+  "239": "Fox Mulder",
+  "242-243": "Fox Mulder",
+  "246": "Fox Mulder",
+  "254.0": "Fox Mulder",
+  "271.1": "Fox Mulder",
+  "275": "Fox Mulder",
+  "277.0": "Fox Mulder",
+  "279.1": "Fox Mulder",
+  "280-283": "Fox Mulder",
+  "312-313": "Fox Mulder",
+  "322-323": "Fox Mulder",
+  "324.1": "Fox Mulder",
+  "325.1": "Fox Mulder",
+  "329-330": "Fox Mulder",
+  "331.0": "Fox Mulder",
+  "333.0": "Fox Mulder",
+  "334": "Fox Mulder",
+  "335.0": "Fox Mulder",
+  "338-340": "Fox Mulder",
+  "360-361": "Fox Mulder",
+  "371.0": "Fox Mulder",
+  "372": "Fox Mulder",
+  "375": "Fox Mulder",
+  "379-382": "Fox Mulder",
+  "404-405": "Fox Mulder",
+  "415-418": "Fox Mulder",
+  "419-421": "Fox Mulder",
+  "423-433": "Fox Mulder",
+  "435-436": "Fox Mulder",
+  "439-441": "Fox Mulder",
+  "443": "Fox Mulder",
+  "445": "Fox Mulder",
+  "449-453": "Fox Mulder",
+  "456": "Fox Mulder",
+  "460": "Fox Mulder",
+  "468": "Fox Mulder",
+  "476": "Fox Mulder",
+  "479.0": "Fox Mulder",
+  "480.1": "Fox Mulder",
+  "488.0": "Fox Mulder",
+  "491.1": "Fox Mulder",
+  "498.1": "Fox Mulder",
+  "499": "Fox Mulder",
+  "503": "Fox Mulder",
+  "506": "Fox Mulder",
+  "508": "Fox Mulder",
+  "511.0": "Fox Mulder",
+  "538": "Fox Mulder",
+  "539.1": "Fox Mulder",
+  "540.0": "Fox Mulder",
+  "543-545": "Fox Mulder",
+  "552": "Fox Mulder",
+  "564-565": "Fox Mulder",
+  "571": "Fox Mulder",
+  "573": "Fox Mulder",
+  "605-606": "Fox Mulder",
+  "608.1": "Fox Mulder",
+  "609": "Fox Mulder",
+  "611-612": "Fox Mulder",
+  "616": "Fox Mulder",
+  "621": "Fox Mulder",
+  "622.1": "Fox Mulder",
+  "623-624": "Fox Mulder",
+  "628.0": "Fox Mulder",
+  "634": "Fox Mulder",
+  "635.1": "Fox Mulder",
+  "636-637": "Fox Mulder",
+  "641-642": "Fox Mulder",
+  "646-648": "Fox Mulder",
+  "32.1": "Dana Scully",
+  "33.0": "Dana Scully",
+  "34.0": "Dana Scully",
+  "35.0": "Dana Scully",
+  "41-42": "Dana Scully",
+  "45.1": "Dana Scully",
+  "46.1": "Dana Scully",
+  "47.0": "Dana Scully",
+  "87": "Dana Scully",
+  "95": "Dana Scully",
+  "97.1": "Dana Scully",
+  "99.0": "Dana Scully",
+  "105": "Dana Scully",
+  "112": "Dana Scully",
+  "114": "Dana Scully",
+  "115.1": "Dana Scully",
+  "118.1": "Dana Scully",
+  "120": "Dana Scully",
+  "123": "Dana Scully",
+  "128": "Dana Scully",
+  "130-132": "Dana Scully",
+  "134.0": "Dana Scully",
+  "135-137": "Dana Scully",
+  "138.1": "Dana Scully",
+  "145.0": "Dana Scully",
+  "146": "Dana Scully",
+  "148-149": "Dana Scully",
+  "151": "Dana Scully",
+  "154": "Dana Scully",
+  "157.0": "Dana Scully",
+  "158": "Dana Scully",
+  "215": "Dana Scully",
+  "218": "Dana Scully",
+  "225-226": "Dana Scully",
+  "228": "Dana Scully",
+  "236": "Dana Scully",
+  "240.1": "Dana Scully",
+  "256": "Dana Scully",
+  "267": "Dana Scully",
+  "271.0": "Dana Scully",
+  "272": "Dana Scully",
+  "311": "Dana Scully",
+  "318": "Dana Scully",
+  "320-321": "Dana Scully",
+  "331.1": "Dana Scully",
+  "336.0": "Dana Scully",
+  "357": "Dana Scully",
+  "359": "Dana Scully",
+  "378": "Dana Scully",
+  "389.0": "Dana Scully",
+  "391": "Dana Scully",
+  "399": "Dana Scully",
+  "403": "Dana Scully",
+  "422": "Dana Scully",
+  "434": "Dana Scully",
+  "442": "Dana Scully",
+  "511.1": "Dana Scully",
+  "512-527": "Dana Scully",
+  "530": "Dana Scully",
+  "535": "Dana Scully",
+  "539.0": "Dana Scully",
+  "541": "Dana Scully",
+  "542.0": "Dana Scully",
+  "546-548": "Dana Scully",
+  "562": "Dana Scully",
+  "575": "Dana Scully",
+  "607": "Dana Scully",
+  "608.0": "Dana Scully",
+  "610": "Dana Scully",
+  "638": "Dana Scully",
+  "55-58": "Reggie",
+  "61.0": "Reggie",
+  "63-65": "Reggie",
+  "67-69": "Reggie",
+  "70.0": "Reggie",
+  "71-72": "Reggie",
+  "76-77": "Reggie",
+  "79-80": "Reggie",
+  "83": "Reggie",
+  "111": "Reggie",
+  "113": "Reggie",
+  "115.0": "Reggie",
+  "116-117": "Reggie",
+  "118.0": "Reggie",
+  "121-122": "Reggie",
+  "161-170": "Reggie",
+  "172.0": "Reggie",
+  "177-178": "Reggie",
+  "181-183": "Reggie",
+  "186": "Reggie",
+  "192.0": "Reggie",
+  "195-196": "Reggie",
+  "198": "Reggie",
+  "199.1": "Reggie",
+  "200-201": "Reggie",
+  "208": "Reggie",
+  "213-214": "Reggie",
+  "216-217": "Reggie",
+  "219-224": "Reggie",
+  "227": "Reggie",
+  "237-238": "Reggie",
+  "240.0": "Reggie",
+  "241": "Reggie",
+  "245": "Reggie",
+  "247-253": "Reggie",
+  "254.1": "Reggie",
+  "257-262": "Reggie",
+  "265": "Reggie",
+  "268-270": "Reggie",
+  "273": "Reggie",
+  "276": "Reggie",
+  "277.1": "Reggie",
+  "278": "Reggie",
+  "279.0": "Reggie",
+  "284-285": "Reggie",
+  "296": "Reggie",
+  "300-302": "Reggie",
+  "310": "Reggie",
+  "314-317": "Reggie",
+  "319": "Reggie",
+  "324.0": "Reggie",
+  "325.0": "Reggie",
+  "326-328": "Reggie",
+  "332": "Reggie",
+  "333.1": "Reggie",
+  "335.1": "Reggie",
+  "336.1": "Reggie",
+  "337": "Reggie",
+  "341-347": "Reggie",
+  "349": "Reggie",
+  "351": "Reggie",
+  "355-356": "Reggie",
+  "358": "Reggie",
+  "362": "Reggie",
+  "364-369": "Reggie",
+  "371.1": "Reggie",
+  "373": "Reggie",
+  "376-377": "Reggie",
+  "383-384": "Reggie",
+  "387": "Reggie",
+  "389.1": "Reggie",
+  "393-398": "Reggie",
+  "400-402": "Reggie",
+  "505": "Reggie",
+  "507": "Reggie",
+  "509-510": "Reggie",
+  "531-534": "Reggie",
+  "540.1": "Reggie",
+  "542.1": "Reggie",
+  "550-551": "Reggie",
+  "554-555": "Reggie",
+  "557.0": "Reggie",
+  "558-561": "Reggie",
+  "563": "Reggie",
+  "566-570": "Reggie",
+  "574": "Reggie",
+  "576": "Reggie",
+  "604": "Reggie",
+  "615": "Reggie",
+  "617-620": "Reggie",
+  "622.0": "Reggie",
+  "627": "Reggie",
+  "628.1": "Reggie",
+  "82": "Man",
+  "187-190": "Shop Owner",
+  "192.1": "Shop Owner",
+  "193-194": "Shop Owner",
+  "197": "Shop Owner",
+  "202-207": "Shop Owner",
+  "209-212": "Shop Owner",
+  "286-295": "Narrator",
+  "297-299": "Narrator",
+  "303-309": "Narrator",
+  "230": "Dana Scully and Reggie",
+  "244": "Dana Scully and Reggie",
+  "350": "Alien",
+  "352": "Alien",
+  "363": "Alien",
+  "577-603": "Alien",
+  "406-413": "Agent",
+  "446-448": "Dr. They",
+  "454-455": "Dr. They",
+  "457-459": "Dr. They",
+  "461-467": "Dr. They",
+  "469-475": "Dr. They",
+  "477-478": "Dr. They",
+  "479.1": "Dr. They",
+  "480.0": "Dr. They",
+  "481-487": "Dr. They",
+  "488.1": "Dr. They",
+  "489-490": "Dr. They",
+  "491.0": "Dr. They",
+  "492-497": "Dr. They",
+  "498.0": "Dr. They",
+  "500-502": "Dr. They",
+  "504": "Dr. They",
+  "529": "Woman",
+  "536": "NSA Colleague",
+  "537": "Voice on Phone",
+  "556": "Henchman",
+  "557.1": "Henchman",
+  "631": "Walter Skinner",
+  "157.1": "Reggie"
+ },
+ "splits": {
+  "35": [
+   {
+    "text": "Did you have any luck?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No. But that's not really the point.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "47": [
+   {
+    "text": "I gotta go, gotta go.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "In beautiful British Columbia-- Scully?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "61": [
+   {
+    "text": "So they have already gotten to you.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "How did you know how to contact me?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "70": [
+   {
+    "text": "...so that you wouldn't remember me.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "Look, what is this all about?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "97": [
+   {
+    "text": "Do you even know me?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Can we talk about this over dinner? Please?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "118": [
+   {
+    "text": "Skulls, look, I can prove it.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "Hey. I'm armed.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "138": [
+   {
+    "text": "It's the Mandela Effect.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "What do you mean?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "172": [
+   {
+    "text": "The what effect?",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "The Mandela Effect.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "192": [
+   {
+    "text": "Damn it, it's still wrong!",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "Easy, easy.",
+    "speaker": "Shop Owner"
+   }
+  ],
+  "227": [
+   {
+    "text": "It's the Mengele Effect.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "It's the Mengele Effect, just say it.",
+    "speaker": "Reggie"
+   }
+  ],
+  "240": [
+   {
+    "text": "I never mentioned a hypno-ray gun.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "It's faulty memory because Occam's razor.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "277": [
+   {
+    "text": "Well, a conspiracy nut is right twice a day.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No, that's a broken clock.",
+    "speaker": "Reggie"
+   }
+  ],
+  "279": [
+   {
+    "text": "...so you will ignore the ones that are true.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "Reggie, take it from a fellow nut, okay?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "324": [
+   {
+    "text": "Now you're just--",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "What?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "325": [
+   {
+    "text": "You're just embarrassing yourself at this point.",
+    "speaker": "Reggie"
+   },
+   {
+    "text": "Those were the official reasons.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "336": [
+   {
+    "text": "What's that?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Prime minister of Grenada...",
+    "speaker": "Reggie"
+   }
+  ],
+  "479": [
+   {
+    "text": "What do you mean?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No one can tell the difference anymore...",
+    "speaker": "Dr. They"
+   }
+  ],
+  "480": [
+   {
+    "text": "...between what's real and what's fake.",
+    "speaker": "Dr. They"
+   },
+   {
+    "text": "There's still objective truth, objective reality.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "488": [
+   {
+    "text": "It was George Orwell that said that.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Well, for now maybe.",
+    "speaker": "Dr. They"
+   }
+  ],
+  "491": [
+   {
+    "text": "They won't know whether to believe it or not.",
+    "speaker": "Dr. They"
+   },
+   {
+    "text": "To be honest, I'm not believing any of this.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "498": [
+   {
+    "text": "All you really need is a laptop.",
+    "speaker": "Dr. They"
+   },
+   {
+    "text": "So that's what this has all been about?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "539": [
+   {
+    "text": "Yeah, you did, I've heard this before.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "It was 35 years ago about...",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "540": [
+   {
+    "text": "...on the banks of Mogoagogo River.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "On the banks of Mogoagogo River.",
+    "speaker": "Reggie"
+   }
+  ],
+  "608": [
+   {
+    "text": "There'll always be more X-Files.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "635": [
+   {
+    "text": "I see you found your lost episode.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Turns out it wasn't a Twilight Zone.",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "42": "I think you just like saying \"squatching.\" Are we still on for dinner tomorrow night?",
+  "63": "I-- It had to be someplace safe.",
+  "76": "The first Twilight Zone episode you ever saw, it was \"The Lost Martian,\" right?",
+  "107": "Wait, what? Oh, now I get it.",
+  "157": "So who are you?\nI think my name is Reggie.",
+  "165": "...is one of the fondest memories I have.",
+  "169": "...was spelled different than how I remembered. Not with two S's, but with two Z's.",
+  "228": "--is simply people misremembering stuff.",
+  "233": "...if not identical, then very similar universe. So people's memories are correct...",
+  "239": "It's a lot better than some evil entity zapping people's brains with a hypno-ray gun.",
+  "242": "Maybe in a parallel universe it is...",
+  "243": "...but in still yet another universe, it's perhaps known as Occam's ax.",
+  "252": "No \"Have a great summer,\" \"You were funny in math class.\" Nothing.",
+  "283": "But there's no they there. Who is they?",
+  "286": "This is a story of a man named They.",
+  "288": "...to manipulate collective memory. Most people have never heard of him.",
+  "292": "...involving future, one-way space flights beyond our realm...",
+  "302": "...in a movie called Ka-Blaam.",
+  "304": "...but rumors swirl that he was at the last presidential inauguration...",
+  "306": "...he was seen occupying the last remaining seat available.",
+  "412": "And the next thing you know, you're deep state.",
+  "426": "...jumped on stage and started dancing like a spaz.",
+  "429": "A coded message? Especially because the band's lead singer, the son of Hugh Everett III...",
+  "473": "And no doubt, the kids will come up with some catchphrase for it.",
+  "490": "...because it doesn't matter who knows about it.",
+  "532": "Wait. Is that a wedding cake? Damn it!",
+  "560": "When did that stop? Maybe it's another Mengele Effect. Right?",
+  "588": "...beyond your solar system.",
+  "592": "You're bringing drugs, you're bringing crime.",
+  "605": "We're not alone in the universe...",
+  "628": "We'll be sure to come visit you, Reggie.\nHeh. No, you won't.",
+  "646": "I want to remember how it was."
+ },
+ "scenes": {
+  "1": "The Lost Martian · Diner",
+  "31": "Mulder's House · Night",
+  "54": "Parking Garage · Reggie",
+  "86": "Mulder's House · Day",
+  "105": "Mulder's Childhood · The Lost Martian",
+  "109": "Mulder's House",
+  "111": "Parking Garage · Scully and Reggie",
+  "125": "The X-Files Office · Goop-O A-B-C",
+  "154": "Parking Garage · The Three of Them",
+  "163": "Reggie's Story · The Nursing Home",
+  "171": "Parking Garage",
+  "186": "Reggie's Story · The Memorabilia Store",
+  "198": "Parking Garage",
+  "202": "Reggie's Story · The Shop Owner",
+  "213": "Parking Garage",
+  "257": "Reggie's Story · The Lawn Dart",
+  "267": "Parking Garage",
+  "286": "The Dr. They Video",
+  "311": "Parking Garage · Grenada",
+  "345": "Reggie's Story · Grenada, 1983",
+  "355": "Parking Garage",
+  "363": "Reggie's Story · The Alien",
+  "371": "Reggie's Memories · The X-Files",
+  "395": "Parking Garage · The Henchmen",
+  "419": "The X-Files Office · Soy Bomb",
+  "444": "Statue Park · Dr. They",
+  "505": "FBI Parking Garage · Reginald Murgatroid",
+  "520": "Reggie's Career · The Cubicles",
+  "541": "FBI Parking Garage · Goodbye",
+  "567": "Reggie's Last Case · The Drive",
+  "573": "Reggie's Last Case · The Alien Returns",
+  "627": "FBI Parking Garage",
+  "632": "Mulder's House · The Dusky Realm"
+ }
+}

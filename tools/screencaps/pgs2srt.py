@@ -88,7 +88,7 @@ def ocr(im):
         im.save(f.name); p = f.name
     r = subprocess.run(['tesseract', p, '-', '-l', 'eng', '--psm', '6'], capture_output=True, text=True)
     os.unlink(p)
-    return ' '.join(line.strip() for line in r.stdout.splitlines() if line.strip())
+    return '\n'.join(line.strip() for line in r.stdout.splitlines() if line.strip())
 
 def tc(t):
     ms = int(round(t * 1000)); h, ms = divmod(ms, 3600000); m, ms = divmod(ms, 60000); s, ms = divmod(ms, 1000)

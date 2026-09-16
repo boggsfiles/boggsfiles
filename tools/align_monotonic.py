@@ -131,7 +131,8 @@ def align(cues, turns, overrides):
         # closing punctuation carries on in the next cue -- same speaker in both cases
         prev = next((o for o in reversed(out) if o["kind"] == "dialogue"), None)
         txt = cue["text"].strip()
-        lower_start = bool(re.match(r"^[\(\[]?[a-z]", txt)) and not re.match(r"^(i|i'm|i'd|i'll|i've)\b", txt)
+        lower_start = (bool(re.match(r"^[\(\[]?[a-z]", txt)) and not re.match(r"^(i|i'm|i'd|i'll|i've)\b", txt)) \
+            or bool(re.match(r"^(\.\.\.|…|\. ?\.|_\.\.\.)\s*\S", txt))            # "...and then" continues the previous cue
         open_prev = bool(prev) and not re.search(r"[.?!…\"”)\]]\s*$|--\s*$|—\s*$", prev["text"].strip())
         if prev and (lower_start or (open_prev and (idx not in matched or score < 0.8))) and not forced \
                 and not cue.get("explicit_speaker") and prev["number"] >= cue["number"] - 1:
@@ -198,13 +199,43 @@ def main():
         overrides.update(rev.get("speakers", {}))
         scene_breaks = {int(k): v for k, v in rev.get("scenes", {}).items()}
     splits = rev.get("splits", {}) if a.reviewed else {}
+    if a.keep_case:
+        # Blu-ray SDH: a second caption line that starts a new sentence is usually a new speaker.
+        # Split such cues into sub-cues (reviewed splits take precedence); speakers get assigned per part.
+        for blk in a.srt.read_text(encoding="utf-8", errors="replace").strip().split("\n\n"):
+            L = blk.split("\n")
+            if len(L) < 4 or not L[0].strip().isdigit() or L[0].strip() in splits: continue
+            parts, cur = [], L[2].strip()
+            for ln in L[3:]:
+                ln = ln.strip()
+                if re.search(r"[.?!…\"”\]]$", cur) and re.match(r"^([A-Z\"“\[(]|[A-Z][A-Z .'0-9]+:)", ln) and not re.match(r"^[A-Z][A-Z .'0-9]+:", cur):
+                    parts.append(cur); cur = ln
+                elif re.match(r"^[A-Z][A-Z .'0-9]+:", ln):
+                    parts.append(cur); cur = ln
+                else: cur += " " + ln
+            parts.append(cur)
+            if len(parts) > 1: splits[L[0].strip()] = [{"text": t} for t in parts]
     cues, source_cues = bt.parse_srt(a.srt, splits)
     # reviewed "text": cue number -> corrected caption text (OCR one-offs); "drop": cue numbers to remove
     fixes = rev.get("text", {}) if a.reviewed else {}
     drop = set(int(k) for k in rev.get("drop", [])) if a.reviewed else set()
+    rebuilt = []
     for c in cues:
-        if str(c["number"]) in fixes and c.get("subindex", 0) == 0: c["text"] = fixes[str(c["number"])]
-    cues = [c for c in cues if c["number"] not in drop]
+        key = str(c["number"])
+        if key in fixes and "\n" in fixes[key]:
+            # multi-line fix replaces the whole cue with one sub-cue per line (labels parsed)
+            if c.get("subindex", 0) == 0:
+                for i, ln in enumerate(fixes[key].split("\n")):
+                    lab = re.match(r"^([A-Z][A-Z .'0-9]+):\s+(.+)$", ln)
+                    rebuilt.append({**c, "subindex": i, "text": lab.group(2) if lab else ln,
+                                    "explicit_speaker": lab.group(1) if lab else ""})
+            continue
+        if key in fixes:
+            # single-line fix replaces the whole cue (auto-split parts collapse into one)
+            if c.get("subindex", 0) == 0: c["text"] = fixes[key]; c["subindex"] = 0
+            else: continue
+        rebuilt.append(c)
+    cues = [c for c in rebuilt if c["number"] not in drop]
     turns = bt.parse_reference(a.reference)
     aligned = align(cues, turns, overrides)
     if scene_breaks:
@@ -216,6 +247,8 @@ def main():
                 seq += 1; loc = scene_breaks[keys[k]]; k += 1
             item["scene"], item["location"] = max(seq, 1), loc
     entries = bt.group_entries(aligned)
+    for e in entries:                                        # "us... ...forget" -> "us... forget"
+        e["text"] = re.sub(r"(\.\.\.|…)\s+(\.\.\.|…)\s*", r"\1 ", e["text"])
     data = {"episode": a.episode, "season": a.season, "episode_number": a.episode_number,
             "production_code": a.code, "airdate": a.airdate, "slug": a.slug, "source_cues": source_cues,
             "previous_title": a.previous_title, "previous_url": a.previous_url,

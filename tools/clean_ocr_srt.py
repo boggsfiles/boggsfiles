@@ -8,7 +8,7 @@ import re, sys
 from pathlib import Path
 
 WORD_FIXES = {"|": "I", "/": "I", "!": "I", "l": "I", "lf": "if", "lt": "it", "ln": "in", "ls": "is", "Lt": "It", "Lf": "If", "Ln": "In", "Ls": "Is",
-              "il": "I'll", "Il": "I'll", "Lsaw": "I saw", "Lam": "I am", "aman": "a man", "S50": "So", "S0": "So", "didnt": "didn't", "ocully": "Scully", "ina": "in a", "ofthe": "of the", "inthe": "in the", "tothe": "to the",
+              "il": "I'll", "Il": "I'll", "Lsaw": "I saw", "Lam": "I am", "aman": "a man", "S50": "So", "S0": "So", "didnt": "didn't", "ocully": "Scully", "cant": "can't", "dont": "don't", "wont": "won't", "tt": "it", "tn": "in", "itt": "it", "ina": "in a", "ofthe": "of the", "inthe": "in the", "tothe": "to the",
               "fo": "to", "ts": "is", "|--": "I--", "|!": "I!", "/|": "I", "Iittle": "little", "l'm": "I'm", "l'll": "I'll", "l've": "I've", "l'd": "I'd",
               "Ocully": "Scully", "Ihe": "The", "Ihat": "That", "Ihis": "This", "Ihere": "There", "Ihey": "They"}
 
@@ -34,10 +34,21 @@ def fix_line(line: str) -> str:
     line = "".join(out)
     line = re.sub(r"(?<=[A-Za-z]) I(?=[a-z]{2,}\b)", " l", line) if False else line
     line = re.sub(r"\bI ts\b", "Is", line)
+    line = re.sub(r"\b(scully|mulder|skinner|langly|ocully)\b", lambda m: {"ocully": "Scully"}.get(m.group(1), m.group(1).capitalize()), line)
+    line = re.sub(r"\[\[?N(?=DISTINCT| [A-Z])", "[IN", line); line = re.sub(r" \[N (?=[A-Z]+\])", " IN ", line)   # "[N RUSSIAN]" -> "IN RUSSIAN]"
+    line = re.sub(r"^(_?\s*\.{2,3}|…)\s*(?:0ut|Out|out|Dut|bDut|But)\b", "...but", line)
+    line = re.sub(r"^(\.{3})\s*(?:IN|Pplaying)\b", lambda m: "...in" if "IN" in m.group(0) else "...playing", line)
+    line = re.sub(r"^(\.{3})\s*I Was\b", "...I was", line)          # OCR "...0ut" -> "...but"
+    line = re.sub(r"^(_?\s*\.{2,3}|…)\s*DY\b", "...by", line)
+    line = re.sub(r"^\. ?\.\s*(?=[A-Za-z])", "...", line)                                     # ". .And" -> "...And"
+    line = re.sub(r"^_\.\.\.", "...", line)
+    line = re.sub(r"^\[ (?=Will|I )", "I ", line)
     line = re.sub(r"(?<![\w])! (?=[a-z']|I\b)", "I ", line)                       # ", ! could" -> ", I could"
     line = re.sub(r"(?<=[a-z,]) Is (?=[a-z])", " is ", line)
+    line = re.sub(r"\b(it|It|I|you|You|we|We|they|They|that|That) (Know|Knew|Is)\b", lambda m: m.group(1) + " " + m.group(2).lower(), line)
     line = re.sub(r"(?<=[a-z,]) (Know|Knows|Knew|Sure|Just|Call)\b", lambda m: " " + m.group(1).lower(), line)                     # OCR capital I in mid-sentence "is"
-    line = re.sub(r"^([^A-Za-z0-9]*)([a-z])", lambda m: m.group(1) + m.group(2).upper(), line) if not re.match(r"^[a-z]", line) else line
+    if not re.match(r"^[a-z]", line) and not re.match(r"^(_?\s*\.{2,3}|…)", line):
+        line = re.sub(r"^([^A-Za-z0-9]*)([a-z])", lambda m: m.group(1) + m.group(2).upper(), line)
     line = re.sub(r"([.?!]\s+)([a-z])(?=[a-z]* )", lambda m: m.group(1) + m.group(2).upper(), line)
     return line
 

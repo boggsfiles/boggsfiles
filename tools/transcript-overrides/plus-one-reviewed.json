@@ -1,0 +1,1089 @@
+{
+ "speakers": {
+  "30": "Arkie Seavers",
+  "32": "Arkie Seavers",
+  "34": "Arkie Seavers",
+  "37-39": "Arkie Seavers",
+  "41": "Arkie Seavers",
+  "89.0": "Arkie Seavers",
+  "90.0": "Arkie Seavers",
+  "92": "Arkie Seavers",
+  "93.0": "Arkie Seavers",
+  "94.0": "Arkie Seavers",
+  "95": "Arkie Seavers",
+  "97-98": "Arkie Seavers",
+  "99.1": "Arkie Seavers",
+  "100": "Arkie Seavers",
+  "104": "Arkie Seavers",
+  "109": "Arkie Seavers",
+  "110.1": "Arkie Seavers",
+  "111": "Arkie Seavers",
+  "174.0": "Arkie Seavers",
+  "175": "Arkie Seavers",
+  "177-178": "Arkie Seavers",
+  "185-186": "Arkie Seavers",
+  "47-48": "Fox Mulder",
+  "49.1": "Fox Mulder",
+  "50": "Fox Mulder",
+  "52": "Fox Mulder",
+  "54-55": "Fox Mulder",
+  "56.1": "Fox Mulder",
+  "57": "Fox Mulder",
+  "59": "Fox Mulder",
+  "61-63": "Fox Mulder",
+  "65-66": "Fox Mulder",
+  "68-70": "Fox Mulder",
+  "72": "Fox Mulder",
+  "74": "Fox Mulder",
+  "76": "Fox Mulder",
+  "78.0": "Fox Mulder",
+  "79-80": "Fox Mulder",
+  "83-84": "Fox Mulder",
+  "86-88": "Fox Mulder",
+  "91": "Fox Mulder",
+  "93.1": "Fox Mulder",
+  "94.1": "Fox Mulder",
+  "96": "Fox Mulder",
+  "101.0": "Fox Mulder",
+  "103": "Fox Mulder",
+  "106-108": "Fox Mulder",
+  "110.0": "Fox Mulder",
+  "113-116": "Fox Mulder",
+  "120.1": "Fox Mulder",
+  "121": "Fox Mulder",
+  "122.1": "Fox Mulder",
+  "123": "Fox Mulder",
+  "126.1": "Fox Mulder",
+  "128.1": "Dana Scully",
+  "136": "Fox Mulder",
+  "142": "Fox Mulder",
+  "144.0": "Fox Mulder",
+  "148": "Fox Mulder",
+  "155": "Fox Mulder",
+  "157": "Fox Mulder",
+  "163": "Fox Mulder",
+  "166-168": "Fox Mulder",
+  "194.1": "Fox Mulder",
+  "196-197": "Fox Mulder",
+  "203": "Fox Mulder",
+  "205-206": "Fox Mulder",
+  "209.0": "Fox Mulder",
+  "213.0": "Fox Mulder",
+  "214-215": "Fox Mulder",
+  "218.1": "Fox Mulder",
+  "223.1": "Fox Mulder",
+  "226": "Fox Mulder",
+  "229": "Fox Mulder",
+  "234.0": "Fox Mulder",
+  "235": "Fox Mulder",
+  "239": "Fox Mulder",
+  "241.0": "Fox Mulder",
+  "242": "Fox Mulder",
+  "245": "Fox Mulder",
+  "246.0": "Fox Mulder",
+  "247": "Fox Mulder",
+  "251": "Fox Mulder",
+  "253": "Fox Mulder",
+  "255.0": "Fox Mulder",
+  "256": "Fox Mulder",
+  "259.0": "Fox Mulder",
+  "260.0": "Fox Mulder",
+  "261.1": "Fox Mulder",
+  "264": "Fox Mulder",
+  "267": "Fox Mulder",
+  "269": "Fox Mulder",
+  "312": "Fox Mulder",
+  "314.0": "Fox Mulder",
+  "316": "Fox Mulder",
+  "318": "Fox Mulder",
+  "321.1": "Fox Mulder",
+  "324": "Fox Mulder",
+  "326-328": "Fox Mulder",
+  "332": "Fox Mulder",
+  "334.1": "Fox Mulder",
+  "335": "Fox Mulder",
+  "337-339": "Fox Mulder",
+  "343": "Fox Mulder",
+  "351.0": "Fox Mulder",
+  "352": "Fox Mulder",
+  "354-356": "Fox Mulder",
+  "358.0": "Fox Mulder",
+  "359": "Fox Mulder",
+  "361.0": "Fox Mulder",
+  "364.0": "Fox Mulder",
+  "365.0": "Fox Mulder",
+  "366.1": "Fox Mulder",
+  "367": "Fox Mulder",
+  "423.0": "Fox Mulder",
+  "427.1": "Fox Mulder",
+  "428": "Fox Mulder",
+  "430": "Fox Mulder",
+  "433": "Fox Mulder",
+  "435.1": "Fox Mulder",
+  "436": "Fox Mulder",
+  "438-439": "Fox Mulder",
+  "443.0": "Fox Mulder",
+  "444": "Fox Mulder",
+  "446": "Fox Mulder",
+  "449": "Fox Mulder",
+  "451.0": "Fox Mulder",
+  "452-454": "Fox Mulder",
+  "457": "Fox Mulder",
+  "471": "Fox Mulder",
+  "474": "Fox Mulder",
+  "476": "Fox Mulder",
+  "478": "Fox Mulder",
+  "480": "Fox Mulder",
+  "482": "Fox Mulder",
+  "484-485": "Fox Mulder",
+  "487": "Fox Mulder",
+  "491": "Fox Mulder",
+  "495.0": "Fox Mulder",
+  "496": "Fox Mulder",
+  "498": "Fox Mulder",
+  "500": "Fox Mulder",
+  "503": "Fox Mulder",
+  "505": "Fox Mulder",
+  "509": "Fox Mulder",
+  "511-512": "Fox Mulder",
+  "514.1": "Fox Mulder",
+  "515": "Fox Mulder",
+  "517": "Fox Mulder",
+  "519.1": "Fox Mulder",
+  "524-526": "Fox Mulder",
+  "527.0": "Fox Mulder",
+  "528.1": "Fox Mulder",
+  "531": "Fox Mulder",
+  "534-535": "Fox Mulder",
+  "540": "Fox Mulder",
+  "543.1": "Fox Mulder",
+  "544": "Fox Mulder",
+  "546-547": "Fox Mulder",
+  "556": "Fox Mulder",
+  "557.1": "Fox Mulder",
+  "558.1": "Fox Mulder",
+  "559": "Fox Mulder",
+  "561.1": "Fox Mulder",
+  "562.1": "Fox Mulder",
+  "563.1": "Fox Mulder",
+  "564": "Fox Mulder",
+  "565.0": "Fox Mulder",
+  "566": "Fox Mulder",
+  "575": "Fox Mulder",
+  "577.0": "Fox Mulder",
+  "578-579": "Fox Mulder",
+  "581": "Fox Mulder",
+  "589": "Fox Mulder",
+  "607-608": "Fox Mulder",
+  "610": "Fox Mulder",
+  "612": "Fox Mulder",
+  "613.1": "Fox Mulder",
+  "614": "Fox Mulder",
+  "49.0": "Dana Scully",
+  "51": "Dana Scully",
+  "53": "Dana Scully",
+  "56.0": "Dana Scully",
+  "58": "Dana Scully",
+  "60": "Dana Scully",
+  "64": "Dana Scully",
+  "67": "Dana Scully",
+  "71": "Dana Scully",
+  "73": "Dana Scully",
+  "75": "Dana Scully",
+  "77": "Dana Scully",
+  "78.1": "Dana Scully",
+  "81-82": "Dana Scully",
+  "85": "Dana Scully",
+  "99.0": "Dana Scully",
+  "112": "Dana Scully",
+  "117-119": "Dana Scully",
+  "120.0": "Dana Scully",
+  "122.0": "Dana Scully",
+  "127": "Dana Scully",
+  "130": "Dana Scully",
+  "132": "Dana Scully",
+  "134": "Dana Scully",
+  "138-140": "Dana Scully",
+  "145.0": "Dana Scully",
+  "159.1": "Dana Scully",
+  "164.1": "Dana Scully",
+  "169": "Dana Scully",
+  "171": "Dana Scully",
+  "191": "Dana Scully",
+  "192.1": "Dana Scully",
+  "193": "Dana Scully",
+  "198": "Dana Scully",
+  "201-202": "Dana Scully",
+  "204": "Dana Scully",
+  "216-217": "Dana Scully",
+  "220.0": "Dana Scully",
+  "223.0": "Dana Scully",
+  "224-225": "Dana Scully",
+  "227-228": "Dana Scully",
+  "271": "Dana Scully",
+  "273": "Dana Scully",
+  "275": "Dana Scully",
+  "279": "Dana Scully",
+  "281": "Dana Scully",
+  "283.0": "Dana Scully",
+  "284.0": "Dana Scully",
+  "286.0": "Dana Scully",
+  "288": "Dana Scully",
+  "290": "Dana Scully",
+  "293.0": "Dana Scully",
+  "294": "Dana Scully",
+  "296": "Dana Scully",
+  "302": "Dana Scully",
+  "308": "Dana Scully",
+  "311": "Dana Scully",
+  "313": "Dana Scully",
+  "314.1": "Dana Scully",
+  "315": "Dana Scully",
+  "317": "Dana Scully",
+  "319-320": "Dana Scully",
+  "321.0": "Dana Scully",
+  "322-323": "Dana Scully",
+  "325": "Dana Scully",
+  "329-331": "Dana Scully",
+  "334.0": "Dana Scully",
+  "336": "Dana Scully",
+  "340-341": "Dana Scully",
+  "370-371": "Dana Scully",
+  "372.1": "Dana Scully",
+  "373": "Dana Scully",
+  "375": "Dana Scully",
+  "378-379": "Dana Scully",
+  "381.0": "Dana Scully",
+  "382": "Dana Scully",
+  "384": "Dana Scully",
+  "386-387": "Dana Scully",
+  "389": "Dana Scully",
+  "394": "Dana Scully",
+  "399-400": "Dana Scully",
+  "401.0": "Dana Scully",
+  "402": "Dana Scully",
+  "404": "Dana Scully",
+  "405.0": "Dana Scully",
+  "420.0": "Dana Scully",
+  "421": "Dana Scully",
+  "424.1": "Dana Scully",
+  "425.1": "Dana Scully",
+  "426": "Dana Scully",
+  "429": "Dean Cavalier",
+  "432.0": "Dana Scully",
+  "434": "Dana Scully",
+  "440-442": "Dana Scully",
+  "443.1": "Dana Scully",
+  "445": "Dana Scully",
+  "447-448": "Dana Scully",
+  "450": "Dana Scully",
+  "451.1": "Dana Scully",
+  "455-456": "Dana Scully",
+  "470": "Dana Scully",
+  "473": "Dana Scully",
+  "475": "Dana Scully",
+  "477": "Dana Scully",
+  "479": "Dana Scully",
+  "481": "Dana Scully",
+  "483": "Dana Scully",
+  "486": "Dana Scully",
+  "488-489": "Dana Scully",
+  "494": "Dana Scully",
+  "495.1": "Dana Scully",
+  "497": "Dana Scully",
+  "499": "Dana Scully",
+  "502": "Dana Scully",
+  "504": "Dana Scully",
+  "507-508": "Dana Scully",
+  "510": "Dana Scully",
+  "514.0": "Dana Scully",
+  "516": "Dana Scully",
+  "518": "Dana Scully",
+  "519.0": "Dana Scully",
+  "520-523": "Dana Scully",
+  "527.1": "Dana Scully",
+  "528.0": "Dana Scully",
+  "529-530": "Dana Scully",
+  "532-533": "Dana Scully",
+  "536-539": "Dana Scully",
+  "542": "Dana Scully",
+  "543.0": "Dana Scully",
+  "545": "Dana Scully",
+  "548": "Dana Scully",
+  "557.0": "Dana Scully",
+  "558.0": "Dana Scully",
+  "560": "Dana Scully",
+  "561.0": "Dana Scully",
+  "562.0": "Dana Scully",
+  "563.0": "Dana Scully",
+  "565.1": "Dana Scully",
+  "583-586": "Dana Scully",
+  "588": "Dana Scully",
+  "599-600": "Dana Scully",
+  "603": "Dana Scully",
+  "605": "Dana Scully",
+  "609": "Dana Scully",
+  "611": "Dana Scully",
+  "613.0": "Dana Scully",
+  "615": "Dana Scully",
+  "617-618": "Dana Scully",
+  "89.1": "Dean Cavalier",
+  "90.1": "Dean Cavalier",
+  "101.1": "Dean Cavalier",
+  "102": "Dean Cavalier",
+  "105": "Dean Cavalier",
+  "208": "Dean Cavalier",
+  "212.1": "Dean Cavalier",
+  "213.1": "Dean Cavalier",
+  "218.0": "Dean Cavalier",
+  "219": "Dean Cavalier",
+  "220.1": "Dean Cavalier",
+  "221": "Dean Cavalier",
+  "411.1": "Dean Cavalier",
+  "412-413": "Dean Cavalier",
+  "415.1": "Dean Cavalier",
+  "416.0": "Dean Cavalier",
+  "417.0": "Dean Cavalier",
+  "418-419": "Dean Cavalier",
+  "420.1": "Dean Cavalier",
+  "422": "Dean Cavalier",
+  "423.1": "Dean Cavalier",
+  "424.0": "Dean Cavalier",
+  "425.0": "Dean Cavalier",
+  "427.0": "Dean Cavalier",
+  "432.1": "Dean Cavalier",
+  "435.0": "Dean Cavalier",
+  "437": "Dean Cavalier",
+  "124-125": "Dr. Russell",
+  "126.0": "Dr. Russell",
+  "128.0": "Dr. Russell",
+  "129": "Dr. Russell",
+  "131": "Dr. Russell",
+  "133": "Dr. Russell",
+  "135": "Dr. Russell",
+  "137": "Dr. Russell",
+  "141": "Dr. Russell",
+  "143": "Dr. Russell",
+  "144.1": "Dr. Russell",
+  "145.1": "Dr. Russell",
+  "146-147": "Dr. Russell",
+  "151": "Dr. Russell",
+  "153.1": "Dr. Russell",
+  "161": "Dr. Russell",
+  "152": "Judy Poundstone",
+  "153.0": "Judy Poundstone",
+  "154": "Judy Poundstone",
+  "156": "Judy Poundstone",
+  "158": "Judy Poundstone",
+  "159.0": "Judy Poundstone",
+  "160": "Judy Poundstone",
+  "162": "Judy Poundstone",
+  "164.0": "Judy Poundstone",
+  "165": "Judy Poundstone",
+  "170": "Judy Poundstone",
+  "172-173": "Judy Poundstone",
+  "283.1": "Judy Poundstone",
+  "284.1": "Judy Poundstone",
+  "286.1": "Judy Poundstone",
+  "287": "Judy Poundstone",
+  "289": "Judy Poundstone",
+  "291-292": "Judy Poundstone",
+  "293.1": "Judy Poundstone",
+  "295": "Judy Poundstone",
+  "297-301": "Judy Poundstone",
+  "304-307": "Judy Poundstone",
+  "309": "Judy Poundstone",
+  "347-348": "Judy Poundstone",
+  "363": "Judy Poundstone",
+  "369": "Judy Poundstone",
+  "372.0": "Judy Poundstone",
+  "374.1": "Judy Poundstone",
+  "376-377": "Judy Poundstone",
+  "380": "Judy Poundstone",
+  "381.1": "Judy Poundstone",
+  "383": "Judy Poundstone",
+  "385": "Judy Poundstone",
+  "388": "Judy Poundstone",
+  "390-392": "Judy Poundstone",
+  "393.1": "Judy Poundstone",
+  "395-397": "Judy Poundstone",
+  "463": "Judy Poundstone",
+  "465": "Judy Poundstone",
+  "549-552": "Judy Poundstone",
+  "568-569": "Judy Poundstone",
+  "571.1": "Judy Poundstone",
+  "231": "Chucky Poundstone",
+  "233": "Chucky Poundstone",
+  "234.1": "Chucky Poundstone",
+  "236-238": "Chucky Poundstone",
+  "240": "Chucky Poundstone",
+  "241.1": "Chucky Poundstone",
+  "243": "Chucky Poundstone",
+  "246.1": "Chucky Poundstone",
+  "249-250": "Chucky Poundstone",
+  "252": "Chucky Poundstone",
+  "254": "Chucky Poundstone",
+  "255.1": "Chucky Poundstone",
+  "257-258": "Chucky Poundstone",
+  "259.1": "Chucky Poundstone",
+  "260.1": "Chucky Poundstone",
+  "261.0": "Chucky Poundstone",
+  "263": "Chucky Poundstone",
+  "265-266": "Chucky Poundstone",
+  "268": "Chucky Poundstone",
+  "270": "Chucky Poundstone",
+  "344": "Chucky Poundstone",
+  "346": "Chucky Poundstone",
+  "350": "Chucky Poundstone",
+  "351.1": "Chucky Poundstone",
+  "353": "Chucky Poundstone",
+  "357": "Chucky Poundstone",
+  "358.1": "Chucky Poundstone",
+  "360": "Chucky Poundstone",
+  "361.1": "Chucky Poundstone",
+  "362": "Chucky Poundstone",
+  "364.1": "Chucky Poundstone",
+  "365.1": "Chucky Poundstone",
+  "366.0": "Chucky Poundstone",
+  "553": "Chucky Poundstone",
+  "570": "Chucky Poundstone",
+  "571.0": "Chucky Poundstone",
+  "572": "Chucky Poundstone",
+  "576": "Chucky Poundstone",
+  "577.1": "Chucky Poundstone",
+  "591-593": "Chucky Poundstone",
+  "174.1": "Guard",
+  "176": "Guard",
+  "179": "Guard",
+  "209.1": "Guard",
+  "210-211": "Guard",
+  "212.0": "Guard",
+  "189": "Receptionist",
+  "192.0": "Receptionist",
+  "194.0": "Receptionist",
+  "195": "Receptionist",
+  "272.0": "Nurse Peggy",
+  "274": "Nurse Peggy",
+  "276-277": "Nurse Peggy",
+  "280": "Nurse Peggy",
+  "368": "Nurse Peggy",
+  "401.1": "Nurse Peggy",
+  "403": "Nurse Peggy",
+  "405.1": "Nurse Peggy",
+  "407": "Nurse Peggy",
+  "272.1": "Nurse Vickie",
+  "278": "Nurse Vickie",
+  "406": "Nurse Vickie",
+  "408": "Nurse Vickie",
+  "411.0": "Waitress",
+  "414-415": "Waitress",
+  "416.1": "Waitress",
+  "417.1": "Waitress",
+  "597": "Nurse Peggy and Nurse Vickie",
+  "606": "Nurse",
+  "415": "Waitress"
+ },
+ "splits": {
+  "49": [
+   {
+    "text": "What does the other guy look like?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Funny you should ask.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "93": [
+   {
+    "text": "...and he floored the gas.",
+    "speaker": "Arkie Seavers"
+   },
+   {
+    "text": "And by \"he,\" you mean...?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "94": [
+   {
+    "text": "I mean, the dude looked just like me.",
+    "speaker": "Arkie Seavers"
+   },
+   {
+    "text": "And you'd seen him before.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "99": [
+   {
+    "text": "And do you take drugs, Arkie?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, I'm-- Eh.",
+    "speaker": "Arkie Seavers"
+   }
+  ],
+  "101": [
+   {
+    "text": "And you're in jail because...?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Arkie admittedly has a problem.",
+    "speaker": "Dean Cavalier"
+   }
+  ],
+  "110": [
+   {
+    "text": "What do you chalk that up to?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I can tell you.",
+    "speaker": "Arkie Seavers"
+   }
+  ],
+  "120": [
+   {
+    "text": "...and applying the brakes there.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "But if he was asleep...",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "122": [
+   {
+    "text": "You're saying you believe him.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "128": [
+   {
+    "text": "They never received treatment.",
+    "speaker": "Dr. Russell"
+   },
+   {
+    "text": "So there were issues?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "135": [
+   {
+    "text": "They became mentally ill.",
+    "speaker": "Dr. Russell"
+   },
+   {
+    "text": "It was almost like a kind of outbreak.",
+    "speaker": "Dr. Russell"
+   }
+  ],
+  "144": [
+   {
+    "text": "Could we possibly talk to her?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I'd strongly advise against that.",
+    "speaker": "Dr. Russell"
+   }
+  ],
+  "145": [
+   {
+    "text": "Why would you say that?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Because she exhibits split personality...",
+    "speaker": "Dr. Russell"
+   }
+  ],
+  "153": [
+   {
+    "text": "I look awful. I look a fright.",
+    "speaker": "Judy Poundstone"
+   },
+   {
+    "text": "No one's judging you, Judy.",
+    "speaker": "Dr. Russell"
+   }
+  ],
+  "159": [
+   {
+    "text": "That's what my fans call me.",
+    "speaker": "Judy Poundstone"
+   },
+   {
+    "text": "Are you an actress, Judy?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "192": [
+   {
+    "text": "Do you have reservations?",
+    "speaker": "Receptionist"
+   },
+   {
+    "text": "No.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "212": [
+   {
+    "text": "Looks like a suicide.",
+    "speaker": "Guard"
+   },
+   {
+    "text": "He was strangled to death.",
+    "speaker": "Dean Cavalier"
+   }
+  ],
+  "220": [
+   {
+    "text": "We're working on it.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Well, someone's gotta pay.",
+    "speaker": "Dean Cavalier"
+   }
+  ],
+  "246": [
+   {
+    "text": "...he'd red-tag you--",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "You calling the marshal?",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "260": [
+   {
+    "text": "I take it you're twins.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Ooh.",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "261": [
+   {
+    "text": "Powers of deduction.",
+    "speaker": "Chucky Poundstone"
+   },
+   {
+    "text": "And she's the good twin.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "286": [
+   {
+    "text": "I'm not afraid of you, Judy.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Oh, yes, you are.",
+    "speaker": "Judy Poundstone"
+   }
+  ],
+  "290": [
+   {
+    "text": "And what about your brother?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Is he involved?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "306": [
+   {
+    "text": "How old are you, 40s?",
+    "speaker": "Judy Poundstone"
+   },
+   {
+    "text": "Past your childbearing years.",
+    "speaker": "Judy Poundstone"
+   }
+  ],
+  "334": [
+   {
+    "text": "Mulder, do you think of me as old?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What? Where is that coming from?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "355": [
+   {
+    "text": "You choose them at the jail, don't you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Losers like Arkie Seavers...",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "361": [
+   {
+    "text": "Intent to commit a crime.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Heh. I've seen many a bad jailhouse lawyer...",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "365": [
+   {
+    "text": "That's original. I haven't heard that before.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Before I punch you in the face...",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "366": [
+   {
+    "text": "...and snatch Little Red Riding Hood.",
+    "speaker": "Chucky Poundstone"
+   },
+   {
+    "text": "There's the Chucky I came for.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "368": [
+   {
+    "text": "Judy? Excuse me, hon.",
+    "speaker": "Nurse Peggy"
+   },
+   {
+    "text": "Agent Scully's here to see you.",
+    "speaker": "Nurse Peggy"
+   }
+  ],
+  "372": [
+   {
+    "text": "You look mad at me.",
+    "speaker": "Judy Poundstone"
+   },
+   {
+    "text": "I am mad, Judy. I am...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "374": [
+   {
+    "text": "...and I don't know how.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "And you blame me, don't you?",
+    "speaker": "Judy Poundstone"
+   }
+  ],
+  "381": [
+   {
+    "text": "No, she's not.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Sure she is. Just look.",
+    "speaker": "Judy Poundstone"
+   }
+  ],
+  "401": [
+   {
+    "text": "...and that they have secret powers.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "That's really only half true.",
+    "speaker": "Nurse Peggy"
+   }
+  ],
+  "405": [
+   {
+    "text": "They have no medicinal qualities.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No. Not that we know of, anyway.",
+    "speaker": "Nurse Peggy"
+   }
+  ],
+  "415": [
+   {
+    "text": "Only good when they're appealing.",
+    "speaker": "Waitress"
+   },
+   {
+    "text": "I gotta have you over to my place...",
+    "speaker": "Dean Cavalier"
+   }
+  ],
+  "416": [
+   {
+    "text": "...to see my sword collection.",
+    "speaker": "Dean Cavalier"
+   },
+   {
+    "text": "You say that to all the girls.",
+    "speaker": "Waitress"
+   }
+  ],
+  "423": [
+   {
+    "text": "Was it the first time?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No, no, I think I saw him the other day...",
+    "speaker": "Dean Cavalier"
+   }
+  ],
+  "424": [
+   {
+    "text": "...staring at me from a bus stop.",
+    "speaker": "Dean Cavalier"
+   },
+   {
+    "text": "You're making it worse.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "425": [
+   {
+    "text": "I'm making it worse? This guy is stalking me.",
+    "speaker": "Dean Cavalier"
+   },
+   {
+    "text": "Your paranoia is gonna feed on itself.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "427": [
+   {
+    "text": "Those people all died.",
+    "speaker": "Dean Cavalier"
+   },
+   {
+    "text": "While I agree with Agent Scully's theory...",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "449": [
+   {
+    "text": "Speak for yourself, Scully.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "And tell that to Chuck and Judy.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "527": [
+   {
+    "text": "...and have kids.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Mm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "543": [
+   {
+    "text": "...and we're the only two who can save it.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "The world is going to hell, Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "553": [
+   {
+    "text": "Earth to Judith.",
+    "speaker": "Chucky Poundstone"
+   },
+   {
+    "text": "Yes, Your Royal Highness, there is an L.",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "558": [
+   {
+    "text": "What are you talking about?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I was looking in the mirror, and there he was.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "560": [
+   {
+    "text": "I know. I saw my double too.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "They're targeting us both.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "563": [
+   {
+    "text": "Mulder, you have to calm down.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "565": [
+   {
+    "text": "They can't hang us.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "We can only hang ourselves if we panic.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "571": [
+   {
+    "text": "You know you're in love with him.",
+    "speaker": "Chucky Poundstone"
+   },
+   {
+    "text": "Double L, Chuck-face.",
+    "speaker": "Judy Poundstone"
+   }
+  ],
+  "577": [
+   {
+    "text": "I know you're in here.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I said, no letter C.",
+    "speaker": "Chucky Poundstone"
+   }
+  ],
+  "613": [
+   {
+    "text": "Okay.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "2": "[\"UNSAID UNDONE\" PLAYING]",
+  "44": "[\"MULESKINNER BLUES\" CONTINUES PLAYING]",
+  "62": "...is driving by his lonesome down the highway to hell...",
+  "105": "Six.",
+  "116": "...producing the skid marks that start up yonder.",
+  "121": "...he wouldn't have been traveling at such a dangerous rate of speed.",
+  "146": "...with wild swings in affect, from benign to violent.",
+  "254": "My sister's a miserable slut and a damn cheater on top of it.",
+  "328": "...is linked to the feeling of a sense presence.",
+  "330": "...is what promotes the sense of a shadowy figure...",
+  "339": "...heh, you still got some scoot in your boot.",
+  "389": "How? Protect themselves how?",
+  "411": "What'll you have, Dean?\nI'll take the lunch special.",
+  "487": "Well, if he was in his right mind, he might've called you.",
+  "511": "I'll come push your wheelchair.",
+  "512": "With my wheelchair.",
+  "539": "...I don't have anyone to have one with even if I could?",
+  "573": "(GRUNTS)",
+  "574": "(CAR ALARM CHIRPS)",
+  "594": "[WOMAN SPEAKING INDISTINCTLY OVER PA]",
+  "616": "[MAN SPEAKING INDISTINCTLY OVER TV]"
+ },
+ "drop": [
+  "3",
+  "4",
+  "5",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "45",
+  "46"
+ ],
+ "scenes": {
+  "1": "Henrico County · The Bar",
+  "29": "Arkie's Drive",
+  "47": "FBI Headquarters · The X-Files Office",
+  "89": "County Jail · Conference Room",
+  "113": "The Highway · Skid Marks",
+  "124": "Mental Hospital · Dr. Russell",
+  "151": "Mental Hospital · Little Judy's Room",
+  "174": "County Jail · Cell Block",
+  "188": "The Motel · Front Desk",
+  "202": "The Motel · Suite",
+  "208": "County Jail · Arkie's Cell",
+  "230": "Chucky's House · Outside",
+  "245": "Chucky's House · Inside",
+  "271": "Mental Hospital · Hallway",
+  "281": "Mental Hospital · Demon Judy",
+  "311": "The Motel · Suite",
+  "344": "Chucky's House · Night",
+  "347": "Mental Hospital · Judy's Room",
+  "350": "Chucky's House · Morning",
+  "368": "Mental Hospital · Little Judy",
+  "399": "Mental Hospital · Hallway",
+  "411": "The Diner · Dean Cavalier",
+  "420": "The Motel · Outside",
+  "438": "The Motel · Suite",
+  "458": "Dean Cavalier's House",
+  "463": "Mental Hospital · Judy's Room",
+  "470": "Dean Cavalier's House · Aftermath",
+  "491": "The Motel · Night",
+  "496": "The Motel · Anteroom",
+  "549": "Mental Hospital · Judy's Room",
+  "553": "Chucky's House · The Game",
+  "556": "The Motel · Doubles",
+  "568": "Mental Hospital · Judy's Room",
+  "570": "Chucky's House · Dining Room",
+  "578": "Scully's Car · Her Double",
+  "589": "Chucky's House · Mulder's Double",
+  "591": "Chucky's House · The Last Game",
+  "599": "Mental Hospital · Judy's Door",
+  "607": "The Motel · Morning"
+ }
+}

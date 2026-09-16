@@ -1,0 +1,937 @@
+{
+ "speakers": {
+  "1": "Narrator",
+  "2": "Fox Mulder",
+  "14": "Fox Mulder",
+  "61.1": "Fox Mulder",
+  "62": "Fox Mulder",
+  "63.0": "Fox Mulder",
+  "64.1": "Fox Mulder",
+  "65": "Fox Mulder",
+  "67.1": "Fox Mulder",
+  "69.0": "Fox Mulder",
+  "71.1": "Fox Mulder",
+  "73": "Fox Mulder",
+  "74.1": "Fox Mulder",
+  "76-77": "Fox Mulder",
+  "79.0": "Fox Mulder",
+  "80.1": "Fox Mulder",
+  "82": "Fox Mulder",
+  "84.0": "Fox Mulder",
+  "96.0": "Fox Mulder",
+  "98-99": "Fox Mulder",
+  "101-102": "Fox Mulder",
+  "104": "Fox Mulder",
+  "106": "Fox Mulder",
+  "109": "Fox Mulder",
+  "111.1": "Fox Mulder",
+  "112": "Fox Mulder",
+  "114": "Fox Mulder",
+  "116-117": "Fox Mulder",
+  "120": "Fox Mulder",
+  "124-133": "Fox Mulder",
+  "138": "Fox Mulder",
+  "140": "Fox Mulder",
+  "142.0": "Fox Mulder",
+  "144": "Fox Mulder",
+  "149.1": "Fox Mulder",
+  "150": "Fox Mulder",
+  "153": "Fox Mulder",
+  "157-158": "Fox Mulder",
+  "160.0": "Fox Mulder",
+  "164-165": "Fox Mulder",
+  "170": "Fox Mulder",
+  "184.1": "Fox Mulder",
+  "186": "Fox Mulder",
+  "188-191": "Fox Mulder",
+  "195": "Fox Mulder",
+  "197.1": "Fox Mulder",
+  "198.1": "Fox Mulder",
+  "199": "Fox Mulder",
+  "211-219": "Fox Mulder",
+  "272-274": "Fox Mulder",
+  "276.0": "Fox Mulder",
+  "277.0": "Fox Mulder",
+  "278": "Fox Mulder",
+  "280.0": "Fox Mulder",
+  "281.1": "Fox Mulder",
+  "283.0": "Fox Mulder",
+  "284": "Fox Mulder",
+  "286": "Fox Mulder",
+  "287.1": "Fox Mulder",
+  "289": "Fox Mulder",
+  "293": "Fox Mulder",
+  "294.0": "Fox Mulder",
+  "296.1": "Fox Mulder",
+  "297.0": "Fox Mulder",
+  "301-302": "Fox Mulder",
+  "303.1": "Fox Mulder",
+  "314-316": "Fox Mulder",
+  "321-325": "Fox Mulder",
+  "334-336": "Fox Mulder",
+  "354.1": "Fox Mulder",
+  "360.1": "Fox Mulder",
+  "362.1": "Fox Mulder",
+  "367.0": "Fox Mulder",
+  "368": "Fox Mulder",
+  "372.0": "Fox Mulder",
+  "386": "Fox Mulder",
+  "394.1": "Fox Mulder",
+  "396.0": "Fox Mulder",
+  "398.0": "Fox Mulder",
+  "431-432": "Fox Mulder",
+  "433.0": "Fox Mulder",
+  "436": "Fox Mulder",
+  "438-440": "Fox Mulder",
+  "441": "Fox Mulder",
+  "442-443": "Fox Mulder",
+  "444.0": "Fox Mulder",
+  "445": "Fox Mulder",
+  "447": "Fox Mulder",
+  "449-452": "Fox Mulder",
+  "455": "Fox Mulder",
+  "460": "Fox Mulder",
+  "468.0": "Fox Mulder",
+  "470.0": "Fox Mulder",
+  "476-483": "Fox Mulder",
+  "487": "Fox Mulder",
+  "492-493": "Fox Mulder",
+  "499.0": "Fox Mulder",
+  "504-505": "Fox Mulder",
+  "509": "Fox Mulder",
+  "510.1": "Fox Mulder",
+  "511": "Fox Mulder",
+  "512.1": "Fox Mulder",
+  "513.1": "Fox Mulder",
+  "515": "Fox Mulder",
+  "519": "Fox Mulder",
+  "3": "Dana Scully",
+  "4.1": "Dana Scully",
+  "8": "Dana Scully",
+  "137": "Dana Scully",
+  "139": "Dana Scully",
+  "141": "Dana Scully",
+  "142.1": "Dana Scully",
+  "143": "Dana Scully",
+  "145-148": "Dana Scully",
+  "149.0": "Dana Scully",
+  "151-152": "Dana Scully",
+  "154-156": "Dana Scully",
+  "159": "Dana Scully",
+  "160.1": "Dana Scully",
+  "161-163": "Dana Scully",
+  "166-169": "Dana Scully",
+  "179": "Dana Scully",
+  "194": "Dana Scully",
+  "196": "Dana Scully",
+  "197.0": "Dana Scully",
+  "198.0": "Dana Scully",
+  "228": "Dana Scully",
+  "229.1": "Dana Scully",
+  "233": "Dana Scully",
+  "234.1": "Dana Scully",
+  "235.1": "Dana Scully",
+  "236.1": "Dana Scully",
+  "238": "Dana Scully",
+  "241.0": "Dana Scully",
+  "242": "Dana Scully",
+  "245.0": "Dana Scully",
+  "246": "Dana Scully",
+  "247.1": "Dana Scully",
+  "249.1": "Dana Scully",
+  "251": "Dana Scully",
+  "252.0": "Dana Scully",
+  "253": "Dana Scully",
+  "276.1": "Dana Scully",
+  "277.1": "Dana Scully",
+  "279": "Dana Scully",
+  "280.1": "Dana Scully",
+  "281.0": "Dana Scully",
+  "282": "Dana Scully",
+  "283.1": "Dana Scully",
+  "285": "Dana Scully",
+  "287.0": "Dana Scully",
+  "288": "Dana Scully",
+  "290-292": "Dana Scully",
+  "294.1": "Dana Scully",
+  "295": "Dana Scully",
+  "296.0": "Dana Scully",
+  "297.1": "Dana Scully",
+  "298-299": "Dana Scully",
+  "306": "Dana Scully",
+  "484-486": "Dana Scully",
+  "488-491": "Dana Scully",
+  "494-498": "Dana Scully",
+  "499.1": "Dana Scully",
+  "500-503": "Dana Scully",
+  "506-507": "Dana Scully",
+  "516": "Dana Scully",
+  "4.0": "Monica Reyes",
+  "5": "Monica Reyes",
+  "134.1": "Monica Reyes",
+  "220.1": "Monica Reyes",
+  "223": "Monica Reyes",
+  "256": "Monica Reyes",
+  "258.0": "Monica Reyes",
+  "259": "Monica Reyes",
+  "307.0": "Monica Reyes",
+  "310.0": "Monica Reyes",
+  "311": "Monica Reyes",
+  "317": "Monica Reyes",
+  "320.0": "Monica Reyes",
+  "328": "Monica Reyes",
+  "331.0": "Monica Reyes",
+  "332": "Monica Reyes",
+  "342": "Monica Reyes",
+  "343.1": "Monica Reyes",
+  "351.0": "Monica Reyes",
+  "353.0": "Monica Reyes",
+  "453.0": "Monica Reyes",
+  "536": "Monica Reyes",
+  "539": "Monica Reyes",
+  "541.0": "Monica Reyes",
+  "543": "Monica Reyes",
+  "6-7": "Cigarette-Smoking Man",
+  "9-12": "Cigarette-Smoking Man",
+  "15-53": "Cigarette-Smoking Man",
+  "55": "Cigarette-Smoking Man",
+  "134.0": "Cigarette-Smoking Man",
+  "136": "Cigarette-Smoking Man",
+  "202-203": "Cigarette-Smoking Man",
+  "207-210": "Cigarette-Smoking Man",
+  "220.0": "Cigarette-Smoking Man",
+  "221": "Cigarette-Smoking Man",
+  "224-225": "Cigarette-Smoking Man",
+  "254-255": "Cigarette-Smoking Man",
+  "257": "Cigarette-Smoking Man",
+  "258.1": "Cigarette-Smoking Man",
+  "260-271": "Cigarette-Smoking Man",
+  "307.1": "Cigarette-Smoking Man",
+  "308-309": "Cigarette-Smoking Man",
+  "310.1": "Cigarette-Smoking Man",
+  "312-313": "Cigarette-Smoking Man",
+  "318-319": "Cigarette-Smoking Man",
+  "320.1": "Cigarette-Smoking Man",
+  "326-327": "Cigarette-Smoking Man",
+  "329-330": "Cigarette-Smoking Man",
+  "331.1": "Cigarette-Smoking Man",
+  "333": "Cigarette-Smoking Man",
+  "345": "Cigarette-Smoking Man",
+  "352.0": "Cigarette-Smoking Man",
+  "373.0": "Cigarette-Smoking Man",
+  "375": "Cigarette-Smoking Man",
+  "376.0": "Cigarette-Smoking Man",
+  "377-381": "Cigarette-Smoking Man",
+  "391": "Cigarette-Smoking Man",
+  "393": "Cigarette-Smoking Man",
+  "404": "Cigarette-Smoking Man",
+  "405.1": "Cigarette-Smoking Man",
+  "406-414": "Cigarette-Smoking Man",
+  "416.1": "Cigarette-Smoking Man",
+  "417": "Cigarette-Smoking Man",
+  "420-423": "Cigarette-Smoking Man",
+  "425-426": "Cigarette-Smoking Man",
+  "453.1": "Cigarette-Smoking Man",
+  "457.0": "Cigarette-Smoking Man",
+  "458.1": "Cigarette-Smoking Man",
+  "459": "Cigarette-Smoking Man",
+  "520": "Cigarette-Smoking Man",
+  "523": "Cigarette-Smoking Man",
+  "527.0": "Cigarette-Smoking Man",
+  "528-529": "Cigarette-Smoking Man",
+  "531-535": "Cigarette-Smoking Man",
+  "537": "Cigarette-Smoking Man",
+  "540": "Cigarette-Smoking Man",
+  "541.1": "Cigarette-Smoking Man",
+  "542": "Cigarette-Smoking Man",
+  "545": "Cigarette-Smoking Man",
+  "547": "Cigarette-Smoking Man",
+  "550-551": "Cigarette-Smoking Man",
+  "54": "Neil Armstrong",
+  "57": "Man",
+  "58-60": "Paramedic",
+  "61.0": "Paramedic",
+  "63.1": "Paramedic",
+  "64.0": "Paramedic",
+  "66": "Paramedic",
+  "68": "Paramedic",
+  "69.1": "Paramedic",
+  "70": "Paramedic",
+  "71.0": "Paramedic",
+  "67.0": "Walter Skinner",
+  "74.0": "Walter Skinner",
+  "75": "Walter Skinner",
+  "83": "Walter Skinner",
+  "86": "Walter Skinner",
+  "100.1": "Walter Skinner",
+  "110": "Walter Skinner",
+  "111.0": "Walter Skinner",
+  "113": "Walter Skinner",
+  "115": "Walter Skinner",
+  "118-119": "Walter Skinner",
+  "121-123": "Walter Skinner",
+  "339": "Walter Skinner",
+  "343.0": "Walter Skinner",
+  "352.1": "Walter Skinner",
+  "353.1": "Walter Skinner",
+  "373.1": "Walter Skinner",
+  "374": "Walter Skinner",
+  "376.1": "Walter Skinner",
+  "382": "Walter Skinner",
+  "390": "Walter Skinner",
+  "392": "Walter Skinner",
+  "405.0": "Walter Skinner",
+  "424": "Walter Skinner",
+  "427": "Walter Skinner",
+  "456": "Walter Skinner",
+  "457.1": "Walter Skinner",
+  "458.0": "Walter Skinner",
+  "468.1": "Walter Skinner",
+  "469": "Walter Skinner",
+  "470.1": "Walter Skinner",
+  "471": "Walter Skinner",
+  "508": "Walter Skinner",
+  "510.0": "Walter Skinner",
+  "512.0": "Walter Skinner",
+  "513.0": "Walter Skinner",
+  "514": "Walter Skinner",
+  "522": "Walter Skinner",
+  "524.1": "Walter Skinner",
+  "525": "Walter Skinner",
+  "526": "Walter Skinner",
+  "527.1": "Walter Skinner",
+  "530": "Walter Skinner",
+  "544": "Walter Skinner",
+  "546": "Walter Skinner",
+  "548-549": "Walter Skinner",
+  "78": "Dr. Joyet",
+  "79.1": "Dr. Joyet",
+  "80.0": "Dr. Joyet",
+  "81": "Dr. Joyet",
+  "84.1": "Dr. Joyet",
+  "85": "Dr. Joyet",
+  "87-95": "Dr. Joyet",
+  "96.1": "Dr. Joyet",
+  "97": "Dr. Joyet",
+  "100.0": "Dr. Joyet",
+  "103": "Dr. Joyet",
+  "107-108": "Dr. Joyet",
+  "177-178": "Dr. Joyet",
+  "180-183": "Dr. Joyet",
+  "184.0": "Dr. Joyet",
+  "185": "Dr. Joyet",
+  "187": "Dr. Joyet",
+  "192-193": "Dr. Joyet",
+  "248": "Dr. Joyet",
+  "249.0": "Dr. Joyet",
+  "250": "Dr. Joyet",
+  "252.1": "Dr. Joyet",
+  "461-463": "Dr. Joyet",
+  "465.0": "Dr. Joyet",
+  "466": "Dr. Joyet",
+  "135": "Agent Einstein",
+  "348.0": "Agent Einstein",
+  "349.0": "Agent Einstein",
+  "350.0": "Agent Einstein",
+  "465.1": "Agent Einstein",
+  "174-175": "Assailant",
+  "205-206": "Jeffrey Spender",
+  "229.0": "Jeffrey Spender",
+  "230-232": "Jeffrey Spender",
+  "234.0": "Jeffrey Spender",
+  "235.0": "Jeffrey Spender",
+  "236.0": "Jeffrey Spender",
+  "237": "Jeffrey Spender",
+  "239-240": "Jeffrey Spender",
+  "241.1": "Jeffrey Spender",
+  "244": "Jeffrey Spender",
+  "245.1": "Jeffrey Spender",
+  "247.0": "Jeffrey Spender",
+  "303.0": "Mr. Y",
+  "304-305": "Mr. Y",
+  "337-338": "Mr. Y",
+  "354.0": "Mr. Y",
+  "355-359": "Mr. Y",
+  "360.0": "Mr. Y",
+  "361": "Mr. Y",
+  "362.0": "Mr. Y",
+  "363-366": "Mr. Y",
+  "383-384": "Mr. Y",
+  "387.0": "Mr. Y",
+  "388.1": "Mr. Y",
+  "389": "Mr. Y",
+  "394.0": "Mr. Y",
+  "395.1": "Mr. Y",
+  "397": "Mr. Y",
+  "398.1": "Mr. Y",
+  "402": "Mr. Y",
+  "428-429": "Mr. Y",
+  "367.1": "Erika Price",
+  "369-371": "Erika Price",
+  "372.1": "Erika Price",
+  "385": "Erika Price",
+  "387.1": "Erika Price",
+  "388.0": "Erika Price",
+  "395.0": "Erika Price",
+  "396.1": "Erika Price",
+  "399-401": "Erika Price",
+  "403": "Erika Price",
+  "430": "Erika Price",
+  "433.1": "Erika Price",
+  "434-435": "Erika Price",
+  "437": "Erika Price",
+  "444.1": "Erika Price",
+  "446": "Erika Price",
+  "448": "Erika Price",
+  "347": "Bystander",
+  "348.1": "Bystander",
+  "349.1": "Bystander",
+  "350.1": "Bystander",
+  "351.1": "Bystander",
+  "415": "Young Jeffrey",
+  "416.0": "Young Jeffrey",
+  "418-419": "Man",
+  "464": "Agent Miller",
+  "517-518": "Man"
+ },
+ "splits": {
+  "62": [
+   {
+    "text": "She must have fallen.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "It's me, Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "149": [
+   {
+    "text": "...and it starts a pandemic.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "151": [
+   {
+    "text": "No.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "A plague is released.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "160": [
+   {
+    "text": "The Smoking Man is dead.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No. No, he's not.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "184": [
+   {
+    "text": "if the seizure was caused by the visions.",
+    "speaker": "Dr. Joyet"
+   },
+   {
+    "text": "I don't understand the difference.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "197": [
+   {
+    "text": "I need to get out of here.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "198": [
+   {
+    "text": "I have to get to the bottom of this, Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully, I'm on this.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "234": [
+   {
+    "text": "I've taken a risk coming here.",
+    "speaker": "Jeffrey Spender"
+   },
+   {
+    "text": "What is it, Spender?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "235": [
+   {
+    "text": "Someone came at me.",
+    "speaker": "Jeffrey Spender"
+   },
+   {
+    "text": "What do you mean?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "236": [
+   {
+    "text": "Trying to find your son.",
+    "speaker": "Jeffrey Spender"
+   },
+   {
+    "text": "What did you tell them?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "249": [
+   {
+    "text": "You've gotta calm down.",
+    "speaker": "Dr. Joyet"
+   },
+   {
+    "text": "I wanna get out of here.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "252": [
+   {
+    "text": "You can't keep me here.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I fear you may seize.",
+    "speaker": "Dr. Joyet"
+   }
+  ],
+  "277": [
+   {
+    "text": "Then stay off the phone.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "It's okay, Mulder. I'm okay.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "280": [
+   {
+    "text": "What are you talking about?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "He gave me a name. How to find our son.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "281": [
+   {
+    "text": "Something to start on.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "You can't be doing this now.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "283": [
+   {
+    "text": "Where are you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I don't want you to worry.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "287": [
+   {
+    "text": "Mulder, I know what I'm doing.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Damn it. Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "294": [
+   {
+    "text": "I want you to listen to me.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "296": [
+   {
+    "text": "Why I need to find him.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm gonna call Skinner.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "297": [
+   {
+    "text": "I need you to just stay put, okay?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I have to find our son.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "307": [
+   {
+    "text": "You think Scully will forgive you?",
+    "speaker": "Monica Reyes"
+   },
+   {
+    "text": "She'll come to see the beauty of it.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "310": [
+   {
+    "text": "These are people you're killing.",
+    "speaker": "Monica Reyes"
+   },
+   {
+    "text": "I'm just cleaning the mess that they made.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "320": [
+   {
+    "text": "Really? What makes you so certain?",
+    "speaker": "Monica Reyes"
+   },
+   {
+    "text": "It's a secret only you and I know.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "360": [
+   {
+    "text": "Your erstwhile father led the way.",
+    "speaker": "Mr. Y"
+   },
+   {
+    "text": "Answer my question.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "362": [
+   {
+    "text": "Surely you knew about this business.",
+    "speaker": "Mr. Y"
+   },
+   {
+    "text": "You're conspirators.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "367": [
+   {
+    "text": "I see. Nobody has a name.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "We've all had many names.",
+    "speaker": "Erika Price"
+   }
+  ],
+  "372": [
+   {
+    "text": "Hell-bent is what he is.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "--on exterminating humanity.",
+    "speaker": "Erika Price"
+   }
+  ],
+  "373": [
+   {
+    "text": "You'll be pleased to know, Mr. Skinner, I'm here to offer you a deal.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "376": [
+   {
+    "text": "Try me, you son of a bitch.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "I'm the one with the gun.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "394": [
+   {
+    "text": "He needs the boy, Mr. Mulder.",
+    "speaker": "Mr. Y"
+   },
+   {
+    "text": "He'll never find him.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "395": [
+   {
+    "text": "You doubt his determination?",
+    "speaker": "Erika Price"
+   },
+   {
+    "text": "He'll use those closest to you.",
+    "speaker": "Mr. Y"
+   }
+  ],
+  "396": [
+   {
+    "text": "What does he want with my son?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "That's the question, isn't it?",
+    "speaker": "Erika Price"
+   }
+  ],
+  "398": [
+   {
+    "text": "Why the hell do you care?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "We want to save humanity.",
+    "speaker": "Mr. Y"
+   }
+  ],
+  "416": [
+   {
+    "text": "That's really the moon?",
+    "speaker": "Young Jeffrey"
+   },
+   {
+    "text": "Yes. That's really the moon, Jeffrey.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "433": [
+   {
+    "text": "...what's your budding enterprise?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "The colonization of space.",
+    "speaker": "Erika Price"
+   }
+  ],
+  "444": [
+   {
+    "text": "Seven billion people?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "That's not possible. Only a chosen few.",
+    "speaker": "Erika Price"
+   }
+  ],
+  "453": [
+   {
+    "text": "Get your ass back in the car.",
+    "speaker": "Monica Reyes"
+   },
+   {
+    "text": "I'm not finished.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "457": [
+   {
+    "text": "He's very important to me.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "You're asking me to betray them...",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "458": [
+   {
+    "text": "...to betray people that I care about.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Ha, ha. No, no, no.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "468": [
+   {
+    "text": "Hello?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I just wanted to tell you she's here...",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "470": [
+   {
+    "text": "Where is here?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "The hospital.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "512": [
+   {
+    "text": "Leave it alone, Mulder.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "I asked you to look for her.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "513": [
+   {
+    "text": "I looked for her.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Where did you look?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "524": [
+   {
+    "text": "She'll be with us. She's immune.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "You get off on this, don't you?",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "526": [
+   {
+    "text": "Mulder would kill me.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Scully will never take your offer.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "541": [
+   {
+    "text": "How did I get out of my clothes and into bed?",
+    "speaker": "Monica Reyes"
+   },
+   {
+    "text": "We carried you, my housekeeper and I.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ]
+ },
+ "text": {
+  "20": "It's been a humbling job, though I'm hardly known as a humble man.",
+  "42": "It's a failure to recognize the limits of our own stupidity.",
+  "46": "...our egos small enough.",
+  "48": "I will leave my own mark upon history.",
+  "74": "No news, good news, Mulder.\nThat's BS and you know it.",
+  "135": "Massive contagion, alien DNA. Spartan Virus...",
+  "201": "[GROANING]",
+  "211": "If Scully was a conduit...",
+  "242": "You don't understand. Mulder's life may depend on it.",
+  "264": "That's the world we live in, Monica. Every day a new disaster.",
+  "279": "Just listen to me, Mulder. Jeffrey Spender came to me.",
+  "309": "Living as we were intended.",
+  "323": "...and a man I had come to despise, my own father, was alive?",
+  "349": "Ma'am, are you all right?\nMAN: Be careful.",
+  "350": "Ma'am, you okay?\nWOMAN: Stand back, stand back.",
+  "354": "We don't know where he is.\nThen who the hell are you?",
+  "415": "Oh, my gosh, we did it.",
+  "429": "...before he kills us all.",
+  "441": "You want me to kill him so you can implement your own plan.",
+  "442": "You wanna see blood in the streets.\nThe colonization of space?",
+  "447": "You're a liar. You're all liars.",
+  "478": "...now only doubled.",
+  "501": "And William knows it.",
+  "550": "I am.",
+  "552": "[VOICES SPEAKING INDISTINCTLY]"
+ },
+ "scenes": {
+  "1": "Previously · Recap",
+  "15": "Prologue · The Smoking Man's Files",
+  "54": "1969 · The Moon Landing Set",
+  "58": "The X-Files Office · Paramedics",
+  "73": "Our Lady of Sorrows · Waiting",
+  "78": "Our Lady of Sorrows · Dr. Joyet",
+  "105": "Our Lady of Sorrows · Scully's Room",
+  "112": "Our Lady of Sorrows · Hallway",
+  "126": "Mulder's Thoughts",
+  "134": "Scully's Vision",
+  "137": "Scully's Room · She Wakes",
+  "171": "Parking Garage · Spender Attacked",
+  "177": "Scully's Room · Dr. Joyet",
+  "200": "Scully's Phone · Spender's Message",
+  "207": "The Smoking Man's House",
+  "211": "Mulder on the Road",
+  "220": "The Smoking Man and Reyes",
+  "226": "Scully's Vision · William",
+  "230": "Scully's Room · Jeffrey Spender",
+  "254": "The Smoking Man and Reyes",
+  "272": "Mulder on the Road",
+  "276": "The X-Files Office · Scully Calls",
+  "303": "Scully's Vision · Mr. Y",
+  "306": "Scully's Vision · The Smoking Man",
+  "314": "Mulder on the Road",
+  "326": "The Smoking Man and Reyes",
+  "334": "The Stately House · Library",
+  "339": "FBI Parking Garage · Skinner",
+  "345": "FBI Parking Garage · The Smoking Man",
+  "347": "The Street · Scully's Accident",
+  "352": "FBI Parking Garage",
+  "354": "The Stately House · Mr. Y and Erika Price",
+  "373": "FBI Parking Garage · The Deal",
+  "383": "The Stately House · Library",
+  "390": "FBI Parking Garage · The Deal",
+  "394": "The Stately House · Library",
+  "405": "FBI Parking Garage · The Deal",
+  "408": "1947 · The Nevada Desert",
+  "412": "FBI Parking Garage · The Deal",
+  "415": "1969 · The Moon Landing Set",
+  "420": "FBI Parking Garage · The Deal",
+  "430": "The Stately House · Library",
+  "453": "FBI Parking Garage",
+  "455": "Mulder on the Road · Skinner's Choice",
+  "461": "Our Lady of Sorrows · Observation Room",
+  "468": "Mulder's Car · Skinner Calls",
+  "472": "Scully's Room · The Attack",
+  "476": "Mulder's Thoughts",
+  "484": "Our Lady of Sorrows · Triage",
+  "508": "Triage · Skinner",
+  "519": "FBI Parking Garage · Earlier",
+  "534": "The Smoking Man and Reyes · Earlier",
+  "544": "FBI Parking Garage · William"
+ }
+}

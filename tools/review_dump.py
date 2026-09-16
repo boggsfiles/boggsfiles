@@ -9,9 +9,10 @@ cues = {}
 for blk in srt:
     L = blk.split("\n")
     if len(L) >= 3: cues[int(L[0])] = " ".join(L[2:])
-sp = {}; scene_at = {}
+sp = {}; scene_at = {}; parts = {}
 for x in e:
     for n in range(x["cue_start"], x["cue_end"] + 1): sp.setdefault(n, []).append((x["speaker"], x["score"]))
+    if x["cue_start"] == x["cue_end"] and x["kind"] == "dialogue": parts.setdefault(x["cue_start"], []).append((x["speaker"], x["text"]))
     scene_at.setdefault(x["cue_start"], (x["scene"], x["location"]))
 last = None
 for n in sorted(cues):
@@ -19,3 +20,5 @@ for n in sorted(cues):
     who = "/".join(dict.fromkeys(s for s, _ in sp.get(n, []))) or "-"
     sc = min([c for _, c in sp.get(n, [])] or [0])
     print(f"{n:4d} {who[:16]:16s} {sc:.1f}| {cues[n][:105]}")
+    if len(parts.get(n, [])) > 1:
+        for i, (w, t) in enumerate(parts[n]): print(f"      .{i} {w[:14]:14s}| {t[:90]}")

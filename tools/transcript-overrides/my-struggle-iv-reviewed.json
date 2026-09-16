@@ -1,0 +1,1135 @@
+{
+ "speakers": {
+  "2": "Tad O'Malley",
+  "116": "Tad O'Malley",
+  "249.0": "Tad O'Malley",
+  "250.0": "Tad O'Malley",
+  "251.0": "Tad O'Malley",
+  "261": "Tad O'Malley",
+  "263.0": "Tad O'Malley",
+  "274-275": "Tad O'Malley",
+  "278": "Tad O'Malley",
+  "280": "Tad O'Malley",
+  "431-438": "Tad O'Malley",
+  "440-445": "Tad O'Malley",
+  "3-5": "Cigarette-Smoking Man",
+  "12.0": "Cigarette-Smoking Man",
+  "13": "Cigarette-Smoking Man",
+  "24.1": "Cigarette-Smoking Man",
+  "93-95": "Cigarette-Smoking Man",
+  "120": "Cigarette-Smoking Man",
+  "121-122": "Cigarette-Smoking Man",
+  "125": "Cigarette-Smoking Man",
+  "155.0": "Cigarette-Smoking Man",
+  "225.0": "Cigarette-Smoking Man",
+  "226": "Cigarette-Smoking Man",
+  "281": "Cigarette-Smoking Man",
+  "283.0": "Cigarette-Smoking Man",
+  "476": "Cigarette-Smoking Man",
+  "505": "Cigarette-Smoking Man",
+  "506.0": "Cigarette-Smoking Man",
+  "508-509": "Cigarette-Smoking Man",
+  "511-513": "Cigarette-Smoking Man",
+  "516-520": "Cigarette-Smoking Man",
+  "521.1": "Cigarette-Smoking Man",
+  "6": "Dana Scully",
+  "7.0": "Dana Scully",
+  "8": "Dana Scully",
+  "9.1": "Dana Scully",
+  "10-11": "Dana Scully",
+  "22-23": "Dana Scully",
+  "26": "Dana Scully",
+  "85.1": "Dana Scully",
+  "128-129": "Dana Scully",
+  "131-133": "Dana Scully",
+  "134.0": "Dana Scully",
+  "135": "Dana Scully",
+  "136.1": "Dana Scully",
+  "137": "Dana Scully",
+  "139-141": "Dana Scully",
+  "145.0": "Dana Scully",
+  "154.0": "Dana Scully",
+  "156": "Dana Scully",
+  "158": "Dana Scully",
+  "203": "Dana Scully",
+  "210.1": "Dana Scully",
+  "223.0": "Dana Scully",
+  "228": "Dana Scully",
+  "231.0": "Dana Scully",
+  "232-233": "Dana Scully",
+  "234.0": "Dana Scully",
+  "235": "Dana Scully",
+  "249.1": "Dana Scully",
+  "250.1": "Dana Scully",
+  "251.1": "Dana Scully",
+  "259-260": "Dana Scully",
+  "263.1": "Dana Scully",
+  "265": "Dana Scully",
+  "276": "Dana Scully",
+  "279": "Dana Scully",
+  "283.1": "Dana Scully",
+  "284.1": "Dana Scully",
+  "285.0": "Dana Scully",
+  "287": "Dana Scully",
+  "288.0": "Dana Scully",
+  "291-292": "Dana Scully",
+  "294.0": "Dana Scully",
+  "418.0": "Dana Scully",
+  "420.1": "Dana Scully",
+  "422-426": "Dana Scully",
+  "428-429": "Dana Scully",
+  "451": "Dana Scully",
+  "453": "Dana Scully",
+  "455": "Dana Scully",
+  "467-475": "Dana Scully",
+  "479": "Dana Scully",
+  "482.1": "Dana Scully",
+  "483.1": "Dana Scully",
+  "485": "Dana Scully",
+  "487": "Dana Scully",
+  "489.0": "Dana Scully",
+  "490.0": "Dana Scully",
+  "492-495": "Dana Scully",
+  "496": "Dana Scully",
+  "497.1": "Dana Scully",
+  "500": "Dana Scully",
+  "503.1": "Dana Scully",
+  "527": "Dana Scully",
+  "530": "Dana Scully",
+  "532-533": "Dana Scully",
+  "535": "Dana Scully",
+  "537-538": "Dana Scully",
+  "540-542": "Dana Scully",
+  "544": "Dana Scully",
+  "546-548": "Dana Scully",
+  "551-552": "Dana Scully",
+  "554": "Dana Scully",
+  "558-559": "Dana Scully",
+  "7.1": "Fox Mulder",
+  "9.0": "Fox Mulder",
+  "16": "Fox Mulder",
+  "18": "Fox Mulder",
+  "96": "Fox Mulder",
+  "99-101": "Fox Mulder",
+  "102": "Fox Mulder",
+  "103-104": "Fox Mulder",
+  "147": "Fox Mulder",
+  "148.1": "Fox Mulder",
+  "150.0": "Fox Mulder",
+  "151": "Fox Mulder",
+  "152": "Fox Mulder",
+  "154.1": "Fox Mulder",
+  "157": "Fox Mulder",
+  "160": "Fox Mulder",
+  "162": "Fox Mulder",
+  "173-175": "Fox Mulder",
+  "176.1": "Fox Mulder",
+  "178": "Fox Mulder",
+  "181": "Fox Mulder",
+  "187": "Fox Mulder",
+  "196": "Fox Mulder",
+  "204-206": "Fox Mulder",
+  "208-210": "Fox Mulder",
+  "214": "Fox Mulder",
+  "216": "Fox Mulder",
+  "218.1": "Fox Mulder",
+  "220.1": "Fox Mulder",
+  "222": "Fox Mulder",
+  "229-230": "Fox Mulder",
+  "231.1": "Fox Mulder",
+  "234.1": "Fox Mulder",
+  "284.0": "Fox Mulder",
+  "285.1": "Fox Mulder",
+  "286": "Fox Mulder",
+  "288.1": "Fox Mulder",
+  "290": "Fox Mulder",
+  "293": "Fox Mulder",
+  "294.1": "Fox Mulder",
+  "316": "Fox Mulder",
+  "317.1": "Fox Mulder",
+  "318.1": "Fox Mulder",
+  "321": "Fox Mulder",
+  "323": "Fox Mulder",
+  "363": "Fox Mulder",
+  "365": "Fox Mulder",
+  "367": "Fox Mulder",
+  "370-373": "Fox Mulder",
+  "374.1": "Fox Mulder",
+  "375": "Fox Mulder",
+  "377": "Fox Mulder",
+  "378.0": "Fox Mulder",
+  "379-380": "Fox Mulder",
+  "381.1": "Fox Mulder",
+  "382.1": "Fox Mulder",
+  "386-387": "Fox Mulder",
+  "388.1": "Fox Mulder",
+  "393": "Fox Mulder",
+  "397.0": "Fox Mulder",
+  "398.0": "Fox Mulder",
+  "399.0": "Fox Mulder",
+  "401": "Fox Mulder",
+  "402.0": "Fox Mulder",
+  "405-406": "Fox Mulder",
+  "407": "Fox Mulder",
+  "408": "Fox Mulder",
+  "411": "Fox Mulder",
+  "413": "Fox Mulder",
+  "415": "Fox Mulder",
+  "418.1": "Fox Mulder",
+  "419": "Fox Mulder",
+  "420.0": "Fox Mulder",
+  "421": "Fox Mulder",
+  "439": "Fox Mulder",
+  "447.0": "Fox Mulder",
+  "458": "Fox Mulder",
+  "460": "Fox Mulder",
+  "462": "Fox Mulder",
+  "482.0": "Fox Mulder",
+  "483.0": "Fox Mulder",
+  "484": "Fox Mulder",
+  "486": "Fox Mulder",
+  "488": "Fox Mulder",
+  "489.1": "Fox Mulder",
+  "490.1": "Fox Mulder",
+  "491": "Fox Mulder",
+  "497.0": "Fox Mulder",
+  "499": "Fox Mulder",
+  "502": "Fox Mulder",
+  "503.0": "Fox Mulder",
+  "506.1": "Fox Mulder",
+  "507": "Fox Mulder",
+  "510": "Fox Mulder",
+  "515": "Fox Mulder",
+  "521.0": "Fox Mulder",
+  "522": "Fox Mulder",
+  "525-526": "Fox Mulder",
+  "528": "Fox Mulder",
+  "531": "Fox Mulder",
+  "534": "Fox Mulder",
+  "536": "Fox Mulder",
+  "539": "Fox Mulder",
+  "543": "Fox Mulder",
+  "545": "Fox Mulder",
+  "549-550": "Fox Mulder",
+  "553": "Fox Mulder",
+  "555": "Fox Mulder",
+  "557": "Fox Mulder",
+  "560": "Fox Mulder",
+  "12.1": "Monica Reyes",
+  "146": "Monica Reyes",
+  "148.0": "Monica Reyes",
+  "149": "Monica Reyes",
+  "150.1": "Monica Reyes",
+  "153": "Monica Reyes",
+  "155.1": "Monica Reyes",
+  "224.0": "Monica Reyes",
+  "225.1": "Monica Reyes",
+  "14-15": "Mr. Y",
+  "19.0": "Mr. Y",
+  "176.0": "Mr. Y",
+  "177": "Mr. Y",
+  "179-180": "Mr. Y",
+  "182-183": "Mr. Y",
+  "17": "Erika Price",
+  "19.1": "Erika Price",
+  "20.0": "Erika Price",
+  "20.1": "Walter Skinner",
+  "21": "Walter Skinner",
+  "24.0": "Walter Skinner",
+  "106": "Walter Skinner",
+  "110.1": "Walter Skinner",
+  "112": "Walter Skinner",
+  "113.0": "Walter Skinner",
+  "117.0": "Walter Skinner",
+  "123": "Walter Skinner",
+  "126-127": "Walter Skinner",
+  "130": "Walter Skinner",
+  "132": "Walter Skinner",
+  "134.1": "Walter Skinner",
+  "136.0": "Walter Skinner",
+  "138": "Walter Skinner",
+  "142-144": "Walter Skinner",
+  "416": "Walter Skinner",
+  "427": "Walter Skinner",
+  "430": "Walter Skinner",
+  "448": "Walter Skinner",
+  "450": "Walter Skinner",
+  "452": "Walter Skinner",
+  "454": "Walter Skinner",
+  "456-457": "Walter Skinner",
+  "465-466": "Walter Skinner",
+  "27-92": "William",
+  "223.1": "William",
+  "224.1": "William",
+  "241": "William",
+  "246": "William",
+  "252-253": "William",
+  "269": "William",
+  "282": "William",
+  "298": "William",
+  "301": "William",
+  "307.0": "William",
+  "308": "William",
+  "309.0": "William",
+  "310.0": "William",
+  "312": "William",
+  "314": "William",
+  "325-326": "William",
+  "328": "William",
+  "334": "William",
+  "336.0": "William",
+  "338.1": "William",
+  "339.1": "William",
+  "340-341": "William",
+  "343": "William",
+  "344.0": "William",
+  "345-346": "William",
+  "349": "William",
+  "350.1": "William",
+  "351": "William",
+  "352.1": "William",
+  "353.0": "William",
+  "354": "William",
+  "358.0": "William",
+  "359": "William",
+  "369": "William",
+  "374.0": "William",
+  "376": "William",
+  "378.1": "William",
+  "381.0": "William",
+  "382.0": "William",
+  "388.0": "William",
+  "389-392": "William",
+  "394-396": "William",
+  "397.1": "William",
+  "398.1": "William",
+  "399.1": "William",
+  "402.1": "William",
+  "403-404": "William",
+  "101.1": "Motel Manager",
+  "105": "Alvin Kersh",
+  "107-109": "Alvin Kersh",
+  "110.0": "Alvin Kersh",
+  "111": "Alvin Kersh",
+  "113.1": "Alvin Kersh",
+  "114-115": "Alvin Kersh",
+  "117.1": "Alvin Kersh",
+  "118": "Alvin Kersh",
+  "165-168": "Guards",
+  "186": "Guards",
+  "188-195": "Guards",
+  "198-199": "Guards",
+  "213.1": "Clerk",
+  "215": "Clerk",
+  "213.0": "Man",
+  "236": "Man",
+  "319": "Man",
+  "447.1": "Man",
+  "217": "Attendant",
+  "218.0": "Attendant",
+  "219": "Attendant",
+  "220.0": "Attendant",
+  "221": "Attendant",
+  "237": "Woman",
+  "238": "Woman",
+  "239-240": "Trucker",
+  "242-244": "Trucker",
+  "247": "Trucker",
+  "254-255": "Trucker",
+  "268": "Trucker",
+  "297": "Watching Man",
+  "299-300": "Watching Man",
+  "302": "Watching Man",
+  "306": "Brianna",
+  "307.1": "Brianna",
+  "310.1": "Brianna",
+  "311": "Brianna",
+  "313": "Brianna",
+  "315": "Brianna",
+  "317.0": "Brianna",
+  "318.0": "Brianna",
+  "320": "Brianna",
+  "322": "Brianna",
+  "324": "Brianna",
+  "309.1": "Maddy",
+  "327": "Sarah",
+  "329-333": "Sarah",
+  "335": "Sarah",
+  "336.1": "Sarah",
+  "337": "Sarah",
+  "338.0": "Sarah",
+  "339.0": "Sarah",
+  "342": "Sarah",
+  "344.1": "Sarah",
+  "348": "Sarah",
+  "350.0": "Sarah",
+  "352.0": "Sarah",
+  "353.1": "Sarah",
+  "355-357": "Sarah",
+  "358.1": "Sarah",
+  "360": "Sarah",
+  "364": "Sarah",
+  "366": "Sarah",
+  "368": "Sarah",
+  "459": "Sarah",
+  "461": "Sarah",
+  "463-464": "Sarah",
+  "400": "Soldier",
+  "409": "Soldier",
+  "101": "Fox Mulder"
+ },
+ "splits": {
+  "7": [
+   {
+    "text": "Oh. Aah!",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "9": [
+   {
+    "text": "Tell me what you saw.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "A plague will be released.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "12": [
+   {
+    "text": "You can't stop what's begun.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "You've always had your enemies.",
+    "speaker": "Monica Reyes"
+   }
+  ],
+  "16": [
+   {
+    "text": "He wants to exterminate humanity.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "What's your enterprise?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "19": [
+   {
+    "text": "Kill him.",
+    "speaker": "Mr. Y"
+   },
+   {
+    "text": "You're his son.",
+    "speaker": "Erika Price"
+   }
+  ],
+  "24": [
+   {
+    "text": "Who's the father?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "William is my son.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "85": [
+   {
+    "text": "What I need right now is answers.",
+    "speaker": "William"
+   },
+   {
+    "text": "Jackson?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "101": [
+   {
+    "text": "Checked in this evening.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Paid me in hundreds.",
+    "speaker": "Motel Manager"
+   }
+  ],
+  "109": [
+   {
+    "text": "\"Death will hunt you down.\"",
+    "speaker": "Alvin Kersh"
+   },
+   {
+    "text": "That's a quote from Mulder.",
+    "speaker": "Alvin Kersh"
+   }
+  ],
+  "111": [
+   {
+    "text": "You're his superior.",
+    "speaker": "Alvin Kersh"
+   },
+   {
+    "text": "You're supposed to be in charge.",
+    "speaker": "Alvin Kersh"
+   }
+  ],
+  "117": [
+   {
+    "text": "What if it's not just fake news?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "I don't care if it is true.",
+    "speaker": "Alvin Kersh"
+   }
+  ],
+  "118": [
+   {
+    "text": "That's someone else's problem.",
+    "speaker": "Alvin Kersh"
+   },
+   {
+    "text": "We're not gonna see panic in the streets.",
+    "speaker": "Alvin Kersh"
+   }
+  ],
+  "120": [
+   {
+    "text": "Skinner.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "I promised you a global contagion.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ],
+  "127": [
+   {
+    "text": "Why aren't you answering?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "I've been getting my ass chewed.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "133": [
+   {
+    "text": "He needs your help. I need your help.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I've been told to shut you down.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "134": [
+   {
+    "text": "What are you talking about?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I've been asked to take your badges.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "135": [
+   {
+    "text": "Who said that? Kersh?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Is he in there?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "136": [
+   {
+    "text": "Dana--",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "He doesn't understand what's happening.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "145": [
+   {
+    "text": "I'll put you on speaker phone.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Who's on the phone?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "154": [
+   {
+    "text": "He's not on that plane, Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "You have any reason to distrust her?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "155": [
+   {
+    "text": "Is there word on the boy?",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "Nothing. Nothing to report.",
+    "speaker": "Monica Reyes"
+   }
+  ],
+  "176": [
+   {
+    "text": "How the hell did you get in here?",
+    "speaker": "Mr. Y"
+   },
+   {
+    "text": "You can't keep this a secret for long.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "210": [
+   {
+    "text": "Eight recent winners in a 10-mile radius.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Where was the last winner?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "218": [
+   {
+    "text": "Says he'll split it with her. He did too.",
+    "speaker": "Attendant"
+   },
+   {
+    "text": "So he came back. When was that?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "220": [
+   {
+    "text": "...which is why I'm cleaning toilets.",
+    "speaker": "Attendant"
+   },
+   {
+    "text": "You have security cameras?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "230": [
+   {
+    "text": "I'm two hours behind him.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I got the direction he's headed.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "231": [
+   {
+    "text": "They're heading northeast.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "That's exactly what I'm thinking.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "234": [
+   {
+    "text": "Every last thing in the world.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm gonna find him.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "249": [
+   {
+    "text": "Hello?",
+    "speaker": "Tad O'Malley"
+   },
+   {
+    "text": "It's Dana Scully.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "250": [
+   {
+    "text": "I'm just about to go on here.",
+    "speaker": "Tad O'Malley"
+   },
+   {
+    "text": "I want you to listen to me.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "251": [
+   {
+    "text": "Can I call you right back?",
+    "speaker": "Tad O'Malley"
+   },
+   {
+    "text": "You're looking for a conspiracy? Here it is.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "263": [
+   {
+    "text": "Where are you getting this information?",
+    "speaker": "Tad O'Malley"
+   },
+   {
+    "text": "A man-made contagion...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "273": [
+   {
+    "text": "You realize how crazy this sounds?",
+    "speaker": "Tad O'Malley"
+   },
+   {
+    "text": "Death in the streets, Mr. O'Malley.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "285": [
+   {
+    "text": "Mulder?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I lost him.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "288": [
+   {
+    "text": "You're in grave danger.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, I'm too close now.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "291": [
+   {
+    "text": "You're not listening.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "You're not listening to me.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "293": [
+   {
+    "text": "He probably hitched another ride.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I'm not that far behind him.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "294": [
+   {
+    "text": "Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I got to go.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "307": [
+   {
+    "text": "I just have to talk to you, Sarah.",
+    "speaker": "William"
+   },
+   {
+    "text": "How come you didn't call her?",
+    "speaker": "Brianna"
+   }
+  ],
+  "309": [
+   {
+    "text": "You're up past your bedtime.",
+    "speaker": "William"
+   },
+   {
+    "text": "Mm.",
+    "speaker": "Maddy"
+   }
+  ],
+  "310": [
+   {
+    "text": "Look, I had to ditch my phone.",
+    "speaker": "William"
+   },
+   {
+    "text": "Heh.",
+    "speaker": "Brianna"
+   }
+  ],
+  "312": [
+   {
+    "text": "Look, I can explain everything.",
+    "speaker": "William"
+   },
+   {
+    "text": "Please, it's cold. I--",
+    "speaker": "William"
+   }
+  ],
+  "317": [
+   {
+    "text": "Look, we broke up.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "Has he called?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "318": [
+   {
+    "text": "We don't talk anymore.",
+    "speaker": "Brianna"
+   },
+   {
+    "text": "I need you to be honest.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "336": [
+   {
+    "text": "Yeah, because I'm some kind of freak.",
+    "speaker": "William"
+   },
+   {
+    "text": "Stop it.",
+    "speaker": "Sarah"
+   }
+  ],
+  "338": [
+   {
+    "text": "...a freak.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "Yes, I am.",
+    "speaker": "William"
+   }
+  ],
+  "339": [
+   {
+    "text": "No.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "Okay, yeah. You've seen what I can do, Sarah.",
+    "speaker": "William"
+   }
+  ],
+  "344": [
+   {
+    "text": "I could jump off a bridge, or--",
+    "speaker": "William"
+   },
+   {
+    "text": "What can I say to stop you?",
+    "speaker": "Sarah"
+   }
+  ],
+  "350": [
+   {
+    "text": "I can't talk now.",
+    "speaker": "Sarah"
+   },
+   {
+    "text": "I have money.",
+    "speaker": "William"
+   }
+  ],
+  "353": [
+   {
+    "text": "I can meet you somewhere.",
+    "speaker": "William"
+   },
+   {
+    "text": "Mm-hm.",
+    "speaker": "Sarah"
+   }
+  ],
+  "374": [
+   {
+    "text": "Okay, so how'd you find me now?",
+    "speaker": "William"
+   },
+   {
+    "text": "Doesn't matter.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "378": [
+   {
+    "text": "I held you when you were a baby.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Maybe you did, but I don't remember that.",
+    "speaker": "William"
+   }
+  ],
+  "388": [
+   {
+    "text": "Yeah, because I'm a danger to people.",
+    "speaker": "William"
+   },
+   {
+    "text": "I can help with that.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "399": [
+   {
+    "text": "All right?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Because you die too.",
+    "speaker": "William"
+   }
+  ],
+  "402": [
+   {
+    "text": "You have to live.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I know you think you're helping me.",
+    "speaker": "William"
+   }
+  ],
+  "404": [
+   {
+    "text": "Okay. It's too late.",
+    "speaker": "William"
+   },
+   {
+    "text": "Listen. You gotta go.",
+    "speaker": "William"
+   }
+  ],
+  "405": [
+   {
+    "text": "I'm not leaving.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Get back there, get down.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "418": [
+   {
+    "text": "Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "You can't believe what just happened.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "419": [
+   {
+    "text": "You seeing this?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I lost him, Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "420": [
+   {
+    "text": "He's gone.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Just tell me where you are.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "447": [
+   {
+    "text": "Let me talk to Sarah.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I said she can't talk.",
+    "speaker": "Man"
+   }
+  ],
+  "457": [
+   {
+    "text": "Something you may not want to hear.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "It's about your son and who his father is.",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "482": [
+   {
+    "text": "He's here.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I know. I just saw him.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "483": [
+   {
+    "text": "He doesn't want to be found.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I just want to talk to him, Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "489": [
+   {
+    "text": "What are you talking about?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Nothing we can do.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "490": [
+   {
+    "text": "We can protect him.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, we can't protect him. No one can.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "506": [
+   {
+    "text": "But then you have so much to lose.",
+    "speaker": "Cigarette-Smoking Man"
+   },
+   {
+    "text": "It's what we have in common.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "521": [
+   {
+    "text": "I don't think you can do it.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Then you don't know me very well.",
+    "speaker": "Cigarette-Smoking Man"
+   }
+  ]
+ },
+ "text": {
+  "32": "I've never really met her properly, but I can feel her in these--",
+  "47": "...powers.",
+  "69": "...I'm my father, all of a sudden.",
+  "75": "...until I decided to play a stupid joke on these two girls.",
+  "84": "...if they catch me.",
+  "112": "I am in charge.",
+  "113": "I'll see if I can find Agent Scully--\nYou find her.",
+  "116": "--a motel manager reporting a military-style incursion.",
+  "123": "So if I find him, will it stop?",
+  "144": "...if I don't know what's going on.",
+  "148": "Tennessee.\nBeing transported by a private jet.",
+  "223": "DANA: William.\nWILLIAM: You can't help me.",
+  "233": "Everything depends on it.",
+  "290": "I-- I think I know where he's going.",
+  "323": "I need to know where he is.",
+  "340": "They want me for that. Catch me, put me in a cage.",
+  "363": "Sarah, I need to know where he is.",
+  "391": "WILLIAM: I've seen the future, all right? I have visions.",
+  "392": "I know what happens if they catch me, all the people who are gonna die.",
+  "397": "It's not your fault.\nYes, it is.",
+  "398": "Then let me help you stop it.\nYou can't.",
+  "425": "I know he will.",
+  "427": "I'm supposed to rein you in.",
+  "435": "...as his superiors label it fake news. Shocker.",
+  "444": "A bloodbath so insane...",
+  "445": "...it can only point to a conspiracy, the likes of which the world has never seen.",
+  "463": "I-- I don't know.",
+  "485": "I know what he's afraid of.",
+  "542": "...born in a laboratory.",
+  "559": "I know it is."
+ },
+ "scenes": {
+  "1": "Previously · Recap",
+  "26": "William's Story",
+  "93": "The Docks · The Smoking Man",
+  "99": "The Motel · Front Desk",
+  "105": "FBI Headquarters · Kersh's Office",
+  "120": "Skinner's Phone · The Smoking Man",
+  "128": "FBI Headquarters · Scully and Skinner",
+  "145": "Mulder's House · Monica Reyes",
+  "153": "The Smoking Man's SUV",
+  "154": "Mulder's Car · The Airport",
+  "165": "The Warehouse Complex",
+  "173": "Mr. Y's Office",
+  "186": "The Warehouse · Mulder Escapes",
+  "203": "Mulder's House",
+  "213": "Truck Stop · Tennessee",
+  "223": "Scully's Vision",
+  "228": "Truck Stop · The Security Video",
+  "236": "Truck Stop · Outside",
+  "239": "The Semi · William and the Trucker",
+  "249": "Scully Calls O'Malley",
+  "281": "Scully's Vision",
+  "285": "Mulder on the Highway",
+  "297": "The Watching Man's Car",
+  "306": "Brianna's House",
+  "316": "Brianna's House · Mulder",
+  "325": "Sarah's House",
+  "363": "Sarah's House · Mulder",
+  "369": "The Timberland Motel",
+  "400": "The Motel · The Soldiers",
+  "415": "The Motel · Aftermath",
+  "423": "FBI Headquarters · Scully and Skinner",
+  "431": "The Tad O'Malley Show",
+  "448": "Skinner's Car",
+  "458": "Mulder's Car · Sarah",
+  "465": "Skinner's Car",
+  "469": "The Harbor Warehouses",
+  "503": "The Docks · The Smoking Man",
+  "525": "The Docks · Aftermath"
+ }
+}

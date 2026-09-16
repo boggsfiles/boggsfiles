@@ -1,0 +1,595 @@
+{
+ "speakers": {
+  "4-5": "Sergeant",
+  "6.0": "Sergeant",
+  "7-8": "Sergeant",
+  "9.0": "Sergeant",
+  "10-11": "Sergeant",
+  "12.0": "Sergeant",
+  "15-16": "Sergeant",
+  "6.1": "Marines",
+  "9.1": "Marines",
+  "12.1": "Marines",
+  "14": "Soldier",
+  "18": "Soldier",
+  "262": "Soldier",
+  "265": "Soldier",
+  "268": "Soldier",
+  "269": "Soldiers",
+  "23.0": "Young Skinner",
+  "25": "Young Skinner",
+  "26.0": "Young Skinner",
+  "27-30": "Young Skinner",
+  "32.0": "Young Skinner",
+  "33.0": "Young Skinner",
+  "34-35": "Young Skinner",
+  "40": "Young Skinner",
+  "46-48": "Young Skinner",
+  "50-51": "Young Skinner",
+  "53-55": "Young Skinner",
+  "273": "Young Skinner",
+  "275": "Young Skinner",
+  "23.1": "John James",
+  "26.1": "John James",
+  "32.1": "John James",
+  "33.1": "John James",
+  "52": "John James",
+  "256-261": "John James",
+  "263-264": "John James",
+  "267": "John James",
+  "270-272": "John James",
+  "274": "John James",
+  "56": "Fox Mulder",
+  "59.0": "Fox Mulder",
+  "70": "Fox Mulder",
+  "78": "Fox Mulder",
+  "82-83": "Fox Mulder",
+  "86-88": "Fox Mulder",
+  "98-100": "Fox Mulder",
+  "106": "Fox Mulder",
+  "107.0": "Fox Mulder",
+  "111": "Fox Mulder",
+  "112.0": "Fox Mulder",
+  "113-114": "Fox Mulder",
+  "118.1": "Fox Mulder",
+  "121-123": "Fox Mulder",
+  "125.0": "Fox Mulder",
+  "126": "Fox Mulder",
+  "133.0": "Fox Mulder",
+  "139": "Fox Mulder",
+  "142": "Fox Mulder",
+  "148.0": "Fox Mulder",
+  "149-151": "Fox Mulder",
+  "156.0": "Fox Mulder",
+  "157": "Fox Mulder",
+  "163": "Fox Mulder",
+  "165": "Fox Mulder",
+  "181": "Fox Mulder",
+  "183": "Fox Mulder",
+  "185.0": "Fox Mulder",
+  "186": "Fox Mulder",
+  "188": "Fox Mulder",
+  "192": "Fox Mulder",
+  "204": "Fox Mulder",
+  "214": "Fox Mulder",
+  "224": "Fox Mulder",
+  "229": "Fox Mulder",
+  "235": "Fox Mulder",
+  "237": "Fox Mulder",
+  "238.1": "Fox Mulder",
+  "244-246": "Fox Mulder",
+  "247.1": "Fox Mulder",
+  "248": "Fox Mulder",
+  "249.1": "Fox Mulder",
+  "250": "Fox Mulder",
+  "338.0": "Fox Mulder",
+  "339": "Fox Mulder",
+  "344": "Fox Mulder",
+  "365.1": "Fox Mulder",
+  "367.0": "Fox Mulder",
+  "368-369": "Fox Mulder",
+  "389.0": "Fox Mulder",
+  "398": "Fox Mulder",
+  "400.0": "Fox Mulder",
+  "407.0": "Fox Mulder",
+  "413.0": "Fox Mulder",
+  "423-425": "Fox Mulder",
+  "427": "Fox Mulder",
+  "434": "Fox Mulder",
+  "438.0": "Fox Mulder",
+  "439": "Fox Mulder",
+  "443-446": "Fox Mulder",
+  "447.1": "Fox Mulder",
+  "448-449": "Fox Mulder",
+  "451": "Fox Mulder",
+  "463": "Fox Mulder",
+  "464.1": "Fox Mulder",
+  "470": "Fox Mulder",
+  "473.0": "Fox Mulder",
+  "475": "Fox Mulder",
+  "478": "Fox Mulder",
+  "480": "Fox Mulder",
+  "491-493": "Fox Mulder",
+  "532-533": "Fox Mulder",
+  "64": "Dana Scully",
+  "74": "Dana Scully",
+  "81": "Dana Scully",
+  "84-85": "Dana Scully",
+  "89-97": "Dana Scully",
+  "101-105": "Dana Scully",
+  "107.1": "Dana Scully",
+  "108-109": "Dana Scully",
+  "110": "Dana Scully",
+  "112.1": "Dana Scully",
+  "115-117": "Dana Scully",
+  "118.0": "Dana Scully",
+  "119-120": "Dana Scully",
+  "127.1": "Dana Scully",
+  "133.1": "Dana Scully",
+  "134.1": "Dana Scully",
+  "135.1": "Dana Scully",
+  "136-138": "Dana Scully",
+  "143-144": "Dana Scully",
+  "153": "Dana Scully",
+  "158.0": "Dana Scully",
+  "159": "Dana Scully",
+  "161.1": "Dana Scully",
+  "196-198": "Dana Scully",
+  "201-203": "Dana Scully",
+  "211-212": "Dana Scully",
+  "216-219": "Dana Scully",
+  "228": "Dana Scully",
+  "231": "Dana Scully",
+  "234": "Dana Scully",
+  "236": "Dana Scully",
+  "238.0": "Dana Scully",
+  "239": "Dana Scully",
+  "241-243": "Dana Scully",
+  "335-337": "Dana Scully",
+  "338.1": "Dana Scully",
+  "340-343": "Dana Scully",
+  "345-348": "Dana Scully",
+  "350": "Dana Scully",
+  "371.0": "Dana Scully",
+  "373": "Dana Scully",
+  "374.0": "Dana Scully",
+  "389.1": "Dana Scully",
+  "390": "Dana Scully",
+  "392.0": "Dana Scully",
+  "393.0": "Dana Scully",
+  "394": "Dana Scully",
+  "401": "Dana Scully",
+  "402.0": "Dana Scully",
+  "403.0": "Dana Scully",
+  "411": "Dana Scully",
+  "414.1": "Dana Scully",
+  "418": "Dana Scully",
+  "426": "Dana Scully",
+  "435": "Dana Scully",
+  "438.1": "Dana Scully",
+  "442": "Dana Scully",
+  "447.0": "Dana Scully",
+  "450": "Dana Scully",
+  "452": "Dana Scully",
+  "460-461": "Dana Scully",
+  "479": "Dana Scully",
+  "494-495": "Dana Scully",
+  "57-58": "Alvin Kersh",
+  "59.1": "Alvin Kersh",
+  "60-63": "Alvin Kersh",
+  "65-69": "Alvin Kersh",
+  "71-73": "Alvin Kersh",
+  "75-77": "Alvin Kersh",
+  "79-80": "Alvin Kersh",
+  "124": "Trigger Davis",
+  "125.1": "Trigger Davis",
+  "247.0": "Trigger Davis",
+  "249.0": "Trigger Davis",
+  "127.0": "Sheriff Stenzler",
+  "128-132": "Sheriff Stenzler",
+  "134.0": "Sheriff Stenzler",
+  "135.0": "Sheriff Stenzler",
+  "140-141": "Sheriff Stenzler",
+  "145-147": "Sheriff Stenzler",
+  "148.1": "Sheriff Stenzler",
+  "152": "Sheriff Stenzler",
+  "154-155": "Sheriff Stenzler",
+  "156.1": "Sheriff Stenzler",
+  "158.1": "Sheriff Stenzler",
+  "160": "Sheriff Stenzler",
+  "161.0": "Sheriff Stenzler",
+  "162": "Sheriff Stenzler",
+  "164": "Sheriff Stenzler",
+  "177": "Sheriff Stenzler",
+  "182": "Sheriff Stenzler",
+  "194-195": "Sheriff Stenzler",
+  "205-210": "Sheriff Stenzler",
+  "213": "Sheriff Stenzler",
+  "215": "Sheriff Stenzler",
+  "220-223": "Sheriff Stenzler",
+  "225-227": "Sheriff Stenzler",
+  "230": "Sheriff Stenzler",
+  "232": "Sheriff Stenzler",
+  "170-174": "Hunter",
+  "178-180": "Ed",
+  "184": "Ed",
+  "185.1": "Ed",
+  "187": "Ed",
+  "189-191": "Ed",
+  "193": "Ed",
+  "199-200": "Ed",
+  "253-254": "Walter Skinner",
+  "277": "Walter Skinner",
+  "279.0": "Walter Skinner",
+  "280-281": "Walter Skinner",
+  "282.1": "Walter Skinner",
+  "284": "Walter Skinner",
+  "286": "Walter Skinner",
+  "290-291": "Walter Skinner",
+  "292.0": "Walter Skinner",
+  "293": "Walter Skinner",
+  "295": "Walter Skinner",
+  "305-308": "Walter Skinner",
+  "311": "Walter Skinner",
+  "313": "Walter Skinner",
+  "319-320": "Walter Skinner",
+  "321": "Walter Skinner",
+  "322-324": "Walter Skinner",
+  "325": "Walter Skinner",
+  "326-332": "Walter Skinner",
+  "351": "Walter Skinner",
+  "353.1": "Walter Skinner",
+  "354": "Walter Skinner",
+  "362": "Walter Skinner",
+  "363-364": "Walter Skinner",
+  "379": "Walter Skinner",
+  "456-457": "Walter Skinner",
+  "462": "Walter Skinner",
+  "464.0": "Walter Skinner",
+  "466": "Walter Skinner",
+  "471-472": "Walter Skinner",
+  "473.1": "Walter Skinner",
+  "476": "Walter Skinner",
+  "490": "Walter Skinner",
+  "496-497": "Walter Skinner",
+  "499-514": "Walter Skinner",
+  "516-529": "Walter Skinner",
+  "276": "Davey James",
+  "279.1": "Davey James",
+  "282.0": "Davey James",
+  "283": "Davey James",
+  "285": "Davey James",
+  "287-289": "Davey James",
+  "292.1": "Davey James",
+  "294": "Davey James",
+  "297-300": "Davey James",
+  "302-304": "Davey James",
+  "309-310": "Davey James",
+  "312": "Davey James",
+  "314-318": "Davey James",
+  "333-334": "Davey James",
+  "352": "Davey James",
+  "353.0": "Davey James",
+  "360": "Davey James",
+  "365.0": "Davey James",
+  "366": "Fox Mulder",
+  "367.1": "Davey James",
+  "370": "Davey James",
+  "371.1": "Davey James",
+  "372": "Davey James",
+  "374.1": "Davey James",
+  "375": "Davey James",
+  "380-386": "Davey James",
+  "388": "Davey James",
+  "391": "Davey James",
+  "392.1": "Davey James",
+  "393.1": "Davey James",
+  "395-397": "Davey James",
+  "399": "Davey James",
+  "400.1": "Davey James",
+  "402.1": "Davey James",
+  "403.1": "Davey James",
+  "404-406": "Davey James",
+  "407.1": "Davey James",
+  "408-409": "Davey James",
+  "412": "Davey James",
+  "413.1": "Davey James",
+  "414.0": "Davey James",
+  "415-417": "Davey James",
+  "419-422": "Davey James",
+  "428-433": "Davey James",
+  "534-536": "Davey James"
+ },
+ "splits": {
+  "25": [
+   {
+    "text": "Dude, look at me. Look at me.",
+    "speaker": "Young Skinner"
+   },
+   {
+    "text": "Everybody's scared.",
+    "speaker": "Young Skinner"
+   }
+  ],
+  "59": [
+   {
+    "text": "Sir, of whom are we speaking?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Cut the crap, agents.",
+    "speaker": "Alvin Kersh"
+   }
+  ],
+  "74": [
+   {
+    "text": "Sir, has anyone checked his apartment?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Could he have had a medical emergency?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "107": [
+   {
+    "text": "Is that a--?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Desiccated human ear.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "112": [
+   {
+    "text": "...my only concern here is for Skinner.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "But now I'm worried about him.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "118": [
+   {
+    "text": "...like names of his fellow Marines, et cetera...",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Uh-huh.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "127": [
+   {
+    "text": "Doctor Matthew Wegweiser.",
+    "speaker": "Sheriff Stenzler"
+   },
+   {
+    "text": "The victim was a medical doctor?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "133": [
+   {
+    "text": "A hunting trap?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "How do you account for the severed ear?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "135": [
+   {
+    "text": "Missing teeth?",
+    "speaker": "Sheriff Stenzler"
+   },
+   {
+    "text": "The autopsy says that he was missing...",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "158": [
+   {
+    "text": "Is Glazebrook a mental hospital?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Right, ma'am, a government-run facility.",
+    "speaker": "Sheriff Stenzler"
+   }
+  ],
+  "161": [
+   {
+    "text": "But I'll see what I can drum up.",
+    "speaker": "Sheriff Stenzler"
+   },
+   {
+    "text": "Thank you, sheriff.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "244": [
+   {
+    "text": "What?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "You said trigger.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "292": [
+   {
+    "text": "His records were sealed, even from me.",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Who vanished him?",
+    "speaker": "Davey James"
+   }
+  ],
+  "371": [
+   {
+    "text": "Is your father home?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, I'm sorry. I haven't a clue where he is.",
+    "speaker": "Davey James"
+   }
+  ],
+  "389": [
+   {
+    "text": "No, no, I'm good.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No, thank you.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "393": [
+   {
+    "text": "On what grounds?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Sorry?",
+    "speaker": "Davey James"
+   }
+  ],
+  "402": [
+   {
+    "text": "What did you mean?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Father had secrets.",
+    "speaker": "Davey James"
+   }
+  ],
+  "403": [
+   {
+    "text": "Secrets?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "About the government.",
+    "speaker": "Davey James"
+   }
+  ],
+  "407": [
+   {
+    "text": "What kind of tests?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Chemical and biological.",
+    "speaker": "Davey James"
+   }
+  ],
+  "413": [
+   {
+    "text": "And they still haven't perfected it.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "But after years of testing it and honing it...",
+    "speaker": "Davey James"
+   }
+  ],
+  "414": [
+   {
+    "text": "...they are getting close.",
+    "speaker": "Davey James"
+   },
+   {
+    "text": "To what end?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "464": [
+   {
+    "text": "Mulder?",
+    "speaker": "Walter Skinner"
+   },
+   {
+    "text": "Skinner.",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "23": "You all right, John?\nI'm scared as hell, man!",
+  "37": "[MAN SPEAKING IN FOREIGN LANGUAGE]",
+  "66": "...in the event that there are any questions about this in your conspiracy-addled minds.",
+  "68": "...has everything to do with his blind loyalty to the both of you...",
+  "79": "I couldn't say. But if you truly care about his future in the FBI...",
+  "83": "...it's safe to say the old Skinner has left the building.",
+  "87": "But I'll keep my eyes peeled for cigarette butts.",
+  "92": "...no family photographs.",
+  "99": "As much as I don't trust the guy right now...",
+  "100": "...if he's gotten into a dangerous situation, he's gonna forgive us this little trespass.",
+  "104": "That's a peculiar way to address it.",
+  "128": "That's correct, ma'am. Doc Wegweiser is-- Was our one and only town doctor.",
+  "145": "Yes, ma'am. It was a primitive whip trap.",
+  "173": "Pippet. What is it, girl?",
+  "202": "...so it shouldn't take terribly long to find what we're looking for.",
+  "207": "Why do I get the distinct feeling you two know who that man is?",
+  "224": "Well, I know it looks bad, sheriff, but I assure you, he's not your man.",
+  "225": "You can assure me all you want. I'll decide who my man is...",
+  "249": "I told the eagle where to find Kitten's kitten.\nThe eagle. Hmm.",
+  "261": "...I slice this little monster's ear off like a hunk of Wisconsin cheddar.",
+  "269": "[SOLDIERS 2 AND 3 GROAN]",
+  "291": "I spent years searching for him after his trial, but they vanished him.",
+  "325": "And I know it was because of the gas. I knew who he was before.",
+  "343": "...is he's a man ruled by his moral compass above all else.",
+  "348": "I mean, especially in light of what we now understand he may have sacrificed for us.",
+  "363": "Why?",
+  "366": "Special Agent Mulder. Special Agent Dana Scully.",
+  "383": "...music...",
+  "434": "Thank you, sir.",
+  "470": "I'll boost you up. I'll boost you, you're good.",
+  "504": "...he didn't enlist.",
+  "507": "...by a war that he really, truly didn't even understand.",
+  "512": "...it put a dent in that blind faith that I had in my government.",
+  "521": "...or to throw in with you two, make no mistake about it..."
+ },
+ "scenes": {
+  "1": "Vietnam, 1969 · The Helicopter",
+  "23": "Vietnam, 1969 · The Firefight",
+  "32": "Vietnam, 1969 · The Village",
+  "56": "FBI Headquarters · Kersh's Office",
+  "81": "Skinner's Apartment Building",
+  "88": "Skinner's Apartment",
+  "116": "Mud Lick, Kentucky · The Drive In",
+  "127": "Mud Lick · The Morgue",
+  "166": "The Woods · Banjo",
+  "174": "The Woods · The Pit",
+  "201": "Police Station · The Deer Cam",
+  "234": "Outside the Police Station",
+  "246": "Main Street · Trigger Davis",
+  "251": "The Cabin in the Woods",
+  "256": "John's Story · Vietnam, 1969",
+  "276": "The Cabin · Davey James",
+  "299": "Davey's Story · Vietnam",
+  "302": "The Cabin · Davey James",
+  "316": "Davey's Story · Glazebrook",
+  "318": "The Cabin · Davey James",
+  "335": "Mulder and Scully's Car",
+  "351": "Behind the Cabin · Night",
+  "365": "The Cabin · Mulder and Scully Arrive",
+  "382": "The Cabin · Davey's Story",
+  "405": "Davey's Story · Glazebrook",
+  "407": "The Cabin · Mind Control",
+  "439": "Leaving the Cabin",
+  "448": "The Dirt Road",
+  "453": "The Cabin · The Record",
+  "466": "The Pit",
+  "491": "The Cabin · Morning",
+  "534": "Coda"
+ }
+}
