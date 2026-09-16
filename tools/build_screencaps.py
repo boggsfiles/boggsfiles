@@ -199,9 +199,17 @@ def main() -> None:
 
     # landing
     total_frames = sum(len(json.load(open(e["source"] / "index.json"))) for e in eps if e["live"]) + sum(len(json.load(open(f["source"] / "index.json"))) for f in films if f["source"])
-    cards = "".join(card(f"/screencaps/{f['slug']}/", f["still"], f"{f['kind']} · {f['year']}", f["title"], (f"{len(json.load(open(f['source'] / 'index.json'))):,} frames · {f['media']}" if f["source"] else f["blurb"]), bool(f["source"])) for f in films)
-    cards += "".join(card(f"/screencaps/season-{s}/", f"/assets/transcript-stills/{SEASON_IMAGE[s]}", SEASON_YEARS[s], f"Season {s}",
-                          (f"{seasons_live[s]} of {SEASON_TOTAL[s]} episodes live · {'Blu-ray' if s >= 10 else 'DVD'}" if seasons_live[s] else f"{SEASON_TOTAL[s]} episodes · in preparation"), seasons_live[s] > 0) for s in range(1, 12))
+    def film_card(f):
+        return card(f"/screencaps/{f['slug']}/", f["still"], f"{f['kind']} · {f['year']}", f["title"], (f"{len(json.load(open(f['source'] / 'index.json'))):,} frames · {f['media']}" if f["source"] else f["blurb"]), bool(f["source"]))
+    def season_card(s):
+        return card(f"/screencaps/season-{s}/", f"/assets/transcript-stills/{SEASON_IMAGE[s]}", SEASON_YEARS[s], f"Season {s}",
+                    (f"{seasons_live[s]} of {SEASON_TOTAL[s]} episodes live · {'Blu-ray' if s >= 10 else 'DVD'}" if seasons_live[s] else f"{SEASON_TOTAL[s]} episodes · in preparation"), seasons_live[s] > 0)
+    # release order: Fight the Future after Season 5, I Want to Believe after Season 9
+    cards = ""
+    for s in range(1, 12):
+        cards += season_card(s)
+        if s == 5: cards += film_card(films[0])
+        if s == 9: cards += film_card(films[1])
     live_titles = sum(1 for f in films if f["source"]) + sum(seasons_live.values())
     (out / "index.html").write_text(page("Screencaps", '<a href="/archive/">Archive</a> &nbsp;/&nbsp; Screencaps', "Frame by frame", "Screencaps",
                                          "Captures taken at every shot change, tagged by who is on screen and searchable by timecode — Blu-ray for the films and Seasons 10–11, DVD for Seasons 1–9. Episodes go live as they are processed.",
