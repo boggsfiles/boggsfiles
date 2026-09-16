@@ -1,0 +1,500 @@
+{
+ "speakers": {
+  "14": "Father Joe",
+  "15": "Father Joe",
+  "20": "Father Joe",
+  "21": "Father Joe",
+  "23": "Father Joe",
+  "24": "Consulting Doctor",
+  "25": "Consulting Doctor",
+  "27": "Consulting Doctor",
+  "28": "Consulting Doctor",
+  "30": "Consulting Doctor",
+  "36": "Dana Scully",
+  "41": "Dana Scully",
+  "42": "Consulting Doctor",
+  "45": "Christian Fearon",
+  "49": "Mosley Drummy",
+  "50": "Mosley Drummy",
+  "51": "Dana Scully",
+  "53": "Mosley Drummy",
+  "56": "Mosley Drummy",
+  "57": "Mosley Drummy",
+  "62-69": "Fox Mulder",
+  "84": "Fox Mulder",
+  "105": "Mosley Drummy",
+  "106": "Dakota Whitney",
+  "107": "Mosley Drummy",
+  "124": "Fox Mulder",
+  "140": "Mosley Drummy",
+  "159": "Fox Mulder",
+  "163": "Mosley Drummy",
+  "164": "Dana Scully",
+  "165": "Mosley Drummy",
+  "166": "Mosley Drummy",
+  "172-174": "Television",
+  "176": "Television",
+  "177": "Television",
+  "179": "Television",
+  "178": "Father Joe",
+  "189": "Father Joe",
+  "227": "Dana Scully",
+  "228": "Dana Scully",
+  "230": "Dana Scully",
+  "240": "Dana Scully",
+  "241": "Dana Scully",
+  "243": "Dana Scully",
+  "244": "Dana Scully",
+  "245": "Fox Mulder",
+  "246": "Dana Scully",
+  "272": "Father Joe",
+  "283": "Dakota Whitney",
+  "284": "Dakota Whitney",
+  "285": "Fox Mulder",
+  "286": "Dakota Whitney",
+  "300": "Father Joe",
+  "301": "Father Joe",
+  "305": "Father Joe",
+  "306": "Father Joe",
+  "312": "Fox Mulder",
+  "313": "Dana Scully",
+  "314": "Dana Scully",
+  "323": "Dana Scully",
+  "353": "Dana Scully",
+  "354": "Fox Mulder",
+  "375": "Dana Scully",
+  "376": "Fox Mulder",
+  "407": "Mosley Drummy",
+  "408": "Dana Scully",
+  "409": "Dakota Whitney",
+  "414": "Dakota Whitney",
+  "416": "Father Joe",
+  "417": "Dakota Whitney",
+  "432": "Mosley Drummy",
+  "433": "Fox Mulder",
+  "434": "Father Joe",
+  "438": "Father Joe",
+  "440": "Fox Mulder",
+  "442": "Dana Scully",
+  "445": "Fox Mulder",
+  "450-452": "Fox Mulder",
+  "457": "Dana Scully",
+  "465": "Fox Mulder",
+  "469": "Father Joe",
+  "483": "Cheryl Cunningham",
+  "487": "Janke Dacyshyn",
+  "490": "Cheryl Cunningham",
+  "492": "Father Ybarra",
+  "493": "Father Ybarra",
+  "494": "Dana Scully",
+  "495": "Father Ybarra",
+  "513": "Dana Scully",
+  "514": "Dana Scully",
+  "518": "Father Ybarra",
+  "528-530": "Fox Mulder",
+  "533": "Fox Mulder",
+  "534": "Fox Mulder",
+  "552": "Fox Mulder",
+  "553": "Dakota Whitney",
+  "554": "Dakota Whitney",
+  "555": "Fox Mulder",
+  "556": "Fox Mulder",
+  "564": "Father Joe",
+  "567": "Mosley Drummy",
+  "568": "Mosley Drummy",
+  "571": "Father Joe",
+  "578": "Fox Mulder",
+  "579-581": "Mosley Drummy",
+  "600": "Fox Mulder",
+  "601-603": "Dakota Whitney",
+  "604": "Fox Mulder",
+  "610": "Elderly Gent",
+  "615": "Elderly Gent",
+  "617": "Dana Scully",
+  "626": "Dana Scully",
+  "627": "Fox Mulder",
+  "629": "Dana Scully",
+  "630": "Fox Mulder",
+  "631": "Dana Scully",
+  "639": "Fox Mulder",
+  "642": "Fox Mulder",
+  "650": "Dana Scully",
+  "651": "Dana Scully",
+  "652": "Fox Mulder",
+  "653": "Fox Mulder",
+  "655": "Dana Scully",
+  "656": "Fox Mulder",
+  "657": "Dana Scully",
+  "658": "Fox Mulder",
+  "659": "Fox Mulder",
+  "660": "Dana Scully",
+  "671": "Dana Scully",
+  "672": "Dana Scully",
+  "677": "Fox Mulder",
+  "685": "Dana Scully",
+  "688": "Fox Mulder",
+  "709": "Blair Fearon",
+  "723-730": "Robert Koell",
+  "731": "Janke Dacyshyn",
+  "732": "Robert Koell",
+  "733": "Janke Dacyshyn",
+  "734": "Janke Dacyshyn",
+  "735-737": "Robert Koell",
+  "738": "Janke Dacyshyn",
+  "739": "Robert Koell",
+  "740": "Janke Dacyshyn",
+  "741": "Robert Koell",
+  "742": "Robert Koell",
+  "743": "Janke Dacyshyn",
+  "744": "Janke Dacyshyn",
+  "745": "Robert Koell",
+  "746": "Robert Koell",
+  "747": "Janke Dacyshyn",
+  "748": "Robert Koell",
+  "749": "Robert Koell",
+  "750": "Janke Dacyshyn",
+  "751": "Robert Koell",
+  "752": "Janke Dacyshyn",
+  "754": "Father Joe",
+  "755": "Dana Scully",
+  "756": "Father Joe",
+  "782": "Father Joe",
+  "783": "Dana Scully",
+  "785": "Father Joe",
+  "791": "Dana Scully",
+  "795": "Dana Scully",
+  "796": "Father Joe",
+  "797": "Dana Scully",
+  "798": "Father Joe",
+  "799": "Father Joe",
+  "804": "Dana Scully",
+  "805-807": "Father Joe",
+  "808": "Dana Scully",
+  "809": "Dana Scully",
+  "820-825": "Dana Scully",
+  "827": "Fox Mulder",
+  "828": "Fox Mulder",
+  "833": "Dakota Whitney",
+  "834": "Dakota Whitney",
+  "837": "Dana Scully",
+  "838": "Dana Scully",
+  "840": "Fox Mulder",
+  "841": "Dana Scully",
+  "842": "Dakota Whitney",
+  "852": "Dana Scully",
+  "853": "Dana Scully",
+  "855": "Dana Scully",
+  "864": "Mosley Drummy",
+  "865": "Mosley Drummy",
+  "866-868": "Dakota Whitney",
+  "884": "Man",
+  "886": "Dakota Whitney",
+  "892": "Dakota Whitney",
+  "894": "Dakota Whitney",
+  "895": "Fox Mulder",
+  "896": "Dakota Whitney",
+  "899": "Fox Mulder",
+  "931": "Father Joe",
+  "936-938": "Dana Scully",
+  "939": "Father Joe",
+  "941": "Fox Mulder",
+  "942": "Dana Scully",
+  "943-945": "Fox Mulder",
+  "952": "Fox Mulder",
+  "954": "Fox Mulder",
+  "955": "Feed Store Proprietor",
+  "960": "Feed Store Proprietor",
+  "961": "Fox Mulder",
+  "962": "Feed Store Proprietor",
+  "965": "Feed Store Proprietor",
+  "967": "Feed Store Proprietor",
+  "969": "Feed Store Proprietor",
+  "970": "Janke Dacyshyn",
+  "971": "Feed Store Proprietor",
+  "972": "Janke Dacyshyn",
+  "973": "Janke Dacyshyn",
+  "977": "Fox Mulder",
+  "978": "Fox Mulder",
+  "979-982": "Dana Scully",
+  "988": "Answering Agent",
+  "998": "Dana Scully",
+  "1000": "Mosley Drummy",
+  "1005": "Cheryl Cunningham",
+  "1007": "Cheryl Cunningham",
+  "1023": "Dana Scully",
+  "1028": "Uniformed Cop",
+  "1037": "Walter Skinner",
+  "1039": "Walter Skinner",
+  "1040-1044": "Dana Scully",
+  "1050": "Walter Skinner",
+  "1054-1056": "Dana Scully",
+  "1057": "Walter Skinner",
+  "1058": "Dana Scully",
+  "1066": "Dana Scully",
+  "1067": "Walter Skinner",
+  "1068": "Dana Scully",
+  "1069": "Dana Scully",
+  "1070": "Fox Mulder",
+  "1071": "Fox Mulder",
+  "1073": "Walter Skinner",
+  "1075-1077": "Walter Skinner",
+  "1078-1082": "Dana Scully",
+  "1083": "Walter Skinner",
+  "1088": "Fox Mulder",
+  "1089": "Fox Mulder",
+  "1090": "Walter Skinner",
+  "1091": "Walter Skinner",
+  "1092": "Dana Scully",
+  "1107": "Fox Mulder",
+  "1108": "Fox Mulder",
+  "957": "Feed Store Proprietor",
+  "169": "Man",
+  "33": "Consulting Doctor",
+  "38": "Consulting Doctor",
+  "39": "Consulting Doctor",
+  "26": "Consulting Doctor",
+  "29": "Consulting Doctor",
+  "31": "Consulting Doctor"
+ },
+ "splits": {
+  "236": [
+   {
+    "text": "What are you doing?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Gonna take him for a ride.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "242": [
+   {
+    "text": "I want you here.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "This isn't my life anymore, Mulder.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "418": [
+   {
+    "text": "Did you find her?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No.",
+    "speaker": "Dakota Whitney"
+   }
+  ],
+  "419": [
+   {
+    "text": "What did you do?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What?",
+    "speaker": "Dakota Whitney"
+   }
+  ],
+  "441": [
+   {
+    "text": "Mulder.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "459": [
+   {
+    "text": "What are you doing?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "I'm trying to ignore you.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "551": [
+   {
+    "text": "Anything?",
+    "speaker": "Dakota Whitney"
+   },
+   {
+    "text": "No, I can't reach her.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "573": [
+   {
+    "text": "To go where?",
+    "speaker": "Mosley Drummy"
+   },
+   {
+    "text": "I don't know yet.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "574": [
+   {
+    "text": "I don't believe this.",
+    "speaker": "Mosley Drummy"
+   },
+   {
+    "text": "That's been your problem from the start.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "596": [
+   {
+    "text": "We're not quite finished.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "What is that?",
+    "speaker": "Dakota Whitney"
+   }
+  ],
+  "826": [
+   {
+    "text": "Who called you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No one.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "831": [
+   {
+    "text": "In custody?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No.",
+    "speaker": "Dakota Whitney"
+   }
+  ],
+  "839": [
+   {
+    "text": "It's the man in his visions, Scully.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Who?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "891": [
+   {
+    "text": "Where are you?",
+    "speaker": "Dakota Whitney"
+   },
+   {
+    "text": "Right here.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "897": [
+   {
+    "text": "I saw him.",
+    "speaker": "Dakota Whitney"
+   },
+   {
+    "text": "Where?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "953": [
+   {
+    "text": "Hey! Sorry to bother you.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I'm closed!",
+    "speaker": "Feed Store Proprietor"
+   }
+  ],
+  "1064": [
+   {
+    "text": "Listen.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What?",
+    "speaker": "Walter Skinner"
+   }
+  ],
+  "1088": [
+   {
+    "text": "Skinner?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Walter Skinner"
+   }
+  ]
+ },
+ "scenes": {
+  "1": "Somerset, West Virginia · The Snowfield",
+  "16": "Somerset · The Garage",
+  "24": "Our Lady of Sorrows Hospital · Conference Room",
+  "46": "Our Lady of Sorrows · Christian's Room",
+  "49": "Our Lady of Sorrows · Corridor",
+  "58": "Mulder and Scully's House · Mulder's Office",
+  "99": "Mulder and Scully's House",
+  "103": "FBI Headquarters · Outside",
+  "106": "FBI Headquarters · Hallway",
+  "108": "FBI Headquarters · Conference Room",
+  "163": "Richmond · Residential Complex",
+  "169": "Father Joe's Apartment · Outside",
+  "175": "Father Joe's Apartment",
+  "213": "Father Joe's Apartment · Outside",
+  "250": "The FBI Convoy",
+  "269": "Somerset · Monica Bannan's House",
+  "274": "Somerset · Outside the Garage",
+  "299": "Somerset · The Snowfield",
+  "313": "Our Lady of Sorrows · Christian's Room",
+  "324": "Our Lady of Sorrows · Corridor",
+  "345": "Mulder and Scully's Bedroom",
+  "389": "Mulder and Scully's Bathroom",
+  "406": "Mulder and Scully's Bedroom",
+  "410": "The FBI Convoy · Night",
+  "418": "Snowy Country Road",
+  "423": "The Search Site",
+  "433": "The Ice Field",
+  "471": "The Kennel",
+  "491": "Our Lady of Sorrows · Conference Room",
+  "528": "Mulder's Car",
+  "535": "FBI Forensics Lab",
+  "560": "FBI Headquarters · Conference Room",
+  "578": "Cheryl Cunningham's Crash Site",
+  "605": "The Natatorium",
+  "617": "Our Lady of Sorrows · Operating Room",
+  "622": "Our Lady of Sorrows · Corridor",
+  "705": "Our Lady of Sorrows · Corridor",
+  "723": "Richmond · Organ Transport Stop",
+  "754": "Father Joe's Apartment · Outside",
+  "757": "Father Joe's Apartment",
+  "820": "Father Joe's Apartment Building · Outside",
+  "857": "Downtown Richmond",
+  "861": "Medical Office Building",
+  "871": "Medical Office Building · Hallway",
+  "873": "Medical Office Building · Outside",
+  "900": "Hospital Corridor",
+  "912": "Hospital Oncology Ward",
+  "941": "Hospital Corridor",
+  "952": "Nutter's Feed Store",
+  "978": "Hospital Corridor",
+  "987": "FBI Headquarters",
+  "1005": "The Kennel",
+  "1022": "Outside the Kennel",
+  "1037": "The Kennel · Operating Room",
+  "1050": "Snowy Country Highway",
+  "1085": "Outside the Kennel",
+  "1094": "Mulder's Home Office"
+ }
+}

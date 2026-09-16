@@ -114,7 +114,7 @@ MOVIES = [
     ("fight-the-future", "Fight the Future", "M1", "1998", "Mulder and Scully follow a Dallas bombing to a buried virus, a field of bees, and the ice of Antarctica."),
     ("i-want-to-believe", "I Want to Believe", "M2", "2008", "A psychic priest's visions pull Mulder and Scully back into an FBI search for a missing agent."),
 ]
-MOVIES_LIVE = {"fight-the-future"}
+MOVIES_LIVE = {"fight-the-future", "i-want-to-believe"}
 
 SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9}
 
@@ -129,7 +129,7 @@ BASE = '''*{box-sizing:border-box}html{background:#08100d;color:#eeeee8}body{mar
 
 def season_landing() -> str:
     cards=[]
-    for season in range(1,10):
+    for season in range(1,12):
         live=season in SEASONS
         count=len(SEASONS.get(season, []))
         image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "redux" if season == 5 else "the-beginning" if season == 6 else "the-sixth-extinction" if season == 7 else "within" if season == 8 else "nothing-important-happened-today" if season == 9 else "little-green-men"
@@ -143,7 +143,7 @@ def season_landing() -> str:
           <div class="season-copy"><div><span class="eyebrow">{movies_live} of {len(MOVIES)} transcripts live</span><h2>The Movies</h2></div><b>Explore the films →</b></div></a>''')
     return f'''<!doctype html><html lang="en"><head><title>Transcripts - Boggsfiles</title><meta name="description" content="Browse character-labelled X-Files episode transcripts by season.">{HEAD}<style>{BASE}
     .transcript-landing .shell{{width:min(1200px,calc(100% - 48px))}}@media(max-width:560px){{.transcript-landing .shell{{width:calc(100% - 28px)}}}}.seasons{{padding:72px 0 0}}.season-grid{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}}.season-card{{background:#0e1412;min-height:390px;display:flex;flex-direction:column;transition:.2s}}.season-card:hover{{background:#131a17}}.season-visual{{height:235px;position:relative;overflow:hidden;background:#111714}}.season-visual img{{width:100%;height:100%;object-fit:cover;filter:saturate(.78) brightness(.72);transition:.3s}}.season-card:hover img{{transform:scale(1.02)}}.season-visual>span{{position:absolute;right:20px;bottom:-30px;font:500 9rem/1 "Oswald",sans-serif;color:#1b231f;z-index:1}}.season-visual img+span{{display:none}}.season-copy{{padding:28px 30px 32px;display:flex;align-items:end;justify-content:space-between;gap:20px;flex:1}}.season-copy h2{{font:400 2.8rem/1 "Oswald",sans-serif;text-transform:uppercase;margin:8px 0 0}}.season-copy>b{{font-size:.55rem;text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}}.soon{{color:#929c95}}@media(max-width:1000px){{.season-grid{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:620px){{.season-grid{{grid-template-columns:1fr}}.season-copy{{align-items:start;flex-direction:column}}}}
-    </style>{ASSETS}</head><body class="transcript-landing">{HEADER}<main><section class="hero"><div class="shell"><div class="crumb"><a href="/archive/">Archive</a> &nbsp;/&nbsp; Transcripts</div><div class="eyebrow">The aired record</div><h1>Transcripts</h1><p>Character-labelled episode dialogue prepared from the official DVD subtitle tracks, organized by season and designed for searching, reference, and close reading.</p><div class="summary"><div class="stat"><b>9</b><span>Seasons</span></div><div class="stat"><b>{sum(len(episodes) for episodes in SEASONS.values())}</b><span>Transcripts live</span></div><div class="stat"><b>DVD</b><span>Subtitle source</span></div></div></div></section><section class="seasons"><div class="shell"><div class="season-grid">{''.join(cards)}</div></div></section></main><footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/archive/">Archive</a></span></div></footer></body></html>'''
+    </style>{ASSETS}</head><body class="transcript-landing">{HEADER}<main><section class="hero"><div class="shell"><div class="crumb"><a href="/archive/">Archive</a> &nbsp;/&nbsp; Transcripts</div><div class="eyebrow">The aired record</div><h1>Transcripts</h1><p>Character-labelled episode and film dialogue prepared from the official DVD and Blu-ray subtitle tracks, organized by season and designed for searching, reference, and close reading.</p><div class="summary"><div class="stat"><b>11</b><span>Seasons</span></div><div class="stat"><b>{len(MOVIES)}</b><span>Movies</span></div><div class="stat"><b>{sum(len(episodes) for episodes in SEASONS.values()) + movies_live}</b><span>Transcripts live</span></div><div class="stat"><b>DVD · Blu-ray</b><span>Subtitle sources</span></div></div></div></section><section class="seasons"><div class="shell"><div class="season-grid">{''.join(cards)}</div></div></section></main><footer><div class="shell footer-row">BOGGSFILES · TRANSCRIPT ARCHIVE <span><a href="/">Home</a> · <a href="/archive/">Archive</a></span></div></footer></body></html>'''
 
 
 def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:

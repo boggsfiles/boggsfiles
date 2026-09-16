@@ -15,10 +15,18 @@ import argparse, json, re
 from pathlib import Path
 import build_transcript as bt
 
+for _label, _name in {"WHITNEY": "Dakota Whitney", "DRUMMY": "Mosley Drummy", "FATHER JOE": "Father Joe", "FBI AGENT": "FBI Agent",
+                      "MRS. FEARON": "Margaret Fearon", "MR. FEARON": "Blair Fearon", "MAN": "Man", "MAN 1": "Man", "MAN 2": "Man",
+                      "DRIVER": "Driver", "COP": "Police Officer", "SKINNER": "Walter Skinner", "YBARRA": "Father Ybarra"}.items():
+    bt.SPEAKER_NAMES.setdefault(_label, _name)
+
 WINDOW_BACK, WINDOW_FWD = 2, 14
 MATCH, WEAK = 0.60, 0.42
 
 SDH_LABELS = {"mulder": "Fox Mulder", "scully": "Dana Scully", "skinner": "Walter Skinner",
+              "whitney": "Dakota Whitney", "drummy": "Mosley Drummy", "father joe": "Father Joe", "fbi agent": "FBI Agent",
+              "mrs. fearon": "Margaret Fearon", "mr. fearon": "Blair Fearon", "ybarra": "Father Ybarra", "father ybarra": "Father Ybarra",
+              "cop": "Police Officer", "driver": "Driver", "man 1": "Man", "man 2": "Man", "man #1": "Man", "man #2": "Man", "man #3": "Man",
               "kurtzweil": "Dr. Alvin Kurtzweil", "cassidy": "Jana Cassidy", "byers": "John Fitzgerald Byers",
               "frohike": "Melvin Frohike", "langly": "Richard Langly"}
 
@@ -169,7 +177,8 @@ def main():
         rev = json.loads(a.reviewed.read_text())
         overrides.update(rev.get("speakers", {}))
         scene_breaks = {int(k): v for k, v in rev.get("scenes", {}).items()}
-    cues, source_cues = bt.parse_srt(a.srt)
+    splits = rev.get("splits", {}) if a.reviewed else {}
+    cues, source_cues = bt.parse_srt(a.srt, splits)
     turns = bt.parse_reference(a.reference)
     aligned = align(cues, turns, overrides)
     if scene_breaks:
