@@ -33,10 +33,10 @@ SDH_LABELS = {"mulder": "Fox Mulder", "scully": "Dana Scully", "skinner": "Walte
 
 def label_to_speaker(label: str) -> str:
     key = re.sub(r"\s+", " ", label.strip().lower())
-    key = re.sub(r"\s*(on phone|on tv|on radio|on p\.a\.|over radio|over phone)$", "", key)
+    key = re.sub(r"\s*(on phone|on tv|on laptop|on radio|on p\.a\.|on speaker|on intercom|on video|on tape|on monitor|over radio|over phone)$", "", key)
     if key in SDH_LABELS:
         return SDH_LABELS[key]
-    return label.strip().title()
+    return re.sub(r"(^|[\s\-/.])([a-z])", lambda m: m.group(1) + m.group(2).upper(), label.strip().lower())
 
 
 def sim2(a: str, b: str) -> float:
@@ -127,6 +127,15 @@ def align(cues, turns, overrides):
                 scene_key = turn.scene; scene_seq += 1
                 location = turn.location or f"Scene {scene_seq:02d}"; recent = []
             speaker, score = turn.speaker, s
+        # continuation: SDH captions start a continued sentence in lowercase, and a cue with no
+        # closing punctuation carries on in the next cue -- same speaker in both cases
+        prev = next((o for o in reversed(out) if o["kind"] == "dialogue"), None)
+        txt = cue["text"].strip()
+        lower_start = bool(re.match(r"^[\(\[]?[a-z]", txt)) and not re.match(r"^(i|i'm|i'd|i'll|i've)\b", txt)
+        open_prev = bool(prev) and not re.search(r"[.?!…\"”)\]]\s*$|--\s*$|—\s*$", prev["text"].strip())
+        if prev and (lower_start or (open_prev and (idx not in matched or score < 0.8))) and not forced \
+                and not cue.get("explicit_speaker") and prev["number"] >= cue["number"] - 1:
+            speaker, score = prev["speaker"], 0.7
         if forced:
             speaker, score = forced, 1.0
         elif cue.get("explicit_speaker") and not bt.is_sound_label(cue["explicit_speaker"]):
@@ -168,7 +177,18 @@ def main():
     ap.add_argument("--overrides", type=Path); ap.add_argument("--proper", default="")
     ap.add_argument("--reviewed", type=Path, help="reviewed JSON with 'speakers' and 'scenes' (cue -> location)")
     ap.add_argument("--movie", action="store_true"); ap.add_argument("--year", default="")
+    ap.add_argument("--keep-case", action="store_true", help="captions are already mixed-case (Blu-ray SDH): don't lowercase and re-capitalise")
+    ap.add_argument("--labels", default="", help="extra SDH speaker labels: 'GARNER=Garner,MR. O'MALLEY=Tad O'Malley'")
     a = ap.parse_args()
+    for pair in [p for p in a.labels.split(",") if "=" in p]:
+        k, v = pair.split("=", 1); bt.SPEAKER_NAMES[k.strip().upper()] = v.strip(); SDH_LABELS[k.strip().lower()] = v.strip()
+    if a.keep_case:
+        def _keep(value: str) -> str:
+            value = re.sub(r"\s+", " ", value.strip())
+            value = re.sub(r"\bi\b", "I", value)
+            return re.sub(r"(^|(?<=[.!?]\s))([a-z])", lambda m: m.group(1) + m.group(2).upper(), value)
+        bt.readable_case = _keep
+        bt.ACCEPT_ALL_CAPS_LABELS = True
     for word in [w.strip() for w in a.proper.split(",") if w.strip()]:
         bt.PROPER_CASE[word.lower()] = word
     overrides = json.loads(a.overrides.read_text()) if a.overrides else {}
@@ -179,6 +199,12 @@ def main():
         scene_breaks = {int(k): v for k, v in rev.get("scenes", {}).items()}
     splits = rev.get("splits", {}) if a.reviewed else {}
     cues, source_cues = bt.parse_srt(a.srt, splits)
+    # reviewed "text": cue number -> corrected caption text (OCR one-offs); "drop": cue numbers to remove
+    fixes = rev.get("text", {}) if a.reviewed else {}
+    drop = set(int(k) for k in rev.get("drop", [])) if a.reviewed else set()
+    for c in cues:
+        if str(c["number"]) in fixes and c.get("subindex", 0) == 0: c["text"] = fixes[str(c["number"])]
+    cues = [c for c in cues if c["number"] not in drop]
     turns = bt.parse_reference(a.reference)
     aligned = align(cues, turns, overrides)
     if scene_breaks:

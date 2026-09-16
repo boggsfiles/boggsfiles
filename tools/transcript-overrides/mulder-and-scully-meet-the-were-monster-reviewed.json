@@ -1,0 +1,537 @@
+{
+ "speakers": {
+  "3-4": "Stoner Girl",
+  "7": "Stoner Girl",
+  "9": "Stoner Girl",
+  "14": "Stoner Girl",
+  "16": "Stoner Girl",
+  "19": "Stoner Girl",
+  "26": "Stoner Girl",
+  "29": "Stoner Girl",
+  "31-32": "Stoner Girl",
+  "5-6": "Stoner Guy",
+  "8": "Stoner Guy",
+  "10-13": "Stoner Guy",
+  "15": "Stoner Guy",
+  "17": "Stoner Guy",
+  "20": "Stoner Guy",
+  "24-25": "Stoner Guy",
+  "27": "Stoner Guy",
+  "30": "Stoner Guy",
+  "33-35": "Stoner Guy",
+  "28": "Pasha",
+  "149-150": "Pasha",
+  "153": "Pasha",
+  "156-160": "Pasha",
+  "162": "Pasha",
+  "178-179": "Pasha",
+  "184": "Pasha",
+  "192-193": "Pasha",
+  "819-821": "Pasha",
+  "825": "Pasha",
+  "36": "Dana Scully",
+  "39": "Dana Scully",
+  "42": "Dana Scully",
+  "59": "Dana Scully",
+  "75-79": "Dana Scully",
+  "82": "Dana Scully",
+  "84-88": "Dana Scully",
+  "91": "Dana Scully",
+  "93-95": "Dana Scully",
+  "100-101": "Dana Scully",
+  "105": "Dana Scully",
+  "107": "Dana Scully",
+  "110-116": "Dana Scully",
+  "164": "Dana Scully",
+  "167-169": "Dana Scully",
+  "172": "Dana Scully",
+  "174": "Dana Scully",
+  "186-187": "Dana Scully",
+  "189": "Dana Scully",
+  "194": "Dana Scully",
+  "209": "Dana Scully",
+  "211": "Dana Scully",
+  "214": "Dana Scully",
+  "219-222": "Dana Scully",
+  "227": "Dana Scully",
+  "230-231": "Dana Scully",
+  "234-236": "Dana Scully",
+  "240": "Dana Scully",
+  "242": "Dana Scully",
+  "244-247": "Dana Scully",
+  "347": "Dana Scully",
+  "349-350": "Dana Scully",
+  "357-358": "Dana Scully",
+  "362": "Dana Scully",
+  "37-38": "Fox Mulder",
+  "40-41": "Fox Mulder",
+  "43-58": "Fox Mulder",
+  "60-74": "Fox Mulder",
+  "80-81": "Fox Mulder",
+  "83": "Fox Mulder",
+  "89-90": "Fox Mulder",
+  "92": "Fox Mulder",
+  "97-99": "Fox Mulder",
+  "102-104": "Fox Mulder",
+  "106": "Fox Mulder",
+  "108-109": "Fox Mulder",
+  "117-120": "Fox Mulder",
+  "128": "Fox Mulder",
+  "130-131": "Fox Mulder",
+  "135": "Fox Mulder",
+  "139": "Fox Mulder",
+  "143": "Fox Mulder",
+  "148": "Fox Mulder",
+  "151-152": "Fox Mulder",
+  "154-155": "Fox Mulder",
+  "161": "Fox Mulder",
+  "165-166": "Fox Mulder",
+  "171": "Fox Mulder",
+  "180-181": "Fox Mulder",
+  "188": "Fox Mulder",
+  "190": "Fox Mulder",
+  "195": "Fox Mulder",
+  "197": "Fox Mulder",
+  "199-201": "Fox Mulder",
+  "203-206": "Fox Mulder",
+  "208": "Fox Mulder",
+  "210": "Fox Mulder",
+  "212": "Fox Mulder",
+  "215-218": "Fox Mulder",
+  "223-226": "Fox Mulder",
+  "228-229": "Fox Mulder",
+  "232-233": "Fox Mulder",
+  "237-239": "Fox Mulder",
+  "241": "Fox Mulder",
+  "243": "Fox Mulder",
+  "121-125": "Annabelle",
+  "129": "Annabelle",
+  "132-134": "Annabelle",
+  "136-138": "Annabelle",
+  "140-142": "Annabelle",
+  "144": "Annabelle",
+  "146": "Annabelle",
+  "249": "Motel Manager",
+  "253-259": "Motel Manager",
+  "261": "Motel Manager",
+  "268-269": "Motel Manager",
+  "271-272": "Motel Manager",
+  "280-281": "Motel Manager",
+  "283-284": "Motel Manager",
+  "289": "Motel Manager",
+  "294": "Motel Manager",
+  "298": "Motel Manager",
+  "306-308": "Motel Manager",
+  "311": "Motel Manager",
+  "313-314": "Motel Manager",
+  "252": "Fox Mulder",
+  "256": "Fox Mulder",
+  "265-267": "Fox Mulder",
+  "270": "Fox Mulder",
+  "273-279": "Fox Mulder",
+  "282": "Fox Mulder",
+  "309-310": "Fox Mulder",
+  "312": "Fox Mulder",
+  "315-346": "Fox Mulder",
+  "348": "Fox Mulder",
+  "352-356": "Fox Mulder",
+  "359-361": "Fox Mulder",
+  "363-364": "Fox Mulder",
+  "285-288": "Guy Mann",
+  "290": "Guy Mann",
+  "292-293": "Guy Mann",
+  "295-296": "Guy Mann",
+  "365-382": "Dr. Rumanovitch",
+  "384-388": "Dr. Rumanovitch",
+  "390-393": "Dr. Rumanovitch",
+  "395-398": "Dr. Rumanovitch",
+  "400": "Dr. Rumanovitch",
+  "404-408": "Dr. Rumanovitch",
+  "410": "Dr. Rumanovitch",
+  "412-413": "Dr. Rumanovitch",
+  "415-418": "Dr. Rumanovitch",
+  "383": "Fox Mulder",
+  "389": "Fox Mulder",
+  "394": "Fox Mulder",
+  "399": "Fox Mulder",
+  "401-403": "Fox Mulder",
+  "409": "Fox Mulder",
+  "411": "Fox Mulder",
+  "414": "Fox Mulder",
+  "419": "Fox Mulder",
+  "424": "Fox Mulder",
+  "426": "Fox Mulder",
+  "439-441": "Fox Mulder",
+  "448-449": "Fox Mulder",
+  "460-464": "Fox Mulder",
+  "466": "Fox Mulder",
+  "469": "Fox Mulder",
+  "478": "Fox Mulder",
+  "482-484": "Fox Mulder",
+  "489-490": "Fox Mulder",
+  "493": "Fox Mulder",
+  "495": "Fox Mulder",
+  "509-510": "Fox Mulder",
+  "516-517": "Fox Mulder",
+  "519": "Fox Mulder",
+  "521": "Fox Mulder",
+  "523-524": "Fox Mulder",
+  "541": "Fox Mulder",
+  "543": "Fox Mulder",
+  "552-553": "Fox Mulder",
+  "559-560": "Fox Mulder",
+  "569": "Fox Mulder",
+  "575": "Fox Mulder",
+  "622": "Fox Mulder",
+  "656": "Fox Mulder",
+  "658": "Fox Mulder",
+  "670-671": "Fox Mulder",
+  "673-674": "Fox Mulder",
+  "680": "Fox Mulder",
+  "682": "Fox Mulder",
+  "687": "Fox Mulder",
+  "689": "Fox Mulder",
+  "692": "Fox Mulder",
+  "699-701": "Fox Mulder",
+  "718": "Fox Mulder",
+  "721": "Fox Mulder",
+  "728-729": "Fox Mulder",
+  "731": "Fox Mulder",
+  "733-736": "Fox Mulder",
+  "739": "Fox Mulder",
+  "742-744": "Fox Mulder",
+  "754": "Fox Mulder",
+  "770": "Fox Mulder",
+  "772-774": "Fox Mulder",
+  "776-777": "Fox Mulder",
+  "779-783": "Fox Mulder",
+  "786": "Fox Mulder",
+  "790": "Fox Mulder",
+  "792": "Fox Mulder",
+  "794": "Fox Mulder",
+  "801-805": "Fox Mulder",
+  "808": "Fox Mulder",
+  "812": "Fox Mulder",
+  "827-829": "Fox Mulder",
+  "834-836": "Fox Mulder",
+  "840-841": "Fox Mulder",
+  "843": "Fox Mulder",
+  "845-846": "Fox Mulder",
+  "848-849": "Fox Mulder",
+  "856": "Fox Mulder",
+  "861": "Fox Mulder",
+  "863-864": "Fox Mulder",
+  "870": "Fox Mulder",
+  "872": "Fox Mulder",
+  "879-880": "Fox Mulder",
+  "420-422": "Dana Scully",
+  "425": "Dana Scully",
+  "427-430": "Dana Scully",
+  "434": "Dana Scully",
+  "436-438": "Dana Scully",
+  "442-443": "Dana Scully",
+  "707-711": "Dana Scully",
+  "713": "Dana Scully",
+  "715-717": "Dana Scully",
+  "771": "Dana Scully",
+  "775": "Dana Scully",
+  "778": "Dana Scully",
+  "785": "Dana Scully",
+  "787-789": "Dana Scully",
+  "791": "Dana Scully",
+  "793": "Dana Scully",
+  "795-799": "Dana Scully",
+  "807": "Dana Scully",
+  "809-811": "Dana Scully",
+  "813-818": "Dana Scully",
+  "822-824": "Dana Scully",
+  "830-833": "Dana Scully",
+  "837": "Dana Scully",
+  "839": "Dana Scully",
+  "433": "Guy Mann",
+  "450-459": "Guy Mann",
+  "465": "Guy Mann",
+  "467-468": "Guy Mann",
+  "470-473": "Guy Mann",
+  "475-477": "Guy Mann",
+  "480-481": "Guy Mann",
+  "485-488": "Guy Mann",
+  "491-492": "Guy Mann",
+  "496-498": "Guy Mann",
+  "501": "Guy Mann",
+  "511-515": "Guy Mann",
+  "518": "Guy Mann",
+  "520": "Guy Mann",
+  "522": "Guy Mann",
+  "525-540": "Guy Mann",
+  "542": "Guy Mann",
+  "544-551": "Guy Mann",
+  "554-558": "Guy Mann",
+  "561-568": "Guy Mann",
+  "570-571": "Guy Mann",
+  "574": "Guy Mann",
+  "576-579": "Guy Mann",
+  "583": "Guy Mann",
+  "585-593": "Guy Mann",
+  "599-605": "Guy Mann",
+  "607-621": "Guy Mann",
+  "623-655": "Guy Mann",
+  "657": "Guy Mann",
+  "659-660": "Guy Mann",
+  "662-667": "Guy Mann",
+  "669": "Guy Mann",
+  "672": "Guy Mann",
+  "675": "Guy Mann",
+  "677": "Guy Mann",
+  "679": "Guy Mann",
+  "681": "Guy Mann",
+  "683-686": "Guy Mann",
+  "688": "Guy Mann",
+  "690-691": "Guy Mann",
+  "693-698": "Guy Mann",
+  "702-704": "Guy Mann",
+  "706": "Guy Mann",
+  "714": "Guy Mann",
+  "719-720": "Guy Mann",
+  "722-727": "Guy Mann",
+  "730": "Guy Mann",
+  "732": "Guy Mann",
+  "737-738": "Guy Mann",
+  "740-741": "Guy Mann",
+  "745-748": "Guy Mann",
+  "750-753": "Guy Mann",
+  "755-767": "Guy Mann",
+  "842": "Guy Mann",
+  "844": "Guy Mann",
+  "847": "Guy Mann",
+  "850-854": "Guy Mann",
+  "857-860": "Guy Mann",
+  "862": "Guy Mann",
+  "865-869": "Guy Mann",
+  "871": "Guy Mann",
+  "873-878": "Guy Mann",
+  "572-573": "Drive-Thru Speaker",
+  "826": "Officer"
+ },
+ "splits": {
+  "96": [
+   {
+    "text": "where they found three more victims.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Hmm.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "145": [
+   {
+    "text": "Are you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Annabelle"
+   }
+  ],
+  "170": [
+   {
+    "text": "Mulder...",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "It's this new camera app.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "182": [
+   {
+    "text": "Are you taking picture or video?",
+    "speaker": "Pasha"
+   },
+   {
+    "text": "I don't know.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "183": [
+   {
+    "text": "Well, go to \"settings.\"",
+    "speaker": "Pasha"
+   },
+   {
+    "text": "Where?",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "202": [
+   {
+    "text": "Mulder...",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "This one,",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "207": [
+   {
+    "text": "But what is it?",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "It's a close-up.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "260": [
+   {
+    "text": "Of course not.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Exactly.",
+    "speaker": "Motel Manager"
+   }
+  ],
+  "351": [
+   {
+    "text": "But what about the facts?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "What facts?",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "423": [
+   {
+    "text": "Really?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah. (CHUCKLES)",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "435": [
+   {
+    "text": "What the hell happened?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I don't know.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "649": [
+   {
+    "text": "Daggoo?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "No.",
+    "speaker": "Guy Mann"
+   }
+  ],
+  "676": [
+   {
+    "text": "It's a cure!",
+    "speaker": "Guy Mann"
+   },
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "678": [
+   {
+    "text": "I'll do the surgery.",
+    "speaker": "Guy Mann"
+   },
+   {
+    "text": "Completely different.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "784": [
+   {
+    "text": "Where are you?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "I'm at the animal shelter.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "855": [
+   {
+    "text": "Do you want a hat?",
+    "speaker": "Guy Mann"
+   },
+   {
+    "text": "No.",
+    "speaker": "Fox Mulder"
+   }
+  ]
+ },
+ "text": {
+  "69": "No, I am, I am.",
+  "77": "It has a monster in it.",
+  "124": "Or a solo... Nah.",
+  "237": "So we're looking for a man-sized horned lizard",
+  "511": "I am. That's how the whole thing started.",
+  "526": "My transformation wasn't just physical but mental.",
+  "528": "I became conscious of my own self-consciousness,",
+  "530": "\"I'm naked!\"",
+  "535": "but through some primordial instinct, I...",
+  "603": "But now that I had a job,",
+  "619": "it just clouded my thoughts.",
+  "631": "But the next day, when I came home from work...",
+  "679": "I don't care how much it costs. I'll do it.",
+  "762": "I'm not delusional. I know what I am. I'm no monster.",
+  "850": "(SCOFFS) A little bit absurd?"
+ },
+ "scenes": {
+  "1": "Shawan, Oregon · The Woods",
+  "36": "FBI Headquarters · The X-Files Office",
+  "78": "Oregon · The Wilderness",
+  "95": "The Lair",
+  "121": "Truck Stop · Night",
+  "129": "Truck Stop Diner",
+  "148": "Truck Stop · Behind the Diner",
+  "178": "Truck Stop · Trailer Alley",
+  "198": "Truck Stop · Porta Potti",
+  "199": "The Motel · Scully's Room",
+  "249": "The Motel · Night",
+  "252": "The Motel · Manager's Office",
+  "285": "The Manager's Story · The Crawl Space",
+  "309": "The Motel · Manager's Office",
+  "315": "The Motel · Scully's Room",
+  "365": "Dr. Rumanovitch's Office",
+  "420": "The Phone Store · Outside",
+  "433": "Smart Phones Is Us",
+  "435": "Smart Phones Is Us · Aftermath",
+  "448": "The Cemetery",
+  "501": "Guy's Story · The Woods",
+  "509": "The Cemetery",
+  "526": "Guy's Story · The Lair",
+  "541": "The Cemetery",
+  "547": "Guy's Story · Smart Phones Is Us",
+  "552": "The Cemetery",
+  "571": "Guy's Story · The Drive-Thru",
+  "575": "The Cemetery",
+  "585": "Guy's Story · The Motel Room",
+  "605": "Guy's Story · Back at Work",
+  "612": "The Cemetery",
+  "625": "Guy's Story · Daggoo",
+  "638": "The Cemetery",
+  "662": "Guy's Story · The Truck Stop",
+  "669": "The Cemetery",
+  "706": "Guy's Story · Smart Phones Is Us",
+  "718": "The Cemetery",
+  "770": "The Cemetery · Scully Calls",
+  "807": "Animal Control Shelter",
+  "840": "The Wilderness · Night"
+ }
+}

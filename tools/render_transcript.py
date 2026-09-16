@@ -20,7 +20,7 @@ def render(data: dict) -> str:
     episode = data["episode"]
     season = int(data["season"])
     episode_number = int(data.get("episode_number", 1))
-    season_episode_total = 20 if season == 9 else 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
+    season_episode_total = 6 if season == 10 else 10 if season == 11 else 20 if season == 9 else 21 if season == 8 else 22 if season in (6,7) else 20 if season == 5 else 25 if season == 2 else 24
     production_code = data["production_code"]
     airdate = data.get("airdate", "September 10, 1993")
     previous_url = data.get("previous_url", "/transcripts/")
@@ -29,14 +29,15 @@ def render(data: dict) -> str:
     next_title = data.get("next_title", "")
     movie = bool(data.get("movie"))
     year = data.get("year", "")
-    source_label = "Blu-ray subtitle track" if movie else "DVD subtitle track"
+    bluray = movie or season >= 10
+    source_label = "Blu-ray subtitle track" if bluray else "DVD subtitle track"
     crumb_mid = ('<a href="/transcripts/movies/">Movies</a>' if movie
                  else f'<a href="/transcripts/season-{season}/">Season {season}</a>')
     eyebrow = (f"Feature film · {year}" if movie
                else f"Season {season} · Episode {('19–20' if season == 9 and episode_number == 19 else episode_number)}")
     file_label = (f"Film {episode_number} / 2" if movie
                   else f"{('19–20' if season == 9 and episode_number == 19 else f'{episode_number:02d}')} / {season_episode_total}")
-    source_note = "Blu-ray subtitles" if movie else f"Season {season} DVD subtitles"
+    source_note = "Blu-ray subtitles" if movie else f"Season {season} {'Blu-ray' if bluray else 'DVD'} subtitles"
     date_label = "Theatrical release" if movie else "Original airdate"
     scenes: dict[int, list[dict]] = defaultdict(list)
     for entry in data["entries"]:
@@ -73,7 +74,7 @@ def render(data: dict) -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{esc(episode)} Transcript - Boggsfiles</title>
-  <meta name="description" content="Read the character-labelled transcript for The X-Files {esc(episode)}, prepared from the official {("Blu-ray subtitles" if movie else "DVD subtitles")}.">
+  <meta name="description" content="Read the character-labelled transcript for The X-Files {esc(episode)}, prepared from the official {("Blu-ray subtitles" if bluray else "DVD subtitles")}.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">

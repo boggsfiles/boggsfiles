@@ -213,3 +213,5 @@
 11|11X06|Kitten|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X06 Kitten.mkv
 11|11X07|Rm9sbG93ZXJz|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X07 Rm9sbG93ZXJz.mkv
 11|11X08|Familiar|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X08 Familiar.mkv
+11|11X09|Nothing Lasts Forever|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D3/mkv/11X09 Nothing Lasts Forever.mkv
+11|11X10|My Struggle IV|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D3/mkv/11X10 My Struggle IV.mkv

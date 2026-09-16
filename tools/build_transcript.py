@@ -242,6 +242,18 @@ def normalize(value: str) -> str:
     return " ".join(words)
 
 
+ACCEPT_ALL_CAPS_LABELS = False   # Blu-ray SDH tracks label every speaker in caps; set by align_monotonic --keep-case
+
+
+def known_label(label: str) -> bool:
+    """An all-caps caption label counts as a speaker if it is a known name, optionally
+    with an 'ON TV' / 'ON PHONE' style suffix."""
+    if ACCEPT_ALL_CAPS_LABELS and len(label.split()) <= 4 and not is_sound_label(label):
+        return True
+    base = re.sub(r"\s+(ON|OVER)\s+(TV|PHONE|LAPTOP|RADIO|P\.A\.|SPEAKER|INTERCOM|VIDEO|TAPE|MONITOR)$", "", label.strip().upper())
+    return label.upper() in SPEAKER_NAMES or base in SPEAKER_NAMES
+
+
 def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], int]:
     cue_splits = cue_splits or {}
     raw = path.read_text(encoding="utf-8-sig", errors="replace").replace("\r\n", "\n")
@@ -279,10 +291,10 @@ def parse_srt(path: Path, cue_splits: dict | None = None) -> tuple[list[dict], i
             if dashed and re.match(r"^-\s+", line):
                 flush()
                 current = [re.sub(r"^-\s+", "", line)]
-            elif label_only and (not label_only.group(1).isupper() or label_only.group(1).upper() in SPEAKER_NAMES):
+            elif label_only and (not label_only.group(1).isupper() or known_label(label_only.group(1))):
                 flush()
                 current_speaker = label_only.group(1)
-            elif inline_label and (not inline_label.group(1).isupper() or inline_label.group(1).upper() in SPEAKER_NAMES):
+            elif inline_label and (not inline_label.group(1).isupper() or known_label(inline_label.group(1))):
                 flush()
                 current_speaker = inline_label.group(1)
                 current = [inline_label.group(2)]

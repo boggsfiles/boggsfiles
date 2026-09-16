@@ -1,0 +1,376 @@
+{
+ "speakers": {
+  "2-10": "Joseph Cutler",
+  "12": "Joseph Cutler",
+  "24-26": "Joseph Cutler",
+  "29": "Joseph Cutler",
+  "32": "Joseph Cutler",
+  "36-37": "Joseph Cutler",
+  "39": "Joseph Cutler",
+  "41": "Joseph Cutler",
+  "15-16": "Daryl Landry",
+  "166": "Daryl Landry",
+  "169": "Daryl Landry",
+  "172": "Daryl Landry",
+  "174": "Daryl Landry",
+  "178-179": "Daryl Landry",
+  "194-195": "Daryl Landry",
+  "200-202": "Daryl Landry",
+  "299": "Daryl Landry",
+  "301-302": "Daryl Landry",
+  "601-603": "Daryl Landry",
+  "611-613": "Daryl Landry",
+  "620": "Daryl Landry",
+  "622-623": "Daryl Landry",
+  "20": "Man",
+  "38": "Operator",
+  "40": "Operator",
+  "44": "Operator",
+  "48-49": "Dana Scully",
+  "60-62": "Dana Scully",
+  "69-70": "Dana Scully",
+  "72": "Dana Scully",
+  "78-81": "Dana Scully",
+  "84-86": "Dana Scully",
+  "98-101": "Dana Scully",
+  "103-107": "Dana Scully",
+  "134": "Dana Scully",
+  "136-137": "Dana Scully",
+  "140-141": "Dana Scully",
+  "143": "Dana Scully",
+  "145-159": "Dana Scully",
+  "213-214": "Dana Scully",
+  "216-218": "Dana Scully",
+  "221-234": "Dana Scully",
+  "250-252": "Dana Scully",
+  "257-259": "Dana Scully",
+  "319-320": "Dana Scully",
+  "322-335": "Dana Scully",
+  "341-342": "Dana Scully",
+  "396-398": "Dana Scully",
+  "402-403": "Dana Scully",
+  "405-415": "Dana Scully",
+  "417-419": "Dana Scully",
+  "425": "Dana Scully",
+  "427-430": "Dana Scully",
+  "433-434": "Dana Scully",
+  "436": "Dana Scully",
+  "441": "Dana Scully",
+  "446-451": "Dana Scully",
+  "453": "Dana Scully",
+  "457": "Dana Scully",
+  "465-466": "Dana Scully",
+  "468": "Dana Scully",
+  "470": "Dana Scully",
+  "479": "Dana Scully",
+  "526-527": "Dana Scully",
+  "544-549": "Dana Scully",
+  "573-574": "Dana Scully",
+  "595-598": "Dana Scully",
+  "606": "Dana Scully",
+  "638-640": "Dana Scully",
+  "642-669": "Dana Scully",
+  "50-52": "Detective Dross",
+  "54": "Detective Dross",
+  "57-59": "Detective Dross",
+  "71": "Detective Dross",
+  "73-74": "Detective Dross",
+  "76-77": "Detective Dross",
+  "82-83": "Detective Dross",
+  "88-89": "Detective Dross",
+  "91-92": "Detective Dross",
+  "53": "Fox Mulder",
+  "55-56": "Fox Mulder",
+  "63-64": "Fox Mulder",
+  "68": "Fox Mulder",
+  "75": "Fox Mulder",
+  "93-97": "Fox Mulder",
+  "102": "Fox Mulder",
+  "108": "Fox Mulder",
+  "111-118": "Fox Mulder",
+  "120-130": "Fox Mulder",
+  "162": "Fox Mulder",
+  "164": "Fox Mulder",
+  "175-177": "Fox Mulder",
+  "180": "Fox Mulder",
+  "184": "Fox Mulder",
+  "187": "Fox Mulder",
+  "198": "Fox Mulder",
+  "203-207": "Fox Mulder",
+  "209-211": "Fox Mulder",
+  "237": "Fox Mulder",
+  "239": "Fox Mulder",
+  "241": "Fox Mulder",
+  "248-249": "Fox Mulder",
+  "300": "Fox Mulder",
+  "307-318": "Fox Mulder",
+  "321": "Fox Mulder",
+  "399-401": "Fox Mulder",
+  "426": "Fox Mulder",
+  "443-444": "Fox Mulder",
+  "472": "Fox Mulder",
+  "477-478": "Fox Mulder",
+  "480-481": "Fox Mulder",
+  "486-488": "Fox Mulder",
+  "494": "Fox Mulder",
+  "519": "Fox Mulder",
+  "521": "Fox Mulder",
+  "528-529": "Fox Mulder",
+  "533": "Fox Mulder",
+  "535": "Fox Mulder",
+  "541": "Fox Mulder",
+  "591-594": "Fox Mulder",
+  "604-605": "Fox Mulder",
+  "65-67": "Forensic Technician",
+  "135": "Nurse Taillie",
+  "138-139": "Nurse Taillie",
+  "142": "Nurse Taillie",
+  "144": "Nurse Taillie",
+  "163": "Officer",
+  "165": "Nancy Huff",
+  "167-168": "Nancy Huff",
+  "170-171": "Nancy Huff",
+  "173": "Nancy Huff",
+  "181-183": "Nancy Huff",
+  "185-186": "Nancy Huff",
+  "188-193": "Nancy Huff",
+  "196-197": "Nancy Huff",
+  "199": "Nancy Huff",
+  "304-306": "Nancy Huff",
+  "208": "Homeless Man",
+  "608-610": "Homeless Man",
+  "238": "Budd",
+  "240": "Budd",
+  "242-247": "Budd",
+  "458-464": "Budd",
+  "253-256": "Dr. Colquitt",
+  "293-296": "Dr. Colquitt",
+  "261-262": "Fitzpatrick",
+  "264-265": "Fitzpatrick",
+  "268": "Fitzpatrick",
+  "271": "Fitzpatrick",
+  "277-278": "Fitzpatrick",
+  "282": "Fitzpatrick",
+  "266": "Proudley",
+  "270": "Proudley",
+  "272": "Proudley",
+  "281": "Proudley",
+  "283-285": "Proudley",
+  "287": "Proudley",
+  "336": "Doctor",
+  "339-340": "Doctor",
+  "337": "Nurse",
+  "352-354": "Tom Huff",
+  "420-424": "Charlie Scully",
+  "435": "Charlie Scully",
+  "437": "Charlie Scully",
+  "431-432": "Margaret Scully",
+  "473-475": "Squatter",
+  "489-493": "Trashman",
+  "495-518": "Trashman",
+  "520": "Trashman",
+  "522-525": "Trashman",
+  "530-532": "Trashman",
+  "534": "Trashman",
+  "536-540": "Trashman",
+  "542-543": "Trashman",
+  "550-555": "Trashman",
+  "558-560": "Trashman",
+  "562-572": "Trashman",
+  "575-590": "Trashman",
+  "599-600": "Trashman",
+  "614": "Woman"
+ },
+ "splits": {
+  "109": [
+   {
+    "text": "Go.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Dana Scully"
+   }
+  ],
+  "161": [
+   {
+    "text": "Hey, Officer?",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Mmm-hmm.",
+    "speaker": "Officer"
+   }
+  ],
+  "263": [
+   {
+    "text": "This one's so big.",
+    "speaker": "Fitzpatrick"
+   },
+   {
+    "text": "Yeah.",
+    "speaker": "Proudley"
+   }
+  ],
+  "269": [
+   {
+    "text": "Put that away.",
+    "speaker": "Fitzpatrick"
+   },
+   {
+    "text": "Okay.",
+    "speaker": "Proudley"
+   }
+  ],
+  "303": [
+   {
+    "text": "Everyone on the bus.",
+    "speaker": "Daryl Landry"
+   },
+   {
+    "text": "Excuse me.",
+    "speaker": "Nancy Huff"
+   }
+  ],
+  "338": [
+   {
+    "text": "You have a stent on hand?",
+    "speaker": "Doctor"
+   },
+   {
+    "text": "Removing the tube.",
+    "speaker": "Nurse"
+   }
+  ],
+  "438": [
+   {
+    "text": "Mom.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "What's going on?",
+    "speaker": "Charlie Scully"
+   }
+  ],
+  "442": [
+   {
+    "text": "Get that out of here!",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "Scully, Scully.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "454": [
+   {
+    "text": "I need to work.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No. No, no, no.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "455": [
+   {
+    "text": "Yes. Right now.",
+    "speaker": "Dana Scully"
+   },
+   {
+    "text": "No, I get it, Scully, I do.",
+    "speaker": "Fox Mulder"
+   }
+  ],
+  "456": [
+   {
+    "text": "But not right now.",
+    "speaker": "Fox Mulder"
+   },
+   {
+    "text": "Mulder, right now.",
+    "speaker": "Dana Scully"
+   }
+  ]
+ },
+ "text": {
+  "8": "can be retrieved (WOMAN SOBS)",
+  "40": "Sir, tell us what's happening.",
+  "96": "in four directions at full speed",
+  "118": "We can eliminate any 76ers, 'cause those guys can't find the rim.",
+  "138": "She regained consciousness for a few moments.",
+  "168": "This street is a crime scene.",
+  "222": "I think you should get here as soon as you can.",
+  "544": "Tulpa is a 1929 Theosophist mistranslation of the Tibetan word \"tulku,\"",
+  "548": "And a realized tulku would never harm anyone,",
+  "595": "You put it out of sight, so that it wouldn't be your problem.",
+  "344": "(\"DOWNTOWN\" BY PETULA CLARK PLAYING ON CAR STEREO)",
+  "361": "(\"DOWNTOWN\" CONTINUES PLAYING)"
+ },
+ "drop": [
+  "345",
+  "346",
+  "347",
+  "348",
+  "349",
+  "350",
+  "362",
+  "363",
+  "364",
+  "365",
+  "366",
+  "367",
+  "368",
+  "369",
+  "370",
+  "371",
+  "372",
+  "373",
+  "375",
+  "376",
+  "377",
+  "378",
+  "379",
+  "381",
+  "382",
+  "383",
+  "384",
+  "385",
+  "386",
+  "388",
+  "389",
+  "390",
+  "391",
+  "392",
+  "393",
+  "394",
+  "395"
+ ],
+ "scenes": {
+  "1": "Philadelphia · Walnut Street, Night",
+  "24": "HUD Field Office · Cutler's Office",
+  "48": "HUD Field Office · The Crime Scene",
+  "98": "Cutler's Office · A Call from Bill",
+  "111": "HUD Field Office · Security Room",
+  "134": "Medical Center · ICU",
+  "161": "Walnut Street · Outside the Field Office",
+  "213": "Medical Center · ICU",
+  "237": "FBI Forensic Laboratory",
+  "250": "Medical Center · ICU",
+  "261": "The Warehouse · Art Thieves",
+  "293": "Medical Center · ICU",
+  "299": "Walnut Street · The Buses",
+  "307": "Medical Center · ICU",
+  "344": "Nancy Huff's House",
+  "396": "Medical Center · ICU",
+  "458": "FBI Forensic Laboratory",
+  "470": "Shuttered Office Building",
+  "489": "The Trashman's Studio",
+  "553": "The Trashman's Story",
+  "573": "Flashback · William",
+  "575": "The Trashman's Studio",
+  "601": "Franklin State Hospital",
+  "638": "Franklin State Hospital · Shower Room",
+  "642": "The Waterfront"
+ }
+}

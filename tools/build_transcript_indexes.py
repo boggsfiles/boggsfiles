@@ -110,13 +110,30 @@ SEASON_8 = [('within', 'Within', '8ABX01', 'Scully and Skinner search for Mulder
 
 SEASON_9 = [('nothing-important-happened-today', 'Nothing Important Happened Today', '9ABX01', 'Doggett pursues the conspiracy while Scully discovers something unusual about William.'), ('nothing-important-happened-today-ii', 'Nothing Important Happened Today II', '9ABX02', 'The agents follow a lead aboard a ship linked to a secret experiment.'), ('daemonicus', 'Daemonicus', '9ABX03', 'A murder investigation leads Doggett and Reyes to a man claiming a connection to evil.'), ('4-d', '4-D', '9ABX05', 'Reyes confronts an impossible sequence of events after Doggett is shot.'), ('lord-of-the-flies', 'Lord of the Flies', '9ABX06', 'A teenager’s death leads the agents to a strange connection between a boy and the insects around him.'), ('trust-no-1', 'Trust No 1', '9ABX08', 'A stranger offers Scully information about Mulder at a dangerous price.'), ('john-doe', 'John Doe', '9ABX07', 'Doggett wakes in Mexico without his memory and searches for his identity.'), ('hellbound', 'Hellbound', '9ABX04', 'Reyes investigates murders that seem connected to lives lived long before her own.'), ('provenance', 'Provenance', '9ABX10', 'Fragments of an alien artifact bring a new threat to Scully and William.'), ('providence', 'Providence', '9ABX11', 'Scully races to find William after his abduction by a group with a prophecy.'), ('audrey-pauley', 'Audrey Pauley', '9ABX13', 'After a car accident, Reyes finds herself trapped inside a mysterious hospital.'), ('underneath', 'Underneath', '9ABX09', 'A released prisoner forces Doggett to reconsider a murder case from his police career.'), ('improbable', 'Improbable', '9ABX14', 'Reyes finds a numerical pattern in a series of killings.'), ('scary-monsters', 'Scary Monsters', '9ABX12', 'A frightened child’s claims draw the agents into a remote and dangerous household.'), ('jump-the-shark', 'Jump the Shark', '9ABX15', 'The Lone Gunmen reunite with old friends while investigating a biological threat.'), ('william', 'William', '9ABX17', 'A scarred stranger enters the X-Files office with a disturbing interest in William.'), ('release', 'Release', '9ABX16', 'A cadet’s unusual insight gives Doggett a new lead in the murder of his son.'), ('sunshine-days', 'Sunshine Days', '9ABX18', 'A strange house leads the agents to a man whose powers recreate a familiar television world.'), ('the-truth', 'The Truth', '9ABX19–20', 'Mulder returns to face a military tribunal as the agents confront the truth about the conspiracy.')]
 
+SEASON_10 = [('my-struggle', 'My Struggle', '1AYW01', 'A conspiracy broadcaster and an abductee named Sveta pull Mulder and Scully back toward the X-Files.'),
+    ('founders-mutation', "Founder's Mutation", '1AYW02', 'A scientist’s suicide leads the agents to experiments on children and to thoughts of their own son.'),
+    ('mulder-and-scully-meet-the-were-monster', 'Mulder and Scully Meet the Were-Monster', '1AYW03', 'A lizard creature in Oregon turns out to have a very human problem.'),
+    ('home-again', 'Home Again', '1AYW04', 'A murderous figure called the Trashman stalks Philadelphia while Scully sits with her dying mother.'),
+    ('babylon', 'Babylon', '1AYW05', 'Two younger agents and a comatose bomber draw Mulder and Scully into a search for a common language.'),
+    ('my-struggle-ii', 'My Struggle II', '1AYW06', 'A contagion spreads across the country as Scully races to find a cure and Mulder confronts the Smoking Man.')]
+SEASON_11 = [('my-struggle-iii', 'My Struggle III', '2AYW01', 'The events of the contagion are revealed to be a vision as the Smoking Man makes a claim about William.'),
+    ('this', 'This', '2AYW02', 'A message from a dead friend sends Mulder and Scully on the run from a private security force.'),
+    ('plus-one', 'Plus One', '2AYW03', 'A string of deaths in a small town is tied to a pair of twins and a game of hangman.'),
+    ('the-lost-art-of-forehead-sweat', 'The Lost Art of Forehead Sweat', '2AYW04', 'A man named Reggie insists he was the third member of the X-Files, and that memory itself is under attack.'),
+    ('ghouli', 'Ghouli', '2AYW05', 'Two teenagers attack each other believing the other is a monster, and the case leads to William.'),
+    ('kitten', 'Kitten', '2AYW06', 'Skinner disappears into a Kentucky town haunted by a gas from his days in Vietnam.'),
+    ('rm9sbg93zxjz', 'Rm9sbG93ZXJz', '2AYW07', 'A nearly silent night in which every automated system around Mulder and Scully turns against them.'),
+    ('familiar', 'Familiar', '2AYW08', 'A child’s death in a Connecticut town stirs accusations of witchcraft and something worse.'),
+    ('nothing-lasts-forever', 'Nothing Lasts Forever', '2AYW09', 'A cult that stays young by grisly means meets an avenger with a crossbow.'),
+    ('my-struggle-iv', 'My Struggle IV', '2AYW10', 'The hunt for William brings the mythology to a violent end on a Norfolk dock.')]
+
 MOVIES = [
     ("fight-the-future", "Fight the Future", "M1", "1998", "Mulder and Scully follow a Dallas bombing to a buried virus, a field of bees, and the ice of Antarctica."),
     ("i-want-to-believe", "I Want to Believe", "M2", "2008", "A psychic priest's visions pull Mulder and Scully back into an FBI search for a missing agent."),
 ]
 MOVIES_LIVE = {"fight-the-future", "i-want-to-believe"}
 
-SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9}
+SEASONS = {1: SEASON_1, 2: SEASON_2, 3: SEASON_3, 4: SEASON_4, 5: SEASON_5, 6: SEASON_6, 7: SEASON_7, 8: SEASON_8, 9: SEASON_9, 10: SEASON_10, 11: SEASON_11}
 
 HEAD = '''<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,7 +149,7 @@ def season_landing() -> str:
     for season in range(1,12):
         live=season in SEASONS
         count=len(SEASONS.get(season, []))
-        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "redux" if season == 5 else "the-beginning" if season == 6 else "the-sixth-extinction" if season == 7 else "within" if season == 8 else "nothing-important-happened-today" if season == 9 else "little-green-men"
+        image="pilot" if season == 1 else "the-blessing-way" if season == 3 else "herrenvolk" if season == 4 else "redux" if season == 5 else "the-beginning" if season == 6 else "the-sixth-extinction" if season == 7 else "within" if season == 8 else "nothing-important-happened-today" if season == 9 else "my-struggle" if season == 10 else "my-struggle-iii" if season == 11 else "little-green-men"
         image_ext="jpg" if season >= 3 else "webp"
         cards.append(f'''<a class="season-card {'live' if live else 'soon'}" href="/transcripts/season-{season}/">
           <div class="season-visual"><span>{season:02d}</span>{f'<img src="/assets/transcript-stills/{image}.{image_ext}" alt="Scene from Season {season}">' if live else ''}</div>
