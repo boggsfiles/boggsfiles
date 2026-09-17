@@ -199,19 +199,19 @@
 9|9X17|Release|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X17 Release.mkv
 9|9X18|Sunshine Days|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X18 Sunshine Days.mkv
 9|9X19-20|The Truth|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X19-20 The Truth.mkv
-10|10X01|My Struggle|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X01 My Struggle.mkv
-10|10X02|Founder's Mutation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X02 Founder's Mutation.mkv
-10|10X03|Mulder and Scully Meet the Were-Monster|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X03 Mulder and Scully Meet the Were-Monster.mkv
-10|10X04|Home Again|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D1/mkv/10X04 Home Again.mkv
-10|10X05|Babylon|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D2/mkv/10X05 Babylon.mkv
-10|10X06|My Struggle II|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S10_D2/mkv/10X06 My Struggle II.mkv
-11|11X01|My Struggle III|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X01 My Struggle III.mkv
-11|11X02|This|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X02 This.mkv
-11|11X03|Plus One|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X03 Plus One.mkv
-11|11X04|The Lost Art of Forehead Sweat|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D1/mkv/11X04 The Lost Art of Forehead Sweat.mkv
-11|11X05|Ghouli|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X05 Ghouli.mkv
-11|11X06|Kitten|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X06 Kitten.mkv
-11|11X07|Rm9sbG93ZXJz|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X07 Rm9sbG93ZXJz.mkv
-11|11X08|Familiar|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D2/mkv/11X08 Familiar.mkv
-11|11X09|Nothing Lasts Forever|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D3/mkv/11X09 Nothing Lasts Forever.mkv
-11|11X10|My Struggle IV|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S11_D3/mkv/11X10 My Struggle IV.mkv
+10|10X01|My Struggle|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X01 My Struggle.mkv
+10|10X02|Founder's Mutation|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X02 Founder's Mutation.mkv
+10|10X03|Mulder and Scully Meet the Were-Monster|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X03 Mulder and Scully Meet the Were-Monster.mkv
+10|10X04|Home Again|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X04 Home Again.mkv
+10|10X05|Babylon|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D2/mkv/10X05 Babylon.mkv
+10|10X06|My Struggle II|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D2/mkv/10X06 My Struggle II.mkv
+11|11X01|My Struggle III|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D1/mkv/11X01 My Struggle III.mkv
+11|11X02|This|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D1/mkv/11X02 This.mkv
+11|11X03|Plus One|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D1/mkv/11X03 Plus One.mkv
+11|11X04|The Lost Art of Forehead Sweat|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D1/mkv/11X04 The Lost Art of Forehead Sweat.mkv
+11|11X05|Ghouli|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D2/mkv/11X05 Ghouli.mkv
+11|11X06|Kitten|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D2/mkv/11X06 Kitten.mkv
+11|11X07|Rm9sbG93ZXJz|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D2/mkv/11X07 Rm9sbG93ZXJz.mkv
+11|11X08|Familiar|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D2/mkv/11X08 Familiar.mkv
+11|11X09|Nothing Lasts Forever|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D3/mkv/11X09 Nothing Lasts Forever.mkv
+11|11X10|My Struggle IV|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S11_D3/mkv/11X10 My Struggle IV.mkv
