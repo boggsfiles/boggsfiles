@@ -90,3 +90,7 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
   .footer-row { display: block; }
   .footer-row span { display: block; margin-top: 8px; }
 }
+.file-soon { cursor: default; }
+.file-soon:hover { transform: none; background: var(--ink); }
+.file-soon h2 { color: #b9bfba; }
+.open.soon { color: var(--signal, #b73831); }
