@@ -109,8 +109,8 @@ def main() -> None:
         for i, (caption, key) in enumerate(items, 1):
             if key not in sizes: missing.append(key); continue
             url = MEDIA_BASE + urllib.parse.quote(key)
-            media.append(f'<div class="media"><video controls preload="metadata" playsinline poster="{POSTER_BASE}{slug}-{i:02d}.jpg" src="{html.escape(url, quote=True)}" title="{html.escape(title)} — {html.escape(caption)}"></video>'
-                         f'<div class="media-caption"><span>{i:02d} · {html.escape(caption)}</span><a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener">{fmt_size(sizes[key])} ↗</a></div></div>')
+            media.append(f'<div class="media"><video controls controlsList="nodownload noremoteplayback" disablePictureInPicture oncontextmenu="return false" preload="metadata" playsinline poster="{POSTER_BASE}{slug}-{i:02d}.jpg" src="{html.escape(url, quote=True)}" title="{html.escape(title)} — {html.escape(caption)}"></video>'
+                         f'<div class="media-caption"><span>{i:02d} · {html.escape(caption)}</span><span>{fmt_size(sizes[key])}</span></div></div>')
         n = len(media); count = f"{n} video file" + ("" if n == 1 else "s")
         body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/dailies/">Dailies</a> &nbsp;/&nbsp; {html.escape(title)}</div>'
                 f'<h1>{html.escape(title)}</h1><p>Rare production dailies and alternate footage from The X-Files.</p>'
