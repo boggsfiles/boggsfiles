@@ -75,7 +75,7 @@ open_bed = WORK / "open.wav"; drone(open_bed, 2.4 + 2.8 + 3.4)          # one co
 segs.append(card("c1", "THE X-FILES  ·  BOGGSFILES", ["COMING", "SOON..."], [], 2.4, open_bed, 0.0))
 segs.append(card("c2", "THE X-FILES  ·  BOGGSFILES", ["WHAT'S BETTER", "THAN X-FILES", "GAG REELS?"], [], 2.8, open_bed, 2.4))
 segs.append(card("c3", "THE X-FILES  ·  BOGGSFILES", ["ONES YOU CAN", "ACTUALLY SEE."], ["Every copy online is a fuzzy tape dub.", "These come straight from the DVD masters."], 3.4, open_bed, 5.2))
-CLIPS = [(1, 268, 5, "Mulder + Scully"), (2, 440, 5, "Mulder"), (3, 455, 5, "Mulder + Scully"), (4, 120, 5, "Mulder + Scully"), (5, 216, 5, "Mulder + Scully"),
+CLIPS = [(2, 440, 5, "Mulder"), (3, 461, 9, "Mulder + Scully"), (4, 120, 5, "Mulder + Scully"), (5, 216, 5, "Mulder + Scully"),
          (6, 142.7, 5, "Mulder + Scully"), (9, 450, 5, "Scully"), (1, 380, 4.4, "Mulder + Scully"), (3, 310, 5, "Scully"), (7, 276, 6, "Scully"),
          (9, 258, 17.3, "Mulder + Scully")]   # last: flub, "go again", full take through "into the woods tonight", "Yes!"
 for i, (season, start, dur, label) in enumerate(CLIPS):

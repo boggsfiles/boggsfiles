@@ -137,68 +137,68 @@
 6|6X20|Three of a Kind|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S6_D5/mkv/6X20 Three of a Kind.mkv
 6|6X21|Field Trip|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S6_D6/mkv/6X21 Field Trip.mkv
 6|6X22|Biogenesis|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S6_D6/mkv/6X22 Biogenesis.mkv
-7|7X01|The Sixth Extinction|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X01 The Sixth Extinction.mkv
-7|7X02|Amor Fati|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X02 Amor Fati.mkv
-7|7X03|Hungry|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X03 Hungry.mkv
-7|7X04|Millennium|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D1/mkv/7X04 Millennium.mkv
-7|7X05|Rush|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X05 Rush.mkv
-7|7X06|The Goldberg Variation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X06 The Goldberg Variation.mkv
-7|7X07|Orison|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X07 Orison.mkv
-7|7X08|The Amazing Maleeni|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D2/mkv/7X08 The Amazing Maleeni.mkv
-7|7X09|Signs and Wonders|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X09 Signs and Wonders.mkv
-7|7X10|Sein und Zeit|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X10 Sein und Zeit.mkv
-7|7X11|Closure|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X11 Closure.mkv
-7|7X12|X-Cops|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D3/mkv/7X12 X-Cops.mkv
-7|7X13|First Person Shooter|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X13 First Person Shooter.mkv
-7|7X14|Theef|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X14 Theef.mkv
-7|7X15|En Ami|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X15 En Ami.mkv
-7|7X16|Chimera|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D4/mkv/7X16 Chimera.mkv
-7|7X17|all things|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X17 all things.mkv
-7|7X18|Brand X|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X18 Brand X.mkv
-7|7X19|Hollywood AD|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X19 Hollywood AD.mkv
-7|7X20|Fight Club|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S7_D5/mkv/7X20 Fight Club.mkv
-7|7X21|Je Souhaite|/Users/lindseyboggs/Movies/XF_discrip/XF_S7_D6/mkv/7X21 Je Souhaite.mkv
-7|7X22|Requiem|/Users/lindseyboggs/Movies/XF_discrip/XF_S7_D6/mkv/7X22 Requiem.mkv
-8|8X01|Within|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X01 Within.mkv
-8|8X02|Without|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X02 Without.mkv
-8|8X03|Patience|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X03 Patience.mkv
-8|8X04|Roadrunners|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D1/mkv/8X04 Roadrunners.mkv
-8|8X05|Invocation|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X05 Invocation.mkv
-8|8X06|Redrum|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X06 Redrum.mkv
-8|8X07|Via Negativa|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X07 Via Negativa.mkv
-8|8X08|Surekill|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D2/mkv/8X08 Surekill.mkv
-8|8X09|Salvage|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X09 Salvage.mkv
-8|8X10|Badlaa|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X10 Badlaa.mkv
-8|8X11|The Gift|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X11 The Gift.mkv
-8|8X12|Medusa|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D3/mkv/8X12 Medusa.mkv
-8|8X13|Per Manum|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X13 Per Manum.mkv
-8|8X14|This Is Not Happening|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X14 This Is Not Happening.mkv
-8|8X15|DeadAlive|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X15 DeadAlive.mkv
-8|8X16|Three Words|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D4/mkv/8X16 Three Words.mkv
-8|8X17|Empedocles|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X17 Empedocles.mkv
-8|8X18|Vienen|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X18 Vienen.mkv
-8|8X19|Alone|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X19 Alone.mkv
-8|8X20|Essence|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S8_D5/mkv/8X20 Essence.mkv
-8|8X21|Existence|/Users/lindseyboggs/Movies/XF_discrip/XF_S8_D6/mkv/8X21 Existence.mkv
-9|9X01|Nothing Important Happened Today|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X01 Nothing Important Happened Today.mkv
-9|9X02|Nothing Important Happened Today II|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X02 Nothing Important Happened Today II.mkv
-9|9X03|Daemonicus|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X03 Daemonicus.mkv
-9|9X04|4-D|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D1/mkv/9X04 4-D.mkv
-9|9X05|Lord of the Flies|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X05 Lord of the Flies.mkv
-9|9X06|Trust No 1|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X06 Trust No 1.mkv
-9|9X07|John Doe|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X07 John Doe.mkv
-9|9X08|Hellbound|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D2/mkv/9X08 Hellbound.mkv
-9|9X09|Provenance|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X09 Provenance.mkv
-9|9X10|Providence|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X10 Providence.mkv
-9|9X11|Audrey Pauley|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X11 Audrey Pauley.mkv
-9|9X12|Underneath|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D3/mkv/9X12 Underneath.mkv
-9|9X13|Improbable|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X13 Improbable.mkv
-9|9X14|Scary Monsters|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X14 Scary Monsters.mkv
-9|9X15|Jump the Shark|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X15 Jump the Shark.mkv
-9|9X16|William|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D4/mkv/9X16 William.mkv
-9|9X17|Release|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X17 Release.mkv
-9|9X18|Sunshine Days|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X18 Sunshine Days.mkv
-9|9X19-20|The Truth|/Users/lindseyboggs/Movies/XF_discrip/XFILES_S9_D5/mkv/9X19-20 The Truth.mkv
+7|7X01|The Sixth Extinction|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D1/mkv/7X01 The Sixth Extinction.mkv
+7|7X02|Amor Fati|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D1/mkv/7X02 Amor Fati.mkv
+7|7X03|Hungry|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D1/mkv/7X03 Hungry.mkv
+7|7X04|Millennium|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D1/mkv/7X04 Millennium.mkv
+7|7X05|Rush|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D2/mkv/7X05 Rush.mkv
+7|7X06|The Goldberg Variation|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D2/mkv/7X06 The Goldberg Variation.mkv
+7|7X07|Orison|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D2/mkv/7X07 Orison.mkv
+7|7X08|The Amazing Maleeni|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D2/mkv/7X08 The Amazing Maleeni.mkv
+7|7X09|Signs and Wonders|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D3/mkv/7X09 Signs and Wonders.mkv
+7|7X10|Sein und Zeit|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D3/mkv/7X10 Sein und Zeit.mkv
+7|7X11|Closure|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D3/mkv/7X11 Closure.mkv
+7|7X12|X-Cops|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D3/mkv/7X12 X-Cops.mkv
+7|7X13|First Person Shooter|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D4/mkv/7X13 First Person Shooter.mkv
+7|7X14|Theef|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D4/mkv/7X14 Theef.mkv
+7|7X15|En Ami|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D4/mkv/7X15 En Ami.mkv
+7|7X16|Chimera|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D4/mkv/7X16 Chimera.mkv
+7|7X17|all things|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D5/mkv/7X17 all things.mkv
+7|7X18|Brand X|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D5/mkv/7X18 Brand X.mkv
+7|7X19|Hollywood AD|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D5/mkv/7X19 Hollywood AD.mkv
+7|7X20|Fight Club|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S7_D5/mkv/7X20 Fight Club.mkv
+7|7X21|Je Souhaite|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S7_D6/mkv/7X21 Je Souhaite.mkv
+7|7X22|Requiem|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S7_D6/mkv/7X22 Requiem.mkv
+8|8X01|Within|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D1/mkv/8X01 Within.mkv
+8|8X02|Without|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D1/mkv/8X02 Without.mkv
+8|8X03|Patience|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D1/mkv/8X03 Patience.mkv
+8|8X04|Roadrunners|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D1/mkv/8X04 Roadrunners.mkv
+8|8X05|Invocation|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D2/mkv/8X05 Invocation.mkv
+8|8X06|Redrum|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D2/mkv/8X06 Redrum.mkv
+8|8X07|Via Negativa|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D2/mkv/8X07 Via Negativa.mkv
+8|8X08|Surekill|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D2/mkv/8X08 Surekill.mkv
+8|8X09|Salvage|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S8_D3/mkv/8X09 Salvage.mkv
+8|8X10|Badlaa|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S8_D3/mkv/8X10 Badlaa.mkv
+8|8X11|The Gift|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S8_D3/mkv/8X11 The Gift.mkv
+8|8X12|Medusa|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S8_D3/mkv/8X12 Medusa.mkv
+8|8X13|Per Manum|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D4/mkv/8X13 Per Manum.mkv
+8|8X14|This Is Not Happening|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D4/mkv/8X14 This Is Not Happening.mkv
+8|8X15|DeadAlive|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D4/mkv/8X15 DeadAlive.mkv
+8|8X16|Three Words|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D4/mkv/8X16 Three Words.mkv
+8|8X17|Empedocles|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D5/mkv/8X17 Empedocles.mkv
+8|8X18|Vienen|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D5/mkv/8X18 Vienen.mkv
+8|8X19|Alone|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D5/mkv/8X19 Alone.mkv
+8|8X20|Essence|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S8_D5/mkv/8X20 Essence.mkv
+8|8X21|Existence|/Volumes/XFiles Archive/DVD rips/XF_discrip/XF_S8_D6/mkv/8X21 Existence.mkv
+9|9X01|Nothing Important Happened Today|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D1/mkv/9X01 Nothing Important Happened Today.mkv
+9|9X02|Nothing Important Happened Today II|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D1/mkv/9X02 Nothing Important Happened Today II.mkv
+9|9X03|Daemonicus|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D1/mkv/9X03 Daemonicus.mkv
+9|9X04|4-D|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D1/mkv/9X04 4-D.mkv
+9|9X05|Lord of the Flies|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D2/mkv/9X05 Lord of the Flies.mkv
+9|9X06|Trust No 1|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D2/mkv/9X06 Trust No 1.mkv
+9|9X07|John Doe|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D2/mkv/9X07 John Doe.mkv
+9|9X08|Hellbound|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D2/mkv/9X08 Hellbound.mkv
+9|9X09|Provenance|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D3/mkv/9X09 Provenance.mkv
+9|9X10|Providence|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D3/mkv/9X10 Providence.mkv
+9|9X11|Audrey Pauley|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D3/mkv/9X11 Audrey Pauley.mkv
+9|9X12|Underneath|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D3/mkv/9X12 Underneath.mkv
+9|9X13|Improbable|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D4/mkv/9X13 Improbable.mkv
+9|9X14|Scary Monsters|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D4/mkv/9X14 Scary Monsters.mkv
+9|9X15|Jump the Shark|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D4/mkv/9X15 Jump the Shark.mkv
+9|9X16|William|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D4/mkv/9X16 William.mkv
+9|9X17|Release|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D5/mkv/9X17 Release.mkv
+9|9X18|Sunshine Days|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D5/mkv/9X18 Sunshine Days.mkv
+9|9X19-20|The Truth|/Volumes/XFiles Archive/DVD rips/XF_discrip/XFILES_S9_D5/mkv/9X19-20 The Truth.mkv
 10|10X01|My Struggle|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X01 My Struggle.mkv
 10|10X02|Founder's Mutation|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X02 Founder's Mutation.mkv
 10|10X03|Mulder and Scully Meet the Were-Monster|/Volumes/XFiles Archive/Blu-ray rips/XFILES_S10_D1/mkv/10X03 Mulder and Scully Meet the Were-Monster.mkv
