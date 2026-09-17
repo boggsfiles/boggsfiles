@@ -17,6 +17,7 @@ from PIL import Image, ImageStat
 
 HERE = Path(__file__).resolve().parent
 OUT_ROOT = Path.home() / "Movies/XF_screencaps/series"
+# Lindsey's rule: Diana Fowley is never tagged anywhere on the site. Do not add her to identities.npz.
 IDENT = np.load(HERE / "identities.npz")
 NAMES, CENTS = list(IDENT["names"]), IDENT["cents"]
 THRESH = 0.40
