@@ -7,6 +7,7 @@ Per episode (resumable; skips episodes whose index.json exists):
   4. face scan on both passes (InsightFace), match against known identities
   5. keep base frames + dense frames where Mulder or Scully is present
   6. drop near-black frames and near-duplicate timestamps, write full/, thumb/, index.json
+  7. Mulder/Scully frames that are unusually soft get swapped for a sharper same-shot neighbour (sharp.py)
 
 Usage: facenv/bin/python series_caps.py [--only 1X79] [--season 1] [--limit N]
 """
@@ -14,6 +15,7 @@ import sys, os, re, json, shutil, subprocess, argparse, time
 from pathlib import Path
 import numpy as np, cv2
 from PIL import Image, ImageStat
+from sharp import resharpen
 
 HERE = Path(__file__).resolve().parent
 OUT_ROOT = Path.home() / "Movies/XF_screencaps/series"
@@ -39,17 +41,20 @@ def app():
         _app = FaceAnalysis(name="buffalo_l", providers=["CPUExecutionProvider"]); _app.prepare(ctx_id=0, det_size=(640, 640))
     return _app
 
+BOXES = {}   # (pass, file) -> Mulder/Scully face boxes, for the sharpness pass
 def tag_frames(folder, files):
     tags = {}
     for f in files:
         img = cv2.imread(str(folder / f))
         if img is None: continue
-        found = set()
+        found = set(); boxes = []
         for face in app().get(img):
             if face.det_score < 0.6: continue
             s = face.normed_embedding @ CENTS.T; j = int(s.argmax())
-            if s[j] >= THRESH: found.add(NAMES[j])
-        if found: tags[f] = sorted(found)
+            if s[j] >= THRESH:
+                found.add(NAMES[j])
+                if NAMES[j] in ("Mulder", "Scully"): boxes.append([float(v) for v in face.bbox])
+        if found: tags[f] = sorted(found); BOXES[(folder.name, f)] = boxes
     return tags
 
 def is_black(path):
@@ -77,10 +82,12 @@ def process(season, code, title, mkv):
         shutil.move(str(src), out / "full" / f)
         im = Image.open(out / "full" / f); im.thumbnail((480, 480)); im.save(out / "thumb" / f, quality=82)
         index[f] = keep[f][1]; last = ms
+    sharpened = resharpen(mkv, size, out / "full", out / "thumb", index, boxes={f: BOXES.get((keep[f][0], f), []) for f in index}, ident=(NAMES, CENTS, THRESH))
+    BOXES.clear()
     json.dump(index, open(out / "index.json", "w"))
     shutil.rmtree(work, ignore_errors=True)
     n = len(index); ms_ = sum(1 for v in index.values() if "Mulder" in v); sc = sum(1 for v in index.values() if "Scully" in v)
-    return f"{n} frames (base {len(base)}, dense {len(dense)}, dropped {dropped}) Mulder {ms_} Scully {sc} in {time.time()-t0:.0f}s"
+    return f"{n} frames (base {len(base)}, dense {len(dense)}, dropped {dropped}, resharpened {len(sharpened)}) Mulder {ms_} Scully {sc} in {time.time()-t0:.0f}s"
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--only"); ap.add_argument("--season", type=int); ap.add_argument("--limit", type=int); a = ap.parse_args()
