@@ -44,7 +44,7 @@ def main():
         mkv = locate(manifest[ep["code"]])
         if mkv is None: print(ep["code"], "source missing", flush=True); continue
         t0 = time.time(); idx = json.load(open(ep["source"] / "index.json"))
-        size = "853:480" if ep["aspect"] == "16/9" else "720:540"
+        size = "1920:1080" if ep["season"] >= 10 else ("853:480" if ep["aspect"] == "16/9" else "720:540")
         rep = resharpen(mkv, size, ep["source"] / "full", ep["source"] / "thumb", idx, ident=ident)
         if rep and not a.no_upload and (ep["source"] / ".uploaded").exists(): upload(ep, rep)
         json.dump(rep, open(ep["source"] / ".resharpened", "w"))

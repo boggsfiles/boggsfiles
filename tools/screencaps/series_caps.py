@@ -68,7 +68,8 @@ def process(season, code, title, mkv):
     if (out / "index.json").exists(): return "skip"
     t0 = time.time()
     w, h, dar = (ffprobe(mkv, "stream=width,height,display_aspect_ratio").split(",") + ["", ""])[:3]
-    size = "853:480" if dar == "16:9" else "720:540"
+    if int(h or 0) >= 1080: size = "1920:1080"                       # Blu-ray (Seasons 10–11): keep native HD
+    else: size = "853:480" if dar == "16:9" else "720:540"          # DVD: native lines, square pixels
     work = out / "_work"; shutil.rmtree(work, ignore_errors=True)
     base = capture(mkv, work / "base", 0.28, 5, size)
     dense = capture(mkv, work / "dense", 0.15, 2, size)

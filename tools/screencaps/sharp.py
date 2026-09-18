@@ -47,9 +47,9 @@ def _small(img): return cv2.resize(cv2.cvtColor(img, cv2.COLOR_BGR2GRAY), (64, 3
 
 def candidates(mkv, ms, size, tmp):
     t0 = max(0.0, ms / 1000 - WINDOW)
-    subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-t", f"{2 * WINDOW + 0.04:.3f}", "-i", str(mkv), "-an", "-sn",
-                    "-vf", f"yadif=deint=interlaced,scale={size}:flags=lanczos,setsar=1", "-q:v", "3", f"{tmp}/%03d.jpg"], check=True)
-    return sorted(Path(tmp).glob("*.jpg"))
+    r = subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-ss", f"{t0:.3f}", "-t", f"{2 * WINDOW + 0.04:.3f}", "-i", str(mkv), "-an", "-sn",
+                        "-vf", f"yadif=deint=interlaced,scale={size}:flags=lanczos,setsar=1", "-q:v", "3", f"{tmp}/%03d.jpg"])
+    return sorted(Path(tmp).glob("*.jpg")) if r.returncode == 0 else []   # a failed decode just means "no candidates"
 
 def _iou(a, b):
     x1, y1, x2, y2 = max(a[0], b[0]), max(a[1], b[1]), min(a[2], b[2]), min(a[3], b[3])

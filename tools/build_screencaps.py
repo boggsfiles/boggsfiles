@@ -144,7 +144,10 @@ def page(title, crumb, eyebrow, h1, intro, stats, head_eyebrow, head_h2, head_no
 def stat(b, s): return f'<div class="stat"><b>{b}</b><span>{s}</span></div>'
 
 
+COVER_OVERRIDES = json.loads((ROOT / "tools/screencaps/cover-overrides.json").read_text()) if (ROOT / "tools/screencaps/cover-overrides.json").exists() else {}
+
 def cover_for(ep: dict) -> str:
+    if ep["code"] in COVER_OVERRIDES: return f"{MEDIA_BASE}/screencaps/{ep['path']}/thumb/{COVER_OVERRIDES[ep['code']]}"   # hand-picked by Lindsey
     index = json.load(open(ep["source"] / "index.json")); frames = sorted(index)
     both = [f for f in frames if {"Mulder", "Scully"} <= set(index[f])] or [f for f in frames if index[f]] or frames
     return f"{MEDIA_BASE}/screencaps/{ep['path']}/thumb/{both[len(both) // 2]}"
