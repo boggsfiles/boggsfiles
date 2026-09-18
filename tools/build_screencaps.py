@@ -134,7 +134,7 @@ def card(href, img, kind, title, note, live) -> str:
     return f'<a class="episode-card" href="{esc(href)}">{inner}</a>' if live else f'<article class="episode-card pending">{inner}</article>'
 
 
-def page(title, crumb, eyebrow, h1, intro, stats, head_eyebrow, head_h2, head_note, cards, nav_html="") -> str:
+def page(title, crumb, eyebrow, h1, intro, stats, head_eyebrow, head_h2, head_note, cards, nav_html="", landing=False) -> str:
     return f'''<!doctype html><html lang="en"><head><title>{esc(title)} - Boggsfiles</title><meta name="description" content="{esc(intro)}">{HEAD}<style>{BASE}
     {CARD_CSS}
     .landing .shell{{width:min(1200px,calc(100% - 48px))}}@media(max-width:560px){{.landing .shell{{width:calc(100% - 28px)}}}}
