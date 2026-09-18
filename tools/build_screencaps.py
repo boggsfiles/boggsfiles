@@ -28,7 +28,7 @@ BUCKET = "r2:boggsfiles-media"
 
 SEASON_YEARS = {1: "1993–1994", 2: "1994–1995", 3: "1995–1996", 4: "1996–1997", 5: "1997–1998", 6: "1998–1999",
                 7: "1999–2000", 8: "2000–2001", 9: "2001–2002", 10: "2016", 11: "2018"}
-SEASON_TOTAL = {1: 24, 2: 25, 3: 24, 4: 24, 5: 20, 6: 22, 7: 22, 8: 21, 9: 20, 10: 6, 11: 10}
+SEASON_TOTAL = {1: 24, 2: 25, 3: 24, 4: 24, 5: 20, 6: 22, 7: 22, 8: 21, 9: 19, 10: 6, 11: 10}   # S9: The Truth is one two-part file
 SEASON_IMAGE = {1: "pilot.webp", 2: "little-green-men.webp", 3: "the-blessing-way.jpg", 4: "herrenvolk.jpg", 5: "redux.jpg",
                 6: "the-beginning.jpg", 7: "the-sixth-extinction.jpg", 8: "within.jpg", 9: "nothing-important-happened-today.jpg",
                 10: "my-struggle.jpg", 11: "plus-one.jpg"}
