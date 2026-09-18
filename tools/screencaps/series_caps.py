@@ -63,12 +63,13 @@ def is_black(path):
     im = Image.open(path).convert("L").resize((64, 36)); st = ImageStat.Stat(im)
     return st.mean[0] < 6 and st.stddev[0] < 6
 
-def process(season, code, title, mkv):
-    out = OUT_ROOT / f"S{season:02d}" / f"{code} {title}"
+def process(season, code, title, mkv, out=None, size=None):
+    out = out or OUT_ROOT / f"S{season:02d}" / f"{code} {title}"
     if (out / "index.json").exists(): return "skip"
     t0 = time.time()
     w, h, dar = (ffprobe(mkv, "stream=width,height,display_aspect_ratio").split(",") + ["", ""])[:3]
-    if int(h or 0) >= 1080: size = "1920:1080"                       # Blu-ray (Seasons 10–11): keep native HD
+    if size: pass                                                    # caller-supplied (films: letterbox crop)
+    elif int(h or 0) >= 1080: size = "1920:1080"                     # Blu-ray (Seasons 10–11): keep native HD
     else: size = "853:480" if dar == "16:9" else "720:540"          # DVD: native lines, square pixels
     work = out / "_work"; shutil.rmtree(work, ignore_errors=True)
     base = capture(mkv, work / "base", 0.28, 5, size)

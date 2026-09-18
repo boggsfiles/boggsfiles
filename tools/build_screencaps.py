@@ -41,8 +41,10 @@ FILMS = [
      "blurb": "Every shot change from the extended cut, with dense coverage wherever Mulder or Scully is on screen.",
      "filters": ["Mulder", "Scully", "Mulder + Scully", "The Hallway Scene", "Skinner", "CSM", "Well-Manicured Man", "Kurtzweil",
                  "The Lone Gunmen", "Cassidy", "Michaud", "Bronschweig", "Strughold", "Syndicate", "Barmaid", "Stevie"], "media": "Blu-ray"},
-    {"slug": "i-want-to-believe", "title": "I Want to Believe", "kind": "Feature film", "year": "2008", "aspect": "16/9",
-     "source": None, "still": "/assets/transcript-stills/i-want-to-believe.jpg", "blurb": "From the DVD · in preparation", "filters": [], "media": "DVD"},
+    {"slug": "i-want-to-believe", "title": "I Want to Believe", "kind": "Feature film", "year": "2008", "aspect": "853/360",
+     "source": CAPS_ROOT / "I Want to Believe (extended)", "still": "/assets/transcript-stills/i-want-to-believe.jpg",
+     "blurb": "Every shot change from the extended cut, with dense coverage wherever Mulder or Scully is on screen.",
+     "filters": ["Mulder", "Scully", "Mulder + Scully", "Skinner"], "media": "DVD"},
 ]
 
 
@@ -217,7 +219,7 @@ def main() -> None:
         if s == 9: cards += film_card(films[1])
     live_titles = sum(1 for f in films if f["source"]) + sum(seasons_live.values())
     (out / "index.html").write_text(page("Screencaps", '<a href="/archive/">Archive</a> &nbsp;/&nbsp; Screencaps', "Frame by frame", "Screencaps",
-                                         "Captures taken at every shot change, tagged by who is on screen and searchable by timecode — Blu-ray for the films and Seasons 10–11, DVD for Seasons 1–9. Episodes go live as they are processed.",
+                                         "Captures taken at every shot change, tagged by who is on screen and searchable by timecode — Blu-ray for Fight the Future and Seasons 10–11, DVD for Seasons 1–9 and I Want to Believe. Episodes go live as they are processed.",
                                          stat(live_titles, "Titles live") + stat(f"{total_frames:,}", "Frames") + stat("DVD · Blu-ray", "Sources"),
                                          "The collection", "Films and seasons", "Release order", cards, landing=True), encoding="utf-8")
     print(f"screencaps: {live_titles} titles live, {total_frames:,} frames")
