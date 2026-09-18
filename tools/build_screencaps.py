@@ -137,7 +137,8 @@ def card(href, img, kind, title, note, live) -> str:
 def page(title, crumb, eyebrow, h1, intro, stats, head_eyebrow, head_h2, head_note, cards, nav_html="") -> str:
     return f'''<!doctype html><html lang="en"><head><title>{esc(title)} - Boggsfiles</title><meta name="description" content="{esc(intro)}">{HEAD}<style>{BASE}
     {CARD_CSS}
-    </style>{ASSETS}{NAV_ASSET}</head><body>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(eyebrow)}</div><h1>{esc(h1)}</h1><p>{esc(intro)}</p><div class="summary">{stats}</div></div></section>
+    .landing .shell{{width:min(1200px,calc(100% - 48px))}}@media(max-width:560px){{.landing .shell{{width:calc(100% - 28px)}}}}
+    </style>{ASSETS}{NAV_ASSET}</head><body{' class="landing"' if landing else ''}>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(eyebrow)}</div><h1>{esc(h1)}</h1><p>{esc(intro)}</p><div class="summary">{stats}</div></div></section>
     <section class="episodes"><div class="shell"><div class="season-head"><div><div class="eyebrow">{esc(head_eyebrow)}</div><h2>{esc(head_h2)}</h2></div><span>{esc(head_note)}</span></div><div class="episode-grid">{cards}</div></div></section>{nav_html}</main><footer><div class="shell footer-row">BOGGSFILES · SCREENCAP ARCHIVE <span><a href="/">Home</a> · <a href="/screencaps/">All screencaps</a></span></div></footer></body></html>'''
 
 
@@ -218,7 +219,7 @@ def main() -> None:
     (out / "index.html").write_text(page("Screencaps", '<a href="/archive/">Archive</a> &nbsp;/&nbsp; Screencaps', "Frame by frame", "Screencaps",
                                          "Captures taken at every shot change, tagged by who is on screen and searchable by timecode — Blu-ray for the films and Seasons 10–11, DVD for Seasons 1–9. Episodes go live as they are processed.",
                                          stat(live_titles, "Titles live") + stat(f"{total_frames:,}", "Frames") + stat("DVD · Blu-ray", "Sources"),
-                                         "The collection", "Films and seasons", "Release order", cards), encoding="utf-8")
+                                         "The collection", "Films and seasons", "Release order", cards, landing=True), encoding="utf-8")
     print(f"screencaps: {live_titles} titles live, {total_frames:,} frames")
 
 
