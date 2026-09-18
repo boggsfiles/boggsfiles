@@ -8,6 +8,7 @@ Per episode (resumable; skips episodes whose index.json exists):
   5. keep base frames + dense frames where Mulder or Scully is present
   6. drop near-black frames and near-duplicate timestamps, write full/, thumb/, index.json
   7. Mulder/Scully frames that are unusually soft get swapped for a sharper same-shot neighbour (sharp.py)
+  8. frames with no detections between identical-tagged neighbours inherit those tags; tag-overrides.json applied (propagate_tags.py)
 
 Usage: facenv/bin/python series_caps.py [--only 1X79] [--season 1] [--limit N]
 """
@@ -16,6 +17,7 @@ from pathlib import Path
 import numpy as np, cv2
 from PIL import Image, ImageStat
 from sharp import resharpen
+from propagate_tags import propagate as propagate_tags, HERE as _PT_HERE
 
 HERE = Path(__file__).resolve().parent
 OUT_ROOT = Path.home() / "Movies/XF_screencaps/series"
@@ -85,6 +87,9 @@ def process(season, code, title, mkv):
     sharpened = resharpen(mkv, size, out / "full", out / "thumb", index, boxes={f: BOXES.get((keep[f][0], f), []) for f in index}, ident=(NAMES, CENTS, THRESH))
     BOXES.clear()
     json.dump(index, open(out / "index.json", "w"))
+    ov = json.load(open(_PT_HERE / "tag-overrides.json")) if (_PT_HERE / "tag-overrides.json").exists() else {}
+    propagate_tags(out, ov.get(code))            # fill detection gaps between identical neighbours + hand overrides
+    index = json.load(open(out / "index.json"))
     shutil.rmtree(work, ignore_errors=True)
     n = len(index); ms_ = sum(1 for v in index.values() if "Mulder" in v); sc = sum(1 for v in index.values() if "Scully" in v)
     return f"{n} frames (base {len(base)}, dense {len(dense)}, dropped {dropped}, resharpened {len(sharpened)}) Mulder {ms_} Scully {sc} in {time.time()-t0:.0f}s"
