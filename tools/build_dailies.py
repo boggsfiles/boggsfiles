@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build the Dailies detail pages with native <video> players served from Cloudflare R2.
+"""Build the Dailies detail pages with native <video> players served through the boggsfiles-dailies Worker.
 
-Replaces the Sprout Video embeds. Files live in the R2 bucket under dailies/<episode folder>/…;
-DAILIES maps each page to its R2 keys in viewing order. Captions come from the file names.
+Replaces the Sprout Video embeds. Files live in the PRIVATE R2 bucket (boggsfiles-private) under
+dailies/<episode folder>/…; the page asks the Worker (worker/src/index.js) for a signed link that expires
+after a few hours, so the raw bucket URL is never exposed. DAILIES maps each page to its R2 keys in viewing order.
 Run:  python3 tools/build_dailies.py   (then commit + ./publish.sh)
 """
 from __future__ import annotations
@@ -24,11 +25,19 @@ def page(title: str, body: str, active: str) -> str:   # same shell as build_arc
 def write_route(route: str, content: str) -> None:
     dest = DIST / route.strip("/") / "index.html"; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_text(content, encoding="utf-8")
 
-MEDIA_BASE = "https://pub-df226d4134944457905024edfc4635fb.r2.dev/dailies/"
+WORKER = "https://boggsfiles-dailies.boggsfiles.workers.dev"   # signs + streams from boggsfiles-private
+MEDIA_PREFIX = "dailies/"                                          # key prefix inside the private bucket
 POSTER_BASE = "https://pub-df226d4134944457905024edfc4635fb.r2.dev/dailies-posters/"   # <slug>-<nn>.jpg, one frame ~45 s into each file
 INTRO = ("Dailies are the raw, unedited footage recorded during a day of filming. They often include slates, repeated takes, "
          "alternate performances, and material that never appears in the finished episode. The production team reviewed them "
          "to evaluate performances, coverage, focus, sound, and continuity before the episode was edited.")
+
+LOADER = ('<script>(function(){var W=' + repr(WORKER) + ';'
+          'function sign(v,resume){fetch(W+"/sign?key="+encodeURIComponent(v.dataset.key)).then(function(r){if(!r.ok)throw r.status;return r.json()})'
+          '.then(function(j){var t=v.currentTime,play=!v.paused;v.src=j.url;if(resume){v.currentTime=t;if(play)v.play()}})'
+          '.catch(function(){v.closest(".media").insertAdjacentHTML("beforeend","<p class=\"media-caption\">Video unavailable right now — please try again later.</p>")})}'
+          'document.querySelectorAll("video[data-key]").forEach(function(v){sign(v,false);var retried=false;'
+          'v.addEventListener("error",function(){if(!retried&&v.src){retried=true;sign(v,true)}})})})();</script>')
 
 # slug -> (title, [(caption, r2 key), ...]) — order is viewing order
 DAILIES = {
@@ -92,7 +101,7 @@ DAILIES = {
 }
 
 def r2_sizes() -> dict[str, int]:
-    out = subprocess.run(["rclone", "lsl", "r2:boggsfiles-media/dailies/"], capture_output=True, text=True, check=True).stdout
+    out = subprocess.run(["rclone", "lsl", "r2:boggsfiles-private/dailies/"], capture_output=True, text=True, check=True).stdout
     sizes = {}
     for line in out.splitlines():
         parts = line.split(None, 3)
@@ -108,14 +117,13 @@ def main() -> None:
         media = []
         for i, (caption, key) in enumerate(items, 1):
             if key not in sizes: missing.append(key); continue
-            url = MEDIA_BASE + urllib.parse.quote(key)
-            media.append(f'<div class="media"><video controls controlsList="nodownload noremoteplayback" disablePictureInPicture oncontextmenu="return false" preload="metadata" playsinline poster="{POSTER_BASE}{slug}-{i:02d}.jpg" src="{html.escape(url, quote=True)}" title="{html.escape(title)} — {html.escape(caption)}"></video>'
+            media.append(f'<div class="media"><video controls controlsList="nodownload noremoteplayback" disablePictureInPicture oncontextmenu="return false" preload="metadata" playsinline poster="{POSTER_BASE}{slug}-{i:02d}.jpg" data-key="{html.escape(MEDIA_PREFIX + key, quote=True)}" title="{html.escape(title)} — {html.escape(caption)}"></video>'
                          f'<div class="media-caption"><span>{i:02d} · {html.escape(caption)}</span><span>{fmt_size(sizes[key])}</span></div></div>')
         n = len(media); count = f"{n} video file" + ("" if n == 1 else "s")
         body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/dailies/">Dailies</a> &nbsp;/&nbsp; {html.escape(title)}</div>'
                 f'<h1>{html.escape(title)}</h1><p>Rare production dailies and alternate footage from The X-Files.</p>'
                 f'<div class="archive-meta"><span>{count}</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section>'
-                f'<div class="shell detail-wrap"><p class="detail-copy">{html.escape(INTRO)}</p><div class="media-grid">{"".join(media)}</div></div>')
+                f'<div class="shell detail-wrap"><p class="detail-copy">{html.escape(INTRO)}</p><div class="media-grid">{"".join(media)}</div></div>{LOADER}')
         write_route(f"x-files-dailies/{slug}", page(title, body, "Dailies"))
         print(f"Built dailies: {title} ({n})", flush=True)
     if missing: raise SystemExit("MISSING on R2: " + "; ".join(missing))

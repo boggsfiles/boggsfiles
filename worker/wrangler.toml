@@ -1,0 +1,16 @@
+# Cloudflare Worker that serves the dailies from the private R2 bucket with expiring signed links.
+# Deploy: cd worker && npx wrangler deploy      Secret (once): npx wrangler secret put SIGNING_SECRET
+name = "boggsfiles-dailies"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+workers_dev = true
+
+[[r2_buckets]]
+binding = "DAILIES"
+bucket_name = "boggsfiles-private"
+
+[vars]
+ALLOWED_ORIGINS = "https://www.boggsfiles.com,https://boggsfiles.com"
+LINK_TTL_SECONDS = "21600"   # 6 h — long enough to watch a 2 GB reel, short enough that a copied link dies the same day
+
+preview_urls = false
