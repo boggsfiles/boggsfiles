@@ -35,7 +35,7 @@ INTRO = ("Dailies are the raw, unedited footage recorded during a day of filming
 LOADER = ('<script>(function(){var W=' + repr(WORKER) + ';'
           'function sign(v,resume){fetch(W+"/sign?key="+encodeURIComponent(v.dataset.key)).then(function(r){if(!r.ok)throw r.status;return r.json()})'
           '.then(function(j){var t=v.currentTime,play=!v.paused;v.src=j.url;if(resume){v.currentTime=t;if(play)v.play()}})'
-          '.catch(function(){v.closest(".media").insertAdjacentHTML("beforeend","<p class=\"media-caption\">Video unavailable right now — please try again later.</p>")})}'
+          '.catch(function(){v.closest(".media").insertAdjacentHTML("beforeend","<p class=media-caption>Video unavailable right now — please try again later.</p>")})}'
           'document.querySelectorAll("video[data-key]").forEach(function(v){sign(v,false);var retried=false;'
           'v.addEventListener("error",function(){if(!retried&&v.src){retried=true;sign(v,true)}})})})();</script>')
 
