@@ -1,0 +1,299 @@
+{
+ "title": "Beyond the Sea",
+ "slug": "beyond-the-sea",
+ "code": "1X12",
+ "season": 1,
+ "episode": 13,
+ "credits": "Written by Glen Morgan & James Wong · Directed by David Nutter",
+ "airdate": "January 7, 1994",
+ "description": "A warden who vanishes from the broadcast, a priest who was never on the page, and the hand on Scully’s cheek that replaced a confession: the Pink draft meets the aired episode.",
+ "summary": "One archived draft, the Pink of November 23, 1993, compared with the Region 1 DVD closed captions. No earlier draft of this episode is on file. An entire Warden subplot is missing from the broadcast, along with everything downstream of it. The aired cut adds a chaplain and the Lord’s Prayer over Boggs’ execution, and it changes the last line of the hour. The richest Mulder and Scully material of the season so far runs through both versions: a near-confession that was cut, a gesture that was added, and an ending that moves from a ticking clock to Scully saying out loud what the episode has circled.",
+ "category_descriptions": {
+  "cut": "Three findings: a named character removed whole, a strange taunt, and one of Scully’s few jokes under pressure.",
+  "changed": "Rewritten E.R. jargon, and a priest and the Lord’s Prayer staged live over Boggs’ real execution.",
+  "shippy": "Scully loses her father and very nearly loses her partner inside the same forty-eight hours. Present in both script and air unless marked."
+ },
+ "drafts": [
+  {
+   "date": "November 23, 1993",
+   "revision": "Pink · final draft on file",
+   "format": "Full · 59 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1ru4ebCv8Gb9lJturbIN8Eb3hMB4Dtsh5/view?usp=share_link"
+  }
+ ],
+ "findings": [
+  {
+   "id": "warden-cash",
+   "category": "cut",
+   "title": "Warden Joseph Cash: his entire subplot removed",
+   "meta": "Pink pp.44–45 · scene 47 · and p.47, scene 49",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "An entire scene in the Warden’s office is missing from air. Scully goes over Mulder’s head to ask the Warden directly for a stay of execution to save Jim Summers, and is flatly refused. Warden Cash is a named character with his own office, his own name plate, and several lines, and in the aired cut he never appears or speaks at all. The audience simply cuts from the newspaper trick straight to the phone call."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY · SCENE 47",
+     "text": "WARDEN: The Governor and the Supreme Court of North Carolina do not intend to make a deal with a mass murderer... But I’ll grant you a favor, Agent Scully. I’ll keep this “request” strictly between you and me.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The cut has a domino effect later. In the script, Boggs does a cruel little impression of the Warden as a parting shot, and Scully asks him why he tipped her off, a whole exchange that only makes sense if the Warden scene exists. It is cut too."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY · P.47, SCENE 49",
+     "text": "Boggs does a parody of Warden Cash, not channeling. BOGGS: I’ll grant you a favor and keep this between you and me. SCULLY: Why did you tell me? BOGGS: In the hope there’ll be one less ghost when they walk me down that hallway.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Air keeps Boggs’ final “Avoid the devil” warning, but skips straight to it. The Warden material, and everything downstream of it, is gone. Warden Joseph Cash is never named or spoken to anywhere in the broadcast, which confirms the subplot was removed rather than trimmed."
+    }
+   ]
+  },
+  {
+   "id": "french-taunt",
+   "category": "cut",
+   "title": "Boggs’ French taunt, and Scully’s retort",
+   "meta": "Pink p.15 · scene 11",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "A strange beat. Mid-channeling, before he takes the evidence cloth, Boggs snaps out a line of French. Scully fires back that if he won’t prove himself, there is no deal. Neither line survives to air: Mulder’s “I want to believe” simply follows “you have to prove you’re telling the truth” directly."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY · OCR UNCERTAIN ON THE FRENCH",
+     "text": "BOGGS: Je ne vous dois pas un sou. / SCULLY: Then we don’t owe you any deal to keep Boggs out of the gas chamber.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The French line reads oddly for a Southern death-row inmate and the scan is faint here, so the script side is flagged as uncertain rather than asserted. The aired side is not in doubt: neither the taunt nor Scully’s pushback appears anywhere in the caption track."
+    }
+   ]
+  },
+  {
+   "id": "gallows-humor",
+   "category": "cut",
+   "title": "Scully’s gallows-humor joke, cut",
+   "meta": "Pink p.22 · scene 18",
+   "blocks": [
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“Well, at least with Boggs around, we’d still be able to carry on a conversation.” (Mulder gives her a scorching “it’s not funny” look.)",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "Cut straight from Mulder’s “Why did you lie in your police report?” to Scully’s “I thought it would be a better explanation under the circumstances.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "A small trim, but it removes one of the few moments of dark humor Scully reaches for under pressure this episode. The aired argument plays straighter and angrier throughout."
+    }
+   ]
+  },
+  {
+   "id": "er-dialogue",
+   "category": "changed",
+   "title": "E.R. trauma dialogue entirely rewritten",
+   "meta": "Pink p.34 · scene 39",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Same beats: through-and-through wound, blood pressure of 67, rush to the O.R. But every line of medical jargon was rewritten between the page and the studio floor."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "NURSE: He’s gone hypovolemic. / PARAMEDIC: It’s a through and through. Upper leg, iliac crest. / DOCTOR: Prepare O.R. Six. Notify Doctor Taylor.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED",
+     "text": "DOCTOR: Through and through upper femur... / NURSE: Can’t palpate a radial pulse... / DOCTOR: Tighten him and screen him for six, I want two liters of normal saline in him now and give him two units of o-neg after the typing.",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "priest-execution",
+   "category": "changed",
+   "title": "A priest and the Lord’s Prayer, added to Boggs’ real execution",
+   "meta": "Pink pp.53–54 · scene 60 · captions 43:34–43:46",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In the script, the only minister and the only Scripture in the episode belong to Boggs’ own psychic flashback earlier in Act Three, his vision of a past near-execution, quoting 1 John over a plate of last-meal food. The actual, present-tense execution in the script’s final act has no clergy at all: just the Warden asking if he would like to make a statement, then the pellets drop."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "WARDEN: Would you like to make a statement? BOGGS: can only shake his head “no.” ... The bag of sodium cyanide pellets drop into the bowl. Gas begins to angrily flow into the chamber.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED",
+     "text": "PRIEST: Our father who art in heaven, hallowed be thy name... MAN: Would you like to make a statement? PRIEST: ...and lead us not into temptation but deliver us from evil, for thine is thy kingdom, thy power and thy glory... forever and ever. Amen.",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Air imports the religious framing that the script had kept confined to Boggs’ own subjective flashback and stages it live, over his actual death: a real chaplain reciting the Lord’s Prayer as the gas rises, rather than Boggs alone narrating a memory of one. It gives the final execution a ritual solemnity the page version did not stage directly. The prayer is captioned in full from 43:34 to “forever and ever, amen” at 43:46, and it is not in the script."
+    }
+   ]
+  },
+  {
+   "id": "almost-confession",
+   "category": "shippy",
+   "title": "The almost-confession, cut. The hand on her cheek, added.",
+   "meta": "Pink pp.11–12 · scene 9",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Right after Mulder says “I’m sorry about your father,” the script has Scully call him back for an entire extra exchange. She almost tells him about the vision of her father in the chair, circling it in the most indirect language she can manage, and he gently senses there is more to it without pushing."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "SCULLY: Mulder... in... in the X-Files... have you ever come across... people who have seen... MULDER: (softly) Seen what? SCULLY: ...psychic transmissions, like Boggs claims. (He studies her, sensing this was not her real question.) MULDER: Sure. Check the files.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED",
+     "text": "MULDER: I’m sorry about your father. (He puts his hand on her cheek. She nods. He starts out.) I’ll see you later. SCULLY: (whispering) Okay.",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The whole verbal near-confession is gone. In its place, air gives Mulder a single wordless gesture, his hand on her cheek, that is not in the script at all. It trades Scully’s halting, deflecting words for Mulder’s unspoken read of her, and it is worth sitting with: the show chose touch over dialogue for the exact moment the character herself chooses concealment over confession. “Psychic transmissions” does survive elsewhere on the disc, at 06:45, in Boggs’ own framing, but not in this exchange."
+    }
+   ]
+  },
+  {
+   "id": "you-love-your-father",
+   "category": "shippy",
+   "title": "“You love your father.”",
+   "meta": "Pink scene 18 · present in script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Present almost word for word in both script and air, and it is the emotional spine of the episode. Mulder names exactly what is driving her recklessness before she can name it herself, and does it without cruelty."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT & AIRED",
+     "text": "MULDER: Does this have to do with your father?... You said that he didn’t approve of you becoming an FBI agent... if it’s clouding your judgement, you’re putting yourself in danger. SCULLY: I love this job. MULDER: You love your father.",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The script adds one more line that air keeps too: “Dana... open yourself up to extreme possibilities only when they’re the truth. That goes for Luther Boggs... and your father.” It is Mulder, the believer, cautioning the one time it is Scully reaching for belief, a total inversion of their usual dynamic, and it survives to air intact."
+    }
+   ]
+  },
+  {
+   "id": "starbuck",
+   "category": "shippy",
+   "title": "Grief and partnership fuse into the same psychic image",
+   "meta": "Pink scenes 11 and 42 · present in script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Boggs channels William Scully calling her “Starbuck” twice across the episode, and once, mid-channel, his face and voice swap directly for Mulder’s."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · FIRST INTERROGATION",
+     "text": "BOGGS (singing): Somewhere... beyond the sea... (She turns around. Boggs looks up. In her eyes, he is replaced by William Scully.) Did you get my message, Starbuck?",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · CELL CONFRONTATION",
+     "text": "(She turns back. Instead of seeing Boggs there, she sees Mulder.) (as Mulder) You’re the one that believed me! SCULLY: No! No, I do not believe you!",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Both hallucinations are present in script and air alike, but staged back to back like this they do real work. The episode is quite literally superimposing her dead father’s face and her partner’s face onto the same manipulative source, and Scully can only reject the vision by insisting she does not believe, the one thing that, about Mulder specifically, is not actually true."
+    }
+   ]
+  },
+  {
+   "id": "so-was-i",
+   "category": "shippy",
+   "title": "“I was so scared” / “So was I”: missing from the hospital scene",
+   "meta": "Pink p.45 · scene 48",
+   "blocks": [
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "CLOSE. TWO HANDS. One with an I.V. is being comforted by another. PULLING BACK REVEALS Scully standing over Mulder... SCULLY: Mulder... I was so scared. MULDER: So was I. (She takes her hand away and pulls up a chair.)",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Neither line is spoken in the broadcast. “So was I” never appears in the caption track at all, and the only “I was so scared” on the disc belongs to Boggs, in his story about sneaking a cigarette at fourteen (29:17), a different scene entirely. The scripted exchange between Mulder and Scully is gone. The hand-holding the script describes around it is staging, which captions do not record either way, so nothing is claimed about it here."
+    }
+   ]
+  },
+  {
+   "id": "last-line",
+   "category": "shippy",
+   "title": "The episode’s last line, changed for air",
+   "meta": "Pink p.55 · scene 61 · captions 45:06",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The episode’s very last beat. On the page it ends on imagery, the camera pulling back to the ticking clock, with no closing line. The broadcast ends on Scully instead: “He was my father.” is the final captioned line of the episode, at 45:06."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "Mulder understands, he lies back on his bed. CAMERA PULLS BACK into the darkened room, WIDE, until the clock is in FRAME, highlighted with a soft light. As the two friends sit together, and the clock ticks... FADE OUT. THE END.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS, 45:06 (FINAL LINE)",
+     "text": "“He was my father.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The change is one of emphasis, and it runs in a consistent direction. The script reaches for physical comfort between them mid-episode (the hospital beat above) and then retreats to imagery at the close, ending on a clock rather than on either of them. The broadcast does the reverse: it drops the scripted hospital exchange and gives the hour’s last word to Scully, naming out loud the thing the whole episode has circled. What the camera does over that line is not something a caption track can report, and no claim is made about it here, but the line itself, and its position as the last one spoken, is on the disc."
+    }
+   ]
+  }
+ ],
+ "still_alt": "Mulder’s hand on Scully’s cheek in the basement office"
+}
