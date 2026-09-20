@@ -93,17 +93,17 @@ done(img, d)
 # 3 · happy hour in Paris
 img, d = new()
 d.text((80, 430), "WRITTEN IN. STILL CUT.", font=oswald(64, 600), fill=PAPER)
-still(img, "000164631.jpg", (80, 520, 920, 460))
-y = panel(img, d, 1002, "SCRIPT  ·  YELLOW", "“It’s two in the afternoon.” / “Yeah, but it’s happy hour in Paris.”", "script")
-para(d, 80, y + 14, "Added at the Pink revision. Survives to the shooting draft. Never makes air.", mono(23), fill=MUTED, lh=32)
+still(img, "000164631.jpg", (80, 520, 920, 430))
+y = panel(img, d, 972, "SCRIPT  ·  YELLOW", "“It’s two in the afternoon.” / “Yeah, but it’s happy hour in Paris.”", "script")
+para(d, 80, y + 14, "Added at the Pink revision. Survived to the shooting draft. Never aired.", mono(23), fill=MUTED, lh=32)
 done(img, d)
 
 # 4 · paranormal bouquet
 img, d = new()
 d.text((80, 430), "NOT IN ANY DRAFT.", font=oswald(64, 600), fill=PAPER)
-still(img, "000265365.jpg", (80, 520, 920, 460))
-y = panel(img, d, 1002, "AIRED ONLY", "“Let’s just say this case has a distinct smell to it. A certain... paranormal bouquet.”", "aired")
-para(d, 80, y + 14, "Not in the First Draft, the Blue, or the Yellow. Written later, or improvised.", mono(23), fill=MUTED, lh=32)
+still(img, "000265365.jpg", (80, 520, 920, 430))
+y = panel(img, d, 972, "AIRED ONLY", "“Let’s just say this case has a distinct smell to it. A certain... paranormal bouquet.”", "aired")
+para(d, 80, y + 14, "Not in the First Draft, Blue, or Yellow. Written later, or improvised.", mono(23), fill=MUTED, lh=32)
 done(img, d)
 
 # 5 · wake up
