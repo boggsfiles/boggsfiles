@@ -1,0 +1,249 @@
+{
+ "title": "Deep Throat",
+ "slug": "deep-throat",
+ "code": "1X01",
+ "season": 1,
+ "episode": 2,
+ "credits": "Written by Chris Carter · Directed by Daniel Sackheim",
+ "airdate": "September 17, 1993",
+ "description": "A Section Chief who never speaks, a joke that was written in and still cut, and the closing report card that put Scully on the record for Mulder: three archived drafts meet the aired episode.",
+ "summary": "Three archived drafts, the White First Draft of July 1, 1993, the Blue of July 9, and the Yellow of July 22, compared with the Region 1 DVD closed captions. A confrontation with Section Chief Blevins survives word for word in every draft and never reaches the screen. Mulder’s happy hour in Paris joke is written in at the Pink revision and still does not make air. The aired cut adds a guess Deep Throat declines to answer, a line about a paranormal bouquet that exists in no draft, and an entire closing text card in which Scully corroborates Mulder’s sighting on the record.",
+ "category_descriptions": {
+  "cut": "A whole Blevins scene removed on the way to broadcast, a joke that never made it, and line-by-line trims for pace.",
+  "changed": "An extra question at the end, a re-recorded radio call, and one of the episode’s most quoted lines, written later than any surviving draft.",
+  "shippy": "Episode two, too early for romance, but the earliest seeds are already on the page. Present in both script and air unless marked."
+ },
+ "drafts": [
+  {
+   "date": "July 1, 1993",
+   "revision": "White · First Draft",
+   "format": "Full · 54 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/19o1CFq4F6lVuqoQvjYkfXnI07zwH8X8M/view?usp=sharing"
+  },
+  {
+   "date": "July 9, 1993",
+   "revision": "Blue",
+   "format": "Full · 60 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/132TcCgyxSbfm0S5VfEKiehgUAHguro0H/view?usp=sharing"
+  },
+  {
+   "date": "July 22, 1993",
+   "revision": "Yellow · shooting draft",
+   "format": "Full · 65 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1aA85p7Kz4bfWD2Y1Qe-fFjPY9C03c-kH/view?usp=share_link"
+  }
+ ],
+ "findings": [
+  {
+   "id": "blevins",
+   "category": "cut",
+   "title": "The Blevins scene: an entire confrontation removed",
+   "meta": "Yellow pp.10–11 · scene 7 · present in First Draft, Blue and Yellow",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Section Chief Scott Blevins corners Scully at the microfiche reader, demands to know why Mulder reopened a reclassified case, and orders her field report to read like wasted Bureau time. He is in the episode’s own cast list, and never says a word in the aired episode. The captions confirm the cut cleanly: the bar scene ends, the mystery man in the tavern (revealed later as Deep Throat) warns Mulder off the case, and the very next line of dialogue in the entire episode is Scully on the phone. No microfiche scene, no second voice, anywhere in the gap."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "BLEVINS: What the hell is he doing? This case has been reclassified. It’s been turned over to the military... I want that in your field report, Agent Scully.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Present, word for word, in every draft on file. This one was not rewritten away, it was cut on the way to broadcast. The rewrite even patches the seam: Scully’s later phone call keeps almost all of its scripted lines, including the “U.F.O. goose chase” jab, present in every draft, but swaps the now-absent character’s name for the institution."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“Did you hear what I said, Mulder? Because Blevins has it out for you already. And it’d make both of us appear pretty stupid if my field report read like some tabloid story.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Are you there, Mulder?” … “The Bureau has it out for us already and it would make us appear pretty stupid if my field report read like some tabloid story.”",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "happy-hour-in-paris",
+   "category": "cut",
+   "title": "Mulder’s “happy hour in Paris” line",
+   "meta": "Yellow p.6 · scene 4 · written in at Pink, survives to Yellow, not aired",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Not a straight cut. The joke does not exist yet in the First Draft or Blue, gets written in at the Pink revision (that page carries a Pink stamp and an “(X)” revision mark), survives to the final Yellow draft, and still does not make air."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT · YELLOW",
+     "text": "“Sorry for the runaround. Can I buy you a drink?” / “It’s two in the afternoon.” / “Yeah, but it’s happy hour in Paris.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Sorry for the runaround. Can I buy you a drink?” / “It’s 2:00 in the afternoon, Agent Mulder.” / “That’s not stopping the rest of these people.”",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "interview-trims",
+   "category": "cut",
+   "title": "Trims throughout the McLennen and Budahas interviews",
+   "meta": "Yellow pp.10–18",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Nothing structural. Verla McLennen’s and Mrs. Budahas’s speeches are shortened line by line for pace, same beats, same information. Not itemized individually here."
+    }
+   ]
+  },
+  {
+   "id": "military-ufo",
+   "category": "changed",
+   "title": "Mulder gets an extra question in the closing scene, and Deep Throat does not answer it",
+   "meta": "Yellow p.65 · scene 65 · not in any of the three drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The script runs Mulder’s line straight into Deep Throat’s riddle with no gap. The aired cut inserts a guess. The captions’ own timing settles who says it: “you have to tell me what it was” and “a military U.F.O.?” are cut back to back with no pause between them, then there is a long silent beat, about seven or eight seconds, before the next caption starts. That silence is scripted (“The Man looks off into the middle distance, measuring the thing he is about to say”); the line spoken into it is not. Read together, it is Mulder who gets the extra line, guessing out loud, and Deep Throat’s pause is him declining to confirm it before pivoting to the riddle."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "MULDER: They erased it. You’ve got to tell me what it was. DEEP THROAT: Mr. Mulder, why are those like yourself...",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · CAPTIONS, WITH GAP",
+     "text": "MULDER: You have to tell me what it was. A military U.F.O.? [about 8 seconds, no caption] DEEP THROAT: Mr. Mulder, why are those like yourself...",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Not in any of the three drafts on file, including the First Draft and Blue. The whole exchange from “they erased it” to the riddle is otherwise identical across all three."
+    }
+   ]
+  },
+  {
+   "id": "ellens-gate",
+   "category": "changed",
+   "title": "The gate at Ellens: the walkie call is a real rewrite, but only half of it is caption-confirmed",
+   "meta": "Yellow pp.59–60 · scenes 58–60",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The script does have a radio call here, it is not invented from nothing, but it is written as a deliberately garbled placeholder as Mossinger’s car idles at the gate: “a man’s garbled voice which says something like: ‘Aanestrouse enroute. Please stand by.’” The aired version swaps that placeholder for real call-and-response dialogue. Captions clearly catch one word of it, a guard’s “ROGER,” at the same beat, confirming the exchange was re-recorded as intelligible dialogue. The fuller wording sometimes attributed to this exchange (“Your target is arriving…” / “Intruder arriving… Copy.”) sits underneath dialogue and sound effects and is not clean enough to caption: real, but unconfirmed by this source."
+    }
+   ]
+  },
+  {
+   "id": "paranormal-bouquet",
+   "category": "changed",
+   "title": "“A certain paranormal bouquet”: the whole line is new for air",
+   "meta": "Not in any draft · captions confirm it word for word",
+   "blocks": [
+    {
+     "kind": "panel",
+     "label": "AIRED ONLY",
+     "text": "“Let’s just say this case has a distinct smell to it. A certain... paranormal bouquet.”",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Mulder’s exit line from the bar does not appear in the First Draft, Blue, or Yellow. Captions confirm it was said, word for word, right before he is pulled aside by the man in the tavern. One of the episode’s most quoted lines was written in later than any surviving draft, or improvised outright."
+    }
+   ]
+  },
+  {
+   "id": "get-a-table",
+   "category": "shippy",
+   "title": "“Let’s get a table.”",
+   "meta": "Yellow scene 4 · present in script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Mulder wants Scully alone, away from the bar, before he will show her anything, scripted as a “Cheshire smile.” The instinct to bring her in first, and privately, starts here."
+    }
+   ]
+  },
+  {
+   "id": "sucker",
+   "category": "shippy",
+   "title": "“Sucker.”",
+   "meta": "Yellow scene 18 · present in script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Scully’s dry needle after Mulder pays for the UFO photo: the first flash of their teasing shorthand."
+    }
+   ]
+  },
+  {
+   "id": "wake-up",
+   "category": "shippy",
+   "title": "“Scully! Wake up! You’ve got to see this!”",
+   "meta": "Yellow scene 24 · present in script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "He physically pulls her out of the car to witness the lights. He does not want a witness. He wants her to see it."
+    }
+   ]
+  },
+  {
+   "id": "field-report",
+   "category": "shippy",
+   "title": "Scully corroborates his sighting in her report",
+   "meta": "Closing text card · not in any draft",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Despite everything she has said all episode, her final field report backs Mulder’s eyewitness account of the UFOs on the record, the first time she chooses him over her own skepticism, on paper. Captions confirm it verbatim, from the closing on-screen text card."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · CLOSING TEXT CARD",
+     "text": "“...Special Agent Mulder’s insistence that Budahas may have been a test pilot on a top secret project involving aircraft using ‘recovered U.F.O.’ technology and may have suffered severe stress-related trauma by flying these aircraft is also inconclusive. Though this agent can corroborate Agent Mulder’s eyewitness account of two unidentified flying objects in the northern sky over Ellens Air Base. Their exact nature or design could not be determined. Barring further authorized inquiry...”",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The card itself is not in the First Draft, Blue, or Yellow. All three end on Deep Throat’s “they’ve been here for a long, long time” and cut straight to FADE OUT. The entire epilogue, and with it the clearest on-record evidence of Scully backing Mulder, was written after the shooting script."
+    }
+   ]
+  },
+  {
+   "id": "unconfirmed-beats",
+   "category": "shippy",
+   "title": "Two beats that captions cannot confirm or deny",
+   "meta": "Not in this draft · blocking, not dialogue",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Scully hesitating before getting back in the car after Mulder’s “never washed out” line, and, at the very end, sitting alone with his UFO photo while typing her report over the closing text card. These are blocking and camera choices, not dialogue. Captions carry no stage directions, so this cannot be confirmed from this source either. Flagged, not asserted."
+    }
+   ]
+  }
+ ],
+ "still_alt": "Mulder and Scully looking up at the lights over Ellens Air Base"
+}
