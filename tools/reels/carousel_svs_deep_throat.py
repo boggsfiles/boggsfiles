@@ -51,7 +51,7 @@ def para(d, x, y, s, f, fill=PAPER, maxw=W - 160, lh=None):
 def still(img, frame, box):
     """Paste a screencap, cover-cropped into box=(x,y,w,h), with the site's thin border."""
     x, y, w, h = box; im = Image.open(EP / frame).convert("RGB")
-    im = ImageOps.fit(im, (w, h), Image.LANCZOS, centering=(0.5, 0.4)); img.paste(im, (x, y))
+    im = ImageOps.fit(im, (w, h), Image.LANCZOS, centering=(0.5, 0.3)); img.paste(im, (x, y))
     ImageDraw.Draw(img).rectangle((x, y, x + w - 1, y + h - 1), outline=LINE, width=2)
 def panel(img, d, y, label, text, tone, h=None):
     """Paper quote panel like the site's .quote / .quote.aired; returns bottom y."""
@@ -93,45 +93,41 @@ done(img, d)
 # 3 · happy hour in Paris
 img, d = new()
 d.text((80, 430), "WRITTEN IN. STILL CUT.", font=oswald(64, 600), fill=PAPER)
-y = para(d, 80, 516, "The joke is not in the First Draft or the Blue. It is written in at the Pink revision, survives to the Yellow shooting draft, and still never makes air.", mono(26), fill=PAPER, lh=38)
-still(img, "000164631.jpg", (80, y + 16, 920, 230))
-y = panel(img, d, y + 262, "SCRIPT  ·  YELLOW", "“It’s two in the afternoon.” / “Yeah, but it’s happy hour in Paris.”", "script")
-y = panel(img, d, y + 12, "AIRED", "“It’s 2:00 in the afternoon, Agent Mulder.” / “That’s not stopping the rest of these people.”", "aired")
+still(img, "000164631.jpg", (80, 520, 920, 460))
+y = panel(img, d, 1002, "SCRIPT  ·  YELLOW", "“It’s two in the afternoon.” / “Yeah, but it’s happy hour in Paris.”", "script")
+para(d, 80, y + 14, "Added at the Pink revision. Survives to the shooting draft. Never makes air.", mono(23), fill=MUTED, lh=32)
 done(img, d)
 
 # 4 · paranormal bouquet
 img, d = new()
 d.text((80, 430), "NOT IN ANY DRAFT.", font=oswald(64, 600), fill=PAPER)
-y = para(d, 80, 516, "One of the most quoted lines in the episode does not exist in the First Draft, the Blue, or the Yellow. Captions confirm it was said, word for word.", mono(26), fill=PAPER, lh=38)
-still(img, "000265365.jpg", (80, y + 20, 920, 340))
-y = panel(img, d, y + 380, "AIRED ONLY", "“Let’s just say this case has a distinct smell to it. A certain... paranormal bouquet.”", "aired")
-para(d, 80, y + 18, "Written later than any surviving draft, or improvised outright.", mono(24), fill=MUTED, lh=34)
+still(img, "000265365.jpg", (80, 520, 920, 460))
+y = panel(img, d, 1002, "AIRED ONLY", "“Let’s just say this case has a distinct smell to it. A certain... paranormal bouquet.”", "aired")
+para(d, 80, y + 14, "Not in the First Draft, the Blue, or the Yellow. Written later, or improvised.", mono(23), fill=MUTED, lh=32)
 done(img, d)
 
 # 5 · wake up
 img, d = new()
 d.text((80, 430), "“SCULLY! WAKE UP!", font=oswald(64, 600), fill=PAPER)
 d.text((80, 500), "YOU’VE GOT TO SEE THIS!”", font=oswald(64, 600), fill=PAPER)
-still(img, "001013446.jpg", (80, 600, 920, 430))
-para(d, 80, 1054, "He pulls her out of the car to see the lights. He does not want a witness. He wants her to see it. On the page and on screen.", mono(26), fill=PAPER, lh=38)
+still(img, "001013446.jpg", (80, 596, 920, 520))
+para(d, 80, 1140, "He does not want a witness. He wants her to see it. On the page and on screen.", mono(24), fill=PAPER, lh=34)
 done(img, d)
 
 # 6 · military UFO
 img, d = new()
 d.text((80, 430), "A QUESTION HE", font=oswald(64, 600), fill=PAPER)
 d.text((80, 500), "NEVER ASKED ON THE PAGE.", font=oswald(64, 600), fill=PAPER)
-still(img, "002662827.jpg", (80, 592, 920, 230))
-y = panel(img, d, 846, "SCRIPT", "MULDER: They erased it. You’ve got to tell me what it was. DEEP THROAT: Mr. Mulder, why are those like yourself...", "script")
-y = panel(img, d, y + 12, "AIRED  ·  WITH AN 8-SECOND SILENCE", "MULDER: You have to tell me what it was. A military U.F.O.? [silence] DEEP THROAT: Mr. Mulder, why are those like yourself...", "aired")
+still(img, "002631429.jpg", (80, 596, 920, 440))
+y = panel(img, d, 1058, "AIRED  ·  NOT IN ANY DRAFT", "“You have to tell me what it was. A military U.F.O.?” Then eight seconds of silence.", "aired")
 done(img, d)
 
 # 7 · the report card
 img, d = new()
 d.text((80, 430), "SHE BACKED HIM UP.", font=oswald(64, 600), fill=PAPER)
 d.text((80, 500), "ON THE RECORD.", font=oswald(64, 600), fill=PAPER)
-still(img, "002575039.jpg", (80, 592, 920, 280))
-y = panel(img, d, 896, "AIRED  ·  CLOSING TEXT CARD  ·  NOT IN ANY DRAFT", "“Though this agent can corroborate Agent Mulder’s eyewitness account of two unidentified flying objects in the northern sky over Ellens Air Base.”", "aired")
-para(d, 80, y + 18, "All three drafts end on Deep Throat’s riddle and fade out. The epilogue, and the first time Scully chooses Mulder over her own skepticism on paper, was written after the shooting script.", mono(24), fill=MUTED, lh=34)
+still(img, "002567565.jpg", (80, 596, 920, 440))
+y = panel(img, d, 1058, "AIRED  ·  CLOSING TEXT CARD  ·  NOT IN ANY DRAFT", "“Though this agent can corroborate Agent Mulder’s eyewitness account of two unidentified flying objects...”", "aired")
 done(img, d)
 
 # 8 · closer
