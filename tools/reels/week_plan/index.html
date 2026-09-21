@@ -1,0 +1,73 @@
+<title>Boggsfiles Week Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+:root{--ink:#0f1211;--ink2:#181d1a;--ink3:#232a26;--line:#2e3631;--paper:#e9e6dc;--mute:#8d948c;--signal:#c2413a;--ok:#5f9e6e}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#0f1211;--ink2:#181d1a;--ink3:#232a26;--line:#2e3631;--paper:#e9e6dc;--mute:#8d948c}}
+:root[data-theme="dark"]{--ink:#0f1211;--ink2:#181d1a;--ink3:#232a26;--line:#2e3631;--paper:#e9e6dc;--mute:#8d948c}
+:root[data-theme="light"]{--ink:#f2efe7;--ink2:#e6e2d7;--ink3:#d8d3c6;--line:#c9c3b4;--paper:#161a18;--mute:#6b6f68}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--ink:#f2efe7;--ink2:#e6e2d7;--ink3:#d8d3c6;--line:#c9c3b4;--paper:#161a18;--mute:#6b6f68}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--paper);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;padding:0 16px;padding-block:18px 48px}
+.wrap{max-width:720px;margin:0 auto}
+h1{margin:0;font:600 26px/1 Oswald,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+h1 b{color:var(--signal);font-weight:600}
+.sub{font:13px/1.4 "DM Mono",ui-monospace,Menlo,monospace;color:var(--mute);margin:8px 0 18px}
+.sub b{color:var(--paper);font-weight:500}
+.day{border-top:1px solid var(--line);padding:14px 0 16px;display:grid;grid-template-columns:34px 1fr;gap:12px}
+.day.done{opacity:.45}
+.day input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--ok);cursor:pointer}
+.when{font:500 12px/1 Oswald,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.when b{color:var(--signal);font-weight:600;font-size:13px}
+.what{margin:6px 0 4px;font:500 19px/1.25 Oswald,sans-serif}
+.kind{display:inline-block;font:500 11px/1 "DM Mono",monospace;letter-spacing:.05em;padding:3px 7px;border:1px solid var(--line);border-radius:4px;color:var(--mute);margin-left:8px;vertical-align:2px}
+.file{font:12px/1.5 "DM Mono",monospace;color:var(--mute);word-break:break-word}
+.file span{color:var(--paper)}
+.cap{margin:10px 0 0;background:var(--ink2);border-left:3px solid var(--signal);padding:10px 12px;font:13px/1.55 "DM Mono",monospace;white-space:pre-wrap;word-break:break-word}
+.cap.note{border-left-color:var(--line);color:var(--mute)}
+button.copy{margin-top:8px;background:transparent;color:var(--paper);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:500 12px/1 Oswald,sans-serif;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+button.copy:focus-visible,input:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+.foot{border-top:1px solid var(--line);margin-top:8px;padding-top:14px;font:12px/1.6 "DM Mono",monospace;color:var(--mute)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--paper);color:var(--ink);padding:8px 14px;border-radius:6px;font:13px "DM Mono",monospace;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+</style>
+<div class="wrap">
+  <h1>Boggs<b>X</b>Files · This Week</h1>
+  <p class="sub">Sun Sep 20 – Sun Sep 27, 2026 · <b id="left">0</b> to go · tick a post when it's up. Best hours from your numbers: <b>6–10am</b>, or <b>3pm</b>.<br><a href="https://claude.ai/artifact/Fyr2hjmEPnY2xcygq7T8Zq" target="_blank" rel="noopener" style="color:var(--paper);text-decoration:underline;text-decoration-color:var(--signal);text-underline-offset:3px">Post Ledger ↗</a> — which photos are already on @boggsfiles, and the Rare · unposted queue.</p>
+  <div class="foot" style="border-top:0;margin:0 0 6px;padding-top:0">DATES THIS WEEK — <span style="color:var(--paper)">Wed 24</span> “Squeeze” aired 1993 · <span style="color:var(--paper)">Sat 26</span> Ghost Hunting Day · <span style="color:var(--paper)">Mon 28</span> Good Neighbor Day (“Arcadia”) · <span style="color:var(--paper)">Tue 29</span> Coffee Day, and a day to keep light · full list in the <a href="https://claude.ai/artifact/1DYPixCs5X1ZTDgqr6nDY7" target="_blank" rel="noopener" style="color:var(--paper)">Calendar ↗</a></div>
+  <div id="list"></div>
+  <p class="foot">Gag moments: iCloud › X-Files Scripts › XF Music Videos › Gag Moments › Season 1 week. Two spares in the same folder (Alt – Doorway, Alt – Rainy car) if a day needs swapping. Never mention where any footage came from beyond “from the DVD master”. Next week: the full Season 1 gag reel goes on the site.</p>
+</div>
+<div class="toast" id="toast"></div>
+<script>
+const DAYS=[
+ {id:"sun20",day:"Sun Sep 20",time:"today",kind:"Reel",what:"Memento Mori — the deleted kiss",file:"Desktop › Memento Mori outtake › <span>Memento Mori kiss (DVD) for IG.mp4</span> · cover: still 02",cap:"What’s better than the deleted kiss? The deleted kiss with the sound on.\n\nMemento Mori, 1997. Cut before broadcast — you’ve probably only ever seen this as a silent GIF. This is the scene."},
+ {id:"mon21",day:"Mon Sep 21",time:"9am",kind:"Carousel · 8",what:"Script vs. Screen — Deep Throat",file:"iCloud › XF Music Videos › <span>Carousel - Script vs Screen (Deep Throat)</span> › 01–08.png",cap:"Blevins had a scene. Deep Throat cut him.\n\nI read all three archived drafts of Deep Throat, White, Blue and Yellow, against the aired episode. A Section Chief who’s in the cast list and never speaks. A joke that was written in at the Pink revision and still didn’t make air. And the closing text card, where Scully backs Mulder’s UFO sighting on the record, isn’t in any draft at all. It was written after the shooting script.\n\nFull report, every draft linked: boggsfiles.com/script-vs-screen"},
+ {id:"mon21b",day:"Mon Sep 21",time:"3pm",kind:"Reel",what:"Gag reel · Season 1 · Mulder, take one",file:"Gag Moments › Season 1 week › <span>Mon - Mulder take one.mp4</span>",cap:"Take one. Season 1 gag reel, from the DVD master. One a day this week. 👽"},
+ {id:"tue22",day:"Tue Sep 22",time:"9am",kind:"Reel",what:"Gag reel · Scully in the rain",file:"Gag Moments › Season 1 week › <span>Tue - Scully in the rain.mp4</span>",cap:"Vancouver, 1993. It rained. Season 1 gag reel, day two."},
+ {id:"wed23",day:"Wed Sep 23",time:"9am",kind:"Reel",what:"Gag reel · Rain, take two",file:"Gag Moments › Season 1 week › <span>Wed - Rain take two.mp4</span>",cap:"Still raining. Season 1 gag reel, day three."},
+ {id:"thu24",day:"Thu Sep 24",time:"9am",kind:"Reel",what:"Gag reel · Mulder, blue shirt",file:"Gag Moments › Season 1 week › <span>Thu - Mulder blue shirt.mp4</span>",cap:"He never did get that line out. Season 1 gag reel, day four."},
+ {id:"thu24b",day:"Thu Sep 24",time:"3pm",kind:"Carousel · 4–6",what:"Rare scans — pick from the ledger",file:"<a href=\"https://claude.ai/artifact/Fyr2hjmEPnY2xcygq7T8Zq\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--paper)\">Post Ledger ↗</a> › filter <span>Rare · unposted</span> › Season 3 (251 unposted) — choose 4–6, tick them off after",cap:"Have you seen these? Season 3, 35mm, from my own scans. More on boggsfiles.com."},
+ {id:"fri25",day:"Fri Sep 25",time:"9am",kind:"Reel",what:"Gag reel · Parked car",file:"Gag Moments › Season 1 week › <span>Fri - Parked car.mp4</span>",cap:"Friday. Season 1 gag reel, day five."},
+ {id:"sat26",day:"Sat Sep 26",time:"9am",kind:"Reel",what:"Gag reel · Elevator",file:"Gag Moments › Season 1 week › <span>Sat - Elevator.mp4</span>",cap:"Going up. Season 1 gag reel, day six."},
+ {id:"sun27",day:"Sun Sep 27",time:"9am",kind:"Reel",what:"Gag reel · Last gag + tease the full reel",file:"Gag Moments › Season 1 week › <span>Sun - Last gag.mp4</span> (ends on “full reel next week”)",cap:"Last one. The full Season 1 gag reel lands on boggsfiles.com next week."}
+];
+const $=id=>document.getElementById(id); let state={}; let db=null;
+try{state=JSON.parse(localStorage.getItem('week.local')||'{}')}catch(e){}
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1500)}
+function render(){
+  const L=$('list'); L.innerHTML=''; let left=0;
+  for(const d of DAYS){ const done=!!state[d.id]; if(!done) left++;
+    const el=document.createElement('div'); el.className='day'+(done?' done':'');
+    el.innerHTML=`<input type="checkbox" id="c-${d.id}" ${done?'checked':''} aria-label="Posted: ${d.what}"><div><div class="when"><b>${d.day}</b><span>${d.time}</span></div><div class="what">${d.what}<span class="kind">${d.kind}</span></div><div class="file">${d.file}</div><pre class="cap">${d.cap.replace(/</g,'&lt;')}</pre><button class="copy" data-id="${d.id}">Copy caption</button></div>`;
+    el.querySelector('input').onchange=async e=>{state[d.id]=e.target.checked; save(); render();};
+    el.querySelector('.copy').onclick=async()=>{try{await navigator.clipboard.writeText(d.cap);toast('Caption copied')}catch(err){toast('Select and copy the caption')}};
+    L.appendChild(el);
+  }
+  $('left').textContent=left;
+}
+async function save(){ try{localStorage.setItem('week.local',JSON.stringify(state))}catch(e){} if(db){ try{ await db.doc('plan/week-2026-09-20').set({posted:state}); }catch(e){ toast('Saved on this device only'); } } }
+render();
+(async()=>{ if(!window.claude||!window.claude.use) return; try{ db=await window.claude.use('db'); }catch(e){ db=null; } if(!db) return;
+  db.doc('plan/week-2026-09-20').onSnapshot(s=>{ if(s.exists){ const p=(s.data()||{}).posted||{}; state=Object.assign({},state,p); render(); } }, ()=>{}); })();
+</script>
