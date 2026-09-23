@@ -25,7 +25,7 @@ def page(title: str, body: str, active: str) -> str:   # same shell as build_arc
 def write_route(route: str, content: str) -> None:
     dest = DIST / route.strip("/") / "index.html"; dest.parent.mkdir(parents=True, exist_ok=True); dest.write_text(content, encoding="utf-8")
 
-WORKER = "https://boggsfiles-dailies.boggsfiles.workers.dev"   # signs + streams from boggsfiles-private
+from media_host import WORKER          # see tools/media_host.py: workers.dev is blocked in some regions
 MEDIA_PREFIX = "dailies/"                                          # key prefix inside the private bucket
 POSTER_BASE = "https://pub-df226d4134944457905024edfc4635fb.r2.dev/dailies-posters/"   # <slug>-<nn>.jpg, one frame ~45 s into each file
 INTRO = ("Dailies are the raw, unedited footage recorded during a day of filming. They often include slates, repeated takes, "

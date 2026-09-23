@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from transcript_header import ASSETS, site_header
 
 DIST = Path(__file__).resolve().parents[1] / "dist"
-WORKER = "https://boggsfiles-dailies.boggsfiles.workers.dev"
+from media_host import WORKER          # see tools/media_host.py: workers.dev is blocked in some regions
 MEDIA_PREFIX = "gag-reels/"
 POSTER_BASE = "https://pub-df226d4134944457905024edfc4635fb.r2.dev/gag-reel-posters/"
 
