@@ -1,0 +1,361 @@
+{
+ "title": "Squeeze",
+ "slug": "squeeze",
+ "code": "1X02",
+ "season": 1,
+ "episode": 3,
+ "credits": "Written by Glen Morgan & James Wong",
+ "airdate": "September 24, 1993",
+ "description": "Four drafts in four colors, and the line the episode is remembered for appears in none of them. Plus the quiet vending machine scene, still being revised on the very last page pass, that never made it to air.",
+ "summary": "Four archived drafts, the White First Draft of July 13, 1993, the Pink of July 26, the Green of July 27 and the Yellow of July 30, compared with the Region 1 DVD closed captions.\n\nThe pattern here is almost all subtraction. Squeeze reached broadcast shorter than it was written, and the cuts are not trims of a line or two: a named building superintendent, a named janitor in the teaser, a forensic aside, a stakeout joke, a closing jab at Colton, and the one hallway scene where Mulder tells Scully he has been watching her necklace. All of them are present, word for word, in every draft on file, which means they were lost in the edit bay rather than rewritten on the page.\n\nThe one large addition runs the other way. The line the episode is actually remembered for, Mulder at the cell saying it ain’t enough, does not exist in any of the four drafts. Every one of them ends on a different sentence.",
+ "category_descriptions": {
+  "cut": "A named guest character, a teaser bit part, a forensic aside and two jokes, all present in every archived draft and all absent from the broadcast. Including the scene that was still being touched at the final revision.",
+  "changed": "Two changes, one of them the closing line the whole episode is remembered for, written after the last draft on file. The other re-aims a nickname straight at the man it is about.",
+  "shippy": "Episode three, and this case does not give them much room for it. Squeeze is largely Mulder proving a theory and Scully getting attacked, so the partnership beats that exist are about trust and protectiveness rather than chemistry. Present in both script and air unless marked."
+ },
+ "drafts": [
+  {
+   "date": "July 13, 1993",
+   "revision": "White · First Draft",
+   "format": "Full · 61 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1k7SZtS6VUTr9eEzchK18IvWE2tPBtekh/view?usp=sharing"
+  },
+  {
+   "date": "July 26, 1993",
+   "revision": "Pink",
+   "format": "Full · 63 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1HEqZiX3AHjh6yi8vd-1O0N11nxQGHrE-/view?usp=sharing"
+  },
+  {
+   "date": "July 27, 1993",
+   "revision": "Green",
+   "format": "Full · 66 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1UwN_vm6YgVKgON4Vc-7A0Nybli-FXh1A/view?usp=sharing"
+  },
+  {
+   "date": "July 30, 1993",
+   "revision": "Yellow · true final draft",
+   "format": "Full · 66 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1pt7nA0pfGQXIBJpVnedZHmcFDsCx7ywv/view?usp=sharing"
+  }
+ ],
+ "still_alt": "Mulder and Scully facing each other on the stairs outside the polygraph room",
+ "findings": [
+  {
+   "id": "vending-machine",
+   "category": "cut",
+   "title": "The vending machine scene, and the necklace tell",
+   "meta": "Yellow pp.31–33 · scene 26 · present in White, Pink, Green and Yellow",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "After the polygraph clears Tooms, Mulder and Scully stop at a hallway vending machine. She cannot decide between trail mix and yogurt covered raisins, absently twirling her necklace between her fingers the whole time. He clocks it, and tells her he clocked it, before the two of them talk through why he pushed Colton so hard."
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm the beat is gone from the broadcast. The polygraph scene, “He’s the guy.” … “I’m letting him go.”, cuts directly to Scully catching up to Colton in the hallway, “Tom, I want to thank you for letting me put in time with the V.C.S., but I am officially assigned to the X-Files.” No vending machine, no candy, no necklace exchange in between."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "MULDER: The worse the day gets, the faster the necklace twirls.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Present in every archived draft, so this scene was not rewritten away, it was cut on the way to broadcast. It is also the only scene still being touched at the very last revision. Of the Yellow draft’s 66 pages, exactly two carry a fresh (yellow) stamp, and both are these two pages. The dialogue is unchanged from Green, so the pass looks like a repagination rather than a rewrite, but it means the writers’ last documented touch on this script was a scene that never made it to air."
+    },
+    {
+     "kind": "body",
+     "text": "It is the single most specific piece of evidence in the whole script that Mulder is paying close, quiet attention to Scully as a person and not only as a partner, and it landed on the cutting room floor."
+    }
+   ]
+  },
+  {
+   "id": "mr-lee",
+   "category": "cut",
+   "title": "Mr. Lee and the apartment building scene, cut to one line",
+   "meta": "Yellow pp.39–42 · scenes 38–42 · present in all four drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In the script, Mulder and Scully physically visit Tooms’ listed address, meet the building superintendent MR. LEE, “I double check my tenants. You must have the wrong place... Eugene is so quiet, I never have trouble,” get him to unlock the empty apartment, and then take a live phone update from Detective Johnson about an abandoned Animal Control truck."
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm that all of it becomes a single expository line from Scully, verbatim from the DVD track. A named guest character and an entire scene of legwork are compressed out of the episode."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Baltimore P.D. checked out Tooms’s apartment. It was a cover. No one has ever lived there and he hasn’t shown up for work since he was arrested.”",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Mr. Lee and the scene around him are in the script from the earliest draft on file, so this is a broadcast stage trim for time, not a rewrite. One incidental revision along the way: he is described as “a middle-aged Asian man” in White and “a middle-aged black man” from Pink onward, a character note changed mid draft, well before the scene was ever cut."
+    }
+   ]
+  },
+  {
+   "id": "briggs-mississippi",
+   "category": "cut",
+   "title": "Frank Briggs’ line about Mississippi loses its darkest image",
+   "meta": "Yellow pp.45–46 · scene 44 · word for word identical in all four drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Describing why the 1933 murder scene has haunted him for decades, the script’s Frank Briggs draws a line through the death camps, the cops in Mississippi, and the Kurds and Bosnians. The aired cut keeps the death camps, Kurds and Bosnians, “When I first heard about the death camps in 1945, I remembered Powhatan Mill. When I see the Kurds and the Bosnians... that room is there...”, but the Mississippi line simply is not there. The captions jump straight from the death camps to the Kurds and Bosnians with nothing in between."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "FRANK: When those cops in Mississippi turned loose the dogs on those colored people... I felt that room.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The adjacent script beat where Briggs says he “pulled my gun ’cause I thought the guy was still in the room” is gone too. On air his “my hands... numbed” is followed directly by “I could feel... it,” with no gun drawing aside."
+    },
+    {
+     "kind": "body",
+     "text": "The Mississippi line is identical in all four archived drafts, back to the earliest. Nobody touched it at the page. It was cut only at the broadcast stage."
+    }
+   ]
+  },
+  {
+   "id": "blood-pattern",
+   "category": "cut",
+   "title": "Scully’s forensic read on the blood pattern",
+   "meta": "Yellow p.13 · scene 12 · unchanged since the White draft",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In the script, Mulder asks “So... why didn’t they ask me?” a second time once they are actually examining Usher’s body, and Scully stalls by tossing out a forensic read before finally answering him."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "SCULLY: This blood stain pattern seems to indicate the victim was alive during liver extraction. Notice the teardrop shape as well as the amount of blood.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The captions have no second “why didn’t they ask me” moment at all, only the earlier one in the hallway, answered immediately with “They’re friends of mine.” Nothing resembling the blood stain line turns up anywhere in the crime scene walkthrough. Both the echoed question and Scully’s deflection are cut, and both are present unchanged since White, so this is another edit bay cut rather than a rewrite."
+    }
+   ]
+  },
+  {
+   "id": "yani",
+   "category": "cut",
+   "title": "Yani the janitor: written in, then cut",
+   "meta": "Yellow pp.5–6 · scene 9 · added at the Pink revision",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Before Usher is killed, the script gives him a small comic beat with YANI, a Greek immigrant janitor who startles him with a trash can, does not quite follow English, and gets waved off for the night. It is a whole named bit part that never appears in the aired teaser, which cuts straight from Usher’s answering machine call to the elevator cables shaking."
+    },
+    {
+     "kind": "body",
+     "text": "Yani does not exist in the earliest draft at all. The beat was written in at the Pink revision, where it carries (X) revision marks in the margin, survived into Green and Yellow, and still did not make the broadcast cut. As a bonus, Usher’s coffee mug quietly changes teams in the same pass: Baltimore Orioles in White, Baltimore Colts from Pink on."
+    }
+   ]
+  },
+  {
+   "id": "smaller-trims",
+   "category": "cut",
+   "title": "Smaller trims: the squeegee hustler and Colton’s demotion",
+   "meta": "Yellow pp.54 and 64 · both unchanged since the White draft",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Two more beats did not survive to air, both present unchanged since White, both confirmed cut by the captions. During the Exeter Street stakeout setup, a panhandling HUSTLER squeegees Mulder’s windshield for a dollar and Mulder snaps “Get outta here!” The captions jump straight from Scully freeing herself in the coal cellar, “It’s okay. I got it.”, to Mulder’s “It’s about time” in the stakeout car, with no windshield gag and no dialogue for it to have been captioned under."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "SCULLY: Colton actually tried to worm in on the case, but his ASAC’s caught on. He’s been bumped off the Violent Crime Section and reassigned to the white collar crime division at the Sioux Falls Bureau.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "In the final rest home scene, Scully’s closing update originally included that coda about Colton, a petty and satisfying button on the rivalry that the captions confirm is simply not in the broadcast version. Her aired lines go straight from “Everything’s filed” to the genetic tests update. Both of these are broadcast stage trims for time, not story changes."
+    }
+   ]
+  },
+  {
+   "id": "stakeout-banter",
+   "category": "cut",
+   "title": "The stakeout car banter loses its punchline",
+   "meta": "Yellow pp.47–48 · scene 50 · unchanged since the White draft",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Right before the “Spooky” sign off, the script gives Kennedy and Kramer one more beat as they climb into the surveillance car. Kramer asks who they are looking for, and Kennedy needles him back for cleaning the windshield first."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT ONLY",
+     "text": "KENNEDY: We wanted to wait ’til the windows were clean so we could see better.",
+     "tone": "script",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "On air the line up goes straight from Mulder’s “It’s about time” to “So, who we looking for again?” The windshield joke in between never reaches the captions, tightening the scene by one beat right before the sign off line. Unchanged since White, and confirmed absent."
+    }
+   ]
+  },
+  {
+   "id": "last-line",
+   "category": "changed",
+   "title": "The episode’s last line was rewritten, and it is in no draft",
+   "meta": "Yellow p.57 · scene 70 · identical in White, Pink, Green and Yellow",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Every archived draft closes the episode the same way. Mulder watches Tooms in his cell and says, unchanged across all four revisions, “I look at him and wonder... what’s next?” The DVD captions show something else entirely aired, and it is the line the episode is actually remembered for."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT · ALL FOUR DRAFTS, IDENTICAL",
+     "text": "MULDER: I remember how sad I was when people began to feel the need to put bars on their windows. […] I look at him and wonder... what’s next?",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "MULDER: All these people putting bars on their windows... spending good money on high-tech security systems, trying to feel safe? I look at this guy, and I think, “It ain’t enough.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Checked against all four drafts. “What’s next?” is word for word identical in White, Pink, Green and the true final Yellow. “It ain’t enough” appears nowhere on the page. The episode’s closing line, and the expanded build up to it about security systems, was written or reworked after the last archived draft: at the table read, on set, or in a later polish this collection does not hold."
+    }
+   ]
+  },
+  {
+   "id": "spooky",
+   "category": "changed",
+   "title": "The “Spooky” line gets re-aimed",
+   "meta": "Yellow p.54 · scene 50 · every draft gives it to Kennedy as an aside",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In the script, agent KENNEDY calls Mulder “Spooky” as a murmured aside to his partner KRAMER, right after Mulder finishes giving orders. Mulder is still standing there and “smiles, unruffled” at the crack. On air the line plays as a single unbroken sentence addressed straight back to Mulder, with none of the script’s aside structure: Mulder’s “...if he doesn’t show, right here” is answered directly."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "KENNEDY: You got it... (to Kramer) ...Spooky.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“You got it... Spooky.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Every archived draft, including the earliest, gives this line to Kennedy as an aside about Mulder rather than to him. Delivering it as a direct line happened only in production or the dub. Small change, but it turns a private joke about Mulder into a jab said right to him, slightly sharper on screen than on the page."
+    },
+    {
+     "kind": "body",
+     "text": "One thing the captions genuinely cannot settle: unlike the script, which tags every line KENNEDY or KRAMER, the DVD caption track carries no speaker name at all for this exchange. It may well be Kramer who says it on screen, but that is not something the captions themselves confirm, so it is flagged here as unverified rather than fact."
+    }
+   ]
+  },
+  {
+   "id": "respect-the-journey",
+   "category": "shippy",
+   "title": "“You respect the journey.”",
+   "meta": "Yellow scene 26 · in both script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "After Scully calls him out for being territorial with Colton, Mulder stops her on the stairs, touches her necklace, and tells her plainly that he will not hold it against her if she wants to keep working with Colton’s team. He just wants her to respect what he is chasing. It is an early, understated statement of trust rather than romance, and it survives to air essentially intact."
+    }
+   ]
+  },
+  {
+   "id": "bathroom-door",
+   "category": "shippy",
+   "title": "Mulder breaks down the bathroom door",
+   "meta": "Yellow scene 67 · in both script and air",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The episode’s clearest protective beat, and the emotional spine of the hour on air as much as on the page. Mulder races to her apartment on a hunch, kicks in her door, and levels his gun at Tooms mid attack."
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm the exchange right after Tooms is cuffed. “You all right?” is his only question, close to but not identical to the script’s “Are you alright?”, and her nod is the scene’s last word. It is undercut a beat later by Mulder’s dry “he’s not going to get his quota this year,” which is in the script too, so that deflation is by design rather than a broadcast addition."
+    }
+   ]
+  },
+  {
+   "id": "necklace-cut",
+   "category": "shippy",
+   "title": "The necklace twirl scene, cut",
+   "meta": "not in the aired episode · see Cut from screen above",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Worth repeating in this section: the one scene in this script that plays as genuinely intimate, Mulder noticing and naming Scully’s nervous tell, was cut for broadcast. What aired is a colder, more procedural episode than the page suggests. The small personal noticing the writers gave these two this early did not make it to air."
+    }
+   ]
+  },
+  {
+   "id": "head-the-bureau",
+   "category": "shippy",
+   "title": "“You’ll head the bureau by then.”",
+   "meta": "Yellow scenes 42–43 · in both script and air, slightly reworded",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "A light, needling exchange about their next shot at catching Tooms being 2023. Playful ribbing rather than romance, but an early sign the two can be easy with each other between the horror beats."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "And you should be the director of the bureau by then.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“You’ll head the bureau by then.”",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "thin-on-msr",
+   "category": "shippy",
+   "title": "Bottom line: this episode is thin on MSR",
+   "meta": "overall",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Being honest about it: outside the door kick and the necklace scene that got cut, Squeeze does not give Mulder and Scully much relational material at all. Most of the runtime is split between the hunt for Tooms and the Colton rivalry. That is consistent with where the partnership actually was three episodes in, professional respect and an emerging protectiveness, nothing more."
+    }
+   ]
+  }
+ ]
+}
