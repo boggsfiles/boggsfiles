@@ -98,3 +98,36 @@
 @media(max-width:760px){.archive-grid,.media-grid,.schedule-grid{grid-template-columns:1fr}.episode,.archive-grid>.episode:last-child:nth-child(3n+1),.archive-grid>.episode:nth-last-child(2):nth-child(3n+1),.archive-grid>.episode:last-child:nth-child(2n+1),.schedule-grid>.schedule-card,.schedule-grid>.schedule-card:last-child:nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(2):nth-child(4n+1),.schedule-grid>.schedule-card:nth-last-child(3):nth-child(4n+1),.schedule-grid>.schedule-card:last-child:nth-child(2n+1){grid-column:auto}.episode{min-height:360px}.episode-image{height:auto;aspect-ratio:1/1;background-position:center top}.archive-hero{padding:66px 0 48px}.season-nav-bottom{margin:-38px auto 58px;padding:0 14px}.season-nav-bottom .season-link{min-width:0;flex:1;padding:12px 10px}.season-link b{font-size:.55rem}}
 @media(max-width:620px){.comic-browser{margin-top:34px}.comic-browser-head{display:block;padding:25px 22px}.comic-browser-head p{margin-top:14px}.comic-shelf summary{padding:21px 22px}.comic-shelf summary span{display:block}.comic-shelf summary small{display:block;margin-top:5px}.comic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.comic-issue{min-height:104px;padding:18px}}
 @media(max-width:620px){.call-grid{grid-template-columns:1fr}.call-episode,.call-grid>.call-episode:last-child:nth-child(3n+1),.call-grid>.call-episode:nth-last-child(2):nth-child(3n+1),.call-grid>.call-episode:last-child:nth-child(2n+1){grid-column:auto}.call-episode{min-height:0;padding:22px}.call-days{grid-template-columns:1fr 1fr}}
+
+/* Location scouts */
+.scout-legend{display:flex;flex-wrap:wrap;gap:10px 26px;padding:16px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#9aa39d;font-size:.78rem}
+.scout-legend span{display:flex;align-items:center;gap:8px}
+.scout-chip{display:inline-block;font:500 .56rem/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid;white-space:nowrap;font-style:normal}
+.scout-ok{color:#9fd3ac;border-color:#2f6b3f}.scout-inf{color:#e9c27a;border-color:#8a5a0f}.scout-no{color:#e8a3a3;border-color:#7a2e2e}.scout-lib{color:#c7c2da;border-color:#4e4a5e}
+.scout-tier{margin-top:66px}
+.scout-blurb{max-width:760px;color:#aeb5af;margin:18px 0 0}
+.scout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;margin-top:34px;padding-top:34px;border-top:1px solid var(--line)}
+.scout-tier .scout:first-of-type{border-top:0;padding-top:0}
+.scout-hero{display:block;border:1px solid var(--line);background:#080a09}
+.scout-hero img{display:block;width:100%;height:auto}
+.scout-body{min-width:0}
+.scout-tab{font:400 .66rem/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#737d76}
+.scout-tab small{font-size:inherit;color:#5f6862;text-transform:none;letter-spacing:.03em}
+.scout-body h3{font:400 clamp(1.5rem,2vw,2rem)/1.05 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:10px 0 14px;text-wrap:balance}
+.scout-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-bottom:14px}
+.scout-k{font:400 .56rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#737d76}
+.scout-ep{color:#c9cfca;font-size:.85rem}
+.scout-body p{max-width:64ch;color:#aeb5af;margin:0}
+.scout-body p b{color:var(--paper);font-weight:500}
+.scout-pages{margin-top:18px}
+.scout-pages summary{cursor:pointer;color:var(--red);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;list-style:none}
+.scout-pages summary::-webkit-details-marker{display:none}
+.scout-pages summary::after{content:' ↓';}
+.scout-pages[open] summary::after{content:' ↑';}
+.scout-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}
+.scout-page{display:block;min-width:0;border:1px solid var(--line);background:#080a09;text-decoration:none}
+.scout-page img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+.scout-page span{display:block;padding:6px 8px;font:400 .56rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#737d76}
+.scout-page:hover{border-color:#6a736d}
+@media(max-width:900px){.scout{grid-template-columns:1fr}.scout-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.scout-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
