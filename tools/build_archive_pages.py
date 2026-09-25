@@ -444,8 +444,8 @@ def oneliner_items(document):
         remainder = filename[len(key):].strip(" ,")
         lower = remainder.lower()
         revision = next((color.title() for color in color_rank if color in lower), "")
-        if "dood" in lower and "shooting schedule" in lower:
-            document_type = "Oneline + shooting schedule + DOOD"
+        if "dood" in lower and "Shooting Schedule" in lower:
+            document_type = "Oneline + Shooting Schedule + DOOD"
         elif "dood" in lower:
             document_type = "Oneline + DOOD"
         elif revision:
@@ -598,10 +598,10 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
             )
             card_html = []
             for card in season_cards:
-                meta = f'{card["code"]} · Shooting schedule{card["revision"]}'
+                meta = f'{card["code"]} · Shooting Schedule{card["revision"]}'
                 card_html.append(
-                    f'<a class="schedule-card" href="{html.escape(card["url"], quote=True)}" target="_blank" rel="noopener" aria-label="Open {html.escape(card["title"], quote=True)} shooting schedule">'
-                    f'<span class="schedule-image"><img src="{html.escape(card["image"], quote=True)}" loading="lazy" alt="{html.escape(card["title"], quote=True)} shooting schedule cover"></span>'
+                    f'<a class="schedule-card" href="{html.escape(card["url"], quote=True)}" target="_blank" rel="noopener" aria-label="Open {html.escape(card["title"], quote=True)} Shooting Schedule">'
+                    f'<span class="schedule-image"><img src="{html.escape(card["image"], quote=True)}" loading="lazy" alt="{html.escape(card["title"], quote=True)} Shooting Schedule cover"></span>'
                     f'<span class="schedule-body"><span class="schedule-code">{html.escape(meta)}</span><h2>{html.escape(card["title"])}</h2><span class="schedule-arrow" aria-hidden="true">↗</span></span></a>'
                 )
             count_label = "schedule" if len(season_cards) == 1 else "schedules"
