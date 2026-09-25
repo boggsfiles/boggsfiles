@@ -1,0 +1,236 @@
+<title>The Royer Scout Folders</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@87.5,500;87.5,700;100,400;100,600&family=Courier+Prime:wght@400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+:root{
+  --ground:#F4EFE1; --paper:#FFFFFF; --tape:#DED2AE; --ink:#1F1A12; --ink-2:#5B5243; --ink-3:#8A8070;
+  --pen:#2A3F8F; --rule:#D8CFB4;
+  --ok:#2F6B3F; --ok-bg:#E1EEE3; --inf:#8A5A0F; --inf-bg:#F5E8CC; --no:#7A2E2E; --no-bg:#F2DEDC; --lib:#4E4A5E; --lib-bg:#E6E3EE;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --ground:#17140E; --paper:#221E16; --tape:#3A3324; --ink:#EDE5D2; --ink-2:#BDB29C; --ink-3:#8A8070;
+  --pen:#9DB0F2; --rule:#3B3526;
+  --ok:#9FD3AC; --ok-bg:#1E3324; --inf:#E9C27A; --inf-bg:#3A2D12; --no:#E8A3A3; --no-bg:#3A1F1F; --lib:#C7C2DA; --lib-bg:#2B2838;
+}}
+:root[data-theme="dark"]{
+  --ground:#17140E; --paper:#221E16; --tape:#3A3324; --ink:#EDE5D2; --ink-2:#BDB29C; --ink-3:#8A8070;
+  --pen:#9DB0F2; --rule:#3B3526;
+  --ok:#9FD3AC; --ok-bg:#1E3324; --inf:#E9C27A; --inf-bg:#3A2D12; --no:#E8A3A3; --no-bg:#3A1F1F; --lib:#C7C2DA; --lib-bg:#2B2838;
+}
+body{background:var(--ground);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.5;margin:0;padding-block:0 64px;padding-inline:16px}
+.wrap{max-width:1040px;margin:0 auto}
+.eyebrow{font-family:"Courier Prime","Courier New",monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+header{padding-block:40px 24px;border-bottom:2px solid var(--ink)}
+h1{font-family:Archivo,"Helvetica Neue",Arial,sans-serif;font-stretch:87.5%;font-weight:700;font-size:clamp(30px,5vw,46px);line-height:1.02;margin:6px 0 12px;text-wrap:balance;letter-spacing:-.01em}
+.lede{max-width:62ch;color:var(--ink-2);margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:24px}
+.stat{border-top:1px solid var(--ink);padding-top:8px}
+.stat b{font-family:Archivo,sans-serif;font-stretch:87.5%;font-weight:700;font-size:30px;line-height:1;display:block;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--ink-2)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;padding-block:18px;border-bottom:1px solid var(--rule);font-size:14px;color:var(--ink-2)}
+.chip{display:inline-block;font-family:"Courier Prime",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:3px;white-space:nowrap}
+.ok{background:var(--ok-bg);color:var(--ok)} .inf{background:var(--inf-bg);color:var(--inf)} .no{background:var(--no-bg);color:var(--no)} .lib{background:var(--lib-bg);color:var(--lib)}
+h2{font-family:Archivo,sans-serif;font-stretch:87.5%;font-weight:700;font-size:22px;margin:40px 0 4px;text-wrap:balance}
+h2 + p{margin:0 0 16px;color:var(--ink-2);max-width:66ch}
+.folder{display:grid;grid-template-columns:260px 1fr;gap:20px;padding-block:22px;border-top:1px solid var(--rule)}
+.folder:first-of-type{border-top:0}
+.thumb{background:var(--paper);padding:6px;box-shadow:0 1px 0 var(--rule);align-self:start}
+.thumb img{display:block;width:100%;height:auto}
+.thumb figcaption{font-family:"Courier Prime",monospace;font-size:12px;color:var(--ink-3);padding-top:6px}
+.meta{min-width:0}
+.tab{font-family:"Courier Prime",monospace;font-weight:700;font-size:15px;color:var(--pen);letter-spacing:.02em}
+.tab small{font-weight:400;color:var(--ink-3);letter-spacing:0}
+.place{font-family:Archivo,sans-serif;font-weight:600;font-size:19px;line-height:1.25;margin:4px 0 8px;text-wrap:balance}
+.row{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-bottom:10px;font-size:14px}
+.row .k{font-family:"Courier Prime",monospace;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-3)}
+.note{margin:0;max-width:66ch;color:var(--ink-2)}
+.note b{color:var(--ink);font-weight:600}
+.asks{border:1px solid var(--rule);background:var(--paper);padding:18px 20px;margin-top:40px}
+.asks ol{margin:8px 0 0;padding-left:20px}
+.asks li{margin-bottom:6px}
+footer{margin-top:40px;font-size:13px;color:var(--ink-3);border-top:1px solid var(--rule);padding-top:12px}
+@media (max-width:640px){.folder{grid-template-columns:1fr}.thumb{max-width:360px}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Location department files · The X-Files, Los Angeles era (1998–2002)</div>
+  <h1>The Royer Scout Folders</h1>
+  <p class="lede">Fourteen manila location-scout folders, scanned by Jeremy Royer (@unknownparish), with what each one turned out to be. The seller got them from the person who did set location work for the show and many others, which is why a few belong to other productions. Locations are confirmed from readable signage and architecture; episodes only where a frame or a note in the folder proves it.</p>
+  <div class="stats">
+    <div class="stat"><b>14</b><span>folders</span></div>
+    <div class="stat"><b>91</b><span>scanned pages</span></div>
+    <div class="stat"><b>11</b><span>locations pinned to an address or site</span></div>
+    <div class="stat"><b>1</b><span>episode confirmed on the evidence</span></div>
+  </div>
+</header>
+
+<div class="legend">
+  <span><span class="chip ok">Confirmed</span> readable in the scan or matched to a frame</span>
+  <span><span class="chip inf">Inferred</span> best fit, not proven</span>
+  <span><span class="chip no">Unknown</span> nothing to go on</span>
+  <span><span class="chip lib">Library</span> from another production in the same files</span>
+</div>
+
+<h2>The one with proof</h2>
+<p>Only one folder ties itself to an episode without any guessing.</p>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/09-norton-afb.jpg" alt="Chain-link flight-line gate on a runway apron with a sticky note reading THIS GATE"><figcaption>Folder 09 · 22 pages · Gate 5, with the Post-it</figcaption></figure>
+  <div class="meta">
+    <div class="tab">NORTON AFB "GATES" <small>· sub-labels Gate 3 · Gate 5 · Gate 7 · Mill St Gate · Reverse</small></div>
+    <div class="place">Former Norton Air Force Base, San Bernardino</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip ok">Confirmed</span><span>"Closure" (S7E11, shot Jan 2000)</span></div>
+    <p class="note">A gate-by-gate survey of the closed base — about 60 prints. A yellow Post-it on the <b>Gate 5</b> flight-line panorama reads <b>"THIS GATE ⇒"</b>: that's the fence Mulder stands at looking into "April Air Force Base." The last page pairs the scout print with the frame. Bare trees and low sun agree with a January scout.</p>
+  </div>
+</div>
+
+<h2>Scene scouts</h2>
+<p>Handwritten labels are scene slugs or street names. The place is certain; the episode is not, unless marked.</p>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/04-bridge.jpg" alt="White steel truss bridge with a stone gate beyond"><figcaption>Folder 04 · 2 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">BRIDGE</div>
+    <div class="place">Malibou Lake entrance bridge, Lake Vista Dr at Mulholland Hwy, Agoura Hills</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">The stone gate posts at the far end read <b>"Malibou Lake."</b> The obvious candidate — the car-off-a-bridge teaser of "Nothing Important Happened Today" — was checked against the episode and ruled out: that bridge is a harbor lift span, not this one.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/03-harbor-building.jpg" alt="White marble mid-century office tower reading HARBOR at dusk"><figcaption>Folder 03 · 2 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">HARBOR BLDG. LOS ANGELES <small>· N/W exposure</small></div>
+    <div class="place">Harbor (Tidewater Oil) Building, 4201 Wilshire Blvd at Crenshaw</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">Claud Beelman, 1958; an LA Historic-Cultural Monument, still standing. No X-Files credit exists for the address in any public database — possibly scouted and not used.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/02-lindsey-studios.jpg" alt="Wood-paneled courtroom standing set with exposed stage ceiling"><figcaption>Folder 02 · 2 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">LINDSEY STUDIOS <small>· Apt. facade · Courtroom &amp; corridors</small></div>
+    <div class="place">Standing sets on a rental soundstage (facility not traced)</div>
+    <div class="row"><span class="k">Location</span><span class="chip inf">Inferred</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">The stage ceiling is visible above the courtroom walls — these are sets, not a courthouse. "Redrum," the one LA-era story built around a courtroom, was checked against the episode and ruled out: its arraignment is in a real courtroom with tall arched windows.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/06-ocean-long-beach.jpg" alt="Palm-lined boulevard in low afternoon sun with office towers"><figcaption>Folder 06 · 6 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">OCEAN – LONG BEACH <small>· #3 P.M.</small></div>
+    <div class="place">Ocean Blvd between Pine Ave and Locust Ave, downtown Long Beach</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">Renaissance hotel sign, "211 E. Ocean," The Breakers, and the Locust / Pine Square street signs are all readable. Two close-ups of a car hood and mirror with the street soft behind are camera-mount tests — a scout for a daytime driving shot, timed to the light.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/12-greyhound-downtown.jpg" alt="Greyhound terminal entrance with blue steel sign tower and palms"><figcaption>Folder 12 · 5 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">GREY HOUND BUS TERMINAL – DOWNTOWN</div>
+    <div class="place">Greyhound Los Angeles terminal, 1716 E. 7th St at Alameda</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">The "1716" on the wall is the address. The station closed in 2023.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/14-media-center-burbank.jpg" alt="IKEA storefront with flags and palm trees"><figcaption>Folder 14 · 16 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">MEDIA CENTER BURBANK CA <small>· Noon</small></div>
+    <div class="place">Downtown Burbank — Media City Center (now Burbank Town Center), IKEA, San Fernando Blvd &amp; First St</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">About 40 prints of the shopping district in hard midday light; "Noon" on the tab is a light note, like Long Beach's "3 P.M."</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/01-warehouse.jpg" alt="Tall corrugated-metal agricultural warehouse with concrete buttresses"><figcaption>Folder 01 · 3 pages (+1 duplicate in folder 11)</figcaption></figure>
+  <div class="meta">
+    <div class="tab">WEARHOUSE <small>(sic)</small></div>
+    <div class="place">Unidentified agricultural warehouse or grain-and-bean elevator, probably Ventura County</div>
+    <div class="row"><span class="k">Location</span><span class="chip no">Unknown</span><span class="k">Episode</span><span class="chip no">Unknown</span></div>
+    <p class="note">Orchard trees, cracked lot, flat farmland with low hills. Reverse image search found nothing; the building may be gone. <b>This is the one to crowdsource.</b></p>
+  </div>
+</div>
+
+<h2>Stage surveys, summer 1998</h2>
+<p>Three rental lots photographed gate-first — guard shacks, main drives, offices — which is how you look at a lot when you're deciding where to base a show. That's exactly what The X-Files was doing the summer it moved from Vancouver. It ended up at Fox; these are the roads not taken.</p>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/05-warner-hollywood.jpg" alt="Studio gate with WARNER HOLLYWOOD STUDIOS on the wall"><figcaption>Folder 05 · 2 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">WARNER HOLLYWOOD STUDIOS <small>· typed</small></div>
+    <div class="place">The Lot at Formosa, 1041 N. Formosa Ave, West Hollywood</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">Dated</span><span>before the 1999 sale and rename to "The Lot"; crape myrtle in bloom = summer</span></div>
+    <p class="note">The old Pickford-Fairbanks / Goldwyn lot. The sign on the wall dates the visit.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/07-sunset-gower.jpg" alt="Art Deco studio entrance arch reading SUNSET GOWER STUDIOS"><figcaption>Folder 07 · 2 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">SUNSET GOWER STUDIOS <small>· typed</small></div>
+    <div class="place">Sunset Gower Studios, 1438 N. Gower St, Hollywood</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span></div>
+    <p class="note">The old Columbia lot; Ocean Way Recording is in frame across the street. Same gate-and-guard-shack coverage as Warner Hollywood.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/08-ren-mar.jpg" alt="Art Deco archway entrance to a studio lot with cypress trees"><figcaption>Folder 08 · 13 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">REN MAR STUDIOS</div>
+    <div class="place">Ren-Mar Studios, 846 N. Cahuenga Blvd, Hollywood (now Red Studios)</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span></div>
+    <p class="note">The thorough one: about 30 prints including office suites, dressing rooms, and a dressing-room bath. Whoever shot this was picturing their cast using it. The old Desilu lot.</p>
+  </div>
+</div>
+
+<h2>Probably from the location library, not the show</h2>
+<p>The seller got these from, in their words, "the person who did set location work for the show and many others." These are the many others: no scene label, no frame, or a date outside the show’s LA years.</p>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/10-sierra-madre.jpg" alt="White steepled church under storm clouds beside a salon storefront"><figcaption>Folder 10 · 8 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">SIERRA MADRE <small>· one tab: "Towns: Sierra Madra, CA · Baldwin Ave &amp; Orange Grove · 1/26/95 · 3:30–5:00 PM"</small></div>
+    <div class="place">Downtown Sierra Madre — Old North Church, Baldwin Ave storefronts, a hair salon interior</div>
+    <div class="row"><span class="k">Location</span><span class="chip ok">Confirmed</span><span class="k">X-Files?</span><span class="chip lib">Library</span></div>
+    <p class="note">The tab is dated <b>January 1995</b> — the show was in Vancouver. Unless that "5" is a "9," this folder came from another Fox production. Includes a blank Twentieth Century Fox Television parking-license form (rev. 03/03/95).</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/11-unlabeled.jpg" alt="Brick alley set with orange taped X marks on the ground"><figcaption>Folder 11 · 5 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">(unlabeled)</div>
+    <div class="place">A studio backlot alley set, dressed and lit — plus a second copy of the Warehouse panorama</div>
+    <div class="row"><span class="k">Location</span><span class="chip inf">Inferred</span><span class="k">X-Files?</span><span class="chip lib">Library</span></div>
+    <p class="note">Thin brick façade panels, taped floor marks, a lamp on a stand, a "New York Street" through the arch. Which lot isn't readable from the frames.</p>
+  </div>
+</div>
+
+<div class="folder">
+  <figure class="thumb"><img src="thumbs/13-unlabeled-2.jpg" alt="Canyon with pale eroded cliffs and dark chaparral"><figcaption>Folder 13 · 3 pages</figcaption></figure>
+  <div class="meta">
+    <div class="tab">(unlabeled 2)</div>
+    <div class="place">Southern California ranch country — Simi Hills / Ventura County type terrain</div>
+    <div class="row"><span class="k">Location</span><span class="chip no">Unknown</span><span class="k">X-Files?</span><span class="chip lib">Library</span></div>
+    <p class="note">Not Arizona: dry grass, chaparral and pale sandstone, not saguaro and red rock. Doesn't support the "Within/Without" idea. No signage or structure to pin a ranch.</p>
+  </div>
+</div>
+
+<div class="asks">
+  <div class="eyebrow">Two things that would move folders from "inferred" to "confirmed"</div>
+  <ol>
+    <li><b>A name.</b> Does the seller or estate know whose files these were? A location-manager credit settles which productions the library spans.</li>
+    <li><b>Any LA-era call sheet.</b> The two you have are Vancouver seasons. A call sheet from 1998–2002 lists every location with its address for that day.</li>
+    
+  </ol>
+</div>
+
+<footer>Scans and originals: Jeremy Royer / @unknownparish. Identification notes compiled September 2026. Locations confirmed from signage and architecture visible in the scans; episode attributions marked "inferred" are best fits, not facts.</footer>
+</div>

@@ -1,3 +1,6 @@
 __pycache__/
 .DS_Store
 facenv/
+tools/location-scouts/*/scans/
+tools/location-scouts/*/full/
+tools/location-scouts/*/web/
