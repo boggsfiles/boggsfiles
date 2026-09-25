@@ -15,6 +15,16 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
+# WARNING - do not run this without reading this note first.
+# This script REGENERATES the scripts and memorabilia pages by scraping the old Google Sites at
+# LEGACY below. Several pages in dist/ have since been corrected by hand and those fixes exist
+# ONLY in dist/, not on Google Sites. Running this will silently wipe them:
+#   - misc-memorabilia/x-files-shooting-schedules: 4 wrong codes/titles fixed against the scanned
+#     covers (5X05/5X06 were swapped; two 5X07 cards said "Christmas Carol" but the covers say
+#     "EMILY"), plus 4 schedules added 2026-09-25.
+#   - x-files-scripts-by-season/season-4 and season-5: Kaddish Pink and Emily Goldenrod Pages added.
+# Either add these to the Google Sites source first, or re-apply them afterwards.
+
 LEGACY = "https://sites.google.com/view/boggsfiles"
 UA = {"User-Agent": "Mozilla/5.0"}
 
