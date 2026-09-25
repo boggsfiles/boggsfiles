@@ -5,10 +5,12 @@ Imported by transcript_header.ASSETS so every page a builder emits carries it, a
 add_analytics.py which back-fills pages already sitting in dist/. Keeping the snippet in a single
 constant means the two can never disagree about which property is being measured.
 
-Property: boggsfiles.com  ·  stream 8548608558  ·  measurement G-08L5YBPPTP
+Property: Boggsfiles  ·  measurement G-RZJWTDMN98
+The earlier G-08L5YBPPTP was a dead property: Google served 404 for its gtag config,
+where it returns a 200 stub even for IDs it has never seen.
 """
 
-MEASUREMENT_ID = "G-08L5YBPPTP"
+MEASUREMENT_ID = "G-RZJWTDMN98"
 
 TAG = (
     f'<script async src="https://www.googletagmanager.com/gtag/js?id={MEASUREMENT_ID}"></script>'
