@@ -50,7 +50,7 @@ def brand(d, x, y, size=40):
 img = Image.new("RGB", (W, H), BEIGE)
 
 # ---- the stack ----
-CW, CH = 265, 354            # cover size, the scans' own 590x788 proportion
+CW, CH = 265, 334            # cover size, the scans' own 590x788 proportion
 GAPX, GAPY = 28, 12          # every cover fully visible, nothing cropped
 x0 = (W - (3 * CW + 2 * GAPX)) // 2
 y0 = 145
@@ -91,12 +91,31 @@ d = ImageDraw.Draw(img)
 brand(d, 68, 46)
 tracked(d, 70, 106, "RECENTLY CATALOGUED", mono(17, "Medium"), MUTED, 2.8)
 
-# ---- footer band, so the bottom row reads as sitting on a surface ----
-d.rectangle((0, H - 110, W, H), fill=INK)
-d.text((66, H - 94), "NINE NEW FILES", font=oswald(48, 400), fill=(238, 236, 228))
-x = tracked(d, 68, H - 44, "BOGGSFILES.COM", mono(19, "Medium"), (238, 236, 228), 2.6)
-d.ellipse((x + 14, H - 38, x + 22, H - 30), fill=SIGNAL)
-tracked(d, x + 34, H - 44, "FREE TO BROWSE", mono(19, "Light"), (150, 158, 151), 2.6)
+# ---- footer band ----
+# Positions come from the glyph boxes rather than guessed offsets: the previous version put
+# the two lines 50px apart, which is less than the 48px display line needs, so they touched.
+BAND = 168
+band_top = H - BAND
+d.rectangle((0, band_top, W, H), fill=INK)
+
+f_big, f_small = oswald(46, 400), mono(19, "Medium")
+big_box   = f_big.getbbox("NINE NEW FILES")
+small_box = f_small.getbbox("BOGGSFILES.COM")
+
+big_y = band_top + 30 - big_box[1]                       # 30px of air under the band edge
+d.text((66, big_y), "NINE NEW FILES", font=f_big, fill=(238, 236, 228))
+
+small_y = big_y + big_box[3] + 26 - small_box[1]         # 26px clear gap between the lines
+x = tracked(d, 68, small_y, "BOGGSFILES.COM", f_small, (238, 236, 228), 2.6)
+dot_y = small_y + small_box[1] + (small_box[3] - small_box[1]) // 2 - 4
+d.ellipse((x + 14, dot_y, x + 22, dot_y + 8), fill=SIGNAL)
+tracked(d, x + 34, small_y, "FREE TO BROWSE", mono(19, "Light"), (150, 158, 151), 2.6)
+
+assert big_y + big_box[3] < small_y + small_box[1], "footer lines overlap"
+print(f"  band {band_top}-{H} | heading {big_y+big_box[1]}-{big_y+big_box[3]} | "
+      f"url {small_y+small_box[1]}-{small_y+small_box[3]} | "
+      f"gap {(small_y+small_box[1])-(big_y+big_box[3])}px | "
+      f"bottom margin {H-(small_y+small_box[3])}px")
 
 img.save(OUT)
 print(f"saved {OUT}  {img.size[0]}x{img.size[1]}")
