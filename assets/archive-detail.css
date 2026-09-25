@@ -131,3 +131,6 @@
 .scout-page:hover{border-color:#6a736d}
 @media(max-width:900px){.scout{grid-template-columns:1fr}.scout-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:560px){.scout-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.scout-credit{margin:26px 0 0;color:#aeb5af;font-size:.9rem}
+.scout-credit b{color:var(--paper);font-weight:500}
+.scout-credit a{color:var(--red)}
