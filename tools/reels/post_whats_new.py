@@ -15,18 +15,19 @@ HERE = Path(__file__).resolve().parent
 ART  = HERE.parents[1] / "dist/assets/archive-photos"
 OUT  = Path.home() / "Desktop" / "IG - whats new on boggsfiles.png"
 
-# Ordered for the page, not by season: the three pale covers are spread one per row so the
-# blue mimeograph stock carries the whole composition instead of stacking at the top.
+# Ordered for the page, not by season. The three pale covers run on the anti-diagonal
+# (top right, centre, bottom left) rather than stacking down one column, which stopped the
+# right hand edge reading as a solid white stripe.
 COVERS = [
-    "misc-memorabilia-x-files-shooting-schedules-64.webp",   # 731            blue
+    "misc-memorabilia-x-files-shooting-schedules-64.webp",   # 731             blue
     "misc-memorabilia-x-files-shooting-schedules-18.webp",   # Christmas Carol blue
-    "misc-memorabilia-x-files-shooting-schedules-71.webp",   # Closure        b/w
-    "misc-memorabilia-x-files-shooting-schedules-65.webp",   # Terma          blue
-    "misc-memorabilia-x-files-shooting-schedules-67.webp",   # Chinga         blue
-    "misc-memorabilia-x-files-shooting-schedules-70.webp",   # The Unnatural  b/w
-    "misc-memorabilia-x-files-shooting-schedules-66.webp",   # Kitsunegari    blue
-    "misc-memorabilia-x-files-shooting-schedules-69.webp",   # Schizogeny     blue
-    "scripts-misc-script-partials-20.webp",                  # Hungry         aged white
+    "misc-memorabilia-x-files-shooting-schedules-71.webp",   # Closure         b/w   <-
+    "misc-memorabilia-x-files-shooting-schedules-65.webp",   # Terma           blue
+    "misc-memorabilia-x-files-shooting-schedules-70.webp",   # The Unnatural   b/w   <-
+    "misc-memorabilia-x-files-shooting-schedules-67.webp",   # Chinga          blue
+    "scripts-misc-script-partials-20.webp",                  # Hungry          white <-
+    "misc-memorabilia-x-files-shooting-schedules-66.webp",   # Kitsunegari     blue
+    "misc-memorabilia-x-files-shooting-schedules-69.webp",   # Schizogeny      blue
 ]
 TILT = [-2.4, 1.8, -1.2, 2.2, -1.9, 1.4, -2.1, 1.6, -1.5]   # fixed, not random, so reruns match
 
