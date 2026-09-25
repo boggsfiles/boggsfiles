@@ -1,31 +1,36 @@
-"""Single Instagram image (1080x1350): what's new on boggsfiles.com this week.
+"""Single Instagram image (1080x1350): what's new on boggsfiles.com.
 
-Mirrors the site's own "New in the files" homepage grid - three by three, hairline rules,
-signal-red NEW pills - so anyone who taps through recognises the page they land on.
-House style shared with the carousels: Oswald for names, DM Mono for the detail lines.
+The first version of this was a grid of text cards, which is just a screenshot of a web page.
+The real draw is the paperwork itself - blue mimeograph stock, the X-Files logo, the episode
+art, "SHOOTING SCHEDULE" with the revision colour written on by hand. So the covers are the
+whole composition, laid out overlapping like documents spread on a desk, and the caption does
+the naming instead of labels on the image.
 """
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 W, H = 1080, 1350
-BEIGE = (228, 226, 216); CARD = (238, 236, 228); INK = (21, 24, 22)
-SIGNAL = (155, 51, 46); MUTED = (108, 113, 109); LINE = (195, 196, 188)
+BEIGE = (226, 224, 213); INK = (21, 24, 22); SIGNAL = (155, 51, 46); MUTED = (112, 117, 112)
 HERE = Path(__file__).resolve().parent
-OUT = Path.home() / "Desktop" / "IG - whats new on boggsfiles.png"
+ART  = HERE.parents[1] / "dist/assets/archive-photos"
+OUT  = Path.home() / "Desktop" / "IG - whats new on boggsfiles.png"
 
-ITEMS = [  # name, season, descriptor  - same nine cards as the home page
-    ("731",             "Season 3", "Shooting Schedule, Blue"),
-    ("Terma",           "Season 4", "Shooting Schedule, Blue"),
-    ("Christmas Carol", "Season 5", "Shooting Schedule, Pink"),
-    ("Kitsunegari",     "Season 5", "Shooting Schedule, Blue"),
-    ("Schizogeny",      "Season 5", "Shooting Schedule, Blue"),
-    ("Chinga",          "Season 5", "Shooting Schedule, Blue"),
-    ("The Unnatural",   "Season 6", "Shooting Schedule"),
-    ("Closure",         "Season 7", "Shooting Schedule"),
-    ("Hungry",          "Season 7", "Blue partial draft"),
+# Ordered for the page, not by season: the three pale covers are spread one per row so the
+# blue mimeograph stock carries the whole composition instead of stacking at the top.
+COVERS = [
+    "misc-memorabilia-x-files-shooting-schedules-64.webp",   # 731            blue
+    "misc-memorabilia-x-files-shooting-schedules-18.webp",   # Christmas Carol blue
+    "misc-memorabilia-x-files-shooting-schedules-71.webp",   # Closure        b/w
+    "misc-memorabilia-x-files-shooting-schedules-65.webp",   # Terma          blue
+    "misc-memorabilia-x-files-shooting-schedules-67.webp",   # Chinga         blue
+    "misc-memorabilia-x-files-shooting-schedules-70.webp",   # The Unnatural  b/w
+    "misc-memorabilia-x-files-shooting-schedules-66.webp",   # Kitsunegari    blue
+    "misc-memorabilia-x-files-shooting-schedules-69.webp",   # Schizogeny     blue
+    "scripts-misc-script-partials-20.webp",                  # Hungry         aged white
 ]
+TILT = [-2.4, 1.8, -1.2, 2.2, -1.9, 1.4, -2.1, 1.6, -1.5]   # fixed, not random, so reruns match
 
-def oswald(size, wght=500):
+def oswald(size, wght=400):
     f = ImageFont.truetype(str(HERE / "fonts/Oswald.ttf"), size); f.set_variation_by_axes([wght]); return f
 def mono(size, w="Regular"): return ImageFont.truetype(str(HERE / f"fonts/DMMono-{w}.ttf"), size)
 
@@ -33,70 +38,64 @@ def tracked(d, x, y, s, f, fill, track):
     for ch in s: d.text((x, y), ch, font=f, fill=fill); x += d.textlength(ch, font=f) + track
     return x
 
-def brand(d, x, y, size=52):
-    """BOGGS(X)FILES - the site logo, red ring around the X."""
+def brand(d, x, y, size=40):
     f = oswald(size, 500); track = 0.16 * size
     x = tracked(d, x, y, "BOGGS", f, INK, track); x += 0.34 * size - track
     xw = d.textlength("X", font=f); d.text((x, y), "X", font=f, fill=INK)
     asc, _ = f.getmetrics(); cx, cy = x + xw / 2, y + asc * 0.62; r = 1.08 * size / 2
-    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=SIGNAL, width=max(3, round(size * 2 / 23.2)))
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=SIGNAL, width=max(2, round(size * 2 / 23.2)))
     tracked(d, x + xw + 0.34 * size, y, "FILES", f, INK, track)
 
-def wrap(d, text, f, maxw):
-    words, lines, cur = text.split(), [], ""
-    for w_ in words:
-        t = (cur + " " + w_).strip()
-        if d.textlength(t, font=f) <= maxw or not cur: cur = t
-        else: lines.append(cur); cur = w_
-    if cur: lines.append(cur)
-    return lines
+img = Image.new("RGB", (W, H), BEIGE)
 
-img = Image.new("RGB", (W, H), BEIGE); d = ImageDraw.Draw(img)
+# ---- the stack ----
+CW, CH = 265, 354            # cover size, the scans' own 590x788 proportion
+GAPX, GAPY = 28, 12          # every cover fully visible, nothing cropped
+x0 = (W - (3 * CW + 2 * GAPX)) // 2
+y0 = 145
 
-brand(d, 70, 92)
-tracked(d, 72, 196, "RECENTLY CATALOGUED", mono(21, "Medium"), MUTED, 3.2)
-d.text((68, 236), "NEW IN THE FILES", font=oswald(92, 300), fill=INK)
+# The scans are not all the same shape (590x788, 633x900, 590x760...). Scaling every one to
+# an identical box would stretch the odd ones, so each is matched on HEIGHT and keeps its own
+# width. Rows are then centred, which leaves the small width variation looking like paper
+# rather than like a mistake.
+loaded = []
+for name in COVERS:
+    src = Image.open(ART / name).convert("RGB")
+    w = max(1, round(CH * src.width / src.height))
+    loaded.append(src.resize((w, CH), Image.LANCZOS))
 
-# ---- the grid ----
-M, TOP = 68, 400
-GW = W - 2 * M
-CW, CH = GW / 3, 252
-ROWS = 3
+for i, src in enumerate(loaded):
+    cw = src.width
+    row = [im.width for im in loaded[(i // 3) * 3:(i // 3) * 3 + 3]]
+    rx = (W - (sum(row) + 2 * GAPX)) // 2
+    sheet = Image.new("RGB", (cw + 8, CH + 8), (250, 250, 247))     # a thin paper border
+    sheet.paste(src, (4, 4))
+    rot = sheet.rotate(TILT[i], expand=True, resample=Image.BICUBIC, fillcolor=BEIGE)
+    mask = Image.new("L", sheet.size, 255).rotate(TILT[i], expand=True, resample=Image.BICUBIC, fillcolor=0)
 
-for i in range(9):                                           # light tiles, hairline edges
-    cx, cy = M + (i % 3) * CW, TOP + (i // 3) * CH
-    d.rectangle((cx, cy, cx + CW, cy + CH), fill=CARD, outline=LINE, width=2)
+    px = rx + sum(row[:i % 3]) + (i % 3) * GAPX - (rot.width - cw) // 2
+    py = y0 + (i // 3) * (CH + GAPY) - (rot.height - CH) // 2
 
-f_sub, f_pill = mono(17, "Light"), mono(15, "Medium")
+    shadow = Image.new("RGBA", (rot.width + 40, rot.height + 40), (0, 0, 0, 0))
+    shadow.paste((0, 0, 0, 90), (20, 24), mask)
+    shadow = shadow.filter(ImageFilter.GaussianBlur(11))
+    img.paste(Image.alpha_composite(
+        Image.new("RGBA", shadow.size, BEIGE + (255,)), shadow).convert("RGB"),
+        (px - 20, py - 20))
+    img.paste(rot, (px, py), mask)
 
-def fitted(d, s, maxw, hi=37, lo=24):
-    """Largest Oswald size that keeps a name on one line. Wrapping collided with the
-    detail lines underneath, and a card title should never be two lines here."""
-    for size in range(hi, lo - 1, -1):
-        f = oswald(size, 300)
-        if d.textlength(s, font=f) <= maxw: return f
-    return oswald(lo, 300)
-for i, (name, season, desc) in enumerate(ITEMS):
-    cx, cy = M + (i % 3) * CW, TOP + (i // 3) * CH
-    px, py = cx + 26, cy + 26
-    # NEW pill
-    label = "NEW"; tw = d.textlength(label, font=f_pill) + 4 * 3.0
-    d.rounded_rectangle((px, py, px + tw + 26, py + 30), radius=15, outline=SIGNAL, width=2)
-    tracked(d, px + 14, py + 6, label, f_pill, SIGNAL, 3.0)
-    # name (wraps to two lines if needed)
-    f_name = fitted(d, name.upper(), CW - 50)
-    d.text((px, cy + 92), name.upper(), font=f_name, fill=INK)
-    # detail lines
-    d.text((px, cy + CH - 64), season, font=f_sub, fill=MUTED)
-    for j, ln in enumerate(wrap(d, desc, f_sub, CW - 46)[:2]):
-        d.text((px, cy + CH - 42 + j * 21), ln, font=f_sub, fill=MUTED)
+d = ImageDraw.Draw(img)
 
-# ---- footer ----
-fy = TOP + ROWS * CH + 62
-d.text((M - 2, fy), "BOGGSFILES.COM", font=oswald(54, 400), fill=INK)
-x = tracked(d, M, fy + 74, "FULL ARCHIVE", mono(19, "Light"), MUTED, 2.4)
-d.ellipse((x + 12, fy + 84, x + 20, fy + 92), fill=SIGNAL)
-tracked(d, x + 32, fy + 74, "FREE TO BROWSE", mono(19, "Light"), MUTED, 2.4)
+# ---- masthead, over the beige above the stack ----
+brand(d, 68, 46)
+tracked(d, 70, 106, "RECENTLY CATALOGUED", mono(17, "Medium"), MUTED, 2.8)
+
+# ---- footer band, so the bottom row reads as sitting on a surface ----
+d.rectangle((0, H - 110, W, H), fill=INK)
+d.text((66, H - 94), "NINE NEW FILES", font=oswald(48, 400), fill=(238, 236, 228))
+x = tracked(d, 68, H - 44, "BOGGSFILES.COM", mono(19, "Medium"), (238, 236, 228), 2.6)
+d.ellipse((x + 14, H - 38, x + 22, H - 30), fill=SIGNAL)
+tracked(d, x + 34, H - 44, "FREE TO BROWSE", mono(19, "Light"), (150, 158, 151), 2.6)
 
 img.save(OUT)
 print(f"saved {OUT}  {img.size[0]}x{img.size[1]}")
