@@ -68,7 +68,12 @@ def r2_meta() -> dict[str, int]:
     return sizes
 
 def duration(key: str) -> str | None:
-    src = Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/X-Files Scripts/Gag Reels" / key
+    # Prefer the published cut. Seasons 1 and 2 were trimmed to drop the studio slate, so the
+    # iCloud master is several seconds longer than what is actually on the site; reading the
+    # master would print a length the viewer never sees.
+    base = Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/X-Files Scripts/Gag Reels"
+    src = base / "published" / key
+    if not src.exists(): src = base / key
     if not src.exists(): return None
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(src)],
                          capture_output=True, text=True)
