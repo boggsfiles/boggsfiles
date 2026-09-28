@@ -3,7 +3,7 @@ from browse_navigation import navigation, ASSET as NAV_ASSET
 """Build the transcript season index and live episode galleries."""
 
 from pathlib import Path
-from transcript_header import HEADER, ASSETS
+from transcript_header import HEADER, ASSETS, cased
 
 
 SEASON_1 = [
@@ -160,7 +160,7 @@ def season_landing() -> str:
         live = slug in MOVIES_LIVE
         return f'''<a class="season-card {'live' if live else 'soon'}" href="/transcripts/movies/{slug}/">
           <div class="season-visual"><span>{code}</span><img src="/assets/transcript-stills/{slug}.jpg" alt="Scene from {title}"></div>
-          <div class="season-copy"><div><span class="eyebrow">{'Feature film · ' + year if live else 'Collection pending'}</span><h2>{title}</h2></div><b>{'Read transcript →' if live else 'Coming soon →'}</b></div></a>'''
+          <div class="season-copy"><div><span class="eyebrow">{'Feature film · ' + year if live else 'Collection pending'}</span><h2>{cased(title)}</h2></div><b>{'Read transcript →' if live else 'Coming soon →'}</b></div></a>'''
     # films sit in release order: Fight the Future after Season 5, I Want to Believe after Season 9
     films = {5: film_card(*MOVIES[0]), 9: film_card(*MOVIES[1])}
     ordered = []
@@ -184,7 +184,7 @@ def season_page(season: int, episodes: list[tuple[str, str, str, str]]) -> str:
         pending = (slug == 'leonard-betts' and not any(ep[0] == slug for ep in episodes))
         opening = '<article class="episode-card pending-transcript">' if pending else f'<a class="episode-card" href="/transcripts/season-{season}/{slug}/">'
         closing = '</article>' if pending else '</a>'
-        cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {('19–20' if season == 9 and slug == 'the-truth' else f'{number:02d}')} · {code}</span><h2>{title}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
+        cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.{'jpg' if season > 2 or season == 2 and number > 4 else 'webp'}" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>File {('19–20' if season == 9 and slug == 'the-truth' else f'{number:02d}')} · {code}</span><h2>{cased(title)}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
 
     years = "1993–1994" if season == 1 else "1994–1995" if season == 2 else "1996–1997" if season == 4 else "1997–1998" if season == 5 else "1998–1999" if season == 6 else "1999–2000" if season == 7 else "2000–2001" if season == 8 else "2001–2002" if season == 9 else "2016" if season == 10 else "2018" if season == 11 else "1995–1996"
     intro = "The beginning of the X-Files and the beginning of Mulder and Scully." if season == 1 else "The X-Files is closed, but the search continues as Mulder and Scully are pulled back toward the cases that defined them."
@@ -209,7 +209,7 @@ def movies_page() -> str:
         pending = slug not in MOVIES_LIVE
         opening = '<article class="episode-card pending-transcript">' if pending else f'<a class="episode-card" href="/transcripts/movies/{slug}/">'
         closing = '</article>' if pending else '</a>'
-        cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.jpg" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>Film {number:02d} · {code} · {year}</span><h2>{title}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
+        cards.append(f'''{opening}<img src="/assets/transcript-stills/{slug}.jpg" alt="Scene from {title}" loading="lazy"><div class="episode-copy"><span>Film {number:02d} · {code} · {year}</span><h2>{cased(title)}</h2><p>{description}</p><b>{'Coming soon' if pending else 'Read transcript →'}</b></div>{closing}''')
     live = sum(1 for m in MOVIES if m[0] in MOVIES_LIVE)
     return f'''<!doctype html><html lang="en"><head><title>Movie Transcripts - Boggsfiles</title><meta name="description" content="Browse character-labelled transcripts for The X-Files feature films.">{HEAD}<style>{BASE}
     .episodes{{padding:72px 0 0}}.season-head{{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}}.season-head h2{{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}}.season-head>span{{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}}.episode-grid{{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}}.episode-card{{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}}.episode-card:hover{{background:#141b18}}.episode-card img{{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}}.episode-card:hover img{{filter:saturate(.95) brightness(.9)}}.episode-copy{{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:290px}}.episode-copy>span{{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}}.episode-copy h2{{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}}.episode-copy p{{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}}.episode-copy b{{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}}.pending-transcript{{color:#929c95}}@media(max-width:1160px){{.episode-grid{{grid-template-columns:repeat(2,1fr)}}}}@media(max-width:650px){{.episode-grid{{grid-template-columns:1fr}}.episode-copy{{min-height:240px}}.season-head{{align-items:start;flex-direction:column;gap:18px}}}}

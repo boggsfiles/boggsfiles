@@ -107,3 +107,6 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
   .footer-row { display: block; }
   .footer-row span { display: block; margin-top: 8px; }
 }
+
+/* Base64 episode titles ("Rm9sbG93ZXJz" = "Followers") must keep their case: uppercasing breaks the decode. */
+.literal-case{text-transform:none;text-transform:none!important}

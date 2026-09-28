@@ -19,7 +19,7 @@ def page(title: str, body: str, active: str) -> str:   # same shell as build_arc
             f'<title>{html.escape(title)} - Boggsfiles</title><meta name="description" content="Browse {html.escape(title)} in the Boggsfiles X-Files archive.">'
             f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">'
-            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=3">{ASSETS}</head><body>{site_header(active)}<main>{body}</main>'
+            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=4">{ASSETS}</head><body>{site_header(active)}<main>{body}</main>'
             f'<footer><div class="shell footer-row">BOGGSFILES · THE X-FILES ARCHIVE <span><a href="/">Home</a> · <a href="/{active.lower()}/">Back to {html.escape(active)}</a></span></div></footer></body></html>')
 
 def write_route(route: str, content: str) -> None:

@@ -1,0 +1,471 @@
+{
+ "conflict": [
+  [
+   "4X02",
+   "Home",
+   "Unruhe",
+   "4X03"
+  ],
+  [
+   "4X03",
+   "Teliko",
+   "Home",
+   "4X04"
+  ],
+  [
+   "4X04",
+   "Unruhe",
+   "Teliko",
+   "4X02"
+  ],
+  [
+   "4X08",
+   "Tunguska",
+   "Paper Hearts",
+   "4X09"
+  ],
+  [
+   "4X09",
+   "Terma",
+   "Tunguska",
+   "4X10"
+  ],
+  [
+   "4X10",
+   "Paper Hearts",
+   "Terma",
+   "4X08"
+  ],
+  [
+   "4X12",
+   "Leonard Betts",
+   "Kaddish",
+   "4X14"
+  ],
+  [
+   "4X14",
+   "Memento Mori",
+   "Leonard Betts",
+   "4X15"
+  ],
+  [
+   "4X15",
+   "Kaddish",
+   "Memento Mori",
+   "4X12"
+  ],
+  [
+   "5X05",
+   "The Post-Modern Prometheus",
+   "Christmas Carol",
+   "5X06"
+  ],
+  [
+   "5X06",
+   "Christmas Carol",
+   "The Post-Modern Prometheus",
+   "5X05"
+  ]
+ ],
+ "dupes": [
+  [
+   "1X22",
+   "goldenrod",
+   [
+    "1x22 Born Again (Goldenrod).pdf",
+    "1x22 Roland (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "2X14",
+   "pink",
+   [
+    "2x14 Die Hand Die Verletzt (Pink Pages).pdf",
+    "2x14 Die Hand Die Verletzt (Pink).pdf"
+   ]
+  ],
+  [
+   "2X23",
+   "pink",
+   [
+    "2x23 Soft Light (Pink) 2.pdf",
+    "2x23 Soft Light (Pink).pdf"
+   ]
+  ],
+  [
+   "3X05",
+   "blue",
+   [
+    "3x05 The List (Blue Pages).pdf",
+    "3x05 The List (Blue).pdf"
+   ]
+  ],
+  [
+   "3X12",
+   "green",
+   [
+    "3x12 War of the Coprophages (Green Pages).pdf",
+    "3x12 War of the Coprophages (Green).pdf"
+   ]
+  ],
+  [
+   "3X16",
+   "pink",
+   [
+    "3x16 Apocrypha (Pink) copy.pdf",
+    "3x16 Apocrypha (Pink).pdf"
+   ]
+  ],
+  [
+   "3X18",
+   "bluepinkfrankendraft",
+   [
+    "3x18 Teso Dos Bichos (Blue + Pink Frankendraft) 2.pdf",
+    "3x18 Teso Dos Bichos (Blue + Pink Frankendraft).pdf"
+   ]
+  ],
+  [
+   "4X02",
+   "pink",
+   [
+    "4x02 Home (Pink Pages).pdf",
+    "4x02 Unruhe (Pink).pdf"
+   ]
+  ],
+  [
+   "4X02",
+   "blue",
+   [
+    "4x02 - Unruhe (Blue) [Full].pdf",
+    "4x02 Home (Blue Pages).pdf",
+    "4x02 Unruhe (Blue).pdf"
+   ]
+  ],
+  [
+   "4X03",
+   "pink",
+   [
+    "4x03 Teliko (Pink)(2).pdf",
+    "4x03 Teliko (Pink).pdf"
+   ]
+  ],
+  [
+   "4X07",
+   "blue",
+   [
+    "4x07 - Musings of a Cigarette Smoking Man script (Blue).pdf",
+    "4x07 Musings of a Cigarette-Smoking Man (Blue).pdf"
+   ]
+  ],
+  [
+   "4X12",
+   "pink",
+   [
+    "4x12 Kaddish (Pink - Full) copy.pdf",
+    "4x12 Kaddish (Pink - Full).pdf",
+    "4x12 Kaddish (Pink).pdf"
+   ]
+  ],
+  [
+   "4X14",
+   "salmon",
+   [
+    "4x14 - Memento Mori script (Salmon).pdf",
+    "4x14 Leonard Betts (Salmon).pdf"
+   ]
+  ],
+  [
+   "4X17",
+   "green",
+   [
+    "4x17 Tempus Fugit (Green Pages).pdf",
+    "4x17 Tempus Fugit (Green).pdf"
+   ]
+  ],
+  [
+   "4X17",
+   "blue",
+   [
+    "4x17 - Tempus Fugit (Blue).pdf",
+    "4x17 Tempus Fugit (Blue).pdf"
+   ]
+  ],
+  [
+   "4X17",
+   "yellow",
+   [
+    "4x17 - Tempus Fugit (Yellow).pdf",
+    "4x17 Tempus Fugit (Yellow).pdf"
+   ]
+  ],
+  [
+   "4X18",
+   "green",
+   [
+    "4x18 Max (Green) copy.pdf",
+    "4x18 Max (Green).pdf",
+    "4x18 Max (Green).pdf"
+   ]
+  ],
+  [
+   "4X20",
+   "pink",
+   [
+    "4x20 - Small Potatoes script (Pink).pdf",
+    "4x20 Small Potatoes (Pink).pdf"
+   ]
+  ],
+  [
+   "4X21",
+   "green",
+   [
+    "4X21 Zero Sum (Green).pdf",
+    "4x21 Zero Sum (Green) (in color).pdf"
+   ]
+  ],
+  [
+   "4X21",
+   "goldenrod",
+   [
+    "4x21 - Zero Sum (Goldenrod).pdf",
+    "4x21 Zero Sum (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "4X22",
+   "green",
+   [
+    "4x22 Elegy (Green Pages).pdf",
+    "4x22 Revenant (Green Pages).pdf"
+   ]
+  ],
+  [
+   "4X23",
+   "goldenrod",
+   [
+    "4x23 - Demons (Goldenrod).pdf",
+    "4x23 Demons (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "5X03",
+   "green",
+   [
+    "5x03 Redux II (Green Pages).pdf",
+    "5x03 Redux II (Green).pdf"
+   ]
+  ],
+  [
+   "5X07",
+   "green",
+   [
+    "5x07 Emiily (Green).pdf",
+    "5x07 Emily (Green Pages).pdf"
+   ]
+  ],
+  [
+   "5X07",
+   "5x07emilygoldenrodpdf",
+   [
+    "5x07 Emily Goldenrod Pages copy.pdf",
+    "5x07 Emily Goldenrod Pages.pdf"
+   ]
+  ],
+  [
+   "5X07",
+   "white",
+   [
+    "5X07 Emily (White).pdf",
+    "5x07 Emily (White Pages).pdf"
+   ]
+  ],
+  [
+   "5X13",
+   "goldenrod",
+   [
+    "5x13 Patient X (Goldenrod Pages).pdf",
+    "5x13 Patient X (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "5X14",
+   "goldenrod",
+   [
+    "5x14 The Red And The Black (Goldenrod) (clean).pdf",
+    "5x14 The Red and the Black (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "5X15",
+   "goldenrod",
+   [
+    "5x15 Travelers (Goldenrod Pages).pdf",
+    "5x15 Travelers (Goldenrod).pdf"
+   ]
+  ],
+  [
+   "5X16",
+   "2ndgreen",
+   [
+    "5x16 Mind's Eye (2nd Green Pages).pdf",
+    "5x16 Mind's Eye (2nd Green).pdf"
+   ]
+  ],
+  [
+   "5X20",
+   "white",
+   [
+    "5X20 The End (White) copy.pdf",
+    "5x20 The End (White).pdf"
+   ]
+  ]
+ ],
+ "mis": [
+  [
+   "1x07 - Ghost in the Machine script (2nd Blue).pdf",
+   "1X07",
+   "1X06"
+  ],
+  [
+   "1x18 Miracle Man (Yellow).pdf",
+   "1X18",
+   "1X17"
+  ],
+  [
+   "1x22 Born Again (Goldenrod).pdf",
+   "1X22",
+   "1X21"
+  ]
+ ],
+ "typo": [
+  [
+   "1x06 Ghosts in the Machine (White).pdf",
+   "\u201cGhosts\u201d should be \u201cGhost\u201d"
+  ],
+  [
+   "5x07 Emiily (Green).pdf",
+   "\u201cEmiily\u201d should be \u201cEmily\u201d"
+  ]
+ ],
+ "work": [
+  [
+   "1x20 Squeezed (March 2).pdf",
+   "Tooms"
+  ],
+  [
+   "2X05 Duane Gary (August 17th).pdf",
+   "Duane Barry"
+  ],
+  [
+   "3x14 Gargoyle (Preproduction).pdf",
+   "Grotesque"
+  ],
+  [
+   "4x11 EIDOLON (El Mundo Gira) White.pdf",
+   "El Mundo Gira"
+  ],
+  [
+   "4x22 Revenant (Green Pages).pdf",
+   "Elegy"
+  ],
+  [
+   "5X06 Mutato (White).pdf",
+   "The Post-Modern Prometheus"
+  ],
+  [
+   "5x10 Molly [Chinga - draft zero].pdf",
+   "Chinga"
+  ]
+ ],
+ "gaps": [
+  [
+   "1X07",
+   "Ice",
+   [
+    "Yellow"
+   ]
+  ],
+  [
+   "2X11",
+   "Excelsis Dei",
+   [
+    "Pre-Production Draft \"The Haunted\""
+   ]
+  ],
+  [
+   "3X14",
+   "Grotesque",
+   [
+    "Gargoyle Preproduction"
+   ]
+  ],
+  [
+   "3X16",
+   "Apocrypha",
+   [
+    "Salmon (incomplete)"
+   ]
+  ],
+  [
+   "5X02",
+   "Redux",
+   [
+    "DNA Appendix",
+    "Pink Pages"
+   ]
+  ],
+  [
+   "5X11",
+   "Kill Switch",
+   [
+    "Pink Pages",
+    "Blue Pages"
+   ]
+  ],
+  [
+   "5X16",
+   "Mind's Eye",
+   [
+    "Goldenrod Pages",
+    "Yellow Pages"
+   ]
+  ],
+  [
+   "5X17",
+   "All Souls",
+   [
+    "Blue Pages",
+    "White Pages",
+    "Appendix-Rev Pages",
+    "Gold Pages",
+    "Yellow Pages",
+    "Green Pages"
+   ]
+  ],
+  [
+   "5X18",
+   "The Pine Bluff Variant",
+   [
+    "Blue Pages",
+    "Pink Pages",
+    "Green Pages",
+    "Blue Pages"
+   ]
+  ],
+  [
+   "5X19",
+   "Folie \u00e0 Deux",
+   [
+    "Pink Pages"
+   ]
+  ]
+ ],
+ "totals": {
+  "sheet_eps": 117,
+  "sheet_ver": 335,
+  "site_eps": 201,
+  "site_ver": 490,
+  "local_eps": 118,
+  "local_files": 367
+ }
+}

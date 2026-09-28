@@ -9,7 +9,7 @@ from __future__ import annotations
 import html, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from transcript_header import ASSETS, site_header
+from transcript_header import ASSETS, site_header, cased
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]; DIST = ROOT / "dist"
@@ -57,7 +57,7 @@ def page(season: int) -> str:
     arts = []
     for n, (name, prod, code, drafts) in enumerate(eps, 1):
         links = "".join(f'<a class="draft" href="{D.format(fid)}" target="_blank" rel="noopener">{html.escape(label)} ↗</a>' for label, fid in drafts)
-        head = f"{html.escape(name)} {prod}".strip()
+        head = f"{cased(name)} {prod}".strip()
         arts.append(f'<article class="episode"><div class="episode-image" style="background-image:url(\'{card_photo(season, n, code)}\')"></div><div class="episode-body"><span class="episode-no">File {n:02d}</span><h2>{head}</h2><div class="drafts">{links}</div></div></article>')
     def link(cls, href, label, arrow):
         if not href: return ""
@@ -67,7 +67,7 @@ def page(season: int) -> str:
     n_files = sum(len(d) for *_, d in eps)
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} - Boggsfiles</title>'
             f'<meta name="description" content="Browse {title} in the Boggsfiles X-Files archive."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-            f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=3">{ASSETS}</head>'
+            f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4">{ASSETS}</head>'
             f'<body>{site_header("Scripts")}<main><section class="archive-hero"><div class="shell"><div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; {title}</div><h1>{title}</h1>'
             f'<p>Production drafts and collated revisions from the {year} revival, preserved for close reading and comparison.</p><div class="archive-meta"><span>{n_files} script files</span><span>Original scans</span><span>Opens in Google Drive</span></div></div></section>'
             f'<div class="shell"><div class="archive-grid">{"".join(arts)}</div></div><nav class="season-rail" aria-label="Season navigation">{nav}</nav><nav class="season-nav-bottom" aria-label="Season navigation">{nav}</nav></main>'

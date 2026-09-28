@@ -53,7 +53,7 @@ def page(title: str, body: str) -> str:
             f'<title>{html.escape(title)} - Boggsfiles</title><meta name="description" content="Watch the {html.escape(title)} in the Boggsfiles X-Files archive.">'
             f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">'
-            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=3">{ASSETS}</head><body>{site_header("Gag Reels")}<main>{body}</main>'
+            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=4">{ASSETS}</head><body>{site_header("Gag Reels")}<main>{body}</main>'
             f'<footer><div class="shell footer-row">BOGGSFILES &middot; GAG REELS <span><a href="/">Home</a> &middot; <a href="/gag-reels/">Back to Gag Reels</a></span></div></footer></body></html>')
 
 def write_route(route: str, content: str) -> None:

@@ -1,0 +1,3 @@
+file '/Users/lindseyboggs/Sites/boggsfiles/tools/reels/gag2_live/01_charades.mp4'
+file '/Users/lindseyboggs/Sites/boggsfiles/tools/reels/gag2_live/02_fireme.mp4'
+file '/Users/lindseyboggs/Sites/boggsfiles/tools/reels/gag2_live/03_end.mp4'

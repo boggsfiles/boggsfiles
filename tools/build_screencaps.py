@@ -16,7 +16,7 @@ from __future__ import annotations
 import html, json, os, re, subprocess, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from transcript_header import site_header, ASSETS
+from transcript_header import site_header, ASSETS, cased
 from build_transcript_indexes import HEAD, BASE, SEASONS
 from browse_navigation import navigation, ASSET as NAV_ASSET
 
@@ -103,7 +103,7 @@ def gallery_page(t: dict, crumb: str, filters: list[str], up_url: str, nav_prev,
     .cap-empty{{padding:80px 0;text-align:center;color:#8c968f}}.cap-more{{display:block;margin:28px auto 0;background:#0e1412;border:1px solid #343c38;color:#eeeee8;padding:14px 28px;font:400 .62rem "DM Mono",monospace;letter-spacing:.14em;text-transform:uppercase;cursor:pointer}}.cap-more[hidden]{{display:none}}
     @media(max-width:1160px){{.cap-grid{{grid-template-columns:repeat(3,1fr)}}}}@media(max-width:700px){{.cap-grid{{grid-template-columns:repeat(2,1fr)}}.cap-count{{margin-left:0;width:100%}}}}
     </style>{ASSETS}{NAV_ASSET}</head><body>{HEADER}<main>
-    <section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(t["kind"])} · {esc(t["year"])}</div><h1>{esc(t["title"])}</h1><p>{esc(t["blurb"])} Filter by who is on screen, or jump to a stretch by timecode. Click any frame for the full-size capture.</p><div class="summary"><div class="stat"><b>{len(frames):,}</b><span>Frames</span></div><div class="stat"><b>{len(present)}</b><span>Tags</span></div><div class="stat"><b>{esc(t["media"])}</b><span>Source</span></div></div></div></section>
+    <section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(t["kind"])} · {esc(t["year"])}</div><h1>{cased(t["title"])}</h1><p>{esc(t["blurb"])} Filter by who is on screen, or jump to a stretch by timecode. Click any frame for the full-size capture.</p><div class="summary"><div class="stat"><b>{len(frames):,}</b><span>Frames</span></div><div class="stat"><b>{len(present)}</b><span>Tags</span></div><div class="stat"><b>{esc(t["media"])}</b><span>Source</span></div></div></div></section>
     <div class="cap-toolbar"><div class="shell"><b>Show</b>{buttons}<label style="margin-left:8px"><b>From</b><input id="cap-a" placeholder="0:00:00"></label><label><b>To</b><input id="cap-b" placeholder="{last}"></label><span class="cap-count" id="cap-count"></span></div></div>
     <section class="caps"><div class="shell"><div class="cap-grid" id="cap-grid"></div><div class="cap-empty" id="cap-empty" hidden>No frames match that filter.</div><button class="cap-more" id="cap-more" type="button">Show more frames</button></div></section>
     {navigation(nav_prev, nav_next, "Screencap navigation")}
@@ -128,11 +128,11 @@ def gallery_page(t: dict, crumb: str, filters: list[str], up_url: str, nav_prev,
     </script></body></html>'''
 
 
-CARD_CSS = '''.episodes{padding:72px 0 0}.season-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}.season-head h2{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}.season-head>span{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}.episode-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}.episode-card{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}.episode-card:hover{background:#141b18}.episode-card img{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}.episode-card:hover img{filter:saturate(.95) brightness(.9)}.episode-copy{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:250px}.episode-copy>span{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}.episode-copy h2{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}.episode-copy p{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}.episode-copy b{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}.episode-card.pending{color:#929c95}.episode-card.pending img{filter:saturate(.3) brightness(.45)}.episode-card.pending:hover{background:#0e1412}.episode-card.pending:hover img{filter:saturate(.3) brightness(.45)}.episode-card.pending h2{color:#b9c0bb}@media(max-width:1160px){.episode-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.episode-grid{grid-template-columns:1fr}.season-head{align-items:start;flex-direction:column;gap:18px}}'''
+CARD_CSS = '''.episodes{padding:72px 0 0}.season-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}.season-head h2{font:400 clamp(3.2rem,6vw,6rem)/.9 "Oswald",sans-serif;text-transform:uppercase;margin:10px 0 0}.season-head>span{color:#8c968f;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}.episode-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#343c38;border:1px solid #343c38}.episode-card{background:#0e1412;display:flex;min-width:0;flex-direction:column;transition:.2s}.episode-card:hover{background:#141b18}.episode-card img{width:100%;aspect-ratio:16/10;object-fit:cover;filter:saturate(.82) brightness(.79);transition:.25s}.episode-card:hover img{filter:saturate(.95) brightness(.9)}.episode-copy{padding:25px 25px 28px;display:flex;flex:1;flex-direction:column;min-height:250px}.episode-copy>span{color:#e44238;font-size:.53rem;letter-spacing:.14em;text-transform:uppercase}.literal-case{text-transform:none!important}.episode-copy h2{font:400 clamp(1.8rem,2.4vw,2.75rem)/.96 "Oswald",sans-serif;text-transform:uppercase;margin:14px 0 15px}.episode-copy p{color:#929c95;font-size:.66rem;line-height:1.7;margin:0}.episode-copy b{margin-top:auto;padding-top:24px;font-size:.54rem;letter-spacing:.12em;text-transform:uppercase}.episode-card.pending{color:#929c95}.episode-card.pending img{filter:saturate(.3) brightness(.45)}.episode-card.pending:hover{background:#0e1412}.episode-card.pending:hover img{filter:saturate(.3) brightness(.45)}.episode-card.pending h2{color:#b9c0bb}@media(max-width:1160px){.episode-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.episode-grid{grid-template-columns:1fr}.season-head{align-items:start;flex-direction:column;gap:18px}}'''
 
 
 def card(href, img, kind, title, note, live) -> str:
-    inner = f'<img src="{esc(img)}" alt="{esc(title)}" loading="lazy"><div class="episode-copy"><span>{esc(kind)}</span><h2>{esc(title)}</h2><p>{esc(note)}</p><b>{"Browse frames →" if live else "Coming soon"}</b></div>'
+    inner = f'<img src="{esc(img)}" alt="{esc(title)}" loading="lazy"><div class="episode-copy"><span>{esc(kind)}</span><h2>{cased(title)}</h2><p>{esc(note)}</p><b>{"Browse frames →" if live else "Coming soon"}</b></div>'
     return f'<a class="episode-card" href="{esc(href)}">{inner}</a>' if live else f'<article class="episode-card pending">{inner}</article>'
 
 
@@ -140,7 +140,7 @@ def page(title, crumb, eyebrow, h1, intro, stats, head_eyebrow, head_h2, head_no
     return f'''<!doctype html><html lang="en"><head><title>{esc(title)} - Boggsfiles</title><meta name="description" content="{esc(intro)}">{HEAD}<style>{BASE}
     {CARD_CSS}
     .landing .shell{{width:min(1200px,calc(100% - 48px))}}@media(max-width:560px){{.landing .shell{{width:calc(100% - 28px)}}}}
-    </style>{ASSETS}{NAV_ASSET}</head><body{' class="landing"' if landing else ''}>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(eyebrow)}</div><h1>{esc(h1)}</h1><p>{esc(intro)}</p><div class="summary">{stats}</div></div></section>
+    </style>{ASSETS}{NAV_ASSET}</head><body{' class="landing"' if landing else ''}>{HEADER}<main><section class="hero"><div class="shell"><div class="crumb">{crumb}</div><div class="eyebrow">{esc(eyebrow)}</div><h1>{cased(h1)}</h1><p>{esc(intro)}</p><div class="summary">{stats}</div></div></section>
     <section class="episodes"><div class="shell"><div class="season-head"><div><div class="eyebrow">{esc(head_eyebrow)}</div><h2>{esc(head_h2)}</h2></div><span>{esc(head_note)}</span></div><div class="episode-grid">{cards}</div></div></section>{nav_html}</main><footer><div class="shell footer-row">BOGGSFILES · SCREENCAP ARCHIVE <span><a href="/">Home</a> · <a href="/screencaps/">All screencaps</a></span></div></footer></body></html>'''
 
 
@@ -177,7 +177,7 @@ def main() -> None:
     for f in films:
         if not f["source"]: continue
         (out / f["slug"]).mkdir(exist_ok=True)
-        crumb = f'<a href="/screencaps/">Screencaps</a> &nbsp;/&nbsp; {esc(f["title"])}'
+        crumb = f'<a href="/screencaps/">Screencaps</a> &nbsp;/&nbsp; {cased(f["title"])}'
         (out / f["slug"] / "index.html").write_text(gallery_page(f, crumb, f["filters"], "/screencaps/", None, None), encoding="utf-8")
 
     # season pages + episode galleries
@@ -192,7 +192,7 @@ def main() -> None:
         for i, e in enumerate(live):
             e_dir = sdir / e["slug"]; e_dir.mkdir(exist_ok=True)
             t = {**e, "kind": f"Season {s} · Episode {e['num']}", "year": e["code"], "blurb": f"Every shot change, with dense coverage wherever Mulder or Scully is on screen. Prepared from the Season {s} {e['media']}."}
-            crumb = f'<a href="/screencaps/">Screencaps</a> &nbsp;/&nbsp; <a href="/screencaps/season-{s}/">Season {s}</a> &nbsp;/&nbsp; {esc(e["title"])}'
+            crumb = f'<a href="/screencaps/">Screencaps</a> &nbsp;/&nbsp; <a href="/screencaps/season-{s}/">Season {s}</a> &nbsp;/&nbsp; {cased(e["title"])}'
             prev = (f"/screencaps/season-{s}/{live[i-1]['slug']}/", live[i-1]["title"]) if i > 0 else (f"/screencaps/season-{s}/", f"Season {s}")
             nxt = (f"/screencaps/season-{s}/{live[i+1]['slug']}/", live[i+1]["title"]) if i + 1 < len(live) else None
             (e_dir / "index.html").write_text(gallery_page(t, crumb, CHARACTER_FILTERS, f"/screencaps/season-{s}/", prev, nxt), encoding="utf-8")

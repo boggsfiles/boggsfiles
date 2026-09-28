@@ -1,0 +1,79 @@
+<!doctype html><html lang=en><head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Script Inventory Audit</title>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>*{box-sizing:border-box}
+:root{--ink:#0f1211;--ink2:#171b19;--line:#2c332f;--paper:#e9e6dc;--mute:#8d948c;--signal:#c2413a;--ok:#5f9e6e;--warn:#c8a86b}
+@media(prefers-color-scheme:light){:root:not([data-theme=dark]){--ink:#f4f2ec;--ink2:#e8e5db;--line:#cdc7b8;--paper:#171b19;--mute:#6b6f68}}
+:root[data-theme=light]{--ink:#f4f2ec;--ink2:#e8e5db;--line:#cdc7b8;--paper:#171b19;--mute:#6b6f68}
+:root[data-theme=dark]{--ink:#0f1211;--ink2:#171b19;--line:#2c332f;--paper:#e9e6dc;--mute:#8d948c}
+body{margin:0;background:var(--ink);color:var(--paper);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;padding:0 16px 60px}
+.wrap{max-width:860px;margin:0 auto;padding-top:22px}
+h1{font:600 27px/1.1 Oswald,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;margin:0 0 4px}
+h1 b{color:var(--signal)}
+.sub{color:var(--mute);font:13px/1.5 "DM Mono",ui-monospace,Menlo,monospace;margin:0 0 20px}
+h2{font:600 17px/1.3 Oswald,sans-serif;text-transform:uppercase;letter-spacing:.05em;margin:34px 0 4px;border-top:1px solid var(--line);padding-top:20px}
+h2 .n{color:var(--signal);font-family:"DM Mono",monospace;font-size:14px;margin-left:8px}
+p.lede{color:var(--mute);margin:4px 0 14px;font-size:14px}
+table{border-collapse:collapse;width:100%;font:13px/1.5 "DM Mono",ui-monospace,Menlo,monospace;margin:10px 0}
+th{text-align:left;color:var(--mute);font-weight:400;border-bottom:1px solid var(--line);padding:6px 10px 6px 0;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+td{padding:7px 10px 7px 0;border-bottom:1px solid var(--ink2);vertical-align:top}
+.code{color:var(--warn)}.bad{color:var(--signal)}.good{color:var(--ok)}
+.stat{display:flex;gap:26px;flex-wrap:wrap;background:var(--ink2);border-left:3px solid var(--signal);padding:14px 16px;margin:16px 0 8px}
+.stat div b{display:block;font:600 22px/1 Oswald,sans-serif}
+.stat div span{font:11px/1.4 "DM Mono",monospace;color:var(--mute);text-transform:uppercase;letter-spacing:.07em}
+ul{margin:8px 0;padding-left:20px}li{margin:5px 0;font-size:14px}
+.f{font-family:"DM Mono",ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--mute)}
+.note{background:var(--ink2);border-left:3px solid var(--warn);padding:12px 15px;margin:14px 0;font-size:14px}</style></head><body><div class=wrap>
+<h1>Script Inventory <b>Audit</b></h1>
+<p class=sub>Your spreadsheet vs. boggsfiles.com vs. your local X-Files Scripts folder &middot; 25 Sep 2026</p>
+<div class=stat>
+<div><b>117</b><span>episodes in sheet</span></div>
+<div><b>201</b><span>episodes on site</span></div>
+<div><b>118</b><span>episodes local</span></div>
+<div><b>335</b><span>versions in sheet</span></div>
+<div><b>490</b><span>drafts on site</span></div>
+<div><b>367</b><span>local PDFs</span></div>
+</div>
+<div class=note><b>Headline: your spreadsheet is behind your site, not ahead of it.</b>
+The site has 201 episodes and 490 draft links against the sheet's 117 and 335, and
+<b>nothing listed in the sheet is missing from the site</b>. The sheet is a partial record of a
+bigger archive, so treat the site as the source of truth and the sheet as a to-update document.</div>
+
+<h2>1. The numbering conflict<span class=n>11 episodes</span></h2>
+<p class=lede>Your sheet and your site agree with each other and both number Seasons 4&ndash;5 by
+<b>broadcast order</b>. Your screencap archive &mdash; and the scanned document covers themselves &mdash;
+use <b>production codes</b>. I confirmed this from the covers: one reads &ldquo;EPISODE 5x06 The
+Post-Modern Prometheus&rdquo; where your sheet has 5X05.</p>
+<table><tr><th>code</th><th>sheet &amp; site say</th><th>that code really is</th><th>correct code</th></tr><tr><td class=code>4X02</td><td>Home</td><td class=bad>Unruhe</td><td class=good>4X03</td></tr><tr><td class=code>4X03</td><td>Teliko</td><td class=bad>Home</td><td class=good>4X04</td></tr><tr><td class=code>4X04</td><td>Unruhe</td><td class=bad>Teliko</td><td class=good>4X02</td></tr><tr><td class=code>4X08</td><td>Tunguska</td><td class=bad>Paper Hearts</td><td class=good>4X09</td></tr><tr><td class=code>4X09</td><td>Terma</td><td class=bad>Tunguska</td><td class=good>4X10</td></tr><tr><td class=code>4X10</td><td>Paper Hearts</td><td class=bad>Terma</td><td class=good>4X08</td></tr><tr><td class=code>4X12</td><td>Leonard Betts</td><td class=bad>Kaddish</td><td class=good>4X14</td></tr><tr><td class=code>4X14</td><td>Memento Mori</td><td class=bad>Leonard Betts</td><td class=good>4X15</td></tr><tr><td class=code>4X15</td><td>Kaddish</td><td class=bad>Memento Mori</td><td class=good>4X12</td></tr><tr><td class=code>5X05</td><td>The Post-Modern Prometheus</td><td class=bad>Christmas Carol</td><td class=good>5X06</td></tr><tr><td class=code>5X06</td><td>Christmas Carol</td><td class=bad>The Post-Modern Prometheus</td><td class=good>5X05</td></tr></table>
+<p class=lede>Seasons 1&ndash;3 and 6&ndash;11 agree everywhere. Only S4 and S5 aired out of production order,
+which is exactly where the drift is. Nothing here is broken &mdash; but if someone compares your codes to
+the documents, this is what they will hit.</p>
+
+<h2>2. Mislabelled local files<span class=n>3 definite</span></h2>
+<table><tr><th>file</th><th>filed as</th><th>should be</th></tr><tr><td class=f>1x07 - Ghost in the Machine script (2nd Blue).pdf</td><td class=bad>1X07</td><td class=good>1X06</td></tr><tr><td class=f>1x18 Miracle Man (Yellow).pdf</td><td class=bad>1X18</td><td class=good>1X17</td></tr><tr><td class=f>1x22 Born Again (Goldenrod).pdf</td><td class=bad>1X22</td><td class=good>1X21</td></tr></table>
+<p class=lede>Typos in filenames:</p><ul><li><span class=f>1x06 Ghosts in the Machine (White).pdf</span> &mdash; “Ghosts” should be “Ghost”</li><li><span class=f>5x07 Emiily (Green).pdf</span> &mdash; “Emiily” should be “Emily”</li></ul>
+
+<h2>3. Working titles &mdash; not errors<span class=n>7</span></h2>
+<p class=lede>These look wrong but are genuine production working titles. Worth keeping as-is.</p>
+<table><tr><th>file</th><th>is really</th></tr><tr><td class=f>1x20 Squeezed (March 2).pdf</td><td>Tooms</td></tr><tr><td class=f>2X05 Duane Gary (August 17th).pdf</td><td>Duane Barry</td></tr><tr><td class=f>3x14 Gargoyle (Preproduction).pdf</td><td>Grotesque</td></tr><tr><td class=f>4x11 EIDOLON (El Mundo Gira) White.pdf</td><td>El Mundo Gira</td></tr><tr><td class=f>4x22 Revenant (Green Pages).pdf</td><td>Elegy</td></tr><tr><td class=f>5X06 Mutato (White).pdf</td><td>The Post-Modern Prometheus</td></tr><tr><td class=f>5x10 Molly [Chinga - draft zero].pdf</td><td>Chinga</td></tr></table>
+
+<h2>4. Duplicates in your local folder<span class=n>31 groups</span></h2>
+<p class=lede>Same episode, same revision, more than one file. Some are true copies
+(&ldquo;copy&rdquo;, &ldquo;2&rdquo;); others are the same revision saved under two different episode
+titles, which is worth a look before deleting either.</p>
+<table><tr><th>code</th><th>files</th></tr><tr><td class=code>1X22</td><td class=f>1x22 Born Again (Goldenrod).pdf<br>1x22 Roland (Goldenrod).pdf</td></tr><tr><td class=code>2X14</td><td class=f>2x14 Die Hand Die Verletzt (Pink Pages).pdf<br>2x14 Die Hand Die Verletzt (Pink).pdf</td></tr><tr><td class=code>2X23</td><td class=f>2x23 Soft Light (Pink) 2.pdf<br>2x23 Soft Light (Pink).pdf</td></tr><tr><td class=code>3X05</td><td class=f>3x05 The List (Blue Pages).pdf<br>3x05 The List (Blue).pdf</td></tr><tr><td class=code>3X12</td><td class=f>3x12 War of the Coprophages (Green Pages).pdf<br>3x12 War of the Coprophages (Green).pdf</td></tr><tr><td class=code>3X16</td><td class=f>3x16 Apocrypha (Pink) copy.pdf<br>3x16 Apocrypha (Pink).pdf</td></tr><tr><td class=code>3X18</td><td class=f>3x18 Teso Dos Bichos (Blue + Pink Frankendraft) 2.pdf<br>3x18 Teso Dos Bichos (Blue + Pink Frankendraft).pdf</td></tr><tr><td class=code>4X02</td><td class=f>4x02 Home (Pink Pages).pdf<br>4x02 Unruhe (Pink).pdf</td></tr><tr><td class=code>4X02</td><td class=f>4x02 - Unruhe (Blue) [Full].pdf<br>4x02 Home (Blue Pages).pdf<br>4x02 Unruhe (Blue).pdf</td></tr><tr><td class=code>4X03</td><td class=f>4x03 Teliko (Pink)(2).pdf<br>4x03 Teliko (Pink).pdf</td></tr><tr><td class=code>4X07</td><td class=f>4x07 - Musings of a Cigarette Smoking Man script (Blue).pdf<br>4x07 Musings of a Cigarette-Smoking Man (Blue).pdf</td></tr><tr><td class=code>4X12</td><td class=f>4x12 Kaddish (Pink - Full) copy.pdf<br>4x12 Kaddish (Pink - Full).pdf<br>4x12 Kaddish (Pink).pdf</td></tr><tr><td class=code>4X14</td><td class=f>4x14 - Memento Mori script (Salmon).pdf<br>4x14 Leonard Betts (Salmon).pdf</td></tr><tr><td class=code>4X17</td><td class=f>4x17 Tempus Fugit (Green Pages).pdf<br>4x17 Tempus Fugit (Green).pdf</td></tr><tr><td class=code>4X17</td><td class=f>4x17 - Tempus Fugit (Blue).pdf<br>4x17 Tempus Fugit (Blue).pdf</td></tr><tr><td class=code>4X17</td><td class=f>4x17 - Tempus Fugit (Yellow).pdf<br>4x17 Tempus Fugit (Yellow).pdf</td></tr><tr><td class=code>4X18</td><td class=f>4x18 Max (Green) copy.pdf<br>4x18 Max (Green).pdf<br>4x18 Max (Green).pdf</td></tr><tr><td class=code>4X20</td><td class=f>4x20 - Small Potatoes script (Pink).pdf<br>4x20 Small Potatoes (Pink).pdf</td></tr><tr><td class=code>4X21</td><td class=f>4X21 Zero Sum (Green).pdf<br>4x21 Zero Sum (Green) (in color).pdf</td></tr><tr><td class=code>4X21</td><td class=f>4x21 - Zero Sum (Goldenrod).pdf<br>4x21 Zero Sum (Goldenrod).pdf</td></tr><tr><td class=code>4X22</td><td class=f>4x22 Elegy (Green Pages).pdf<br>4x22 Revenant (Green Pages).pdf</td></tr><tr><td class=code>4X23</td><td class=f>4x23 - Demons (Goldenrod).pdf<br>4x23 Demons (Goldenrod).pdf</td></tr><tr><td class=code>5X03</td><td class=f>5x03 Redux II (Green Pages).pdf<br>5x03 Redux II (Green).pdf</td></tr><tr><td class=code>5X07</td><td class=f>5x07 Emiily (Green).pdf<br>5x07 Emily (Green Pages).pdf</td></tr><tr><td class=code>5X07</td><td class=f>5x07 Emily Goldenrod Pages copy.pdf<br>5x07 Emily Goldenrod Pages.pdf</td></tr><tr><td class=code>5X07</td><td class=f>5X07 Emily (White).pdf<br>5x07 Emily (White Pages).pdf</td></tr><tr><td class=code>5X13</td><td class=f>5x13 Patient X (Goldenrod Pages).pdf<br>5x13 Patient X (Goldenrod).pdf</td></tr><tr><td class=code>5X14</td><td class=f>5x14 The Red And The Black (Goldenrod) (clean).pdf<br>5x14 The Red and the Black (Goldenrod).pdf</td></tr><tr><td class=code>5X15</td><td class=f>5x15 Travelers (Goldenrod Pages).pdf<br>5x15 Travelers (Goldenrod).pdf</td></tr><tr><td class=code>5X16</td><td class=f>5x16 Mind&#x27;s Eye (2nd Green Pages).pdf<br>5x16 Mind&#x27;s Eye (2nd Green).pdf</td></tr><tr><td class=code>5X20</td><td class=f>5X20 The End (White) copy.pdf<br>5x20 The End (White).pdf</td></tr></table>
+
+<h2>5. In the sheet, not yet on the site<span class=n>10 episodes</span></h2>
+<p class=lede>Versions your sheet records that I could not find linked on the site.</p>
+<table><tr><th>code</th><th>episode</th><th>not on the site</th></tr><tr><td class=code>1X07</td><td>Ice</td><td class=f>Yellow</td></tr><tr><td class=code>2X11</td><td>Excelsis Dei</td><td class=f>Pre-Production Draft &quot;The Haunted&quot;</td></tr><tr><td class=code>3X14</td><td>Grotesque</td><td class=f>Gargoyle Preproduction</td></tr><tr><td class=code>3X16</td><td>Apocrypha</td><td class=f>Salmon (incomplete)</td></tr><tr><td class=code>5X02</td><td>Redux</td><td class=f>DNA Appendix, Pink Pages</td></tr><tr><td class=code>5X11</td><td>Kill Switch</td><td class=f>Pink Pages, Blue Pages</td></tr><tr><td class=code>5X16</td><td>Mind&#x27;s Eye</td><td class=f>Goldenrod Pages, Yellow Pages</td></tr><tr><td class=code>5X17</td><td>All Souls</td><td class=f>Blue Pages, White Pages, Appendix-Rev Pages, Gold Pages, Yellow Pages, Green Pages</td></tr><tr><td class=code>5X18</td><td>The Pine Bluff Variant</td><td class=f>Blue Pages, Pink Pages, Green Pages, Blue Pages</td></tr><tr><td class=code>5X19</td><td>Folie à Deux</td><td class=f>Pink Pages</td></tr></table>
+
+<h2>6. Shooting schedules</h2>
+<p class=lede>The sheet records 34 episodes with schedules; the site has 56. Four in the sheet are not
+on the site &mdash; <b>3X10 731</b>, <b>4X09 Terma</b>, <b>5X08 Kitsunegari</b>, <b>5X10 Chinga</b>, all Blue.
+Twenty-six on the site are not in the sheet at all, almost all Seasons 7&ndash;9.</p>
+
+<h2>7. Site &ldquo;duplicates&rdquo; that are fine</h2>
+<p class=lede>Fifteen episodes appear on both a season page and the partials page. That is correct:
+the season page holds full drafts, the partials page holds revision page-sets. Not duplication.</p>
+</div></body></html>

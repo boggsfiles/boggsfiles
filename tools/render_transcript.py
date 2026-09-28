@@ -8,7 +8,7 @@ import html
 import json
 from collections import defaultdict
 from pathlib import Path
-from transcript_header import HEADER, ASSETS
+from transcript_header import HEADER, ASSETS, cased
 from browse_navigation import navigation, ASSET as NAV_ASSET
 
 
@@ -78,12 +78,12 @@ def render(data: dict) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/transcript.css">
+  <link rel="stylesheet" href="/assets/transcript.css?v=2">
 {ASSETS}{NAV_ASSET}</head>
 <body>
   {HEADER}
   <main>
-    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> {crumb_mid} <span>/</span> {esc(episode)}</div><div class="hero-grid"><div><div class="eyebrow">{eyebrow}</div><h1>{esc(episode)}</h1><p>Character-labelled dialogue prepared from the official {source_label}.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>{date_label} · {esc(airdate)}</small></div></div></div></section>
+    <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> {crumb_mid} <span>/</span> {cased(episode)}</div><div class="hero-grid"><div><div class="eyebrow">{eyebrow}</div><h1>{cased(episode)}</h1><p>Character-labelled dialogue prepared from the official {source_label}.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>{date_label} · {esc(airdate)}</small></div></div></div></section>
     <div class="search-rail"><div class="shell search-inner"><label for="transcript-search">Search this transcript</label><div class="search-box"><input id="transcript-search" type="search" placeholder="Search dialogue or character…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div id="search-count" aria-live="polite">{entry_count} dialogue entries</div></div></div>
     <div class="shell transcript-layout">
       <aside class="episode-notes"><div class="note-block"><span>File</span><b>{file_label}</b></div><div class="note-block"><span>Source</span><b>{source_note}</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
