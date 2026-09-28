@@ -113,6 +113,15 @@ def link_frame(lines, blurb, url):
 
 # --------------------------------------------------------------------------
 SECTIONS = [
+ ("Scripts", "/scripts/", [
+   title_frame(["THE", "SCRIPTS."],
+               "Original production drafts, scanned from the paper they were printed on.", 140),
+   stat_frame("THE COLLECTION", [
+     ("512",   "drafts, Seasons 1 to 11 and both movies"),
+     ("EVERY", "revision color: white, blue, pink, yellow, green, goldenrod, salmon"),
+     ("SCANS", "the real pages, stamps and all, not retyped")]),
+   link_frame(["GO", "READ."], "Browse by season. Every draft opens full size.", "BOGGSFILES.COM"),
+ ]),
  ("Vs Screen", "/script-vs-screen/", [
    title_frame(["SCRIPT", "VS.", "SCREEN."],
                "What was written. What changed. What actually made it to air."),
