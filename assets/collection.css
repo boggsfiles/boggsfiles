@@ -94,3 +94,6 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
 .file-soon:hover { transform: none; background: var(--ink); }
 .file-soon h2 { color: #b9bfba; }
 .open.soon { color: var(--signal, #b73831); }
+
+/* Base64 episode titles ("Rm9sbG93ZXJz" = "Followers") must keep their case: uppercasing breaks the decode. */
+.literal-case{text-transform:none;text-transform:none!important}

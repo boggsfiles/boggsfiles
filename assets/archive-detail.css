@@ -134,3 +134,6 @@
 .scout-credit{margin:26px 0 0;color:#aeb5af;font-size:.9rem}
 .scout-credit b{color:var(--paper);font-weight:500}
 .scout-credit a{color:var(--red)}
+
+/* Base64 episode titles ("Rm9sbG93ZXJz" = "Followers") must keep their case: uppercasing breaks the decode. */
+.literal-case{text-transform:none;text-transform:none!important}
