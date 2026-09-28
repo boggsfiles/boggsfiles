@@ -23,6 +23,8 @@ DIST = ROOT / "dist"
 #     covers (5X05/5X06 were swapped; two 5X07 cards said "Christmas Carol" but the covers say
 #     "EMILY"), plus 4 schedules added 2026-09-25.
 #   - x-files-scripts-by-season/season-4 and season-5: Kaddish Pink and Emily Goldenrod Pages added.
+#   - memorabilia/index.html: the '2nd Unit & Schedules' card linking to
+#     /misc-memorabilia/second-unit-schedules/ was added by hand 2026-09-28.
 # Either add these to the Google Sites source first, or re-apply them afterwards.
 
 LEGACY = "https://sites.google.com/view/boggsfiles"
