@@ -1,0 +1,371 @@
+{
+ "title": "Conduit",
+ "slug": "conduit",
+ "code": "1X03",
+ "season": 1,
+ "episode": 4,
+ "credits": "Written by Alex Gansa & Howard Gordon",
+ "airdate": "October 1, 1993",
+ "description": "The episode that aired closest to its own shooting draft. Almost nothing moved, which is exactly what makes the three things that did move worth reading: two mid-scene cuts caught by caption timing, and a character who is only ever named on screen.",
+ "summary": "Two archived drafts, the White First Draft of July 23, 1993 and the 2nd Blue shooting draft of August 19, compared with the Region 1 DVD closed captions.\n\nThis is the quietest report in Season 1 so far, and the reason is worth stating plainly: Conduit aired unusually close to its final draft. Almost every scene survives intact. What follows is what actually moved, and in two cases it only surfaced because of how the captions are timed rather than what they say.\n\nThe cuts cluster in one place, the Blevins office scene, where two separate exchanges vanish from the middle of speeches that read as continuous. Both times the removed beat is the one where Scully is pinned down rather than deflecting, including the line where she draws the parallel to Samantha out loud and unprompted. The additions run the other way and are all broadcast inventions: Ruby's father acquires a first name he never has on the page, the Boar's Head becomes the Pennsylvania Pub in spoken dialogue, and Mulder's phone call with Danny is rewritten from the ground up.\n\nOne line is left unresolved rather than claimed. Scully's warning to Tessa about having waived the right to an attorney has no caption text at all, only a 4.2 second silence long enough to hold it. A caption track can drop a line that was genuinely spoken, so the timing cannot settle it either way.",
+ "category_descriptions": {
+  "cut": "Three entries only, and two of them sit inside the same scene. Both were confirmed as audio track cuts rather than caption gaps by the join timing between the surrounding lines.",
+  "changed": "Four broadcast only changes, three of them confirmed word for word against the captions. A character named, a bar renamed in spoken dialogue, a phone call rewritten, and two visual inserts that acquire dialogue on air.",
+  "shippy": "Episode four, still no romance on the page, and the episode does not pretend otherwise. What it has is trust: Scully reading his grief correctly, and stepping in physically when he cannot regulate himself. Present in both script and air unless marked."
+ },
+ "drafts": [
+  {
+   "date": "July 23, 1993",
+   "revision": "White · First Draft",
+   "format": "Full · 62 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1ANpyA8hLrwHhf4Z77OSB3eQQhT-rhvIx/view?usp=share_link"
+  },
+  {
+   "date": "August 2, 1993",
+   "revision": "Pink",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 5, 1993",
+   "revision": "Green",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 6, 1993",
+   "revision": "Yellow",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 9, 1993",
+   "revision": "Goldenrod",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 10, 1993",
+   "revision": "Salmon",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 17, 1993",
+   "revision": "White (2nd)",
+   "format": "Stamp only · pages survive inside the final draft",
+   "status": "No separate scan"
+  },
+  {
+   "date": "August 19, 1993",
+   "revision": "Blue · 2nd Blue, shooting draft",
+   "format": "Full · 64 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/15aZoMug9qjiCMpzxOHHREScGItldu1ba/view?usp=sharing"
+  }
+ ],
+ "still_alt": "Mulder and Scully leaning over a tape deck together in the sheriff's office",
+ "findings": [
+  {
+   "id": "assignment-to-assess",
+   "category": "cut",
+   "title": "Scully's assignment to assess line, trimmed",
+   "meta": "2nd Blue p.6 · scene 5 · present in every draft on file",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In Blevins' office, Scully's pushback loses its most pointed phrase. The script has her naming the assignment explicitly. She has been sent to evaluate Mulder, and she says so to his boss's face. The aired cut keeps the ask and drops the framing."
+    },
+    {
+     "kind": "body",
+     "text": "Revision trail: White → Pink → Blue (final) → Aired. Present, same idea, in every draft on file. The final draft's page still carries a Pink stage stamp dated August 2, 1993, which means nobody touched this line again after early August. The trim happened in the broadcast edit, not on the page."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“You've given me an assignment to assess the validity of Agent Mulder's work. If you're concerned about his objectivity in this matter... at least let me talk to him and make a recommendation.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“With respect, sir, at least let me talk with him and make a recommendation.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The aired wording above checks out word for word against the DVD captions."
+    }
+   ]
+  },
+  {
+   "id": "blevins-exchanges",
+   "category": "cut",
+   "title": "Two exchanges cut from the middle of the Blevins office scene",
+   "meta": "2nd Blue pp.7–8 · scene 5 · present in the final draft, no page rewrite",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "These sit inside speeches that read as continuous at a glance. The captions show two spots in this scene where one line runs straight into the next with only a two frame technical gap between them, the same near zero gap that ordinary back to back dialogue has elsewhere in the file. Nothing was spoken on air in between. Both times, the cut removes a beat where Scully is pinned down rather than deflecting."
+    },
+    {
+     "kind": "body",
+     "text": "Present in the final draft of August 19, with no evidence either exchange was reworked on the page. Confirmed as an audio track cut rather than a caption gap by the timing at both spots: the join is 0.07 seconds, the file's standard adjacent caption buffer."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "BLEVINS: “Has he shared any of this with you?”\nSCULLY: “I wasn't aware he was pursuing the case in an official capacity.”\nBLEVINS: “But he's told you about it?”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Has he shared any of this with you?” → “There's no need to protect him.”\n(Scully's disclaimer and Blevins' follow up: gone)",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "BLEVINS: “Agent Scully, do you see a parallel between this X-file and the tabloid article Agent Mulder proposes to investigate?”\nSCULLY: “Of course. A young boy. A missing sister. An alien abduction scenario.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "(cut entirely. Samantha's backstory leads straight into) “In your opinion, has Agent Mulder's personal agenda clouded his professional judgment?”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Worth flagging for the MSR watchers too. The cut line is the one where Scully says the parallel out loud, unprompted: a young boy, a missing sister, an alien abduction scenario. On the page she draws the connection to Mulder's own case herself. On air, she never gets the chance to."
+    }
+   ]
+  },
+  {
+   "id": "dialogue-compression",
+   "category": "cut",
+   "title": "Line by line compression, and the one line the captions cannot settle",
+   "meta": "2nd Blue · scattered, scenes 5 to 53 · Tessa interrogation pp.41–42, scene 35",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Otherwise nothing structural. Withers' local color speech and Tessa's interrogation are tightened for pace: same beats, same information, shorter sentences. Not itemized individually here. The Tessa interrogation still survives almost word for word into the aired cut, which remains unusual for this episode, with one possible exception."
+    },
+    {
+     "kind": "body",
+     "text": "One line is genuinely ambiguous. The script has Scully telling Tessa, “Now you've waived the right to an attorney, so if you lie to us here today, you could be charged with perjury.” The DVD captions have no text at all for “waived the right to an attorney,” only “...do you understand how serious this is?” then a real 4.2 second silent gap, then “so if you lie to us here today, you could be charged with perjury.”"
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "SCULLY: “Now you've waived the right to an attorney, so if you lie to us here today, you could be charged with perjury.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“...do you understand how serious this is?” [4.2 second silence] “so if you lie to us here today, you could be charged with perjury.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "That gap is long enough to hold the missing clause plus Tessa's scripted reaction beat, so this reads more like a dropped caption than a genuine broadcast cut. Unlike the two Blevins scene cuts above, the timing here cannot rule it out. It is presented as unresolved rather than asserted either way."
+    }
+   ]
+  },
+  {
+   "id": "charles",
+   "category": "changed",
+   "title": "Ruby's father is named Charles on screen, and nowhere on the page",
+   "meta": "2nd Blue p.10 · scene 8A · not in either full draft",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Revision trail: White → Goldenrod → Blue (final) → Aired. Checked against both full drafts, the name never appears on the page. Every version of this line, from the very first White draft through the final shooting script, has Darlene say only “Ruby's father,” never a name."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“I know what you're thinking, but Ruby's father had nothing to do with this.”\n(both drafts, identical)",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Charles had nothing to do with this.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm it word for word: “Charles had nothing to do with this,” full stop, with no “Ruby's father” anywhere in the line. This is a genuine broadcast only addition. Ruby's father is never named on the page in any draft on file, only on screen."
+    }
+   ]
+  },
+  {
+   "id": "pennsylvania-pub",
+   "category": "changed",
+   "title": "The bar is renamed on screen: Boar's Head becomes the Pennsylvania Pub",
+   "meta": "2nd Blue pp.20–21, 24 · scenes 14 to 16 · unchanged across both drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Revision trail: White → Pink → Blue (final) → Aired. The Boar's Head, with a scripted NEON BOAR'S HEAD sign, is unchanged across both full drafts."
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm the swap happens in the spoken dialogue itself, not just on a sign. In the library scene, the Girl's line about Greg's job swaps the bar's name outright."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“All he ever did since we knew him was pour beer over at the Boar's Head.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“All he ever did since we met him was pour beer at the Pennsylvania Pub.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "Plausibly a trademark dodge, since Boar's Head is a real deli meat brand a production might want to avoid naming outright. Whatever the reason, this is a deliberate, confirmed rename carried through the spoken dialogue, not a cosmetic sign change or a transcription guess."
+    }
+   ]
+  },
+  {
+   "id": "danny-redskins",
+   "category": "changed",
+   "title": "The Danny phone call is rewritten from the ground up",
+   "meta": "2nd Blue p.19 · scene 11 area · identical in both drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Both script drafts give Mulder a tickets for a favor trade with a contact named Danny, who needles him by picking the Giants game. The aired cut rewrites the whole exchange: no season tickets, no Giants tease. Mulder instead claims he can get Danny a ticket through a friend who knows a friend who knows a friend."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“I know you're busy. Look, I got Redskins season tickets. Pick a game.” (winces) “The Giants? You're killing me here, Danny. Okay, okay, you got it. You know where to find me...”\n(both drafts, identical)",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“I know you're busy. Look, I know a friend who knows a friend who knows a friend who can get you a ticket to a Redskins game. You got it. All right. You know where to find me? Thanks, Danny.”",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "on-screen-details",
+   "category": "changed",
+   "title": "On screen and spoken details get filled in for air",
+   "meta": "2nd Blue ~p.9 (fax insert) · pp.35–36, scene 26 (computer monitor)",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The script's fax insert just describes a cover sheet addressed to Daniel Bernstein, Cryptography Section, FBI, Washington, being swallowed by a fax machine. No date is given in either draft. The aired graphic adds a specific letterhead date, DATE: AUG 26, visible on screen. This reads as ordinary art department set dressing rather than a scripted change."
+    },
+    {
+     "kind": "body",
+     "text": "Similarly, in the Leza Atsumi computer monitor scene, the script's da Vinci's Universal Man and the animated DNA helix are pure visual inserts with no dialogue attached to them. The captions show someone, Mulder from context, naming both out loud on air. “Da Vinci's Universal Man” and “a DNA double helix” are spoken lines that do not exist on the page in either draft. Minor, but a genuine addition rather than a transcription artifact."
+    }
+   ]
+  },
+  {
+   "id": "photo-wall",
+   "category": "shippy",
+   "title": "Scully watches him at the photo wall",
+   "meta": "2nd Blue scene 8 · p.9 · stage direction, present in script",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Mulder reaches out to touch a childhood photo of Ruby. The script says Scully is watching him, sensing his strong connection to the case. She clocks exactly what this is about before he says a word. Pure stage direction with no dialogue, so the captions can neither confirm nor contradict a look, but nothing here suggests the beat was cut."
+    }
+   ]
+  },
+  {
+   "id": "i-know-why",
+   "category": "shippy",
+   "title": "“I know why this is so important to you.”",
+   "meta": "2nd Blue scene 29 · p.32 · confirmed word for word against captions",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Scully names his grief directly and gently, without being asked, then still tells him there is no evidence. She holds both truths at once: she sees him, and she will not lie to him."
+    }
+   ]
+  },
+  {
+   "id": "stop-at-the-grave",
+   "category": "shippy",
+   "title": "“Stop!” and a grip on both arms at the grave",
+   "meta": "2nd Blue scene 31 · p.36 · dialogue confirmed, blocking is stage direction",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Scully grips Mulder by the upper arms, hard, to stop him digging up a possible crime scene with his bare hands. It reads as procedure, but it is also the first time in the episode that she physically intervenes to protect him from himself. The grip is stage direction and cannot be checked against captions, but the word “Stop!” is there on the aired audio, exactly where the script puts it."
+    }
+   ]
+  },
+  {
+   "id": "walking-into-that-room",
+   "category": "shippy",
+   "title": "“I'm still walking into that room, Scully.”",
+   "meta": "2nd Blue scene 42 · p.47 · aired drops her name",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Driving at night, Mulder tells her about the ritual of closing his eyes before entering his childhood bedroom, hoping Samantha would be there. He says it to her specifically, not into a case file: an early instance of him choosing to be known by his partner."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "“I'm still walking into that room, Scully.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“You know, I'm still walking into that room... every day of my life.”",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "One small correction from the captions. The aired version drops her name from the closing line. The beat is intact. The direct address by name is not."
+    }
+   ]
+  },
+  {
+   "id": "hand-on-shoulder",
+   "category": "shippy",
+   "title": "A hand on his shoulder, holding him back",
+   "meta": "2nd Blue scene 51 · p.55 · stage direction, present in script",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "At the hospital, as Darlene shuts Mulder out, Scully places a heavy hand on his shoulder to keep him from following. Not comfort exactly, more that she knows he is about to make it worse and steps in before he can. No dialogue is attached, so the captions neither confirm nor deny it. Unchanged from the script only read."
+    }
+   ]
+  }
+ ]
+}
