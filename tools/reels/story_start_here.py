@@ -44,6 +44,14 @@ def para(d, x, y, s, f, fill=PAPER, maxw=W - 180, lh=None):
     for ln in wrap(d, s, f, maxw): d.text((x, y), ln, font=f, fill=fill); y += lh
     return y
 
+def center_in(d, box, text, font, fill):
+    """Centre text on its actual ink, not its font metrics: anchor="ma" hangs it off the
+    ascender, which includes the empty space above the caps and reads as sitting low."""
+    x0, y0, x1, y1 = box
+    l, t, r, b = d.textbbox((0, 0), text, font=font)
+    d.text((round((x0 + x1) / 2 - (l + r) / 2), round((y0 + y1) / 2 - (t + b) / 2)),
+           text, font=font, fill=fill)
+
 k = 0
 BAND_TOP, BAND_BOT = TOP + 150, BOT - 90     # where a frame's content is allowed to live
 
@@ -132,8 +140,9 @@ for ln in ["START", "READING."]:
 y = para(d, 90, y + 44, "Everything above is one tap away. New files go up most weeks.",
          mono(30), fill=MUTED, lh=46)
 box_y = y + 80
-d.rectangle((90, box_y, W - 90, box_y + 132), outline=SIGNAL, width=4)
-d.text((W // 2, box_y + 44), "BOGGSFILES.COM", font=osw(58, 600), fill=PAPER, anchor="ma")
+BOX = (90, box_y, W - 90, box_y + 132)
+d.rectangle(BOX, outline=SIGNAL, width=4)
+center_in(d, BOX, "BOGGSFILES.COM", osw(58, 600), PAPER)
 d.text((90, box_y + 186), "Link in bio", font=mono(30, "Medium"), fill=MUTED)
 done(img, d)
 

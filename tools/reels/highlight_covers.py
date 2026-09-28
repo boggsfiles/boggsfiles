@@ -28,9 +28,11 @@ COVERS = [
     (["GAG", "REELS"],    "Gag Reels",  False),
     (["DAILIES"],         "Dailies",    False),
     (["SCREEN", "CAPS"],  "Screencaps", False),
-    (["PHOTOS"],          "Photos",     False),
+    (["DOCS"],            "Documents",  False),
     (["ASK", "ME"],       "Ask Me",     False),
     (["10.13"],           "10.13",      False),
+    # held back: there is no /photos/ section on the site yet, so this one has nothing to point at.
+    (["PHOTOS"],          "Photos (hold)", False),
 ]
 
 SAFE = 880              # everything lives inside this circle
