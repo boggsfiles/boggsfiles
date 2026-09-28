@@ -6,9 +6,9 @@ Source PDFs live in iCloud at "X-Files Scripts/2nd Unit & Production Schedules" 
 dist/assets/archive-photos/second-unit/ as <slug>-<page>.webp plus -thumb.webp, the same way the
 Location Scouts section works, so the pages are browsable on the site without a Drive round trip.
 
-Revision colours are taken from what each memo says about itself, never from measuring the scan:
+Revision colors are taken from what each memo says about itself, never from measuring the scan:
 production "salmon" photographs pink and "goldenrod" photographs orange, so measurement disagrees
-with the documents. Where a document does not name its own colour, none is claimed.
+with the documents. Where a document does not name its own color, none is claimed.
 
 Re-run after adding PDFs. Existing webps are left alone.
 """
@@ -23,85 +23,85 @@ IMG = "/assets/archive-photos/second-unit"
 IMGDIR = DIST / IMG.lstrip("/")
 OUT = DIST / "misc-memorabilia" / "second-unit-schedules" / "index.html"
 
-# pdf stem, slug, colour the document names for itself, date, from, memo no, what it covers
+# pdf stem, slug, color the document names for itself, date, from, memo no, what it covers
 DOCS = [
  # --- Season 5 second unit, in the order they were issued -------------------
  dict(g="unit", pdf="2nd Unit Redux I, Redux II", slug="01-redux",
-      colour="Salmon", date="Friday, September 12, 1997", who="Kevin Parks", memo="2NDU-5X02-04",
+      color="Salmon", date="Friday, September 12, 1997", who="Kevin Parks", memo="2NDU-5X02-04",
       title="Redux I & Redux II", note="The earliest memo in the set. Second unit schedule for the two-part season opener."),
  dict(g="unit", pdf="2nd Unit Detour Memo + Schedule (Green) 10-10-97", slug="02-detour-memo",
-      colour="Green", date="October 10, 1997", who="2nd Unit", memo=None,
+      color="Green", date="October 10, 1997", who="2nd Unit", memo=None,
       title="Detour, days 11 and 12",
       note="A memo on green stock with the schedule attached, copied to B. Goodwin, J.P. Finn, R. French and B. Dowler. The only document here on X-F Productions letterhead."),
  dict(g="unit", pdf="2nd Unit Detour, Christmas Carol Salmon", slug="03-detour-xmas",
-      colour="3rd Salmon", date="Friday, October 17, 1997", who="Kevin Parks", memo="2NDU-5X02-08",
+      color="3rd Salmon", date="Friday, October 17, 1997", who="Kevin Parks", memo="2NDU-5X02-08",
       title="Detour & Christmas Carol", note="Headed “3rd Salmon”, so the schedule had already been revised onto salmon stock twice before this one."),
  dict(g="unit", pdf="2nd Unit Detour", slug="04-detour-pickups",
-      colour="Goldenrod", date="Tuesday, October 28, 1997", who="Brett Dowler", memo="2NDU-5X05-03",
+      color="Goldenrod", date="Tuesday, October 28, 1997", who="Brett Dowler", memo="2NDU-5X05-03",
       title="Detour pickups and inserts", note="An updated schedule of pickups and inserts for 5X04."),
  dict(g="unit", pdf="2nd Unit Detour, Chrismas Carol, Emily Yellow", slug="05-three-yellow",
-      colour="Yellow", date="Friday, October 31, 1997", who="Brett Dowler", memo="2NDU-5X05-06",
+      color="Yellow", date="Friday, October 31, 1997", who="Brett Dowler", memo="2NDU-5X05-06",
       title="Detour, Christmas Carol & Emily", note="Three episodes running at once on one second unit."),
  dict(g="unit", pdf="2nd Unit Post Modern Prometheus", slug="06-prometheus",
-      colour=None, date="Friday, October 31, 1997", who="Kevin Parks", memo="2NDU-5X06",
+      color=None, date="Friday, October 31, 1997", who="Kevin Parks", memo="2NDU-5X06",
       title="The Post-Modern Prometheus", note="Issued the same day as the memo above, by the other assistant director. Includes the company move to 2659 Oxford Street for the Berkowitz house."),
  dict(g="unit", pdf="2nd Unit Detour, Chrismas Carol, Emily Goldenrod", slug="07-three-goldenrod",
-      colour="Goldenrod", date="Tuesday, November 4, 1997", who="Brett Dowler", memo="2NDU-5X06-1",
+      color="Goldenrod", date="Tuesday, November 4, 1997", who="Brett Dowler", memo="2NDU-5X06-1",
       title="Detour, Christmas Carol & Emily",
       note="Notes that 5X05 pickups and reshoots are “yet to be fully scheduled”. The longest document in the set at four pages."),
  dict(g="unit", pdf="2nd Unit Detour, Chrismas Carol, Emily", slug="08-three-salmon",
-      colour="Salmon", date="Wednesday, November 5, 1997", who="Brett Dowler", memo="2NDU-5X06-2",
+      color="Salmon", date="Wednesday, November 5, 1997", who="Brett Dowler", memo="2NDU-5X06-2",
       title="Detour, Christmas Carol & Emily",
       note="Issued the next day, already revised. Christmas Carol pickups move to 3106 Alberta Street, the Scully family house."),
  dict(g="unit", pdf="2nd Unit Christmas Carol, Kitsunegari, Schizogeny", slug="09-kitsunegari",
-      colour="Green", date="Tuesday, November 19, 1997", who="Kevin Parks", memo="2NDU-5X07-3",
+      color="Green", date="Tuesday, November 19, 1997", who="Kevin Parks", memo="2NDU-5X07-3",
       title="Christmas Carol, Kitsunegari & Schizogeny", note="A revised schedule covering three episodes."),
  dict(g="unit", pdf="2nd Unit Emily Memo + Insert List (Green) 11-25-97", slug="10-emily-inserts",
-      colour="Green", date="Tuesday, November 25, 1997", who="Kevin Parks", memo="5X07-INSERTS",
+      color="Green", date="Tuesday, November 25, 1997", who="Kevin Parks", memo="5X07-INSERTS",
       title="Emily, remaining inserts",
       note="A memo plus the attached insert list, signed “Kevin”. Notes that 5X05 and 5X06 are complete. The inserts are Scully's hand lifting the cross from the sand, her feet in the sand, and Mulder's POV of the cross."),
  dict(g="unit", pdf="2nd Unit Kill Switch Goldenrod", slug="11-kill-switch",
-      colour="Goldenrod", date="Wednesday, January 14, 1998", who="Kevin Parks", memo="2NDU-5X10-3",
+      color="Goldenrod", date="Wednesday, January 14, 1998", who="Kevin Parks", memo="2NDU-5X10-3",
       title="Kill Switch", note="Back after the Christmas hiatus."),
  dict(g="unit", pdf="2nd Unit Chinga, Kill Switch", slug="12-chinga",
-      colour="Salmon", date="Friday, January 16, 1998", who="Brett Dowler", memo="2NDU-5X11-1",
+      color="Salmon", date="Friday, January 16, 1998", who="Brett Dowler", memo="2NDU-5X11-1",
       title="Chinga & Kill Switch", note="Kill Switch day 12 shoots at the Park Canada RV lot on Nulelum Way, directed by Rob Bowman."),
  dict(g="unit", pdf="2nd Unit Mind's Eye, Travelers, All Souls Yellow", slug="13-minds-eye-yellow",
-      colour="Yellow", date="Wednesday, March 18, 1998", who="Brett Dowler", memo="2NDU-5X16-1",
+      color="Yellow", date="Wednesday, March 18, 1998", who="Brett Dowler", memo="2NDU-5X16-1",
       title="Mind's Eye, Travelers & All Souls", note=None),
  dict(g="unit", pdf="2nd Unit Mind's Eye, Travelers, All Souls Goldenrod", slug="14-minds-eye-gold",
-      colour="Goldenrod", date="Friday, March 20, 1998", who="Brett Dowler", memo="2NDU-5X16-2",
+      color="Goldenrod", date="Friday, March 20, 1998", who="Brett Dowler", memo="2NDU-5X16-2",
       title="Mind's Eye, Travelers & All Souls",
       note="Two days later, with an updated list of the inserts still outstanding. The last second unit memo in the set."),
 
  # --- season-wide schedules -------------------------------------------------
  dict(g="season", pdf="Director's Schedule 5th Season Pink", slug="20-directors-pink",
-      colour="Pink", date="Revised August 20, 1997", who=None, memo=None,
+      color="Pink", date="Revised August 20, 1997", who=None, memo=None,
       title="Fifth Season Directors Schedule",
       note="The whole season on one page: show number, writer, director, prep, start and wrap. Episodes 1 and 2 are typed. Episodes 3 and 4 have their titles <b>written in by hand in blue pen</b>, Redux II and Detour, because they had not been named when this was typed. From episode 5 on, the title column is simply empty: directors and dates assigned to episodes that did not exist yet."),
  dict(g="season", pdf="Director's Schedule 5th Season Salmon", slug="21-directors-salmon",
-      colour="Salmon", date="Revised November 14, 1997", who=None, memo=None,
+      color="Salmon", date="Revised November 14, 1997", who=None, memo=None,
       title="Fifth Season Directors Schedule",
       note="The same document three months later. Worth reading against the Pink: the blanks have started to fill in."),
  dict(g="season", pdf="Production Schedule Season 8 Goldenrod", slug="22-s8-goldenrod",
-      colour="Goldenrod", date="Season 8", who=None, memo=None,
+      color="Goldenrod", date="Season 8", who=None, memo=None,
       title="Season Eight Production Schedule",
       note="Three pages on 20th Century Fox letterhead: episode number, writer, editor, prep and shoot dates, director and air date, straight through the season, holidays and pre-empted weeks included."),
  dict(g="season", pdf="Production Schedule Season 8 Yellow", slug="23-s8-yellow",
-      colour="Yellow", date="August 15, 2000", who=None, memo=None,
+      color="Yellow", date="August 15, 2000", who=None, memo=None,
       title="Season Eight Production Schedule", note="The dated revision of the same schedule."),
 
  # --- calendars and scouts --------------------------------------------------
  dict(g="prep", pdf="Prep Calendar November 2000", slug="30-prep-nov-2000",
-      colour="Pink", date="November 2000", who=None, memo="8ABX12",
+      color="Pink", date="November 2000", who=None, memo="8ABX12",
       title="Prep Calendar, November 2000",
       note="A month laid out as a wall calendar, timed to the minute and marked “as of 7:20 PM”. Set decoration meetings, an underwater photography meeting, a location scout, wardrobe, the start of principal photography, and Thanksgiving."),
  dict(g="prep", pdf="Season 8 Prep Calendar", slug="31-prep-jan-2001",
-      colour="White", date="January 2001", who=None, memo="8ABX16",
+      color="White", date="January 2001", who=None, memo="8ABX16",
       title="Prep Calendar, January 2001",
       note="Location scout, VFX/SFX/stunt scout of an oil platform, prop meeting, second unit mini scout, casting calls."),
  dict(g="prep", pdf="Surekill Tech Scout Only ", slug="32-surekill-scout",
-      colour=None, date="Tentative, Thursday October 19, 2000", who=None, memo="8ABX09",
+      color=None, date="Tentative, Thursday October 19, 2000", who=None, memo="8ABX09",
       title="Surekill tech scout",
       note="Headed 8ABX09 “UNTITLED”, before the episode had its name. Under the date it notes that Stage 5 is in use by 8ABX08 and, plainly, that <b>Scully and Doggett are not available</b>. The location list runs down the day scene by scene, with the Herald Examiner building standing in for a Worcester bus station."),
 ]
@@ -111,14 +111,14 @@ GROUPS = [
   "Fourteen memos issued between September 1997 and March 1998 by the two second unit assistant "
   "directors, Kevin Parks and Brett Dowler. Second unit shoots the pieces the main unit cannot: "
   "inserts, pickups, hands, feet, plates, reshoots. Each memo goes to all departments, on whatever "
-  "colour the revision had reached that week."),
+  "color the revision had reached that week."),
  ("season", "Season schedules",
   "Four documents that plan a whole season at once, two from Season 5 and two from Season 8."),
  ("prep", "Prep calendars and scouts",
   "What a production week actually looks like when it is written down."),
 ]
 
-HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-one second unit memos, season schedules and prep calendars from The X-Files, Seasons 5 and 8, scanned in full colour on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
+HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-one second unit memos, season schedules and prep calendars from The X-Files, Seasons 5 and 8, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
 FOOT = '''</main><footer><div class="shell footer-row">BOGGSFILES · PRODUCTION DOCUMENTS <span><a href="/">Home</a> · <a href="/production-documents/">All production documents</a></span></div></footer></body></html>'''
 
 CSS_EXTRA = '''<style>.su-swatch{display:inline-block;width:.68em;height:.68em;border-radius:50%;margin-right:.45em;vertical-align:-1px;border:1px solid rgba(0,0,0,.35)}</style>'''
@@ -155,8 +155,8 @@ def render():
 def doc_html(d):
     n = d["pages"]
     meta = []
-    if d["colour"]:
-        meta.append(f'<span class="su-rev"><i class="su-swatch" style="background:{SWATCH[d["colour"]]}"></i>{d["colour"]}</span>')
+    if d["color"]:
+        meta.append(f'<span class="su-rev"><i class="su-swatch" style="background:{SWATCH[d["color"]]}"></i>{d["color"]}</span>')
     meta.append(html.escape(d["date"]))
     if d["who"]:  meta.append("from " + html.escape(d["who"]))
     if d["memo"]: meta.append(html.escape(d["memo"]))
@@ -193,9 +193,9 @@ def build():
       '<p class="detail-copy">Second unit is the part of a production almost nobody keeps paperwork from. '
       'It shoots what the main unit cannot: inserts, pickups, hands and feet, plates, reshoots of a scene '
       'that did not cut together. Somebody has to tell every department where it will be and what it needs, '
-      'so an assistant director writes a memo, runs it off on whatever colour the revision has reached, and '
+      'so an assistant director writes a memo, runs it off on whatever color the revision has reached, and '
       'distributes it. Then it is superseded, usually within days, and thrown away. These twenty-one survived. '
-      'Each one is scanned in full colour on its original stock, because the colour is the revision.</p>']
+      'Each one is scanned in full color on its original stock, because the color is the revision.</p>']
     for key, title, blurb in GROUPS:
         group = [d for d in DOCS if d["g"] == key]
         body.append(f'<section class="scout-tier"><div class="schedule-season-head"><h2>{title}</h2>'
