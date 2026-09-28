@@ -104,7 +104,7 @@
 .scout-legend span{display:flex;align-items:center;gap:8px}
 .scout-chip{display:inline-block;font:500 .56rem/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;padding:2px 8px;border:1px solid;white-space:nowrap;font-style:normal}
 .scout-ok{color:#9fd3ac;border-color:#2f6b3f}.scout-inf{color:#e9c27a;border-color:#8a5a0f}.scout-no{color:#e8a3a3;border-color:#7a2e2e}.scout-lib{color:#c7c2da;border-color:#4e4a5e}
-.scout-tier{margin-top:66px}
+.scout-tier{margin-top:66px;margin-bottom:66px}
 .scout-blurb{max-width:760px;color:#aeb5af;margin:18px 0 0}
 .scout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;margin-top:34px;padding-top:34px;border-top:1px solid var(--line)}
 .scout-tier .scout:first-of-type{border-top:0;padding-top:0}
