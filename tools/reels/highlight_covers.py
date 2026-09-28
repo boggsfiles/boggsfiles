@@ -24,7 +24,11 @@ def osw(size, wght=600):
 COVERS = [
     (["START", "HERE"],   "Start Here", True),
     (["SCRIPTS"],         "Scripts",    False),
-    (["XF", "TRIPS"],     "XF Trips",   False),
+    # Airport codes: a matched three-letter pair, and both read at 56px. "XF Vancouver" is 12
+    # characters and would truncate, while "XF LA" fits, so the prefix is dropped on both rather
+    # than carried by only one of them. Every highlight on this account is X-Files anyway.
+    (["YVR"],             "Vancouver",  False),
+    (["LAX"],             "LA",         False),
     (["VS", "SCREEN"],    "Vs Screen",  False),
     (["GAG", "REELS"],    "Gag Reels",  False),
     (["DAILIES"],         "Dailies",    False),
