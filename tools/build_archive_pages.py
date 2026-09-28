@@ -21,7 +21,8 @@ DIST = ROOT / "dist"
 # ONLY in dist/, not on Google Sites. Running this will silently wipe them:
 #   - misc-memorabilia/x-files-shooting-schedules: 4 wrong codes/titles fixed against the scanned
 #     covers (5X05/5X06 were swapped; two 5X07 cards said "Christmas Carol" but the covers say
-#     "EMILY"), plus 4 schedules added 2026-09-25.
+#     "EMILY"), plus 4 schedules added 2026-09-25, plus Season 4 re-sorted into production-code
+#     order 2026-09-28 (4X10 sat before 4X08 and 4X12 after 4X15; reported by a visitor).
 #   - x-files-scripts-by-season/season-4 and season-5: Kaddish Pink and Emily Goldenrod Pages added.
 #   - memorabilia/index.html: the '2nd Unit & Schedules' card linking to
 #     /misc-memorabilia/second-unit-schedules/ was added by hand 2026-09-28.

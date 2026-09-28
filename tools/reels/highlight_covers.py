@@ -24,8 +24,7 @@ def osw(size, wght=600):
 COVERS = [
     (["START", "HERE"],   "Start Here", True),
     (["SCRIPTS"],         "Scripts",    False),
-    # "XF Adventures" is 13 characters and truncates; "Adventures" is 10 and fits, like "Screencaps".
-    (["TRIPS"],           "Adventures", False),
+    (["XF", "TRIPS"],     "XF Trips",   False),
     (["VS", "SCREEN"],    "Vs Screen",  False),
     (["GAG", "REELS"],    "Gag Reels",  False),
     (["DAILIES"],         "Dailies",    False),
@@ -33,7 +32,6 @@ COVERS = [
     (["DOCS"],            "Documents",  False),
     (["ASK", "ME"],       "Ask Me",     False),
     (["10.13"],           "10.13",      False),
-    (["ON THE", "ROAD"],  "Adventures (alt)", False),
     # held back: there is no /photos/ section on the site yet, so this one has nothing to point at.
     (["PHOTOS"],          "Photos (hold)", False),
 ]
