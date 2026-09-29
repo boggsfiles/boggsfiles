@@ -4,14 +4,32 @@ document.addEventListener('click', (event) => {
   const link = event.target.closest('a[href*="drive.google.com"], a[href*="docs.google.com"]');
   if (!link || typeof gtag !== 'function') return;
   const tidy = (text) => (text || '').replace(/[↗→]/g, '').replace(/\s+/g, ' ').trim();
-  const card = link.closest('.episode');
-  const heading = card && card.querySelector('h2');
-  const version = tidy(link.textContent);
-  const title = heading ? tidy(heading.textContent) : tidy(link.getAttribute('aria-label')).replace(/^Open /, '') || version;
+  const text = (root, selector) => tidy(root.querySelector(selector)?.textContent);
+  // Each archive page lays its links out differently, so name the file from the card it sits in.
+  const describe = () => {
+    const script = link.closest('.episode');
+    if (script) return ['Script', text(script, 'h2'), tidy(link.textContent)];
+    if (location.pathname.startsWith('/script-vs-screen/')) return ['Script', text(document, 'h1'), tidy(link.textContent)];
+    const callSheet = link.closest('.call-episode');
+    if (callSheet) return ['Call sheet', `${text(callSheet, 'h2')} ${text(callSheet, '.call-episode-head span')}`, tidy(link.textContent)];
+    if (link.matches('.comic-issue')) return ['Comic', `Comic ${text(link, 'b')}`, ''];
+    if (link.matches('.recent-item')) {
+      // Homepage "New" tiles: "Season 3 · Shooting Schedule, Blue" or "Season 7 · Blue partial draft, 7ABX01"
+      const [what, detail = ''] = text(link, 'p').replace(/^Season \d+\s*·\s*/, '').split(/,\s*/);
+      if (/draft/i.test(what)) return ['Script', text(link, 'h3'), what];
+      if (/shooting schedule/i.test(what)) return ['Shooting schedule', `${text(link, 'h3')} Shooting Schedule`, detail];
+      return ['File', text(link, 'h3'), what];
+    }
+    const name = tidy(link.getAttribute('aria-label')).replace(/^Open /, '') || tidy(link.textContent);
+    const kind = /oneline/i.test(name) ? 'Oneline schedule' : /shooting schedule/i.test(name) ? 'Shooting schedule' : 'File';
+    return [kind, name, ''];
+  };
+  const [type, title, version] = describe();
   gtag('event', 'open_file', {
+    file_type: type,
     file_title: title,
-    file_version: heading ? version : '',
-    file_label: heading ? `${title} · ${version}` : title,
+    file_version: version,
+    file_label: version ? `${title} · ${version}` : title,
     link_url: link.href,
   });
 });
