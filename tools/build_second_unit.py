@@ -74,6 +74,26 @@ DOCS = [
       title="Mind's Eye, Travelers & All Souls",
       note="Two days later, with an updated list of the inserts still outstanding. The last second unit memo in the set."),
 
+ # --- insert lists ----------------------------------------------------------
+ dict(g="inserts", pdf="Christmas Carol Insert", slug="15-xmas-inserts",
+      color=None, date="Tuesday, November 4, 1997", who=None, memo="5X05",
+      title="Christmas Carol, pickups and inserts",
+      note="Page two of the pickup and insert list, on goldenrod. Almost every line is a point of "
+           "view: Scully comparing photographs, a hypodermic needle with blood in a baggy, two PCR "
+           "sheets held to the light, the crucifix in the jewellery box. The header carries a typo "
+           "that nobody caught, CHISTMAS CAROL, and the shoot day line reads November 1999 on a "
+           "sheet dated November 1997."),
+ dict(g="inserts", pdf="Post Modern Prometheus Insert", slug="16-pmp-inserts",
+      color=None, date="Undated", who=None, memo="5X06",
+      title="The Post-Modern Prometheus, preliminary inserts",
+      note="The script supervisor's own list, <b>written out by hand in pen</b> on a blank form. "
+           "Inserts are the close ups the main unit still owes, and this is somebody tracking what "
+           "is outstanding as the day goes. Scene 60, in the cellar, reads as a shopping list: CS "
+           "SANDWICH ON PLATE, CS GOAT, CS HORSE, CS ROOSTER, CS PIG, CS WINDOWS GET SMASHED. Scene "
+           "1 is CU GOAT BOY LKS INTO CAR. The circled M and S mark whose eyeline each shot has to "
+           "match, so Mulder and Scully are being tracked shot by shot. The last line on the page "
+           "is TV PLAYING JERRY SPRINGER."),
+
  # --- season-wide schedules -------------------------------------------------
  dict(g="season", pdf="Director's Schedule 5th Season Pink", slug="20-directors-pink",
       color="Pink", date="Revised August 20, 1997", who=None, memo=None,
@@ -112,13 +132,17 @@ GROUPS = [
   "directors, Kevin Parks and Brett Dowler. Second unit shoots the pieces the main unit cannot: "
   "inserts, pickups, hands, feet, plates, reshoots. Each memo goes to all departments, on whatever "
   "color the revision had reached that week."),
+ ("inserts", "Insert lists",
+  "Inserts are the close ups the main unit still owes: the hands, the objects, the things an edit "
+  "cuts to. Somebody has to keep track of which ones are outstanding. Two of those lists survived, "
+  "and one of them is handwritten."),
  ("season", "Season schedules",
   "Four documents that plan a whole season at once, two from Season 5 and two from Season 8."),
  ("prep", "Prep calendars and scouts",
   "What a production week actually looks like when it is written down."),
 ]
 
-HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-one second unit memos, season schedules and prep calendars from The X-Files, Seasons 5 and 8, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
+HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-three second unit memos, insert lists, season schedules and prep calendars from The X-Files, Seasons 5 and 8, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
 FOOT = '''</main><footer><div class="shell footer-row">BOGGSFILES · PRODUCTION DOCUMENTS <span><a href="/">Home</a> · <a href="/production-documents/">All production documents</a></span></div></footer></body></html>'''
 
 CSS_EXTRA = '''<style>.su-swatch{display:inline-block;width:.68em;height:.68em;border-radius:50%;margin-right:.45em;vertical-align:-1px;border:1px solid rgba(0,0,0,.35)}</style>'''
@@ -184,7 +208,7 @@ def build():
       '<section class="archive-hero"><div class="shell">'
       '<div class="crumb"><a href="/production-documents/">Production Documents</a> &nbsp;/&nbsp; 2nd Unit &amp; Production Schedules</div>'
       '<h1>2nd Unit &amp;<br>Production Schedules</h1>'
-      '<p>Twenty-one documents from inside the production office: the memos that told every department '
+      '<p>Twenty-three documents from inside the production office: the memos that told every department '
       'where the second unit would be on Thursday, the schedules that mapped whole seasons before the '
       'episodes had names, and the calendars that counted a month down to the minute.</p>'
       f'<div class="archive-meta"><span>{len(DOCS)} documents</span><span>{total} scanned pages</span>'
@@ -194,7 +218,7 @@ def build():
       'It shoots what the main unit cannot: inserts, pickups, hands and feet, plates, reshoots of a scene '
       'that did not cut together. Somebody has to tell every department where it will be and what it needs, '
       'so an assistant director writes a memo, runs it off on whatever color the revision has reached, and '
-      'distributes it. Then it is superseded, usually within days, and thrown away. These twenty-one survived. '
+      'distributes it. Then it is superseded, usually within days, and thrown away. These twenty-three survived. '
       'Each one is scanned in full color on its original stock, because the color is the revision.</p>']
     for key, title, blurb in GROUPS:
         group = [d for d in DOCS if d["g"] == key]
