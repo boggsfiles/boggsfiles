@@ -1,0 +1,218 @@
+{
+ "title": "The Jersey Devil",
+ "slug": "the-jersey-devil",
+ "code": "1X04",
+ "season": 1,
+ "episode": 5,
+ "credits": "Written by Chris Carter",
+ "airdate": "October 8, 1993",
+ "description": "The quietest report in the season so far, and it turns on a single line: a clinical explanation for the creature's violence that survives every draft on file and then never reaches the air.",
+ "summary": "Two archived drafts, the White First Draft of August 11, 1993 and the Pink Final of August 19, compared with the Region 1 DVD closed captions.\n\nThis episode reached broadcast close to its final draft. The interrogation, Ranger Brouillet's testimony and Dr. Diamond's lecture on the Wild Man myth all survive nearly word for word, trimmed only for pace. What is worth reading is one cut and two additions.\n\nThe cut is the interesting one. Searching the vacant building, Dr. Diamond finds a blood spotted rag and, on the page, gives a specific biological reason for the creature's aggression: she may be in estrous. The idea is in the very first draft, worded as cycling, tightened at the Blue revision, and carried into the Pink completely unchanged. Then it is gone from the broadcast, replaced by a vaguer read on the same clue. Nothing in the caption track contains estrous, in heat or cycling anywhere in the episode.\n\nTwo things were checked and did not survive, and are named here rather than quietly dropped. An exchange in the morgue in which Detective Tomson asks the coroner to keep the case quiet appears in no caption at all, so it is not claimed. And the disc spells the detective's name TOMSON, matching the script exactly, so there is no name change to report.\n\nEvery aired line below carries its timecode, so any of it can be checked against the disc.",
+ "category_descriptions": {
+  "cut": "One real cut, and it is a good one: a clinical line that outlived every revision on file and still did not reach the air. Everything else in this episode is trimming for pace.",
+  "changed": "Two broadcast only changes, both confirmed by timecode. One moves a tactical team nine minutes earlier than the script puts them. The other hands a guest character a warmer entrance than he was written.",
+  "shippy": "Five episodes in, still no romance, but the blind date subplot finally gives Mulder something to be territorial about. All of these are present in both script and air: they are here because they are good, not because they changed."
+ },
+ "drafts": [
+  {
+   "date": "August 11, 1993",
+   "revision": "White · First Draft",
+   "format": "Full · 61 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1l7WpCUHgAUiRcNxia8_pj3e7_7BOYnTH/view?usp=share_link"
+  },
+  {
+   "date": "August 19, 1993",
+   "revision": "Pink · Final",
+   "format": "Full · 57 pages (scanned, OCR)",
+   "status": "Compared",
+   "url": "https://drive.google.com/file/d/1e_TyEF3LyNN4tVAgtbkrotOSG7-yy0oW/view?usp=sharing"
+  }
+ ],
+ "still_alt": "Mulder and Scully talking across a diner booth",
+ "findings": [
+  {
+   "id": "estrous",
+   "category": "cut",
+   "title": "Dr. Diamond's clinical read on the bloody rag, cut entirely",
+   "meta": "Pink p.38 / White p.39 · scene 37 · present in both drafts",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Searching the vacant building, Dr. Diamond finds a blood spotted rag and, on the page, offers a specific biological theory for the creature's violence: she may be in estrous, which would explain the aggression. On air the beat runs straight from it being blood to her possibly being injured, with no room for the clinical line."
+    },
+    {
+     "kind": "body",
+     "text": "Revision trail: White → Blue → Pink → Aired. The idea is already in the White draft, worded there as cycling. The page carries a Blue stage stamp and an (X) mark showing the wording was tightened to estrous at that revision, and it then carries into the Pink completely unchanged. This was cut at the broadcast edit, never rewritten out of the script."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "DR. DIAMOND: “If it’s a female it could mean she’s in estrous. It could explain the aggressive behavior.”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“It’s blood. She could be bringing her killing here. She could be injured.”  (30:40)",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The captions confirm the cut is total: estrous, in heat and cycling appear nowhere in the episode's caption track. One caveat worth stating. The caption track does not tag a speaker at this point, so the disc can confirm the words that were said but not the mouth they came from. The script gives the line to Dr. Diamond."
+    }
+   ]
+  },
+  {
+   "id": "pace-trims",
+   "category": "cut",
+   "title": "Trims through the interrogation and lab scenes",
+   "meta": "Pink pp.7–35 · not itemized",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Nothing structural. Detective Tomson's standoff with Mulder, Ranger Brouillet's testimony and Dr. Diamond's lecture on the Wild Man myth all survive to air nearly word for word, tightened only for pace. There is no second cut in this episode worth naming."
+    }
+   ]
+  },
+  {
+   "id": "swat-early",
+   "category": "changed",
+   "title": "The tactical team arrives nine minutes early",
+   "meta": "Pink pp.38–40, scenes 37–39, against p.45, scene 50",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "In the script a S.W.A.T. team does not appear until the Act Four exterior cordon, where squad cars and a S.W.A.T. van form a net. The aired cut moves them up: during the earlier building search a team member is already staged outside, calling in on the radio."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED ONLY · DVD CAPTIONS",
+     "text": "“Roger. Zebra team in position.”  (30:49)",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "That is nine minutes before the script puts them anywhere near the building, and it raises the law enforcement presence well ahead of where the page escalates it."
+    }
+   ]
+  },
+  {
+   "id": "rob-entrance",
+   "category": "changed",
+   "title": "Rob gets a warmer entrance, and a whisper is added",
+   "meta": "Pink p.20 · scene 19A · confirmed at 13:35–13:41",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "On the page Rob says hello and crosses to his son. The broadcast gives him a paternal beat first, three lines that exist in neither draft, and then adds a whispered aside from Ellen."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "ROB greets the room and crosses to his son.",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Hey, Tiger.” / “How you doing?” / “Having a good time?”  (13:35–13:39)\nEllen, whispered: “Divorced.”  (13:41)",
+     "tone": "aired",
+     "paired": true
+    },
+    {
+     "kind": "body",
+     "text": "The script's following beat has Scully catch Rob staring and mock scold Ellen about it. Whether that played as written is not something a caption track can answer, since captions carry speech and sound cues only and never blocking or expression. Flagged, not asserted."
+    }
+   ]
+  },
+  {
+   "id": "can-you-cancel",
+   "category": "shippy",
+   "title": "“Can you cancel?”",
+   "meta": "Pink scene 25 · present in script and air · 23:25",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "The moment Scully mentions she has a date, and this time it is a date rather than a birthday party, Mulder's first move is to try to talk her out of it. She shuts it down. But he asked."
+    },
+    {
+     "kind": "panel",
+     "label": "SCRIPT",
+     "text": "MULDER: “Can you cancel?”",
+     "tone": "script",
+     "paired": true
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Can you cancel?”  (23:25)\n“Unlike you, Mulder, I would like to have a life.”  (23:28)",
+     "tone": "aired",
+     "paired": true
+    }
+   ]
+  },
+  {
+   "id": "the-debrief",
+   "category": "shippy",
+   "title": "The debrief that is not a debrief",
+   "meta": "Pink scene 62 · present in script and air · 42:53–43:02",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Back at the Bureau, Mulder corners Scully about Rob with the persistence of a man conducting an interview. The captions carry the whole exchange across twelve seconds."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Same guy you had dinner with the other night?”  (42:53)\n“You going to have dinner with him again?”  (42:57)\n“No interest.”  (43:01) / “Not at this time.”  (43:02)",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "The script has Scully visibly avoiding his eyes through this. She then chooses to go to the Smithsonian with Mulder rather than pursue it."
+    }
+   ]
+  },
+  {
+   "id": "eight-million-years",
+   "category": "shippy",
+   "title": "“Eight million years out of Africa.”",
+   "meta": "Pink scenes 39 and 62 · present in script and air · 31:47 and 43:14",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "Mulder's line about how little separates us from the beast woman bookends the episode, and the caption track shows the bookend is real: he says it at 31:47 and again at 43:14, capped two seconds later when she opens a door for him."
+    },
+    {
+     "kind": "panel",
+     "label": "AIRED · DVD CAPTIONS",
+     "text": "“Eight million years out of Africa…”  (43:14)\n“And look who’s holding the door.”  (43:16)",
+     "tone": "aired",
+     "paired": false
+    },
+    {
+     "kind": "body",
+     "text": "Easy, established shorthand between two people five episodes into knowing each other."
+    }
+   ]
+  },
+  {
+   "id": "what-isnt-here",
+   "category": "shippy",
+   "title": "Being honest about what is not here",
+   "meta": "Whole episode",
+   "blocks": [
+    {
+     "kind": "body",
+     "text": "This is banter and comfort, not romance. Mulder's closest thing to a jealous line is a joke, the threat about the beast woman is Scully's and not his, and the Rob subplot resolves in a flat decline rather than a pined over almost. Good low stakes partnership texture. Nothing here is a turning point, and it would be easy to oversell it as one."
+    }
+   ]
+  }
+ ]
+}
