@@ -14,7 +14,7 @@ W, H = 1080, 1350
 INK = (11, 14, 13); PAPER = (232, 230, 220); SIGNAL = (183, 56, 49)
 MUTED = (126, 137, 129); LINE = (44, 50, 48)
 HERE = Path(__file__).resolve().parent
-PDF = Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/Inserts X-Files/Post Modern Prometheus Insert.pdf"
+PDF = (Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/X-Files Scripts/2nd Unit & Production Schedules/Post Modern Prometheus Insert.pdf")
 OUT = Path.home() / "Library/Mobile Documents/com~apple~CloudDocs/X-Files Scripts/XF Music Videos/Carousel - Insert List (5X06)"
 OUT.mkdir(parents=True, exist_ok=True)
 N = 8
@@ -151,7 +151,7 @@ slide(["AND A TV", "PLAYING", "JERRY SPRINGER."],
 # 08 - closer
 img, d = new()
 y = 430
-for ln in ["21 DOCUMENTS", "LIKE THIS", "ARE ON THE SITE."]: d.text((80, y), ln, font=oswald(74, 600), fill=PAPER); y += 80
+for ln in ["23 DOCUMENTS", "LIKE THIS", "ARE ON THE SITE."]: d.text((80, y), ln, font=oswald(74, 600), fill=PAPER); y += 80
 y = para(d, 80, y + 28, "Second unit memos, season schedules, prep calendars and insert lists. "
                         "Seasons 5 and 8, scanned in full color on their original stock. "
                         "Free to read, no account.", mono(25), fill=MUTED, lh=36)
