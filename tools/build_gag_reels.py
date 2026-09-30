@@ -42,7 +42,7 @@ REELS = {
 MARKS = {"season-1": "1", "season-2": "2", "season-3": "3", "season-4": "4", "season-5": "5",
          "season-6": "6", "season-7": "7", "season-8": "8", "season-9": "9", "fight-the-future": "F"}
 
-LIVE = ["season-1", "season-2"]
+LIVE = ["season-1", "season-2", "season-3"]
 
 INTRO = ("A gag reel is the blooper tape the crew cuts together for the wrap party at the end of a season. "
          "Flubbed lines, broken takes, corpsing, and the running jokes that only make sense if you were on that set. "
