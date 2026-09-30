@@ -58,18 +58,32 @@ d.text((80, VID_Y + VID_H + 82), "THE FULL ELEVEN MINUTES IS ON THE SITE", font=
 d.text((80, VID_Y + VID_H + 130), "boggsfiles.com/gag-reels", font=mono(26), fill=MUTED)
 ov.save(TMP / "overlay.png")
 
-# end card: the date is the point
+# end card: the date is the point. Every element is placed from the measured ink box of the one
+# above it, because "10.13" in Oswald 300 has an ink bottom 250px below its draw origin and a
+# hardcoded rule underneath it lands inside the numerals.
 ec = Image.new("RGB", (W, H), INK); d = ImageDraw.Draw(ec)
 brand(d, 80, 470, 50)
-d.text((80, 610), "THE REST ARRIVE", font=osw(66, 600), fill=PAPER)
-d.text((72, 690), "10.13", font=osw(300, 600), fill=SIGNAL)
-d.line((80, 1030, W - 80, 1030), fill=(60, 68, 63), width=3)
-d.text((80, 1072), "Seasons 4 to 9, plus Fight the Future.", font=mono(31), fill=PAPER)
-d.text((80, 1120), "Every gag reel ever made, all at once.", font=mono(31), fill=PAPER)
-box = (80, 1230, W - 80, 1360)
+
+f_head = osw(66, 600)
+d.text((80, 600), "THE REST ARRIVE", font=f_head, fill=PAPER)
+y = d.textbbox((80, 600), "THE REST ARRIVE", font=f_head)[3] + 34
+
+f_date = osw(300, 600)
+d.text((72, y), "10.13", font=f_date, fill=SIGNAL)
+y = d.textbbox((72, y), "10.13", font=f_date)[3] + 46      # clear of the glyphs, not through them
+
+d.line((80, y, W - 80, y), fill=(60, 68, 63), width=3)
+y += 46
+
+f_body = mono(31)
+for ln in ["Seasons 4 to 9, plus Fight the Future.", "Every gag reel ever made, all at once."]:
+    d.text((80, y), ln, font=f_body, fill=PAPER); y += 48
+y += 58
+
+box = (80, y, W - 80, y + 130)
 d.rectangle(box, outline=SIGNAL, width=4)
 center_in(d, box, "SAVE THE DATE", osw(58, 600), PAPER)
-d.text((80, 1410), "boggsfiles.com/gag-reels", font=mono(28), fill=MUTED)
+d.text((80, box[3] + 46), "boggsfiles.com/gag-reels", font=mono(28), fill=MUTED)
 ec.save(TMP / "endcard.png")
 
 # body
