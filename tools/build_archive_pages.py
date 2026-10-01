@@ -27,6 +27,10 @@ DIST = ROOT / "dist"
 #     "Day unknown" (that sheet prints no shooting day) and Salvage reads "Day 5 of 8" (it does,
 #     checked against the PDF). Salvage was also filed under 8ABX09, which is Surekill; its own
 #     EPISODE STN# is 8ABX10. Two season headings said "1 call sheets".
+#   - memorabilia/index.html 2026-10-01: the Collections stat said 06 with 7 cards on the page,
+#     because the 2nd Unit card was added by hand on 09-28 and the count is hardcoded.
+#   - misc-memorabilia/x-files-shooting-schedules 2026-10-01: the hero said "59 episode schedules"
+#     against 71 sheets covering 62 episodes; now reads "71 schedules" and "62 episodes".
 #   - x-files-scripts-by-season/season-4 and season-5: Kaddish Pink and Emily Goldenrod Pages added.
 #   - memorabilia/index.html: the '2nd Unit & Schedules' card linking to
 #     /misc-memorabilia/second-unit-schedules/ was added by hand 2026-09-28.
