@@ -119,22 +119,29 @@ def landing() -> None:
                          f'<h2>{html.escape(title)}</h2><p>{html.escape(years)} &middot; From the DVD master</p>'
                          f'<span class="open soon">Coming soon</span></div>')
     n = len(LIVE)
+    # These strings used to name Fight the Future by hand, so adding a second film left them wrong
+    # while the counts beside them updated themselves. Derive them from REELS instead.
+    films = [REELS[k][0] for k in REELS if not k.startswith("season-")]
+    films_label = ("both movies" if len(films) == 2 else
+                   " and ".join(films) if films else "")
+    films_phrase = (f"and the {films[0]} disc" if len(films) == 1 else
+                    "and both movie discs" if len(films) > 1 else "")
     live_line = ("Season 1 is up now. The rest are being prepared and will be posted here as they are ready."
                  if n == 1 else f"{n} reels are up now. The rest are being prepared and will be posted here as they are ready.")
     body = (f'<section class="hero"><div class="shell"><div class="crumb"><a href="/archive/">Archive</a> &nbsp;/&nbsp; Gag Reels</div>'
             f'<h1>Gag Reels</h1><p>Flubs, cracked takes, and the moments the cast couldn’t keep a straight face, preserved from the DVD masters rather than a tape dub of a tape dub.</p>'
             f'<div class="summary"><div class="stat"><b>{len(REELS)}</b><span>Reels</span></div>'
-            f'<div class="stat"><b>1–9</b><span>Seasons + Fight the Future</span></div>'
+            f'<div class="stat"><b>1–9</b><span>Seasons + {films_label}</span></div>'
             f'<div class="stat"><b>{n}</b><span>Watch now</span></div></div></div></section>'
             f'<section class="intro"><div class="shell intro-grid"><div><div class="eyebrow">Now playing</div>'
-            f'<h2>Ones you can actually see</h2></div><p>Every gag reel from the Season 1–9 DVD sets and the Fight the Future disc, '
+            f'<h2>Ones you can actually see</h2></div><p>Every gag reel from the Season 1–9 DVD sets {films_phrase}, '
             f'captured directly from the discs at full DVD resolution. {live_line}</p></div></section>'
             f'<div class="shell"><div class="collection dailies-grid">{"".join(cards)}</div>'
             f'<div class="notice"><strong>Have a reel we’re missing?</strong><p>Help expand the archive. Contributions can remain anonymous.</p>'
             f'<a class="button" href="/contribute/">Share evidence &rarr;</a></div></div>')
     doc = (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
            f'<title>Gag Reels: Boggsfiles</title>'
-           f'<meta name="description" content="X-Files gag reels for Seasons 1–9 and Fight the Future, preserved from the DVD masters. Season 1 is streaming now.">'
+           f'<meta name="description" content="X-Files gag reels for Seasons 1–9 and {films_label}, preserved from the DVD masters. {n} streaming now.">'
            f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
            f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">'
            f'<link rel="stylesheet" href="/assets/collection.css">{ASSETS}</head><body>{site_header("Gag Reels")}<main>{body}</main>'
