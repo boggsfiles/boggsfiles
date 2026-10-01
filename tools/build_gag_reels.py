@@ -38,9 +38,13 @@ REELS = {
     "season-8":        ("Season 8", "2000–01", "Gag Reel - Season 8.mp4"),
     "season-9":        ("Season 9", "2001–02", "Gag Reel - Season 9 (with Chris Carter tribute).mp4"),
     "fight-the-future": ("Fight the Future", "1998", "Gag Reel - Fight the Future.mp4"),
+    # Not on the DVD and not on this Mac; she thinks a copy is on an external drive. Listed so the
+    # set reads as complete, and it renders "Coming soon" until the slug is added to LIVE.
+    "i-want-to-believe": ("I Want to Believe", "2008", "Gag Reel - I Want to Believe.mp4"),
 }
 MARKS = {"season-1": "1", "season-2": "2", "season-3": "3", "season-4": "4", "season-5": "5",
-         "season-6": "6", "season-7": "7", "season-8": "8", "season-9": "9", "fight-the-future": "F"}
+         "season-6": "6", "season-7": "7", "season-8": "8", "season-9": "9", "fight-the-future": "F",
+         "i-want-to-believe": "W"}
 
 LIVE = ["season-1", "season-2", "season-3"]
 
