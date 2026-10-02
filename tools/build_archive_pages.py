@@ -1,6 +1,28 @@
-from __future__ import annotations
+"""Rebuilds the scripts, dailies and memorabilia pages from the old Google Sites.
+
+Refuses to run without --overwrite-from-google-sites. See the WARNING below: 31 live pages are
+generated here and many carry hand corrections that exist only in dist/.
+"""
+import sys
+from pathlib import Path as _Path
+
+if __name__ == "__main__" and "--overwrite-from-google-sites" not in sys.argv:
+    _warn, _lines = [], _Path(__file__).read_text().splitlines()
+    for _l in _lines:
+        if _l.startswith("# WARNING"): _warn.append(_l)
+        elif _warn and _l.startswith("#"): _warn.append(_l)
+        elif _warn: break
+    sys.stderr.write("\n".join(_warn) + "\n")
+    sys.stderr.write(
+        "\nREFUSING TO RUN.\n"
+        "  This re-downloads https://sites.google.com/view/boggsfiles and regenerates 31 pages\n"
+        "  from it, reverting every hand fix listed above.\n\n"
+        "  If that is genuinely what you want:\n"
+        "      python3 tools/build_archive_pages.py --overwrite-from-google-sites\n")
+    raise SystemExit(2)
 
 import html
+import sys
 import http.cookiejar
 import io
 import re
