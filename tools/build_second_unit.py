@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Build dist/misc-memorabilia/second-unit-schedules/index.html.
 
-Source PDFs live in iCloud at "X-Files Scripts/2nd Unit & Production Schedules" (21 documents,
-45 pages, consolidated 2026-09-28). Page images are written to
+Source PDFs live in iCloud at "X-Files Scripts/2nd Unit & Production Schedules" (25 documents,
+75 pages; 21 consolidated 2026-09-28, the two Je Souhaite files split out of one packet 2026-10-03). Page images are written to
 dist/assets/archive-photos/second-unit/ as <slug>-<page>.webp plus -thumb.webp, the same way the
 Location Scouts section works, so the pages are browsable on the site without a Drive round trip.
 
@@ -124,6 +124,36 @@ DOCS = [
       color=None, date="Tentative, Thursday October 19, 2000", who=None, memo="8ABX09",
       title="Surekill tech scout",
       note="Headed 8ABX09 “UNTITLED”, before the episode had its name. Under the date it notes that Stage 5 is in use by 8ABX08 and, plainly, that <b>Scully and Doggett are not available</b>. The location list runs down the day scene by scene, with the Herald Examiner building standing in for a Worcester bus station."),
+ # --- Je Souhaite, Season 7 -------------------------------------------------
+ dict(g="je21", pdf="7ABX21 Je Souhaite Director's Plans", slug="40-je-souhaite-plans",
+      color=None, date="April 6, 2000", who="Corey Kaplan and Lauren Polizzi", memo="7ABX21",
+      title="Je Souhaite, director's plans",
+      note="An art department memo and the fourteen set drawings that answer it, for production "
+           "designer Corey Kaplan, drawn by J. Bruce, Harbour and RH/JB. The memo is headed "
+           "<b>&ldquo;Untitled&rdquo;</b>: four days before the first day of shooting, Je Souhaite "
+           "still had no name. The sets run from the Avalon Carson trailer park and the mobile home "
+           "interior on Stage 5 to the U-Stor-It on Pacific Coast Highway, the Elysee Cafe standing "
+           "in for the diner, 5th and Spring downtown, the county morgue, Mulder's apartment, "
+           "Skinner's office and Mulder's office. Each sheet carries its own scale, and the mobile "
+           "home drawing is annotated <b>BOAT NOT ON STAGE. KICKER WALLS TO BE USED.</b>"),
+ dict(g="je21", pdf="7ABX21 Je Souhaite Effects Crew Working File", slug="41-je-souhaite-effects",
+      color=None, date="April 2000", who=None, memo="7ABX21",
+      title="Je Souhaite, effects crew working file",
+      note="Bound into the back of the same file, and not an art department document at all. Two "
+           "pre-production calendars on green and pink stock, the April 6 tech scout itinerary, a "
+           "yellow revised schedule, a pink production meeting pass, a handwritten crew call and the "
+           "green final shooting schedule. What ties them together is the handwriting, and the "
+           "handwriting belongs to somebody in effects. Beside each stop on the scout is what that "
+           "stop needs: <b>2 cobweb guns, dust gun, water truck</b> at the storage facility, "
+           "<b>water splash, car hood, car body</b> on Suburban Road, and a flat <b>NOTHING</b> "
+           "beside the diner and the city street. The handwritten page is a truck load-out &mdash; "
+           "cob webbers, air hoses, a dust gun, a bucket of Fuller's earth, an air compressor, a "
+           "mole fogger. The schedule margins keep the day's gags in a running list: <b>trailer "
+           "explodes, car window blow, debris fall, rug falls</b>, and later <b>stove knob breaks, "
+           "rear panel removes, fire bar, helium heat wave</b>. The same crew is assigned day by day "
+           "across every page &mdash; Rick, Lee, Eric, Jeff, Jeff, Ron, Randy. Beside one circled "
+           "scene somebody has written <b>DID WE GET THAT?!!</b> Four phone numbers on the tech "
+           "scout page are blurred in this scan."),
 ]
 
 GROUPS = [
@@ -140,9 +170,14 @@ GROUPS = [
   "Four documents that plan a whole season at once, two from Season 5 and two from Season 8."),
  ("prep", "Prep calendars and scouts",
   "What a production week actually looks like when it is written down."),
+ ("je21", "Je Souhaite, Season 7",
+  "Two documents from one episode, 7ABX21, written and directed by Vince Gilligan and shot through "
+  "April 2000. They arrived bound into a single file and are separated here, because they were kept "
+  "by two different people. The first belonged to the art department. The second belonged to "
+  "somebody in effects, and it is the more interesting of the two."),
 ]
 
-HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-three second unit memos, insert lists, season schedules and prep calendars from The X-Files, Seasons 5 and 8, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
+HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-five documents from inside The X-Files production office: second unit memos, insert lists, season schedules, prep calendars and a Season 7 director&#39;s plans packet, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
 FOOT = '''</main><footer><div class="shell footer-row">BOGGSFILES · PRODUCTION DOCUMENTS <span><a href="/">Home</a> · <a href="/production-documents/">All production documents</a></span></div></footer></body></html>'''
 
 CSS_EXTRA = '''<style>.su-swatch{display:inline-block;width:.68em;height:.68em;border-radius:50%;margin-right:.45em;vertical-align:-1px;border:1px solid rgba(0,0,0,.35)}</style>'''
@@ -208,17 +243,17 @@ def build():
       '<section class="archive-hero"><div class="shell">'
       '<div class="crumb"><a href="/production-documents/">Production Documents</a> &nbsp;/&nbsp; 2nd Unit &amp; Production Schedules</div>'
       '<h1>2nd Unit &amp;<br>Production Schedules</h1>'
-      '<p>Twenty-three documents from inside the production office: the memos that told every department '
+      '<p>Twenty-five documents from inside the production office: the memos that told every department '
       'where the second unit would be on Thursday, the schedules that mapped whole seasons before the '
       'episodes had names, and the calendars that counted a month down to the minute.</p>'
       f'<div class="archive-meta"><span>{len(DOCS)} documents</span><span>{total} scanned pages</span>'
-      '<span>Seasons 5 and 8</span><span>1997&ndash;2001</span></div></div></section>',
+      '<span>Seasons 5, 7 and 8</span><span>1997&ndash;2001</span></div></div></section>',
       '<div class="shell detail-wrap">',
       '<p class="detail-copy">Second unit is the part of a production almost nobody keeps paperwork from. '
       'It shoots what the main unit cannot: inserts, pickups, hands and feet, plates, reshoots of a scene '
       'that did not cut together. Somebody has to tell every department where it will be and what it needs, '
       'so an assistant director writes a memo, runs it off on whatever color the revision has reached, and '
-      'distributes it. Then it is superseded, usually within days, and thrown away. These twenty-three survived. '
+      'distributes it. Then it is superseded, usually within days, and thrown away. These survived. '
       'Each one is scanned in full color on its original stock, because the color is the revision.</p>']
     for key, title, blurb in GROUPS:
         group = [d for d in DOCS if d["g"] == key]
