@@ -98,11 +98,11 @@ DOCS = [
  dict(g="season", pdf="Director's Schedule 5th Season Pink", slug="20-directors-pink",
       color="Pink", date="Revised August 20, 1997", who=None, memo=None,
       title="Fifth Season Directors Schedule",
-      note="The whole season on one page: show number, writer, director, prep, start and wrap. Episodes 1 and 2 are typed. Episodes 3 and 4 have their titles <b>written in by hand in blue pen</b>, Redux II and Detour, because they had not been named when this was typed. From episode 5 on, the title column is simply empty: directors and dates assigned to episodes that did not exist yet."),
+      note="The whole season on one page: show number, writer, director, prep, start and wrap. Episodes 1 and 2 are typed. Episodes 3 and 4 have their titles <b>written in by hand in blue pen</b>, Redux II and Detour, because they had not been named when this was typed. From episode 5 on, the title column is simply empty: directors and dates assigned to episodes that did not exist yet. The sheet heads itself <b>DIRECTORS SCHEDULE</b>, with no apostrophe, and the title here follows the paper."),
  dict(g="season", pdf="Director's Schedule 5th Season Salmon", slug="21-directors-salmon",
       color="Salmon", date="Revised November 14, 1997", who=None, memo=None,
       title="Fifth Season Directors Schedule",
-      note="The same document three months later. Worth reading against the Pink: the blanks have started to fill in."),
+      note="The same document three months later. Worth reading against the Pink: the blanks have started to fill in. Headed <b>DIRECTORS SCHEDULE</b> with no apostrophe, like the Pink."),
  dict(g="season", pdf="Production Schedule Season 8 Goldenrod", slug="22-s8-goldenrod",
       color="Goldenrod", date="Season 8", who=None, memo=None,
       title="Season Eight Production Schedule",
@@ -225,12 +225,13 @@ CSS_EXTRA = '''<style>
   letter-spacing:.1em;text-transform:uppercase;margin-left:6px}
 @media (max-width:640px){.su-index section{grid-template-columns:minmax(0,1fr);gap:7px}}
 .scout-tier,.detail-wrap .scout{scroll-margin-top:92px}
-.detail-wrap .scout{grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;margin-top:28px;padding-top:28px}
-.detail-wrap .scout-hero img{aspect-ratio:1/1;object-fit:cover;object-position:top center}
+.detail-wrap .scout{grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;margin-top:28px;padding-top:28px;align-items:start}
+/* 3/4 is the page proportion of these scans, and contain keeps the document whole: a square
+   cover crop cut the bottom off every title page. */
+.detail-wrap .scout-hero img{aspect-ratio:3/4;object-fit:contain}
 .detail-wrap .scout-tier{margin-top:52px;margin-bottom:52px}
 @media (max-width:700px){
   .detail-wrap .scout{grid-template-columns:minmax(0,1fr)}
-  .detail-wrap .scout-hero img{aspect-ratio:3/2}
 }
 </style>'''
 
