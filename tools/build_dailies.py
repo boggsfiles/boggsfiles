@@ -91,13 +91,19 @@ DAILIES = {
         ("Part 8 · David Duchovny & Vanessa Morley", "Paper Hearts Dailies/Paper Hearts (DD & Vanessa Morley) - part 8.mp4"),
         ("Part 9 · David Duchovny & Gillian Anderson", "Paper Hearts Dailies/Paper Hearts (DD & GA) - part 9.mp4"),
         ("Part 10 · David Duchovny, Tom Noonan & Vanessa Morley", "Paper Hearts Dailies/Paper Hearts (DD, TN, VM) - part 10.mp4"),
-        ("Part 11 · David Duchovny, Tom Noonan & Vanessa Morley", "Paper Hearts Dailies/Paper Hearts (DD, TN, VM) - part 11.mp4"),
         ("Part 12 · David Duchovny, Gillian Anderson, Mitch Pileggi & Tom Noonan", "Paper Hearts Dailies/Paper Hearts (DD, GA, MP, TN) - part 12.mp4"),
         ("2nd unit · part 1", "Paper Hearts Dailies/Paper Hearts 2nd unit - part 1.mp4"),
         ("2nd unit · part 2", "Paper Hearts Dailies/Paper Hearts 2nd unit - part 2.mp4"),
         ("2nd unit · part 3", "Paper Hearts Dailies/Paper Hearts 2nd unit - part 3.mp4"),
         ("4X08 full dailies reel", "Paper Hearts Dailies/_4X08 PAPER HEARTS DAILIES.mp4")]),
     "kitsunegari": ("Kitsunegari", [("Dailies", "Kitsunegari/Kitsunegari Dailies.mp4")]),
+}
+
+# slug -> a line shown under the intro, where the list needs explaining
+NOTES = {
+    "paper-hearts":
+        "The source tapes number these parts 1 to 12. Parts 10 and 11 are the same forty-eight "
+        "minutes of footage, identical frame for frame, so that reel appears here once, as part 10.",
 }
 
 def r2_sizes() -> dict[str, int]:
@@ -123,7 +129,9 @@ def main() -> None:
         body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/dailies/">Dailies</a> &nbsp;/&nbsp; {html.escape(title)}</div>'
                 f'<h1>{html.escape(title)}</h1><p>Rare production dailies and alternate footage from The X-Files.</p>'
                 f'<div class="archive-meta"><span>{count}</span><span>Original archive material</span><span>Preserved by Boggsfiles</span></div></div></section>'
-                f'<div class="shell detail-wrap"><p class="detail-copy">{html.escape(INTRO)}</p><div class="media-grid">{"".join(media)}</div></div>{LOADER}')
+                f'<div class="shell detail-wrap"><p class="detail-copy">{html.escape(INTRO)}</p>'
+                + (f'<p class="detail-copy">{html.escape(NOTES[slug])}</p>' if slug in NOTES else "")
+                + f'<div class="media-grid">{"".join(media)}</div></div>{LOADER}')
         write_route(f"x-files-dailies/{slug}", page(title, body, "Dailies"))
         print(f"Built dailies: {title} ({n})", flush=True)
     if missing: raise SystemExit("MISSING on R2: " + "; ".join(missing))
