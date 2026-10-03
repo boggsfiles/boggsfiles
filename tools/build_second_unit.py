@@ -178,9 +178,62 @@ GROUPS = [
 ]
 
 HEAD = '''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2nd Unit &amp; Production Schedules: Boggsfiles</title><meta name="description" content="Twenty-five documents from inside The X-Files production office: second unit memos, insert lists, season schedules, prep calendars and a Season 7 director&#39;s plans packet, scanned in full color on their original revision stock."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/archive-detail.css?v=4"><link rel="stylesheet" href="/assets/site-header.css?v=3"><script src="/assets/site-header.js" defer></script></head><body><header class="bf-header"><div class="bf-inner"><a class="bf-brand" href="/" aria-label="Boggsfiles home">BOGGS<span class="bf-brand-x">X</span>FILES</a><nav class="bf-navlinks" id="bf-primary-navigation" aria-label="Primary"><a href="/archive/">Archive</a><a href="/scripts/">Scripts</a><a href="/transcripts/">Transcripts</a><a href="/screencaps/">Screencaps</a><a href="/script-vs-screen/">Script vs. Screen</a><a href="/dailies/">Dailies</a><a href="/gag-reels/">Gag Reels</a><a href="/memorabilia/" aria-current="page">Memorabilia</a><a href="/resources/">Resources</a></nav><button class="bf-menu" type="button" aria-label="Open navigation" aria-controls="bf-primary-navigation" aria-expanded="false">☰</button></div></header><main>'''
+JUMP = """<script>
+/* Every document id starts with a digit, and the page sets scroll-behavior:smooth, so the
+   browser's own fragment jump gets cancelled by images settling and never lands. Do it
+   explicitly and instantly, on load as well as on hashchange, so a contents link and a shared
+   link both arrive in the right place. The offset is read from scroll-margin-top. */
+(function () {
+  function jump() {
+    var h = location.hash.slice(1); if (!h) return;
+    var el = document.getElementById(h); if (!el) return;
+    var top = el.getBoundingClientRect().top + window.pageYOffset
+            - (parseFloat(getComputedStyle(el).scrollMarginTop) || 0);
+    var root = document.documentElement, prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    window.scrollTo(0, Math.max(0, top));
+    root.style.scrollBehavior = prev;
+  }
+  addEventListener('hashchange', jump);
+  /* On a cold load the target moves as images settle, and the scroll can be reset from under
+     us, so re-assert it a few times before giving up. */
+  addEventListener('load', function () {
+    requestAnimationFrame(jump);
+    [60, 200, 600, 1200].forEach(function (ms) { setTimeout(jump, ms); });
+  });
+})();
+</script>"""
+
 FOOT = '''</main><footer><div class="shell footer-row">BOGGSFILES · PRODUCTION DOCUMENTS <span><a href="/">Home</a> · <a href="/production-documents/">All production documents</a></span></div></footer></body></html>'''
 
-CSS_EXTRA = '''<style>.su-swatch{display:inline-block;width:.68em;height:.68em;border-radius:50%;margin-right:.45em;vertical-align:-1px;border:1px solid rgba(0,0,0,.35)}</style>'''
+CSS_EXTRA = '''<style>
+.su-swatch{display:inline-block;width:.68em;height:.68em;border-radius:50%;margin-right:.45em;vertical-align:-1px;border:1px solid rgba(0,0,0,.35)}
+/* 25 documents at a full-page hero each ran to 21 screens. The hero is cropped to a square
+   on its top edge, which is where a document identifies itself, and the index below the
+   masthead jumps straight to a section. Scoped here so Location Scouts is unaffected. */
+/* a global nav{display:flex} would otherwise turn these sections into flex items */
+.su-index{display:block;margin:0 0 6px;padding:4px 0 10px}
+.su-index section{display:grid;grid-template-columns:168px minmax(0,1fr);gap:10px 24px;
+  padding:13px 0;border-top:1px solid var(--line)}
+.su-index section:first-child{border-top:0}
+.su-index h4{margin:0;font:400 .6rem/1.5 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#737d76}
+.su-index h4 i{font-style:normal;color:#4e564f;margin-right:5px}
+.su-index div{display:flex;flex-wrap:wrap;gap:5px 22px}
+.su-index a{color:#c9cfca;text-decoration:none;font-size:.82rem;line-height:1.35}
+.su-index a:hover,.su-index a:focus-visible{color:var(--red)}
+.su-index a u{text-decoration:none;color:#6c756e;font:400 .56rem/1 var(--mono);
+  letter-spacing:.1em;text-transform:uppercase;margin-left:6px}
+@media (max-width:640px){.su-index section{grid-template-columns:minmax(0,1fr);gap:7px}}
+.scout-tier,.detail-wrap .scout{scroll-margin-top:92px}
+.detail-wrap .scout{grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;margin-top:28px;padding-top:28px}
+.detail-wrap .scout-hero img{aspect-ratio:1/1;object-fit:cover;object-position:top center}
+.detail-wrap .scout-tier{margin-top:52px;margin-bottom:52px}
+@media (max-width:700px){
+  .detail-wrap .scout{grid-template-columns:minmax(0,1fr)}
+  .detail-wrap .scout-hero img{aspect-ratio:3/2}
+}
+</style>'''
+
 SWATCH = {"Pink": "#f6a8bc", "Salmon": "#f6b48c", "3rd Salmon": "#f6b48c", "Goldenrod": "#efc04a",
           "Yellow": "#f2ec72", "Green": "#a6e2ae", "White": "#f2f1ea"}
 
@@ -254,10 +307,17 @@ def build():
       'that did not cut together. Somebody has to tell every department where it will be and what it needs, '
       'so an assistant director writes a memo, runs it off on whatever color the revision has reached, and '
       'distributes it. Then it is superseded, usually within days, and thrown away. These survived. '
-      'Each one is scanned in full color on its original stock, because the color is the revision.</p>']
+      'Each one is scanned in full color on its original stock, because the color is the revision.</p>',
+      '<nav class="su-index" aria-label="Contents">' + "".join(
+          f'<section><h4><i>{len([d for d in DOCS if d["g"] == k])}</i> {html.escape(t)}</h4><div>' +
+          "".join(f'<a href="#{d["slug"]}">{html.escape(d["title"])}'
+                  + (f'<u>{html.escape(d["color"] or d["date"])}</u>'
+                     if sum(1 for x in DOCS if x["title"] == d["title"]) > 1 else '')
+                  + '</a>' for d in DOCS if d["g"] == k) + '</div></section>'
+          for k, t, _ in GROUPS) + '</nav>']
     for key, title, blurb in GROUPS:
         group = [d for d in DOCS if d["g"] == key]
-        body.append(f'<section class="scout-tier"><div class="schedule-season-head"><h2>{title}</h2>'
+        body.append(f'<section class="scout-tier" id="s-{key}"><div class="schedule-season-head"><h2>{title}</h2>'
                     f'<span>{len(group)} document{"s" if len(group) != 1 else ""}</span></div>'
                     f'<p class="scout-blurb">{blurb}</p>')
         body.extend(doc_html(d) for d in group)
@@ -266,7 +326,7 @@ def build():
                 '<p>Second unit memos, call sheets, prep calendars and production schedules were never meant '
                 'to be kept. If you have any, they belong in the record.</p>'
                 '<a class="button" href="/contribute/">Contribute →</a></div>')
-    body.append('</div>'); body.append(FOOT)
+    body.append('</div>'); body.append(JUMP); body.append(FOOT)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text("".join(body))
     print(f"wrote {OUT.relative_to(ROOT)}: {len(DOCS)} documents, {total} pages")
