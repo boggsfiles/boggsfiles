@@ -25,8 +25,10 @@ MEDIA_PREFIX = "production-audio/"
 AIRED = "Hi, this is Fox Mulder. You can leave me a message after the beep."
 DROPPED = "If this is you, Scully, call me on my cell phone. I think you know the number."
 
-# slug -> everything the page needs. `dropped` marks the stretches (seconds) that are not in the
-# finished episode; `marks` are the jump points, in order: (seconds, label, text, whole message?)
+# slug -> everything the page needs. `takes` are the readings of the message and `dropped` the
+# stretch of each that is not in the finished episode; anything outside a take (false start, slate,
+# room tone) is drawn grey, because it is neither. `marks` are the jump points, in order:
+# (seconds, label, text, whole message?)
 RECORDINGS = {
     "agua-mala-answering-machine": {
         "title": "Mulder’s Answering Machine",
@@ -41,6 +43,7 @@ RECORDINGS = {
             "It is a wild track, which means sound recorded on its own with no camera rolling. "
             "Nothing here has been trimmed or cleaned up.",
         ],
+        "takes": [(1.4, 8.3), (18.6, 25.8), (27.0, 33.7)],
         "dropped": [(4.5, 8.3), (22.4, 25.8), (29.8, 33.7)],
         "marks": [
             (1.4, "Take 1", None, True),
@@ -83,12 +86,14 @@ STYLE = """<style>
 .pa-wave:focus-visible{outline:1px solid #6b746d;outline-offset:6px}
 .pa-wave i{flex:1;min-width:1px;background:var(--paper);opacity:.26;border-radius:1px}
 .pa-wave i.cut{background:var(--cut);opacity:.42}
+.pa-wave i.off{background:#7f8982;opacity:.3}
 .pa-wave i.on{opacity:1}
 .pa-time{flex:none;font:400 .72rem/1 var(--mono);letter-spacing:.06em;color:#9aa39d;white-space:nowrap}
 .pa-key{display:flex;gap:22px;flex-wrap:wrap;margin-top:14px;font:400 .68rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#9aa39d}
 .pa-key span:before{content:'';display:inline-block;width:10px;height:10px;margin-right:9px;background:var(--paper);vertical-align:-1px}
 .pa-key .cut{color:var(--cut)}
 .pa-key .cut:before{background:var(--cut)}
+.pa-key .off:before{background:#7f8982}
 .pa-error{margin:14px 0 0;font:400 .72rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#9aa39d}
 .pa h2{font:400 clamp(1.7rem,3vw,2.4rem)/1 var(--display);text-transform:uppercase;letter-spacing:.02em;margin:64px 0 22px}
 .pa-marks{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
@@ -173,8 +178,9 @@ def detail(slug: str, r: dict) -> None:
     bars = []
     for i, h in enumerate(wave):
         mid = (i + 0.5) / len(wave) * total
-        cut = any(a <= mid < b for a, b in r["dropped"])
-        bars.append(f'<i{" class=cut" if cut else ""} style="height:{max(4, h)}%"></i>')
+        kind = ("cut" if any(a <= mid < b for a, b in r["dropped"]) else
+                "" if any(a <= mid < b for a, b in r["takes"]) else "off")
+        bars.append(f'<i{f" class={kind}" if kind else ""} style="height:{max(4, h)}%"></i>')
     takes = sum(1 for m in r["marks"] if m[3])
     still = f"/assets/production-audio/{slug}.jpg"
     player = (f'<div class="pa-player"><img src="{still}" alt="The answering machine on Mulder’s desk in {e(r["episode"])}" width="853" height="480">'
@@ -182,7 +188,7 @@ def detail(slug: str, r: dict) -> None:
               f'<div class="pa-controls"><button class="pa-play" type="button" aria-label="Play">{ICONS}</button>'
               f'<div class="pa-wave" role="slider" tabindex="0" aria-label="Position in the recording" aria-valuemin="0" aria-valuemax="{int(total)}" aria-valuenow="0">{"".join(bars)}</div>'
               f'<span class="pa-time">0:00 / {clock(total)}</span></div>'
-              f'<div class="pa-key"><span>In the episode</span><span class="cut">Not in the episode</span></div>'
+              f'<div class="pa-key"><span>The sentence that aired</span><span class="cut">The sentence that was cut</span><span class="off">Between takes, not in the episode</span></div>'
               f'<p class="pa-error" hidden>Audio unavailable right now, please try again later.</p>'
               f'<div class="media-caption"><span>{e(r["episode"])} &middot; {e(r["code"])} &middot; production sound</span><span>{clock(total)}</span></div></div>')
     rows = []
