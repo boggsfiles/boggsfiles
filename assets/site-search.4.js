@@ -14,7 +14,7 @@
  *     on the matching lines rather than at the top of a 50,000-word page.
  */
 (() => {
-  window.__bfSearchBuild = 3;   // read this to confirm which build is actually running
+  window.__bfSearchBuild = 4;   // read this to confirm which build is actually running
   const SECTIONS = [
     [/^\/transcripts\//, 'Transcripts'],
     [/^\/script-vs-screen\//, 'Script vs. Screen'],
@@ -51,6 +51,34 @@
       shared(m, w) >= Math.min(w.length, 3) && Math.abs(m.length - w.length) <= 3));
   };
 
+
+
+  /* --- the frame a line was actually said on ----------------------------------------------
+   *
+   * A transcript page gets one thumbnail, but a search is about one line, so the page-level
+   * still was arbitrary -- searching "tofutti" returned a man on a bus. Each episode ships a
+   * small frames.json mapping the start of a line to the nearest screencap frame, built from
+   * the subtitle timecodes. It is fetched only for results about to be shown, and only once
+   * per episode. If anything is missing the episode still is left exactly as it was. */
+  const frameCache = new Map();
+  const plain = (s) => (s || '').replace(/<[^>]*>/g, ' ')
+    .toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+
+  async function momentFrame(url, excerpt) {
+    if (!/^\/transcripts\//.test(url)) return null;
+    if (!frameCache.has(url)) {
+      frameCache.set(url, fetch(url + 'frames.json')
+        .then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    }
+    const rows = await frameCache.get(url);
+    if (!rows) return null;
+    const hay = plain(excerpt);
+    let best = null;
+    for (const [key, frame] of rows) {          // longest matching line wins
+      if (key.length > (best ? best[0].length : 0) && hay.includes(key)) best = [key, frame];
+    }
+    return best ? best[1] : null;
+  }
 
   /* --- the handoff, for readers arriving from a search result ------------------------------ */
   const handoff = () => {
@@ -162,6 +190,11 @@
         if (h.image) {
           const im = a.querySelector('img');
           im.src = h.image;
+          // then, if this is a line of dialogue, swap in the frame it was said on
+          momentFrame(h.url, h.excerpt).then((f) => {
+            if (f) im.src = h.image.replace(/\/thumb\/\d+\.jpg$/,
+              '/thumb/' + String(f).padStart(9, '0') + '.jpg');
+          });
           // A frame that 404s is swapped for the spacer, not removed: removing it collapsed
           // the row and that one result sat further left than every other.
           im.addEventListener('error', () => im.replaceWith(
