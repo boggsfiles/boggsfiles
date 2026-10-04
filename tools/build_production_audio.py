@@ -25,10 +25,10 @@ MEDIA_PREFIX = "production-audio/"
 AIRED = "Hi, this is Fox Mulder. You can leave me a message after the beep."
 DROPPED = "If this is you, Scully, call me on my cell phone. I think you know the number."
 
-# slug -> everything the page needs. `takes` are the readings of the message and `dropped` the
-# stretch of each that is not in the finished episode; anything outside a take (false start, slate,
-# room tone) is drawn grey, because it is neither. `marks` are the jump points, in order:
-# (seconds, label, text, whole message?)
+# slug -> everything the page needs. `aired` is the one stretch drawn white, the sentence heard in
+# the episode, marked on the first take only; `dropped` is the cut sentence wherever it is read.
+# Everything else (the repeats in later takes, false start, slate) is grey. `marks` are the jump
+# points, in order: (seconds, label, text, whole message?)
 RECORDINGS = {
     "agua-mala-answering-machine": {
         "title": "Mulder’s Answering Machine",
@@ -43,7 +43,7 @@ RECORDINGS = {
             "It is a wild track, which means sound recorded on its own with no camera rolling. "
             "Nothing here has been trimmed or cleaned up.",
         ],
-        "takes": [(1.4, 8.3), (18.6, 25.8), (27.0, 33.7)],
+        "aired": [(1.4, 4.5)],
         "dropped": [(4.5, 8.3), (22.4, 25.8), (29.8, 33.7)],
         "marks": [
             (1.4, "Take 1", None, True),
@@ -179,7 +179,7 @@ def detail(slug: str, r: dict) -> None:
     for i, h in enumerate(wave):
         mid = (i + 0.5) / len(wave) * total
         kind = ("cut" if any(a <= mid < b for a, b in r["dropped"]) else
-                "" if any(a <= mid < b for a, b in r["takes"]) else "off")
+                "" if any(a <= mid < b for a, b in r["aired"]) else "off")
         bars.append(f'<i{f" class={kind}" if kind else ""} style="height:{max(4, h)}%"></i>')
     takes = sum(1 for m in r["marks"] if m[3])
     still = f"/assets/production-audio/{slug}.jpg"
@@ -188,12 +188,17 @@ def detail(slug: str, r: dict) -> None:
               f'<div class="pa-controls"><button class="pa-play" type="button" aria-label="Play">{ICONS}</button>'
               f'<div class="pa-wave" role="slider" tabindex="0" aria-label="Position in the recording" aria-valuemin="0" aria-valuemax="{int(total)}" aria-valuenow="0">{"".join(bars)}</div>'
               f'<span class="pa-time">0:00 / {clock(total)}</span></div>'
-              f'<div class="pa-key"><span>The sentence that aired</span><span class="cut">The sentence that was cut</span><span class="off">Between takes, not in the episode</span></div>'
+              f'<div class="pa-key"><span>The sentence that aired</span><span class="cut">The sentence that was cut</span><span class="off">Repeats, false start and slate</span></div>'
               f'<p class="pa-error" hidden>Audio unavailable right now, please try again later.</p>'
               f'<div class="media-caption"><span>{e(r["episode"])} &middot; {e(r["code"])} &middot; production sound</span><span>{clock(total)}</span></div></div>')
     rows = []
+    first = True
     for t, label, text, whole in r["marks"]:
-        x = f'<b>{e(AIRED)}</b> <em>{e(DROPPED)}</em>' if whole else e(text)
+        if whole:   # only the first reading carries the white of "aired", to match the waveform
+            x = (f'<b>{e(AIRED)}</b>' if first else e(AIRED)) + f' <em>{e(DROPPED)}</em>'
+            first = False
+        else:
+            x = e(text)
         rows.append(f'<li><button type="button" data-seek="{t}"><span class="t">{clock(t)}</span><span class="l">{e(label)}</span><span class="x">{x}</span></button></li>')
     facts = []
     for head, text, links in r["facts"]:
