@@ -12,6 +12,12 @@ from transcript_header import HEADER, ASSETS, cased
 from browse_navigation import navigation, ASSET as NAV_ASSET
 
 
+# episode title -> (label, link text, href): other archive material for that episode, shown in the
+# side notes so a reader of the transcript can find it
+RELATED = {
+    "Agua Mala": ("Production sound", "Mulder’s answering machine, as recorded", "/x-files-dailies/agua-mala-answering-machine/"),
+}
+
 def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
@@ -68,6 +74,10 @@ def render(data: dict) -> str:
         )
 
     entry_count = sum(1 for entry in data["entries"] if entry["kind"] == "dialogue")
+    related = RELATED.get(episode)
+    related_note = (f'<div class="note-block"><span>{esc(related[0])}</span><b><a href="{related[2]}" '
+                    f'style="text-decoration:underline;text-underline-offset:3px">{esc(related[1])}</a></b></div>'
+                    if related else "")
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -86,7 +96,7 @@ def render(data: dict) -> str:
     <section class="transcript-hero"><div class="shell"><div class="crumb"><a href="/transcripts/">Transcripts</a> <span>/</span> {crumb_mid} <span>/</span> {cased(episode)}</div><div class="hero-grid"><div><div class="eyebrow">{eyebrow}</div><h1>{cased(episode)}</h1><p>Character-labelled dialogue prepared from the official {source_label}.</p></div><div class="episode-file"><span>Production code</span><b>{esc(production_code)}</b><small>{date_label} · {esc(airdate)}</small></div></div></div></section>
     <div class="search-rail"><div class="shell search-inner"><label for="transcript-search">Search this transcript</label><div class="search-box"><input id="transcript-search" type="search" placeholder="Search dialogue or character…" autocomplete="off"><span aria-hidden="true">⌕</span></div><div id="search-count" aria-live="polite">{entry_count} dialogue entries</div></div></div>
     <div class="shell transcript-layout">
-      <aside class="episode-notes"><div class="note-block"><span>File</span><b>{file_label}</b></div><div class="note-block"><span>Source</span><b>{source_note}</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div><p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
+      <aside class="episode-notes"><div class="note-block"><span>File</span><b>{file_label}</b></div><div class="note-block"><span>Source</span><b>{source_note}</b></div><div class="note-block"><span>Format</span><b>Dialogue + speaker identification</b></div>{related_note}<p>No timestamps are displayed. Sound descriptions from the subtitle track are retained in italics.</p></aside>
       <div class="transcript-body">{''.join(scene_html)}<div id="no-results" hidden><b>No matching dialogue</b><p>Try another character, phrase, or keyword.</p></div></div>
     </div>
     <section class="method"><div class="shell"><span>About this transcript</span><p>The dialogue comes from the official {source_label} supplied by Boggsfiles. Speaker and scene attribution was cross-checked against character-labelled reference material. Subtitle wording is preserved while capitalization and spacing are standardized for easier reading.</p></div></section>
