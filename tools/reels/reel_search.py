@@ -1,7 +1,7 @@
 """Reel demoing the archive search: three queries, three answers, no title card.
 
 The pitch is not "the site has search". It is what the search reaches, so the queries are lines
-a fan already knows by heart -- the dreamsicle, the light cream cheese, Shaft -- and the reel
+a fan already knows by heart -- the dreamsicle, the light cream cheese, deceive/inveigle/obfuscate -- and the reel
 opens mid-keystroke on one of them rather than on a logo.
 
 Every result is the real thing, pulled from the live index rather than mocked up, which is why
@@ -112,14 +112,11 @@ SCENES = [
          "real <mark>cream</mark> <mark>cheese,</mark> it was <mark>light</mark> "
          "<mark>cream</mark> <mark>cheese!</mark>"),
     ]),
-    ("shaft", "2 results", [
-        ("Transcripts", "Bad Blood",
-         "with all the chicks? <mark>shaft</mark> -- can you dig it? They say "
-         "this cat <mark>shaft</mark> is a bad mother-- shut your mouth. Talkin' 'bout "
-         "<mark>shaft.</mark>"),
-        ("Transcripts", "The Goldberg Variation",
-         "This man fell 30 floors, plus the distance down this <mark>shaft...</mark> Because "
-         "these doors just happened to be open, straight through, nothing but net."),
+    ("deceive inveigle and obfuscate", "1 result", [
+        ("Transcripts", "Teliko",
+         "Dana Scully. Not everything is a labyrinth of dark conspiracy, <mark>and</mark> not "
+         "everybody is plotting to <mark>deceive,</mark> <mark>inveigle</mark> <mark>and</mark> "
+         "<mark>obfuscate.</mark> [ cracks sunflower seed ] [ sighs ]"),
     ]),
 ]
 
