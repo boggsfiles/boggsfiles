@@ -1,11 +1,9 @@
 """Instagram Story (1080x1920): Squeeze 33rd anniversary, "where were you?".
 
 Deliberately sparse: the bottom third is left empty so a question or poll sticker can go there
-without covering anything. Still comes from the xfilesarchive.com Blu-ray gallery, same source as
-the site's episode stills.
+without covering anything. The still is read from stills_cache; use the archive's own captures.
 """
 from pathlib import Path
-import urllib.request
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 W, H = 1080, 1920
@@ -19,9 +17,8 @@ FRAME = 276
 def gallery(n):
     p = CACHE / f"SqueezeBR{n}.jpg"
     if not p.exists():
-        req = urllib.request.Request(f"https://xfilesarchive.com/gallery/SqueezeBR{n}.jpg",
-                                     headers={"User-Agent": "Mozilla/5.0"})
-        p.write_bytes(urllib.request.urlopen(req, timeout=30).read())
+        raise SystemExit(f"{p.name} is not in the cache. Stills must be the archive's own captures: "
+                         "copy the frame you want into stills_cache and point this at it.")
     return p
 
 def oswald(size, w=500):

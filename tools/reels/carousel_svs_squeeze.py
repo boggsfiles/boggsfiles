@@ -3,11 +3,9 @@ Same house style as the Deep Throat post: logo from the site's CSS (Oswald 500, 
 circle on the X) at y=250 below the IG username overlay; DM Mono eyebrows and captions; paper quote panels
 for SCRIPT vs AIRED, matching the site's comparison layout.
 
-Stills come from the xfilesarchive.com Blu-ray gallery (about 1290x726), the same source the site's episode
-stills use, NOT from ~/Movies/XF_screencaps (720x540, which upscales badly at this size).
+Stills are read from stills_cache; use the archive's own captures.
 """
 from pathlib import Path
-import urllib.request
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 W, H = 1080, 1350
@@ -20,12 +18,11 @@ OUT.mkdir(parents=True, exist_ok=True)
 N = 7; CODE = "1X02"
 
 def gallery(n):
-    """SqueezeBR<n>.jpg from the Blu-ray gallery, cached locally. The host needs a browser User-Agent."""
+    """A still from the local cache."""
     p = CACHE / f"SqueezeBR{n}.jpg"
     if not p.exists():
-        req = urllib.request.Request(f"https://xfilesarchive.com/gallery/SqueezeBR{n}.jpg",
-                                     headers={"User-Agent": "Mozilla/5.0"})
-        p.write_bytes(urllib.request.urlopen(req, timeout=30).read())
+        raise SystemExit(f"{p.name} is not in the cache. Stills must be the archive's own captures: "
+                         "copy the frame you want into stills_cache and point this at it.")
     return p
 
 def oswald(size, wght=500):

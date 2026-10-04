@@ -7,13 +7,10 @@ captions; paper quote panels for SCRIPT vs AIRED, matching the site's comparison
 Conduit is the quiet one: it aired unusually close to its shooting draft, so the hook is the absence
 of change rather than a cut scene. Four of the seven slides carry caption-confirmed findings.
 
-Stills come from the xfilesarchive.com Blu-ray gallery (about 1290x726), the same source the site's
-episode stills use, NOT from ~/Movies/XF_screencaps (720x540, which upscales badly at this size).
-BR262 and BR302 are deliberately skipped: they are already the site's transcript still and
-Script vs. Screen card for this episode.
+Stills are read from stills_cache; use the archive's own captures, and not the frames already
+used as the site's transcript still and Script vs. Screen card for this episode.
 """
 from pathlib import Path
-import urllib.request
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 W, H = 1080, 1350
@@ -26,12 +23,11 @@ OUT.mkdir(parents=True, exist_ok=True)
 N = 7; CODE = "1X03"
 
 def gallery(n):
-    """ConduitBR<n>.jpg from the Blu-ray gallery, cached locally. The host needs a browser User-Agent."""
+    """A still from the local cache."""
     p = CACHE / f"ConduitBR{n}.jpg"
     if not p.exists():
-        req = urllib.request.Request(f"https://xfilesarchive.com/gallery/ConduitBR{n}.jpg",
-                                     headers={"User-Agent": "Mozilla/5.0"})
-        p.write_bytes(urllib.request.urlopen(req, timeout=30).read())
+        raise SystemExit(f"{p.name} is not in the cache. Stills must be the archive's own captures: "
+                         "copy the frame you want into stills_cache and point this at it.")
     return p
 
 def oswald(size, wght=500):
