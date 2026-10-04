@@ -29,9 +29,12 @@ HIT = [("Transcripts", "The Unnatural",
         "<mark>dreamsicle.</mark>")]
 
 PAGES = [
+    # The same beat the search just found, on the page it was printed on -- and Mulder's line
+    # is not the line that aired. Script: "Did you bring enough ice cream for all the kids in
+    # the class?" On screen: "Something you'd like to share with the rest of the class?"
+    ("07-12.jpg", "Season 6 · 6ABX20", "He says it differently on the page"),
     ("02-12.jpg", "Season 1 · 1X02", "“He’s hit a nerve.”"),
     ("04-20.jpg", "Season 6 · 6ABX03", "Still headed “Untitled”"),
-    ("03-01.jpg", "Season 6 · 6ABX04", "Dreamland, production draft"),
 ]
 
 
