@@ -65,10 +65,10 @@ document.addEventListener('click', (event) => {
   // origin and still executed stale in the browser, so the name changes when the file does.
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/site-search.2.css';
+  css.href = '/assets/site-search.3.css';
   document.head.appendChild(css);
   const js = document.createElement('script');
-  js.src = '/assets/site-search.2.js';
+  js.src = '/assets/site-search.3.js';
   js.defer = true;
   document.head.appendChild(js);
 })();
