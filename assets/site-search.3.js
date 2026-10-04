@@ -19,6 +19,7 @@
     [/^\/transcripts\//, 'Transcripts'],
     [/^\/script-vs-screen\//, 'Script vs. Screen'],
     [/^\/screencaps\//, 'Screencaps'],
+    [/^\/script-text\//, 'Scripts'],   // the OCR'd script text, weighted below dialogue
     [/^\/scripts\//, 'Scripts'],
     [/^\/(x-files-)?dailies\//, 'Dailies'],
     [/^\/gag-reels\//, 'Gag Reels'],
