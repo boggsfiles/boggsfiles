@@ -14,7 +14,7 @@
  *     on the matching lines rather than at the top of a 50,000-word page.
  */
 (() => {
-  window.__bfSearchBuild = 2;   // read this to confirm which build is actually running
+  window.__bfSearchBuild = 3;   // read this to confirm which build is actually running
   const SECTIONS = [
     [/^\/transcripts\//, 'Transcripts'],
     [/^\/script-vs-screen\//, 'Script vs. Screen'],
@@ -161,7 +161,10 @@
         if (h.image) {
           const im = a.querySelector('img');
           im.src = h.image;
-          im.addEventListener('error', () => im.remove());   // never leave a broken frame
+          // A frame that 404s is swapped for the spacer, not removed: removing it collapsed
+          // the row and that one result sat further left than every other.
+          im.addEventListener('error', () => im.replaceWith(
+            Object.assign(document.createElement('i'), {className: 'bf-hit-gap'})));
         }
         a.querySelector('b').textContent = h.title;
         box.appendChild(a);
