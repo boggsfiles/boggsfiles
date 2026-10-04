@@ -151,7 +151,17 @@
         a.className = 'bf-search-hit';
         // Transcript pages carry the query through so their own dialogue filter picks it up.
         a.href = g === 'Transcripts' ? h.url + '?q=' + encodeURIComponent(query) : h.url;
-        a.innerHTML = '<b></b><span>' + h.excerpt + '</span>';
+        // The thumbnail is stamped on at index time (see tools/build_search.py); a transcript
+        // borrows a frame from its episode's gallery, never that gallery's opening frame.
+        // An imageless hit still reserves the column, so the text keeps one left edge down
+        // the list. The spacer draws nothing -- an empty bordered box would read as a hole.
+        a.innerHTML = (h.image ? '<img alt="" loading="lazy">' : '<i class="bf-hit-gap"></i>')
+          + '<div class="bf-hit-text"><b></b><span>' + h.excerpt + '</span></div>';
+        if (h.image) {
+          const im = a.querySelector('img');
+          im.src = h.image;
+          im.addEventListener('error', () => im.remove());   // never leave a broken frame
+        }
         a.querySelector('b').textContent = h.title;
         box.appendChild(a);
       });
@@ -173,6 +183,7 @@
       url: d.url.replace(/index\.html$/, ''),
       title: d.meta?.title || d.url,
       excerpt: d.excerpt || '',
+      image: d.meta && d.meta.image,
     })).filter((h) => {
       return matched(h, words);
     });
