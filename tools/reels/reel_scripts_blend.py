@@ -38,6 +38,31 @@ PAGES = [
 ]
 
 
+def end_card():
+    """The sign-off. "And more coming" because the archive is never finished."""
+    img = Image.new("RGB", (W, H), RS.INK)
+    d = ImageDraw.Draw(img)
+    RS.tracked(d, RT.MARGIN, 190, "THE X-FILES  \u00b7  SCRIPTS", RT.mono(24), RS.DIM, 3.4)
+    d.text((RT.MARGIN, 700), "TOMORROW", font=RT.osw(150, 600), fill=RS.SIGNAL)
+    d.line([(RT.MARGIN, 918), (W - RT.MARGIN, 918)], fill=RS.LINE, width=2)
+    d.text((RT.MARGIN, 974), "603 scripts. 35,565 pages.", font=RT.osw(50, 300), fill=RS.MUTED)
+    RS.tracked(d, RT.MARGIN, 1066, "AND MORE COMING", RT.mono(36), RS.PAPER, 3.6)
+    RS.tracked(d, RT.MARGIN, 1146, "BOGGSFILES.COM", RT.mono(36), RS.SIGNAL, 3.2)
+    return img
+
+
+def search_beat(put, keys, bells, n_of, query, status, hits, hold):
+    """Type a query, ring the bell, show the result. Returns nothing; appends to the click track."""
+    for i in range(1, len(query) + 1):
+        if query[i - 1] != " ":
+            keys.append(n_of() / FPS)
+        put(RS.frame(query[:i], full=query), 2)
+    bells.append(n_of() / FPS)
+    put(RS.frame(query, full=query), 8)
+    put(RS.frame(query, status, hits, full=query), 12)
+    put(RS.frame(query, status, hits, full=query), hold)
+
+
 def build():
     OUT.mkdir(parents=True, exist_ok=True)
     for old in OUT.glob("*.png"):
@@ -51,41 +76,42 @@ def build():
             img.save(OUT / f"{n:05d}.png")
             n += 1
 
-    # --- 1. the search that already works -------------------------------------------------
-    for i in range(1, len(QUERY) + 1):
-        if QUERY[i - 1] != " ":
-            keys.append(n / FPS)
-        put(RS.frame(QUERY[:i], full=QUERY), 2)
-    bells.append(n / FPS)
-    put(RS.frame(QUERY, full=QUERY), 10)
-    put(RS.frame(QUERY, "1 result", HIT, full=QUERY), 14)
-    put(RS.frame(QUERY, "1 result", HIT, full=QUERY), 46)
+    def n_of():
+        return n
 
-    # --- 2. the turn ------------------------------------------------------------------------
-    put(RT.card([("THAT’S WHAT", RS.PAPER, 96), ("THEY SAID.", RS.PAPER, 96)],
-                tail="Now the page it was printed on."), 40)
+    # --- 1. the search, and the page the line was printed on --------------------------------
+    search_beat(put, keys, bells, n_of, QUERY, "1 result", HIT, 42)
+    put(RT.card([("THAT\u2019S WHAT", RS.PAPER, 96), ("THEY SAID.", RS.PAPER, 96)],
+                tail="Now the page it was printed on."), 36)
+    put(RT.page_frame(RT.SRC / PAGES[0][0], PAGES[0][1], PAGES[0][2]), 40)
 
-    # --- 3. what the script holds that the episode never did --------------------------------
-    for f, kicker, cap in PAGES:
-        put(RT.page_frame(RT.SRC / f, kicker, cap), 32)
+    # --- 2. two more that already work, so the gap is obvious when it comes ------------------
+    for query, status, hits in (RS.SCENES[1], RS.SCENES[2]):
+        search_beat(put, keys, bells, n_of, query, status, hits, 30)
 
-    put(RT.card([("THAT’S WHAT", RS.PAPER, 96), ("THE SCRIPT", RS.PAPER, 96),
-                 ("SAYS.", RS.SIGNAL, 96)]), 40)
+    put(RT.card([("ALL OF THAT", RS.PAPER, 96), ("IS DIALOGUE.", RS.PAPER, 96)],
+                tail="None of it is the script."), 38)
+
+    # --- 3. what only the script holds ------------------------------------------------------
+    for f, kicker, cap in PAGES[1:]:
+        put(RT.page_frame(RT.SRC / f, kicker, cap), 30)
+
+    put(RT.card([("THAT\u2019S WHAT", RS.PAPER, 96), ("THE SCRIPT", RS.PAPER, 96),
+                 ("SAYS.", RS.SIGNAL, 96)]), 36)
 
     # --- 4. the number, climbing ------------------------------------------------------------
-    put(RT.count_frame(RT.SCRIPTS, "scripts"), 26)
-    steps = 24
+    put(RT.count_frame(RT.SCRIPTS, "scripts"), 24)
+    steps = 22
     for k in range(1, steps + 1):
         keys.append(n / FPS)
         put(RT.count_frame(int(RT.PAGES * (k / steps) ** 0.65), "pages"), 2)
     keys.append(n / FPS)
-    put(RT.count_frame(RT.PAGES, "pages", "every one of them a scan"), 40)
+    put(RT.count_frame(RT.PAGES, "pages", "every one of them a scan"), 36)
 
     # --- 5. the promise ---------------------------------------------------------------------
     put(RT.card([("NOT ONE WORD", RS.PAPER, 100), ("OF IT", RS.PAPER, 100),
-                 ("SEARCHABLE.", RS.SIGNAL, 100)], tail="Until tomorrow."), 50)
-    put(RT.card([("TOMORROW", RS.SIGNAL, 150)],
-                tail="603 scripts. 35,565 pages.", link=True), 60)
+                 ("SEARCHABLE.", RS.SIGNAL, 100)], tail="Until tomorrow."), 46)
+    put(end_card(), 64)
 
     seconds = n / FPS
     wav = OUT / "clicks.wav"
