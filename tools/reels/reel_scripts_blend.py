@@ -89,9 +89,6 @@ def build():
     for query, status, hits in (RS.SCENES[1], RS.SCENES[2]):
         search_beat(put, keys, bells, n_of, query, status, hits, 30)
 
-    put(RT.card([("ALL OF THAT", RS.PAPER, 96), ("IS DIALOGUE.", RS.PAPER, 96)],
-                tail="None of it is the script."), 38)
-
     # --- 3. what only the script holds ------------------------------------------------------
     for f, kicker, cap in PAGES[1:]:
         put(RT.page_frame(RT.SRC / f, kicker, cap), 30)
