@@ -176,7 +176,13 @@ def frame(query, status=None, hits=(), caret=True, full=None):
             if caret:
                 cx = MARGIN + d.textlength(op[1], font=qf) + 12
                 d.rectangle([cx, y + 12, cx + 6, y + qf.size], fill=SIGNAL)
-            y += 138
+            # Place the rule below the ink, not a fixed distance below the draw origin: at a
+            # fixed offset the descender of the g in "light" crossed it. Measured against the
+            # finished query plus a descender reference, so the rule does not move while the
+            # word is being typed or jump between queries that happen to have no descenders.
+            ink = d.textbbox((MARGIN, y), full, font=qf)[3]
+            tail = d.textbbox((MARGIN, y), "gjpqy", font=qf)[3]
+            y = max(ink, tail) + 26
             d.line([(MARGIN, y), (W - MARGIN, y)], fill=LINE, width=2)
             y += 58
         elif op[0] == "status":
