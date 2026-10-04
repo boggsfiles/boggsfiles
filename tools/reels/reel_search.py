@@ -1,12 +1,15 @@
 """Reel demoing the archive search: three queries, three answers, no title card.
 
-The pitch is not "the site has search". It is what the search reaches: there is no Flukeman
-episode on the site, yet typing his name lands on Scully's one passing line about him in a
-different episode entirely. So the reel opens mid-keystroke on that word, not on a logo.
+The pitch is not "the site has search". It is what the search reaches, so the queries are lines
+a fan already knows by heart -- the dreamsicle, the light cream cheese, Shaft -- and the reel
+opens mid-keystroke on one of them rather than on a logo.
 
-Every result here is the real thing, pulled from the live index rather than mocked up, which is
-why the excerpts carry their own <mark> runs. Frames are drawn rather than screen-recorded so the
+Every result is the real thing, pulled from the live index rather than mocked up, which is why
+the excerpts carry their own <mark> runs. Frames are drawn rather than screen-recorded so the
 type stays crisp at 1080x1920 and the typing can be paced for reading.
+
+The typewriter is synthesised here too: one key per keystroke, placed from the frame plan so the
+clicks land exactly on the letters appearing, and a bell when a query finishes.
 """
 import html
 import re
@@ -95,23 +98,26 @@ def draw_runs(d, x, y, lines, font, leading):
 
 # query, status line, [(group, title, excerpt html)] -- all taken from the live index
 SCENES = [
-    ("flukeman", "1 result", [
-        ("Transcripts", "The Field Where I Died",
-         "Scully. Even if I knew for certain... I wouldn't change a day. Well, maybe that "
-         "<mark>flukeman</mark> thing. I could have lived without that just fine."),
+    ("non-fat tofutti rice dreamsicle", "1 result", [
+        ("Transcripts", "The Unnatural",
+         "Fox Mulder. Something you'd like to share with the rest of the class? Dana Scully. "
+         "It's not ice cream. It's a <mark>nonfat</mark> <mark>tofutti</mark> <mark>rice</mark> "
+         "<mark>dreamsicle.</mark>"),
     ]),
-    ("trust no one", "104 results", [
-        ("Transcripts", "The Erlenmeyer Flask",
-         "Give me the parcel, Scully. Dana Scully. <mark>No!</mark> Mulder. Mulder. "
-         "Deep Throat. <mark>Trust...</mark> <mark>Trust...</mark> <mark>No</mark> <mark>one.</mark>"),
-        ("Transcripts", "Little Green Men",
-         "Deep throat said, <mark>\"trust</mark> <mark>no</mark> <mark>one.\"</mark> "
-         "Fox Mulder. I was sent here by <mark>one</mark> of those people."),
+    ("light cream cheese", "1 result", [
+        ("Transcripts", "Bad Blood",
+         "...and that was half a <mark>cream</mark> <mark>cheese</mark> bagel. It wasn't even "
+         "real <mark>cream</mark> <mark>cheese,</mark> it was <mark>light</mark> "
+         "<mark>cream</mark> <mark>cheese!</mark>"),
     ]),
-    ("cobweb guns", "1 result", [
-        ("Documents", "2nd Unit &amp; Production Schedules",
-         "Beside each stop on the scout is what that stop needs: 2 <mark>cobweb</mark> "
-         "<mark>guns,</mark> dust <mark>gun,</mark> water truck at the storage facility."),
+    ("shaft", "2 results", [
+        ("Transcripts", "Bad Blood",
+         "with all the chicks? <mark>shaft</mark> -- can you dig it? They say "
+         "this cat <mark>shaft</mark> is a bad mother-- shut your mouth. Talkin' 'bout "
+         "<mark>shaft.</mark>"),
+        ("Transcripts", "The Goldberg Variation",
+         "This man fell 30 floors, plus the distance down this <mark>shaft...</mark> Because "
+         "these doors just happened to be open, straight through, nothing but net."),
     ]),
 ]
 
@@ -121,15 +127,24 @@ SAFE_TOP, SAFE_BOTTOM = 250, 1650
 QUERY_TOP = 500          # tall enough that even the two-result scene clears the bottom
 
 
-def frame(query, status=None, hits=(), caret=True):
+def frame(query, status=None, hits=(), caret=True, full=None):
     """Lay the block out first, then centre it in the safe area.
 
     Drawn from a fixed top, the content sat in the upper quarter of a 1080x1920 frame and the
     rest was dead black, which on a phone looks like a mistake rather than a choice.
     """
+    full = full if full is not None else query
     img = Image.new("RGB", (W, H), INK)
     d = ImageDraw.Draw(img)
-    qf, sf, gf, tf = osw(104, 500), mono(32, "Medium"), mono(28, "Medium"), osw(72, 500)
+    sf, gf, tf = mono(32, "Medium"), mono(28, "Medium"), osw(72, 500)
+    # "non-fat tofutti rice dreamsicle" is 30 characters and ran off the frame at a fixed size,
+    # so the query is sized to fit the margins. Measured against the finished string, not the
+    # partial one, so the type does not resize while it is being typed.
+    qf = osw(104, 500)
+    for size in range(104, 51, -4):
+        qf = osw(size, 500)
+        if d.textlength(full, font=qf) + 24 <= W - MARGIN * 2:
+            break
     body, leading = mono(42), 62
     inner = W - MARGIN * 2
 
@@ -155,7 +170,7 @@ def frame(query, status=None, hits=(), caret=True):
             d.text((MARGIN, y), op[1], font=qf, fill=PAPER)
             if caret:
                 cx = MARGIN + d.textlength(op[1], font=qf) + 12
-                d.rectangle([cx, y + 12, cx + 6, y + 104], fill=SIGNAL)
+                d.rectangle([cx, y + 12, cx + 6, y + qf.size], fill=SIGNAL)
             y += 138
             d.line([(MARGIN, y), (W - MARGIN, y)], fill=LINE, width=2)
             y += 58
@@ -183,9 +198,45 @@ def end_card():
         d.text((MARGIN, y), t, font=big, fill=SIGNAL if n == 3 else PAPER)
         y += 166
     d.line([(MARGIN, y + 44), (W - MARGIN, y + 44)], fill=LINE, width=2)
-    d.text((MARGIN, y + 112), "518 pages. Free.", font=osw(58, 300), fill=MUTED)
-    tracked(d, MARGIN, y + 212, "BOGGSFILES.COM", mono(38, "Medium"), SIGNAL, 3.2)
+    d.text((MARGIN, y + 112), "518 pages.", font=osw(58, 300), fill=MUTED)
+    tracked(d, MARGIN, y + 196, "AND MORE COMING", mono(38, "Medium"), PAPER, 3.6)
+    tracked(d, MARGIN, y + 274, "BOGGSFILES.COM", mono(38, "Medium"), SIGNAL, 3.2)
     return img
+
+
+def typewriter(keys, bells, seconds, sr=44100):
+    """One key per keystroke, placed from the frame plan so the clicks land on the letters.
+
+    Synthesised rather than sampled: a noise transient for the typebar hitting paper, a short
+    tuned body, and a low thump for the carriage. Each key is varied slightly, because a loop of
+    one identical click sounds like a machine rather than someone typing.
+    """
+    import numpy as np
+    rng = np.random.default_rng(7)
+    track = np.zeros(int(seconds * sr) + sr, dtype=float)
+
+    def place(sig, at):
+        i = int(at * sr)
+        track[i:i + len(sig)] += sig[:max(0, len(track) - i)]
+
+    for t in keys:
+        n = int(sr * 0.045)
+        x = np.arange(n) / sr
+        strike = rng.normal(0, 1, n) * np.exp(-x * 150) * 0.55
+        body = np.sin(2 * np.pi * rng.uniform(950, 1500) * x) * np.exp(-x * 95) * 0.28
+        thump = np.sin(2 * np.pi * rng.uniform(85, 125) * x) * np.exp(-x * 55) * 0.22
+        place((strike + body + thump) * rng.uniform(0.82, 1.0), t)
+
+    for t in bells:
+        n = int(sr * 0.7)
+        x = np.arange(n) / sr
+        ring = sum(np.sin(2 * np.pi * f * x) * a for f, a in ((1760, 1.0), (2640, .45), (3520, .2)))
+        place(ring * np.exp(-x * 6.5) * 0.22, t)
+
+    peak = np.abs(track).max()
+    if peak:
+        track = track / peak * 0.72
+    return (track * 32767).astype("<i2")
 
 
 def build():
@@ -193,6 +244,7 @@ def build():
     for old in OUT.glob("*.png"):
         old.unlink()
     n = 0
+    keys, bells = [], []
 
     def put(img, holds):
         nonlocal n
@@ -201,25 +253,33 @@ def build():
             n += 1
 
     for query, status, hits in SCENES:
-        # type it in, a couple of frames per character, so the word is readable as it forms
         for i in range(1, len(query) + 1):
-            put(frame(query[:i]), 3)
-        put(frame(query), 10)                      # beat before the answer
-        put(frame(query, status, hits[:1]), 14)    # first result
-        if len(hits) > 1:
-            put(frame(query, status, hits), 56)
-        else:
-            put(frame(query, status, hits), 62)
-    put(end_card(), 72)
+            if query[i - 1] != " ":          # the space bar is quieter; skip rather than fake it
+                keys.append(n / FPS)
+            put(frame(query[:i], full=query), 2)
+        bells.append(n / FPS)                # typewriter bell as the query lands
+        put(frame(query, full=query), 11)
+        put(frame(query, status, hits[:1], full=query), 14)
+        put(frame(query, status, hits, full=query), 56 if len(hits) > 1 else 62)
+    put(end_card(), 74)
+
+    seconds = n / FPS
+    wav = OUT / "typewriter.wav"
+    import wave
+    with wave.open(str(wav), "w") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(44100)
+        w.writeframes(typewriter(keys, bells, seconds).tobytes())
 
     mp4 = OUT / "boggsfiles-search.mp4"
     subprocess.run(["ffmpeg", "-y", "-framerate", str(FPS), "-i", str(OUT / "%05d.png"),
-                    "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18",
+                    "-i", str(wav), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "18",
+                    "-c:a", "aac", "-b:a", "160k", "-shortest",
                     "-movflags", "+faststart", str(mp4)], check=True,
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    for p in OUT.glob("*.png"):
-        p.unlink()
-    print(f"  {n} frames, {n/FPS:.1f}s -> {mp4}")
+    for f in OUT.glob("*.png"):
+        f.unlink()
+    wav.unlink()
+    print(f"  {n} frames, {seconds:.1f}s, {len(keys)} keystrokes -> {mp4}")
 
 
 if __name__ == "__main__":
