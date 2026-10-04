@@ -98,7 +98,9 @@ def draw_runs(d, x, y, lines, font, leading):
 
 # query, status line, [(group, title, excerpt html)] -- all taken from the live index
 SCENES = [
-    ("non-fat tofutti rice dreamsicle", "1 result", [
+    # The transcript reads "nonfat", so the query does too -- a hyphen on screen
+    # beside an unhyphenated quote just looks like one of them is wrong.
+    ("nonfat tofutti rice dreamsicle", "1 result", [
         ("Transcripts", "The Unnatural",
          "Fox Mulder. Something you'd like to share with the rest of the class? Dana Scully. "
          "It's not ice cream. It's a <mark>nonfat</mark> <mark>tofutti</mark> <mark>rice</mark> "
@@ -193,14 +195,17 @@ def end_card():
     img = Image.new("RGB", (W, H), INK)
     d = ImageDraw.Draw(img)
     big = osw(150, 600)
-    y = 560
+    y = 470
     for n, t in enumerate(["EVERY", "PAGE.", "EVERY", "LINE."]):
         d.text((MARGIN, y), t, font=big, fill=SIGNAL if n == 3 else PAPER)
         y += 166
     d.line([(MARGIN, y + 44), (W - MARGIN, y + 44)], fill=LINE, width=2)
-    d.text((MARGIN, y + 112), "518 pages.", font=osw(58, 300), fill=MUTED)
-    tracked(d, MARGIN, y + 196, "AND MORE COMING", mono(38, "Medium"), PAPER, 3.6)
-    tracked(d, MARGIN, y + 274, "BOGGSFILES.COM", mono(38, "Medium"), SIGNAL, 3.2)
+    # Say what it is. Without this the reel shows search working without ever naming it.
+    d.text((MARGIN, y + 96), "A search bar,", font=osw(64, 400), fill=PAPER)
+    d.text((MARGIN, y + 172), "on every page.", font=osw(64, 400), fill=PAPER)
+    d.text((MARGIN, y + 282), "518 pages.", font=osw(54, 300), fill=MUTED)
+    tracked(d, MARGIN, y + 362, "AND MORE COMING", mono(36, "Medium"), PAPER, 3.6)
+    tracked(d, MARGIN, y + 436, "BOGGSFILES.COM", mono(36, "Medium"), SIGNAL, 3.2)
     return img
 
 
