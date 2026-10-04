@@ -34,6 +34,7 @@ REDIRECT_STUBS = [
     "x-files-dailies/index.html",
     "misc-memorabilia/index.html",
     "got-something-to-share/index.html",
+    "x-files-dailies/agua-mala-answering-machine/index.html",
 ]
 
 # Repeated furniture, plus the breadcrumb, which otherwise opens every transcript excerpt

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the production-sound pages: raw location and wild-track audio, filed under Dailies.
+"""Build the production-sound pages: raw location and wild-track audio, filed under Memorabilia.
 
 Same delivery as build_dailies.py and build_gag_reels.py: the audio lives in the PRIVATE R2 bucket
 (boggsfiles-private) under production-audio/, and the page asks the boggsfiles-dailies Worker for a
@@ -154,8 +154,8 @@ def page(title: str, description: str, body: str) -> str:
             f'<title>{html.escape(title)} - Boggsfiles</title><meta name="description" content="{html.escape(description, quote=True)}">'
             f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">'
-            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=4">{ASSETS}{STYLE}</head><body>{site_header("Dailies")}<main>{body}</main>'
-            f'<footer><div class="shell footer-row">BOGGSFILES &middot; PRODUCTION SOUND <span><a href="/">Home</a> &middot; <a href="/dailies/">Back to Dailies</a></span></div></footer></body></html>')
+            f'<link rel="stylesheet" href="/assets/archive-detail.css?v=4">{ASSETS}{STYLE}</head><body>{site_header("Memorabilia")}<main>{body}</main>'
+            f'<footer><div class="shell footer-row">BOGGSFILES &middot; PRODUCTION SOUND <span><a href="/">Home</a> &middot; <a href="/memorabilia/">Back to Memorabilia</a></span></div></footer></body></html>')
 
 
 def write_route(route: str, content: str) -> None:
@@ -200,7 +200,7 @@ def detail(slug: str, r: dict) -> None:
         buttons = "".join(f'<a class="pa-link" href="{href}">{e(label)} &rarr;</a>' for label, href in links)
         facts.append(f'<div class="pa-fact"><h3>{e(head)}</h3><p>{e(text)}</p>{buttons}</div>')
     more = "".join(f'<a class="pa-link" href="{href}">{e(label)} &rarr;</a>' for label, href in r["more"])
-    body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/dailies/">Dailies</a> &nbsp;/&nbsp; {e(r["episode"])}</div>'
+    body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/memorabilia/">Memorabilia</a> &nbsp;/&nbsp; {e(r["episode"])}</div>'
             f'<h1>{e(r["title"])}</h1><p>{e(r["episode"])} &middot; {e(r["code"])} &middot; {e(r["lede"])}</p>'
             f'<div class="archive-meta"><span>{clock(total)}</span><span>{takes} takes</span><span>Production sound</span></div></div></section>'
             f'<div class="shell detail-wrap"><div class="pa">'
@@ -210,7 +210,7 @@ def detail(slug: str, r: dict) -> None:
             f'<h2>In the episode</h2><div class="pa-facts">{"".join(facts)}</div><div class="pa-more">{more}</div>'
             f'</div></div>{PLAYER_JS}')
     description = f'{r["title"]}: raw production sound from The X-Files episode {r["episode"]} ({r["code"]}). {r["lede"]}'
-    write_route(f"x-files-dailies/{slug}", page(f'{r["title"]} ({r["episode"]})', description, body))
+    write_route(f"misc-memorabilia/{slug}", page(f'{r["title"]} ({r["episode"]})', description, body))
     print(f"Built production sound: {r['title']} ({clock(total)})", flush=True)
 
 

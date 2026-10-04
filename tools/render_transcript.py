@@ -15,7 +15,7 @@ from browse_navigation import navigation, ASSET as NAV_ASSET
 # episode title -> (label, link text, href): other archive material for that episode, shown in the
 # side notes so a reader of the transcript can find it
 RELATED = {
-    "Agua Mala": ("Production sound", "Mulder’s answering machine, as recorded", "/x-files-dailies/agua-mala-answering-machine/"),
+    "Agua Mala": ("Production sound", "Mulder’s answering machine, as recorded", "/misc-memorabilia/agua-mala-answering-machine/"),
 }
 
 def esc(value: object) -> str:

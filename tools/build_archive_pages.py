@@ -56,6 +56,8 @@ DIST = ROOT / "dist"
 #   - x-files-scripts-by-season/season-4 and season-5: Kaddish Pink and Emily Goldenrod Pages added.
 #   - memorabilia/index.html: the '2nd Unit & Schedules' card linking to
 #     /misc-memorabilia/second-unit-schedules/ was added by hand 2026-09-28.
+#   - memorabilia/index.html 2026-10-04: the 'Mulder’s Answering Machine' card linking to
+#     /misc-memorabilia/agua-mala-answering-machine/ was added by hand, and Collections now reads 08.
 # Either add these to the Google Sites source first, or re-apply them afterwards.
 
 LEGACY = "https://sites.google.com/view/boggsfiles"
