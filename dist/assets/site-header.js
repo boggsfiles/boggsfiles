@@ -63,10 +63,10 @@ document.addEventListener('click', (event) => {
   if (!document.querySelector('.bf-header')) return;
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/site-search.css?v=1';
+  css.href = '/assets/site-search.css?v=2';
   document.head.appendChild(css);
   const js = document.createElement('script');
-  js.src = '/assets/site-search.js?v=1';
+  js.src = '/assets/site-search.js?v=2';
   js.defer = true;
   document.head.appendChild(js);
 })();
