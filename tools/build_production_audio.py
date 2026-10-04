@@ -202,7 +202,7 @@ def detail(slug: str, r: dict) -> None:
             + f'<div style="margin-top:40px">{player}</div>'
             f'<h2>On the recording</h2><ol class="pa-marks">{"".join(rows)}</ol>'
             f'<h2>In the episode</h2><div class="pa-facts">{"".join(facts)}</div><div class="pa-more">{more}</div>'
-            f'</div></div><span data-pagefind-meta="image:{still}" hidden></span>{PLAYER_JS}')
+            f'</div></div>{PLAYER_JS}')
     description = f'{r["title"]}: raw production sound from The X-Files episode {r["episode"]} ({r["code"]}). {r["lede"]}'
     write_route(f"x-files-dailies/{slug}", page(f'{r["title"]} ({r["episode"]})', description, body))
     print(f"Built production sound: {r['title']} ({clock(total)})", flush=True)
