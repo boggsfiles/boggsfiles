@@ -3,6 +3,7 @@
 set -e
 cd "$(dirname "$0")"
 python3 tools/add_analytics.py   # safety net: idempotent, catches any page a builder missed
+python3 tools/build_search.py    # reindex: search is built from the finished pages, so it runs last
 git branch -f gh-pages "$(git subtree split --prefix dist -q)"
 git push -f origin gh-pages
 gh api -X PUT repos/boggsfiles/boggsfiles/pages -f build_type=legacy -f "source[branch]=gh-pages" -f "source[path]=/" >/dev/null 2>&1 \
