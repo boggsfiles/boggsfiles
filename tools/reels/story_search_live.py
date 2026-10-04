@@ -91,7 +91,8 @@ def end_card():
         y += 192
     d.line([(MARGIN, y + 54), (W - MARGIN, y + 54)], fill=LINE, width=2)
     d.text((MARGIN, y + 112), "Every page. Every line.", font=RS.osw(62, 300), fill=PAPER)
-    d.text((MARGIN, y + 196), "232 transcripts · 594 scripts", font=RS.osw(48, 300), fill=MUTED)
+    # 603 is the number of scripts in the archive, and the figure already announced in the reel
+    d.text((MARGIN, y + 196), "232 transcripts · 603 scripts", font=RS.osw(48, 300), fill=MUTED)
     RS.tracked(d, MARGIN, y + 292, "BOGGSFILES.COM", RS.mono(38, "Medium"), SIGNAL, 3.2)
     return img
 

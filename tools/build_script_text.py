@@ -55,18 +55,27 @@ def drive_links():
 
 
 def parse_name(stem):
-    """'6ABX03 Triangle (Blue)' -> ('6ABX03', 'Triangle', 'Blue')."""
+    """'6ABX03 Triangle (Blue) [alt scan]' -> ('6ABX03', 'Triangle', 'Blue', 'alt scan').
+
+    The bracketed note matters and used to be discarded. Forty-five scripts here differ only by
+    it -- [alt scan], [cleaner scan], [46pp], [in color] -- so dropping it gave two different
+    documents the same name, and where an episode had three variants one quietly overwrote
+    another.
+    """
     m = CODE.search(stem)
     code = m.group(1).upper() if m else None
     paren = re.search(r"\(([^)]+)\)", stem)
     colour = paren.group(1).strip() if paren else None
+    note = re.search(r"\[([^\]]+)\]", stem)
+    variant = note.group(1).strip() if note else None
     title = stem
     if code:
         title = title.replace(m.group(1), "")
     if paren:
         title = title.replace(paren.group(0), "")
-    title = re.sub(r"\[[^\]]*\]", "", title)
-    return code, re.sub(r"\s+", " ", title).strip(" -–"), colour
+    if note:
+        title = title.replace(note.group(0), "")
+    return code, re.sub(r"\s+", " ", title).strip(" -\u2013"), colour, variant
 
 
 def slugify(s):
@@ -102,9 +111,12 @@ CSS = """<style>
 </style>"""
 
 
-def page(code, title, colour, url, text):
+def page(code, title, colour, variant, url, text):
     label = " ".join(x for x in (title, code) if x)
-    rev = f" · {colour}" if colour else ""
+    # colour and the scan note together, so three Pink Squeezes are not three identical
+    # entries in a results list
+    detail = " · ".join(x for x in (colour, variant) if x)
+    rev = f" · {detail}" if detail else ""
     head = (f'<!doctype html><html lang="en"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             # the site's own search reads this page; search engines are asked not to
@@ -127,7 +139,7 @@ def page(code, title, colour, url, text):
     return (head + '<section class="archive-hero"><div class="shell">'
             f'<div class="crumb"><a href="/scripts/">Scripts</a> &nbsp;/&nbsp; script text</div>'
             f"<h1>{html.escape(label)}</h1>"
-            f'<p>{html.escape(colour or "Script")} · machine-read text for searching.</p>'
+            f'<p>{html.escape(detail or "Script")} · machine-read text for searching.</p>'
             "</div></section>"
             '<div class="shell detail-wrap">' + intro + link
             # weighted below dialogue so a common word does not bury the episode it was said in
@@ -148,8 +160,8 @@ def main():
         text = txt.read_text(encoding="utf-8", errors="replace")
         if len(text.strip()) < 400:
             continue
-        code, title, colour = parse_name(txt.stem)
-        slug = slugify(f"{code or ''} {title} {colour or ''}") or slugify(txt.stem)
+        code, title, colour, variant = parse_name(txt.stem)
+        slug = slugify(f"{code or ''} {title} {colour or ''} {variant or ''}") or slugify(txt.stem)
         if slug in seen:
             slug = slugify(f"{slug}-{txt.parent.name}")
         seen.add(slug)
@@ -158,7 +170,7 @@ def main():
             linked += 1
         dest = OUT / slug
         dest.mkdir(parents=True, exist_ok=True)
-        (dest / "index.html").write_text(page(code, title, colour, url, text), encoding="utf-8")
+        (dest / "index.html").write_text(page(code, title, colour, variant, url, text), encoding="utf-8")
         made += 1
     print(f"wrote dist/script-text: {made} pages, {linked} linked to their scan on Drive")
     return made
