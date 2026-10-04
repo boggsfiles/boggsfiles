@@ -1,7 +1,7 @@
 """Reel demoing the archive search: three queries, three answers, no title card.
 
 The pitch is not "the site has search". It is what the search reaches, so the queries are lines
-a fan already knows by heart -- the dreamsicle, the light cream cheese, deceive/inveigle/obfuscate -- and the reel
+a fan already knows by heart -- the dreamsicle, the light cream cheese, Bambi -- and the reel
 opens mid-keystroke on one of them rather than on a logo.
 
 Every result is the real thing, pulled from the live index rather than mocked up, which is why
@@ -112,11 +112,17 @@ SCENES = [
          "real <mark>cream</mark> <mark>cheese,</mark> it was <mark>light</mark> "
          "<mark>cream</mark> <mark>cheese!</mark>"),
     ]),
-    ("deceive inveigle and obfuscate", "1 result", [
-        ("Transcripts", "Teliko",
-         "Dana Scully. Not everything is a labyrinth of dark conspiracy, <mark>and</mark> not "
-         "everybody is plotting to <mark>deceive,</mark> <mark>inveigle</mark> <mark>and</mark> "
-         "<mark>obfuscate.</mark> [ cracks sunflower seed ] [ sighs ]"),
+    # Pagefind centres its own excerpt on the first dense match, which for "bambi" lands on a
+    # flat line of exposition. The window shown here is a different passage from the same single
+    # result -- the one where the joke actually is. Scully asks it twice, having ignored the UFO
+    # theory in between, and the repeat is the whole gag.
+    ("bambi", "1 result", [
+        ("Transcripts", "War of the Coprophages",
+         "Fox Mulder. <mark>Bambi</mark> also has this theory I've never come acro-- "
+         "Dana Scully. Who? Fox Mulder. Dr. Berenbaum. Anyway, her theory is-- "
+         "Dana Scully. Her name is <mark>Bambi?</mark> Fox Mulder. Yeah. Both her parents were "
+         "naturalists. Her theory is that UFOs are actually nocturnal insect swarms... "
+         "Dana Scully. Her name is <mark>Bambi?</mark>"),
     ]),
 ]
 
