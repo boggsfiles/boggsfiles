@@ -55,3 +55,18 @@ document.addEventListener('click', (event) => {
     }
   });
 })();
+
+// Site-wide search. Loaded from here rather than added to 518 pages and a dozen builders: this
+// file is already on every page that has a header. The stylesheet and script are fetched here,
+// but the index itself is not touched until someone actually opens the search.
+(() => {
+  if (!document.querySelector('.bf-header')) return;
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = '/assets/site-search.css?v=1';
+  document.head.appendChild(css);
+  const js = document.createElement('script');
+  js.src = '/assets/site-search.js?v=1';
+  js.defer = true;
+  document.head.appendChild(js);
+})();
