@@ -14,6 +14,7 @@
  *     on the matching lines rather than at the top of a 50,000-word page.
  */
 (() => {
+  window.__bfSearchBuild = 2;   // read this to confirm which build is actually running
   const SECTIONS = [
     [/^\/transcripts\//, 'Transcripts'],
     [/^\/script-vs-screen\//, 'Script vs. Screen'],

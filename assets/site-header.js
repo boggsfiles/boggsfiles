@@ -61,12 +61,14 @@ document.addEventListener('click', (event) => {
 // but the index itself is not touched until someone actually opens the search.
 (() => {
   if (!document.querySelector('.bf-header')) return;
+  // Versioned in the filename, not a query string: a ?v= bump was served correctly by the
+  // origin and still executed stale in the browser, so the name changes when the file does.
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/assets/site-search.css?v=2';
+  css.href = '/assets/site-search.2.css';
   document.head.appendChild(css);
   const js = document.createElement('script');
-  js.src = '/assets/site-search.js?v=2';
+  js.src = '/assets/site-search.2.js';
   js.defer = true;
   document.head.appendChild(js);
 })();
