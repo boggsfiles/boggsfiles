@@ -99,7 +99,7 @@ def detail(slug: str, sizes: dict[str, int]) -> None:
               f'oncontextmenu="return false" preload="metadata" playsinline poster="{POSTER_BASE}{slug}.jpg" '
               f'data-key="{html.escape(MEDIA_PREFIX + key, quote=True)}" title="{html.escape(full)}"></video>'
               f'<div class="media-caption"><span>{html.escape(title)} gag reel</span><span>{html.escape(" · ".join(m for m in (dur, fmt_size(size) if size else "") if m))}</span></div></div>')
-    body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/gag-reels/">Gag Reels</a> &nbsp;/&nbsp; {html.escape(title)}</div>'
+    body = (f'<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/gag-reels/">Gag Reels</a><a href="/locations/">Locations</a> &nbsp;/&nbsp; {html.escape(title)}</div>'
             f'<h1>{html.escape(title)}</h1><p>{html.escape(years)} &middot; the full wrap-party reel, from the DVD master.</p>'
             f'<div class="archive-meta">{"".join(f"<span>{html.escape(m)}</span>" for m in meta)}</div></div></section>'
             f'<div class="shell detail-wrap"><p class="detail-copy">{html.escape(INTRO)}</p><div class="media-grid" style="--card-columns:1;grid-template-columns:1fr">{player}</div></div>{LOADER}')
