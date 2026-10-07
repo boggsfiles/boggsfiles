@@ -33,7 +33,6 @@ ROWS = [
 ("3X21","Avatar","Bute Street at Melville Street","Bute St & Melville St","Vancouver","Scene not specified by the listing",None,"Bute Street and Melville Street, Vancouver, BC"),
 ("3X24","Talitha Cumi","Mulder family summer house","2429 Christopherson Rd","Surrey","Mrs. Mulder's summer house",None,"2429 Christopherson Road, Surrey, BC"),
 ("4X01","Herrenvolk","Old army barracks","Kamloops","Kamloops","Old army barracks",None,"Kamloops, BC"),
-("4X08","Tunguska","Howe Street at Drake Street","Howe St & Drake St","Vancouver","Scene not specified by the listing",None,"Howe Street and Drake Street, Vancouver, BC"),
 ("4X08","Paper Hearts","Lions Gate Travelodge","2060 Marine Dr","North Vancouver","Motel",None,"2060 Marine Drive, North Vancouver, BC"),
 ("4X11","El Mundo Gira","East Kent Avenue North at Borden Street","E. Kent Ave N & Borden St","Vancouver","Where Mulder and Lozano question the day workers",None,"East Kent Avenue North and Borden Street, Vancouver, BC"),
 ("4X14","Leonard Betts","Elaine Tanner's house","441 Glen Dr","Vancouver","Elaine Tanner's house",None,"441 Glen Drive, Vancouver, BC"),

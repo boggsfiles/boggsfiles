@@ -16,6 +16,12 @@ def mk(ep, title, name, addr, city, lat, lon, played, tier, conf, note):
     if note: d['note'] = note
     return d
 
+# every row's title must match its episode code (a 4X08 row titled Tunguska once put a Tunguska pin under Paper Hearts)
+_TITLES = {}
+for _m in (s2_book, s3_book, s4_book, s5_book, s25_paper, s25_fan, s25_imdb):
+    for _r in _m.ROWS:
+        assert _TITLES.setdefault(_r[0], _r[1]) == _r[1], f'{_m.__name__}: {_r[0]} is titled {_r[1]!r}, elsewhere {_TITLES[_r[0]]!r}'
+
 def season_locs(n):
     pre = f'{n}X'; locs = []
     for ep, title, name, addr, city, played, note, q in BOOK[n].ROWS + s25_paper.ROWS:
