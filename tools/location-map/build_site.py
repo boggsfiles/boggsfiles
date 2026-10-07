@@ -22,8 +22,33 @@ STICKY = ('<style>.jump{top:var(--hdr,92px)!important}.mapbox{top:calc(var(--hdr
           "if(h)r.style.setProperty('--hdr',h.offsetHeight+'px');if(j)r.style.setProperty('--jh',j.offsetHeight+'px');}"
           "addEventListener('load',m);addEventListener('resize',m);setTimeout(m,300);})();</script>")
 
-def site_page(src, desc, crumb):
+# seasons with a live map page; the switcher on every map page and the landing cards both read this
+LIVE = [1, 2, 3, 4]
+SOON = ['5', 'FTF', '6', '7', '8', '9', 'IWTB', '10', '11']
+SWCSS = ('<style>.seasons{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:16px 0 0;font:400 .72rem/1 var(--mono);letter-spacing:.1em;text-transform:uppercase}'
+         '.seasons .lbl{color:var(--muted);margin-right:6px}'
+         '.seasons a,.seasons span.s{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:32px;padding:0 10px;border:1px solid var(--line);color:var(--paper);text-decoration:none}'
+         '.seasons a:hover{border-color:var(--red)}.seasons a[aria-current]{background:var(--red);border-color:var(--red);color:#fff}'
+         '.seasons span.s{opacity:.35}'
+         '.snext{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:40px 0 0;padding-top:18px;border-top:1px solid var(--line);font:400 .8rem/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}'
+         '.snext a{color:var(--paper);text-decoration:none;border:1px solid var(--line);padding:12px 16px}.snext a:hover{border-color:var(--red)}'
+         '.snext .r{margin-left:auto}</style>')
+def switcher(n):
+    links = ''.join(f'<a href="/locations/vancouver/season-{s}/"' + (' aria-current="page"' if s == n else '') + f' title="Season {s}">S{s}</a>' for s in LIVE)
+    soon = ''.join(f'<span class="s" title="Coming soon">{s if not s.isdigit() else "S" + s}</span>' for s in SOON)
+    return f'<nav class="seasons" aria-label="Seasons"><span class="lbl">Season</span>{links}{soon}</nav>'
+def prevnext(n):
+    i = LIVE.index(n); out = '<nav class="snext" aria-label="Previous and next season">'
+    if i > 0: out += f'<a href="/locations/vancouver/season-{LIVE[i-1]}/">← Season {LIVE[i-1]}</a>'
+    out += f'<a class="r" href="/locations/vancouver/season-{LIVE[i+1]}/">Season {LIVE[i+1]} →</a>' if i + 1 < len(LIVE) else '<a class="r" href="/locations/">All locations →</a>'
+    return out + '</nav>'
+
+def site_page(src, desc, crumb, n=None):
     t = src.read_text()
+    if n:
+        t = re.sub(r'(<p class="lede">.*?</p>)', lambda m: m.group(1) + switcher(n), t, count=1, flags=re.S)
+        t = t.replace('<footer id="foot"></footer>', prevnext(n) + '<footer id="foot"></footer>', 1)
+        t = t.replace('</head>', SWCSS + '</head>', 1)
     t = t.replace('<div class="brand">BOGGS<b>X</b>FILES · LOCATION DEPARTMENT · PREVIEW, NOT PUBLISHED</div>', f'<div class="brand">{crumb}</div>')
     t = re.sub(r'<title>(.*?)</title>', lambda m: f'<title>{m.group(1)}: Boggsfiles</title><meta name="description" content="{desc}">', t, count=1)
     t = t.replace('</head>', HEADLINKS + STICKY + '</head>', 1)
@@ -34,14 +59,14 @@ def site_page(src, desc, crumb):
 out = DIST / 'locations' / 'vancouver' / 'season-1'; out.mkdir(parents=True, exist_ok=True)
 (out / 'index.html').write_text(site_page(HERE / 'preview' / 'index.html',
     'Every Season 1 filming location of The X-Files in Vancouver, pinned on a map with street addresses.',
-    '<a href="/locations/" style="color:inherit;text-decoration:none">Locations</a> · Vancouver · Season 1'))
+    '<a href="/locations/" style="color:inherit;text-decoration:none">Locations</a> · Vancouver · Season 1', 1))
 
 WORDS = {2: 'Two', 3: 'Three', 4: 'Four'}
 for s in (2, 3, 4):
     o = DIST / 'locations' / 'vancouver' / f'season-{s}'; o.mkdir(parents=True, exist_ok=True)
     (o / 'index.html').write_text(site_page(HERE / 'preview' / f'season-{s}.html',
         f'Every Season {s} filming location of The X-Files in Vancouver, pinned on a map with street addresses.',
-        f'<a href="/locations/" style="color:inherit;text-decoration:none">Locations</a> · Vancouver · Season {s}'))
+        f'<a href="/locations/" style="color:inherit;text-decoration:none">Locations</a> · Vancouver · Season {s}', s))
 
 # landing page: per-season counts read from the same data the maps use
 def season_stats(path):
