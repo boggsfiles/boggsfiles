@@ -10,6 +10,8 @@ document.addEventListener('click', (event) => {
     const script = link.closest('.episode');
     if (script) return ['Script', text(script, 'h2'), tidy(link.textContent)];
     if (location.pathname.startsWith('/script-vs-screen/')) return ['Script', text(document, 'h1'), tidy(link.textContent)];
+    // Script text pages: "Quagmire 3X22" with "Pink · machine-read text…" beneath, named to match the season pages
+    if (location.pathname.startsWith('/script-text/')) return ['Script', text(document, 'h1'), text(document, 'h1 + p').split(' · ')[0]];
     const callSheet = link.closest('.call-episode');
     if (callSheet) return ['Call sheet', `${text(callSheet, 'h2')} ${text(callSheet, '.call-episode-head span')}`, tidy(link.textContent)];
     if (link.matches('.comic-issue')) return ['Comic', `Comic ${text(link, 'b')}`, ''];
