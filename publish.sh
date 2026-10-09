@@ -7,6 +7,7 @@ python3 tools/build_sitemap.py    # list every live page for Google; commit it s
 git add dist/sitemap.xml dist/robots.txt
 git diff --cached --quiet -- dist/sitemap.xml dist/robots.txt || git commit -q -m "Refresh sitemap" -- dist/sitemap.xml dist/robots.txt
 python3 tools/build_search.py    # reindex: search is built from the finished pages, so it runs last
+node tools/check_site.mjs       # broken links, script errors, unnamed Drive files: stops the publish if any
 git branch -f gh-pages "$(git subtree split --prefix dist -q)"
 git push -f origin gh-pages
 gh api -X PUT repos/boggsfiles/boggsfiles/pages -f build_type=legacy -f "source[branch]=gh-pages" -f "source[path]=/" >/dev/null 2>&1 \
