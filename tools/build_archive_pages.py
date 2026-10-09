@@ -383,7 +383,9 @@ def schedule_details(name: str):
 
 
 CALL_SHEET_EPISODES = {
+    "war of the coprophages": (3, 12, "3X12", "War of the Coprophages"),
     "syzygy": (3, 13, "3X13", "Syzygy"),
+    "unusual suspects": (5, 1, "5X01", "Unusual Suspects"),
     "the field where i died": (4, 5, "4X05", "The Field Where I Died"),
     "tunguska": (4, 8, "4X08", "Tunguska"),
     "terma": (4, 9, "4X09", "Terma"),
@@ -408,7 +410,18 @@ CALL_SHEET_EPISODES = {
 }
 
 
+# Call sheets held by Boggsfiles rather than linked from Drive. Scanned from the
+# originals; multi-page documents are assembled into one PDF.
+LOCAL_CALL_SHEETS = [
+    ("War of the Coprophages Call Sheet Day 6 of 8",
+     "/assets/call-sheets/3x12-war-of-the-coprophages-day-6.pdf"),
+    ("Unusual Suspects Call Sheet Day 5 of 8",
+     "/assets/call-sheets/5x01-unusual-suspects-day-5.pdf"),
+]
+
+
 def call_sheet_items(resources):
+    resources = list(resources) + LOCAL_CALL_SHEETS
     items = []
     for source_index, (name, url) in enumerate(resources, 1):
         base = name.removesuffix(".pdf").strip()
@@ -671,7 +684,7 @@ def build_detail(label: str, route: str, legacy_path: str, active: str, kind: st
                 )
             season_sections.append(
                 f'<section class="call-season"><div class="schedule-season-head"><h2>Season {season}</h2>'
-                f'<span>{len(season_items)} call sheets</span></div><div class="call-grid">{"".join(episode_groups)}</div></section>'
+                f'<span>{len(season_items)} call sheet{"" if len(season_items) == 1 else "s"}</span></div><div class="call-grid">{"".join(episode_groups)}</div></section>'
             )
         episode_count = len({(item["season"], item["episode"]) for item in items})
         body = f'''<section class="archive-hero"><div class="shell"><div class="crumb"><a href="/{active.lower()}/">{html.escape(active)}</a> &nbsp;/&nbsp; {html.escape(label)}</div><h1>{html.escape(label)}</h1><p>Daily production records from the making of The X-Files.</p><div class="archive-meta"><span>{len(items)} call sheets</span><span>{episode_count} episodes</span><span>Seasons {min(item["season"] for item in items)}–{max(item["season"] for item in items)}</span></div></div></section><div class="shell detail-wrap">{copy}<div class="call-seasons">{"".join(season_sections)}</div></div>'''
