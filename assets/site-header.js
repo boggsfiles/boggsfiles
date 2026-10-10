@@ -7,7 +7,12 @@ window.bfDescribeFile = (link) => {
   // Each archive page lays its links out differently, so name the file from the card it sits in.
   const describe = () => {
     const script = link.closest('.episode');
-    if (script) return ['Script', text(script, 'h2'), tidy(link.textContent)];
+    if (script) {
+      // The production code moved out of the headline and under the airdate, so read it from
+      // there. Without it two episodes are named "3" and "731", which names nothing.
+      const named = [text(script, 'h2'), text(script, '.episode-code')].filter(Boolean).join(' ');
+      return ['Script', named, tidy(link.textContent)];
+    }
     if (location.pathname.startsWith('/script-vs-screen/')) return ['Script', text(document, 'h1'), tidy(link.textContent)];
     // Script text pages: "Quagmire 3X22" with "Pink · machine-read text…" beneath, named to match the season pages
     if (location.pathname.startsWith('/script-text/')) return ['Script', text(document, 'h1'), text(document, 'h1 + p').split(' · ')[0]];
