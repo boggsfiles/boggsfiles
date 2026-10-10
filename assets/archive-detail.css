@@ -141,4 +141,4 @@
 /* Airdate under the episode name, with the production code demoted beneath it. The date
    is the sequence a reader understands, so it reads first; the code is for the archive. */
 .episode-air{display:block;margin-top:10px;color:#9aa39d;font-size:.72rem;letter-spacing:.02em}
-.episode-code{display:block;margin-top:3px;color:#6b746d;font:400 .6rem/1.5 var(--mono,'DM Mono',monospace);letter-spacing:.12em}
+.episode-code{display:block;margin-top:3px;margin-bottom:22px;color:#6b746d;font:400 .6rem/1.5 var(--mono,'DM Mono',monospace);letter-spacing:.12em}
