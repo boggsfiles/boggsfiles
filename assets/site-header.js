@@ -57,6 +57,38 @@ window.bfDescribeFile = (link) => {
   return { file_type: type, file_title: title, file_version: version, file_label: label, guessed: vague || type === 'File' };
 };
 
+// Video plays on the gag reel and dailies pages. Uses GA's own video event names (video_start,
+// video_progress, video_complete, with video_title and video_percent) so they read as video in
+// the reports. Each milestone is sent once per video per page view: the signed-link script can
+// swap the source mid-play when a link expires, and that must not count as a second play.
+(() => {
+  const sent = new WeakMap();
+  const MILESTONES = [10, 25, 50, 75];
+  const report = (video, name, extra = {}) => {
+    if (typeof gtag !== 'function') return;
+    const done = sent.get(video) || new Set();
+    const key = name + (extra.video_percent ?? '');
+    if (done.has(key)) return;
+    done.add(key); sent.set(video, done);
+    gtag('event', name, {
+      video_title: video.getAttribute('title') || document.title.split(/[:|]/)[0].trim(),
+      video_provider: location.pathname.startsWith('/gag-reels/') ? 'Gag reel' : 'Dailies',
+      video_duration: Math.round(video.duration) || undefined,
+      video_current_time: Math.round(video.currentTime),
+      ...extra,
+    });
+  };
+  // Media events don't bubble, so listen in the capture phase to hear every <video> on the page.
+  document.addEventListener('play', (e) => { if (e.target.matches?.('video')) report(e.target, 'video_start'); }, true);
+  document.addEventListener('timeupdate', (e) => {
+    const v = e.target;
+    if (!v.matches?.('video') || !v.duration) return;
+    const pct = (v.currentTime / v.duration) * 100;
+    for (const m of MILESTONES) if (pct >= m) report(v, 'video_progress', { video_percent: m });
+  }, true);
+  document.addEventListener('ended', (e) => { if (e.target.matches?.('video')) report(e.target, 'video_complete', { video_percent: 100 }); }, true);
+})();
+
 document.addEventListener('click', (event) => {
   const link = event.target.closest('a[href*="drive.google.com"], a[href*="docs.google.com"]');
   if (!link || typeof gtag !== 'function') return;
