@@ -13,7 +13,11 @@ window.bfDescribeFile = (link) => {
       const named = [text(script, 'h2'), text(script, '.episode-code')].filter(Boolean).join(' ');
       return ['Script', named, tidy(link.textContent)];
     }
-    if (location.pathname.startsWith('/script-vs-screen/')) return ['Script', text(document, 'h1'), tidy(link.textContent)];
+    if (location.pathname.startsWith('/script-vs-screen/')) {
+      // "Revision report · 2X07 · Season 2…" above the title supplies the code, as on the season pages
+      const code = text(document, '.hero .eyebrow').match(/\b[0-9A-Z]+X\d+\b/)?.[0];
+      return ['Script', [text(document, 'h1'), code].filter(Boolean).join(' '), tidy(link.textContent)];
+    }
     // Script text pages: "Quagmire 3X22" with "Pink · machine-read text…" beneath, named to match the season pages
     if (location.pathname.startsWith('/script-text/')) return ['Script', text(document, 'h1'), text(document, 'h1 + p').split(' · ')[0]];
     const callSheet = link.closest('.call-episode');
@@ -35,12 +39,15 @@ window.bfDescribeFile = (link) => {
     }
     const name = tidy(link.getAttribute('aria-label')).replace(/^(Open|View) /, '').replace(/\s*\(opens in a new tab\)$/, '') || tidy(link.textContent);
     const kind = /oneline/i.test(name) ? 'Oneline schedule' : /shooting schedule/i.test(name) ? 'Shooting schedule' : 'File';
+    fallback = true;
     return [kind, name, ''];
   };
+  let fallback = false;
   let [type, title, version] = describe();
   // Safety net for page layouts added later: a name that can't identify the file on its own
   // ("Open the scan", "28", nothing at all) gets the page's title in front of it.
-  const vague = /^#?\d*$/.test(title) || /^(open|view|read|download|see|click)\b/i.test(title);
+  // Only for links no rule above recognized: a rule knows its titles, and an episode really is called "3".
+  const vague = fallback && (/^#?\d*$/.test(title) || /^(open|view|read|download|see|click)\b/i.test(title));
   if (vague) {
     const page = text(document, 'h1') || tidy(document.title.split(/[:|]/)[0]);
     title = title ? `${page} · ${title}` : page;
