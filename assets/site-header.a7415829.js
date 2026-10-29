@@ -118,6 +118,86 @@ document.addEventListener('click', (event) => {
   });
 })();
 
+// Nothing on the site can be downloaded or saved (Lindsey's rule, 2026-10-29). Pictures, video and
+// audio get no right-click menu, no drag and no iPhone long-press save, and a link to a bare image
+// file (a full-size screencap, a scout page) opens in a viewer here instead of as the raw file in
+// a new tab, where Save As would work. Drive files carry Google's own lock (download, print and copy
+// off for viewers), and tools/check_site.mjs refuses to publish a link to a raw PDF or video file.
+// This stops the menus and buttons; it cannot stop a screenshot.
+(() => {
+  const IMAGE = /\.(jpe?g|png|webp|gif|avif)(\?|#|$)/i;
+  const FILE = /\.(pdf|zip|mp4|m4v|mov|m4a|mp3|wav|docx?)(\?|#|$)/i;
+  const style = document.createElement('style');
+  style.textContent = `img,video,audio,picture,canvas{-webkit-touch-callout:none;-webkit-user-drag:none;user-select:none}
+.bf-viewer{position:fixed;inset:0;z-index:2000;display:flex;align-items:center;justify-content:center;background:rgba(8,10,9,.94);padding:max(16px,env(safe-area-inset-top)) 16px max(16px,env(safe-area-inset-bottom))}
+.bf-viewer[hidden]{display:none}
+.bf-viewer img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+.bf-viewer button{position:absolute;border:0;background:rgba(255,255,255,.12);color:#fff;font:600 22px/1 system-ui,sans-serif;width:44px;height:44px;border-radius:50%;cursor:pointer}
+.bf-viewer button:hover,.bf-viewer button:focus-visible{background:rgba(255,255,255,.26)}
+.bf-viewer .bf-viewer-close{top:max(14px,env(safe-area-inset-top));right:14px}
+.bf-viewer .bf-viewer-prev{left:14px;top:50%;transform:translateY(-50%)}
+.bf-viewer .bf-viewer-next{right:14px;top:50%;transform:translateY(-50%)}`;
+  document.head.appendChild(style);
+
+  const fileLink = (el) => {
+    const a = el.closest?.('a[href]');
+    const href = a?.getAttribute('href') || '';
+    return a && (IMAGE.test(href) || FILE.test(href)) ? a : null;
+  };
+  const guarded = (el) => el.closest?.('img, video, audio, picture, canvas, source, .bf-viewer') || fileLink(el);
+  document.addEventListener('contextmenu', (e) => { if (guarded(e.target)) e.preventDefault(); }, true);
+  document.addEventListener('dragstart', (e) => { if (guarded(e.target)) e.preventDefault(); }, true);
+
+  let viewer, picture, links = [], at = 0;
+  const show = (i) => {
+    at = (i + links.length) % links.length;
+    const a = links[at];
+    picture.src = a.href;
+    picture.alt = a.querySelector('img')?.alt || a.getAttribute('aria-label') || '';
+    viewer.querySelectorAll('.bf-viewer-prev, .bf-viewer-next').forEach((b) => { b.hidden = links.length < 2; });
+  };
+  const close = () => { viewer.hidden = true; picture.removeAttribute('src'); document.documentElement.style.overflow = ''; links[at]?.focus(); };
+  const open = (a) => {
+    if (!viewer) {
+      viewer = document.createElement('div');
+      viewer.className = 'bf-viewer';
+      viewer.setAttribute('role', 'dialog');
+      viewer.setAttribute('aria-modal', 'true');
+      viewer.innerHTML = '<img alt="" draggable="false"><button class="bf-viewer-prev" aria-label="Previous">‹</button>'
+        + '<button class="bf-viewer-next" aria-label="Next">›</button><button class="bf-viewer-close" aria-label="Close">×</button>';
+      picture = viewer.querySelector('img');
+      viewer.addEventListener('click', (e) => {
+        if (e.target.closest('.bf-viewer-prev')) show(at - 1);
+        else if (e.target.closest('.bf-viewer-next')) show(at + 1);
+        else if (e.target === viewer || e.target.closest('.bf-viewer-close')) close();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (viewer.hidden) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowLeft' && links.length > 1) show(at - 1);
+        else if (e.key === 'ArrowRight' && links.length > 1) show(at + 1);
+      });
+      document.body.appendChild(viewer);
+    }
+    links = [...document.querySelectorAll('a[href]')].filter((l) => IMAGE.test(l.getAttribute('href')) && !l.closest('.bf-viewer'));
+    viewer.hidden = false;
+    document.documentElement.style.overflow = 'hidden';
+    show(Math.max(0, links.indexOf(a)));
+    viewer.querySelector('.bf-viewer-close').focus();
+  };
+  // Bubble phase, after the page's own handlers: a page with its own in-page viewer (the photo
+  // albums) has already called preventDefault and keeps it.
+  document.addEventListener('click', (e) => {
+    const a = fileLink(e.target);
+    if (!a || e.defaultPrevented) return;
+    if (!IMAGE.test(a.getAttribute('href'))) return;
+    e.preventDefault();
+    open(a);
+  });
+  // A middle click opens the raw file in a new tab without ever firing "click"
+  document.addEventListener('auxclick', (e) => { if (fileLink(e.target)) e.preventDefault(); });
+})();
+
 // Site-wide search. Loaded from here rather than added to 518 pages and a dozen builders: this
 // file is already on every page that has a header. The stylesheet and script are fetched here,
 // but the index itself is not touched until someone actually opens the search.
