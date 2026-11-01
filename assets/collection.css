@@ -49,7 +49,11 @@ nav { min-height: 82px; display: flex; align-items: center; justify-content: spa
 .open { margin-top: auto; font-size: .61rem; letter-spacing: .14em; text-transform: uppercase; position: relative; z-index: 1; }
 .wide { grid-column: span 2; }
 .production-grid .collection-photo { grid-column: 3; grid-row: 1 / span 2; position: relative; margin: 0; min-height: 491px; overflow: hidden; background: #161a18; }
-.production-grid .collection-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; filter: grayscale(1) contrast(1.04); }
+.production-grid .collection-photo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; object-position: center bottom; }
+.production-grid .has-stack { min-height: 300px; padding-right: calc(28px + min(42%, 500px)); }
+.production-grid .has-stack::after { right: calc(min(42%, 500px) - 5px); }
+.production-grid .stack { position: absolute; top: 0; right: 0; bottom: 0; width: min(42%, 500px); }
+.production-grid .stack img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; display: block; }
 .notice { margin: 0 0 85px; border: 1px solid var(--line); padding: 32px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; }
 .notice strong { font: 400 1.55rem var(--display); text-transform: uppercase; }
 .notice p { font-size: .72rem; color: #8f9991; margin: 0; }
@@ -73,6 +77,11 @@ footer { border-top: 1px solid var(--line); padding: 38px 0; color: #657069; fon
   .dailies-grid .file, .dailies-grid > .file:nth-last-child(2):nth-child(3n+1) { grid-column: span 2; }
   .wide { grid-column: auto; }
   .production-grid .collection-photo { grid-column: 1 / -1; grid-row: auto; min-height: 0; aspect-ratio: 16 / 9; }
+  .production-grid .has-stack { padding-right: 28px; min-height: 0; }
+  .production-grid .has-stack .open { margin-top: 26px; }
+  .production-grid .has-stack::after { right: -5px; }
+  .production-grid .stack { position: relative; width: auto; margin: 10px -28px -28px; }
+  .production-grid .stack img { height: auto; }
   .notice { grid-template-columns: 1fr; }
   .source { grid-template-columns: 85px 1fr; }
   .source a { grid-column: 2; }
