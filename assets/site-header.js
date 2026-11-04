@@ -210,7 +210,7 @@ document.addEventListener('click', (event) => {
   css.href = '/assets/site-search.4.css';
   document.head.appendChild(css);
   const js = document.createElement('script');
-  js.src = '/assets/site-search.4.js';
+  js.src = '/assets/site-search.5.js';
   js.defer = true;
   document.head.appendChild(js);
 })();
