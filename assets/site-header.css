@@ -32,3 +32,9 @@ header.bf-header-home{position:absolute;left:0;right:0;background:linear-gradien
 @media(max-width:760px){.media-grid{--card-columns:1}}
 @media(max-width:650px){.episode-grid{--card-columns:1}}
 @media(max-width:620px){.season-grid,.seasons:has(>.season),.collection:not(.production-grid),.grid:has(>.card){--card-columns:1}.comic-grid{--card-columns:2}}
+/* Script vs. Screen is being rebuilt (November 2026): its nav link carries a Coming soon tag.
+   On the desktop bar the tag hangs under the link so the nav gets no wider; in the open phone menu it sits inline. */
+.bf-soon{display:inline-block;padding:1px 6px;border:1px solid #b73831;font-size:.62em;letter-spacing:.14em;line-height:1.5;color:#e8e6dc;white-space:nowrap}
+.bf-header .bf-navlinks a:has(.bf-soon){position:relative}
+.bf-header .bf-navlinks a .bf-soon{position:absolute;left:50%;top:calc(100% + 4px);transform:translateX(-50%);font-size:.56rem}
+@media(max-width:1100px){.bf-header .bf-navlinks a .bf-soon{position:static;transform:none;margin-left:.7em;vertical-align:.1em}}
