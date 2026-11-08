@@ -43,3 +43,7 @@ header.bf-header-home{position:absolute;left:0;right:0;background:linear-gradien
    right edge. Measured November 5, 2026: the homepage overflowed by up to 190px at 1101-1349px. */
 @media(min-width:1101px) and (max-width:1359px){.bf-header nav.bf-navlinks{gap:14px;font-size:.68rem;letter-spacing:.1em}}
 @media(min-width:1101px) and (max-width:1199px){.bf-header nav.bf-navlinks{gap:12px;font-size:.64rem;letter-spacing:.06em}}
+
+/* breadcrumbs light up on hover, so they read as links (her ask, November 8, 2026) */
+.crumb a{transition:color .2s,text-decoration-color .2s;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;text-decoration-thickness:1px}
+.crumb a:hover,.crumb a:focus-visible{color:#e0796c;text-decoration-color:#e0796c}
