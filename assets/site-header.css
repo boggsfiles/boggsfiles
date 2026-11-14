@@ -47,3 +47,4 @@ header.bf-header-home{position:absolute;left:0;right:0;background:linear-gradien
 /* breadcrumbs light up on hover, so they read as links (her ask, November 8, 2026) */
 .crumb a{transition:color .2s,text-decoration-color .2s;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;text-decoration-thickness:1px}
 .crumb a:hover,.crumb a:focus-visible{color:#e0796c;text-decoration-color:#e0796c}
+/* the hero h1's tall glyphs overlap the line above; keep the breadcrumb links clickable (her report, 2026-11-14) */.crumb{position:relative;z-index:1}

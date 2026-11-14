@@ -13,7 +13,7 @@
 .episode-body{padding:27px 30px 31px;display:flex;flex:1;flex-direction:column;align-items:flex-start}
 .episode-no{color:var(--red);font-size:.61rem;letter-spacing:.17em;text-transform:uppercase}
 .episode h2{font:400 clamp(1.65rem,2.2vw,2.3rem)/1 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:13px 0 23px;text-align:left}
-.drafts{display:flex;flex-wrap:wrap;gap:9px;margin-top:auto}
+.drafts{display:flex;flex-wrap:wrap;gap:9px;margin-top:0}
 .draft{border:1px solid #4b544e;padding:9px 12px;font-size:.61rem;letter-spacing:.1em;text-transform:uppercase;transition:.2s}
 .draft:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
 .detail-wrap{padding:58px 0 92px}
@@ -56,7 +56,7 @@
 .call-episode-head{display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--red);font-size:.59rem;letter-spacing:.14em;text-transform:uppercase}
 .call-episode-head small{color:#747e77;font:inherit;letter-spacing:.1em;text-align:right}
 .call-episode h2{font:400 1.85rem/1.05 var(--display);text-transform:uppercase;letter-spacing:.025em;margin:16px 0 25px}
-.call-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto}
+.call-days{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:0}
 .call-days a{display:flex;align-items:center;justify-content:space-between;gap:10px;border:1px solid #3e4741;padding:10px 11px;color:#b7beb9;font-size:.61rem;letter-spacing:.06em;text-transform:uppercase;transition:.2s}
 .call-days a:hover,.call-days a:focus-visible{background:var(--paper);border-color:var(--paper);color:var(--ink)}
 .call-days i{color:var(--red);font-style:normal}
